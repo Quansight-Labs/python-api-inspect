@@ -61,7 +61,7 @@ Get numpy api usage
 python inspect.py data/numpy-whitelist.ini --output data/numpy-summary.csv
 ```
 
-Get numpy api usage (exclude directories `test/tests/venv/site-packages`)
+Get numpy api usage (exclude directories `test, tests, site-packages`)
 
 ```shell
 python inspect.py data/numpy-whitelist.ini --output data/numpy-summary-without-tests.csv --exclude-dirs test,tests,site-packages
@@ -74,11 +74,21 @@ python dependant-packages.py --api-key c0....42 --namespaces=scipy --output data
 python inspect.py data/scipy-whitelist.ini --output data/scipy-summary.csv
 ```
 
+Get scipy api usage (exclude directories `test, tests, site-packages`)
+
+```shell
+python inspect.py data/scipy-whitelist.ini --output data/scipy-summary-without-tests.csv --exclude-dirs test,tests,site-packages
+```
+
 Get pyarrow api usage. We `--include-dependant-repos` becuase pyarrow on libraries.io did not have dependant libraries but had 208 "dependant repos". By contrast numpy has `68k` so we did not use this for numpy/scipy.
 
 ```shell
 python dependant-packages.py --api-key c0....42 --include-dependant-repos --namespaces=pyarrow --output data/pyarrow-whitelist.ini pyarrow
 python inspect.py data/pyarrow-whitelist.ini --output data/pyarrow-summary.csv
+```
+
+```shell
+python inspect.py data/pyarrow-whitelist.ini --output data/pyarrow-summary-without-tests.csv --exclude-dirs test,tests,site-packages
 ```
 
 # Tests

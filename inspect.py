@@ -113,6 +113,8 @@ def cli(arguments):
     parser = argparse.ArgumentParser()
     parser.add_argument('whitelist', help="whitelist filename")
     parser.add_argument('--cache-dir', default=os.path.expanduser('~/.cache/python-inspect-ast/'), help='download cache directory')
+    parser.add_argument('--exclude-dirs', help='directories to exclude from statistics')
+    parser.add_argument('--include-dirs', help='directories to include in statistics')
     parser.add_argument('--output', default='summary.csv', help="output filename")
     args = parser.parse_args()
     return args
@@ -145,6 +147,9 @@ CREATE TABLE IF NOT EXISTS FileStats (
     namespaces = set(whitelist['config']['namespaces'].split(','))
     namespaces_string = ','.join(sorted(namespaces))
 
+    exclude_dirs = set(args.exclude_dirs.split(',')) if args.exclude_dirs else set()
+    include_dirs = set(args.include_dirs.split(',')) if args.include_dirs else set()
+
     for project_name in whitelist['packages']:
         site, owner, repo, ref = whitelist['packages'][project_name].split('/')
         if site == 'github':
@@ -158,6 +163,12 @@ CREATE TABLE IF NOT EXISTS FileStats (
         try:
             with zipfile.ZipFile(zip_filename) as f_zip:
                 for filename in [_ for _ in f_zip.namelist() if _.endswith('.py')]:
+                    if include_dirs and (set(filename.split(os.sep)) & include_dirs) == set():
+                        continue
+
+                    if (set(filename.split(os.sep)) & exclude_dirs) != set():
+                        continue
+
                     print('...', filename[:64])
                     with f_zip.open(filename) as f:
                         contents = f.read()

@@ -1,0 +1,47 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+pyarrow.register_torch_serialization_handlers, 1, 1, 1, , 
+pyarrow.get_library_dirs, 1, 0, 1, , 
+pyarrow.Table.to_pandas, 1, 1, 1, , 
+pyarrow.parquet.read_metadata, 1, 1, 1, , 
+pyarrow.date32, 1, 0, 1, , 
+pyarrow.int16, 1, 0, 1, , 
+pyarrow.chunked_array, 1, 2, 1, type, 1
+pyarrow.Column.from_array, 1, 2, 1, , 
+pyarrow.concat_tables, 1, 2, 1, , 
+pyarrow.memory_map, 1, 1, 1, , 
+pyarrow.register_default_serialization_handlers, 1, 1, 1, , 
+pyarrow.feather.write_feather, 2, 2, 2, , 
+pyarrow.default_serialization_context, 2, 0, 2, , 
+pyarrow.FixedSizeBufferWriter, 2, 1, 2, , 
+pyarrow.serialize, 2, 2, 2, , 
+pyarrow.plasma.ObjectID.from_random, 2, 0, 2, , 
+pyarrow.plasma.start_plasma_store, 2, 1, 2, , 
+pyarrow.float32, 2, 0, 2, , 
+pyarrow.int32, 2, 0, 2, , 
+pyarrow.int8, 2, 0, 2, , 
+pyarrow.MemoryMappedFile.create, 2, 2, 2, , 
+pyarrow.SerializationContext, 2, 0, 2, , 
+pyarrow.parquet.ParquetDataset, 3, 1, 2, metadata_nthreads, 1
+pyarrow.feather.read_feather, 4, 3, 2, nthreads, 2
+pyarrow.bool_, 4, 0, 4, , 
+pyarrow.parquet.write_to_dataset, 4, 4, 3, root_path, 3
+pyarrow.binary, 4, 0, 4, , 
+pyarrow.Table.from_arrays, 4, 2, 3, names, 2
+pyarrow.Table.from_batches, 5, 1, 5, , 
+pyarrow.int64, 5, 0, 5, , 
+pyarrow.timestamp, 5, 1, 5, , 
+pyarrow.parquet.read_table, 6, 1, 6, , 
+pyarrow.float64, 6, 0, 6, , 
+pyarrow.hdfs.connect, 6, 0, 3, driver, 1
+pyarrow.parquet.ParquetWriter, 7, 2, 3, compression, 4
+pyarrow.field, 7, 3, 6, nullable, 1
+pyarrow.RecordBatch.from_arrays, 7, 2, 7, , 
+pyarrow.string, 8, 0, 8, , 
+pyarrow.schema, 9, 1, 9, fields, 1
+pyarrow.plasma.ObjectID, 11, 1, 11, , 
+pyarrow.deserialize, 13, 1, 11, , 
+pyarrow.array, 14, 2, 9, type, 9
+pyarrow.plasma.connect, 16, 3, 8, , 
+pyarrow.parquet.ParquetFile, 20, 1, 20, , 
+pyarrow.parquet.write_table, 21, 2, 11, compression, 7
+pyarrow.Table.from_pandas, 24, 1, 19, preserve_index, 5
