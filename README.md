@@ -3,7 +3,9 @@
 Inspect API of given libraries and number of times functions called
 
 ```shell
-usage: inspect.py [-h] [--cache-dir CACHE_DIR] [--output OUTPUT] whitelist
+usage: inspect.py [-h] [--cache-dir CACHE_DIR] [--exclude-dirs EXCLUDE_DIRS]
+                  [--include-dirs INCLUDE_DIRS] [--output OUTPUT]
+                  whitelist
 
 positional arguments:
   whitelist             whitelist filename
@@ -12,6 +14,10 @@ optional arguments:
   -h, --help            show this help message and exit
   --cache-dir CACHE_DIR
                         download cache directory
+  --exclude-dirs EXCLUDE_DIRS
+                        directories to exclude from statistics
+  --include-dirs INCLUDE_DIRS
+                        directories to include in statistics
   --output OUTPUT       output filename
 ```
 
@@ -29,15 +35,22 @@ python inspect.py whitelist.ini
 # Gather Library Dependent Packages
 
 ```shell
-usage: dependant-packages.py [-h] --api-key API_KEY [--output OUTPUT] libraries
+usage: dependant-packages.py [-h] [--include-dependant-repos] --api-key API_KEY
+                             --namespaces NAMESPACES [--output OUTPUT]
+                             libraries
 
 positional arguments:
-  libraries          libraries to gather dependants for
+  libraries             libraries to gather dependants for
 
 optional arguments:
-  -h, --help         show this help message and exit
-  --api-key API_KEY  api key from libraries.io
-  --output OUTPUT    output filename
+  -h, --help            show this help message and exit
+  --include-dependant-repos
+                        include libraries.io dependant repositories (warning for
+                        popular packages this can be huge)
+  --api-key API_KEY     api key from libraries.io
+  --namespaces NAMESPACES
+                        namespaces to look for
+  --output OUTPUT       output filename
 ```
 
 ## usage
