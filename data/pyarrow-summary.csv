@@ -1,0 +1,67 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+pyarrow.register_torch_serialization_handlers, 1, 1, 1, , 
+pyarrow.get_library_dirs, 1, 0, 1, , 
+pyarrow.Table.to_pandas, 1, 1, 1, , 
+pyarrow.parquet.read_metadata, 1, 1, 1, , 
+pyarrow.Column.from_array, 1, 2, 1, , 
+pyarrow.memory_map, 1, 1, 1, , 
+pyarrow.register_default_serialization_handlers, 1, 1, 1, , 
+pyarrow.RecordBatchFileWriter, 1, 2, 1, , 
+pyarrow.RecordBatchFileReader, 1, 1, 1, , 
+pyarrow.default_serialization_context, 2, 0, 2, , 
+pyarrow.FixedSizeBufferWriter, 2, 1, 2, , 
+pyarrow.serialize, 2, 2, 2, , 
+pyarrow.plasma.ObjectID.from_random, 2, 0, 2, , 
+pyarrow.concat_tables, 2, 2, 1, , 
+pyarrow.MemoryMappedFile.create, 2, 2, 2, , 
+pyarrow.SerializationContext, 2, 0, 2, , 
+pyarrow.types.is_binary, 3, 1, 2, , 
+pyarrow.feather.write_feather, 4, 2, 3, , 
+pyarrow.plasma.start_plasma_store, 4, 1, 4, , 
+pyarrow.parquet.write_to_dataset, 4, 4, 3, root_path, 3
+pyarrow.Table.from_arrays, 4, 2, 3, names, 2
+pyarrow.decimal128, 4, 2, 2, , 
+pyarrow.list_, 4, 1, 2, , 
+pyarrow.types.is_boolean, 4, 1, 2, , 
+pyarrow.types.is_int8, 4, 1, 2, , 
+pyarrow.types.is_int16, 4, 1, 2, , 
+pyarrow.types.is_int32, 4, 1, 2, , 
+pyarrow.types.is_int64, 4, 1, 2, , 
+pyarrow.types.is_float32, 4, 1, 2, , 
+pyarrow.types.is_float64, 4, 1, 2, , 
+pyarrow.types.is_date32, 4, 1, 2, , 
+pyarrow.types.is_list, 4, 1, 2, , 
+pyarrow.date32, 5, 0, 3, , 
+pyarrow.int16, 5, 0, 3, , 
+pyarrow.parquet.ParquetDataset, 6, 1, 2, validate_schema, 3
+pyarrow.float32, 6, 0, 4, , 
+pyarrow.int32, 6, 0, 4, , 
+pyarrow.int8, 6, 0, 4, , 
+pyarrow.chunked_array, 7, 1, 4, type, 1
+pyarrow.parquet.ParquetWriter, 7, 2, 3, compression, 4
+pyarrow.binary, 7, 0, 5, , 
+pyarrow.RecordBatchStreamWriter, 7, 2, 4, , 
+pyarrow.open_stream, 7, 1, 4, , 
+pyarrow.feather.read_feather, 8, 3, 4, columns, 6
+pyarrow.Table.from_batches, 8, 1, 6, , 
+pyarrow.hdfs.connect, 8, 0, 5, driver, 1
+pyarrow.types.is_string, 8, 1, 4, , 
+pyarrow.types.is_decimal, 8, 1, 4, , 
+pyarrow.int64, 9, 0, 7, , 
+pyarrow.timestamp, 9, 1, 5, tz, 4
+pyarrow.parquet.read_table, 10, 1, 10, , 
+pyarrow.float64, 10, 0, 8, , 
+pyarrow.bool_, 11, 0, 7, , 
+pyarrow.RecordBatch.from_arrays, 11, 2, 9, , 
+pyarrow.string, 12, 0, 10, , 
+pyarrow.types.is_timestamp, 12, 1, 6, , 
+pyarrow.Array.from_pandas, 12, 3, 6, mask, 12
+pyarrow.plasma.ObjectID, 13, 1, 11, , 
+pyarrow.array, 14, 2, 9, type, 9
+pyarrow.deserialize, 16, 1, 9, , 
+pyarrow.field, 16, 3, 13, nullable, 10
+pyarrow.parquet.write_table, 22, 2, 12, compression, 7
+pyarrow.schema, 22, 1, 20, fields, 1
+pyarrow.parquet.ParquetFile, 22, 1, 22, , 
+pyarrow.Table.from_pandas, 31, 1, 25, preserve_index, 5
+pyarrow.plasma.connect, 31, 3, 19, , 

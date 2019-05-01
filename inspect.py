@@ -32,14 +32,27 @@ def inspect_file_ast(file_ast, namespaces):
     namespaces = set(tuple(_.split('.')) for _ in namespaces)
 
     class ImportVisit(ast.NodeVisitor):
-        def __init__(self):
+        def __init__(self, namespaces):
             self.aliases = {}
+            self.namespaces = namespaces
 
         def visit_Import(self, node):
             for name in node.names:
                 namespace = tuple(name.name.split('.'))
-                if namespace[0] == 'numpy':
-                    self.aliases[name.asname] = namespace
+                for i in range(len(namespace)+1):
+                    if namespace[:i+1] in self.namespaces:
+                        self.aliases[name.asname] = namespace
+
+        def visit_ImportFrom(self, node):
+            if node.module is None: # relative import
+                return
+
+            partial_namespace = tuple(node.module.split('.'))
+            for name in node.names:
+                namespace = partial_namespace + (name.name,)
+                for i in range(len(namespace)+1):
+                    if namespace[:i+1] in self.namespaces:
+                        self.aliases[name.asname or name.name] = namespace
 
     class APIVisitor(ast.NodeVisitor):
         def __init__(self, aliases, namespaces):
@@ -79,7 +92,7 @@ def inspect_file_ast(file_ast, namespaces):
                         self.api[tuple(path)]['kwargs'][keyword] += 1
                     break
 
-    import_visitor = ImportVisit()
+    import_visitor = ImportVisit(namespaces)
     import_visitor.visit(file_ast)
     api_visitor = APIVisitor(import_visitor.aliases, namespaces)
     api_visitor.visit(file_ast)
@@ -111,7 +124,15 @@ def main():
 
     connection = sqlite3.connect(os.path.join(args.cache_dir, 'inspect.sqlite'))
     with connection:
-        connection.execute('CREATE TABLE IF NOT EXISTS FileStats (file_hash TEXT PRIMARY KEY, stats BLOB)')
+        connection.execute('''
+CREATE TABLE IF NOT EXISTS FileStats (
+   file_hash TEXT,
+   namespaces TEXT,
+   stats BLOB,
+
+   PRIMARY KEY (file_hash, namespaces)
+)
+''')
 
     whitelist = configparser.ConfigParser()
     whitelist.read(args.whitelist)
@@ -122,6 +143,7 @@ def main():
     })
 
     namespaces = set(whitelist['config']['namespaces'].split(','))
+    namespaces_string = ','.join(sorted(namespaces))
 
     for project_name in whitelist['packages']:
         site, owner, repo, ref = whitelist['packages'][project_name].split('/')
@@ -142,7 +164,7 @@ def main():
                     contents_hash = hashlib.sha256(contents).hexdigest()
 
                     with connection:
-                        result = connection.execute('SELECT stats FROM FileStats WHERE file_hash = ?', (contents_hash,)).fetchone()
+                        result = connection.execute('SELECT stats FROM FileStats WHERE file_hash = ? AND namespaces = ?', (contents_hash, namespaces_string)).fetchone()
 
                     if result:
                         api_counts = json.loads(result[0])
@@ -154,7 +176,7 @@ def main():
                         api_counts = inspect_file_ast(file_ast, namespaces)
                         api_counts = {'.'.join(key): value for key, value in api_counts.items()}
                         with connection:
-                            connection.execute('INSERT INTO FileStats (file_hash, stats) VALUES (?, ?)', (contents_hash, json.dumps(api_counts)))
+                            connection.execute('INSERT INTO FileStats (file_hash, namespaces, stats) VALUES (?, ?, ?)', (contents_hash, namespaces_string, json.dumps(api_counts)))
 
                     for key, value in api_counts.items():
                         total_api_counts[key]['count'] += value['count']

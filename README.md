@@ -45,3 +45,24 @@ optional arguments:
 ```shell
 python dependant-packages.py --api-key c0c....342 numpy,scipy
 ```
+
+
+# Examples
+
+Get numpy/scipy api usage
+
+```shell
+python dependant-packages.py --api-key c0....42 --namespaces=numpy,scipy --output data/numpy-whitelist.ini numpy,scipy 
+python inspect.py data/numpy-scipy-whitelist.ini --output data/numpy-scipy-summary.csv
+```
+
+Get pyarrow api usage. We `--include-dependant-repos` becuase pyarrow on libraries.io did not have dependant libraries but had 208 "dependant repos". By contrast numpy has `68k` so we did not use this for numpy/scipy.
+
+```shell
+python dependant-packages.py --api-key c0....42 --include-dependant-repos --namespaces=pyarrow --output data/pyarrow-whitelist.ini pyarrow
+python inspect.py data/pyarrow-whitelist.ini --output data/pyarrow-summary.csv
+```
+
+# Tests
+
+Tests to demo what `inspect.py` is able to parse from file source.
