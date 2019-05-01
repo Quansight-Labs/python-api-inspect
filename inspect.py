@@ -4,6 +4,7 @@ import os
 import sys
 import argparse
 import urllib.request
+import urllib.error
 import zipfile
 import configparser
 import collections
@@ -44,13 +45,19 @@ def inspect_file_ast(file_ast, namespaces):
         def __init__(self, aliases, namespaces):
             self.aliases = aliases
             self.namespaces = namespaces
-            self.api = collections.defaultdict(int)
+            self.api = collections.defaultdict(lambda: {
+                'count': 0,
+                'n_args': collections.defaultdict(int),
+                'kwargs': collections.defaultdict(int),
+            })
 
         def visit_Call(self, node):
             if not isinstance(node.func, (ast.Attribute, ast.Name)):
                 return
 
-            # get stats on function call
+            num_args = len(node.args) + len(node.keywords)
+            keywords = {k.arg for k in node.keywords}
+
             _node = node.func
             path = []
 
@@ -66,7 +73,10 @@ def inspect_file_ast(file_ast, namespaces):
 
             for i in range(len(path)):
                 if tuple(path[:i+1]) in self.namespaces:
-                    self.api[tuple(path)] += 1
+                    self.api[tuple(path)]['count'] += 1
+                    self.api[tuple(path)]['n_args'][num_args] += 1
+                    for keyword in keywords:
+                        self.api[tuple(path)]['kwargs'][keyword] += 1
                     break
 
     import_visitor = ImportVisit()
@@ -78,9 +88,12 @@ def inspect_file_ast(file_ast, namespaces):
 
 def output_api_counts(api_counts, filename):
     with open(filename, 'w') as f:
-        f.write('path, count\n')
-        for key, value in sorted(api_counts.items(), key=lambda item: item[1]):
-            f.write(f'{key}, {value}\n')
+        f.write('function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count\n')
+        for key, value in sorted(api_counts.items(), key=lambda item: item[1]['count']):
+            sorted_num_args = [(num_args, count) for num_args, count in sorted(api_counts[key]['n_args'].items(), key=lambda item: item[1], reverse=True)]
+
+            sorted_keywords = [(keyword, count) for keyword, count in sorted(api_counts[key]['kwargs'].items(), key=lambda item: item[1], reverse=True)] + [('', '')]
+            f.write(f'{key}, {value["count"]}, {sorted_num_args[0][0]}, {sorted_num_args[0][1]}, {sorted_keywords[0][0]}, {sorted_keywords[0][1]}\n')
 
 
 def cli(arguments):
@@ -102,41 +115,55 @@ def main():
 
     whitelist = configparser.ConfigParser()
     whitelist.read(args.whitelist)
-    total_api_counts = collections.defaultdict(int)
+    total_api_counts = collections.defaultdict(lambda: {
+        'count': 0,
+        'n_args': collections.defaultdict(int),
+        'kwargs': collections.defaultdict(int),
+    })
 
     namespaces = set(whitelist['config']['namespaces'].split(','))
 
     for project_name in whitelist['packages']:
         site, owner, repo, ref = whitelist['packages'][project_name].split('/')
         if site == 'github':
-            zip_filename = download_github_repo(owner, repo, ref, args.cache_dir)
+            try:
+                zip_filename = download_github_repo(owner, repo, ref, args.cache_dir)
+            except urllib.error.HTTPError:
+                continue
         else:
             raise ValueError(f'site {site} not implemented')
 
-        with zipfile.ZipFile(zip_filename) as f_zip:
-            for filename in [_ for _ in f_zip.namelist() if _.endswith('.py')]:
-                print('...', filename[:64])
-                with f_zip.open(filename) as f:
-                    contents = f.read()
-                contents_hash = hashlib.sha256(contents).hexdigest()
+        try:
+            with zipfile.ZipFile(zip_filename) as f_zip:
+                for filename in [_ for _ in f_zip.namelist() if _.endswith('.py')]:
+                    print('...', filename[:64])
+                    with f_zip.open(filename) as f:
+                        contents = f.read()
+                    contents_hash = hashlib.sha256(contents).hexdigest()
 
-                with connection:
-                    result = connection.execute('SELECT stats FROM FileStats WHERE file_hash = ?', (contents_hash,)).fetchone()
-
-                if result:
-                    api_counts = json.loads(result[0])
-                else:
-                    try:
-                        file_ast = ast.parse(contents)
-                    except SyntaxError:
-                        continue
-                    api_counts = inspect_file_ast(file_ast, namespaces)
-                    api_counts = {'.'.join(key): value for key, value in api_counts.items()}
                     with connection:
-                        connection.execute('INSERT INTO FileStats (file_hash, stats) VALUES (?, ?)', (contents_hash, json.dumps(api_counts)))
+                        result = connection.execute('SELECT stats FROM FileStats WHERE file_hash = ?', (contents_hash,)).fetchone()
 
-                for key, value in api_counts.items():
-                    total_api_counts[key] += value
+                    if result:
+                        api_counts = json.loads(result[0])
+                    else:
+                        try:
+                            file_ast = ast.parse(contents)
+                        except SyntaxError:
+                            continue
+                        api_counts = inspect_file_ast(file_ast, namespaces)
+                        api_counts = {'.'.join(key): value for key, value in api_counts.items()}
+                        with connection:
+                            connection.execute('INSERT INTO FileStats (file_hash, stats) VALUES (?, ?)', (contents_hash, json.dumps(api_counts)))
+
+                    for key, value in api_counts.items():
+                        total_api_counts[key]['count'] += value['count']
+                        for num_args, count in value['n_args'].items():
+                            total_api_counts[key]['n_args'][num_args] += count
+                        for keyword, count in value['kwargs'].items():
+                            total_api_counts[key]['kwargs'][keyword] += count
+        except zipfile.BadZipFile:
+            continue
 
     output_api_counts(total_api_counts, args.output)
 
