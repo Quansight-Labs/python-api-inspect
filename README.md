@@ -49,11 +49,29 @@ python dependant-packages.py --api-key c0c....342 numpy,scipy
 
 # Examples
 
-Get numpy/scipy api usage
+Get libraries that depend on `numpy`.
 
 ```shell
-python dependant-packages.py --api-key c0....42 --namespaces=numpy,scipy --output data/numpy-whitelist.ini numpy,scipy 
-python inspect.py data/numpy-scipy-whitelist.ini --output data/numpy-scipy-summary.csv
+python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy 
+```
+
+Get numpy api usage
+
+```shell
+python inspect.py data/numpy-whitelist.ini --output data/numpy-summary.csv
+```
+
+Get numpy api usage (exclude directories `test/tests/venv/site-packages`)
+
+```shell
+python inspect.py data/numpy-whitelist.ini --output data/numpy-summary-without-tests.csv --exclude-dirs test,tests,site-packages
+```
+
+Get scipy api usage
+
+```shell
+python dependant-packages.py --api-key c0....42 --namespaces=scipy --output data/numpy-whitelist.ini numpy,scipy 
+python inspect.py data/scipy-whitelist.ini --output data/scipy-summary.csv
 ```
 
 Get pyarrow api usage. We `--include-dependant-repos` becuase pyarrow on libraries.io did not have dependant libraries but had 208 "dependant repos". By contrast numpy has `68k` so we did not use this for numpy/scipy.
