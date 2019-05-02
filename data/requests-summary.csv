@@ -1,0 +1,99 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+requests.packages.urllib3.__version__.split, 1, 1, 1, , 
+requests.packages.urllib3.HTTPResponse, 1, 1, 1, body, 1
+requests.auth._basic_auth_str, 1, 2, 1, , 
+requests.auth.AuthBase, 1, 0, 1, , 
+requests.packages.urllib3.util.Retry, 1, 4, 1, method_whitelist, 1
+requests.models.urlencode, 1, 1, 1, , 
+requests.utils.parse_header_links, 1, 1, 1, , 
+requests.RequestsContext, 1, 1, 1, session, 1
+requests.adapters.HTTPAdapter.get_connection, 1, 3, 1, None, 1
+requests.packages.urllib3.util.Timeout.from_float, 1, 1, 1, , 
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS.encode, 1, 1, 1, , 
+requests.__version__.split, 1, 1, 1, , 
+requests.utils.unquote_unreserved, 1, 1, 1, , 
+requests.utils.requote_uri, 1, 1, 1, , 
+requests.Requests, 1, 3, 1, , 
+requests.compat.StringIO, 1, 1, 1, , 
+requests.exceptions.ChunkedEncodingError, 1, 0, 1, , 
+requests.utils.get_auth_from_url, 1, 1, 1, , 
+requests.utils.urldefragauth, 1, 1, 1, , 
+requests.api.request, 1, 4, 1, data, 1
+requests.utils.get_encodings_from_content, 1, 1, 1, , 
+requests.compat.urlencode, 1, 1, 1, , 
+requests.models.parse_url, 1, 1, 1, , 
+requests.packages.urllib3.util.ssl_.create_urllib3_context, 1, 1, 1, ciphers, 1
+requests.cookies.extract_cookies_to_jar, 1, 3, 1, , 
+requests.packages.urllib3._collections.RecentlyUsedContainer, 1, 2, 1, dispose_func, 1
+requests.pop, 1, 0, 1, , 
+requests.sort, 1, 1, 1, key, 1
+requests.compat.json.loads, 1, 1, 1, , 
+requests.adapters.Retry, 1, 2, 1, read, 1
+requests.adapters.Retry.from_int, 1, 1, 1, , 
+requests.utils.get_netrc_auth, 1, 1, 1, , 
+requests.packages.urllib3.packages.ssl_match_hostname.match_hostname, 1, 2, 1, , 
+requests.certs.where, 1, 0, 1, , 
+requests.packages.urllib3.util.timeout.Timeout, 1, 2, 1, connect, 1
+requests.packages.urllib3.make_headers, 1, 1, 1, proxy_basic_auth, 1
+requests.packages.urllib3.exceptions.ClosedPoolError, 2, 2, 2, , 
+requests.packages.urllib3.exceptions.EmptyPoolError, 2, 2, 2, , 
+requests.utils.to_native_string, 2, 1, 1, , 
+requests.packages.urllib3.contrib.pyopenssl.extract_from_urllib3, 2, 0, 2, , 
+requests.hooks.default_hooks, 2, 0, 2, , 
+requests.hooks.dispatch_hook, 2, 4, 2, None, 2
+requests.utils.default_user_agent, 2, 0, 2, , 
+requests.PreparedRequest, 2, 0, 2, , 
+requests.models.Response, 2, 0, 2, , 
+requests.cookies.merge_cookies, 2, 2, 2, , 
+requests.compat.urlparse, 2, 1, 2, , 
+requests.Session.__init__, 2, 3, 1, None, 1
+requests.Session.request, 2, 9, 1, None, 2
+requests.exceptions.ReadTimeout, 2, 0, 1, , 
+requests.utils.get_encoding_from_headers, 2, 1, 2, , 
+requests.extend, 2, 1, 2, , 
+requests.packages.urllib3.ProxyManager, 2, 1, 2, None, 2
+requests.packages.urllib3.PoolManager, 2, 1, 2, None, 2
+requests.utils.cookiejar_from_dict, 3, 1, 3, , 
+requests.packages.urllib3.Retry, 3, 3, 2, backoff_factor, 3
+requests.compat.unquote, 3, 1, 3, , 
+requests.exceptions.ConnectTimeout, 3, 0, 2, , 
+requests.sessions.Session, 3, 0, 3, , 
+requests.compat.quote_plus, 3, 1, 3, , 
+requests.compat.json.dumps, 3, 1, 3, , 
+requests.packages.urllib3.contrib.pyopenssl.inject_into_urllib3, 4, 0, 2, , 
+requests.exceptions.Timeout, 4, 0, 2, response, 1
+requests.cookies.cookiejar_from_dict, 4, 1, 4, , 
+requests.exceptions.RequestException, 4, 1, 3, , 
+requests.cookies.create_cookie, 4, 1, 2, None, 2
+requests.LeaseRequest, 5, 2, 5, byte_size, 5
+requests.NackRequest, 5, 2, 5, byte_size, 5
+requests.packages.urllib3.poolmanager.PoolManager, 5, 4, 3, maxsize, 5
+requests.packages.urllib3.response.HTTPResponse, 5, 5, 2, status, 5
+requests.exceptions.ConnectionError, 6, 0, 3, , 
+requests.utils.default_headers, 6, 0, 6, , 
+requests.cookies.RequestsCookieJar, 6, 0, 6, , 
+requests.ConnectionError, 7, 2, 3, response, 2
+requests.RequestException, 8, 1, 6, response, 2
+requests.patch, 8, 3, 6, headers, 6
+requests.DropRequest, 10, 2, 10, byte_size, 5
+requests.ModAckRequest, 10, 2, 10, ack_id, 5
+requests.AckRequest, 10, 3, 10, time_to_ack, 10
+requests.append, 13, 1, 9, , 
+requests.head, 15, 1, 7, headers, 3
+requests.structures.CaseInsensitiveDict, 17, 1, 15, data, 2
+requests.compat.urljoin, 18, 2, 18, , 
+requests.packages.urllib3.disable_warnings, 19, 0, 16, category, 1
+requests.auth.HTTPBasicAuth, 20, 2, 16, , 
+requests.adapters.HTTPAdapter, 20, 1, 8, max_retries, 10
+requests.HTTPError, 20, 1, 18, response, 9
+requests.should.have.length_of, 22, 1, 22, , 
+requests.session, 26, 0, 23, None, 1
+requests.delete, 28, 2, 8, headers, 13
+requests.exceptions.HTTPError, 38, 1, 35, response, 4
+requests.put, 46, 3, 27, data, 37
+requests.Request, 56, 0, 20, headers, 13
+requests.request, 73, 5, 22, headers, 52
+requests.Session, 171, 0, 157, None, 1
+requests.Response, 185, 0, 123, , 
+requests.post, 207, 3, 61, data, 116
+requests.get, 599, 1, 312, headers, 103

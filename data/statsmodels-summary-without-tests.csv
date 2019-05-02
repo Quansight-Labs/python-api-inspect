@@ -1,0 +1,139 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+statsmodels.tsa.ar_model.AR, 1, 1, 1, , 
+statsmodels.api.GLS, 1, 3, 1, null, 1
+statsmodels.formula.api.quantreg, 1, 2, 1, , 
+statsmodels.nonparametric.api.KDEUnivariate, 1, 1, 1, , 
+statsmodels.nonparametric.api.KDEMultivariate, 1, 3, 1, , 
+statsmodels.compat.cStringIO.StringIO, 1, 0, 1, , 
+statsmodels.compat.iteritems, 1, 1, 1, , 
+statsmodels.tsa.stattools._autolag, 1, 7, 1, regresults, 1
+statsmodels.tools.numdiff.approx_hess, 1, 3, 1, kwargs, 1
+statsmodels.tools.numdiff.approx_fprime, 1, 3, 1, kwargs, 1
+statsmodels.tools.decorators.resettable_cache, 1, 0, 1, , 
+statsmodels.tools.numdiff.approx_hess1, 1, 6, 1, centered, 1
+statsmodels.api.datasets.fair.load_pandas, 1, 0, 1, , 
+statsmodels.tsa.base.tsa_model.TimeSeriesModelResults.load, 1, 1, 1, , 
+statsmodels.graphics.utils.create_mpl_fig, 1, 2, 1, , 
+statsmodels.graphics.gofplots.qqplot, 1, 3, 1, line, 1
+statsmodels.stats.libqsturng.qsturng, 1, 3, 1, v, 1
+statsmodels.nonparametric.kernel_regression.KernelReg, 1, 4, 1, bw, 1
+statsmodels.iolib.summary.summary_return, 1, 2, 1, return_fmt, 1
+statsmodels.api.stats.reindex, 1, 1, 1, columns, 1
+statsmodels.api.stats.dropna, 1, 3, 1, how, 1
+statsmodels.tsa.arima_model.ARIMAResults, 1, 3, 1, , 
+statsmodels.tsa.arima_model.ARIMAResultsWrapper, 1, 1, 1, , 
+statsmodels.api.tsa.ARIMA, 1, 2, 1, , 
+statsmodels.api.stats.diagnostic.breaks_cusumolsresid, 1, 2, 1, , 
+statsmodels.regression.linear_model.yule_walker, 1, 2, 1, , 
+statsmodels.formula.api.gls, 1, 2, 1, , 
+statsmodels.api.tsa.detrend, 1, 2, 1, , 
+statsmodels.tsa.stattools.grangercausalitytests, 1, 3, 1, verbose, 1
+statsmodels.tools.numdiff.approx_hess_cs, 1, 3, 1, args, 1
+statsmodels.api.Logit.from_formula, 1, 2, 1, data, 1
+statsmodels.stats.multitest.fdrcorrection, 1, 1, 1, , 
+statsmodels.genmod.families.family.Poisson, 1, 1, 1, link, 1
+statsmodels.genmod.families.family.Gaussian, 1, 1, 1, link, 1
+statsmodels.genmod.families.family.Gamma, 1, 1, 1, link, 1
+statsmodels.genmod.families.family.Binomial, 1, 1, 1, link, 1
+statsmodels.genmod.families.family.InverseGaussian, 1, 1, 1, link, 1
+statsmodels.genmod.families.family.NegativeBinomial, 1, 2, 1, link, 1
+statsmodels.stats.inter_rater.cohens_kappa, 1, 2, 1, return_results, 1
+statsmodels.stats.inter_rater.fleiss_kappa, 1, 1, 1, , 
+statsmodels.nonparametric._kernel_base.gpke, 1, 5, 1, tosum, 1
+statsmodels.formula.api.mixedlm, 1, 4, 1, null, 1
+statsmodels.stats.multicomp.MultiComparison, 1, 2, 1, , 
+statsmodels.regression.linear_model.WLS, 1, 3, 1, weights, 1
+statsmodels.regression.linear_model.OLS, 1, 2, 1, , 
+statsmodels.api.robust.mad, 1, 1, 1, , 
+statsmodels.graphics.regressionplots.abline_plot, 1, 4, 1, ax, 1
+statsmodels.api.graphics.plot_partregress, 1, 6, 1, ax, 1
+statsmodels.api.nonparametric.KDEMultivariateConditional, 1, 5, 1, exog, 1
+statsmodels.api.datasets.sunspots.load_pandas, 1, 0, 1, , 
+statsmodels.api.datasets.co2.load_pandas, 1, 0, 1, , 
+statsmodels.api.datasets.engel.load_pandas, 1, 0, 1, , 
+statsmodels.tsa.filters.filtertools.convolution_filter, 1, 3, 1, , 
+statsmodels.api.families.Gaussian, 1, 0, 1, , 
+statsmodels.api.families.InverseGaussian, 1, 0, 1, , 
+statsmodels.api.families.Binomial, 1, 0, 1, , 
+statsmodels.api.families.Poisson, 1, 0, 1, , 
+statsmodels.api.families.NegativeBinomial, 1, 0, 1, , 
+statsmodels.api.families.Gamma, 1, 0, 1, , 
+statsmodels.api.families.Tweedie, 1, 0, 1, , 
+statsmodels.iolib.summary2._df_to_simpletable, 1, 1, 1, , 
+statsmodels.stats.anova.anova_lm, 1, 1, 1, , 
+statsmodels.stats.diagnostic.acorr_ljungbox, 1, 1, 1, , 
+statsmodels.tools.eval_measures.aicc, 1, 3, 1, , 
+statsmodels.stats.diagnostic.het_breuschpagan, 1, 2, 1, , 
+statsmodels.stats.outliers_influence.summary_table, 2, 2, 2, alpha, 2
+statsmodels.api.WLS, 2, 4, 1, weights, 2
+statsmodels.api.RLM, 2, 3, 1, null, 1
+statsmodels.base.covtype.get_robustcov_results, 2, 5, 2, null, 2
+statsmodels.tools.parallel.parallel_func, 2, 3, 2, verbose, 2
+statsmodels.tsa.tsatools.add_trend, 2, 2, 1, trend, 2
+statsmodels.tools.numdiff._get_epsilon, 2, 4, 2, , 
+statsmodels.formula.api.logit, 2, 2, 2, data, 2
+statsmodels.graphics.tsaplots.plot_pacf, 2, 10, 1, alpha, 2
+statsmodels.stats.multicomp.pairwise_tukeyhsd, 2, 3, 2, alpha, 2
+statsmodels.nonparametric.kernel_density.EstimatorSettings, 2, 2, 2, efficient, 2
+statsmodels.nonparametric.kernel_density.KDEMultivariateConditional, 2, 6, 1, bw, 2
+statsmodels.discrete.discrete_model.Logit, 2, 2, 2, , 
+statsmodels.iolib.table.default_txt_fmt.copy, 2, 0, 2, , 
+statsmodels.api.stats.anova_lm, 2, 2, 2, typ, 2
+statsmodels.api.tsa.arma_generate_sample, 2, 5, 2, sigma, 2
+statsmodels.robust.scale.mad, 2, 1, 2, , 
+statsmodels.stats.api.DescrStatsW, 2, 1, 2, , 
+statsmodels.formula.api.OLS, 2, 2, 2, , 
+statsmodels.iolib.summary2.Summary, 2, 0, 2, , 
+statsmodels.sandbox.tools.cross_val.LeaveOneOut, 2, 1, 2, , 
+statsmodels.tools.eval_measures.rmse, 2, 2, 2, , 
+statsmodels.stats.outliers_influence.variance_inflation_factor, 2, 2, 2, , 
+statsmodels.api.MixedLM.from_formula, 2, 3, 1, groups, 2
+statsmodels.stats.proportion.multinomial_proportions_confint, 2, 3, 2, method, 2
+statsmodels.tsa.stattools.adfuller, 3, 1, 1, autolag, 1
+statsmodels.compat.range, 3, 1, 2, , 
+statsmodels.distributions.ECDF, 3, 1, 3, , 
+statsmodels.api.nonparametric.lowess, 3, 4, 2, delta, 2
+statsmodels.tsa.arima_model.ARIMA, 3, 6, 1, order, 3
+statsmodels.graphics.tsaplots.plot_acf, 3, 3, 2, lags, 3
+statsmodels.tsa.stattools.pacf, 3, 4, 1, nlags, 3
+statsmodels.api.tsa.stattools.adfuller, 3, 2, 3, , 
+statsmodels.stats.libqsturng.psturng, 3, 3, 3, , 
+statsmodels.tools.add_constant, 3, 2, 3, has_constant, 2
+statsmodels.tsa.statespace.structural.UnobservedComponents, 3, 1, 2, null, 2
+statsmodels.formula.api.Logit, 3, 2, 3, , 
+statsmodels.robust.mad, 3, 1, 3, , 
+statsmodels.nonparametric.bandwidths.bw_scott, 3, 1, 3, , 
+statsmodels.nonparametric.bandwidths.bw_silverman, 3, 1, 3, , 
+statsmodels.api.tsa.statespace.SARIMAX, 4, 4, 1, order, 3
+statsmodels.iolib.summary.Summary, 4, 0, 4, , 
+statsmodels.api.qqplot, 4, 2, 3, line, 4
+statsmodels.stats.weightstats.ttest_ind, 4, 5, 4, usevar, 4
+statsmodels.nonparametric.kde.KDEUnivariate, 5, 1, 5, , 
+statsmodels.api.tsa.seasonal_decompose, 5, 3, 2, freq, 5
+statsmodels.api.families.family.Poisson, 5, 0, 5, , 
+statsmodels.api.distributions.ECDF, 5, 1, 5, , 
+statsmodels.nonparametric.kernel_density.KDEMultivariate, 6, 3, 3, bw, 4
+statsmodels.formula.api.ols, 6, 2, 5, data, 6
+statsmodels.tsa.stattools.acf, 6, 3, 4, nlags, 6
+statsmodels.distributions.empirical_distribution.ECDF, 6, 1, 6, , 
+statsmodels.api.graphics.qqplot, 6, 1, 5, line, 1
+statsmodels.api.qqplot_2samples, 6, 3, 5, line, 6
+statsmodels.api.families.family.Gaussian, 6, 0, 5, , 
+statsmodels.sandbox.regression.predstd.wls_prediction_std, 7, 1, 5, exog, 1
+statsmodels.nonparametric.smoothers_lowess.lowess, 7, 3, 6, frac, 6
+statsmodels.api.nonparametric.KDEMultivariate, 7, 3, 7, var_type, 7
+statsmodels.iolib.table.SimpleTable, 7, 4, 3, title, 6
+statsmodels.formula.api.wls, 7, 3, 7, weights, 7
+statsmodels.api.Logit, 7, 2, 7, , 
+statsmodels.api.GLM, 8, 4, 6, family, 7
+statsmodels.api.nonparametric.KDEUnivariate, 8, 1, 8, , 
+statsmodels.stats.proportion.proportion_confint, 8, 4, 7, method, 8
+statsmodels.formula.api.glm, 9, 3, 5, family, 9
+statsmodels.stats.multitest.multipletests, 10, 3, 6, method, 10
+statsmodels.tsa.tsatools.lagmat, 10, 4, 7, trim, 9
+statsmodels.stats.weightstats.DescrStatsW, 11, 2, 6, weights, 7
+statsmodels.api.OLS, 12, 2, 8, missing, 3
+statsmodels.iolib.summary.SimpleTable, 13, 5, 8, title, 13
+statsmodels.api.families.family.Binomial, 18, 0, 16, , 
+statsmodels.api.add_constant, 28, 1, 24, prepend, 2
+statsmodels.sandbox.stats.multicomp.multipletests, 39, 2, 22, method, 36

@@ -41,10 +41,15 @@ def query_dependant_repository_libraries(platform, name, page, apikey):
 
 def gather_dependant_libraries(name, apikey, include_dependant_repos):
     packages = {}
+    include_dependant_libraries = True
     for page in itertools.count(1):
         filename = f'/tmp/depend{"-repo" if include_dependant_repos else ""}-{name}-{page}.json'
         if not os.path.isfile(filename):
-            libraries = query_dependant_libraries('pypi', name, page, apikey)
+            libraries = {}
+            if include_dependant_libraries:
+                libraries.update(query_dependant_libraries('pypi', name, page, apikey))
+                if libraries == {}:
+                    include_dependant_libraries = False
             if include_dependant_repos:
                 libraries.update(query_dependant_repository_libraries('pypi', name, page, apikey))
 

@@ -1,0 +1,46 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+IPython.core.getipython.get_ipython, 1, 0, 1, , 
+IPython.utils.data.uniq_stable, 1, 1, 1, , 
+IPython.core.profiledir.ProfileDir.create_profile_dir_by_name, 1, 1, 1, , 
+IPython.paths.locate_profile, 1, 1, 1, , 
+IPython.html.nbextensions.install_nbextension, 1, 2, 1, verbose, 1
+IPython.nbconvert.filters.highlight._pygment_highlight, 1, 3, 1, , 
+IPython.config.Config, 1, 1, 1, , 
+IPython.nbconvert.exporters.HTMLExporter, 1, 4, 1, template_file, 1
+IPython.nbformat.current.reads_json, 1, 1, 1, , 
+IPython.nbformat.reads, 1, 2, 1, as_version, 1
+IPython.parallel.Client, 1, 0, 1, , 
+IPython.kernel.zmq.session.Session, 1, 1, 1, key, 1
+IPython.utils.path.get_security_file, 1, 1, 1, , 
+IPython.display.FileLink, 1, 1, 1, , 
+IPython.terminal.ipapp.load_default_config, 1, 0, 1, , 
+IPython.display.IFrame, 1, 3, 1, height, 1
+IPython.core.display.display, 1, 1, 1, , 
+IPython.nbformat.current.NotebookNode, 1, 1, 1, output_type, 1
+IPython.nbformat.current.reads, 1, 2, 1, , 
+IPython.nbformat.current.write, 1, 3, 1, , 
+IPython.terminal.embed.InteractiveShellEmbed.__init__, 1, 1, 1, , 
+IPython.terminal.embed.InteractiveShellEmbed.run_cell, 1, 5, 1, , 
+IPython.core.interactiveshell.ExecutionResult, 1, 0, 1, , 
+IPython.core.magic_arguments.parse_argstring, 2, 2, 2, , 
+IPython.core.magic_arguments.magic_arguments, 2, 0, 2, , 
+IPython.display.clear_output, 2, 1, 2, wait, 2
+IPython.core.error.UsageError, 2, 1, 1, , 
+IPython.zmq.blockingkernelmanager.BlockingKernelManager.class_trait_names, 2, 0, 1, , 
+IPython.nbformat.current.read, 2, 2, 2, , 
+IPython.start_ipython, 3, 2, 3, config, 2
+IPython.embed, 3, 3, 1, header, 1
+IPython.core.display.HTML, 3, 1, 3, , 
+IPython.display.Image, 4, 2, 2, embed, 2
+IPython.display, 4, 1, 4, , 
+IPython.lib.kernel.find_connection_file, 4, 2, 1, , 
+IPython.utils.py3compat.unicode_to_str, 4, 1, 4, , 
+IPython.terminal.embed.InteractiveShellEmbed, 5, 2, 3, user_ns, 4
+IPython.get_ipython, 5, 0, 5, , 
+IPython.config.loader.Config, 5, 0, 4, , 
+IPython.display.publish_display_data, 5, 2, 4, metadata, 4
+IPython.display.HTML, 7, 1, 7, , 
+IPython.zmq.blockingkernelmanager.BlockingKernelManager, 7, 0, 2, connection_file, 2
+IPython.display.SVG, 10, 1, 10, data, 1
+IPython.core.magic_arguments.argument, 26, 4, 20, help, 25
+IPython.display.display, 27, 1, 26, display_id, 1
