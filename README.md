@@ -1,15 +1,54 @@
 # API Usage Statistics
 
 Currently inspected libraries:
- - numpy
- - scipy
- - pandas
- - sympy
- - pytorch
- - tensorflow
- - pyarrow 
- - dask
- - matplotlib
+
+<table>
+<tr>
+  <td>numpy</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>scipy</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scipy-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scipy-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>pandas</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>sympy</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/sympy-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/sympy-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>pytorch</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pytorch-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pytorch-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>tensorflow</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/tensorflow-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/tensorflow-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>pyarrow</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pyarrow-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pyarrow-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>dask</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/dask-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/dask-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+<tr>
+  <td>matplotlib</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/matplotlib-summary.csv">summary</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/matplotlib-summary-without-tests.csv">summary without tests</a></td>
+</tr>
+</table>
 
 A whitelist is used to specify repositories that are inspected for a
 specific libraries. For example `data/sympy-whitelist.ini`. Edit or

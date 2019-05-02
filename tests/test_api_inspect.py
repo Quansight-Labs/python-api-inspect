@@ -2,7 +2,7 @@ import sys
 sys.path.insert(0, '.')
 
 import ast
-from inspect import inspect_file_ast
+from inspect_api import inspect_file_ast
 
 EXAMPLE_1 = '''
 # case 1
