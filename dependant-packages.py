@@ -35,14 +35,14 @@ def query_dependant_repository_libraries(platform, name, page, apikey):
         match = re.search('(.*)/(.*)', library['full_name'] or '')
         if match:
             owner, repo = match.groups()
-            packages[repo] = f'github/{owner}/{repo}/master'
+            packages[repo.lower()] = f'github/{owner}/{repo}/master'
     return packages
 
 
 def gather_dependant_libraries(name, apikey, include_dependant_repos):
     packages = {}
     for page in itertools.count(1):
-        filename = f'/tmp/depend{"-repo" if use_dependant_repos else ""}-{name}-{page}.json'
+        filename = f'/tmp/depend{"-repo" if include_dependant_repos else ""}-{name}-{page}.json'
         if not os.path.isfile(filename):
             libraries = query_dependant_libraries('pypi', name, page, apikey)
             if include_dependant_repos:

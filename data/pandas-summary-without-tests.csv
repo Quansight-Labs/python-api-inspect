@@ -1,0 +1,94 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+pandas.core.index.CategoricalIndex, 1, 1, 1, , 
+pandas.core.index.Index, 1, 1, 1, , 
+pandas.core.index.MultiIndex, 1, 2, 1, , 
+pandas.api.types.is_categorical_dtype, 1, 1, 1, , 
+pandas.to_timedelta, 1, 1, 1, , 
+pandas.api.types.infer_dtype, 1, 2, 1, skipna, 1
+pandas.lib.infer_dtype, 1, 1, 1, , 
+pandas.unique, 1, 1, 1, , 
+pandas.api.types.is_numeric_dtype, 1, 1, 1, , 
+pandas.io.common._stringify_path, 1, 1, 1, , 
+pandas.io.common._get_handle, 1, 3, 1, encoding, 1
+pandas.compat.iteritems, 1, 1, 1, , 
+pandas.core.common.is_integer_dtype, 1, 1, 1, , 
+pandas.core.common.is_bool_dtype, 1, 1, 1, , 
+pandas.core.common.is_numeric_dtype, 1, 1, 1, , 
+pandas.core.common.is_datetime64_dtype, 1, 1, 1, , 
+pandas.core.common.is_timedelta64_dtype, 1, 1, 1, , 
+pandas.core.common.is_string_dtype, 1, 1, 1, , 
+pandas.compat.lmap, 1, 2, 1, , 
+pandas.compat.range, 1, 1, 1, , 
+pandas.MultiIndex.from_product, 1, 2, 1, names, 1
+pandas.compat.BytesIO, 1, 0, 1, , 
+pandas.compat.reduce, 1, 2, 1, , 
+pandas.io.common.urlopen, 1, 1, 1, , 
+pandas.io.json.read_json, 1, 1, 1, , 
+pandas.tseries.offsets.MonthEnd, 1, 1, 1, , 
+pandas.tseries.offsets.BDay, 1, 0, 1, , 
+pandas.read_html, 1, 1, 1, , 
+pandas.show_versions, 1, 0, 1, , 
+pandas.infer_freq, 1, 1, 1, , 
+pandas.Int64Index, 1, 1, 1, , 
+pandas.melt, 1, 4, 1, value_name, 1
+pandas.pandas.Series, 1, 2, 1, index, 1
+pandas.pandas.read_csv, 1, 4, 1, dtype, 1
+pandas.read_msgpack, 1, 1, 1, , 
+pandas.Panel.from_dict, 1, 1, 1, , 
+pandas.datetime.now, 1, 0, 1, , 
+pandas.Timestamp.fromtimestamp, 1, 1, 1, , 
+pandas.cut, 1, 3, 1, labels, 1
+pandas.SparseSeries, 1, 1, 1, , 
+pandas.api.types.CategoricalDtype, 1, 2, 1, categories, 1
+pandas.get_option, 2, 1, 2, , 
+pandas.io.json.to_json, 2, 5, 2, double_precision, 2
+pandas.io.common.get_filepath_or_buffer, 2, 2, 1, encoding, 2
+pandas.core.common.is_datetime64tz_dtype, 2, 1, 2, , 
+pandas.compat.StringIO, 2, 0, 1, , 
+pandas.io.common.urlencode, 2, 1, 2, , 
+pandas.MultiIndex.from_arrays, 2, 2, 1, names, 1
+pandas.date_range, 2, 4, 1, end, 2
+pandas.qcut, 2, 3, 2, x, 2
+pandas.read_fwf, 2, 4, 1, header, 2
+pandas.DateOffset, 2, 1, 2, , 
+pandas.to_msgpack, 2, 2, 1, append, 1
+pandas.pivot_table, 2, 4, 2, values, 2
+pandas.read_excel, 2, 1, 1, , 
+pandas.get_dummies, 2, 2, 2, prefix, 2
+pandas.DataFrame.from_items, 2, 1, 2, , 
+pandas.Series.to_frame, 2, 1, 2, , 
+pandas.SparseDataFrame, 2, 3, 2, index, 2
+pandas.core.index.RangeIndex, 3, 2, 2, , 
+pandas.core.common.AbstractMethodError, 3, 1, 3, , 
+pandas.Timestamp, 3, 1, 2, unit, 1
+pandas.io.json.json_normalize, 3, 1, 3, , 
+pandas.Timestamp.now, 3, 1, 2, tz, 2
+pandas.Timedelta, 3, 1, 3, , 
+pandas.compat.long, 4, 1, 4, , 
+pandas.read_sql, 5, 2, 4, parse_dates, 1
+pandas.read_pickle, 5, 1, 5, , 
+pandas.ExcelWriter, 5, 2, 3, engine, 3
+pandas.ExcelFile, 5, 1, 5, , 
+pandas.Categorical, 6, 1, 3, categories, 3
+pandas.notnull, 6, 1, 6, , 
+pandas.ewma, 6, 3, 6, span, 6
+pandas.core.common.is_categorical_dtype, 8, 1, 8, , 
+pandas.MultiIndex.from_tuples, 8, 1, 5, names, 3
+pandas.read_json, 9, 1, 7, encoding, 1
+pandas.Index, 9, 2, 6, name, 6
+pandas.read_sql_query, 11, 2, 10, sql, 1
+pandas.HDFStore, 11, 2, 5, mode, 4
+pandas.to_numeric, 12, 2, 9, errors, 9
+pandas.set_option, 13, 2, 13, , 
+pandas.DataFrame.from_records, 15, 1, 7, columns, 8
+pandas.DatetimeIndex, 15, 1, 10, tz, 2
+pandas.isnull, 16, 1, 16, , 
+pandas.tseries.frequencies.to_offset, 16, 1, 16, , 
+pandas.DataFrame.from_dict, 16, 1, 9, orient, 7
+pandas.read_table, 27, 3, 11, index_col, 17
+pandas.merge, 30, 4, 21, how, 26
+pandas.to_datetime, 65, 2, 29, utc, 16
+pandas.read_csv, 136, 2, 48, sep, 37
+pandas.concat, 165, 1, 85, axis, 56
+pandas.Series, 205, 2, 91, index, 75
+pandas.DataFrame, 634, 1, 318, columns, 222
