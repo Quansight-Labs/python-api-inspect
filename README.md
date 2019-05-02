@@ -6,9 +6,9 @@ Currently inspected libraries:
 <tr>
   <th>Library</th>
   <th>Whitelist</th>
-  <th>Summary</th>
-  <th>Summary without tests</th>
-  <th>Summary notebooks only</th>
+  <th>Summary only `.py`</th>
+  <th>Summary only `.py` without tests</th>
+  <th>Summary only `.ipynb`</th>
 </tr>
 <tr>
   <td>dask</td>
