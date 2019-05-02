@@ -1,3 +1,4 @@
+import re
 import ast
 import glob
 import os
@@ -18,10 +19,43 @@ def download_github_repo(owner, repo, ref, cache_dir=None):
     if not os.path.isfile(filename):
         url = f'https://github.com/{owner}/{repo}/archive/{ref}.zip'
         print(f'downloading: {url}')
-        with urllib.request.urlopen(url) as response:
-            with open(filename, 'wb') as f:
-                f.write(response.read())
+        try:
+            with urllib.request.urlopen(url) as response:
+                with open(filename, 'wb') as f:
+                    f.write(response.read())
+        except urllib.error.HTTPError:
+            print(f'failed to download: {url}')
+            return None
+    else:
+        print(f'cached: {filename:64}')
     return filename
+
+
+def parse_filename(filename, contents):
+    try:
+        if filename.endswith('.ipynb'):
+            try:
+                data = json.loads(contents)
+            except json.decoder.JSONDecodeError:
+                print(f'error decoding json {filename:64}')
+                return None
+
+            if data.get('metadata', {}).get('kernelspec', {}).get('language') != 'python':
+                print(f'unable to parse non python notebook {filename:64}')
+                return None
+
+            if not 'cells' in data:
+                print(f'notebook does not have any cells {filename:64}')
+                return None
+            source = '\n'.join([''.join(cell['source']) for cell in data['cells'] if cell['cell_type'] == 'code'])
+            source = re.sub('%{1,2}.*', '', source)
+            return ast.parse(source)
+        elif filename.endswith('.py'):
+            return ast.parse(contents)
+        else:
+            raise ValueError(f'unknown how to handle extension {filename[-10:]}')
+    except SyntaxError:
+        print(f'syntax error parsing: {filename:64}')
 
 
 def inspect_file_ast(file_ast, namespaces):
@@ -100,6 +134,7 @@ def inspect_file_ast(file_ast, namespaces):
 
 
 def output_api_counts(api_counts, filename):
+    print(f'writing {len(api_counts)} function calls to {filename:64}')
     with open(filename, 'w') as f:
         f.write('function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count\n')
         for key, value in sorted(api_counts.items(), key=lambda item: item[1]['count']):
@@ -116,12 +151,16 @@ def cli(arguments):
     parser.add_argument('--exclude-dirs', help='directories to exclude from statistics')
     parser.add_argument('--include-dirs', help='directories to include in statistics')
     parser.add_argument('--output', default='summary.csv', help="output filename")
+    parser.add_argument('--extensions', default='py', help="filename extensions to parse")
     args = parser.parse_args()
+
     return args
 
 
 def main():
     args = cli(sys.argv)
+
+    # ensure cache directory exists
     os.makedirs(args.cache_dir, exist_ok=True)
 
     connection = sqlite3.connect(os.path.join(args.cache_dir, 'inspect.sqlite'))
@@ -147,29 +186,31 @@ CREATE TABLE IF NOT EXISTS FileStats (
     namespaces = set(whitelist['config']['namespaces'].split(','))
     namespaces_string = ','.join(sorted(namespaces))
 
+    filename_extensions = tuple(set('.' + _ for _ in args.extensions.split(',')))
+
     exclude_dirs = set(args.exclude_dirs.split(',')) if args.exclude_dirs else set()
     include_dirs = set(args.include_dirs.split(',')) if args.include_dirs else set()
 
     for project_name in whitelist['packages']:
         site, owner, repo, ref = whitelist['packages'][project_name].split('/')
         if site == 'github':
-            try:
-                zip_filename = download_github_repo(owner, repo, ref, args.cache_dir)
-            except urllib.error.HTTPError:
-                continue
+            zip_filename = download_github_repo(owner, repo, ref, args.cache_dir)
+            if zip_filename is None:
+                continue # failed to download
         else:
-            raise ValueError(f'site {site} not implemented')
+            raise NotImplmentedError(f'site {site} not implemented')
 
         try:
             with zipfile.ZipFile(zip_filename) as f_zip:
-                for filename in [_ for _ in f_zip.namelist() if _.endswith('.py')]:
+                filenames = [_ for _ in f_zip.namelist() if _.endswith(filename_extensions)]
+                for filename in filenames:
                     if include_dirs and (set(filename.split(os.sep)) & include_dirs) == set():
                         continue
 
                     if (set(filename.split(os.sep)) & exclude_dirs) != set():
                         continue
 
-                    print('...', filename[:64])
+                    print(f'... {filename[:64]}')
                     with f_zip.open(filename) as f:
                         contents = f.read()
                     contents_hash = hashlib.sha256(contents).hexdigest()
@@ -180,10 +221,9 @@ CREATE TABLE IF NOT EXISTS FileStats (
                     if result:
                         api_counts = json.loads(result[0])
                     else:
-                        try:
-                            file_ast = ast.parse(contents)
-                        except SyntaxError:
-                            continue
+                        file_ast = parse_filename(filename, contents)
+                        if file_ast is None:
+                            continue # parsing error/syntax error
                         api_counts = inspect_file_ast(file_ast, namespaces)
                         api_counts = {'.'.join(key): value for key, value in api_counts.items()}
                         with connection:

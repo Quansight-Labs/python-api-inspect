@@ -1,0 +1,38 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+matplotlib.rc, 1, 2, 1, None, 1
+matplotlib.pyplot.vlines, 1, 2, 1, , 
+matplotlib.pyplot.grid, 1, 1, 1, b, 1
+matplotlib.pyplot.imread, 1, 1, 1, , 
+matplotlib.pyplot.axis, 1, 1, 1, , 
+matplotlib.dates.num2date, 1, 2, 1, tz, 1
+matplotlib.dates.date2num, 1, 1, 1, , 
+matplotlib.pyplot.semilogy, 1, 2, 1, alpha, 1
+matplotlib.pyplot.axhline, 2, 4, 2, color, 2
+matplotlib.pyplot.errorbar, 2, 5, 2, xerr, 2
+matplotlib.style.use, 2, 1, 1, , 
+matplotlib.pyplot.get_cmap, 3, 1, 3, , 
+matplotlib.pyplot.axvline, 3, 3, 2, color, 2
+matplotlib.pyplot.yticks, 4, 1, 4, , 
+matplotlib.colors.Normalize, 4, 2, 4, vmax, 4
+matplotlib.pyplot.tight_layout, 5, 0, 5, , 
+matplotlib.pyplot.xticks, 5, 2, 3, rotation, 3
+matplotlib.pyplot.scatter, 5, 2, 5, , 
+matplotlib.pyplot.gca, 6, 0, 6, , 
+matplotlib.pyplot.subplot, 7, 3, 5, title, 1
+matplotlib.pyplot.fill_between, 7, 5, 4, color, 6
+matplotlib.pyplot.hist, 7, 2, 5, bins, 6
+matplotlib.pyplot.imshow, 8, 3, 4, cmap, 8
+matplotlib.pyplot.axes, 8, 1, 8, , 
+matplotlib.pyplot.xlim, 9, 1, 8, , 
+matplotlib.pyplot.colorbar, 10, 1, 9, , 
+matplotlib.pyplot.close, 12, 1, 12, , 
+matplotlib.pyplot.ylim, 13, 1, 11, , 
+matplotlib.pyplot.show, 14, 0, 14, , 
+matplotlib.pyplot.style.use, 16, 1, 16, , 
+matplotlib.pyplot.legend, 45, 0, 32, loc, 6
+matplotlib.pyplot.title, 50, 1, 47, fontsize, 3
+matplotlib.pyplot.ylabel, 53, 1, 47, fontsize, 6
+matplotlib.pyplot.xlabel, 60, 1, 55, fontsize, 5
+matplotlib.pyplot.subplots, 77, 1, 42, figsize, 44
+matplotlib.pyplot.figure, 88, 1, 85, figsize, 85
+matplotlib.pyplot.plot, 133, 5, 36, label, 63

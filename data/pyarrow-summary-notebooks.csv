@@ -1,0 +1,7 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+pyarrow.parquet.read_table, 1, 1, 1, , 
+pyarrow.parquet.write_table, 1, 2, 1, , 
+pyarrow.RecordBatch.from_pandas, 1, 1, 1, , 
+pyarrow.OSFile, 1, 2, 1, , 
+pyarrow.RecordBatchFileWriter, 1, 2, 1, , 
+pyarrow.Table.from_pandas, 2, 1, 2, , 

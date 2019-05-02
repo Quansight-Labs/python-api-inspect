@@ -1,0 +1,30 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+statsmodels.api.Probit, 1, 2, 1, , 
+statsmodels.datasets.grunfeld.load_pandas, 1, 0, 1, , 
+statsmodels.api.datasets.sunspots.load_pandas, 1, 0, 1, , 
+statsmodels.sandbox.regression.predstd.wls_prediction_std, 1, 1, 1, , 
+statsmodels.graphics.tsaplots.plot_pacf, 1, 3, 1, lags, 1
+statsmodels.tsa.stattools.periodogram, 1, 1, 1, , 
+statsmodels.tsa.arima_process.arma_generate_sample, 1, 3, 1, ma, 1
+statsmodels.tsa.statespace.structural.UnobservedComponents, 1, 2, 1, endog, 1
+statsmodels.formula.api.poisson, 1, 2, 1, data, 1
+statsmodels.api.tsa.AR, 1, 1, 1, , 
+statsmodels.api.stats.durbin_watson, 1, 1, 1, , 
+statsmodels.api.tsa.ARMA, 1, 2, 1, , 
+statsmodels.api.datasets.engel.load_pandas, 1, 0, 1, , 
+statsmodels.api.Logit, 2, 2, 2, , 
+statsmodels.api.graphics.tsa.plot_acf, 2, 3, 2, lags, 2
+statsmodels.api.graphics.tsa.plot_pacf, 2, 3, 2, lags, 2
+statsmodels.tsa.seasonal.seasonal_decompose, 2, 3, 1, two_sided, 2
+statsmodels.graphics.api.plot_fit, 2, 3, 2, ax, 2
+statsmodels.formula.api.logit, 2, 2, 2, data, 2
+statsmodels.graphics.api.qqplot, 3, 2, 2, ax, 3
+statsmodels.tsa.tsatools.detrend, 3, 1, 2, order, 1
+statsmodels.datasets.modechoice.load_pandas, 4, 0, 2, , 
+statsmodels.api.datasets.get_rdataset, 5, 2, 3, , 
+statsmodels.graphics.api.tsa.plot_acf, 5, 3, 5, lags, 5
+statsmodels.graphics.tsaplots.plot_acf, 7, 3, 7, lags, 7
+statsmodels.api.OLS, 8, 2, 8, , 
+statsmodels.tsa.holtwinters.ExponentialSmoothing, 9, 5, 9, damped, 9
+statsmodels.formula.api.ols, 13, 2, 13, data, 10
+statsmodels.api.add_constant, 18, 1, 15, has_constant, 3

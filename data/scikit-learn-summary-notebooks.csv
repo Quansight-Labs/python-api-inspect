@@ -1,0 +1,132 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+sklearn.preprocessing.normalize, 1, 1, 1, , 
+sklearn.datasets.california_housing.fetch_california_housing, 1, 0, 1, , 
+sklearn.ensemble.AdaBoostRegressor, 1, 0, 1, , 
+sklearn.linear_model.Lasso, 1, 0, 1, , 
+sklearn.metrics.auc, 1, 2, 1, , 
+sklearn.metrics.classification_report, 1, 3, 1, target_names, 1
+sklearn.datasets.load_diabetes, 1, 0, 1, , 
+sklearn.ensemble.ExtraTreesRegressor, 1, 0, 1, , 
+sklearn.ensemble.ExtraTreesClassifier, 1, 0, 1, , 
+sklearn.gaussian_process.GaussianProcess, 1, 5, 1, thetaU, 1
+sklearn.ensemble.BaggingClassifier, 1, 4, 1, max_samples, 1
+sklearn.metrics.pairwise_distances_argmin, 1, 2, 1, , 
+sklearn.cluster.SpectralClustering, 1, 3, 1, affinity, 1
+sklearn.datasets.load_sample_image, 1, 1, 1, , 
+sklearn.datasets.fetch_species_distributions, 1, 0, 1, , 
+sklearn.datasets.species_distributions.construct_grids, 1, 1, 1, , 
+sklearn.feature_extraction.image.PatchExtractor, 1, 3, 1, patch_size, 1
+sklearn.metrics.pairwise.cosine_similarity, 1, 2, 1, , 
+sklearn.datasets.load_breast_cancer, 1, 0, 1, , 
+sklearn.ensemble.VotingClassifier, 1, 2, 1, estimators, 1
+sklearn.preprocessing.LabelBinarizer, 1, 0, 1, , 
+sklearn.preprocessing.scale, 1, 1, 1, , 
+sklearn.preprocessing.MinMaxScaler, 1, 1, 1, copy, 1
+sklearn.datasets.fetch_rcv1, 1, 0, 1, , 
+sklearn.cross_validation.ShuffleSplit, 1, 4, 1, n_iter, 1
+sklearn.neighbors.KNeighborsRegressor, 1, 1, 1, n_neighbors, 1
+sklearn.datasets.fetch_california_housing, 1, 0, 1, , 
+sklearn.model_selection.ShuffleSplit, 1, 3, 1, test_size, 1
+sklearn.base.clone, 1, 1, 1, , 
+sklearn.discriminant_analysis.LinearDiscriminantAnalysis, 1, 1, 1, n_components, 1
+sklearn.externals.joblib.dump, 1, 2, 1, , 
+sklearn.externals.joblib.load, 1, 1, 1, , 
+sklearn.gaussian_process.kernels.Matern, 1, 1, 1, length_scale, 1
+sklearn.utils.validation.check_random_state, 1, 1, 1, , 
+sklearn.metrics.silhouette_score, 1, 2, 1, , 
+sklearn.metrics.precision_recall_curve, 1, 2, 1, , 
+sklearn.model_selection.LeaveOneGroupOut, 1, 0, 1, , 
+sklearn.decomposition.TruncatedSVD, 1, 2, 1, n_components, 1
+sklearn.metrics.pairwise.pairwise_distances, 1, 2, 1, metric, 1
+sklearn.model_selection.ParameterGrid, 1, 1, 1, , 
+sklearn.gaussian_process.kernels.DotProduct, 1, 0, 1, , 
+sklearn.model_selection.KFold, 1, 3, 1, shuffle, 1
+sklearn.gaussian_process.GaussianProcessClassifier, 1, 2, 1, n_restarts_optimizer, 1
+sklearn.ensemble.GradientBoostingClassifier, 2, 3, 1, learning_rate, 2
+sklearn.metrics.r2_score, 2, 2, 2, , 
+sklearn.datasets.base.Bunch, 2, 4, 2, target, 2
+sklearn.metrics.precision_recall_fscore_support, 2, 3, 2, labels, 2
+sklearn.linear_model.RANSACRegressor, 2, 0, 2, , 
+sklearn.cluster.MiniBatchKMeans, 2, 1, 2, n_clusters, 1
+sklearn.feature_extraction.text.HashingVectorizer, 2, 2, 1, ngram_range, 1
+sklearn.ensemble.IsolationForest, 2, 1, 2, random_state, 1
+sklearn.learning_curve.learning_curve, 2, 5, 1, cv, 2
+sklearn.feature_extraction.DictVectorizer, 2, 2, 2, sparse, 2
+sklearn.datasets.samples_generator.make_circles, 2, 3, 2, factor, 2
+sklearn.decomposition.RandomizedPCA, 2, 3, 1, whiten, 1
+sklearn.metrics.pairwise_distances, 2, 1, 2, , 
+sklearn.manifold.LocallyLinearEmbedding, 2, 4, 1, n_neighbors, 2
+sklearn.neighbors.KernelDensity, 2, 2, 2, bandwidth, 2
+sklearn.cross_validation.StratifiedKFold, 2, 2, 2, n_folds, 2
+sklearn.preprocessing.LabelEncoder, 2, 0, 2, , 
+sklearn.naive_bayes.MultinomialNB, 2, 0, 2, , 
+sklearn.svm.NuSVC, 2, 2, 2, nu, 2
+sklearn.metrics.make_scorer, 2, 2, 2, greater_is_better, 2
+sklearn.cross_validation.cross_val_predict, 3, 4, 3, cv, 3
+sklearn.learning_curve.validation_curve, 3, 6, 2, cv, 3
+sklearn.preprocessing.PolynomialFeatures, 3, 2, 3, include_bias, 3
+sklearn.metrics.hamming_loss, 3, 2, 3, , 
+sklearn.neural_network.MLPClassifier, 3, 0, 3, , 
+sklearn.svm.SVR, 3, 4, 3, degree, 3
+sklearn.datasets.make_swiss_roll, 3, 3, 3, random_state, 3
+sklearn.decomposition.IncrementalPCA, 3, 2, 2, n_components, 3
+sklearn.gaussian_process.GaussianProcessRegressor, 3, 1, 2, kernel, 3
+sklearn.datasets.make_regression, 4, 1, 3, n_informative, 4
+sklearn.datasets.fetch_lfw_people, 4, 1, 3, min_faces_per_person, 3
+sklearn.manifold.MDS, 4, 2, 3, random_state, 4
+sklearn.svm.LinearSVR, 4, 2, 3, random_state, 4
+sklearn.tree.export_graphviz, 4, 6, 2, filled, 4
+sklearn.datasets.load_wine, 4, 0, 4, , 
+sklearn.metrics.precision_score, 4, 2, 4, , 
+sklearn.metrics.recall_score, 4, 2, 4, , 
+sklearn.metrics.f1_score, 4, 2, 4, , 
+sklearn.linear_model.Ridge, 5, 0, 3, alpha, 2
+sklearn.datasets.make_classification, 5, 2, 3, n_informative, 5
+sklearn.manifold.TSNE, 5, 2, 3, random_state, 5
+sklearn.model_selection.RandomizedSearchCV, 5, 8, 2, n_iter, 5
+sklearn.decomposition.KernelPCA, 5, 3, 2, kernel, 5
+sklearn.gaussian_process.kernels.RBF, 5, 2, 4, length_scale, 5
+sklearn.gaussian_process.kernels.WhiteKernel, 5, 0, 2, noise_level, 3
+sklearn.metrics.mean_squared_error, 6, 2, 6, , 
+sklearn.datasets.make_circles, 6, 3, 3, n_samples, 6
+sklearn.manifold.Isomap, 6, 1, 5, n_components, 6
+sklearn.datasets.make_blobs, 6, 5, 3, cluster_std, 6
+sklearn.datasets.fetch_mldata, 6, 1, 5, data_home, 1
+sklearn.linear_model.SGDClassifier, 7, 1, 2, random_state, 3
+sklearn.mixture.GMM, 7, 3, 5, covariance_type, 6
+sklearn.preprocessing.StandardScaler, 7, 0, 7, , 
+sklearn.model_selection.StratifiedShuffleSplit, 7, 3, 7, test_size, 7
+sklearn.cross_validation.cross_val_score, 8, 4, 4, cv, 7
+sklearn.naive_bayes.GaussianNB, 8, 0, 8, , 
+sklearn.model_selection.GridSearchCV, 8, 3, 5, scoring, 3
+sklearn.grid_search.GridSearchCV, 8, 3, 5, cv, 5
+sklearn.datasets.samples_generator.make_blobs, 8, 4, 8, cluster_std, 8
+sklearn.neighbors.KNeighborsClassifier, 9, 1, 8, n_neighbors, 8
+sklearn.linear_model.LogisticRegressionCV, 9, 0, 9, , 
+sklearn.preprocessing.Imputer, 9, 1, 5, strategy, 9
+sklearn.datasets.make_moons, 10, 3, 6, random_state, 9
+sklearn.svm.LinearSVC, 10, 0, 5, random_state, 5
+sklearn.ensemble.RandomForestRegressor, 10, 1, 3, n_estimators, 5
+sklearn.metrics.confusion_matrix, 10, 2, 10, , 
+sklearn.metrics.roc_auc_score, 11, 2, 11, , 
+sklearn.metrics.roc_curve, 11, 2, 11, , 
+sklearn.datasets.fetch_20newsgroups, 11, 5, 5, subset, 10
+sklearn.cluster.KMeans, 11, 1, 6, n_clusters, 10
+sklearn.feature_extraction.text.CountVectorizer, 13, 1, 7, stop_words, 6
+sklearn.datasets.load_boston, 13, 0, 13, , 
+sklearn.tree.DecisionTreeRegressor, 13, 1, 7, max_depth, 10
+sklearn.linear_model.LinearRegression, 14, 0, 11, fit_intercept, 3
+sklearn.feature_extraction.text.TfidfVectorizer, 14, 0, 5, stop_words, 4
+sklearn.model_selection.cross_val_score, 15, 6, 6, scoring, 13
+sklearn.datasets.load_digits, 16, 0, 12, n_class, 3
+sklearn.ensemble.RandomForestClassifier, 21, 3, 7, random_state, 13
+sklearn.svm.SVC, 22, 2, 15, kernel, 17
+sklearn.decomposition.PCA, 23, 1, 14, n_components, 19
+sklearn.linear_model.LogisticRegression, 24, 0, 8, solver, 11
+sklearn.model_selection.train_test_split, 24, 4, 16, test_size, 22
+sklearn.tree.DecisionTreeClassifier, 26, 0, 12, max_depth, 9
+sklearn.cross_validation.train_test_split, 27, 3, 15, test_size, 17
+sklearn.metrics.accuracy_score, 35, 2, 35, y_true, 5
+sklearn.datasets.load_iris, 39, 0, 39, , 
+sklearn.pipeline.Pipeline, 47, 1, 47, steps, 1
+sklearn.pipeline.make_pipeline, 64, 2, 40, , 
