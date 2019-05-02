@@ -65,12 +65,51 @@ Currently inspected libraries:
 </tr>
 </table>
 
+# Usage
+
 A whitelist is used to specify repositories that are inspected for a
-specific libraries. For example `data/sympy-whitelist.ini`. Edit or
-add libaries to the whitelist to get better statistics. HEAVY caching
-is used for downloading repo and inspection of each file. Currently
-supports introspection with the following approaches for function
-usage.
+specific libraries that use a given namespace. A namespace is for
+example `numpy.random`. We would then use the whitelist of
+repositories to search for the usage of any function in
+`numpy.random.*`. The whitelist has the following format.
+
+```ini
+[config]
+namespaces=numpy.random,scipy
+
+[libraries]
+pandas=github/pandas-dev/pandas/master
+...
+```
+
+There is a script to help generate the libraries/repositories to
+search for the usage of a given python namespaces. Thanks to the
+awesome work at [libaries.io](https://libraries.io).
+
+```shell
+python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy 
+```
+
+Notice that we need a [libraries.io api
+key](https://libraries.io/api). This step is only needed once to
+generate a rough list of repositories to search. You will see that
+many whitelists have already been created and they only need to be
+edited. The previous command gets a list of all libraries that depend
+on `numpy` or `scipy`. The `--namespaces` argument specifies which
+namespaces to use with inspect. Finally we use the whitelist to search
+for the usage of the namespace. Notice how we use `--exclude-dirs` to
+not analyze filenames within a directory named `test`, `tests`, or
+`site-packages`.
+
+```shell
+python inspect_api.py data/numpy-whitelist.ini --output data/numpy-summary-without-tests.csv --exclude-dirs test,tests,site-packages
+```
+
+`inspect_api.py` works by using the `ast.parse` method in the standard
+library and analyzes the ast for function names and imports. Much more
+is possible with this libraries. Caching is used heavily at each
+step. If a file has been previously analyzed it will be parse
+instantaneously the second time. So you may cancel the run at any time. Currently it is capable of parsing the following from files.
 
 ```python
 import numpy
@@ -84,14 +123,41 @@ random.random()
 rnd.random()
 ```
 
-# Inspect API
+# dependant-packages.py
+
+```shell
+usage: dependant-packages.py [-h] [--include-dependant-repos] --api-key API_KEY
+                             --namespaces NAMESPACES [--output OUTPUT]
+                             libraries
+
+positional arguments:
+  libraries             libraries to gather dependants for
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --include-dependant-repos
+                        include libraries.io dependant repositories (warning for
+                        popular packages this can be huge)
+  --api-key API_KEY     api key from libraries.io
+  --namespaces NAMESPACES
+                        namespaces to look for
+  --output OUTPUT       output filename
+```
+
+## example usage
+
+```shell
+python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy 
+```
+
+# inspect_api.py
 
 Inspect API of given libraries and number of times functions called
 
 ```shell
-usage: inspect.py [-h] [--cache-dir CACHE_DIR] [--exclude-dirs EXCLUDE_DIRS]
-                  [--include-dirs INCLUDE_DIRS] [--output OUTPUT]
-                  whitelist
+usage: inspect_api..py [-h] [--cache-dir CACHE_DIR] [--exclude-dirs EXCLUDE_DIRS]
+                       [--include-dirs INCLUDE_DIRS] [--output OUTPUT]
+                       whitelist
 
 positional arguments:
   whitelist             whitelist filename
@@ -118,143 +184,6 @@ function calls within these namespaces.
 python inspect.py whitelist.ini
 ```
     
-# Gather Library Dependent Packages
-
-```shell
-usage: dependant-packages.py [-h] [--include-dependant-repos] --api-key API_KEY
-                             --namespaces NAMESPACES [--output OUTPUT]
-                             libraries
-
-positional arguments:
-  libraries             libraries to gather dependants for
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --include-dependant-repos
-                        include libraries.io dependant repositories (warning for
-                        popular packages this can be huge)
-  --api-key API_KEY     api key from libraries.io
-  --namespaces NAMESPACES
-                        namespaces to look for
-  --output OUTPUT       output filename
-```
-
-## usage
-
-```shell
-python dependant-packages.py --api-key c0c....342 numpy,scipy
-```
-
-# Examples
-
-## numpy
-
-Get libraries that depend on `numpy`.
-
-```shell
-python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy 
-```
-
-Get numpy api usage
-
-```shell
-python inspect.py data/numpy-whitelist.ini --output data/numpy-summary.csv
-```
-
-Get numpy api usage (exclude directories `test, tests, site-packages`)
-
-```shell
-python inspect.py data/numpy-whitelist.ini --output data/numpy-summary-without-tests.csv --exclude-dirs test,tests,site-packages
-```
-
-## scipy
-
-Get scipy api usage
-
-```shell
-python dependant-packages.py --api-key c0....42 --namespaces=scipy --output data/numpy-whitelist.ini numpy,scipy 
-python inspect.py data/scipy-whitelist.ini --output data/scipy-summary.csv
-```
-
-Get scipy api usage (exclude directories `test, tests, site-packages`)
-
-```shell
-python inspect.py data/scipy-whitelist.ini --output data/scipy-summary-without-tests.csv --exclude-dirs test,tests,site-packages
-```
-
-## pyarrow
-
-Get pyarrow api usage. We `--include-dependant-repos` becuase pyarrow on libraries.io did not have dependant libraries but had 208 "dependant repos". By contrast numpy has `68k` so we did not use this for numpy/scipy.
-
-```shell
-python dependant-packages.py --api-key c0....42 --include-dependant-repos --namespaces=pyarrow --output data/pyarrow-whitelist.ini pyarrow
-python inspect.py data/pyarrow-whitelist.ini --output data/pyarrow-summary.csv
-```
-
-```shell
-python inspect.py data/pyarrow-whitelist.ini --output data/pyarrow-summary-without-tests.csv --exclude-dirs test,tests,site-packages
-```
-
-## dask
-
-```shell
-python dependant-packages.py --api-key c0c...42 --namespaces=dask --output data/dask-whitelist.ini dask,distributed --include-dependant-repos
-```
-
-```shell
-python inspect.py data/dask-whitelist.ini --output data/dask-summary.csv --exclude-dirs venv,site-packages
-```
-
-## pytorch
-
-```shell
-python dependant-packages.py --api-key c0c...42 --namespaces=torch --output data/pytorch-whitelist.ini pytorch --include-dependant-repos
-```
-
-```shell
-python inspect.py data/pytorch-whitelist.ini --output data/pytorch-summary.csv --exclude-dirs venv,site-packages
-```
-
-## tensorflow
-
-```shell
-python dependant-packages.py --api-key c0c...42 --namespaces=tensorflow --output data/tensorflow-whitelist.ini tensorflow --include-dependant-repos
-```
-
-```shell
-python inspect.py data/tensorflow-whitelist.ini --output data/tensorflow-summary.csv --exclude-dirs venv,site-packages
-```
-
-## pandas
-
-```shell
-python dependant-packages.py --api-key c0c...42 --namespaces=pandas --output data/pandas-whitelist.ini pandas
-```
-
-```shell
-python inspect.py data/pandas-whitelist.ini --output data/pandas-summary.csv --exclude-dirs venv,site-packages
-```
-
-## matplotlib
-
-```shell
-python dependant-packages.py --api-key c0c...42 --namespaces=matplotlib --output data/matplotlib-whitelist.ini matplotlib
-```
-
-```shell
-python inspect.py data/matplotlib-whitelist.ini --output data/matplotlib-summary.csv --exclude-dirs venv,site-packages
-```
-
-## sympy
-
-```shell
-python dependant-packages.py --api-key c0c...42 --namespaces=sympy --output data/sympy-whitelist.ini sympy --include-dependant-repos
-```
-
-```shell
-python inspect.py data/sympy-whitelist.ini --output data/sympy-summary.csv --exclude-dirs venv,site-packages
-```
-
 # Tests
 
 Tests to demo what `inspect.py` is able to parse from file source. The
