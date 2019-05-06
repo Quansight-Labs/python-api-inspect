@@ -1,5 +1,5 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
-scipy.stats.gamma.rvs, 1, 3, 1, scale, 1
+scipy.stats.gamma.rvs, 1, 3, 1, size, 1
 scipy.stats.poisson.rvs, 1, 1, 1, , 
 scipy.stats.linregress, 1, 2, 1, , 
 scipy.linalg.eigvalsh, 1, 1, 1, , 

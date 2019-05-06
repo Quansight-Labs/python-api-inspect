@@ -1,68 +1,22 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
-scipy.linalg.blas.find_best_blas_type, 1, 1, 1, , 
-scipy.fftpack.shift, 1, 2, 1, , 
-scipy.integrate.tests.test_quadpack.get_clib_test_routine, 1, 4, 1, , 
-scipy.LowLevelCallable, 1, 1, 1, , 
-scipy.interpolate.SmoothBivariateSpline, 1, 3, 1, , 
-scipy.interpolate.LSQBivariateSpline, 1, 5, 1, , 
-scipy.linalg.tri, 1, 1, 1, , 
-scipy.optimize.tests.test_linprog.lpgen_2d, 1, 2, 1, , 
-scipy.optimize._tstutils.fstrings.index, 1, 1, 1, , 
-scipy.optimize._tstutils.mstrings.index, 1, 1, 1, , 
-scipy.signal.peak_widths, 1, 4, 1, , 
-scipy.signal.correlate2d, 1, 4, 1, mode, 1
-scipy.signal.impulse, 1, 2, 1, T, 1
-scipy.sparse.linalg.expm_multiply, 1, 2, 1, , 
-scipy.sort, 1, 1, 1, , 
-scipy.sparse.linalg.matfuncs._onenorm, 1, 1, 1, , 
-scipy.sparse.linalg.matfuncs._onenormest_matrix_power, 1, 2, 1, , 
-scipy.sparse.kronsum, 1, 2, 1, , 
-scipy.sparse.linalg.minres, 1, 2, 1, , 
-scipy.sparse.linalg.gcrotmk, 1, 2, 1, , 
-scipy.stats.gamma.cdf, 1, 4, 1, a, 1
-scipy.stats.cauchy.cdf, 1, 3, 1, loc, 1
-scipy.stats.beta.pdf, 1, 5, 1, b, 1
-scipy.interpolate.barycentric_interpolate, 1, 3, 1, , 
-scipy.ndimage.filters.rank_filter, 1, 4, 1, footprint, 1
-scipy.optimize._shgo_lib.sobol_seq.Sobol, 1, 0, 1, , 
-scipy.optimize._shgo_lib.triangulation.Complex, 1, 7, 1, , 
-scipy.optimize._dual_annealing.ObjectiveFunWrapper, 1, 1, 1, , 
-scipy.optimize._dual_annealing.EnergyState, 1, 2, 1, , 
-scipy.optimize.cython_optimize._zeros.full_output_example, 1, 6, 1, , 
-scipy.optimize._tstutils.get_tests, 1, 2, 1, smoothness, 1
-scipy.optimize.zeros.brentq, 1, 9, 1, disp, 1
-scipy.signal.bsplines.cspline1d, 1, 1, 1, , 
-scipy.signal.bsplines.qspline1d, 1, 1, 1, , 
-scipy.signal.impulse2, 1, 3, 1, None, 1
-scipy.signal.check_COLA, 1, 3, 1, , 
-scipy._lib._numpy_compat.get_randint, 1, 1, 1, , 
-scipy.sparse.linalg.eigs.sort, 1, 0, 1, , 
-scipy.spatial.transform._rotation_spline._angular_rate_to_rotvec_dot_matrix, 1, 1, 1, , 
-scipy.spatial.transform._rotation_spline._rotvec_dot_to_angular_rate_matrix, 1, 1, 1, , 
-scipy.spatial.transform._rotation_spline._create_block_3_diagonal_matrix, 1, 3, 1, , 
-scipy.spatial.transform.Rotation.random, 1, 1, 1, , 
-scipy.special._ufuncs._smirnovp, 1, 2, 1, , 
-scipy.special._ufuncs._smirnovci, 1, 2, 1, , 
-scipy.special._ufuncs._kolmogp, 1, 1, 1, , 
-scipy.special._ufuncs._kolmogc, 1, 1, 1, , 
-scipy.stats.truncnorm.logpdf, 1, 5, 1, b, 1
-scipy.stats.boltzmann.cdf, 1, 3, 1, , 
-scipy.stats.truncnorm.stats, 1, 3, 1, moments, 1
-scipy.stats.genpareto._get_support, 1, 1, 1, , 
-scipy.stats.levy_stable.cdf, 1, 5, 1, loc, 1
-scipy.stats.levy_stable.stats, 1, 5, 1, loc, 1
-scipy.stats.kstat, 1, 2, 1, , 
-scipy.stats._multivariate._cho_inv_batch, 1, 1, 1, , 
-scipy.stats.invwishart.logpdf, 1, 3, 1, , 
-scipy.stats.stats._compute_prob_inside_method, 1, 4, 1, , 
-scipy.stats.stats._count_paths_outside_method, 1, 4, 1, , 
-scipy._build_utils.system_info.NotFoundError, 1, 1, 1, , 
 scipy.interpolate._isscalar, 1, 1, 1, , 
 scipy.skew, 1, 2, 1, bias, 1
 scipy.kurtosis, 1, 2, 1, bias, 1
+scipy.stats.rankdata, 1, 1, 1, , 
+scipy.sparse.linalg.aslinearoperator, 1, 1, 1, , 
 scipy.sparse.linalg.interface.MatrixLinearOperator, 1, 1, 1, , 
+scipy.stats.moment, 1, 2, 1, , 
+scipy.ndimage.affine_transform, 1, 5, 1, order, 1
+scipy.signal.convolve, 1, 3, 1, , 
+scipy.special.i1e, 1, 1, 1, , 
+scipy.special.i0e, 1, 1, 1, , 
+scipy.linalg.blas.get_blas_funcs, 1, 2, 1, dtype, 1
+scipy.stats.combine_pvalues, 1, 1, 1, , 
 scipy.stats.t, 1, 1, 1, df, 1
+scipy.integrate.dblquad, 1, 5, 1, , 
+scipy.integrate.tplquad, 1, 7, 1, , 
 scipy.stats.distributions.beta.logpdf, 1, 3, 1, , 
+scipy.stats.matrix_normal.logpdf, 1, 4, 1, , 
 scipy.stats.distributions.truncnorm.logpdf, 1, 5, 1, loc, 1
 scipy.stats.distributions.nbinom.logpmf, 1, 3, 1, , 
 scipy.stats.distributions.gamma.logpdf, 1, 3, 1, scale, 1
@@ -70,65 +24,139 @@ scipy.stats.distributions.invgamma.logpdf, 1, 3, 1, scale, 1
 scipy.stats.distributions.norm.pdf, 1, 3, 1, loc, 1
 scipy.stats.wald.rvs, 1, 2, 1, loc, 1
 scipy.stats.laplace.rvs, 1, 3, 1, size, 1
-scipy.stats.halfcauchy.rvs, 1, 2, 1, scale, 1
+scipy.stats.t.rvs, 1, 4, 1, size, 1
+scipy.stats.cauchy.rvs, 1, 3, 1, size, 1
+scipy.stats.halfcauchy.rvs, 1, 2, 1, size, 1
 scipy.stats.invgamma.rvs, 1, 3, 1, a, 1
-scipy.stats.pareto.rvs, 1, 3, 1, scale, 1
-scipy.stats.vonmises.rvs, 1, 3, 1, loc, 1
-scipy.stats.triang.rvs, 1, 4, 1, loc, 1
+scipy.stats.pareto.rvs, 1, 3, 1, size, 1
+scipy.stats.vonmises.rvs, 1, 3, 1, kappa, 1
+scipy.stats.triang.rvs, 1, 4, 1, c, 1
+scipy.stats.binom.rvs, 1, 2, 1, , 
+scipy.stats.nbinom.rvs, 1, 3, 1, size, 1
+scipy.stats.matrix_normal.rvs, 1, 4, 1, colcov, 1
 scipy.stats.chi2.rvs, 1, 2, 1, df, 1
 scipy.stats.gumbel_r.rvs, 1, 3, 1, loc, 1
-scipy.sparse.coo_matrix.dot, 1, 2, 1, , 
+scipy.stats.dirichlet.logpdf, 1, 2, 1, x, 1
+scipy.special.multigammaln, 1, 2, 1, , 
+scipy.stats.binom.logpmf, 1, 3, 1, , 
 scipy.ndimage.morphology.distance_transform_cdt, 1, 1, 1, , 
-scipy.fftpack.dct, 1, 4, 1, type, 1
-scipy.stats.expon.rvs, 1, 2, 1, scale, 1
+scipy.stats.norm.logcdf, 1, 1, 1, , 
+scipy.special.erfc, 1, 1, 1, , 
+scipy.fftpack.dct, 1, 4, 1, norm, 1
+scipy.sparse.csgraph.dijkstra, 1, 4, 1, directed, 1
+scipy.ndimage.center_of_mass, 1, 1, 1, , 
+scipy.stats.expon.rvs, 1, 2, 1, size, 1
+scipy.special.betaincinv, 1, 3, 1, , 
+scipy.stats.cauchy.pdf, 1, 3, 1, loc, 1
 scipy.stats.t.cdf, 1, 2, 1, df, 1
+scipy.ndimage.shift, 1, 3, 1, shift, 1
+scipy.ndimage.iterate_structure, 1, 2, 1, , 
+scipy.interpolate.interpn, 1, 5, 1, bounds_error, 1
+scipy.linalg.hankel, 1, 2, 1, , 
+scipy.optimize.minimize_scalar, 1, 1, 1, , 
 scipy.empty_like, 1, 1, 1, , 
 scipy.any, 1, 1, 1, , 
 scipy.all, 1, 1, 1, , 
 scipy.arctan2, 1, 2, 1, , 
+scipy.rand, 1, 0, 1, , 
 scipy.allclose, 1, 2, 1, , 
 scipy.sort_complex, 1, 1, 1, , 
+scipy.interpolate.sproot, 1, 1, 1, , 
+scipy.linalg.svdvals, 1, 1, 1, , 
+scipy.linspace, 1, 3, 1, , 
 scipy.interpolate.interpolate.interp1d, 1, 2, 1, , 
+scipy.ndimage.binary_erosion, 1, 1, 1, , 
 scipy.optimize.optimize.fminbound, 1, 3, 1, , 
 scipy.optimize.anneal, 1, 6, 1, args, 1
+scipy.ndimage.distance_transform_edt, 1, 3, 1, return_indices, 1
 scipy.interpolate.interpnd._ndim_coords_from_arrays, 1, 1, 1, , 
+scipy.interpolate.interpnd.LinearNDInterpolator, 1, 2, 1, , 
 scipy.ndimage.morphology.binary_closing, 1, 2, 1, , 
+scipy.stats.hypergeom, 1, 3, 1, , 
 scipy.polyfit, 1, 4, 1, deg, 1
 scipy.signal.signaltools._centered, 1, 2, 1, , 
 scipy.linalg.diagsvd, 1, 3, 1, , 
+scipy.integrate.ode, 1, 2, 1, jac, 1
+scipy.io.netcdf.netcdf_file, 1, 2, 1, , 
+scipy.special.factorial, 1, 1, 1, , 
 scipy.stats.t._ppf, 1, 2, 1, , 
 scipy.cluster.vq.whiten, 1, 1, 1, , 
+scipy.stats.median_test, 1, 4, 1, lambda_, 1
+scipy.stats.gmean, 1, 2, 1, axis, 1
+scipy.signal.savgol_coeffs, 1, 2, 1, , 
+scipy.signal.dlti, 1, 2, 1, dt, 1
+scipy.signal.bode, 1, 2, 1, n, 1
+scipy.signal.bilinear, 1, 2, 1, , 
+scipy.signal.csd, 1, 6, 1, nperseg, 1
 scipy.percentile, 1, 3, 1, axis, 1
+scipy.signal.cheby1, 1, 4, 1, output, 1
+scipy.signal.sosfiltfilt, 1, 3, 1, None, 1
+scipy.signal.sosfilt, 1, 3, 1, None, 1
+scipy.signal.find_peaks, 1, 3, 1, distance, 1
+scipy.ndimage.spline_filter, 1, 2, 1, order, 1
 scipy.ndimage.morphology.generate_binary_structure, 1, 2, 1, , 
 scipy.fftpack.fftshift, 1, 1, 1, , 
 scipy.stats.gamma.sf, 1, 3, 1, scale, 1
+scipy.stats.gamma.pdf, 1, 3, 1, scale, 1
 scipy.stats.distributions.norm, 1, 2, 1, , 
-scipy.interpolate.LSQUnivariateSpline, 1, 4, 1, w, 1
+scipy.interpolate.LSQUnivariateSpline, 1, 4, 1, t, 1
+scipy.linalg.pinv2, 1, 1, 1, , 
+scipy.signal.lombscargle, 1, 1, 1, , 
+scipy.stats.cauchy.fit, 1, 1, 1, , 
 scipy.stats.halfcauchy, 1, 1, 1, , 
+scipy.stats.rv_histogram, 1, 1, 1, , 
 scipy.stats.pareto.fit, 1, 1, 1, , 
 scipy.stats.pareto, 1, 3, 1, , 
+scipy.stats.lognorm.fit, 1, 1, 1, , 
 scipy.signal.square, 1, 1, 1, , 
+scipy.cluster.hierarchy.cophenet, 1, 2, 1, , 
 scipy.loadtxt, 1, 1, 1, , 
 scipy.vstack, 1, 1, 1, , 
 scipy.trace, 1, 1, 1, , 
 scipy.stats.nanmean, 1, 1, 1, , 
 scipy.spatial.distance._distance_wrap.cdist_euclidean_double_wrap, 1, 3, 1, , 
-scipy.linalg._decomp_qz._qz, 1, 8, 1, check_finite, 1
+scipy.sparse.linalg.gmres, 1, 3, 1, tol, 1
+scipy.linalg.lu_factor, 1, 1, 1, , 
+scipy.linalg._decomp_qz._qz, 1, 8, 1, lwork, 1
+scipy.linalg._decomp_qz._select_function, 1, 1, 1, , 
+scipy.linalg.lapack.get_lapack_funcs, 1, 2, 1, , 
+scipy.optimize._minpack._lmdif, 1, 11, 1, , 
+scipy.optimize._minpack._lmder, 1, 12, 1, , 
+scipy.optimize.BFGS, 1, 1, 1, exception_strategy, 1
+scipy.misc.derivative, 1, 3, 1, dx, 1
+scipy.interpolate.BarycentricInterpolator, 1, 3, 1, None, 1
+scipy.sparse.csgraph.reverse_cuthill_mckee, 1, 2, 1, symmetric_mode, 1
+scipy.sparse.linalg.spilu, 1, 3, 1, drop_tol, 1
 scipy.interp, 1, 3, 1, , 
 scipy.stats.kde.mvn.mvndst, 1, 7, 1, maxpts, 1
 scipy.linalg.lapack.dgecon, 1, 2, 1, , 
-scipy.sparse.linalg.svds, 1, 4, 1, k, 1
+scipy.sparse.linalg.svds, 1, 4, 1, return_singular_vectors, 1
+scipy.stats.normaltest, 1, 1, 1, , 
+scipy.optimize.fmin_cg, 1, 4, 1, None, 1
 scipy.misc.lena, 1, 0, 1, , 
 scipy.ndimage.fourier.fourier_gaussian, 1, 2, 1, , 
 scipy.cumsum, 1, 1, 1, , 
 scipy.signal.kaiser, 1, 2, 1, beta, 1
+scipy.stats.zscore, 1, 1, 1, , 
 scipy.stats.truncnorm, 1, 4, 1, loc, 1
+scipy.sparse.linalg.expm, 1, 1, 1, , 
+scipy.interpolate.pade, 1, 2, 1, , 
 scipy.special.wofz, 1, 1, 1, , 
 scipy.interpolate.CloughTocher2DInterpolator, 1, 2, 1, , 
+scipy.interpolate.CubicSpline, 1, 3, 1, extrapolate, 1
 scipy.ndimage.filters.gaussian_filter1d, 1, 6, 1, order, 1
 scipy.ndimage.filters.laplace, 1, 1, 1, , 
+scipy.ndimage.generate_binary_structure, 1, 2, 1, , 
+scipy.special.smirnov, 1, 2, 1, , 
+scipy.special.cbrt, 1, 1, 1, , 
+scipy.ndimage.sobel, 1, 4, 1, cval, 1
 scipy.io.mmwrite, 1, 2, 1, , 
+scipy.io.mmread, 1, 1, 1, , 
+scipy.signal.decimate, 1, 4, 1, zero_phase, 1
 scipy.io.arff.loadarff, 1, 1, 1, , 
+scipy.signal.resample, 1, 2, 1, num, 1
+scipy.cluster.vq.vq, 1, 2, 1, , 
+scipy.special.ive, 1, 2, 1, , 
 scipy.io.wavfile.setnchannels, 1, 1, 1, , 
 scipy.io.wavfile.setsampwidth, 1, 1, 1, , 
 scipy.io.wavfile.setframerate, 1, 1, 1, , 
@@ -136,1852 +164,329 @@ scipy.io.wavfile.writeframes, 1, 1, 1, ,
 scipy.io.wavfile.close, 1, 0, 1, , 
 scipy.stats.t.ppf, 1, 2, 1, , 
 scipy.polyval, 1, 2, 1, , 
+scipy.stats.poisson.stats, 1, 2, 1, moments, 1
+scipy.special.rel_entr, 1, 2, 1, , 
 scipy.sparse.csr_matrix.dot, 1, 2, 1, , 
-scipy.interpolate.interpolate_wrapper.block_average_above, 1, 3, 1, , 
-scipy.interpolate.interpolate_wrapper.logarithmic, 1, 3, 1, , 
-scipy.misc.pade, 1, 2, 1, , 
-scipy.misc.fromimage, 1, 1, 1, , 
-scipy.misc.pilutil.imread, 1, 3, 1, , 
-scipy.misc.pilutil.imread.__doc__.replace, 1, 2, 1, , 
-scipy.special._ufuncs.hyp1f2, 1, 4, 1, , 
-scipy.special._ufuncs.hyp2f0, 1, 4, 1, , 
-scipy.special.hyp1f2, 1, 4, 1, , 
-scipy.special.hyp2f0, 1, 4, 1, , 
 scipy.spatial.distance.cosine, 1, 2, 1, , 
+scipy.stats.binom_test, 1, 3, 1, , 
+scipy.stats.binom.pmf, 1, 3, 1, , 
 scipy.misc.comb, 1, 2, 1, , 
+scipy.stats.scoreatpercentile, 1, 2, 1, , 
+scipy.signal.cont2discrete, 1, 3, 1, method, 1
+scipy.signal.step2, 1, 2, 1, T, 1
+scipy.linalg.orth, 1, 1, 1, , 
 scipy.stats.hypergeom.cdf, 1, 4, 1, , 
-scipy.signal.peak_prominences, 2, 3, 1, , 
-scipy.sparse.linalg.lobpcg, 2, 6, 2, maxiter, 2
-scipy.stats.cauchy.pdf, 2, 3, 2, loc, 2
-scipy.sparse.linalg.spilu, 2, 1, 1, fill_factor, 1
-scipy._lib.decorator.decorate, 2, 2, 1, , 
-scipy._lib._testutils._get_mem_available, 2, 0, 1, , 
-scipy._lib._test_ccallback.test_get_plus1b_capsule, 2, 0, 1, , 
-scipy._lib._test_ccallback.test_get_plus1bc_capsule, 2, 0, 1, , 
-scipy.cluster.hierarchy._LINKAGE_METHODS.items, 2, 0, 2, , 
-scipy.cluster.hierarchy._hierarchy.linkage, 2, 3, 2, , 
-scipy.cluster.hierarchy.fclusterdata, 2, 3, 2, criterion, 2
-scipy.cluster.hierarchy.leaders, 2, 2, 2, , 
-scipy.cluster.hierarchy.cut_tree, 2, 1, 2, , 
-scipy.cluster.hierarchy._order_cluster_tree, 2, 1, 2, , 
-scipy.cluster._hierarchy.Heap, 2, 1, 2, , 
-scipy.cluster.vq._krandinit, 2, 2, 2, , 
-scipy.fftpack.basic._asfarray, 2, 1, 2, , 
-scipy.fftpack.basic._fix_shape, 2, 3, 2, , 
-scipy.fftpack.realtransforms.dctn, 2, 3, 2, type, 2
-scipy.integrate._test_odeint_banded.banded5x5, 2, 3, 1, , 
-scipy.integrate._test_odeint_banded.banded5x5_jac, 2, 5, 1, , 
-scipy.integrate._test_odeint_banded.banded5x5_bjac, 2, 5, 1, , 
-scipy.integrate._test_odeint_banded.banded5x5_solve, 2, 4, 1, , 
-scipy._lib.six.get_function_code, 2, 1, 2, , 
-scipy.interpolate.BSpline.construct_fast, 2, 3, 2, , 
-scipy.interpolate.splder, 2, 1, 2, , 
-scipy.interpolate._fitpack_impl.splder, 2, 1, 2, , 
-scipy.interpolate._fitpack_impl.splantider, 2, 1, 2, , 
-scipy.interpolate._bsplines._not_a_knot, 2, 2, 2, , 
-scipy.interpolate.fitpack.sproot, 2, 1, 1, , 
-scipy.interpolate.fitpack.splint, 2, 3, 1, , 
-scipy.interpolate.dfitpack.regrid_smth, 2, 10, 1, s, 2
-scipy.interpolate.fitpack2.LSQUnivariateSpline, 2, 3, 1, , 
-scipy.interpolate.fitpack2.LSQSphereBivariateSpline, 2, 5, 1, , 
-scipy.interpolate.fitpack2.SmoothSphereBivariateSpline, 2, 4, 1, s, 2
-scipy.interpolate.lagrange, 2, 2, 2, , 
-scipy.interpolate.PPoly.construct_fast, 2, 2, 2, , 
-scipy.interpolate._ppoly._croots_poly1, 2, 2, 2, , 
-scipy.interpolate.BPoly._raise_degree, 2, 2, 2, , 
-scipy.interpolate._ppoly.evaluate_nd, 2, 7, 2, , 
-scipy.interpolate.LinearNDInterpolator, 2, 2, 2, , 
-scipy.interpolate.PchipInterpolator.__call__, 2, 3, 2, , 
-scipy.interpolate.CubicHermiteSpline, 2, 3, 2, , 
-scipy.interpolate.approximate_taylor_polynomial, 2, 5, 2, , 
-scipy.interpolate.spalde, 2, 2, 1, , 
-scipy.io.harwell_boeing._fortran_format_parser.ExpFormat.from_number, 2, 1, 2, , 
-scipy.io.hb_write, 2, 2, 1, , 
-scipy._lib.six.reduce, 2, 2, 2, , 
-scipy.io.matlab.miobase.matdims, 2, 1, 2, , 
-scipy.io.matlab.mio5.MatlabObject, 2, 2, 2, , 
-scipy.io.matlab.mio.whosmat, 2, 1, 2, , 
-scipy.io.matlab.mio.mat_reader_factory, 2, 2, 2, struct_as_record, 2
-scipy.io.matlab.mio5.varmats_from_mat, 2, 1, 2, , 
-scipy.io.matlab.byteordercodes.to_numpy_code, 2, 1, 1, , 
-scipy.io.matlab.mio5_utils.VarHeader5, 2, 0, 1, , 
-scipy.io._test_fortran.read_unformatted_double, 2, 4, 1, , 
-scipy.io._test_fortran.read_unformatted_int, 2, 4, 1, , 
-scipy.io._test_fortran.read_unformatted_mixed, 2, 4, 1, , 
-scipy.io.whosmat, 2, 1, 1, , 
-scipy.io.readsav, 2, 1, 1, , 
-scipy.io.harwell_boeing.hb_read, 2, 1, 1, , 
-scipy.linalg._interpolative.id_srand, 2, 1, 2, , 
-scipy.linalg._interpolative.id_srandi, 2, 1, 2, , 
-scipy.linalg._interpolative.id_srando, 2, 0, 2, , 
-scipy.linalg._interpolative.idd_frm, 2, 3, 2, , 
-scipy.linalg._interpolative.idd_sfrm, 2, 4, 2, , 
-scipy.linalg._interpolative.idd_sfrmi, 2, 2, 2, , 
-scipy.linalg._interpolative.iddp_id, 2, 2, 2, , 
-scipy.linalg._interpolative.iddr_id, 2, 2, 2, , 
-scipy.linalg._interpolative.idd_reconid, 2, 3, 2, , 
-scipy.linalg._interpolative.idd_reconint, 2, 2, 2, , 
-scipy.linalg._interpolative.idd_copycols, 2, 3, 2, , 
-scipy.linalg._interpolative.idd_id2svd, 2, 3, 2, , 
-scipy.linalg._interpolative.idd_snorm, 2, 5, 2, , 
-scipy.linalg._interpolative.idd_diffsnorm, 2, 7, 2, , 
-scipy.linalg._interpolative.iddr_svd, 2, 2, 2, , 
-scipy.linalg._interpolative.iddp_svd, 2, 2, 2, , 
-scipy.linalg._interpolative.iddp_aid, 2, 4, 2, , 
-scipy.linalg._interpolative.idd_estrank, 2, 4, 2, , 
-scipy.linalg._interpolative.iddp_asvd, 2, 4, 2, , 
-scipy.linalg._interpolative.iddp_rid, 2, 5, 2, , 
-scipy.linalg._interpolative.idd_findrank, 2, 4, 2, , 
-scipy.linalg._interpolative.iddp_rsvd, 2, 5, 2, , 
-scipy.linalg._interpolative.iddr_aid, 2, 3, 2, , 
-scipy.linalg._interpolative.iddr_aidi, 2, 3, 2, , 
-scipy.linalg._interpolative.iddr_asvd, 2, 3, 2, , 
-scipy.linalg._interpolative.iddr_rid, 2, 4, 2, , 
-scipy.linalg._interpolative.iddr_rsvd, 2, 5, 2, , 
-scipy.linalg._interpolative.idz_frm, 2, 3, 2, , 
-scipy.linalg._interpolative.idz_sfrm, 2, 4, 2, , 
-scipy.linalg._interpolative.idz_sfrmi, 2, 2, 2, , 
-scipy.linalg._interpolative.idzp_id, 2, 2, 2, , 
-scipy.linalg._interpolative.idzr_id, 2, 2, 2, , 
-scipy.linalg._interpolative.idz_reconid, 2, 3, 2, , 
-scipy.linalg._interpolative.idz_reconint, 2, 2, 2, , 
-scipy.linalg._interpolative.idz_copycols, 2, 3, 2, , 
-scipy.linalg._interpolative.idz_id2svd, 2, 3, 2, , 
-scipy.linalg._interpolative.idz_snorm, 2, 5, 2, , 
-scipy.linalg._interpolative.idz_diffsnorm, 2, 7, 2, , 
-scipy.linalg._interpolative.idzr_svd, 2, 2, 2, , 
-scipy.linalg._interpolative.idzp_svd, 2, 2, 2, , 
-scipy.linalg._interpolative.idzp_aid, 2, 4, 2, , 
-scipy.linalg._interpolative.idz_estrank, 2, 4, 2, , 
-scipy.linalg._interpolative.idzp_asvd, 2, 4, 2, , 
-scipy.linalg._interpolative.idzp_rid, 2, 5, 2, , 
-scipy.linalg._interpolative.idz_findrank, 2, 4, 2, , 
-scipy.linalg._interpolative.idzp_rsvd, 2, 5, 2, , 
-scipy.linalg._interpolative.idzr_aid, 2, 3, 2, , 
-scipy.linalg._interpolative.idzr_aidi, 2, 3, 2, , 
-scipy.linalg._interpolative.idzr_asvd, 2, 3, 2, , 
-scipy.linalg._interpolative.idzr_rid, 2, 4, 2, , 
-scipy.linalg._interpolative.idzr_rsvd, 2, 5, 2, , 
-scipy.linalg.matfuncs.funm, 2, 3, 1, disp, 2
-scipy.special.p_roots, 2, 1, 1, , 
-scipy.linalg._interpolative_backend.id_srando, 2, 0, 2, , 
-scipy.linalg._interpolative_backend.iddp_aid, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzp_aid, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddp_id, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzp_id, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddr_aid, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzr_aid, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddr_id, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzr_id, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddp_rid, 2, 4, 2, , 
-scipy.linalg._interpolative_backend.idzp_rid, 2, 4, 2, , 
-scipy.linalg._interpolative_backend.iddr_rid, 2, 4, 2, , 
-scipy.linalg._interpolative_backend.idzr_rid, 2, 4, 2, , 
-scipy.linalg._interpolative_backend.idd_reconid, 2, 3, 2, , 
-scipy.linalg._interpolative_backend.idz_reconid, 2, 3, 2, , 
-scipy.linalg._interpolative_backend.idd_reconint, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idz_reconint, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idd_copycols, 2, 3, 2, , 
-scipy.linalg._interpolative_backend.idz_copycols, 2, 3, 2, , 
-scipy.linalg._interpolative_backend.idd_id2svd, 2, 3, 2, , 
-scipy.linalg._interpolative_backend.idz_id2svd, 2, 3, 2, , 
-scipy.linalg._interpolative_backend.idd_snorm, 2, 5, 2, its, 2
-scipy.linalg._interpolative_backend.idz_snorm, 2, 5, 2, its, 2
-scipy.linalg._interpolative_backend.idd_diffsnorm, 2, 7, 2, its, 2
-scipy.linalg._interpolative_backend.idz_diffsnorm, 2, 7, 2, its, 2
-scipy.linalg._interpolative_backend.iddp_asvd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzp_asvd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddp_svd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzp_svd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddr_asvd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzr_asvd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddr_svd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idzr_svd, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.iddp_rsvd, 2, 5, 2, , 
-scipy.linalg._interpolative_backend.idzp_rsvd, 2, 5, 2, , 
-scipy.linalg._interpolative_backend.iddr_rsvd, 2, 5, 2, , 
-scipy.linalg._interpolative_backend.idzr_rsvd, 2, 5, 2, , 
-scipy.linalg._interpolative_backend.idd_estrank, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idz_estrank, 2, 2, 2, , 
-scipy.linalg._interpolative_backend.idd_findrank, 2, 4, 2, , 
-scipy.linalg._interpolative_backend.idz_findrank, 2, 4, 2, , 
-scipy.linalg._matfuncs_inv_ssq._fractional_matrix_power, 2, 2, 2, , 
-scipy.linalg._matfuncs_inv_ssq._logm, 2, 1, 2, , 
-scipy._build_utils.split_fortran_files, 2, 2, 2, , 
-scipy.linalg.lapack.dsbev, 2, 2, 2, compute_v, 2
-scipy.linalg.lapack.dsbevd, 2, 2, 2, compute_v, 2
-scipy.linalg.lapack.dsbevx, 2, 7, 2, compute_v, 2
-scipy.linalg.lapack.zhbevd, 2, 2, 2, compute_v, 2
-scipy.linalg.lapack.zhbevx, 2, 7, 2, compute_v, 2
-scipy.linalg.lapack.dgbtrs, 2, 5, 2, , 
-scipy.linalg.lapack.zgbtrs, 2, 5, 2, , 
-scipy.linalg.rsf2csf, 2, 2, 2, , 
-scipy.linalg._decomp_update._form_qTu, 2, 2, 2, , 
-scipy.linalg.interpolative.id_to_svd, 2, 3, 2, , 
-scipy.linalg.interpolative.estimate_spectral_norm, 2, 1, 2, , 
-scipy.linalg.interpolative.estimate_spectral_norm_diff, 2, 2, 2, , 
-scipy.linalg._matfuncs_inv_ssq._remainder_matrix_power, 2, 2, 2, , 
-scipy.linalg._matfuncs_inv_ssq._briggs_helper_function, 2, 2, 2, , 
-scipy.linalg.solve_continuous_lyapunov, 2, 2, 2, , 
-scipy.linalg.solve_discrete_lyapunov, 2, 3, 2, method, 2
-scipy.ndimage._ctest.filter1d, 2, 1, 1, , 
-scipy.ndimage._ctest_oldapi.filter1d, 2, 1, 1, , 
-scipy.ndimage._cytest.filter1d, 2, 2, 1, with_signature, 2
-scipy.ndimage._ctest.filter2d, 2, 1, 1, , 
-scipy.ndimage._ctest_oldapi.filter2d, 2, 1, 1, , 
-scipy.ndimage._cytest.filter2d, 2, 2, 1, with_signature, 2
-scipy.ndimage._ctest.transform, 2, 1, 1, , 
-scipy.ndimage._ctest_oldapi.transform, 2, 1, 1, , 
-scipy.ndimage._cytest.transform, 2, 2, 1, with_signature, 2
-scipy.ndimage.generic_laplace, 2, 4, 2, extra_arguments, 2
-scipy.ndimage.generic_gradient_magnitude, 2, 4, 2, extra_arguments, 2
-scipy.odr.__odrpack._set_exceptions, 2, 2, 2, , 
-scipy.optimize._remove_redundancy._remove_redundancy_sparse, 2, 2, 2, , 
-scipy.optimize._remove_redundancy._remove_redundancy_dense, 2, 2, 2, , 
-scipy.optimize.optimize._check_unknown_options, 2, 1, 1, , 
-scipy.optimize._trustregion_constr.canonical_constraint.CanonicalConstraint.concatenate, 2, 2, 2, , 
-scipy.optimize._trustregion_constr.canonical_constraint.CanonicalConstraint.empty, 2, 1, 2, , 
-scipy.optimize._cobyla.minimize, 2, 8, 1, iprint, 2
-scipy.optimize.minpack2.dcsrch, 2, 11, 2, , 
-scipy.optimize._slsqp.slsqp, 2, 32, 1, , 
-scipy.optimize._basinhopping.Storage, 2, 1, 1, , 
-scipy.optimize._basinhopping.AdaptiveStepsize, 2, 3, 1, accept_rate, 2
-scipy.optimize._dual_annealing.VisitingDistribution, 2, 4, 2, , 
-scipy.optimize._constraints.LinearConstraint, 2, 4, 2, , 
-scipy.optimize._constraints.old_bound_to_new, 2, 1, 2, , 
-scipy.optimize.linesearch.scalar_search_wolfe1, 2, 5, 2, , 
-scipy.optimize.linesearch.scalar_search_wolfe2, 2, 5, 2, , 
-scipy.optimize.linesearch.line_search_wolfe1, 2, 8, 2, amax, 2
-scipy.optimize.linesearch.line_search_armijo, 2, 5, 2, , 
-scipy.optimize._lsq.common.CL_scaling_vector, 2, 4, 2, , 
-scipy.optimize._lsq.common.left_multiplied_operator, 2, 2, 2, , 
-scipy.optimize._lsq.common.right_multiplied_operator, 2, 2, 2, , 
-scipy.optimize.nonlin.newton_krylov, 2, 6, 2, verbose, 2
-scipy.optimize.nonlin.BroydenFirst, 2, 1, 2, alpha, 2
-scipy.optimize.nonlin.BroydenSecond, 2, 1, 2, alpha, 2
-scipy.optimize.nonlin.nonlin_solve, 2, 7, 2, verbose, 2
-scipy.optimize.nonlin.broyden1, 2, 4, 2, alpha, 2
-scipy.optimize.nonlin.broyden2, 2, 4, 2, alpha, 2
-scipy.optimize.nonlin.anderson, 2, 5, 2, M, 2
-scipy.optimize.nonlin.linearmixing, 2, 4, 2, alpha, 2
-scipy.optimize.nonlin.excitingmixing, 2, 4, 2, alpha, 2
-scipy.optimize.nonlin.diagbroyden, 2, 4, 2, alpha, 2
-scipy.optimize._minimize._minimize_neldermead, 2, 5, 2, maxiter, 2
-scipy.optimize.rosen_hess_prod, 2, 2, 2, , 
-scipy.optimize._trustregion_exact.estimate_smallest_singular_value, 2, 1, 1, , 
-scipy.optimize.moduleTNC.minimize, 2, 18, 1, , 
-scipy.fftpack.ifft2, 2, 2, 2, axes, 2
-scipy.fftpack.ifftshift, 2, 1, 2, , 
-scipy.signal.step2, 2, 3, 1, T, 2
-scipy.signal.filter_design._cplxpair, 2, 1, 2, , 
-scipy.signal.sos2tf, 2, 1, 2, , 
-scipy.signal.normalize, 2, 2, 2, , 
-scipy.signal.lp2lp, 2, 3, 2, , 
-scipy.signal.lp2hp, 2, 3, 2, , 
-scipy.signal.lp2bp, 2, 4, 2, , 
-scipy.signal.lp2bs, 2, 4, 2, , 
-scipy.signal.lp2bp_zpk, 2, 5, 2, , 
-scipy.signal.lp2bs_zpk, 2, 5, 2, , 
-scipy.signal.bilinear_zpk, 2, 4, 2, , 
-scipy.signal.cheb1ap, 2, 2, 2, , 
-scipy.signal.cheb2ap, 2, 2, 2, , 
-scipy.signal.ellipap, 2, 3, 2, , 
-scipy.signal._savitzky_golay._polyder, 2, 2, 2, , 
-scipy.signal.medfilt2d, 2, 2, 2, , 
-scipy.signal.invresz, 2, 3, 2, , 
-scipy.signal.deconvolve, 2, 2, 2, , 
-scipy.signal.check_NOLA, 2, 3, 2, , 
-scipy.signal._upfirdn._output_len, 2, 4, 2, , 
-scipy.signal.wavelets.daub, 2, 1, 1, , 
-scipy.signal.wavelets.cascade, 2, 2, 1, , 
-scipy.signal.windows.exponential, 2, 1, 2, , 
-scipy.signal.windows.boxcar, 2, 1, 2, , 
-scipy.signal.windows.kaiser, 2, 3, 2, , 
-scipy.sparse.csgraph.csgraph_to_dense, 2, 1, 1, , 
-scipy.sparse.csgraph.construct_dist_matrix, 2, 3, 2, directed, 2
-scipy._lib.six.iterkeys, 2, 1, 2, , 
-scipy.sparse.identity, 2, 1, 2, , 
-scipy.sparse.sputils.isshape, 2, 1, 2, , 
-scipy.sparse.sputils.isintlike, 2, 1, 2, , 
-scipy.linalg.qr_insert, 2, 7, 2, check_finite, 2
-scipy.sparse.linalg.isolve.utils.make_system, 2, 4, 2, , 
-scipy.sparse.linalg.isolve.qmr, 2, 6, 2, M2, 2
-scipy.linalg.basic.solve, 2, 2, 2, , 
-scipy.linalg.basic.solve_triangular, 2, 2, 2, , 
-scipy.sparse.linalg._expm_multiply._onenormest_matrix_power, 2, 2, 1, , 
-scipy.sparse.linalg.matfuncs._onenorm_matrix_power_nnm, 2, 2, 2, , 
-scipy.sparse.linalg.matfuncs.ProductOperator, 2, 3, 2, , 
-scipy.sparse.linalg.matfuncs.MatrixPowerOperator, 2, 2, 2, , 
-scipy.sparse.linalg._onenormest._algorithm_2_2, 2, 3, 1, , 
-scipy.sparse.sputils.get_index_dtype, 2, 3, 2, , 
-scipy.sparse.sputils.isscalarlike, 2, 1, 2, , 
-scipy.sparse.linalg.inv, 2, 1, 2, , 
-scipy.sparse.data.items, 2, 0, 2, , 
-scipy.sparse.data.reshape, 2, 3, 2, , 
-scipy.sparse.data.repeat, 2, 2, 2, axis, 2
-scipy.sparse.construct._compressed_sparse_stack, 2, 2, 2, , 
-scipy.sparse.construct.rand, 2, 5, 2, random_state, 2
-scipy.sparse.extract.find, 2, 1, 1, , 
-scipy.sparse.save_npz, 2, 2, 2, , 
-scipy.sparse._sparsetools.csr_plus_csr, 2, 11, 2, , 
-scipy.sparse._sparsetools.csr_matvec, 2, 7, 2, , 
-scipy.sparse._sparsetools.csr_scale_rows, 2, 6, 2, , 
-scipy.sparse._sparsetools.csr_scale_columns, 2, 6, 2, , 
-scipy.sparse.spfuncs.estimate_blocksize, 2, 1, 2, , 
-scipy.sparse.sputils.validateaxis, 2, 1, 2, , 
-scipy.spatial.distance.mahalanobis, 2, 3, 2, , 
-scipy.spatial.distance.num_obs_dm, 2, 1, 2, , 
-scipy.spatial.distance.is_valid_dm, 2, 2, 2, throw, 2
-scipy.spatial.Rectangle, 2, 2, 2, , 
-scipy.spatial.KDTree.node, 2, 0, 2, , 
-scipy.spatial.qhull.tsearch, 2, 2, 2, , 
-scipy.spatial._spherical_voronoi.calc_circumcenters, 2, 1, 1, , 
-scipy._lib.six.reraise, 2, 1, 2, , 
-scipy.special._ufuncs._struve_power_series, 2, 3, 1, , 
-scipy.special._ufuncs._struve_asymp_large_z, 2, 3, 1, , 
-scipy.special._ufuncs._struve_bessel_series, 2, 3, 1, , 
-scipy.special._ufuncs.airy, 2, 1, 2, , 
-scipy.special._ufuncs.airye, 2, 1, 2, , 
-scipy.special._ufuncs.bdtrik, 2, 3, 2, , 
-scipy.special._ufuncs.chndtr, 2, 3, 2, , 
-scipy.special._ufuncs.ellipj, 2, 2, 2, , 
-scipy.special._ufuncs.expi, 2, 1, 2, , 
-scipy.special._ufuncs.expn, 2, 2, 2, , 
-scipy.special._ufuncs.expm1, 2, 1, 2, , 
-scipy.special._ufuncs.gammaln, 2, 1, 2, , 
-scipy.special._ufuncs.gdtrib, 2, 3, 2, , 
-scipy.special._ufuncs.gdtrix, 2, 3, 2, , 
-scipy.special._ufuncs.hankel1, 2, 2, 2, , 
-scipy.special._ufuncs.hankel1e, 2, 2, 2, , 
-scipy.special._ufuncs.hankel2, 2, 2, 2, , 
-scipy.special._ufuncs.hankel2e, 2, 2, 2, , 
-scipy.special._ufuncs.hyp1f1, 2, 3, 2, , 
-scipy.special._ufuncs.it2i0k0, 2, 1, 2, , 
-scipy.special._ufuncs.it2j0y0, 2, 1, 2, , 
-scipy.special._ufuncs.it2struve0, 2, 1, 2, , 
-scipy.special._ufuncs.itairy, 2, 1, 2, , 
-scipy.special._ufuncs.k0, 2, 1, 2, , 
-scipy.special._ufuncs.k0e, 2, 1, 2, , 
-scipy.special._ufuncs.k1, 2, 1, 2, , 
-scipy.special._ufuncs.k1e, 2, 1, 2, , 
-scipy.special._ufuncs.kei, 2, 1, 2, , 
-scipy.special._ufuncs.ker, 2, 1, 2, , 
-scipy.special._ufuncs.kerp, 2, 1, 2, , 
-scipy.special._ufuncs.kelvin, 2, 1, 2, , 
-scipy.special._ufuncs.kn, 2, 2, 2, , 
-scipy.special._ufuncs.kv, 2, 2, 2, , 
-scipy.special._ufuncs.kve, 2, 2, 2, , 
-scipy.special._ufuncs.modfresnelm, 2, 1, 2, , 
-scipy.special._ufuncs.modfresnelp, 2, 1, 2, , 
-scipy.special._ufuncs.nbdtrik, 2, 3, 2, , 
-scipy.special._ufuncs.nctdtridf, 2, 3, 2, , 
-scipy.special._ufuncs.nctdtrinc, 2, 3, 2, , 
-scipy.special._ufuncs.nctdtrit, 2, 3, 2, , 
-scipy.special._ufuncs.obl_ang1, 2, 4, 2, , 
-scipy.special._ufuncs.obl_ang1_cv, 2, 5, 2, , 
-scipy.special._ufuncs.obl_rad1, 2, 4, 2, , 
-scipy.special._ufuncs.obl_rad1_cv, 2, 5, 2, , 
-scipy.special._ufuncs.obl_rad2, 2, 4, 2, , 
-scipy.special._ufuncs.obl_rad2_cv, 2, 5, 2, , 
-scipy.special._ufuncs.pbvv, 2, 2, 2, , 
-scipy.special._ufuncs.pbwa, 2, 2, 2, , 
-scipy.special._ufuncs.pdtri, 2, 2, 2, , 
-scipy.special._ufuncs.pro_ang1, 2, 4, 2, , 
-scipy.special._ufuncs.pro_rad1, 2, 4, 2, , 
-scipy.special._ufuncs.pro_rad1_cv, 2, 5, 2, , 
-scipy.special._ufuncs.pro_rad2, 2, 4, 2, , 
-scipy.special._ufuncs.pro_rad2_cv, 2, 5, 2, , 
-scipy.special._ufuncs.psi, 2, 1, 2, , 
-scipy.special._ufuncs.shichi, 2, 1, 2, , 
-scipy.special._ufuncs.stdtridf, 2, 2, 2, , 
-scipy.special._ufuncs.stdtrit, 2, 2, 2, , 
-scipy.special._ufuncs.y0, 2, 1, 2, , 
-scipy.special._ufuncs.y1, 2, 1, 2, , 
-scipy.special._ufuncs.yn, 2, 2, 2, , 
-scipy.special._ufuncs.yv, 2, 2, 2, , 
-scipy.special._ufuncs.yve, 2, 2, 2, , 
-scipy.special.airye, 2, 1, 2, , 
-scipy.special.bei, 2, 1, 2, , 
-scipy.special.beip, 2, 1, 2, , 
-scipy.special.ber, 2, 1, 2, , 
-scipy.special.berp, 2, 1, 2, , 
-scipy.special.bei_zeros, 2, 1, 2, , 
-scipy.special.beip_zeros, 2, 1, 2, , 
-scipy.special.ber_zeros, 2, 1, 2, , 
-scipy.special.berp_zeros, 2, 1, 2, , 
-scipy.special.kelvin, 2, 1, 2, , 
-scipy.special.kei, 2, 1, 2, , 
-scipy.special.keip, 2, 1, 2, , 
-scipy.special.ker, 2, 1, 2, , 
-scipy.special.kerp, 2, 1, 2, , 
-scipy.special.kei_zeros, 2, 1, 2, , 
-scipy.special.keip_zeros, 2, 1, 2, , 
-scipy.special.kelvin_zeros, 2, 1, 2, , 
-scipy.special.ker_zeros, 2, 1, 2, , 
-scipy.special.kerp_zeros, 2, 1, 2, , 
-scipy.special.bernoulli, 2, 1, 2, , 
-scipy.special.erf_zeros, 2, 1, 2, , 
-scipy.special.erfcinv, 2, 1, 2, , 
-scipy.special.fresnelc_zeros, 2, 1, 2, , 
-scipy.special.fresnels_zeros, 2, 1, 2, , 
-scipy.special.rgamma, 2, 1, 2, , 
-scipy.special.hankel1e, 2, 2, 2, , 
-scipy.special.hankel2, 2, 2, 2, , 
-scipy.special.h1vp, 2, 2, 2, , 
-scipy.special.h2vp, 2, 2, 2, , 
-scipy.special.j0, 2, 1, 2, , 
-scipy.special.j1, 2, 1, 2, , 
-scipy.special.jnjnp_zeros, 2, 1, 2, , 
-scipy.special.jnyn_zeros, 2, 2, 2, , 
-scipy.special.k0, 2, 1, 2, , 
-scipy.special.k0e, 2, 1, 2, , 
-scipy.special.k1, 2, 1, 2, , 
-scipy.special.kn, 2, 2, 2, , 
-scipy.special.y0, 2, 1, 2, , 
-scipy.special.y1, 2, 1, 2, , 
-scipy.special.y1_zeros, 2, 1, 2, , 
-scipy.special.y1p_zeros, 2, 2, 2, complex, 2
-scipy.special.it2i0k0, 2, 1, 2, , 
-scipy.special.ivp, 2, 2, 2, , 
-scipy.special.lmbda, 2, 2, 2, , 
-scipy.special.mathieu_even_coef, 2, 2, 2, , 
-scipy.special.obl_cv_seq, 2, 3, 2, , 
-scipy.special.pbdv_seq, 2, 2, 2, , 
-scipy.special.pro_cv_seq, 2, 3, 2, , 
-scipy.special._mptestutils.get_args, 2, 2, 1, , 
-scipy.special.mathieu_cem, 2, 3, 1, , 
-scipy.special.mathieu_sem, 2, 3, 1, , 
-scipy.special.mathieu_modcem1, 2, 3, 1, , 
-scipy.special.mathieu_modsem1, 2, 3, 1, , 
-scipy.special.mathieu_modcem2, 2, 3, 1, , 
-scipy.special.mathieu_modsem2, 2, 3, 1, , 
-scipy.special.eval_hermite, 2, 2, 1, , 
-scipy.special.bdtrik, 2, 3, 1, , 
-scipy.special.btdtria, 2, 3, 1, , 
-scipy.special.btdtrib, 2, 3, 1, , 
-scipy.special.gdtr, 2, 3, 1, , 
-scipy.special.gdtrc, 2, 3, 1, , 
-scipy.special.nbdtrik, 2, 3, 1, , 
-scipy.special.pdtrik, 2, 2, 1, , 
-scipy.special.ellip_normal, 2, 4, 1, , 
-scipy.special._ufuncs._smirnovc, 2, 2, 2, , 
-scipy.special._ufuncs._kolmogci, 2, 1, 2, , 
-scipy.special._mptestutils.exception_to_nan, 2, 1, 2, , 
-scipy.special.eval_gegenbauer, 2, 3, 2, , 
-scipy.special.orthogonal.eval_jacobi, 2, 4, 2, , 
-scipy.special.orthogonal.eval_sh_jacobi, 2, 4, 2, , 
-scipy.special.orthogonal._roots_hermite_asy, 2, 1, 2, , 
-scipy.special.orthogonal.legendre, 2, 1, 2, , 
-scipy.special.orthogonal.laguerre, 2, 1, 2, , 
-scipy.special.orthogonal.eval_genlaguerre, 2, 3, 2, , 
-scipy.special.orthogonal.eval_chebyt, 2, 2, 1, , 
-scipy.special.orthogonal.eval_legendre, 2, 2, 1, , 
-scipy.special.orthogonal.eval_laguerre, 2, 2, 1, , 
-scipy.special.orthogonal.eval_hermite, 2, 2, 1, , 
-scipy.special._precompute.expn_asy.generate_A, 2, 1, 1, , 
-scipy.special._precompute.gammainc_asy.compute_d, 2, 2, 2, , 
-scipy.special.smirnovi, 2, 2, 2, , 
-scipy.special.ndtr, 2, 1, 2, , 
-scipy.special.log_ndtr, 2, 1, 2, , 
-scipy._lib.doccer.replace_notes_in_docstring, 2, 2, 2, notes, 2
-scipy.special.chdtr, 2, 2, 2, , 
-scipy.special.chdtrc, 2, 2, 2, , 
-scipy.special.chdtri, 2, 2, 2, , 
-scipy.special.fdtr, 2, 3, 2, , 
-scipy.special.fdtri, 2, 3, 2, , 
-scipy.special.chndtrix, 2, 3, 2, , 
-scipy.special.ncfdtr, 2, 4, 2, , 
-scipy.special.ncfdtri, 2, 4, 2, , 
-scipy.special.nctdtr, 2, 3, 2, , 
-scipy.special.nctdtrit, 2, 3, 2, , 
-scipy.special.tklmbda, 2, 2, 2, , 
-scipy.special.nbdtrc, 2, 3, 2, , 
-scipy.special.pdtrc, 2, 2, 2, , 
-scipy.stats.distributions.t.ppf, 2, 2, 1, , 
-scipy.stats.distributions.norm.ppf, 2, 1, 1, , 
-scipy.stats.distributions.norm.cdf, 2, 1, 1, , 
-scipy.stats.truncnorm.pdf, 2, 3, 2, , 
-scipy.stats.bernoulli.logpmf, 2, 2, 2, , 
-scipy.stats.boltzmann.pmf, 2, 3, 2, , 
-scipy.stats.randint.pmf, 2, 3, 2, , 
-scipy.stats.randint.cdf, 2, 3, 2, , 
-scipy.stats.bradford.cdf, 2, 2, 2, , 
-scipy.stats.bradford.ppf, 2, 2, 2, , 
-scipy.stats.nbinom.logpmf, 2, 3, 2, , 
-scipy.stats.norminvgauss.cdf, 2, 3, 2, b, 2
-scipy.stats.norminvgauss.pdf, 2, 3, 2, b, 2
-scipy.stats.norminvgauss.ppf, 2, 3, 2, , 
-scipy.stats.geom.cdf, 2, 2, 2, , 
-scipy.stats.geom.sf, 2, 2, 2, , 
-scipy.stats.geom.logcdf, 2, 2, 2, , 
-scipy.stats.geom.logsf, 2, 2, 2, , 
-scipy.stats.geom.ppf, 2, 2, 2, , 
-scipy.stats.planck.sf, 2, 2, 2, , 
-scipy.stats.planck.logsf, 2, 2, 2, , 
-scipy.stats.laplace.pdf, 2, 1, 2, , 
-scipy.stats.halfnorm.pdf, 2, 2, 2, scale, 2
-scipy.stats.truncnorm.ppf, 2, 5, 2, loc, 2
-scipy.stats.truncnorm.isf, 2, 5, 2, loc, 2
-scipy.stats.hypergeom.pmf, 2, 4, 2, , 
-scipy.stats.loggamma.stats, 2, 2, 2, moments, 2
-scipy.stats.logistic.ppf, 2, 1, 2, , 
-scipy.stats.logistic.sf, 2, 1, 2, , 
-scipy.stats.logistic.isf, 2, 1, 2, , 
-scipy.stats.logser.pmf, 2, 2, 2, , 
-scipy.stats.logser.mean, 2, 1, 2, , 
-scipy.stats.pareto.sf, 2, 4, 2, loc, 2
-scipy.stats.genpareto.logsf, 2, 4, 2, , 
-scipy.stats.expon.cdf, 2, 1, 2, , 
-scipy.stats.gumbel_r.cdf, 2, 1, 2, , 
-scipy.stats.uniform.cdf, 2, 1, 2, , 
-scipy.stats.kappa4, 2, 2, 2, , 
-scipy.stats.poisson.interval, 2, 2, 2, , 
-scipy.stats.invgamma.cdf, 2, 2, 2, , 
-scipy.stats.invgamma.ppf, 2, 2, 2, , 
-scipy.stats.invgamma.sf, 2, 2, 2, , 
-scipy.stats.invgamma.isf, 2, 2, 2, , 
-scipy.stats.skewnorm.sf, 2, 2, 2, , 
-scipy.stats.genexpon.pdf, 2, 4, 2, , 
-scipy.stats.genexpon.cdf, 2, 4, 2, , 
-scipy.stats.lognorm.pdf, 2, 2, 2, , 
-scipy.stats.betaprime, 2, 2, 2, , 
-scipy.stats.gamma.logpdf, 2, 2, 2, , 
-scipy.stats.gumbel_l.cdf, 2, 1, 2, , 
-scipy.stats.gumbel_l.ppf, 2, 1, 2, , 
-scipy.stats.gumbel_l.sf, 2, 1, 2, , 
-scipy.stats.gumbel_l.isf, 2, 1, 2, , 
-scipy.stats.levy_stable._fitstart, 2, 1, 2, , 
-scipy.stats.levy_stable.pdf, 2, 5, 2, loc, 2
-scipy.stats.rv_continuous, 2, 0, 2, , 
-scipy.stats.gamma.expect, 2, 7, 2, args, 2
-scipy.stats.hypergeom.stats, 2, 4, 2, loc, 2
-scipy.stats.randint.expect, 2, 2, 2, , 
-scipy.stats.poisson.moment, 2, 2, 2, , 
-scipy.stats.nct.pdf, 2, 3, 2, , 
-scipy.stats.rice.stats, 2, 2, 2, moments, 2
-scipy.stats.erlang.fit, 2, 2, 2, f0, 2
-scipy.stats.rayleigh.logpdf, 2, 1, 2, , 
-scipy.stats.rayleigh.logsf, 2, 1, 2, , 
-scipy.stats.expon.logpdf, 2, 1, 2, , 
-scipy.stats.weibull_min.cdf, 2, 3, 2, scale, 2
-scipy.stats.weibull_min.logcdf, 2, 3, 2, scale, 2
-scipy.stats.weibull_max.pdf, 2, 3, 2, scale, 2
-scipy.stats.weibull_max.logpdf, 2, 3, 2, scale, 2
-scipy.stats.weibull_max.cdf, 2, 3, 2, scale, 2
-scipy.stats.weibull_max.logcdf, 2, 3, 2, scale, 2
-scipy.stats._continuous_distns.gamma_gen, 2, 1, 2, name, 2
-scipy.stats.powerlaw.stats, 2, 2, 2, moments, 2
-scipy.stats.powerlaw.logpdf, 2, 2, 2, , 
-scipy.stats.exponpow.pdf, 2, 2, 2, , 
-scipy.stats.gengamma.pdf, 2, 3, 2, , 
-scipy.stats.ksone.fit, 2, 1, 2, , 
-scipy.stats.levy.cdf, 2, 1, 2, , 
-scipy.stats.levy.ppf, 2, 1, 2, , 
-scipy.stats.ncf.pdf, 2, 6, 2, , 
-scipy.stats.ncx2.cdf, 2, 3, 2, , 
-scipy.stats.ncx2._cdfvec, 2, 3, 2, , 
-scipy.stats.ncx2.logpdf, 2, 3, 2, , 
-scipy.stats.foldnorm, 2, 2, 2, scale, 2
-scipy.stats.lomax.ppf, 2, 2, 2, , 
-scipy.stats.gompertz.ppf, 2, 2, 2, , 
-scipy.stats.truncexpon.ppf, 2, 2, 2, , 
-scipy.stats.rayleigh.isf, 2, 2, 2, , 
-scipy.stats.genextreme.pdf, 2, 2, 2, , 
-scipy.stats.genextreme.logpdf, 2, 2, 2, , 
-scipy.stats.burr12.ppf, 2, 3, 2, , 
-scipy.stats.gaussian_kde.__init__, 2, 2, 2, , 
-scipy.stats.gumbel_l.fit, 2, 1, 2, , 
-scipy.stats.yeojohnson_normmax, 2, 1, 2, , 
-scipy.stats.mstats.mquantiles, 2, 3, 2, limit, 2
-scipy.stats.mstats.kendalltau_seasonal, 2, 1, 2, , 
-scipy.stats.mstats.pointbiserialr, 2, 2, 2, , 
-scipy.stats.mstats.winsorize, 2, 1, 2, , 
-scipy.stats.mstats.variation, 2, 1, 2, , 
-scipy.stats.mstats.zscore, 2, 1, 2, , 
-scipy.stats.mstats.siegelslopes, 2, 2, 1, method, 1
-scipy.stats.mstats.plotting_positions, 2, 3, 2, , 
-scipy.stats.mstats.kurtosistest, 2, 1, 2, , 
-scipy.stats.mstats.f_oneway, 2, 2, 2, , 
-scipy.stats.mstats.mannwhitneyu, 2, 2, 2, , 
-scipy.stats.mstats.kruskal, 2, 2, 2, , 
-scipy.stats.mstats.rankdata, 2, 1, 2, , 
-scipy.stats.trimboth, 2, 2, 2, , 
-scipy.stats.mstats.obrientransform, 2, 1, 2, , 
-scipy.stats.mstats.idealfourths, 2, 1, 1, , 
-scipy.stats.mstats.mquantiles_cimj, 2, 1, 1, , 
-scipy.stats.matrix_normal.pdf, 2, 4, 2, colcov, 2
-scipy.stats.multinomial.rvs, 2, 4, 2, random_state, 2
-scipy.stats.multinomial, 2, 2, 2, , 
-scipy.stats.invgamma, 2, 2, 2, scale, 2
-scipy.stats.wishart.rvs, 2, 2, 2, , 
-scipy.stats.invwishart.rvs, 2, 2, 2, , 
-scipy.stats.special_ortho_group, 2, 1, 2, , 
-scipy.stats.tmin, 2, 2, 2, nan_policy, 2
-scipy.stats.tsem, 2, 3, 2, limits, 2
-scipy.stats.mstats_basic.kendalltau, 2, 2, 2, , 
-scipy.stats.friedmanchisquare, 2, 1, 2, , 
-scipy.stats.pointbiserialr, 2, 2, 2, , 
+scipy.interpolate.Akima1DInterpolator, 2, 3, 1, axis, 1
+scipy.stats.kurtosis, 2, 2, 1, bias, 1
+scipy.cluster.vq.kmeans2, 2, 3, 2, missing, 1
 scipy.stats.kde.gaussian_kde, 2, 1, 2, , 
+scipy.stats.randint.rvs, 2, 3, 2, size, 2
+scipy.stats.multivariate_normal, 2, 3, 1, cov, 2
 scipy.stats.dirichlet.rvs, 2, 3, 1, size, 2
+scipy.stats.beta, 2, 2, 2, , 
 scipy.stats.halfnorm.rvs, 2, 3, 2, loc, 2
 scipy.stats.uniform.rvs, 2, 3, 1, size, 2
 scipy.stats.logistic.rvs, 2, 3, 2, loc, 2
+scipy.spatial.Voronoi, 2, 2, 1, furthest_site, 1
+scipy.spatial.KDTree, 2, 1, 2, , 
+scipy.linalg.lstsq, 2, 2, 2, , 
+scipy.sparse.triu, 2, 1, 1, , 
+scipy.sparse.tril, 2, 1, 1, , 
+scipy.optimize.approx_fprime, 2, 3, 2, , 
 scipy.stats.weibull_min.rvs, 2, 4, 2, loc, 2
+scipy.special.beta, 2, 2, 2, , 
+scipy.sparse.linalg.lsmr, 2, 5, 1, damp, 1
+scipy.sparse.kron, 2, 2, 2, , 
+scipy.special.polygamma, 2, 2, 2, , 
+scipy.optimize.fmin_bfgs, 2, 5, 1, disp, 2
+scipy.special.lambertw, 2, 1, 2, , 
 scipy.atleast_1d, 2, 1, 2, , 
-scipy.sparse.linalg.eigen.eigs, 2, 6, 1, k, 2
+scipy.sparse.linalg.eigen.eigs, 2, 6, 1, ncv, 2
+scipy.optimize.fminbound, 2, 5, 1, xtol, 2
 scipy.signal.argrelextrema, 2, 4, 2, order, 2
+scipy.ndimage.binary_fill_holes, 2, 1, 2, , 
 scipy.ndimage.measurements.center_of_mass, 2, 1, 2, , 
 scipy.optimize.optimize.fmin, 2, 3, 2, disp, 2
+scipy.interpolate.fitpack2.RectBivariateSpline, 2, 4, 2, s, 2
 scipy.ndimage.filters.convolve1d, 2, 3, 2, axis, 2
 scipy.ndimage.filters.convolve, 2, 3, 1, mode, 1
+scipy.ndimage.binary_opening, 2, 2, 2, iterations, 2
+scipy.fftpack.next_fast_len, 2, 1, 2, , 
+scipy.signal.iirfilter, 2, 5, 2, btype, 2
+scipy.stats.ttest_1samp, 2, 3, 2, nan_policy, 1
 scipy.signal.gausspulse, 2, 2, 2, bw, 2
 scipy.signal.hamming, 2, 2, 2, sym, 2
 scipy.signal.hann, 2, 2, 2, sym, 2
 scipy.rank, 2, 1, 2, , 
+scipy.fftpack.fft2, 2, 1, 2, , 
 scipy.stats.stats.pearsonr, 2, 2, 2, , 
+scipy.stats.lognorm, 2, 1, 1, , 
+scipy.stats.rv_discrete, 2, 1, 2, values, 2
 scipy.special.gamma.dot, 2, 1, 2, , 
+scipy.sparse.linalg.eigs, 2, 3, 2, k, 2
+scipy.optimize.root, 2, 2, 1, jac, 1
+scipy.linalg.lu_solve, 2, 2, 2, , 
+scipy.optimize.NonlinearConstraint, 2, 1, 1, None, 1
+scipy.optimize.differential_evolution, 2, 3, 1, None, 2
+scipy.ndimage.filters.correlate1d, 2, 3, 2, axis, 2
+scipy.linalg.block_diag, 2, 1, 2, , 
+scipy.stats.multivariate_normal.pdf, 2, 3, 2, cov, 2
+scipy.stats.multivariate_normal.logpdf, 2, 3, 2, cov, 2
+scipy.ndimage.sum, 2, 3, 2, , 
+scipy.stats.ranksums, 2, 2, 2, , 
+scipy.sparse.linalg.splu, 2, 1, 2, , 
 scipy.misc.factorial, 2, 1, 2, , 
 scipy.stats.stats.ttest_ind, 2, 3, 2, axis, 2
-scipy.misc.toimage, 2, 3, 1, low, 2
+scipy.special.zeta, 2, 2, 2, , 
+scipy.stats.poisson.pmf, 2, 2, 2, , 
+scipy.sparse.isspmatrix, 2, 1, 2, , 
+scipy.interpolate.Rbf, 2, 4, 2, epsilon, 2
+scipy.signal.periodogram, 2, 3, 1, scaling, 1
+scipy.stats.boxcox, 2, 1, 2, , 
+scipy.linalg.det, 2, 1, 2, , 
+scipy.misc.toimage, 2, 3, 1, high, 2
 scipy.sparse.csr_matrix.sqrt, 2, 1, 2, , 
-scipy.interpolate.interpolate_wrapper.linear, 2, 3, 2, , 
-scipy.misc.doccer.replace_notes_in_docstring, 2, 2, 2, notes, 2
+scipy.linalg.null_space, 2, 1, 2, , 
 scipy.stats.binom.cdf, 2, 3, 2, , 
-scipy.integrate.solve_bvp, 3, 5, 2, tol, 3
-scipy.linalg.circulant, 3, 1, 3, , 
-scipy.linalg.invhilbert, 3, 1, 3, , 
-scipy.linalg.leslie, 3, 2, 3, , 
-scipy.linalg.invpascal, 3, 3, 2, exact, 2
-scipy.signal.step, 3, 1, 2, T, 1
-scipy.special.expn, 3, 2, 3, , 
-scipy.integrate.dblquad, 3, 5, 2, , 
-scipy.integrate.tplquad, 3, 8, 1, args, 2
-scipy.interpolate.sproot, 3, 2, 2, mest, 2
-scipy.interpolate.interpnd.LinearNDInterpolator, 3, 2, 3, , 
-scipy._lib.doccer.filldoc, 3, 1, 3, , 
-scipy.io.mmread, 3, 1, 3, , 
-scipy.sparse.linalg.expm, 3, 1, 3, , 
-scipy.linalg._decomp_qz._select_function, 3, 1, 3, , 
-scipy.linalg.blas.get_blas_funcs, 3, 2, 3, dtype, 3
-scipy.linalg.fiedler, 3, 1, 3, , 
-scipy.sparse.linalg.factorized, 3, 1, 2, , 
-scipy.optimize._minpack._lmdif, 3, 11, 3, , 
-scipy.optimize._minpack._lmder, 3, 12, 3, , 
-scipy.optimize.rosen_der, 3, 1, 2, , 
-scipy.optimize._shgo.SHGO, 3, 5, 1, constraints, 2
-scipy.optimize.fmin_cg, 3, 8, 2, disp, 3
-scipy.optimize.zeros.RootResults, 3, 4, 3, function_calls, 2
-scipy.signal.detrend, 3, 2, 2, overwrite_data, 2
-scipy.linspace, 3, 3, 2, , 
-scipy.sparse.linalg.eigs, 3, 3, 2, k, 3
-scipy.spatial.transform.Rotation.match_vectors, 3, 2, 3, , 
-scipy.special.betaincinv, 3, 3, 3, , 
-scipy.special.i1e, 3, 1, 3, , 
-scipy.special.btdtr, 3, 3, 3, , 
-scipy._lib.doccer.extend_notes_in_docstring, 3, 2, 3, notes, 3
-scipy.misc.derivative, 3, 5, 2, dx, 3
-scipy.special.rel_entr, 3, 2, 3, , 
-scipy.stats.genextreme.ppf, 3, 2, 3, , 
-scipy.stats.hypergeom.sf, 3, 4, 3, , 
-scipy.stats.hypergeom.logsf, 3, 4, 3, , 
-scipy.stats.norm.logcdf, 3, 1, 3, , 
-scipy.stats.normaltest, 3, 1, 3, , 
-scipy.stats.matrix_normal.rvs, 3, 4, 3, colcov, 3
-scipy.stats.binom.logpmf, 3, 3, 3, , 
+scipy.signal.tf2zpk, 2, 1, 1, , 
+scipy.stats.skew, 3, 2, 2, bias, 1
 scipy.fft, 3, 1, 3, , 
+scipy.special.logit, 3, 1, 3, , 
+scipy.stats.ks_2samp, 3, 1, 2, , 
+scipy.stats.truncnorm.rvs, 3, 5, 3, loc, 3
+scipy.interpolate.splprep, 3, 3, 2, s, 3
+scipy.interpolate.splrep, 3, 2, 2, k, 1
+scipy.sparse.find, 3, 1, 3, , 
 scipy.ndimage.morphology.distance_transform_edt, 3, 1, 2, sampling, 1
+scipy.sparse.linalg.LinearOperator, 3, 2, 2, matvec, 3
+scipy.ndimage.rotate, 3, 3, 2, reshape, 3
+scipy.special.iv, 3, 2, 3, , 
 scipy.roots, 3, 1, 3, , 
 scipy.cross, 3, 2, 3, , 
 scipy.signal.gaussian, 3, 2, 3, std, 2
+scipy.optimize.fmin_powell, 3, 4, 2, disp, 3
+scipy.ndimage.binary_closing, 3, 2, 2, iterations, 2
 scipy.ndimage.morphology.binary_fill_holes, 3, 1, 3, , 
+scipy.fftpack.helper.next_fast_len, 3, 1, 3, , 
+scipy.signal.zpk2sos, 3, 1, 2, , 
 scipy.signal.argrelmin, 3, 2, 2, order, 2
 scipy.divide, 3, 2, 3, , 
 scipy.prod, 3, 1, 3, , 
+scipy.sparse.spdiags, 3, 5, 2, , 
+scipy.special.betainc, 3, 3, 3, , 
+scipy.special.genlaguerre, 3, 2, 3, n, 2
+scipy.stats.beta.cdf, 3, 2, 2, , 
+scipy.cluster.hierarchy.to_tree, 3, 1, 2, rd, 1
 scipy.hstack, 3, 1, 3, , 
+scipy.special.kv, 3, 2, 3, , 
+scipy.linalg.qr, 3, 2, 3, mode, 3
+scipy.optimize.fmin_cobyla, 3, 4, 2, iprint, 2
+scipy.sparse.dia_matrix, 3, 1, 2, shape, 1
 scipy.delete, 3, 3, 3, axis, 3
 scipy.cluster.hierarchy.leaves_list, 3, 1, 3, , 
+scipy.linalg.expm, 3, 1, 3, , 
 scipy.stats.norm.iteration, 3, 0, 3, , 
-scipy.misc.doccer.extend_notes_in_docstring, 3, 2, 3, notes, 3
 scipy.stats.t.interval, 3, 2, 3, df, 3
 scipy.signal.zpk2ss, 3, 3, 3, , 
-scipy.cluster.vq.vq, 4, 2, 4, , 
-scipy.interpolate.Rbf, 4, 4, 3, function, 2
-scipy.signal.find_peaks, 4, 1, 2, distance, 2
-scipy.stats.cauchy.rvs, 4, 3, 2, size, 4
-scipy.stats.beta.cdf, 4, 2, 2, b, 1
-scipy.stats.t.rvs, 4, 2, 3, size, 4
-scipy._lib._testutils._parse_size, 4, 1, 2, , 
-scipy._lib._threadsafety.ReentrancyLock, 4, 1, 4, , 
-scipy._lib._test_ccallback.test_get_plus1_capsule, 4, 0, 2, , 
-scipy._lib._tmpdirs.in_dir, 4, 0, 1, , 
-scipy.cluster.hierarchy.maxdists, 4, 1, 4, , 
-scipy.cluster.hierarchy.maxinconsts, 4, 2, 4, , 
-scipy.cluster.hierarchy.maxRstat, 4, 3, 4, , 
-scipy.cluster.hierarchy.ward, 4, 1, 4, , 
-scipy.cluster.hierarchy.optimal_leaf_ordering, 4, 2, 4, , 
-scipy._lib._fpumode.get_fpu_mode, 4, 0, 4, , 
-scipy.fftpack._fftpack.zfft, 4, 1, 2, direction, 2
-scipy.fftpack._fftpack.zrfft, 4, 1, 2, direction, 2
-scipy.fftpack._fftpack.drfft, 4, 1, 2, direction, 2
-scipy.fftpack.ifftn, 4, 1, 3, , 
-scipy.fftpack.itilbert, 4, 2, 2, h, 2
-scipy.fftpack.ihilbert, 4, 1, 2, , 
-scipy.integrate._bvp.modify_mesh, 4, 3, 4, , 
-scipy.integrate._bvp.compute_jac_indices, 4, 3, 4, , 
-scipy.integrate._bvp.construct_global_jac, 4, 13, 4, , 
-scipy._lib.six.get_method_function, 4, 1, 4, , 
-scipy.interpolate.splantider, 4, 1, 2, , 
-scipy.interpolate.fitpack.splprep, 4, 5, 2, k, 4
-scipy.interpolate.interpnd.estimate_gradients_2d_global, 4, 3, 4, tol, 2
-scipy.interpolate._ppoly.fix_continuity, 4, 3, 4, , 
-scipy.io.harwell_boeing._fortran_format_parser.FortranFormatParser, 4, 0, 3, , 
-scipy.io.hb_read, 4, 1, 4, , 
-scipy.io.matlab.mio5_utils.byteswap_u4, 4, 1, 2, , 
-scipy.io.matlab.mio_utils.squeeze_element, 4, 1, 2, , 
-scipy.io.matlab.streams._read_string, 4, 2, 2, , 
-scipy.io.harwell_boeing.hb_write, 4, 2, 2, , 
-scipy.linalg._interpolative.idd_frmi, 4, 1, 4, , 
-scipy.linalg._interpolative.idz_frmi, 4, 1, 4, , 
-scipy.linalg.decomp_schur.rsf2csf, 4, 2, 2, , 
-scipy._lib._util.DeprecatedImport, 4, 2, 4, , 
-scipy.linalg.misc.norm, 4, 1, 4, , 
-scipy.linalg.lapack.dgbtrf, 4, 3, 4, , 
-scipy.linalg.lapack.zgbtrf, 4, 3, 4, , 
-scipy.linalg.interpolative.reconstruct_interp_matrix, 4, 2, 4, , 
-scipy.linalg.interpolative.reconstruct_skel_matrix, 4, 3, 4, , 
-scipy.linalg.interpolative.estimate_rank, 4, 2, 4, , 
-scipy.linalg.funm, 4, 3, 4, disp, 4
-scipy.sparse.linalg.norm, 4, 1, 2, ord, 2
-scipy.linalg._solve_toeplitz.levinson, 4, 2, 2, b, 4
-scipy.linalg.solve_continuous_are, 4, 4, 2, , 
-scipy.linalg.solve_discrete_are, 4, 4, 2, , 
-scipy.linalg.solve_sylvester, 4, 3, 4, , 
-scipy.linalg.kron, 4, 2, 4, , 
-scipy.misc.doccer.unindent_dict, 4, 1, 4, , 
-scipy.misc.doccer.inherit_docstring_from, 4, 1, 4, , 
-scipy.ndimage.laplace, 4, 1, 2, output, 2
-scipy.ndimage.fourier_gaussian, 4, 4, 4, , 
-scipy.ndimage.fourier_uniform, 4, 4, 4, , 
-scipy.ndimage.fourier_shift, 4, 4, 4, , 
-scipy.ndimage.fourier_ellipsoid, 4, 4, 4, , 
-scipy.ndimage.binary_propagation, 4, 4, 4, mask, 4
-scipy.ndimage.morphological_gradient, 4, 4, 2, footprint, 4
-scipy.ndimage.morphological_laplace, 4, 4, 2, footprint, 4
-scipy.ndimage.spline_filter1d, 4, 4, 2, order, 4
-scipy.optimize._trustregion_constr.canonical_constraint.initial_constraints_as_canonical, 4, 3, 4, , 
-scipy._lib.six.exec_, 4, 2, 4, , 
-scipy.optimize._basinhopping.RandomDisplacement, 4, 1, 2, stepsize, 4
-scipy.optimize._basinhopping.Metropolis, 4, 1, 2, , 
-scipy.optimize.linesearch.scalar_search_armijo, 4, 3, 2, alpha0, 2
-scipy.optimize.linesearch.line_search_wolfe2, 4, 8, 2, amax, 4
-scipy.optimize.check_grad, 4, 3, 2, epsilon, 2
-scipy.optimize._trlib.get_trlib_quadratic_subproblem, 4, 2, 1, tol_rel_b, 4
-scipy.optimize.approx_fprime, 4, 3, 2, , 
-scipy.signal._arraytools.axis_reverse, 4, 2, 2, axis, 4
-scipy.signal._arraytools.odd_ext, 4, 3, 2, axis, 4
-scipy.signal._arraytools.even_ext, 4, 3, 2, axis, 4
-scipy.signal._arraytools.const_ext, 4, 3, 2, axis, 4
-scipy.signal._arraytools.zero_ext, 4, 3, 2, axis, 4
-scipy.signal.tf2sos, 4, 2, 4, , 
-scipy.signal.lp2lp_zpk, 4, 4, 4, , 
-scipy.signal.lp2hp_zpk, 4, 4, 4, , 
-scipy.signal.kaiser_atten, 4, 2, 4, , 
-scipy.ndimage.filters.correlate1d, 4, 3, 4, mode, 2
-scipy.signal.cspline1d, 4, 1, 4, , 
-scipy.signal.cspline1d_eval, 4, 4, 2, x0, 2
-scipy.signal.signaltools._filtfilt_gust, 4, 3, 2, irlen, 2
-scipy._lib._util._prune_array, 4, 1, 4, , 
-scipy.sparse.csgraph.breadth_first_tree, 4, 3, 2, , 
-scipy.sparse.csgraph.depth_first_tree, 4, 3, 2, , 
-scipy._lib.six.iteritems, 4, 1, 4, , 
-scipy.sparse.linalg.dsolve.spilu, 4, 1, 4, , 
-scipy.sparse.linalg.dsolve.spsolve_triangular, 4, 3, 4, lower, 4
-scipy.sparse.triu, 4, 1, 3, , 
-scipy.sparse.linalg.eigen.arpack.eigsh, 4, 7, 2, v0, 4
-scipy.sparse.linalg.interface.IdentityOperator, 4, 2, 2, shape, 2
-scipy.sparse.linalg._expm_multiply._compute_p_max, 4, 1, 2, , 
-scipy.sparse.linalg._expm_multiply._expm_multiply_simple, 4, 3, 2, t, 4
-scipy.sparse.linalg._expm_multiply._expm_multiply_interval, 4, 7, 2, endpoint, 4
-scipy.sparse.construct.random, 4, 7, 2, dtype, 2
-scipy.sparse.construct.identity, 4, 3, 2, format, 4
-scipy.sparse.construct.bmat, 4, 1, 4, , 
-scipy.sparse._sparsetools.bsr_scale_rows, 4, 8, 4, , 
-scipy.sparse._sparsetools.bsr_scale_columns, 4, 8, 4, , 
-scipy.spatial.delaunay_plot_2d, 4, 2, 4, ax, 4
-scipy.spatial.convex_hull_plot_2d, 4, 2, 2, ax, 2
-scipy.spatial.distance.sokalsneath, 4, 2, 4, , 
-scipy.spatial.distance.sokalmichener, 4, 2, 4, , 
-scipy.spatial.qhull._Qhull, 4, 3, 4, , 
-scipy.spatial.transform.RotationSpline, 4, 2, 4, , 
-scipy.special._ufuncs.mathieu_modcem1, 4, 3, 4, , 
-scipy.special._ufuncs.mathieu_modsem1, 4, 3, 4, , 
-scipy.special._ufuncs.pdtr, 4, 2, 4, , 
-scipy.special._ufuncs.pdtrc, 4, 2, 4, , 
-scipy.special._ufuncs.pdtrik, 4, 2, 4, , 
-scipy.special.cosdg, 4, 1, 4, , 
-scipy.special.cotdg, 4, 1, 4, , 
-scipy.special.exp2, 4, 1, 4, , 
-scipy.special.exp10, 4, 1, 4, , 
-scipy.special.hankel1, 4, 2, 4, , 
-scipy.special.hankel2e, 4, 2, 4, , 
-scipy.special.hyperu, 4, 3, 4, , 
-scipy.special.jve, 4, 2, 4, , 
-scipy.special.jnp_zeros, 4, 2, 4, , 
-scipy.special.k1e, 4, 1, 4, , 
-scipy.special.kvp, 4, 3, 4, n, 4
-scipy.special.y0_zeros, 4, 1, 2, complex, 2
-scipy.special.yn_zeros, 4, 2, 4, , 
-scipy.special.yve, 4, 2, 4, , 
-scipy.special.i1, 4, 1, 4, , 
-scipy.special.lpn, 4, 2, 3, , 
-scipy.special.pbdn_seq, 4, 2, 4, , 
-scipy.special.radian, 4, 3, 4, , 
-scipy.special.inv_boxcox, 4, 2, 3, , 
-scipy.special.eval_legendre, 4, 2, 2, , 
-scipy.special.eval_laguerre, 4, 2, 2, , 
-scipy.special.eval_genlaguerre, 4, 3, 2, , 
-scipy.special.btdtri, 4, 3, 3, , 
-scipy.special.gdtrix, 4, 3, 2, , 
-scipy.special.gdtrib, 4, 3, 2, , 
-scipy.special.sph_harm, 4, 4, 3, , 
-scipy.special.kolmogi, 4, 1, 4, , 
-scipy.special.lambertw, 4, 1, 2, , 
-scipy.special._ufuncs._lanczos_sum_expg_scaled, 4, 1, 4, , 
-scipy.special.pbwa, 4, 2, 4, , 
-scipy.special.bdtrc, 4, 3, 4, , 
-scipy.special.roots_hermitenorm, 4, 2, 4, , 
-scipy.special.orthogonal.eval_gegenbauer, 4, 3, 3, , 
-scipy.special.roots_chebyu, 4, 2, 4, , 
-scipy.special.roots_chebyc, 4, 2, 4, , 
-scipy.special.roots_chebys, 4, 2, 4, , 
-scipy.special.roots_sh_chebyt, 4, 2, 4, , 
-scipy.special.roots_sh_chebyu, 4, 2, 4, , 
-scipy.special.roots_sh_legendre, 4, 2, 4, , 
-scipy.special.roots_laguerre, 4, 2, 4, , 
-scipy.special._test_round.test_add_round, 4, 2, 2, , 
-scipy.special.seterr, 4, 1, 4, None, 4
-scipy.special.spence, 4, 1, 4, , 
-scipy.special.stdtr, 4, 2, 4, , 
-scipy.special.stdtrit, 4, 2, 4, , 
-scipy.special.chndtr, 4, 3, 4, , 
-scipy.special.bdtr, 4, 3, 4, , 
-scipy.special.pdtr, 4, 2, 4, , 
-scipy.linalg.blas.drot, 4, 11, 4, overwrite_y, 4
-scipy.stats.contingency.expected_freq, 4, 1, 2, , 
-scipy.stats.reciprocal.cdf, 4, 3, 4, , 
-scipy.stats.distributions.chi2.sf, 4, 2, 4, , 
-scipy.stats.geom.rvs, 4, 2, 2, size, 2
-scipy.stats.geom.pmf, 4, 2, 2, loc, 2
-scipy.stats.geom.logpmf, 4, 2, 4, , 
-scipy.stats.expon.pdf, 4, 1, 4, , 
-scipy.stats.hypergeom.rvs, 4, 4, 2, size, 2
-scipy.stats.hypergeom.logcdf, 4, 4, 4, , 
-scipy.stats.logistic.cdf, 4, 1, 4, , 
-scipy.stats.logser.rvs, 4, 2, 2, size, 2
-scipy.stats.genpareto._argcheck, 4, 1, 4, , 
-scipy.stats.genpareto.ppf, 4, 2, 4, , 
-scipy.stats.genpareto.isf, 4, 2, 4, , 
-scipy.stats.pearson3.rvs, 4, 2, 2, size, 2
-scipy.stats.genextreme.cdf, 4, 2, 4, , 
-scipy.stats.zipf.rvs, 4, 2, 2, size, 2
-scipy.stats.zipf.stats, 4, 1, 2, a, 4
-scipy.stats.dlaplace.rvs, 4, 2, 2, size, 2
-scipy.stats.dlaplace, 4, 1, 4, , 
-scipy.stats.skewnorm.stats, 4, 4, 4, a, 4
-scipy.stats.beta.logpdf, 4, 3, 4, , 
-scipy.stats.betaprime.cdf, 4, 3, 4, , 
-scipy.stats.gumbel_l.logcdf, 4, 1, 2, , 
-scipy.stats.gumbel_l.logsf, 4, 1, 2, , 
-scipy.stats.lognorm.rvs, 4, 4, 4, size, 4
-scipy.stats.gamma, 4, 1, 2, a, 2
-scipy.stats.lognorm, 4, 1, 3, , 
-scipy.stats.poisson, 4, 1, 2, loc, 2
-scipy.stats.logser.expect, 4, 2, 2, args, 4
-scipy.stats.skellam.expect, 4, 2, 4, args, 4
-scipy.stats.nct.stats, 4, 3, 4, moments, 4
-scipy.stats.weibull_min.pdf, 4, 2, 2, scale, 2
-scipy.stats.weibull_min.sf, 4, 3, 4, scale, 4
-scipy.stats.weibull_min.logsf, 4, 3, 4, scale, 4
-scipy.stats.weibull_max.sf, 4, 3, 4, scale, 4
-scipy.stats.weibull_max.logsf, 4, 3, 4, scale, 4
-scipy.stats.trapz.pdf, 4, 3, 4, , 
-scipy.stats.tukeylambda.pdf, 4, 2, 4, , 
-scipy.stats.exponpow.logpdf, 4, 2, 4, , 
-scipy.stats.gengamma._munp, 4, 3, 4, , 
-scipy.stats.lognorm.stats, 4, 1, 4, , 
-scipy.stats.bayes_mvs, 4, 1, 4, , 
-scipy.stats.bartlett, 4, 1, 4, , 
-scipy.stats.yeojohnson_llf, 4, 2, 4, , 
-scipy.stats.mstats.spearmanr, 4, 2, 4, , 
-scipy.stats.mstats.trimboth, 4, 1, 2, , 
-scipy.stats.mstats.mode, 4, 2, 4, axis, 2
-scipy.stats.mstats.sem, 4, 1, 2, ddof, 2
-scipy.stats.mstats.zmap, 4, 2, 4, , 
-scipy.stats.mstats.friedmanchisquare, 4, 1, 4, , 
-scipy.stats.mstats.normaltest, 4, 1, 4, , 
-scipy.stats.mstats.describe, 4, 2, 2, ddof, 2
-scipy.stats.mstats.find_repeats, 4, 1, 4, , 
-scipy.stats.mstats.rsh, 4, 1, 1, points, 2
-scipy.stats.mstats.hdquantiles_sd, 4, 2, 1, , 
-scipy.stats.chi2, 4, 1, 2, scale, 2
-scipy.stats.multinomial.mean, 4, 2, 4, , 
-scipy.stats.tvar, 4, 3, 2, limits, 4
-scipy.stats.tstd, 4, 3, 2, limits, 2
-scipy.stats.theilslopes, 4, 1, 2, , 
-scipy.stats.ranksums, 4, 2, 4, , 
+scipy.ndimage.gaussian_filter, 4, 2, 3, sigma, 2
+scipy.special.gammainc, 4, 2, 4, , 
+scipy.linalg.lu, 4, 1, 4, , 
 scipy.ndimage.filters.sobel, 4, 2, 2, , 
+scipy.optimize.linear_sum_assignment, 4, 1, 4, , 
+scipy.stats.skewnorm.rvs, 4, 4, 3, size, 4
+scipy.sparse.csgraph.connected_components, 4, 2, 3, directed, 3
+scipy.interpolate.splev, 4, 2, 3, der, 1
 scipy.io.matlab.loadmat, 4, 1, 4, , 
+scipy.optimize.nnls, 4, 2, 4, , 
+scipy.sparse.linalg.interface.LinearOperator, 4, 2, 4, , 
+scipy.eye, 4, 1, 2, dtype, 2
 scipy.ones_like, 4, 1, 4, , 
 scipy.signal.sawtooth, 4, 2, 4, width, 4
+scipy.optimize.fmin_slsqp, 4, 7, 4, iter, 4
 scipy.optimize.bisect, 4, 3, 4, , 
+scipy.fftpack.rfft, 4, 2, 4, , 
+scipy.signal.hilbert, 4, 1, 4, , 
+scipy.signal.welch, 4, 3, 2, nperseg, 4
+scipy.signal.spectrogram, 4, 5, 1, nperseg, 4
 scipy.signal.argrelmax, 4, 1, 2, order, 2
 scipy.sparse.linalg.eigsh, 4, 5, 2, M, 3
+scipy.optimize.linprog, 4, 5, 2, A_ub, 2
 scipy.misc.logsumexp, 4, 1, 4, , 
 scipy.stats.randint, 4, 2, 4, , 
+scipy.special.i0, 4, 1, 4, , 
+scipy.linalg.eigh, 4, 1, 4, , 
 scipy.sum, 4, 1, 4, , 
-scipy._build_utils.get_sgemv_fix, 4, 1, 4, , 
+scipy.stats.ttest_ind, 4, 2, 4, , 
+scipy.fftpack.ifft, 4, 3, 4, , 
+scipy.fftpack.irfft, 4, 3, 4, , 
+scipy.integrate.solve_ivp, 4, 4, 3, t_eval, 4
+scipy.interpolate.RegularGridInterpolator, 4, 4, 3, bounds_error, 4
+scipy.special.erfinv, 4, 1, 4, , 
 scipy.stats.f.sf, 4, 3, 4, , 
-scipy.fftpack.tilbert, 5, 2, 3, h, 2
-scipy.fftpack.hilbert, 5, 1, 3, , 
-scipy.misc.electrocardiogram, 5, 0, 5, , 
-scipy.signal.coherence, 5, 3, 4, nperseg, 4
-scipy.special.ai_zeros, 5, 1, 5, , 
-scipy.cluster.hierarchy.cophenet, 5, 2, 3, , 
-scipy.optimize.Bounds, 5, 2, 5, , 
-scipy.optimize.fmin_powell, 5, 7, 2, disp, 5
-scipy.signal.bilinear, 5, 3, 4, , 
-scipy.signal.iirnotch, 5, 2, 4, fs, 1
-scipy.signal.iirpeak, 5, 2, 4, fs, 1
-scipy.signal.sosfiltfilt, 5, 5, 2, None, 1
-scipy._lib.six.zip, 5, 2, 5, , 
-scipy.special.cbrt, 5, 1, 5, , 
-scipy.special.i0e, 5, 1, 5, , 
-scipy.special.smirnov, 5, 2, 5, , 
-scipy.stats.binom.rvs, 5, 2, 3, size, 2
-scipy.stats.nbinom.rvs, 5, 3, 3, size, 3
-scipy.stats.hypergeom, 5, 3, 5, , 
-scipy.stats.poisson.stats, 5, 2, 5, moments, 5
-scipy.stats.matrix_normal.logpdf, 5, 4, 5, colcov, 4
-scipy.stats.median_absolute_deviation, 5, 2, 4, nan_policy, 3
+scipy.interpolate.UnivariateSpline, 5, 4, 3, k, 3
+scipy.sparse.vstack, 5, 1, 3, format, 2
 scipy.ndimage.measurements.label, 5, 1, 4, , 
+scipy.special.expit, 5, 1, 5, , 
+scipy.cluster.vq.kmeans, 5, 3, 3, iter, 2
+scipy.stats.gamma.rvs, 5, 2, 3, scale, 5
 scipy.sparse.coo.coo_matrix, 5, 3, 4, shape, 4
+scipy.sparse.bsr_matrix, 5, 1, 3, shape, 2
+scipy.fftpack.fft, 5, 3, 4, , 
+scipy.sparse.linalg.cg, 5, 4, 2, callback, 4
+scipy.optimize.brentq, 5, 4, 2, args, 2
 scipy.where, 5, 1, 5, , 
+scipy.arange, 5, 2, 2, , 
 scipy.split, 5, 2, 5, , 
+scipy.ndimage.binary_dilation, 5, 2, 3, iterations, 3
+scipy.interpolate.fitpack.bisplev, 5, 5, 5, dx, 5
+scipy.signal.zpk2tf, 5, 1, 3, , 
+scipy.signal.medfilt, 5, 2, 5, kernel_size, 2
+scipy.signal.firwin2, 5, 5, 3, nfreqs, 4
+scipy.ones, 5, 1, 5, , 
+scipy.optimize.basinhopping, 5, 3, 2, minimizer_kwargs, 3
+scipy.sparse.isspmatrix_csr, 5, 1, 5, , 
+scipy.sparse.isspmatrix_csc, 5, 1, 5, , 
 scipy.sparse.isspmatrix_lil, 5, 1, 5, , 
 scipy.stats.nbinom.pmf, 5, 3, 5, , 
-scipy.special.errprint, 5, 1, 4, , 
+scipy.signal.cheby2, 5, 4, 3, btype, 3
 scipy.sparse.csr.csr_matrix, 5, 1, 4, dtype, 1
 scipy.sparse.dok.dok_matrix, 5, 1, 5, , 
 scipy.stats.t.sf, 5, 2, 5, , 
-scipy.optimize.rosen, 6, 1, 6, , 
-scipy.interpolate.UnivariateSpline, 6, 3, 3, k, 4
-scipy.signal.upfirdn, 6, 4, 3, up, 4
-scipy.rand, 6, 2, 5, , 
-scipy.sparse.linalg.cg, 6, 4, 2, callback, 4
-scipy.sparse.linalg.gmres, 6, 4, 3, tol, 5
-scipy.sparse.linalg.lgmres, 6, 5, 2, inner_m, 5
-scipy.stats.cauchy.fit, 6, 1, 5, loc, 1
-scipy.sparse.kron, 6, 2, 6, , 
-scipy._lib._gcutils.gc_state, 6, 1, 3, , 
-scipy._lib._util.MapWrapper, 6, 1, 6, pool, 1
-scipy.spatial.distance.num_obs_y, 6, 1, 6, , 
-scipy.cluster.hierarchy.single, 6, 1, 6, , 
-scipy.cluster.hierarchy.set_link_color_palette, 6, 1, 6, , 
-scipy.constants.find, 6, 2, 3, disp, 6
-scipy.fftpack.fft2, 6, 3, 4, axes, 4
-scipy.integrate.OdeSolution, 6, 2, 6, , 
-scipy.integrate.fixed_quad, 6, 4, 2, n, 4
-scipy.integrate.romb, 6, 3, 4, axis, 4
-scipy.interpolate._fitpack_impl.splrep, 6, 2, 6, , 
-scipy.interpolate.fitpack.bisplrep, 6, 6, 1, s, 4
-scipy.interpolate.fitpack.splantider, 6, 2, 2, , 
-scipy.interpolate.fitpack.insert, 6, 3, 3, m, 6
-scipy.interpolate.NearestNDInterpolator, 6, 2, 3, tree_options, 2
-scipy.io.harwell_boeing._fortran_format_parser.IntFormat.from_number, 6, 1, 6, , 
-scipy.io.matlab.mio5.MatFile5Writer, 6, 1, 6, , 
-scipy.io.matlab.streams.make_stream, 6, 1, 3, , 
-scipy.io.matlab.streams._read_into, 6, 2, 3, , 
-scipy.linalg._matfuncs_sqrtm._sqrtm_triu, 6, 1, 3, , 
-scipy.linalg._interpolative_backend.id_srandi, 6, 1, 6, , 
-scipy.linalg.polar, 6, 2, 3, side, 6
-scipy.linalg.interpolative.rand, 6, 1, 6, , 
-scipy.linalg.expm_cond, 6, 1, 6, , 
-scipy.linalg.fiedler_companion, 6, 1, 6, , 
-scipy.misc.doccer.filldoc, 6, 2, 4, , 
-scipy.ndimage.generic_filter1d, 6, 7, 2, extra_arguments, 4
-scipy.ndimage.gaussian_filter1d, 6, 4, 4, mode, 4
-scipy.ndimage.histogram, 6, 6, 2, , 
-scipy.ndimage.binary_hit_or_miss, 6, 3, 4, output, 2
-scipy.optimize._trustregion_constr.qp_subproblem.eqp_kktfact, 6, 4, 6, , 
-scipy.optimize._differentiable_functions.IdentityVectorFunction, 6, 2, 3, , 
-scipy.optimize._lsq.common.intersect_trust_region, 6, 3, 6, , 
-scipy.optimize.fmin_ncg, 6, 9, 4, retall, 6
-scipy.optimize._trustregion_exact.singular_leading_submatrix, 6, 3, 3, , 
-scipy.fftpack.next_fast_len, 6, 1, 6, , 
-scipy.special.sinc, 6, 1, 6, , 
-scipy.signal.TransferFunction._z_to_zinv, 6, 2, 6, , 
-scipy.signal.TransferFunction._zinv_to_z, 6, 2, 6, , 
-scipy.signal.sos2zpk, 6, 1, 6, , 
-scipy.signal.place_poles, 6, 4, 2, None, 2
-scipy.signal._peak_finding._unpack_condition_args, 6, 3, 6, , 
-scipy.signal._peak_finding.find_peaks_cwt, 6, 5, 4, min_snr, 6
-scipy.signal.lfiltic, 6, 3, 6, , 
-scipy.signal.choose_conv_method, 6, 2, 2, mode, 4
-scipy.signal.sosfilt_zi, 6, 1, 6, , 
-scipy.sparse.csgraph.maximum_bipartite_matching, 6, 2, 3, perm_type, 6
-scipy.sparse.tril, 6, 1, 3, , 
-scipy.eye, 6, 1, 4, dtype, 2
-scipy.sparse.load_npz, 6, 1, 6, , 
-scipy.spatial.voronoi_plot_2d, 6, 2, 4, ax, 2
-scipy.spatial.distance.wminkowski, 6, 4, 6, p, 6
-scipy.spatial.distance_matrix, 6, 2, 4, threshold, 2
-scipy.spatial._spherical_voronoi.project_to_sphere, 6, 3, 3, , 
-scipy.spatial.transform.Rotation.from_rotvec, 6, 1, 6, , 
-scipy.special._precompute.utils.lagrange_inversion, 6, 1, 4, , 
-scipy.special._ufuncs.exp1, 6, 1, 6, , 
-scipy.special._ufuncs.sici, 6, 1, 6, , 
-scipy.special.assoc_laguerre, 6, 3, 6, , 
-scipy.special.cosm1, 6, 1, 6, , 
-scipy.special.sindg, 6, 1, 6, , 
-scipy.special.tandg, 6, 1, 6, , 
-scipy.special.ellipe, 6, 1, 5, , 
-scipy.special.fresnel_zeros, 6, 1, 6, , 
-scipy.special.jvp, 6, 2, 6, , 
-scipy.special.yvp, 6, 2, 6, , 
-scipy.special.jn, 6, 2, 6, , 
-scipy.special.yn, 6, 2, 6, , 
-scipy.special.lqn, 6, 2, 5, , 
-scipy.special.inv_boxcox1p, 6, 2, 4, , 
-scipy.special.roots_sh_jacobi, 6, 4, 6, , 
-scipy.special.roots_chebyt, 6, 2, 4, , 
-scipy.special.roots_genlaguerre, 6, 3, 6, , 
-scipy.special._ufuncs._cospi, 6, 1, 6, , 
-scipy.special.fdtrc, 6, 3, 6, , 
-scipy.linalg.misc.LinAlgError, 6, 1, 6, , 
-scipy.stats.vonmises, 6, 3, 4, loc, 4
-scipy.stats.binom, 6, 2, 6, , 
-scipy.stats.bernoulli, 6, 1, 6, , 
-scipy.stats.gennorm.pdf, 6, 2, 6, , 
-scipy.stats.halfgennorm.pdf, 6, 2, 6, , 
-scipy.stats.genpareto.pdf, 6, 2, 6, c, 2
-scipy.stats.genpareto.cdf, 6, 2, 6, , 
-scipy.stats.pearson3.pdf, 6, 2, 6, , 
-scipy.stats.pearson3.cdf, 6, 2, 6, , 
-scipy.stats.poisson.pmf, 6, 2, 6, , 
-scipy.stats.f.stats, 6, 3, 4, moments, 4
-scipy.stats._distn_infrastructure.argsreduce, 6, 3, 6, , 
-scipy.stats.uniform.fit, 6, 2, 4, floc, 2
-scipy.stats.nct, 6, 2, 6, , 
-scipy.stats.exponweib.pdf, 6, 3, 6, , 
-scipy.stats.exponweib.logpdf, 6, 3, 6, , 
-scipy.stats.weibull_min.logpdf, 6, 2, 4, scale, 2
-scipy.stats.tukeylambda.stats, 6, 2, 6, moments, 6
-scipy.stats.gamma.stats, 6, 2, 2, , 
-scipy.stats.genextreme.sf, 6, 2, 6, , 
-scipy.stats.genextreme.isf, 6, 2, 6, , 
-scipy.stats.crystalball.pdf, 6, 3, 4, beta, 6
-scipy.stats.crystalball.cdf, 6, 3, 4, beta, 6
-scipy.stats.mvsdist, 6, 1, 6, , 
-scipy.stats.tukeylambda.rvs, 6, 4, 6, loc, 6
-scipy.stats.ppcc_max, 6, 2, 4, dist, 4
-scipy.stats.boxcox_normmax, 6, 2, 4, method, 4
-scipy.stats.boxcox_normplot, 6, 4, 6, plot, 4
-scipy.stats.chi2_contingency, 6, 2, 4, lambda_, 2
-scipy.stats.mstats.kendalltau, 6, 2, 6, , 
-scipy.stats.mstats.linregress, 6, 2, 6, , 
-scipy.stats.mstats.theilslopes, 6, 1, 4, , 
-scipy.stats.sem, 6, 1, 4, ddof, 2
-scipy.stats.skewtest, 6, 1, 6, , 
-scipy.stats.find_repeats, 6, 1, 6, , 
-scipy.stats.mstats.hdquantiles, 6, 2, 1, axis, 4
-scipy.stats.multivariate_normal.logcdf, 6, 3, 4, , 
-scipy.stats._multivariate._PSD, 6, 2, 4, cond, 4
-scipy.stats.invwishart, 6, 2, 6, , 
-scipy.stats.random_correlation.rvs, 6, 1, 4, random_state, 2
-scipy.stats.tmean, 6, 3, 4, limits, 4
-scipy.stats.cumfreq, 6, 3, 4, numbins, 6
-scipy.stats.relfreq, 6, 2, 6, numbins, 6
-scipy.stats.itemfreq, 6, 1, 6, , 
-scipy.stats.variation, 6, 1, 4, nan_policy, 2
-scipy.stats.ttest_ind_from_stats, 6, 2, 4, equal_var, 4
-scipy.stats.jarque_bera, 6, 1, 6, , 
-scipy.stats.epps_singleton_2samp, 6, 2, 6, , 
+scipy.ndimage.zoom, 6, 3, 4, order, 4
+scipy.ndimage.find_objects, 6, 1, 3, max_label, 2
+scipy.io.wavfile.write, 6, 3, 6, rate, 1
 scipy.sparse.block_diag, 6, 1, 5, , 
+scipy.special.binom, 6, 2, 6, , 
+scipy.sparse.dok_matrix, 6, 2, 4, dtype, 4
+scipy.integrate.cumtrapz, 6, 2, 5, x, 5
+scipy.ndimage.map_coordinates, 6, 2, 2, order, 3
 scipy.sin, 6, 1, 6, , 
+scipy.linalg.eig, 6, 1, 4, left, 2
+scipy.stats.mode, 6, 1, 4, axis, 2
 scipy.ndimage.morphology.binary_dilation, 6, 2, 5, structure, 1
+scipy.cluster.hierarchy.fcluster, 6, 3, 6, criterion, 6
 scipy.signal.iirdesign, 6, 7, 5, output, 6
+scipy.interpolate.griddata, 6, 4, 6, method, 6
 scipy.stats.norm.sf, 6, 1, 4, loc, 2
+scipy.signal.butter, 6, 3, 5, btype, 3
+scipy.stats.chi2.ppf, 6, 2, 6, df, 1
 scipy.stats.skewnorm.pdf, 6, 4, 6, , 
-scipy.linalg.helmert, 7, 2, 4, full, 4
-scipy.sparse.csgraph.laplacian, 7, 2, 2, normed, 7
-scipy.sparse.csgraph.dijkstra, 7, 5, 3, directed, 7
-scipy.spatial.Voronoi, 7, 1, 5, furthest_site, 2
-scipy.special.bi_zeros, 7, 1, 7, , 
-scipy.sparse.find, 7, 1, 7, , 
-scipy.linalg.LinAlgError, 7, 1, 7, , 
-scipy.linalg.clarkson_woodruff_transform, 7, 3, 6, seed, 5
-scipy.ndimage.iterate_structure, 7, 2, 5, , 
-scipy.optimize.LinearConstraint, 7, 3, 7, , 
-scipy.sparse.csgraph.reverse_cuthill_mckee, 7, 1, 2, symmetric_mode, 1
-scipy.spatial.transform.Rotation.from_euler, 7, 3, 6, degrees, 6
-scipy.special.ive, 7, 2, 7, , 
-scipy.special.kolmogorov, 7, 1, 7, , 
-scipy.stats.rv_histogram, 7, 1, 7, , 
-scipy.stats.binom.pmf, 7, 3, 7, , 
-scipy.stats.lognorm.fit, 7, 3, 4, floc, 6
-scipy.linalg.hankel, 8, 2, 5, , 
-scipy._lib._gcutils.set_gc_state, 8, 1, 4, , 
-scipy.fftpack.helper.next_fast_len, 8, 1, 8, , 
-scipy.special.roots_legendre, 8, 1, 4, , 
-scipy.integrate._bvp.estimate_bc_jac, 8, 4, 8, , 
-scipy.integrate.quadrature, 8, 5, 3, rtol, 4
-scipy.integrate.romberg, 8, 4, 2, args, 4
-scipy.interpolate.splev, 8, 2, 5, der, 3
-scipy.interpolate.BSpline.basis_element, 8, 1, 8, t, 4
-scipy.interpolate._fitpack_impl.splprep, 8, 1, 8, , 
-scipy.interpolate.insert, 8, 2, 8, , 
-scipy.interpolate.fitpack2.LSQBivariateSpline, 8, 7, 4, ky, 8
-scipy.interpolate.fitpack2.RectSphereBivariateSpline, 8, 3, 4, , 
-scipy.interpolate.interpnd.CloughTocher2DInterpolator, 8, 4, 4, rescale, 4
-scipy.interpolate.BPoly.from_power_basis, 8, 1, 6, extrapolate, 2
-scipy.io.matlab.mio5_utils.VarReader5, 8, 1, 4, , 
-scipy.io.matlab.streams.ZlibInputStream, 8, 2, 4, , 
-scipy.linalg.decomp_schur.schur, 8, 1, 2, output, 4
-scipy.linalg.pinvh, 8, 1, 8, , 
-scipy.linalg.eigvalsh_tridiagonal, 8, 5, 6, lapack_driver, 8
-scipy.linalg.interpolative.seed, 8, 1, 6, , 
-scipy.linalg.signm, 8, 2, 6, disp, 6
-scipy.ndimage.uniform_filter1d, 8, 4, 4, mode, 4
-scipy.ndimage.gaussian_laplace, 8, 3, 6, truncate, 2
-scipy.ndimage.median, 8, 3, 2, labels, 6
-scipy.ndimage.extrema, 8, 3, 3, labels, 6
-scipy.ndimage.grey_opening, 8, 3, 6, footprint, 8
-scipy.ndimage.grey_closing, 8, 3, 6, footprint, 8
-scipy.ndimage.white_tophat, 8, 3, 4, structure, 8
-scipy.ndimage.black_tophat, 8, 3, 4, structure, 8
-scipy.odr.RealData, 8, 4, 6, sy, 6
-scipy.optimize._differentiable_functions.ScalarFunction, 8, 7, 4, , 
-scipy.optimize._differentiable_functions.VectorFunction, 8, 8, 4, , 
-scipy.optimize.SR1, 8, 0, 3, init_scale, 4
-scipy.optimize.linear_sum_assignment, 8, 1, 8, , 
-scipy.optimize._lsq.common.evaluate_quadratic, 8, 3, 4, diag, 4
-scipy.optimize.nnls, 8, 2, 5, maxiter, 2
-scipy.signal.wavelets.cwt, 8, 3, 5, , 
-scipy._lib._numpy_compat.polyvalfromroots, 8, 2, 8, , 
-scipy.signal.filter_design._cplxreal, 8, 1, 8, , 
-scipy.signal.iirfilter, 8, 8, 4, ftype, 8
-scipy.signal.kaiser_beta, 8, 1, 8, , 
-scipy.signal.minimum_phase, 8, 1, 4, n_fft, 2
-scipy.signal.max_len_seq, 8, 4, 3, taps, 8
-scipy.signal._peak_finding.argrelmax, 8, 2, 4, axis, 6
-scipy.signal.windows.hann, 8, 1, 8, , 
-scipy.signal.invres, 8, 4, 4, rtype, 6
-scipy.signal.waveforms.unit_impulse, 8, 3, 2, dtype, 4
-scipy.signal.wavelets.ricker, 8, 2, 4, , 
-scipy.signal.windows.chebwin, 8, 2, 8, at, 8
-scipy.sparse.csgraph.minimum_spanning_tree, 8, 1, 3, overwrite, 2
-scipy.sparse.construct.diags, 8, 2, 4, shape, 2
-scipy._lib._testutils.check_free_memory, 8, 1, 8, , 
-scipy.spatial._spherical_voronoi.SphericalVoronoi, 8, 1, 2, radius, 2
-scipy.spatial.transform.Rotation.from_dcm, 8, 1, 8, , 
-scipy.spatial.transform.Slerp, 8, 2, 8, , 
-scipy.special._ufuncs.mathieu_modcem2, 8, 3, 8, , 
-scipy.special._ufuncs.ncfdtr, 8, 4, 8, , 
-scipy.special.erfinv, 8, 1, 8, , 
-scipy.special.euler, 8, 1, 8, , 
-scipy.special.jacobi, 8, 3, 8, , 
-scipy.special.ynp_zeros, 8, 2, 8, , 
-scipy.special.lpmn, 8, 3, 7, , 
-scipy.special.pbvv, 8, 2, 8, , 
-scipy.special.ellip_harm_2, 8, 5, 4, , 
-scipy.special.roots_gegenbauer, 8, 3, 6, , 
-scipy.special.roots_hermite, 8, 2, 8, , 
-scipy.special.wrightomega, 8, 1, 5, , 
-scipy.special._ufuncs._sinpi, 8, 1, 8, , 
-scipy.special.ndtri, 8, 1, 8, , 
-scipy.special.entr, 8, 1, 8, , 
-scipy.stats.contingency.margins, 8, 1, 4, , 
-scipy.stats.randint.rvs, 8, 3, 6, size, 6
-scipy.stats.invgamma.stats, 8, 2, 4, a, 4
-scipy.stats.exponnorm.stats, 8, 4, 8, loc, 8
-scipy.stats.beta, 8, 2, 8, , 
-scipy.stats.expon.fit, 8, 2, 6, floc, 4
-scipy.stats.norm.expect, 8, 3, 4, loc, 8
-scipy.stats.beta.expect, 8, 4, 4, args, 8
-scipy.stats.ansari, 8, 2, 8, , 
-scipy.stats.fligner, 8, 4, 4, center, 8
-scipy.stats.mstats.pearsonr, 8, 2, 8, , 
-scipy.stats.mstats.skewtest, 8, 1, 8, , 
-scipy.stats.matrix_normal, 8, 3, 8, colcov, 8
-scipy.stats.dirichlet.pdf, 8, 2, 8, , 
-scipy.stats.multinomial.logpmf, 8, 3, 8, , 
-scipy.stats.multinomial.cov, 8, 2, 8, , 
-scipy.stats.multinomial.entropy, 8, 2, 8, , 
-scipy.stats.trim_mean, 8, 3, 4, axis, 4
-scipy.stats.sigmaclip, 8, 3, 6, , 
+scipy.stats.fisher_exact, 6, 2, 5, alternative, 2
+scipy.signal.ss2tf, 6, 5, 4, input, 5
+scipy.ndimage.median_filter, 7, 2, 7, size, 5
+scipy.integrate.odeint, 7, 7, 3, args, 5
+scipy.sparse.random, 7, 4, 6, format, 7
+scipy.stats.beta.rvs, 7, 3, 7, a, 7
+scipy.stats.poisson.rvs, 7, 1, 7, , 
+scipy.optimize.newton, 7, 3, 3, args, 4
+scipy.linalg.cho_factor, 7, 3, 5, overwrite_a, 6
+scipy.signal.dimpulse, 7, 2, 7, t, 7
+scipy.stats.kendalltau, 8, 2, 8, , 
 scipy.integrate.simps, 8, 2, 6, x, 4
+scipy.sparse.hstack, 8, 1, 6, format, 1
+scipy.stats.f_oneway, 8, 2, 7, , 
+scipy.ndimage.imread, 8, 1, 6, , 
+scipy.spatial.Delaunay, 8, 1, 7, qhull_options, 1
+scipy.stats.multivariate_normal.rvs, 8, 3, 4, cov, 8
+scipy.spatial.ConvexHull, 8, 1, 5, qhull_options, 3
 scipy.stats.chi2.sf, 8, 2, 8, , 
-scipy.stats.fisk.rvs, 8, 3, 8, scale, 8
+scipy.stats.fisk.rvs, 8, 3, 8, size, 8
 scipy.conj, 8, 1, 8, , 
+scipy.optimize.fmin, 8, 4, 3, disp, 6
+scipy.interpolate.interp2d, 8, 4, 3, kind, 5
 scipy.integrate.trapz, 8, 2, 7, x, 5
-scipy.fftpack.diff, 9, 2, 4, , 
-scipy.linalg.dft, 9, 1, 5, scale, 4
-scipy.linalg.hadamard, 9, 1, 5, dtype, 2
-scipy.linalg.pascal, 9, 1, 7, exact, 2
-scipy.arange, 9, 2, 4, , 
-scipy.stats.unitary_group.rvs, 9, 1, 5, random_state, 2
-scipy.stats.ortho_group.rvs, 9, 1, 5, random_state, 2
-scipy.interpolate.fitpack.bisplev, 9, 5, 5, dx, 5
-scipy.ndimage.binary_fill_holes, 9, 1, 9, , 
-scipy.optimize._constraints.NonlinearConstraint, 9, 6, 8, , 
-scipy.optimize.fmin_cobyla, 9, 4, 4, rhoend, 6
-scipy.optimize.minpack.leastsq, 9, 4, 6, args, 9
-scipy.optimize.brute, 9, 5, 6, finish, 9
-scipy.signal._peak_finding_utils._local_maxima_1d, 9, 1, 9, , 
-scipy.sparse.random, 9, 4, 6, format, 9
-scipy._lib._util._lazyselect, 9, 4, 5, default, 5
-scipy.stats.dirichlet.logpdf, 9, 2, 9, x, 1
-scipy.stats.zscore, 9, 2, 4, axis, 6
+scipy.signal.filtfilt, 8, 3, 5, None, 2
+scipy.stats.beta.ppf, 8, 3, 8, a, 2
+scipy.signal.freqz, 8, 2, 4, worN, 6
+scipy.stats.skewnorm.cdf, 8, 4, 8, , 
+scipy.signal.ss2zpk, 8, 5, 5, input, 7
+scipy.special.logsumexp, 9, 3, 6, axis, 8
 scipy.ndimage.interpolation.affine_transform, 9, 6, 6, order, 9
+scipy.stats.chisquare, 9, 2, 6, f_exp, 8
+scipy.linalg.sqrtm, 9, 1, 6, , 
+scipy.stats.norm, 9, 2, 7, loc, 5
 scipy.squeeze, 9, 1, 9, , 
 scipy.ndimage.interpolation.zoom, 9, 2, 6, order, 3
-scipy.misc.bytescale, 9, 3, 4, low, 6
-scipy.signal._peak_finding_utils._argmaxima1d, 9, 1, 9, , 
-scipy.signal.decimate, 10, 4, 6, zero_phase, 8
-scipy.stats.gamma.pdf, 10, 3, 7, scale, 6
-scipy.stats.gamma.rvs, 10, 2, 5, scale, 6
-scipy.stats.beta.rvs, 10, 3, 7, size, 10
-scipy._lib._tmpdirs.in_tempdir, 10, 0, 9, , 
-scipy.cluster.vq.py_vq, 10, 2, 10, , 
-scipy.cluster._vq.vq, 10, 2, 10, , 
-scipy.fftpack.realtransforms.idct, 10, 2, 6, None, 4
-scipy.fftpack.realtransforms.idst, 10, 2, 6, None, 4
-scipy.integrate._bvp.estimate_fun_jac, 10, 4, 10, , 
-scipy.linalg.get_lapack_funcs, 10, 2, 7, , 
-scipy.interpolate._bsplines._augknt, 10, 2, 10, k, 2
-scipy.interpolate._bspl.evaluate_all_bspl, 10, 4, 6, nu, 4
-scipy.interpolate.fitpack2.SmoothBivariateSpline, 10, 5, 2, ky, 8
-scipy.io.arff.arffread.read_header, 10, 1, 10, , 
-scipy.io.matlab.mio5.to_writeable, 10, 1, 10, , 
-scipy.io.wavfile.write, 10, 3, 8, data, 1
-scipy._build_utils.get_g77_abi_wrappers, 10, 1, 10, , 
-scipy.sparse.sputils.bmat, 10, 1, 10, , 
-scipy.linalg.eigh_tridiagonal, 10, 5, 6, lapack_driver, 8
-scipy.ndimage.generic_filter, 10, 3, 5, footprint, 6
-scipy.ndimage._ni_support._normalize_sequence, 10, 2, 10, , 
-scipy.ndimage.gaussian_gradient_magnitude, 10, 3, 6, mode, 2
-scipy.ndimage.measurements._stats, 10, 4, 3, labels, 10
-scipy.ndimage.measurements._select, 10, 4, 2, labels, 10
-scipy.ndimage.mean, 10, 3, 3, labels, 10
-scipy.ndimage.prewitt, 10, 2, 8, , 
-scipy.ndimage.uniform_filter, 10, 2, 8, output, 2
-scipy.ndimage.binary_opening, 10, 2, 4, iterations, 2
-scipy.odr.odrpack.Model, 10, 5, 4, meta, 10
-scipy.sparse.hstack, 10, 1, 6, format, 3
-scipy.optimize._lsq.common.step_size_to_bound, 10, 4, 10, , 
-scipy.optimize._lsq.common.build_quadratic_1d, 10, 3, 4, diag, 6
-scipy.optimize._lsq.common.reflective_transformation, 10, 3, 10, , 
-scipy.signal.tf2zpk, 10, 2, 9, , 
-scipy.signal.dbode, 10, 2, 10, n, 6
-scipy.signal.remez, 10, 4, 10, fs, 6
-scipy.signal._peak_finding.argrelmin, 10, 2, 8, axis, 8
-scipy.signal.lfilter_zi, 10, 2, 10, , 
-scipy.signal.windows.tukey, 10, 2, 8, , 
-scipy.signal.hilbert, 10, 1, 6, axis, 4
-scipy.sparse.linalg.eigen.arpack.eigs, 10, 3, 4, v0, 8
-scipy.sparse.linalg._onenormest._onenormest_core, 10, 4, 5, , 
-scipy.spatial.distance._validate_vector, 10, 1, 8, dtype, 2
-scipy.spatial.minkowski_distance, 10, 3, 10, , 
-scipy.spatial.qhull.Voronoi, 10, 1, 4, incremental, 4
-scipy.spatial.qhull.HalfspaceIntersection, 10, 2, 6, incremental, 4
-scipy.special._ufuncs.mathieu_modsem2, 10, 3, 10, , 
-scipy.special.ellipkinc, 10, 2, 9, , 
-scipy.special.ellipeinc, 10, 2, 9, , 
-scipy.special.hyp2f1, 10, 4, 10, , 
-scipy.special._testutils.FuncData, 10, 4, 3, rtol, 4
-scipy.special.roots_jacobi, 10, 4, 6, , 
-scipy.special._mptestutils.mp_assert_allclose, 10, 2, 7, atol, 2
-scipy._lib._util._valarray, 10, 2, 6, value, 8
-scipy.stats.hypergeom.logpmf, 10, 4, 10, , 
-scipy.stats.chi2.ppf, 10, 2, 10, df, 1
-scipy.stats.poisson.expect, 10, 4, 4, args, 10
-scipy.stats.norm._pdf, 10, 1, 10, , 
-scipy.stats.mood, 10, 2, 6, axis, 4
-scipy.stats.mstats.skew, 10, 1, 8, bias, 2
-scipy.stats.mstats.kurtosis, 10, 3, 4, bias, 4
-scipy.stats.zmap, 10, 2, 4, axis, 6
-scipy.stats.multivariate_normal.logpdf, 10, 3, 8, cov, 4
-scipy.stats.random_correlation._to_corr, 10, 1, 10, , 
-scipy.fftpack.irfft, 11, 1, 7, , 
-scipy.linalg.companion, 11, 1, 11, , 
-scipy.linalg.hilbert, 11, 1, 11, , 
-scipy.linalg.solve_toeplitz, 11, 2, 6, b, 6
-scipy.ones, 11, 1, 11, , 
-scipy._build_utils.system_info.get_info, 11, 1, 9, notfound_action, 2
-scipy.integrate.ode, 11, 2, 9, jac, 1
-scipy.ndimage.sobel, 11, 2, 8, cval, 1
-scipy.ndimage.binary_closing, 11, 2, 4, iterations, 2
-scipy.odr.Data, 11, 2, 6, wd, 4
-scipy.sparse.vstack, 11, 2, 6, format, 4
-scipy.optimize._linprog_util._clean_inputs, 11, 2, 6, bounds, 9
-scipy.optimize.BFGS, 11, 1, 5, exception_strategy, 5
-scipy.stats.scoreatpercentile, 11, 2, 7, axis, 4
-scipy.signal.dstep, 11, 2, 11, n, 11
-scipy.signal.medfilt, 11, 2, 7, kernel_size, 2
-scipy.signal.resample, 11, 2, 7, axis, 4
-scipy.signal.resample_poly, 11, 4, 7, window, 7
-scipy.sparse.base.isspmatrix, 11, 1, 11, , 
-scipy.special.logit, 11, 1, 9, , 
-scipy.special.expit, 11, 1, 10, , 
-scipy.stats.truncnorm.rvs, 11, 5, 11, size, 11
-scipy.stats.poisson.rvs, 11, 1, 9, size, 2
-scipy.stats.boxcox_llf, 11, 2, 11, , 
-scipy.stats.mstats.hmean, 11, 1, 7, axis, 3
-scipy.ndimage.imread, 11, 1, 6, mode, 2
+scipy.ndimage.filters.median_filter, 9, 2, 4, size, 4
+scipy.cluster.hierarchy.dendrogram, 9, 3, 5, ax, 4
+scipy.signal.firwin, 9, 3, 4, nyq, 6
+scipy.signal.get_window, 9, 2, 9, , 
+scipy.stats.gaussian_kde, 10, 1, 8, bw_method, 2
+scipy.io.wavfile.read, 10, 1, 9, None, 1
+scipy.linalg.cho_solve, 10, 2, 8, overwrite_b, 2
+scipy.stats.kstest, 10, 2, 7, args, 3
+scipy.sparse.linalg.spsolve, 10, 2, 9, use_umfpack, 1
+scipy.spatial.distance.pdist, 10, 2, 7, metric, 4
+scipy.exp, 10, 1, 10, , 
+scipy.stats.norm.fit, 10, 1, 10, , 
+scipy.special.digamma, 10, 1, 10, , 
+scipy.signal.savgol_filter, 11, 3, 7, mode, 2
+scipy._lib.six.u, 11, 1, 11, , 
+scipy.stats.entropy, 11, 2, 6, base, 1
 scipy.asarray, 11, 1, 11, , 
-scipy.optimize._linprog_ip._clean_inputs, 11, 2, 6, bounds, 9
-scipy.special.factorial, 12, 1, 10, exact, 2
-scipy.special.loggamma, 12, 1, 8, , 
-scipy.stats.special_ortho_group.rvs, 12, 2, 6, random_state, 5
-scipy._lib._ccallback.LowLevelCallable.from_cython, 12, 2, 3, , 
-scipy.spatial.distance.is_valid_y, 12, 3, 6, throw, 12
-scipy.cluster.hierarchy.inconsistent, 12, 1, 12, , 
-scipy.fftpack.helper._init_nd_shape_and_axes_sorted, 12, 3, 12, axes, 1
-scipy.integrate._ivp.common.num_jac, 12, 6, 8, sparsity, 4
-scipy.integrate.newton_cotes, 12, 2, 4, , 
-scipy.linalg.cho_solve_banded, 12, 2, 4, check_finite, 4
-scipy.interpolate.fitpack.splder, 12, 2, 6, , 
-scipy.interpolate.fitpack2.RectBivariateSpline, 12, 3, 5, s, 2
-scipy.interpolate.Akima1DInterpolator, 12, 2, 11, axis, 1
-scipy.interpolate.PPoly.from_bernstein_basis, 12, 1, 12, , 
-scipy.io.harwell_boeing._fortran_format_parser.IntFormat, 12, 2, 4, repeat, 6
-scipy.io.harwell_boeing._fortran_format_parser.ExpFormat, 12, 3, 4, repeat, 6
-scipy.io.mmio.mmread, 12, 1, 12, , 
-scipy.linalg.matrix_balance, 12, 1, 6, separate, 6
-scipy.linalg.null_space, 12, 1, 8, rcond, 4
-scipy.linalg.interpolative.reconstruct_matrix_from_id, 12, 3, 12, , 
-scipy.spatial.Delaunay, 12, 1, 10, incremental, 1
-scipy.optimize._numdiff.check_derivative, 12, 3, 4, bounds, 4
-scipy.optimize._constraints.strict_bounds, 12, 4, 12, , 
-scipy.optimize._lsq.common.make_strictly_feasible, 12, 4, 8, rstep, 8
-scipy.optimize.fmin_bfgs, 12, 4, 5, disp, 12
-scipy.signal._arraytools.axis_slice, 12, 4, 4, start, 12
-scipy.signal.ss2zpk, 12, 4, 5, input, 7
-scipy.signal.freqresp, 12, 2, 12, w, 6
-scipy.signal.windows.get_window, 12, 2, 8, fftbins, 4
-scipy.sparse.sputils.isdense, 12, 1, 12, , 
-scipy.sparse.linalg.isolve.minres, 12, 3, 3, callback, 4
-scipy.special._mptestutils.mpf2float, 12, 1, 6, , 
-scipy.special.errstate, 12, 1, 10, all, 4
-scipy.special.fresnel, 12, 1, 12, , 
-scipy.special.jv, 12, 2, 12, , 
-scipy.special.yv, 12, 2, 12, , 
-scipy.special.hyp0f1, 12, 2, 12, , 
-scipy.special.laguerre, 12, 1, 12, , 
-scipy.special.legendre, 12, 1, 12, , 
-scipy.special.polygamma, 12, 2, 12, , 
-scipy.special.shichi, 12, 1, 10, , 
-scipy.special.sici, 12, 1, 10, , 
-scipy.special.orthogonal.gegenbauer, 12, 2, 12, , 
-scipy.special.orthogonal.sh_jacobi, 12, 3, 12, , 
-scipy.special.multigammaln, 12, 2, 10, , 
-scipy.stats.distributions.binom.cdf, 12, 3, 6, , 
-scipy.stats.kappa4.cdf, 12, 3, 12, , 
-scipy.stats.skewnorm.rvs, 12, 4, 7, size, 12
-scipy.stats.beta.ppf, 12, 3, 8, loc, 4
-scipy.stats.hypergeom.expect, 12, 3, 4, args, 12
-scipy.stats.genextreme.entropy, 12, 1, 10, scale, 2
-scipy.stats.crystalball._munp, 12, 3, 12, , 
-scipy.stats.mstats.trim, 12, 4, 12, axis, 12
-scipy.stats.mstats.moment, 12, 2, 8, , 
-scipy.stats.obrientransform, 12, 1, 8, , 
-scipy.stats.dirichlet, 12, 1, 12, , 
-scipy.stats.ks_2samp, 12, 2, 9, mode, 1
-scipy.fftpack.rfft, 13, 1, 9, , 
-scipy.linalg.det, 13, 1, 11, check_finite, 2
-scipy.signal.lsim, 13, 4, 8, X0, 8
-scipy.linalg.orth, 13, 1, 9, rcond, 4
-scipy.spatial.ConvexHull, 13, 1, 9, qhull_options, 3
-scipy.cluster.hierarchy.to_tree, 13, 1, 12, rd, 1
-scipy.special.binom, 13, 2, 13, , 
-scipy.linalg.lapack._compute_lwork, 13, 4, 8, p, 2
-scipy.ndimage.filters.median_filter, 13, 2, 8, size, 4
-scipy.optimize.root_scalar, 13, 5, 6, method, 13
-scipy.sparse.dia_matrix, 13, 2, 7, shape, 3
-scipy.special.genlaguerre, 13, 2, 13, alpha, 2
-scipy.stats.mstats.gmean, 13, 1, 7, axis, 4
-scipy.stats.mstats.brunnermunzel, 13, 3, 8, alternative, 6
-scipy.stats.rvs_ratio_uniforms, 13, 6, 11, random_state, 12
-scipy.cluster.vq.kmeans, 14, 3, 8, iter, 5
-scipy.signal.firls, 14, 4, 11, fs, 4
-scipy._lib._threadsafety.non_reentrant, 14, 0, 14, , 
-scipy._lib._tmpdirs.tempdir, 14, 0, 7, , 
-scipy.cluster.hierarchy.fcluster, 14, 3, 10, criterion, 14
-scipy._lib._numpy_compat._assert_warns, 14, 6, 4, method, 4
-scipy.integrate._ivp.base.ConstantDenseOutput, 14, 3, 14, , 
-scipy.integrate.nquad, 14, 3, 4, opts, 8
-scipy.linalg.cholesky_banded, 14, 2, 4, lower, 12
-scipy.interpolate.pchip, 14, 2, 14, , 
-scipy.linalg.lu, 14, 2, 8, permute_l, 6
-scipy.linalg.qz, 14, 2, 8, output, 2
-scipy.linalg.ordqz, 14, 3, 10, sort, 14
-scipy.linalg.cdf2rdf, 14, 2, 14, , 
-scipy.linalg.interpolative.svd, 14, 2, 10, rand, 4
-scipy.linalg.expm_frechet, 14, 3, 10, method, 8
-scipy.ndimage.maximum_filter1d, 14, 4, 6, mode, 12
-scipy.ndimage.minimum_filter1d, 14, 4, 6, mode, 12
-scipy.ndimage.variance, 14, 1, 4, labels, 2
-scipy.ndimage.watershed_ift, 14, 3, 8, structure, 10
-scipy.optimize._trustregion_constr.canonical_constraint.CanonicalConstraint.from_PreparedConstraint, 14, 1, 14, , 
-scipy.optimize._differentiable_functions.LinearVectorFunction, 14, 3, 7, , 
-scipy.optimize._lsq.common.minimize_quadratic_1d, 14, 4, 9, c, 5
-scipy.optimize.golden, 14, 2, 8, full_output, 6
-scipy.optimize._trustregion_exact.IterativeSubproblem, 14, 6, 6, k_hard, 12
-scipy.special.ellipj, 14, 2, 12, , 
-scipy.signal.freqs_zpk, 14, 4, 10, worN, 8
-scipy.signal.besselap, 14, 2, 14, , 
-scipy.signal.kaiserord, 14, 2, 14, , 
-scipy.signal._peak_finding._identify_ridge_lines, 14, 3, 14, , 
-scipy.signal.waveforms._sweep_poly_phase, 14, 2, 7, , 
-scipy.signal.windows.dpss, 14, 4, 6, return_ratios, 8
-scipy.sparse.construct.eye, 14, 4, 10, format, 14
-scipy.sparse.linalg.dsolve.factorized, 14, 1, 14, , 
-scipy.sparse.linalg._expm_multiply.expm_multiply, 14, 2, 4, start, 6
-scipy.spatial.procrustes, 14, 2, 7, , 
-scipy.special.jn_zeros, 14, 2, 14, , 
-scipy.special.lpmv, 14, 3, 12, , 
-scipy.special.lqmn, 14, 3, 13, , 
-scipy.special.pbdv, 14, 2, 14, , 
-scipy.special._testutils.MissingModule, 14, 1, 10, , 
-scipy.special.orthogonal.chebyc, 14, 1, 14, , 
-scipy.special.orthogonal.chebys, 14, 1, 14, , 
-scipy.special.orthogonal.chebyt, 14, 1, 14, , 
-scipy.special.orthogonal.chebyu, 14, 1, 14, , 
-scipy.special.orthogonal.hermite, 14, 1, 14, , 
-scipy.special.orthogonal.hermitenorm, 14, 1, 14, , 
-scipy.special.orthogonal.sh_legendre, 14, 1, 14, , 
-scipy.special.orthogonal.sh_chebyt, 14, 1, 14, , 
-scipy.special.orthogonal.sh_chebyu, 14, 1, 14, , 
-scipy.stats.contingency.chi2_contingency, 14, 2, 3, correction, 8
-scipy.stats.genpareto, 14, 1, 14, c, 14
-scipy.stats.skewnorm.cdf, 14, 4, 8, , 
-scipy.stats.shapiro, 14, 1, 14, , 
-scipy.stats.ppcc_plot, 14, 4, 10, dist, 4
-scipy.stats.hmean, 14, 1, 7, axis, 7
-scipy.stats.mstats.ttest_rel, 14, 2, 8, axis, 4
-scipy.stats.multivariate_normal.rvs, 14, 3, 10, cov, 12
-scipy.stats._tukeylambda_stats.tukeylambda_variance, 14, 1, 7, , 
-scipy.stats._tukeylambda_stats.tukeylambda_kurtosis, 14, 1, 7, , 
+scipy.linalg.toeplitz, 11, 2, 11, , 
+scipy.ndimage.label, 11, 1, 7, structure, 3
+scipy.optimize.fmin_l_bfgs_b, 12, 4, 4, bounds, 10
+scipy.misc.imresize, 12, 2, 7, interp, 2
+scipy.stats.norm.pdf, 12, 3, 6, loc, 2
+scipy.spatial.distance.squareform, 12, 1, 11, checks, 1
+scipy.cluster.hierarchy.linkage, 12, 2, 10, method, 5
+scipy.special.erf, 13, 1, 13, , 
+scipy.optimize.leastsq, 13, 3, 6, args, 9
+scipy.linalg.solve, 13, 2, 9, check_finite, 3
 scipy.sparse.spmatrix.transpose, 14, 1, 12, , 
 scipy.stats.nbinom.cdf, 14, 3, 12, , 
-scipy.sparse.linalg.spsolve, 15, 2, 13, use_umfpack, 1
-scipy.stats.gamma.fit, 15, 2, 8, floc, 8
-scipy._lib._util.getargspec_no_self, 15, 1, 15, , 
-scipy._lib.six.u, 15, 1, 15, , 
-scipy.optimize.brentq, 15, 4, 8, args, 8
-scipy.interpolate.splprep, 15, 1, 10, s, 5
-scipy.linalg.pinv, 15, 1, 13, check_finite, 2
-scipy.odr.Model, 15, 2, 7, meta, 10
-scipy.optimize._constraints.Bounds, 15, 3, 12, , 
-scipy.optimize.brent, 15, 3, 7, brack, 11
-scipy.signal.zpk2tf, 15, 1, 9, , 
-scipy.signal.cheb2ord, 15, 5, 10, fs, 1
-scipy.signal.cheb1ord, 15, 5, 10, fs, 1
-scipy.signal.group_delay, 15, 2, 8, w, 3
-scipy.signal.lombscargle, 15, 3, 8, precenter, 4
-scipy.sparse.isspmatrix_csr, 15, 1, 15, , 
-scipy.special.iv, 15, 2, 15, , 
-scipy.stats.norm, 15, 2, 11, loc, 7
-scipy.stats.gmean, 15, 1, 8, axis, 7
-scipy.stats.gstd, 15, 2, 9, axis, 8
-scipy.signal.lsim2, 16, 4, 9, X0, 12
-scipy.fftpack.realtransforms.dst, 16, 1, 8, None, 4
-scipy.interpolate.BPoly._construct_from_derivatives, 16, 4, 16, , 
-scipy.sparse.linalg.onenormest, 16, 1, 6, compute_w, 6
-scipy.linalg.eigvals_banded, 16, 3, 8, select_range, 8
-scipy.linalg.eig_banded, 16, 3, 10, select_range, 10
-scipy.linalg.schur, 16, 2, 14, sort, 10
-scipy.ndimage.standard_deviation, 16, 1, 4, labels, 2
-scipy.odr.ODR, 16, 3, 11, beta0, 16
-scipy.optimize._trustregion_constr.qp_subproblem.modified_dogleg, 16, 6, 16, , 
-scipy.optimize.NonlinearConstraint, 16, 5, 12, None, 1
-scipy.optimize._lsq.common.find_active_constraints, 16, 3, 10, rtol, 6
-scipy.optimize.minpack.fixed_point, 16, 2, 8, args, 6
-scipy.special.kve, 16, 2, 16, , 
-scipy.signal.dfreqresp, 16, 2, 16, w, 12
-scipy.signal.waveforms._chirp_phase, 16, 5, 8, , 
-scipy.signal.waveforms.gausspulse, 16, 2, 8, fc, 4
-scipy.exp, 16, 1, 13, , 
-scipy.special.i0, 16, 1, 15, , 
-scipy._lib._numpy_compat.broadcast_to, 16, 2, 16, , 
-scipy.sparse.linalg.dsolve.splu, 16, 1, 16, , 
-scipy.special.gammainccinv, 16, 2, 15, , 
-scipy.special.ellip_harm, 16, 5, 8, , 
-scipy.special.spherical_in, 16, 2, 8, derivative, 8
-scipy.special.digamma, 16, 1, 16, , 
-scipy.stats.norm.fit, 16, 1, 12, floc, 2
-scipy.stats.loggamma.rvs, 16, 2, 16, size, 16
-scipy.stats.circvar, 16, 2, 12, high, 16
-scipy.stats.circstd, 16, 2, 12, high, 16
-scipy.stats.describe, 16, 2, 10, ddof, 4
-scipy.stats.power_divergence, 16, 3, 10, lambda_, 10
-scipy.stats.kruskal, 16, 2, 14, , 
+scipy.linalg.svd, 14, 1, 6, full_matrices, 7
+scipy.stats.bernoulli.rvs, 14, 1, 14, , 
+scipy.linalg.solve_triangular, 15, 3, 11, lower, 12
+scipy.signal.convolve2d, 15, 4, 6, mode, 15
+scipy.stats.linregress, 15, 2, 15, , 
+scipy.stats.poisson.cdf, 16, 2, 12, , 
 scipy.zeros_like, 16, 1, 16, , 
-scipy.stats.fisher_exact, 17, 1, 11, alternative, 3
-scipy._lib.six.next, 17, 1, 17, , 
-scipy.ndimage.median_filter, 17, 2, 17, size, 9
-scipy.signal.ellipord, 17, 5, 10, fs, 1
-scipy.signal.buttord, 17, 5, 12, analog, 2
-scipy.stats.yeojohnson, 17, 2, 14, lmbda, 14
-scipy.stats.combine_pvalues, 17, 2, 12, method, 16
-scipy.stats.brunnermunzel, 17, 3, 12, alternative, 6
+scipy.misc.imread, 17, 1, 9, mode, 8
+scipy.sparse.eye, 17, 3, 9, dtype, 9
 scipy.ndimage.interpolation.shift, 17, 3, 16, order, 14
-scipy.optimize.differential_evolution, 18, 3, 7, polish, 6
-scipy.signal.bode, 18, 2, 17, n, 9
-scipy.sparse.linalg.splu, 18, 1, 16, permc_spec, 2
-scipy.linalg.lu_solve, 18, 3, 8, overwrite_b, 4
-scipy.interpolate.make_lsq_spline, 18, 4, 16, k, 4
-scipy.interpolate.fitpack.splrep, 18, 2, 4, k, 10
-scipy.interpolate.fitpack2.UnivariateSpline, 18, 3, 7, k, 8
-scipy.interpolate.NdPPoly, 18, 2, 18, , 
-scipy.io.arff.arffread.loadarff, 18, 1, 18, , 
-scipy.linalg.pinv2, 18, 1, 16, check_finite, 2
-scipy.linalg.hessenberg, 18, 2, 16, calc_q, 18
-scipy.linalg.interpolative.interp_decomp, 18, 2, 10, rand, 8
-scipy.ndimage.minimum, 18, 3, 6, labels, 16
-scipy.ndimage.maximum, 18, 3, 6, labels, 16
-scipy.ndimage.minimum_filter, 18, 2, 14, footprint, 8
-scipy.optimize.fmin, 18, 6, 4, disp, 16
-scipy.optimize.fmin_tnc, 18, 5, 12, maxfun, 18
-scipy.signal.dimpulse, 18, 2, 16, n, 11
-scipy.signal.ZerosPolesGain, 18, 4, 10, dt, 10
-scipy.sparse.csgraph.connected_components, 18, 3, 6, directed, 13
-scipy.sparse.linalg.eigen.lobpcg.lobpcg, 18, 3, 8, largest, 12
-scipy.sparse.linalg.isolve.gcrotmk, 18, 4, 6, maxiter, 14
-scipy.special.airy, 18, 1, 18, , 
-scipy.special.betainc, 18, 3, 18, , 
-scipy.special.gammaincc, 18, 2, 18, , 
-scipy.special.geterr, 18, 0, 18, , 
-scipy.stats.bernoulli.rvs, 18, 1, 16, size, 2
-scipy.stats.pareto.stats, 18, 2, 18, moments, 18
-scipy.stats.poisson.cdf, 18, 2, 12, , 
-scipy.stats.levene, 18, 4, 6, center, 14
-scipy.stats.mstats.ttest_1samp, 18, 2, 12, axis, 4
-scipy.stats.wishart, 18, 2, 18, , 
-scipy.stats.tiecorrect, 18, 1, 9, , 
-scipy.stats.f_oneway, 18, 2, 15, , 
+scipy.stats.spearmanr, 18, 2, 17, , 
+scipy.diag, 18, 1, 18, , 
 scipy.cos, 18, 1, 18, , 
-scipy.optimize.leastsq, 19, 3, 9, args, 11
-scipy.signal.spectrogram, 19, 5, 7, nperseg, 12
-scipy.integrate._bvp.solve_bvp, 19, 4, 7, fun_jac, 8
-scipy.interpolate.pade, 19, 2, 11, , 
-scipy.interpolate.BarycentricInterpolator, 19, 2, 16, None, 1
-scipy.ndimage.center_of_mass, 19, 1, 7, , 
-scipy.ndimage.spline_filter, 19, 2, 17, order, 15
-scipy.signal.tf2ss, 19, 1, 14, , 
-scipy.signal.dlti, 19, 2, 7, dt, 7
-scipy.sparse.isspmatrix_csc, 19, 1, 18, , 
-scipy.sparse.csgraph.shortest_path, 19, 4, 14, overwrite, 18
-scipy.stats.median_test, 19, 3, 10, ties, 5
-scipy.misc.imresize, 19, 3, 8, interp, 5
-scipy.stats.anderson_ksamp, 20, 2, 15, midrank, 15
-scipy.fftpack.basic._datacopied, 20, 2, 11, , 
-scipy.optimize._numdiff.group_columns, 20, 1, 10, , 
-scipy.special.poch, 20, 2, 18, , 
-scipy.interpolate.BPoly.from_derivatives, 20, 3, 14, orders, 14
-scipy.interpolate.rbf.Rbf, 20, 3, 6, function, 14
-scipy.linalg.solve_circulant, 20, 2, 12, baxis, 4
-scipy.linalg.cython_blas._test_dgemm, 20, 5, 10, , 
-scipy.linalg.logm, 20, 2, 20, disp, 20
-scipy.ndimage.maximum_filter, 20, 2, 16, footprint, 10
-scipy.ndimage.percentile_filter, 20, 3, 20, size, 12
-scipy.ndimage.distance_transform_cdt, 20, 3, 10, return_indices, 18
-scipy.optimize._trustregion_constr.qp_subproblem.sphere_intersections, 20, 3, 10, entire_line, 10
-scipy.special.ellipk, 20, 1, 19, , 
-scipy.signal.filtfilt, 20, 3, 9, method, 4
-scipy.signal.vectorstrength, 20, 2, 20, , 
-scipy.sparse.csgraph.csgraph_from_dense, 20, 2, 9, null_value, 18
-scipy.sparse.linalg.isolve.lgmres, 20, 4, 8, maxiter, 16
-scipy.spatial.transform.Rotation.from_quat, 20, 1, 19, normalized, 1
-scipy.special.clpmn, 20, 4, 18, type, 4
-scipy.special.boxcox1p, 20, 2, 12, , 
-scipy.special.zeta, 20, 2, 13, , 
-scipy.special.spherical_kn, 20, 2, 10, derivative, 10
-scipy.stats.kurtosis, 20, 1, 11, bias, 5
-scipy.stats.circmean, 20, 2, 12, high, 16
-scipy.stats.multivariate_normal.cdf, 20, 3, 18, , 
-scipy.stats.multivariate_normal, 20, 3, 11, allow_singular, 11
-scipy.stats.beta.fit, 21, 2, 12, fscale, 8
-scipy.linalg.lu_factor, 21, 1, 14, overwrite_a, 4
-scipy.linalg.solve_banded, 21, 3, 13, check_finite, 8
-scipy.interpolate.CubicSpline, 21, 3, 9, bc_type, 14
-scipy.ndimage.rotate, 21, 2, 10, reshape, 8
-scipy.signal.dlsim, 21, 3, 14, x0, 6
-scipy.special.erfc, 21, 1, 20, , 
-scipy.stats.iqr, 21, 2, 6, , 
-scipy.stats.skew, 21, 1, 15, bias, 3
-scipy.stats.entropy, 21, 2, 12, base, 5
-scipy.stats.binom_test, 21, 3, 9, p, 8
+scipy.stats.pearsonr, 19, 2, 19, , 
+scipy.linalg.cholesky, 19, 2, 14, lower, 14
+scipy.signal.fftconvolve, 19, 3, 18, mode, 16
+scipy.signal.lti, 19, 1, 13, , 
+scipy.misc.imsave, 21, 2, 15, , 
 scipy.optimize.curve_fit, 21, 4, 7, sigma, 7
-scipy.spatial.distance.directed_hausdorff, 22, 2, 20, , 
-scipy.optimize.shgo, 22, 6, 12, sampling_method, 20
-scipy._lib._gcutils.assert_deallocated, 22, 1, 13, name, 2
-scipy._lib._ccallback.LowLevelCallable, 22, 1, 7, signature, 4
-scipy.interpolate.PPoly.from_spline, 22, 1, 22, , 
-scipy.interpolate.fitpack.splev, 22, 2, 9, , 
-scipy.linalg.orthogonal_procrustes, 22, 2, 21, , 
-scipy.ndimage.minimum_position, 22, 3, 5, labels, 8
-scipy.ndimage.maximum_position, 22, 3, 6, labels, 8
-scipy.ndimage.grey_erosion, 22, 3, 16, footprint, 22
-scipy.sparse.linalg.lsqr, 22, 2, 5, show, 14
-scipy.optimize._constraints.PreparedConstraint, 22, 3, 18, , 
-scipy.special.betaln, 22, 2, 22, , 
-scipy.special.hyp1f1, 22, 3, 22, , 
-scipy.special.boxcox, 22, 2, 14, , 
-scipy.special.xlog1py, 22, 2, 22, , 
-scipy.stats.anderson, 22, 2, 14, , 
-scipy.ndimage.generate_binary_structure, 23, 2, 21, , 
-scipy.signal.firwin2, 23, 4, 10, window, 16
-scipy._lib.doccer.docformat, 23, 2, 19, , 
-scipy.stats.boxcox, 23, 2, 16, lmbda, 8
-scipy.misc.imsave, 23, 2, 16, , 
+scipy.sparse.lil_matrix, 21, 1, 14, dtype, 7
+scipy.spatial.distance.cdist, 22, 3, 9, metric, 6
+scipy.stats.norm.ppf, 22, 1, 21, loc, 1
+scipy.interpolate.InterpolatedUnivariateSpline, 23, 2, 16, k, 6
 scipy.stats.f.cdf, 23, 3, 23, , 
 scipy.stats.norm.logpdf, 23, 1, 18, scale, 5
-scipy.spatial.SphericalVoronoi, 24, 1, 6, center, 2
-scipy.special.erf, 24, 1, 24, , 
-scipy.fftpack.helper._init_nd_shape_and_axes, 24, 3, 24, axes, 10
-scipy.io.FortranFile, 24, 2, 8, , 
-scipy.io.mmio.mmwrite, 24, 2, 20, field, 2
-scipy.ndimage.zoom, 24, 3, 12, order, 6
-scipy.optimize._trustregion_constr.qp_subproblem.box_sphere_intersections, 24, 6, 24, entire_line, 24
-scipy.optimize._trustregion_constr.qp_subproblem.projected_cg, 24, 6, 6, tol, 20
-scipy.optimize._numdiff._adjust_scheme_to_bounds, 24, 6, 12, , 
-scipy.signal.abcd_normalize, 24, 3, 12, D, 14
-scipy.signal._peak_finding.find_peaks, 24, 2, 13, width, 7
-scipy.interpolate.InterpolatedUnivariateSpline, 24, 2, 17, k, 6
-scipy.stats.multinomial.pmf, 24, 3, 24, , 
-scipy.misc.imread, 24, 1, 16, mode, 8
-scipy.optimize.dual_annealing, 25, 3, 20, local_search_options, 8
-scipy.array, 25, 1, 17, dtype, 8
-scipy.linalg.svdvals, 25, 1, 22, check_finite, 2
-scipy.ndimage.shift, 25, 3, 19, order, 20
-scipy.ndimage.distance_transform_edt, 25, 2, 12, return_indices, 17
-scipy.signal.freqz_zpk, 25, 4, 11, worN, 9
-scipy.special.gammaincinv, 25, 2, 24, , 
-scipy.stats.norm.pdf, 25, 3, 15, scale, 11
+scipy.sparse.rand, 24, 3, 10, format, 14
+scipy.signal.lfilter, 24, 4, 12, axis, 14
+scipy.optimize.fsolve, 24, 2, 13, full_output, 6
+scipy.interpolate.RectBivariateSpline, 24, 6, 20, ky, 22
+scipy.array, 24, 1, 16, dtype, 8
+scipy.stats.norm.rvs, 25, 1, 19, size, 25
 scipy.stats.uniform, 25, 2, 25, loc, 24
+scipy.ndimage.filters.gaussian_filter, 25, 2, 15, mode, 10
 scipy.sqrt, 25, 1, 25, , 
-scipy._lib._util._aligned_zeros, 26, 2, 24, dtype, 12
-scipy.fftpack.realtransforms.dct, 26, 3, 10, type, 14
-scipy.integrate.cumtrapz, 26, 2, 7, initial, 17
-scipy.io.wavfile.read, 26, 1, 11, mmap, 12
-scipy.ndimage.sum, 26, 1, 5, labels, 14
-scipy.ndimage.grey_dilation, 26, 3, 16, footprint, 22
-scipy.optimize.fmin_l_bfgs_b, 26, 4, 14, bounds, 14
-scipy.signal.StateSpace, 26, 4, 14, dt, 12
-scipy.signal.waveforms.chirp, 26, 4, 8, method, 10
-scipy.sparse.linalg.dsolve.spsolve, 26, 2, 22, use_umfpack, 4
-scipy.sparse.linalg.isolve.gmres, 26, 4, 8, tol, 16
-scipy.cluster.vq.kmeans2, 27, 3, 25, iter, 11
-scipy.fftpack.fftfreq, 27, 1, 11, , 
-scipy.interpolate.griddata, 27, 4, 11, method, 23
-scipy.linalg.eigvals, 27, 1, 21, check_finite, 2
-scipy.optimize.newton, 27, 3, 9, fprime, 11
-scipy.stats.rv_discrete, 27, 1, 21, values, 25
-scipy.cluster.hierarchy.dendrogram, 27, 4, 11, ax, 12
-scipy.misc.doccer.docformat, 27, 2, 23, , 
-scipy.ndimage.map_coordinates, 27, 3, 15, order, 13
-scipy.ndimage.filters.gaussian_filter, 27, 2, 15, mode, 12
-scipy.signal.get_window, 27, 2, 27, , 
-scipy.signal.sosfilt, 27, 3, 15, zi, 18
-scipy.sparse.linalg.interface.aslinearoperator, 27, 1, 27, , 
-scipy.spatial.qhull.ConvexHull, 27, 1, 14, incremental, 13
-scipy.special.logsumexp, 27, 3, 16, b, 19
-scipy.stats.chisquare, 27, 2, 10, f_exp, 12
-scipy.stats.multivariate_normal.pdf, 27, 3, 25, cov, 7
-scipy.stats.wilcoxon, 27, 3, 15, correction, 10
+scipy.io.savemat, 26, 2, 12, format, 5
+scipy.linalg.inv, 26, 1, 26, , 
 scipy.absolute, 27, 1, 27, , 
-scipy.sparse.dok_matrix, 28, 1, 22, dtype, 6
-scipy.linalg.rq, 28, 1, 20, mode, 6
-scipy.ndimage.find_objects, 28, 1, 15, max_label, 2
-scipy.optimize.fmin_slsqp, 28, 7, 8, iprint, 26
-scipy.signal._peak_finding.peak_prominences, 28, 2, 25, wlen, 3
-scipy.signal.istft, 28, 5, 10, window, 20
-scipy.special.kv, 28, 2, 28, , 
-scipy.special.spherical_yn, 28, 2, 21, derivative, 6
-scipy.stats.kstest, 28, 2, 15, args, 11
-scipy.stats.norm.ppf, 28, 1, 21, loc, 7
-scipy.stats.ttest_rel, 28, 3, 20, axis, 16
-scipy.stats.mstats.ttest_ind, 28, 2, 16, equal_var, 6
-scipy.signal.zpk2sos, 29, 4, 16, pairing, 16
-scipy.linalg.cho_solve, 30, 2, 27, overwrite_b, 2
-scipy.linalg.cho_factor, 30, 1, 14, lower, 12
-scipy.ndimage.rank_filter, 30, 3, 24, size, 16
-scipy.sparse.linalg.lsmr, 30, 2, 11, None, 5
-scipy.optimize.fminbound, 30, 5, 17, disp, 19
-scipy.signal.freqs, 30, 3, 16, worN, 10
-scipy.special.spherical_jn, 30, 2, 19, derivative, 10
-scipy.stats.probplot, 30, 3, 18, fit, 26
-scipy.interpolate.interp2d, 31, 4, 20, kind, 16
-scipy.interpolate.splrep, 31, 4, 11, s, 16
-scipy.optimize.lsq_linear, 31, 5, 16, method, 21
-scipy.signal.savgol_coeffs, 31, 2, 11, pos, 12
-scipy.interpolate.RectBivariateSpline, 32, 6, 20, ky, 22
-scipy.linalg.ldl, 32, 2, 8, lower, 18
-scipy.signal._peak_finding.peak_widths, 32, 2, 22, prominence_data, 5
-scipy.sparse.linalg.dsolve.use_solver, 32, 1, 28, useUmfpack, 32
-scipy.sparse.linalg.eigen.arpack.svds, 32, 2, 16, return_singular_vectors, 12
+scipy.linalg.norm, 28, 1, 13, axis, 14
+scipy.integrate.quad, 31, 3, 25, args, 3
+scipy.sparse.diags, 31, 3, 24, format, 24
+scipy.spatial.cKDTree, 32, 1, 25, copy_data, 4
 scipy.zeros, 32, 2, 21, dtype, 21
-scipy.optimize.OptimizeResult, 33, 0, 8, fun, 22
-scipy.optimize.minimize_scalar, 33, 4, 16, method, 26
-scipy.signal.cont2discrete, 33, 3, 19, method, 25
-scipy.special.beta, 33, 2, 33, , 
-scipy.stats.moment, 33, 2, 23, moment, 6
-scipy.sparse.spdiags, 34, 4, 22, format, 10
-scipy.linalg.fractional_matrix_power, 34, 2, 34, , 
-scipy.signal.stft, 34, 7, 12, padded, 22
-scipy.io.savemat, 35, 2, 15, do_compression, 5
-scipy.linalg.block_diag, 35, 2, 13, , 
-scipy.sparse.linalg.LinearOperator, 35, 2, 15, matvec, 18
-scipy.sparse.sputils.asmatrix, 35, 1, 35, , 
-scipy.stats.kendalltau, 35, 2, 30, method, 3
-scipy.stats.mode, 36, 1, 22, axis, 11
-scipy.ndimage.distance_transform_bf, 36, 3, 16, return_indices, 24
-scipy.optimize._remove_redundancy._remove_redundancy, 36, 2, 36, , 
-scipy.signal.ss2tf, 36, 4, 28, input, 5
-scipy.signal.wavelets.morlet, 36, 3, 10, complete, 36
-scipy.spatial.KDTree, 36, 2, 18, leafsize, 18
-scipy.stats.binned_statistic_dd, 36, 4, 17, bins, 36
-scipy.stats.weightedtau, 36, 2, 16, rank, 14
-scipy.fftpack.ifft, 37, 1, 22, axis, 6
-scipy.signal.convolve, 37, 3, 22, mode, 10
-scipy.signal.sosfreqz, 37, 1, 19, worN, 9
-scipy.stats.rankdata, 37, 1, 18, method, 4
-scipy.integrate.odeint, 38, 5, 9, full_output, 23
-scipy.ndimage.convolve, 38, 2, 24, output, 12
-scipy.signal.bessel, 38, 4, 30, analog, 34
-scipy.stats.mannwhitneyu, 38, 3, 20, alternative, 30
-scipy.optimize.basinhopping, 39, 5, 10, minimizer_kwargs, 36
-scipy._lib._util._lazywhere, 39, 4, 39, f, 9
-scipy.linalg.toeplitz, 40, 2, 27, r, 1
-scipy.interpolate.KroghInterpolator, 40, 2, 36, , 
-scipy.optimize.zeros.newton, 40, 3, 17, x0, 16
-scipy.signal.TransferFunction, 40, 3, 30, dt, 30
-scipy.sparse.linalg.matfuncs.expm, 40, 1, 40, , 
-scipy.stats.binned_statistic_2d, 40, 5, 19, bins, 40
-scipy.stats.ttest_1samp, 40, 2, 22, axis, 17
-scipy.optimize.root, 41, 4, 22, method, 37
-scipy.linalg.lstsq, 42, 2, 20, lapack_driver, 20
-scipy.diag, 42, 1, 28, , 
-scipy._lib.six.callable, 42, 1, 38, , 
-scipy.io.matlab.mio5.MatFile5Reader, 42, 1, 24, mat_dtype, 6
-scipy.linalg.solveh_banded, 42, 2, 32, lower, 8
-scipy.ndimage.gaussian_filter, 42, 3, 25, output, 8
-scipy.ndimage.convolve1d, 42, 2, 24, axis, 16
-scipy.stats.linregress, 42, 2, 38, , 
-scipy.stats.norm.cdf, 42, 1, 22, loc, 1
-scipy.fftpack.fft, 43, 1, 20, n, 8
-scipy.linalg.sqrtm, 44, 2, 26, disp, 35
-scipy._lib._util.check_random_state, 44, 1, 44, , 
-scipy.optimize.fsolve, 44, 2, 18, args, 16
-scipy.special._testutils.assert_func_equal, 44, 5, 32, rtol, 44
-scipy.special.gammainc, 44, 2, 44, , 
-scipy.signal.convolve2d, 45, 3, 25, mode, 16
-scipy.sparse.eye, 45, 2, 17, format, 21
-scipy.interpolate.interpn, 45, 4, 26, method, 40
-scipy.signal.cheby2, 46, 5, 28, output, 20
-scipy._lib._version.NumpyVersion, 47, 1, 47, , 
-scipy.integrate.solve_ivp, 47, 6, 18, method, 31
-scipy.linalg.cholesky, 47, 2, 29, lower, 28
-scipy._lib._util._asarray_validated, 48, 2, 28, check_finite, 42
-scipy.special.xlogy, 48, 2, 48, , 
-scipy.spatial.distance.squareform, 48, 1, 47, checks, 1
-scipy.interpolate.BSpline, 48, 3, 36, k, 4
-scipy.interpolate.RegularGridInterpolator, 48, 3, 24, method, 21
-scipy.optimize._trustregion_constr.projections.projections, 48, 1, 32, max_refin, 4
-scipy.ndimage.label, 49, 1, 19, output, 6
-scipy.signal.correlate, 50, 3, 38, mode, 8
-scipy.linalg.eigh, 50, 2, 16, eigvals_only, 16
-scipy.sparse.linalg.aslinearoperator, 51, 1, 45, , 
-scipy.ndimage.geometric_transform, 51, 4, 42, order, 44
-scipy.ndimage.correlate, 52, 2, 26, mode, 16
-scipy.stats.binned_statistic, 52, 4, 23, bins, 46
-scipy.linalg.solve_triangular, 53, 3, 24, lower, 38
-scipy.optimize.minpack.curve_fit, 53, 5, 18, method, 23
-scipy.signal.ellip, 53, 6, 30, output, 24
-scipy.signal.savgol_filter, 53, 4, 18, mode, 42
-scipy.sparse.rand, 54, 3, 27, density, 31
-scipy.linalg.eig, 54, 2, 26, right, 18
-scipy.signal.periodogram, 55, 1, 25, return_onesided, 10
-scipy._lib._testutils.PytestTester, 55, 1, 46, , 
-scipy.interpolate.BPoly, 56, 2, 46, extrapolate, 10
-scipy.optimize._trustregion_constr.qp_subproblem.box_intersections, 56, 4, 28, entire_line, 28
-scipy.special.log1p, 56, 1, 55, , 
-scipy.linalg.expm, 57, 1, 55, , 
-scipy.stats.gaussian_kde, 57, 1, 33, bw_method, 17
-scipy.special.comb, 58, 2, 35, exact, 15
-scipy.stats.ttest_ind, 58, 3, 30, axis, 28
-scipy.signal.firwin, 60, 3, 30, pass_zero, 31
-scipy.signal.cheby1, 60, 5, 34, output, 29
-scipy.sparse.linalg.interface.LinearOperator, 61, 3, 33, matvec, 35
-scipy.special.psi, 61, 1, 49, , 
-scipy.linalg.svd, 62, 1, 19, full_matrices, 35
-scipy.sparse.diags, 62, 3, 42, format, 40
-scipy.sparse.bsr_matrix, 63, 2, 31, blocksize, 23
-scipy.sparse.isspmatrix, 64, 1, 62, , 
-scipy.special.expm1, 64, 1, 63, , 
-scipy.spatial.distance.cdist, 65, 3, 21, metric, 26
-scipy.sparse.lil_matrix, 65, 1, 53, dtype, 12
-scipy.spatial.qhull.Delaunay, 66, 1, 58, qhull_options, 6
-scipy.interpolate.PPoly, 67, 2, 54, extrapolate, 13
-scipy.fftpack.fftn, 68, 2, 40, axes, 44
-scipy.linalg._testutils.assert_no_overwrite, 68, 2, 61, dtypes, 2
-scipy.optimize._differentialevolution.DifferentialEvolutionSolver, 69, 3, 38, strategy, 28
-scipy.linalg.inv, 70, 1, 56, check_finite, 2
-scipy.linalg.get_blas_funcs, 70, 2, 42, dtype, 48
-scipy.ndimage.affine_transform, 72, 5, 35, order, 65
-scipy.linalg.lapack.get_lapack_funcs, 73, 2, 73, dtype, 34
-scipy.ndimage.correlate1d, 74, 3, 36, mode, 16
-scipy.ndimage.binary_dilation, 77, 1, 30, border_value, 16
-scipy.signal.lti, 78, 2, 40, , 
-scipy.stats.norm.rvs, 78, 3, 27, size, 70
-scipy.special._testutils.check_version, 78, 2, 74, , 
-scipy.signal.fftconvolve, 80, 3, 54, axes, 30
-scipy.interpolate.make_interp_spline, 80, 4, 48, bc_type, 53
-scipy.stats.pearsonr, 80, 2, 80, , 
-scipy.ndimage.binary_erosion, 83, 2, 20, border_value, 60
-scipy.io.matlab.mio.savemat, 84, 2, 54, format, 24
+scipy.special.psi, 33, 1, 21, , 
+scipy.optimize.minimize, 36, 5, 7, method, 24
+scipy.stats.norm.cdf, 38, 1, 21, loc, 1
+scipy.special.gamma, 41, 1, 29, , 
+scipy.special.gammaln, 43, 1, 37, , 
+scipy.sparse.csc_matrix, 47, 1, 27, shape, 15
+scipy.sparse.coo_matrix, 57, 2, 23, shape, 34
+scipy.io.loadmat, 82, 1, 58, struct_as_record, 4
 scipy.dot, 84, 2, 84, , 
-scipy.signal.butter, 85, 3, 44, output, 38
-scipy.signal.csd, 86, 4, 36, nperseg, 65
-scipy.io.loadmat, 87, 1, 60, struct_as_record, 6
-scipy.io.netcdf.netcdf_file, 89, 2, 65, maskandscale, 22
-scipy.signal.welch, 90, 3, 39, nperseg, 71
-scipy.cluster.hierarchy.linkage, 91, 2, 49, method, 12
-scipy.spatial.distance.pdist, 92, 2, 58, metric, 29
-scipy.sparse.sputils.matrix, 92, 1, 76, dtype, 3
-scipy.stats.spearmanr, 94, 2, 80, nan_policy, 12
-scipy.signal.lfilter, 94, 4, 50, zi, 45
-scipy.linalg.qr_multiply, 94, 3, 46, pivoting, 12
-scipy.io.matlab.mio.loadmat, 96, 1, 53, struct_as_record, 28
-scipy.io.idl.readsav, 96, 2, 47, verbose, 96
-scipy.optimize._numdiff.approx_derivative, 98, 3, 20, method, 58
-scipy.optimize.least_squares, 113, 6, 38, method, 101
-scipy.integrate.quad, 118, 3, 75, args, 24
-scipy.special.gammaln, 125, 1, 117, , 
-scipy.spatial.cKDTree, 141, 1, 71, leafsize, 57
-scipy.special.gamma, 144, 1, 132, , 
-scipy.signal.freqz, 153, 2, 76, worN, 85
-scipy.linalg.norm, 156, 1, 76, axis, 35
-scipy.sparse.coo_matrix, 160, 1, 78, shape, 60
-scipy.optimize.linprog, 161, 8, 70, method, 157
-scipy.linalg.qr, 163, 2, 84, mode, 67
-scipy.linalg.solve, 179, 2, 118, assume_a, 15
-scipy.sparse.issparse, 205, 1, 197, , 
-scipy.interpolate.interp1d, 219, 3, 75, kind, 149
-scipy.optimize.minimize, 271, 4, 68, method, 236
-scipy.sparse.csc_matrix, 291, 1, 210, shape, 36
-scipy._lib.six.xrange, 322, 1, 155, , 
-scipy.special._mptestutils.assert_mpmath_equal, 329, 4, 129, rtol, 120
-scipy.sparse.csr_matrix, 402, 1, 288, shape, 44
-scipy._lib._numpy_compat.suppress_warnings, 483, 0, 466, , 
+scipy.interpolate.interp1d, 90, 2, 36, kind, 41
+scipy.sparse.issparse, 94, 1, 94, , 
+scipy.sparse.csr_matrix, 161, 1, 106, shape, 24
