@@ -1,7 +1,7 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 matplotlib.cm.jet, 1, 1, 1, , 
 matplotlib.pyplot.semilogy, 1, 7, 1, markersize, 1
-matplotlib.colorbar.ColorbarBase, 1, 4, 1, orientation, 1
+matplotlib.colorbar.ColorbarBase, 1, 4, 1, cmap, 1
 matplotlib.__version__.split, 1, 1, 1, , 
 matplotlib.pyplot.Normalize, 1, 2, 1, vmin, 1
 matplotlib.pyplot.cm.ScalarMappable, 1, 2, 1, cmap, 1
@@ -30,8 +30,8 @@ matplotlib.rc_params, 1, 0, 1, ,
 matplotlib.figure.SubplotParams, 1, 4, 1, bottom, 1
 matplotlib.colors.is_color_like, 1, 1, 1, , 
 matplotlib.colors.to_hex, 1, 1, 1, , 
-matplotlib.mlab.cohere, 1, 6, 1, Fs, 1
-matplotlib.pyplot.tick_params, 1, 9, 1, bottom, 1
+matplotlib.mlab.cohere, 1, 6, 1, NFFT, 1
+matplotlib.pyplot.tick_params, 1, 9, 1, right, 1
 matplotlib.is_interactive, 1, 0, 1, , 
 matplotlib._pylab_helpers.Gcf.get_all_fig_managers, 1, 0, 1, , 
 matplotlib.backend_bases.TimerBase, 1, 2, 1, None, 1
@@ -53,7 +53,7 @@ matplotlib.nxutils.points_inside_poly, 1, 2, 1, ,
 matplotlib.tri.Triangulation, 1, 3, 1, , 
 matplotlib.font_manager._rebuild, 1, 0, 1, , 
 matplotlib.pyplot.get_current_fig_manager, 1, 0, 1, , 
-matplotlib.pyplot.ginput, 1, 2, 1, timeout, 1
+matplotlib.pyplot.ginput, 1, 2, 1, n, 1
 matplotlib.pyplot.matshow, 1, 2, 1, cmap, 1
 matplotlib.backends.backend_qt4.FigureCanvasQTAgg, 1, 1, 1, , 
 matplotlib.backends.backend_qt4.NavigationToolbar2QT, 1, 2, 1, , 
@@ -65,12 +65,12 @@ matplotlib.backends.backend_qt5agg.NavigationToolbar2QT, 1, 2, 1, ,
 matplotlib.image.pil_to_array, 1, 1, 1, , 
 matplotlib.pyplot.boxplot, 1, 2, 1, labels, 1
 matplotlib.cm.rainbow, 1, 2, 1, , 
-matplotlib.widgets.SpanSelector, 1, 5, 1, useblit, 1
+matplotlib.widgets.SpanSelector, 1, 5, 1, rectprops, 1
 matplotlib.pyplot.twinx, 1, 1, 1, , 
 matplotlib.pyplot.step, 1, 2, 1, , 
 matplotlib.colors.rgb2hex, 2, 1, 2, , 
 matplotlib.pylab.get_backend, 2, 0, 2, , 
-matplotlib.cm.ScalarMappable, 2, 2, 2, norm, 2
+matplotlib.cm.ScalarMappable, 2, 2, 2, cmap, 2
 matplotlib.projections.register_projection, 2, 1, 2, , 
 matplotlib.colors.LogNorm, 2, 0, 2, , 
 matplotlib.scale.register_scale, 2, 1, 2, , 
@@ -101,7 +101,7 @@ matplotlib.colors.ColorConverter, 3, 0, 3, ,
 matplotlib.pyplot.figlegend, 3, 3, 3, , 
 matplotlib.pyplot.get_fignums, 3, 0, 3, , 
 matplotlib.backends.backend_qt5agg.FigureCanvasQTAgg, 3, 1, 3, , 
-matplotlib.patches.Rectangle, 3, 7, 2, fc, 2
+matplotlib.patches.Rectangle, 3, 7, 2, clip_on, 2
 matplotlib.widgets.RadioButtons, 3, 3, 3, active, 3
 matplotlib.pylab.plt.figure, 4, 0, 4, , 
 matplotlib.cm.get_cmap, 4, 1, 4, , 
@@ -109,12 +109,12 @@ matplotlib.style.use, 4, 1, 4, ,
 matplotlib.pyplot.draw_if_interactive, 4, 0, 4, , 
 matplotlib.dates.DateFormatter, 4, 1, 4, , 
 matplotlib.colors.ListedColormap, 4, 2, 2, name, 1
-matplotlib.pyplot.annotate, 4, 7, 2, xytext, 4
+matplotlib.pyplot.annotate, 4, 7, 2, textcoords, 4
 matplotlib.pyplot.barh, 4, 3, 4, , 
 matplotlib.pyplot.Circle, 4, 3, 1, fill, 2
 matplotlib.ticker.FuncFormatter, 4, 1, 4, , 
 matplotlib.cm.spectral, 4, 1, 4, , 
-matplotlib.pyplot.axvspan, 4, 4, 4, alpha, 4
+matplotlib.pyplot.axvspan, 4, 4, 4, color, 4
 matplotlib.collections.PatchCollection, 5, 2, 3, picker, 2
 matplotlib.pyplot.ion, 5, 0, 5, , 
 matplotlib.pyplot.cla, 5, 0, 5, , 
@@ -160,24 +160,24 @@ matplotlib.pyplot.subplot2grid, 26, 2, 10, colspan, 15
 matplotlib.pyplot.yticks, 26, 1, 20, , 
 matplotlib.pyplot.xticks, 27, 1, 22, rotation, 3
 matplotlib.pyplot.text, 28, 6, 15, horizontalalignment, 17
-matplotlib.pyplot.xlim, 29, 1, 26, xmin, 2
+matplotlib.pyplot.xlim, 29, 1, 26, xmax, 2
 matplotlib.pyplot.subplots_adjust, 29, 1, 16, hspace, 20
 matplotlib.pyplot.tight_layout, 36, 0, 34, h_pad, 1
 matplotlib.pyplot.gca, 36, 0, 36, , 
 matplotlib.pyplot.setp, 44, 2, 33, fontsize, 12
 matplotlib.pyplot.fill_between, 49, 4, 28, alpha, 48
 matplotlib.pyplot.ylim, 58, 1, 47, ymin, 2
-matplotlib.pyplot.axis, 67, 1, 66, xmin, 1
+matplotlib.pyplot.axis, 67, 1, 66, xmax, 1
 matplotlib.use, 80, 1, 77, warn, 3
 matplotlib.pyplot.imshow, 121, 1, 54, interpolation, 27
 matplotlib.pyplot.subplots, 132, 0, 51, figsize, 50
 matplotlib.pyplot.legend, 149, 1, 106, loc, 100
+matplotlib.pyplot.close, 151, 1, 109, , 
 matplotlib.pyplot.savefig, 152, 2, 64, bbox_inches, 76
-matplotlib.pyplot.close, 153, 1, 109, , 
-matplotlib.pyplot.xlabel, 179, 1, 178, fontsize, 1
+matplotlib.pyplot.xlabel, 177, 1, 176, fontsize, 1
 matplotlib.pyplot.subplot, 202, 3, 103, sharex, 4
-matplotlib.pyplot.ylabel, 206, 1, 205, fontsize, 1
+matplotlib.pyplot.ylabel, 204, 1, 203, fontsize, 1
 matplotlib.pyplot.title, 299, 1, 292, loc, 3
 matplotlib.pyplot.show, 354, 0, 353, block, 1
-matplotlib.pyplot.figure, 361, 1, 225, figsize, 232
-matplotlib.pyplot.plot, 464, 3, 127, label, 244
+matplotlib.pyplot.figure, 359, 1, 225, figsize, 232
+matplotlib.pyplot.plot, 458, 3, 125, label, 244

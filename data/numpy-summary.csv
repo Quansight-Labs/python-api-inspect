@@ -1,431 +1,155 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 numpy.polynomial.chebyshev.Chebyshev, 1, 1, 1, , 
 numpy.trapz.__doc__.replace, 1, 2, 1, , 
+numpy.intc, 1, 1, 1, , 
+numpy.f2py.crackfortran.crackfortran, 1, 1, 1, , 
+numpy.greater_equal.outer, 1, 2, 1, , 
+numpy.ldexp, 1, 2, 1, , 
+numpy.longlong, 1, 1, 1, , 
+numpy.testing.assert_string_equal, 1, 2, 1, , 
+numpy.core.umath.less_equal, 1, 2, 1, , 
+numpy.core.umath.exp, 1, 1, 1, , 
+numpy.core.umath.greater, 1, 2, 1, , 
+numpy.trim_zeros, 1, 2, 1, , 
+numpy.polyint, 1, 1, 1, , 
+numpy.dual.eig, 1, 1, 1, , 
+numpy.lib._datasource.Repository, 1, 1, 1, , 
+numpy.bmat, 1, 2, 1, None, 1
+numpy.uint, 1, 1, 1, , 
+numpy.poly1d.__init__, 1, 2, 1, , 
+numpy.poly1d.__call__, 1, 2, 1, , 
+numpy.ma.add.reduce, 1, 1, 1, , 
 numpy.ma.column_stack, 1, 1, 1, , 
 numpy.ma.row_stack, 1, 1, 1, , 
 numpy.ma.mask_rowcols, 1, 2, 1, axis, 1
+numpy.ma.vstack, 1, 1, 1, , 
+numpy.ma.expand_dims, 1, 2, 1, , 
+numpy.ma.log, 1, 1, 1, , 
+numpy.ma.allclose, 1, 2, 1, , 
+numpy.ma.mask_cols, 1, 1, 1, , 
+numpy.ma.testutils.assert_array_almost_equal_nulp, 1, 3, 1, nulp, 1
+numpy.random.rayleigh, 1, 2, 1, , 
 numpy.distutils.command.build_ext.build_ext.build_extension, 1, 2, 1, , 
 numpy.datetime_data, 1, 1, 1, , 
 numpy.bitwise_xor.reduce, 1, 1, 1, , 
+numpy.lib.arraysetops.in1d, 1, 2, 1, , 
 numpy.cumproduct, 1, 1, 1, , 
 numpy.typeDict.get, 1, 2, 1, , 
+numpy.lib.format.read_array, 1, 1, 1, , 
+numpy.ma.mrecords.fromarrays, 1, 2, 1, names, 1
 numpy.minimum.accumulate, 1, 1, 1, , 
 numpy.maximum.accumulate, 1, 1, 1, , 
+numpy.geterr, 1, 0, 1, , 
+numpy.busday_offset, 1, 4, 1, roll, 1
 numpy.is_busday, 1, 2, 1, busdaycal, 1
+numpy.einsum_path, 1, 3, 1, optimize, 1
 numpy.ma.dot, 1, 2, 1, , 
 numpy.ma.MaskError, 1, 1, 1, , 
 numpy.ma.core._check_fill_value, 1, 2, 1, , 
 numpy.ma.core._DomainedBinaryOperation, 1, 4, 1, , 
+numpy.ma.minimum_fill_value, 1, 1, 1, , 
 numpy.ma.maximum_fill_value, 1, 1, 1, , 
 numpy.bitwise_and.outer, 1, 2, 1, , 
+numpy.min_scalar_type, 1, 1, 1, , 
+numpy.void, 1, 1, 1, , 
+numpy.unicode_, 1, 1, 1, , 
 numpy.sctypes.items, 1, 0, 1, , 
 numpy.distutils.ccompiler.get_default_compiler, 1, 0, 1, , 
+numpy.testing.assert_raises_regex, 1, 5, 1, , 
 numpy.MachAr, 1, 0, 1, , 
+numpy.nested_iters, 1, 4, 1, flags, 1
+numpy.random.standard_cauchy, 1, 1, 1, size, 1
 numpy.ma.squeeze, 1, 1, 1, , 
 numpy.ma.transpose, 1, 2, 1, , 
+numpy.fmax.reduce, 1, 1, 1, , 
+numpy.lib._iotools._is_string_like, 1, 1, 1, , 
 numpy.core.defchararray.lstrip, 1, 2, 1, , 
 numpy.nanprod, 1, 2, 1, axis, 1
 numpy.fmax.accumulate, 1, 2, 1, axis, 1
-numpy.linalg.norm.cdf, 1, 3, 1, scale, 1
+numpy.lib.recfunctions.stack_arrays, 1, 4, 1, asrecarray, 1
+numpy.format_float_positional, 1, 3, 1, trim, 1
+numpy.linalg.norm.cdf, 1, 3, 1, loc, 1
 numpy.linalg.norm.rvs, 1, 3, 1, size, 1
 numpy.ma.exp, 1, 1, 1, , 
 numpy.expm, 1, 1, 1, , 
 numpy.ma.any, 1, 1, 1, , 
 numpy.ndarray.__getslice__, 1, 3, 1, , 
+numpy.single, 1, 1, 1, , 
+numpy.lib.recfunctions.rename_fields, 1, 2, 1, , 
 numpy.short, 1, 1, 1, , 
 numpy.ma.clip, 1, 3, 1, , 
 numpy.ma.empty_like, 1, 1, 1, , 
 numpy.sctype2char, 1, 1, 1, , 
 numpy.ma.masked_outside, 1, 3, 1, , 
 numpy.random.mtrand._rand.seed, 1, 1, 1, , 
+numpy.lib.recfunctions.append_fields, 1, 6, 1, asrecarray, 1
+numpy.lib.recfunctions.drop_fields, 1, 5, 1, asrecarray, 1
 numpy.ctypeslib.as_ctypes, 1, 1, 1, , 
 numpy.ndarray.__array_wrap__, 1, 3, 1, , 
+numpy.ndarray.sum, 1, 3, 1, None, 1
+numpy.core.numeric.tensordot, 1, 2, 1, axes, 1
 numpy.getbuffer, 1, 1, 1, , 
 numpy.core.umath_tests.inner1d, 1, 2, 1, , 
 numpy.bool8, 1, 1, 1, , 
+numpy.multiply.accumulate, 1, 1, 1, , 
+numpy.ma.compressed, 1, 1, 1, , 
 numpy.ma.masked_not_equal, 1, 2, 1, , 
 numpy.ma.count, 1, 2, 1, axis, 1
+numpy.distutils.fcompiler.new_fcompiler, 1, 2, 1, c_compiler, 1
+numpy.distutils.core.get_distribution, 1, 1, 1, always, 1
 numpy.distutils.ccompiler.CCompiler_spawn, 1, 3, 1, display, 1
+numpy.distutils.ccompiler.replace_method, 1, 3, 1, , 
+numpy.polynomial.polynomial.polyder, 1, 1, 1, , 
 numpy.polynomial.polynomial.polycompanion, 1, 1, 1, , 
+numpy.format_parser, 1, 3, 1, , 
 numpy.maximum.reduceat, 1, 3, 1, , 
 numpy.ndarray.tofile, 1, 2, 1, , 
 numpy.bartlett, 1, 1, 1, , 
 numpy.long, 1, 1, 1, , 
+numpy.recfromcsv, 1, 3, 1, delimiter, 1
 numpy.ma.MaskedArray.__get_state__, 1, 1, 1, , 
 numpy.ma.MaskedArray.__set_state__, 1, 2, 1, , 
 numpy.lib.format.dtype_to_descr, 1, 1, 1, , 
+numpy.char.array, 1, 2, 1, itemsize, 1
 numpy.beta, 1, 3, 1, , 
 numpy.rand, 1, 1, 1, , 
 numpy.char.decode, 1, 2, 1, , 
 numpy.float64.__new__, 1, 2, 1, , 
+numpy.random.logistic, 1, 3, 1, , 
 numpy.ctypeslib._typecodes.copy, 1, 0, 1, , 
 numpy.ctypeslib.as_ctypes_type, 1, 1, 1, , 
 numpy.linalg.linalg.cholesky, 1, 1, 1, , 
+numpy.float128, 1, 1, 1, , 
+numpy.random.standard_t, 1, 1, 1, , 
 numpy.core.char.add, 1, 2, 1, , 
 numpy.atan, 1, 1, 1, , 
-numpy.ma.arctan2, 1, 2, 1, , 
-numpy.core.umath.subtract, 1, 3, 1, , 
-numpy.core.numeric.errstate, 1, 1, 1, under, 1
-numpy.core.multiarray.empty, 1, 2, 1, , 
-numpy.distutils.misc_util.dot_join, 1, 2, 1, , 
-numpy._build_utils.apple_accelerate.uses_accelerate_framework, 1, 1, 1, , 
-numpy.core.arrayprint.FloatFormat, 1, 4, 1, , 
-numpy.char.asarray, 1, 1, 1, , 
-numpy.char.center, 1, 2, 1, , 
-numpy.char.join, 1, 2, 1, , 
-numpy.char.ljust, 1, 2, 1, , 
-numpy.char.rjust, 1, 2, 1, , 
-numpy.geterrcall, 1, 0, 1, , 
-numpy.core._multiarray_tests.extint_safe_binop, 1, 3, 1, , 
-numpy.core._multiarray_tests.extint_to_128, 1, 1, 1, , 
-numpy.core._multiarray_tests.extint_to_64, 1, 1, 1, , 
-numpy.core._multiarray_tests.extint_mul_64_64, 1, 2, 1, , 
-numpy.core._multiarray_tests.extint_add_128, 1, 2, 1, , 
-numpy.core._multiarray_tests.extint_sub_128, 1, 2, 1, , 
-numpy.core._multiarray_tests.extint_neg_128, 1, 1, 1, , 
-numpy.core._multiarray_tests.extint_shl_128, 1, 1, 1, , 
-numpy.core._multiarray_tests.extint_shr_128, 1, 1, 1, , 
-numpy.core._multiarray_tests.extint_gt_128, 1, 2, 1, , 
-numpy.core._multiarray_tests.extint_divmod_128_64, 1, 2, 1, , 
-numpy.core._multiarray_tests.extint_floordiv_128_64, 1, 2, 1, , 
-numpy.core._multiarray_tests.extint_ceildiv_128_64, 1, 2, 1, , 
-numpy.core.getlimits._discovered_machar, 1, 1, 1, , 
-numpy.core.machar.MachAr, 1, 1, 1, , 
-numpy.core._multiarray_tests.internal_overlap, 1, 1, 1, , 
-numpy.core._multiarray_tests.incref_elide, 1, 1, 1, , 
-numpy.core._multiarray_tests.incref_elide_l, 1, 1, 1, , 
-numpy.core.tests._locales.CommaDecimalPointLocale, 1, 0, 1, , 
-numpy.core._internal._dtype_from_pep3118, 1, 1, 1, , 
-numpy.core._multiarray_tests.test_pydatamem_seteventhook_start, 1, 0, 1, , 
-numpy.core._multiarray_tests.test_pydatamem_seteventhook_end, 1, 0, 1, , 
-numpy.core._multiarray_tests.npy_resolve, 1, 1, 1, , 
-numpy.core._multiarray_tests.npy_abuse_writebackifcopy, 1, 1, 1, , 
-numpy.core._multiarray_tests.npy_discard, 1, 1, 1, , 
-numpy.rec.fromfile, 1, 4, 1, formats, 1
-numpy.bytes_, 1, 1, 1, , 
-numpy.floating.__subclasses__, 1, 0, 1, , 
-numpy.complexfloating.__subclasses__, 1, 0, 1, , 
-numpy.core._umath_tests.euclidean_pdist, 1, 2, 1, , 
-numpy.core._struct_ufunc_tests.add_triplet, 1, 2, 1, , 
-numpy.core._rational_tests.test_add_rationals, 1, 2, 1, , 
-numpy.negative.at, 1, 2, 1, , 
-numpy.power.at, 1, 3, 1, , 
-numpy.equal.at, 1, 3, 1, , 
-numpy.invert.at, 1, 2, 1, , 
-numpy.float_power, 1, 2, 1, , 
-numpy.core.umath.maximum, 1, 2, 1, , 
-numpy.multiply.__call__, 1, 4, 1, foo, 1
-numpy.multiply.at, 1, 3, 1, , 
-numpy.core._internal._getintp_ctype, 1, 0, 1, , 
-numpy.distutils.misc_util._commandline_dep_string, 1, 3, 1, , 
-numpy.distutils.misc_util.get_num_build_jobs, 1, 0, 1, , 
-numpy.distutils.fcompiler.is_f_file, 1, 1, 1, , 
-numpy.distutils.fcompiler.has_f90_header, 1, 1, 1, , 
-numpy.distutils.misc_util.get_numpy_include_dirs, 1, 0, 1, , 
-numpy.distutils.system_info.combine_paths, 1, 2, 1, , 
-numpy.distutils.misc_util.get_script_files, 1, 1, 1, , 
-numpy.distutils.misc_util.get_data_files, 1, 1, 1, , 
-numpy.distutils.from_template.process_file, 1, 1, 1, , 
-numpy.distutils.conv_template.process_file, 1, 1, 1, , 
-numpy.distutils.misc_util.fortran_ext_match, 1, 1, 1, , 
-numpy.distutils.mingw32ccompiler.generate_manifest, 1, 1, 1, , 
-numpy.distutils.command.autodist.check_inline, 1, 1, 1, , 
-numpy.distutils.command.autodist.check_restrict, 1, 1, 1, , 
-numpy.distutils.command.autodist.check_compiler_gcc4, 1, 1, 1, , 
-numpy.distutils.command.autodist.check_gcc_function_attribute, 1, 3, 1, , 
-numpy.distutils.command.autodist.check_gcc_variable_attribute, 1, 2, 1, , 
-numpy.distutils.misc_util.get_cmd, 1, 1, 1, , 
-numpy.distutils.numpy_distribution.NumpyDistribution, 1, 0, 1, , 
-numpy.distutils.command.config.todict, 1, 0, 1, , 
-numpy.distutils.misc_util.all_strings, 1, 1, 1, , 
-numpy.distutils.ccompiler.CCompiler.__init__, 1, 3, 1, None, 1
-numpy.distutils.ccompiler.CCompiler.get_version, 1, 3, 1, force, 1
-numpy.distutils.log.set_verbosity, 1, 1, 1, , 
-numpy.distutils.cpuinfo.cpu.is_64bit, 1, 0, 1, , 
-numpy.distutils.fcompiler.FCompiler.get_flags, 1, 1, 1, , 
-numpy.distutils.fcompiler.FCompiler.get_flags_f77, 1, 1, 1, , 
-numpy.distutils.fcompiler.FCompiler.get_flags_f90, 1, 1, 1, , 
-numpy.distutils.fcompiler.FCompiler.get_flags_fix, 1, 1, 1, , 
-numpy.distutils.msvccompiler.MSVCCompiler, 1, 0, 1, , 
-numpy.distutils.fcompiler.FCompiler.get_flags_linker_so, 1, 1, 1, , 
-numpy.distutils.cpuinfo.cpu.is_r10000, 1, 0, 1, , 
-numpy.distutils.cpuinfo.cpu.is_r12000, 1, 0, 1, , 
-numpy.distutils.cpuinfo.cpu.is_r8000, 1, 0, 1, , 
-numpy.distutils.cpuinfo.cpu.is_r5000, 1, 0, 1, , 
-numpy.distutils.cpuinfo.cpu.is_r4000, 1, 0, 1, , 
-numpy.distutils.customized_fcompiler, 1, 1, 1, compiler, 1
-numpy.distutils.fcompiler.CompilerNotFound, 1, 1, 1, , 
-numpy.distutils.fcompiler.gnu.GnuFCompiler, 1, 0, 1, , 
-numpy.distutils.fcompiler.gnu.GnuFCompiler.get_flags_arch, 1, 1, 1, , 
-numpy.distutils.msvc9compiler.MSVCCompiler.initialize, 1, 2, 1, , 
-numpy.distutils.misc_util.msvc_runtime_version, 1, 0, 1, , 
-numpy.distutils.lib2def.getnm, 1, 1, 1, , 
-numpy.distutils.lib2def.parse_nm, 1, 1, 1, , 
-numpy.distutils.lib2def.output_def, 1, 4, 1, , 
-numpy.distutils.system_info.system_info.saved_results.items, 1, 0, 1, , 
-numpy.distutils.command.config.config, 1, 1, 1, , 
-numpy.distutils.exec_command.get_pythonexe, 1, 0, 1, , 
-numpy.distutils.from_template.process_str, 1, 1, 1, , 
-numpy.distutils.misc_util.minrelpath, 1, 1, 1, , 
-numpy.distutils.misc_util.get_info, 1, 1, 1, , 
-numpy.distutils.system_info.ConfigParser, 1, 1, 1, , 
-numpy.f2py.main, 1, 0, 1, , 
-numpy.distutils.cpuinfo.cpuinfo, 1, 0, 1, , 
-numpy.distutils.fcompiler.load_all_fcompiler_classes, 1, 0, 1, , 
-numpy.distutils.command.build_src.get_f2py_modulename, 1, 1, 1, , 
-numpy.distutils.system_info.show_all, 1, 0, 1, , 
-numpy.testing.jiffies, 1, 0, 1, , 
-numpy.core.conjugate, 1, 1, 1, , 
-numpy.core.numeric.absolute, 1, 1, 1, , 
-numpy.core.transpose, 1, 2, 1, , 
-numpy.core.umath.arctan2, 1, 2, 1, , 
-numpy.core.umath.mod, 1, 2, 1, , 
-numpy.core.multiarray._insert, 1, 3, 1, , 
-numpy.lib.stride_tricks._broadcast_shape, 1, 1, 1, , 
-numpy.core.fromnumeric.sum, 1, 1, 1, , 
-numpy.core.numeric.empty_like, 1, 1, 1, , 
-numpy.core.fromnumeric.partition, 1, 3, 1, axis, 1
-numpy.core.numeric.ceil, 1, 1, 1, , 
-numpy.core.fromnumeric.ravel, 1, 1, 1, , 
-numpy.core.numeric.indices, 1, 2, 1, , 
-numpy.matrixlib.bmat, 1, 3, 1, , 
-numpy.core.numerictypes.find_common_type, 1, 2, 1, , 
-numpy.core.numeric.nditer, 1, 3, 1, order, 1
-numpy.fmin.reduce, 1, 4, 1, axis, 1
-numpy.lib.function_base._quantile_unchecked, 1, 4, 1, interpolation, 1
-numpy.compat.bytes.read, 1, 1, 1, , 
-numpy.compat.bytes.close, 1, 0, 1, , 
-numpy.core.ones, 1, 2, 1, dtype, 1
-numpy.lib.twodim_base.vander, 1, 2, 1, , 
-numpy.core.numeric.outer, 1, 2, 1, , 
-numpy.core.numeric.zeros_like, 1, 1, 1, , 
-numpy.core.numeric.allclose, 1, 3, 1, rtol, 1
-numpy.lib.function_base.trim_zeros, 1, 2, 1, trim, 1
-numpy.core.numeric.logical_or.accumulate, 1, 1, 1, , 
-numpy.lib.type_check.real, 1, 1, 1, , 
-numpy.core.numeric.log10, 1, 1, 1, , 
-numpy.core.numeric.log2, 1, 1, 1, , 
-numpy.core.numeric.power, 1, 2, 1, , 
-numpy.core.numeric.arccos, 1, 1, 1, , 
-numpy.core.numeric.arcsin, 1, 1, 1, , 
-numpy.core.numeric.arctanh, 1, 1, 1, , 
-numpy.lib.index_tricks.ndindex, 1, 1, 1, , 
-numpy.core.numeric.sometrue, 1, 1, 1, , 
-numpy.core.numeric.swapaxes, 1, 3, 1, , 
-numpy.core.numeric.multiply, 1, 2, 1, , 
-numpy.lib._iotools.StringConverter.upgrade_mapper, 1, 2, 1, , 
-numpy.lib.arraysetops.isin, 1, 2, 1, , 
-numpy.lib.Arrayterator, 1, 2, 1, , 
-numpy.rate, 1, 4, 1, , 
-numpy.ipmt, 1, 4, 1, , 
-numpy.lib.format.read_array_header_1_0, 1, 1, 1, , 
-numpy.lib.format.read_array_header_2_0, 1, 1, 1, , 
-numpy.lib.select, 1, 2, 1, , 
-numpy.lib.setxor1d, 1, 2, 1, , 
-numpy.lib.hanning, 1, 1, 1, , 
-numpy.lib.hamming, 1, 1, 1, , 
-numpy.lib.bartlett, 1, 1, 1, , 
-numpy.lib.blackman, 1, 1, 1, , 
-numpy.lib.kaiser, 1, 2, 1, , 
-numpy.lib.index_tricks.ix_, 1, 2, 1, , 
-numpy.lib.index_tricks.diag_indices_from, 1, 1, 1, , 
-numpy.lib.index_tricks.ndenumerate, 1, 1, 1, , 
-numpy.nancumprod, 1, 2, 1, axis, 1
-numpy.nancumsum, 1, 2, 1, axis, 1
-numpy.testing.rundocs, 1, 0, 1, , 
-numpy.who, 1, 1, 1, , 
-numpy.lib.shape_base.apply_over_axes, 1, 3, 1, , 
-numpy.lib.shape_base.expand_dims, 1, 2, 1, , 
-numpy.lib.shape_base.split, 1, 2, 1, , 
-numpy.lib.shape_base.kron, 1, 2, 1, , 
-numpy.lib.type_check.isposinf, 1, 1, 1, , 
-numpy.lib.type_check.isneginf, 1, 1, 1, , 
-numpy.lib.type_check.asfarray, 1, 1, 1, , 
-numpy.lib.utils.lookfor, 1, 4, 1, import_modules, 1
-numpy.lib.utils.byte_bounds, 1, 1, 1, , 
-numpy.core.numeric.diagonal, 1, 2, 1, , 
-numpy.core.numeric.greater_equal.outer, 1, 2, 1, , 
-numpy.core.numeric.multiply.accumulate, 1, 3, 1, axis, 1
-numpy.core.add, 1, 3, 1, , 
-numpy.core.subtract, 1, 3, 1, , 
-numpy.core.multiply, 1, 3, 1, , 
-numpy.core.remainder, 1, 3, 1, , 
-numpy.core.power, 1, 3, 1, , 
-numpy.core.left_shift, 1, 3, 1, , 
-numpy.core.right_shift, 1, 3, 1, , 
-numpy.core.bitwise_and, 1, 3, 1, , 
-numpy.core.bitwise_xor, 1, 3, 1, , 
-numpy.core.bitwise_or, 1, 3, 1, , 
-numpy.core.reshape, 1, 2, 1, , 
-numpy.core.product, 1, 1, 1, , 
-numpy.core.empty_like, 1, 1, 1, , 
-numpy.lib.twodim_base.eye, 1, 2, 1, dtype, 1
-numpy.linalg._umath_linalg.eigvals, 1, 3, 1, signature, 1
-numpy.linalg._umath_linalg.eig, 1, 3, 1, signature, 1
-numpy.core.count_nonzero, 1, 2, 1, axis, 1
-numpy.core.amax, 1, 3, 1, axis, 1
-numpy.core.matmul, 1, 2, 1, , 
-numpy.core.moveaxis, 1, 3, 1, , 
-numpy.linalg.lapack_lite.xerbla, 1, 0, 1, , 
-numpy.linalg.lapack_lite.dorgqr, 1, 9, 1, , 
-numpy.linalg.linalg._multi_dot_matrix_chain_order, 1, 2, 1, return_costs, 1
-numpy.core.umath.logical_or.outer, 1, 2, 1, , 
-numpy.core.umath.logical_not, 1, 1, 1, , 
-numpy.ndarray.ravel, 1, 1, 1, , 
-numpy.core.arrayprint.dtype_is_implied, 1, 1, 1, , 
-numpy.core.arrayprint.dtype_short_repr, 1, 1, 1, , 
-numpy.ndarray.sort, 1, 4, 1, axis, 1
-numpy.ma.sum, 1, 3, 1, axis, 1
-numpy.recarray.__new__, 1, 11, 1, strides, 1
-numpy.ma.MAError, 1, 1, 1, , 
-numpy.ma.make_mask_none, 1, 2, 1, dtype, 1
-numpy.ma.MaskedArray.__setitem__, 1, 3, 1, , 
-numpy.ma.default_fill_value, 1, 1, 1, , 
-numpy.ma.core.fix_invalid, 1, 1, 1, , 
-numpy.ma.core.resize, 1, 2, 1, , 
-numpy.ma.core.ravel, 1, 1, 1, , 
-numpy.ma.core.minimum, 1, 2, 1, , 
-numpy.ma.core.minimum.outer, 1, 2, 1, , 
-numpy.ma.core.maximum, 1, 2, 1, , 
-numpy.ma.core.maximum.outer, 1, 2, 1, , 
-numpy.ma.core.exp, 1, 1, 1, , 
-numpy.ma.core.sqrt, 1, 1, 1, , 
-numpy.ma.core.tan, 1, 1, 1, , 
-numpy.ma.core.arcsin, 1, 1, 1, , 
-numpy.ma.core.arccos, 1, 1, 1, , 
-numpy.ma.core.arccosh, 1, 1, 1, , 
-numpy.ma.core.divide, 1, 2, 1, , 
-numpy.ma.core.allclose, 1, 2, 1, , 
-numpy.ma.core.masked_not_equal, 1, 2, 1, , 
-numpy.ma.core.anom, 1, 1, 1, , 
-numpy.ma.core.reshape, 1, 2, 1, , 
-numpy.ma.MaskedArray.__new__, 1, 1, 1, , 
-numpy.ma.masked.view, 1, 1, 1, , 
-numpy.ma.extras.clump_masked, 1, 1, 1, , 
-numpy.ma.extras.clump_unmasked, 1, 1, 1, , 
-numpy.ma.extras.cov, 1, 2, 1, allow_masked, 1
-numpy.ma.extras.intersect1d, 1, 2, 1, , 
-numpy.ma.extras.isin, 1, 2, 1, , 
-numpy.ma.extras.setdiff1d, 1, 2, 1, , 
-numpy.ma.extras.diagflat, 1, 1, 1, , 
-numpy.core.records.fromrecords, 1, 2, 1, names, 1
-numpy.ma.mrecords.fromtextfile, 1, 3, 1, delimitor, 1
-numpy.ma.mrecords.addfield, 1, 2, 1, , 
-numpy.ma.resize, 1, 2, 1, , 
-numpy.ma.put, 1, 3, 1, , 
-numpy.ma.choose, 1, 2, 1, , 
-numpy.ma.take, 1, 2, 1, , 
-numpy.ma.core.asanyarray, 1, 1, 1, , 
-numpy.testing.assert_array_compare, 1, 6, 1, verbose, 1
-numpy.core.numeric.ndarray.__new__, 1, 5, 1, order, 1
-numpy.core.numeric.ndarray.__getitem__, 1, 2, 1, , 
-numpy.core.numeric.ndarray.squeeze, 1, 2, 1, axis, 1
-numpy.core.numeric.ndarray.flatten, 1, 2, 1, order, 1
-numpy.core.numeric.ndarray.ravel, 1, 2, 1, order, 1
-numpy.matrixlib.mat, 1, 1, 1, , 
-numpy.matrix.__array_finalize__, 1, 2, 1, , 
-numpy.ma.core.MaskedArray.__array_finalize__, 1, 2, 1, , 
-numpy.ma.testutils.assert_raises, 1, 2, 1, , 
-numpy.polynomial.chebyshev.chebtrim, 1, 2, 1, tol, 1
-numpy.polynomial.chebyshev._cseries_to_zseries, 1, 1, 1, , 
-numpy.polynomial.chebyshev._zseries_to_cseries, 1, 1, 1, , 
-numpy.polynomial.chebyshev.chebsub, 1, 2, 1, , 
-numpy.polynomial.chebyshev.chebmul, 1, 2, 1, , 
-numpy.polynomial.chebyshev.chebdiv, 1, 2, 1, , 
-numpy.polynomial.chebyshev.chebval, 1, 2, 1, , 
-numpy.polynomial.chebyshev.chebinterpolate, 1, 3, 1, , 
-numpy.polynomial.chebyshev.chebgauss, 1, 1, 1, , 
-numpy.polynomial.chebyshev.chebroots, 1, 1, 1, , 
-numpy.polynomial.chebyshev.chebweight, 1, 1, 1, , 
-numpy.polynomial.Polynomial.cast, 1, 3, 1, window, 1
-numpy.polynomial.Chebyshev.interpolate, 1, 4, 1, args, 1
-numpy.polynomial.hermite.hermtrim, 1, 2, 1, tol, 1
-numpy.polynomial.hermite.hermsub, 1, 2, 1, , 
-numpy.polynomial.hermite.hermmul, 1, 2, 1, , 
-numpy.polynomial.hermite.hermdiv, 1, 2, 1, , 
-numpy.polynomial.hermite.hermroots, 1, 1, 1, , 
-numpy.polynomial.hermite.hermweight, 1, 1, 1, , 
-numpy.polynomial.hermite_e.hermetrim, 1, 2, 1, tol, 1
-numpy.polynomial.hermite_e.hermesub, 1, 2, 1, , 
-numpy.polynomial.hermite_e.hermemul, 1, 2, 1, , 
-numpy.polynomial.hermite_e.hermediv, 1, 2, 1, , 
-numpy.polynomial.hermite_e.hermegauss, 1, 1, 1, , 
-numpy.polynomial.hermite_e.hermeroots, 1, 1, 1, , 
-numpy.polynomial.hermite_e.hermeweight, 1, 1, 1, , 
-numpy.polynomial.laguerre.lagtrim, 1, 2, 1, tol, 1
-numpy.polynomial.laguerre.lagsub, 1, 2, 1, , 
-numpy.polynomial.laguerre.lagmul, 1, 2, 1, , 
-numpy.polynomial.laguerre.lagdiv, 1, 2, 1, , 
-numpy.polynomial.laguerre.laggauss, 1, 1, 1, , 
-numpy.polynomial.laguerre.lagroots, 1, 1, 1, , 
-numpy.polynomial.laguerre.lagweight, 1, 1, 1, , 
-numpy.polynomial.legendre.legtrim, 1, 2, 1, tol, 1
-numpy.polynomial.legendre.legsub, 1, 2, 1, , 
-numpy.polynomial.legendre.legmul, 1, 2, 1, , 
-numpy.polynomial.legendre.legdiv, 1, 2, 1, , 
-numpy.polynomial.legendre.legroots, 1, 1, 1, , 
-numpy.polynomial.legendre.legweight, 1, 1, 1, , 
-numpy.polynomial.polynomial.polytrim, 1, 2, 1, tol, 1
-numpy.polynomial.polynomial.polysub, 1, 2, 1, , 
-numpy.polynomial.polynomial.polymul, 1, 2, 1, , 
-numpy.polynomial.polyutils.trimseq, 1, 1, 1, , 
-numpy.polynomial.polyutils.as_series, 1, 1, 1, , 
-numpy.distutils.misc_util.get_mathlibs, 1, 0, 1, , 
-numpy.random.mtrand.dirichlet, 1, 2, 1, size, 1
-numpy.random.f, 1, 3, 1, size, 1
-numpy.random.geometric, 1, 2, 1, size, 1
-numpy.random.gumbel, 1, 3, 1, loc, 1
-numpy.random.laplace, 1, 3, 1, loc, 1
-numpy.random.power, 1, 2, 1, a, 1
-numpy.random.standard_gamma, 1, 2, 1, size, 1
-numpy.random.triangular, 1, 4, 1, size, 1
-numpy.random.wald, 1, 3, 1, mean, 1
-numpy.random.zipf, 1, 2, 1, a, 1
-numpy.random.mtrand.vonmises, 1, 3, 1, , 
-numpy.core.isfinite, 1, 1, 1, , 
-numpy.core.isinf, 1, 1, 1, , 
-numpy.lib.utils.deprecate, 1, 1, 1, message, 1
-numpy.core.fromnumeric.all, 1, 1, 1, , 
-numpy.core.result_type, 1, 2, 1, , 
-numpy.core.numeric.isclose, 1, 5, 1, equal_nan, 1
-numpy.testing.dec.parametrize, 1, 2, 1, , 
-numpy.matlib.empty, 1, 1, 1, , 
-numpy.matlib.identity, 1, 2, 1, dtype, 1
-numpy.matlib.rand, 1, 1, 1, , 
-numpy.matlib.randn, 1, 1, 1, , 
-numpy.matlib.repmat, 1, 3, 1, , 
-numpy.ma.flatnotmasked_edges, 1, 1, 1, , 
+numpy.AxisError, 1, 1, 1, , 
 numpy.polynomial.chebyshev.Chebyshev.fit, 1, 3, 1, , 
 numpy.char.upper, 1, 1, 1, , 
-numpy.intc, 2, 1, 1, , 
-numpy.f2py.crackfortran.crackfortran, 2, 1, 1, , 
-numpy.greater_equal.outer, 2, 2, 1, , 
-numpy.ldexp, 2, 2, 1, , 
-numpy.longlong, 2, 1, 1, , 
-numpy.core.umath.greater, 2, 2, 1, , 
-numpy.trim_zeros, 2, 2, 1, , 
-numpy.polyint, 2, 1, 1, , 
-numpy.dual.eig, 2, 1, 2, , 
-numpy.uint, 2, 1, 1, , 
-numpy.poly1d.__init__, 2, 2, 1, , 
-numpy.poly1d.__call__, 2, 2, 1, , 
-numpy.ma.add.reduce, 2, 1, 1, , 
-numpy.ma.vstack, 2, 1, 1, , 
-numpy.ma.expand_dims, 2, 2, 1, , 
-numpy.ma.mask_cols, 2, 1, 1, , 
-numpy.ma.testutils.assert_array_almost_equal_nulp, 2, 3, 1, nulp, 2
+numpy.random.negative_binomial, 1, 3, 1, , 
+numpy.distutils.system_info.get_info, 2, 2, 1, , 
+numpy.testing.assert_no_warnings, 2, 6, 2, dense_output, 2
+numpy.add_newdoc, 2, 3, 2, , 
+numpy.remainder, 2, 2, 2, , 
+numpy.polyadd, 2, 2, 2, , 
+numpy.polydiv, 2, 2, 2, , 
+numpy.polysub, 2, 2, 2, , 
+numpy.core.sqrt, 2, 1, 2, , 
+numpy.ma.corrcoef, 2, 2, 2, rowvar, 1
+numpy.ma.masked_less, 2, 2, 2, , 
+numpy.ma.masked_greater_equal, 2, 2, 2, , 
+numpy.nanpercentile, 2, 5, 1, axis, 2
+numpy.ma.make_mask, 2, 1, 2, , 
 numpy.isnat, 2, 1, 2, , 
 numpy.nanvar, 2, 2, 1, ddof, 2
+numpy.ma.average, 2, 3, 1, axis, 2
 numpy.subtract.outer, 2, 2, 2, , 
 numpy.ediff1d, 2, 3, 1, , 
-numpy.void, 2, 1, 1, , 
 numpy.str_, 2, 1, 2, , 
 numpy.hsplit, 2, 2, 2, , 
-numpy.random.standard_cauchy, 2, 1, 1, size, 2
 numpy.ndarray.flatten, 2, 1, 2, , 
-numpy.fmax.reduce, 2, 1, 1, axis, 1
 numpy.setxor1d, 2, 2, 2, , 
-numpy.lib._iotools._is_string_like, 2, 1, 1, , 
+numpy.chararray, 2, 2, 2, unicode, 2
 numpy.blackman, 2, 1, 2, , 
 numpy.round_func, 2, 1, 2, , 
 numpy.warnings.catch_warnings, 2, 0, 2, , 
@@ -434,1060 +158,563 @@ numpy.ma.cos, 2, 1, 2, ,
 numpy.busday_count, 2, 3, 2, weekmask, 2
 numpy.ndarray.__getitem__, 2, 2, 2, , 
 numpy.fmin, 2, 2, 2, , 
-numpy.irr, 2, 1, 1, , 
+numpy.irr, 2, 1, 2, , 
 numpy.version.short_version.split, 2, 2, 2, , 
-numpy.lib.recfunctions.rename_fields, 2, 2, 1, , 
+numpy.put, 2, 3, 2, , 
 numpy.kaiser, 2, 2, 2, , 
+numpy.geomspace, 2, 1, 1, None, 1
+numpy.ma.zeros, 2, 2, 1, dtype, 1
 numpy.uniform, 2, 2, 2, , 
+numpy.compat.asbytes, 2, 1, 2, , 
+numpy.lib.utils.safe_eval, 2, 1, 2, , 
 numpy.polynomial.legendre.Legendre.fit, 2, 3, 2, , 
 numpy.ma.log10, 2, 1, 2, , 
 numpy.array.Copy, 2, 0, 2, , 
 numpy.matrix.trace, 2, 1, 2, , 
-numpy.ndarray.sum, 2, 3, 1, null, 1
-numpy.ndarray.prod, 2, 3, 2, null, 2
-numpy.core.numeric.tensordot, 2, 2, 1, axes, 2
+numpy.ndarray.prod, 2, 3, 2, None, 2
+numpy.core.numeric.asanyarray, 2, 1, 2, , 
+numpy.polynomial.polynomial.polyroots, 2, 1, 2, , 
 numpy.byte_bounds, 2, 1, 2, , 
-numpy.format_parser, 2, 3, 1, , 
 numpy.char.isdigit, 2, 1, 2, , 
 numpy.hamming, 2, 1, 2, , 
+numpy.core.asarray, 2, 1, 2, , 
 numpy.ma.MaskedArray.__reduce__, 2, 1, 2, , 
-numpy.random.logistic, 2, 3, 1, loc, 1
-numpy.random.standard_t, 2, 1, 1, df, 1
-numpy.ma.masked_inside, 2, 4, 2, copy, 2
-numpy.distutils.misc_util.mingw32, 2, 0, 2, , 
-numpy.core._rational_tests.rational, 2, 1, 2, , 
-numpy.core.numeric.set_string_function, 2, 2, 2, repr, 2
-numpy.sctypes.values, 2, 0, 2, , 
-numpy.core._multiarray_tests.get_buffer_info, 2, 2, 2, , 
-numpy.core._multiarray_tests.test_inplace_increment, 2, 3, 2, , 
-numpy.core._multiarray_tests.npy_create_writebackifcopy, 2, 1, 2, , 
-numpy.geterrobj, 2, 0, 2, , 
-numpy.base_repr, 2, 2, 2, , 
-numpy.testing._assert_valid_refcount, 2, 1, 2, , 
-numpy.core.multiarray.scalar, 2, 2, 2, , 
-numpy.half, 2, 1, 2, , 
-numpy.format_float_scientific, 2, 2, 2, None, 2
-numpy.core._umath_tests.matrix_multiply, 2, 2, 2, , 
-numpy.core._rational_tests.test_add, 2, 3, 1, , 
-numpy.core.umath.sign, 2, 1, 1, , 
-numpy.distutils.misc_util.has_f_sources, 2, 1, 2, , 
-numpy.distutils.misc_util.has_cxx_sources, 2, 1, 2, , 
-numpy.distutils.misc_util.filter_sources, 2, 1, 2, , 
-numpy.f2py.run_main, 2, 1, 2, , 
-numpy.distutils.fcompiler.show_fcompilers, 2, 1, 1, , 
-numpy.distutils.ccompiler.gen_lib_options, 2, 4, 1, None, 1
-numpy.distutils.fcompiler.FCompiler.get_library_dirs, 2, 1, 2, , 
-numpy.distutils.fcompiler.FCompiler.get_libraries, 2, 1, 2, , 
-numpy.distutils.fcompiler.FCompiler.get_version, 2, 3, 2, None, 1
-numpy.distutils.fcompiler.dummy_fortran_file, 2, 0, 2, , 
-numpy.distutils.msvc9compiler.MSVCCompiler.__init__, 2, 4, 2, , 
-numpy.distutils.misc_util.msvc_runtime_major, 2, 0, 2, , 
-numpy.distutils.core.Extension, 2, 1, 2, None, 2
-numpy.distutils.misc_util.gpaths, 2, 2, 2, , 
-numpy.core.roll, 2, 3, 2, , 
-numpy.core.umath.frompyfunc, 2, 3, 2, , 
-numpy.lib.twodim_base.diag, 2, 1, 1, , 
-numpy.dual.i0, 2, 1, 2, , 
-numpy.core.fromnumeric.mean, 2, 3, 2, axis, 2
-numpy.core.numeric.floor, 2, 1, 1, where, 1
-numpy.core.umath.add, 2, 3, 1, out, 1
-numpy.core.numerictypes.issubdtype, 2, 2, 2, , 
-numpy.core.numeric.alltrue, 2, 1, 2, , 
-numpy.lib.function_base._quantile_is_valid, 2, 1, 2, , 
-numpy.core.numeric.convolve, 2, 3, 1, mode, 1
-numpy.core.numeric.all, 2, 1, 2, , 
-numpy.core.numeric.sqrt, 2, 1, 2, , 
-numpy.core.numeric.issubdtype, 2, 2, 2, , 
-numpy.core.fromnumeric.reshape, 2, 2, 2, , 
-numpy.lib.format.read_magic, 2, 1, 2, , 
-numpy.lib.angle, 2, 1, 1, deg, 1
-numpy.lib.extract, 2, 2, 2, , 
-numpy.lib.asarray_chkfinite, 2, 1, 1, order, 1
-numpy.quantile, 2, 3, 2, interpolation, 2
-numpy.lib.index_tricks.diag_indices, 2, 1, 1, , 
-numpy.nanquantile, 2, 3, 2, interpolation, 2
-numpy.lib.recfunctions.recursive_fill_fields, 2, 2, 2, , 
-numpy.info, 2, 2, 1, output, 1
-numpy.lib.shape_base.put_along_axis, 2, 4, 2, axis, 2
-numpy.lib.shape_base.vsplit, 2, 2, 2, , 
-numpy.lib.shape_base.dsplit, 2, 2, 2, , 
-numpy.mask_indices, 2, 2, 1, , 
-numpy.lib.type_check.isreal, 2, 1, 2, , 
-numpy.lib.ufunclike.isposinf, 2, 1, 1, , 
-numpy.lib.ufunclike.isneginf, 2, 1, 1, , 
-numpy.lib.deprecate, 2, 1, 1, message, 1
-numpy.core.getlimits.finfo, 2, 1, 2, , 
-numpy.core.numeric.logical_and, 2, 3, 2, , 
-numpy.core.divide, 2, 3, 1, where, 1
-numpy.core.geterrobj, 2, 0, 2, , 
-numpy.linalg._umath_linalg.inv, 2, 3, 1, signature, 2
-numpy.core.asanyarray, 2, 1, 2, , 
-numpy.core.all, 2, 1, 2, , 
-numpy.core.isnan, 2, 1, 2, , 
-numpy.core.add.reduce, 2, 3, 2, axis, 2
-numpy.core.umath.isfinite, 2, 1, 2, , 
-numpy.core.umath.logical_and.reduce, 2, 2, 2, None, 1
-numpy.compat.unicode, 2, 1, 2, , 
-numpy.core.umath.left_shift, 2, 2, 2, , 
-numpy.core.umath.right_shift, 2, 2, 2, , 
-numpy.ma.mean, 2, 3, 2, axis, 2
-numpy.ma.testutils.fail_if_equal, 2, 2, 2, , 
-numpy.ma.core.repeat, 2, 3, 2, axis, 2
-numpy.ma.core.masked_print_option.set_display, 2, 1, 2, , 
-numpy.ma.core.mod, 2, 2, 2, , 
-numpy.ma.core.log, 2, 1, 2, , 
-numpy.ma.core.filled, 2, 2, 2, , 
-numpy.ma.core.minimum_fill_value, 2, 1, 2, , 
-numpy.ma.core.maximum_fill_value, 2, 1, 2, , 
-numpy.ma.core.identity, 2, 3, 1, dtype, 1
-numpy.ma.testutils.assert_mask_equal, 2, 3, 1, err_msg, 1
-numpy.ma.core.add, 2, 2, 2, , 
-numpy.ma.core.put, 2, 3, 2, , 
-numpy.ma.core.argsort, 2, 2, 2, kind, 1
-numpy.ma.core.diag, 2, 1, 2, , 
-numpy.ma.core.power, 2, 2, 2, , 
-numpy.ma.core.flatten_mask, 2, 1, 2, , 
-numpy.ma.compress, 2, 3, 2, axis, 2
-numpy.__getattribute__, 2, 1, 2, , 
-numpy.ma.__getattribute__, 2, 1, 2, , 
-numpy.ma.extras.apply_along_axis, 2, 3, 1, offset, 1
-numpy.ma.extras.apply_over_axes, 2, 3, 2, , 
-numpy.ma.extras.median, 2, 2, 1, out, 2
-numpy.ma.extras.corrcoef, 2, 2, 1, allow_masked, 1
-numpy.ma.extras.in1d, 2, 2, 2, , 
-numpy.ma.extras.union1d, 2, 2, 2, , 
-numpy.ma.extras.atleast_1d, 2, 1, 1, , 
-numpy.ma.extras.atleast_3d, 2, 1, 1, , 
-numpy.ma.extras.vstack, 2, 1, 2, , 
-numpy.ma.repeat, 2, 3, 2, axis, 2
-numpy.ma.core.MaskedArray.__new__, 2, 3, 2, mask, 2
-numpy.linalg.tests.test_linalg.apply_tag, 2, 2, 2, , 
-numpy.polynomial.chebyshev.chebgrid2d, 2, 3, 2, , 
-numpy.polynomial.chebyshev.chebgrid3d, 2, 4, 2, , 
-numpy.polynomial.chebyshev.cheb2poly, 2, 1, 2, , 
-numpy.polynomial.chebyshev.chebvander2d, 2, 3, 2, , 
-numpy.polynomial.chebyshev.chebvander3d, 2, 4, 2, , 
-numpy.polynomial.chebyshev.chebfromroots, 2, 1, 2, , 
-numpy.polynomial.hermite.hermgrid2d, 2, 3, 2, , 
-numpy.polynomial.hermite.hermgrid3d, 2, 4, 2, , 
-numpy.polynomial.hermite.herm2poly, 2, 1, 2, , 
-numpy.polynomial.hermite.hermvander2d, 2, 3, 2, , 
-numpy.polynomial.hermite.hermvander3d, 2, 4, 2, , 
-numpy.polynomial.hermite.hermfromroots, 2, 1, 2, , 
-numpy.polynomial.hermite_e.hermegrid2d, 2, 3, 2, , 
-numpy.polynomial.hermite_e.hermegrid3d, 2, 4, 2, , 
-numpy.polynomial.hermite_e.herme2poly, 2, 1, 2, , 
-numpy.polynomial.hermite_e.hermevander2d, 2, 3, 2, , 
-numpy.polynomial.hermite_e.hermevander3d, 2, 4, 2, , 
-numpy.polynomial.hermite_e.hermefromroots, 2, 1, 2, , 
-numpy.polynomial.laguerre.laggrid2d, 2, 3, 2, , 
-numpy.polynomial.laguerre.laggrid3d, 2, 4, 2, , 
-numpy.polynomial.laguerre.lag2poly, 2, 1, 2, , 
-numpy.polynomial.laguerre.lagvander2d, 2, 3, 2, , 
-numpy.polynomial.laguerre.lagvander3d, 2, 4, 2, , 
-numpy.polynomial.laguerre.lagfromroots, 2, 1, 2, , 
-numpy.polynomial.legendre.leggrid2d, 2, 3, 2, , 
-numpy.polynomial.legendre.leggrid3d, 2, 4, 2, , 
-numpy.polynomial.legendre.leg2poly, 2, 1, 2, , 
-numpy.polynomial.legendre.legvander2d, 2, 3, 2, , 
-numpy.polynomial.legendre.legvander3d, 2, 4, 2, , 
-numpy.polynomial.legendre.legfromroots, 2, 1, 2, , 
-numpy.polynomial.polynomial.polygrid2d, 2, 3, 2, , 
-numpy.polynomial.polynomial.polygrid3d, 2, 4, 2, , 
-numpy.polynomial.polynomial.polyvander, 2, 2, 2, , 
-numpy.polynomial.polynomial.polyvander2d, 2, 3, 2, , 
-numpy.polynomial.polynomial.polyvander3d, 2, 4, 2, , 
-numpy.polynomial.polynomial.polyfromroots, 2, 1, 2, , 
-numpy.polynomial.polyutils.getdomain, 2, 1, 2, , 
-numpy.polynomial.polyutils.mapparms, 2, 2, 2, , 
-numpy.random.logseries, 2, 2, 2, size, 2
-numpy.random.negative_binomial, 2, 3, 2, size, 1
-numpy.random.noncentral_f, 2, 4, 2, size, 2
-numpy.random.vonmises, 2, 3, 2, kappa, 2
-numpy.core.signbit, 2, 1, 2, , 
-numpy.core.isnat, 2, 1, 2, , 
-numpy.matlib.eye, 2, 3, 1, dtype, 2
-numpy.polynomial.Polynomial, 2, 1, 2, , 
 numpy.ma.std, 2, 1, 2, , 
-numpy.ma.nonzero, 3, 1, 2, , 
-numpy.core.umath.less_equal, 3, 2, 2, , 
+numpy.fromregex, 2, 3, 2, , 
+numpy.common_type, 3, 1, 2, , 
+numpy.triu_indices_from, 3, 1, 2, k, 1
+numpy.ma.nonzero, 3, 1, 3, , 
+numpy.core.umath.sin, 3, 1, 3, , 
+numpy.promote_types, 3, 2, 3, , 
+numpy.ma.getmask, 3, 1, 3, , 
+numpy.apply_over_axes, 3, 3, 3, , 
+numpy.ma.ravel, 3, 1, 3, , 
 numpy.math.factorial, 3, 1, 3, , 
-numpy.ma.log, 3, 1, 2, , 
-numpy.ma.allclose, 3, 2, 2, , 
+numpy.ma.var, 3, 3, 2, axis, 2
+numpy.ma.minimum.reduce, 3, 2, 2, , 
+numpy.ma.maximum.reduce, 3, 2, 2, , 
 numpy.lib.recfunctions.rec_append_fields, 3, 3, 3, , 
-numpy.random.rayleigh, 3, 2, 2, size, 1
+numpy.random.lognormal, 3, 3, 2, size, 1
+numpy.modf, 3, 1, 3, , 
 numpy.ma.copy, 3, 1, 3, , 
-numpy.bool, 3, 1, 3, , 
-numpy.busday_offset, 3, 4, 2, roll, 3
-numpy.ma.minimum_fill_value, 3, 1, 2, , 
+numpy.bool, 3, 1, 2, , 
+numpy.take_along_axis, 3, 3, 3, , 
 numpy.maximum_sctype, 3, 1, 3, , 
 numpy.lib.NumpyVersion, 3, 1, 3, , 
 numpy.left_shift, 3, 2, 3, , 
-numpy.format_float_positional, 3, 2, 2, None, 2
 numpy.testing.decorators.skipif, 3, 1, 3, , 
 numpy.warnings.filterwarnings, 3, 1, 3, , 
+numpy.less_equal, 3, 2, 3, , 
 numpy.greater_equal, 3, 2, 2, where, 1
-numpy.put, 3, 3, 2, , 
+numpy.ctypeslib.as_array, 3, 2, 2, shape, 2
 numpy.ma.count_masked, 3, 1, 3, , 
 numpy.ma.absolute, 3, 1, 3, , 
 numpy.array.CreateCopy, 3, 1, 3, unit, 2
+numpy.random.bytes, 3, 1, 3, , 
+numpy.core.multiarray.c_einsum, 3, 3, 2, None, 3
 numpy.dsplit, 3, 2, 3, , 
 numpy.ma.testutils.assert_array_approx_equal, 3, 3, 3, , 
-numpy.distutils.ccompiler.replace_method, 3, 3, 2, , 
+numpy.polynomial.polynomial.polyfit, 3, 3, 3, , 
 numpy.complex, 3, 1, 2, , 
 numpy.copy.copy, 3, 1, 3, , 
 numpy.msort, 3, 1, 3, , 
-numpy.AxisError, 3, 2, 2, axis, 1
-numpy.core.umath.true_divide, 3, 5, 3, casting, 3
-numpy.fastCopyAndTranspose, 3, 1, 3, , 
-numpy.typeDict.values, 3, 0, 3, , 
-numpy.core._multiarray_tests.test_as_c_array, 3, 2, 1, , 
-numpy.obj2sctype, 3, 1, 3, , 
-numpy.core._umath_tests.cumsum, 3, 3, 2, axis, 2
-numpy.divide.reduce, 3, 2, 3, axis, 3
-numpy.core._operand_flag_tests.inplace_add, 3, 2, 3, , 
-numpy.core.umath.minimum, 3, 2, 3, , 
-numpy.distutils.misc_util.cyg2win32, 3, 1, 3, , 
-numpy.distutils.misc_util.quote_args, 3, 1, 3, , 
-numpy.distutils.misc_util.appendpath, 3, 2, 3, , 
-numpy.distutils.misc_util.make_temp_file, 3, 1, 2, suffix, 2
-numpy.distutils.environment.EnvironmentConfig, 3, 5, 1, distutils_section, 3
-numpy.compat.open_latin1, 3, 2, 3, , 
-numpy.distutils.misc_util.msvc_runtime_library, 3, 0, 3, , 
-numpy.distutils.npy_pkg_config.read_config, 3, 1, 2, , 
-numpy.distutils.misc_util.dict_append, 3, 2, 3, None, 1
-numpy.core.swapaxes, 3, 3, 3, , 
-numpy.core.take, 3, 3, 2, , 
-numpy.core.numeric.dtype, 3, 1, 3, , 
-numpy.core.numeric.isscalar, 3, 1, 3, , 
-numpy.lib.utils._median_nancheck, 3, 4, 3, , 
-numpy.core.multiarray.add_docstring, 3, 2, 3, , 
-numpy.lib.function_base._ureduce, 3, 5, 2, axis, 3
-numpy.lib.type_check.iscomplex, 3, 1, 3, , 
-numpy.core.numeric.any, 3, 1, 3, , 
-numpy.core.fromnumeric.transpose, 3, 2, 3, , 
-numpy.lib._datasource.DataSource, 3, 1, 3, , 
-numpy.lib.arraysetops.union1d, 3, 2, 3, , 
-numpy.lib.arraysetops.setdiff1d, 3, 2, 3, , 
-numpy.lib.format.write_array_header_1_0, 3, 2, 3, , 
-numpy.lib.delete, 3, 3, 2, axis, 2
-numpy.lib.trim_zeros, 3, 1, 3, , 
-numpy.lib.function_base._parse_gufunc_signature, 3, 1, 3, , 
-numpy.recfromtxt, 3, 2, 2, None, 3
-numpy.lib.recfunctions.get_fieldstructure, 3, 1, 3, , 
-numpy.lib.shape_base.take_along_axis, 3, 3, 3, axis, 3
-numpy.lib.shape_base.hsplit, 3, 2, 3, , 
-numpy.lib.type_check.real_if_close, 3, 1, 2, tol, 1
-numpy.core.abs, 3, 1, 3, , 
-numpy.ma.core.MaskedArray, 3, 1, 2, mask, 1
-numpy.ma.core.fromflex, 3, 1, 3, , 
-numpy.ma.ones, 3, 1, 2, dtype, 1
-numpy.ma.extras.masked_all_like, 3, 1, 3, , 
-numpy.ma.extras.flatnotmasked_contiguous, 3, 1, 3, , 
-numpy.ma.extras.notmasked_contiguous, 3, 2, 3, , 
-numpy.ma.extras.atleast_2d, 3, 1, 2, , 
-numpy.matrixlib.defmatrix.asmatrix, 3, 1, 3, , 
-numpy.polynomial.chebyshev.chebadd, 3, 2, 3, , 
-numpy.polynomial.chebyshev.chebval2d, 3, 3, 3, , 
-numpy.polynomial.chebyshev.chebval3d, 3, 4, 3, , 
-numpy.polynomial.chebyshev.poly2cheb, 3, 1, 3, , 
-numpy.polynomial.chebyshev.chebvander, 3, 2, 3, , 
-numpy.polynomial.hermite.hermadd, 3, 2, 3, , 
-numpy.polynomial.hermite.hermval2d, 3, 3, 3, , 
-numpy.polynomial.hermite.hermval3d, 3, 4, 3, , 
-numpy.polynomial.hermite.poly2herm, 3, 1, 3, , 
-numpy.polynomial.hermite.hermvander, 3, 2, 3, , 
-numpy.polynomial.hermite_e.hermeadd, 3, 2, 3, , 
-numpy.polynomial.hermite_e.hermeval2d, 3, 3, 3, , 
-numpy.polynomial.hermite_e.hermeval3d, 3, 4, 3, , 
-numpy.polynomial.hermite_e.poly2herme, 3, 1, 3, , 
-numpy.polynomial.hermite_e.hermevander, 3, 2, 3, , 
-numpy.polynomial.laguerre.lagadd, 3, 2, 3, , 
-numpy.polynomial.laguerre.lagval2d, 3, 3, 3, , 
-numpy.polynomial.laguerre.lagval3d, 3, 4, 3, , 
-numpy.polynomial.laguerre.poly2lag, 3, 1, 3, , 
-numpy.polynomial.laguerre.lagvander, 3, 2, 3, , 
-numpy.polynomial.legendre.legadd, 3, 2, 3, , 
-numpy.polynomial.legendre.legval2d, 3, 3, 3, , 
-numpy.polynomial.legendre.legval3d, 3, 4, 3, , 
-numpy.polynomial.legendre.poly2leg, 3, 1, 3, , 
-numpy.polynomial.legendre.legvander, 3, 2, 3, , 
-numpy.polynomial.polynomial.polyadd, 3, 2, 3, , 
-numpy.polynomial.polynomial.polydiv, 3, 2, 3, , 
-numpy.polynomial.polynomial.polyval2d, 3, 3, 3, , 
-numpy.polynomial.polynomial.polyval3d, 3, 4, 3, , 
-numpy.random.noncentral_chisquare, 3, 3, 3, df, 3
-numpy.core.bool_, 3, 1, 3, , 
-numpy.testing.dec.setastest, 3, 1, 2, , 
-numpy.add_newdoc, 4, 3, 4, , 
+numpy.mintypecode, 4, 1, 4, , 
+numpy.dual.register_func, 4, 2, 4, , 
+numpy.issubclass_, 4, 2, 4, , 
+numpy.piecewise, 4, 3, 3, None, 1
+numpy.diag_indices, 4, 1, 4, , 
+numpy.tri, 4, 3, 2, k, 1
+numpy.dual.inv, 4, 1, 4, , 
+numpy.isin, 4, 2, 4, , 
 numpy.ndarray.tolist, 4, 1, 4, , 
-numpy.core.umath.exp, 4, 1, 3, , 
-numpy.polyadd, 4, 2, 2, , 
-numpy.polysub, 4, 2, 2, , 
-numpy.lib._datasource.Repository, 4, 1, 2, , 
-numpy.apply_over_axes, 4, 3, 2, , 
-numpy.ma.corrcoef, 4, 3, 2, ddof, 2
-numpy.ma.masked_less, 4, 2, 2, , 
-numpy.ma.masked_greater_equal, 4, 2, 2, , 
+numpy.core.umath.less, 4, 2, 4, , 
+numpy.correlate, 4, 3, 3, mode, 3
+numpy.add.reduceat, 4, 3, 2, dtype, 1
+numpy.double, 4, 1, 4, , 
+numpy.ma.filled, 4, 2, 3, fill_value, 1
+numpy.ma.median, 4, 2, 4, axis, 4
 numpy.bitwise_or.reduce, 4, 1, 2, axis, 2
-numpy.geterr, 4, 0, 3, , 
 numpy.ma.set_fill_value, 4, 2, 4, fill_value, 1
-numpy.less_equal, 4, 2, 3, , 
+numpy.choose, 4, 2, 2, out, 1
+numpy.random.standard_exponential, 4, 0, 2, size, 2
+numpy.maximum.reduce, 4, 1, 4, , 
+numpy.multiply.outer, 4, 2, 4, , 
+numpy.array_equiv, 4, 2, 4, , 
 numpy.copysign, 4, 2, 4, , 
-numpy.single, 4, 1, 3, , 
-numpy.core.records.fromstring, 4, 3, 4, dtype, 4
-numpy.lib.utils.safe_eval, 4, 1, 2, , 
-numpy.random.bytes, 4, 1, 3, , 
+numpy.core.records.fromstring, 4, 3, 4, shape, 4
 numpy.ma.dstack, 4, 1, 4, , 
 numpy.testing.utils.assert_almost_equal, 4, 2, 3, decimal, 1
-numpy.distutils.core.get_distribution, 4, 0, 2, always, 2
-numpy.polynomial.polynomial.polyroots, 4, 1, 2, , 
 numpy.emath.log, 4, 1, 4, , 
-numpy.core.umath.multiply, 4, 3, 2, out, 2
-numpy.distutils.misc_util.get_build_architecture, 4, 0, 4, , 
-numpy.printoptions, 4, 1, 2, precision, 3
-numpy.core.iinfo, 4, 1, 4, , 
-numpy.core._multiarray_tests.solve_diophantine, 4, 4, 3, simplify, 2
-numpy.core._multiarray_tests.test_nditer_too_large, 4, 3, 4, , 
-numpy.set_string_function, 4, 2, 4, repr, 4
-numpy.setbufsize, 4, 1, 4, , 
-numpy.core.hstack, 4, 1, 4, , 
-numpy.core.vstack, 4, 1, 4, , 
-numpy.linalg._umath_linalg.det, 4, 2, 3, keepdims, 2
-numpy.linalg._umath_linalg.slogdet, 4, 2, 3, keepdims, 2
-numpy.core.umath.heaviside, 4, 2, 4, , 
-numpy.core.umath.absolute, 4, 1, 4, , 
-numpy.distutils.exec_command.find_executable, 4, 1, 4, , 
-numpy.testing.memusage, 4, 0, 4, , 
-numpy.fft.helper._FFTCache, 4, 2, 4, max_size_in_mb, 4
-numpy.core.numeric.take, 4, 3, 2, axis, 3
-numpy.core.numeric.dot, 4, 2, 4, , 
-numpy.core.numeric.where, 4, 3, 4, , 
-numpy.ma.make_mask_descr, 4, 1, 4, , 
-numpy.core.numeric.nonzero, 4, 1, 4, , 
-numpy.core.numeric.log, 4, 1, 4, , 
-numpy.lib._iotools.NameValidator, 4, 0, 3, excludelist, 1
-numpy.lib.arraysetops.setxor1d, 4, 2, 4, , 
-numpy.lib.diff, 4, 2, 3, n, 3
-numpy.lib.sinc, 4, 1, 4, , 
-numpy.lib.corrcoef, 4, 1, 3, , 
-numpy.lib.meshgrid, 4, 3, 2, indexing, 1
-numpy.lib.shape_base.dstack, 4, 1, 4, , 
-numpy.lib.shape_base.tile, 4, 2, 4, , 
-numpy.lib.ufunclike.fix, 4, 1, 3, , 
-numpy.round_, 4, 3, 2, , 
-numpy.ma.core.concatenate, 4, 1, 3, , 
-numpy.ma.core.asarray, 4, 1, 3, order, 1
-numpy.ma.core.masked_values, 4, 2, 4, , 
-numpy.ma.core.flatten_structured_array, 4, 1, 4, , 
-numpy.ma.core.count, 4, 1, 2, , 
-numpy.ma.core.take, 4, 2, 3, mode, 1
-numpy.ma.append, 4, 2, 2, axis, 2
-numpy.ma.extras.setxor1d, 4, 2, 4, , 
-numpy.ma.mrecords.mrecarray, 4, 2, 3, dtype, 3
-numpy.lib.real, 4, 1, 4, , 
-numpy.lib.imag, 4, 1, 4, , 
-numpy.testing.dec.knownfailureif, 4, 2, 4, , 
-numpy.testing.KnownFailureException, 4, 0, 4, , 
-numpy.testing.dec.deprecated, 4, 0, 3, , 
-numpy.testing.clear_and_catch_warnings, 4, 1, 2, modules, 2
-numpy.ctypeslib.load_library, 4, 2, 4, , 
-numpy.distutils.system_info.NotFoundError, 4, 1, 4, , 
 numpy.fftshift, 4, 1, 4, , 
 numpy.is_scalar, 4, 1, 4, , 
-numpy.isin, 5, 2, 4, , 
-numpy.testing.assert_string_equal, 5, 2, 4, , 
-numpy.random.lognormal, 5, 3, 2, size, 3
-numpy.lib.format.read_array, 5, 1, 4, , 
-numpy.take_along_axis, 5, 3, 3, axis, 2
-numpy.unicode_, 5, 1, 4, , 
+numpy.add.outer, 5, 2, 5, , 
+numpy.frexp, 5, 1, 5, , 
+numpy.tril_indices_from, 5, 2, 5, k, 3
+numpy.block, 5, 1, 5, , 
+numpy.core.umath.cos, 5, 1, 5, , 
+numpy.partition, 5, 3, 5, axis, 2
+numpy.random.chisquare, 5, 1, 4, , 
+numpy.fix, 5, 1, 5, , 
 numpy.testing.Tester, 5, 0, 5, , 
-numpy.random.standard_exponential, 5, 0, 2, size, 3
+numpy.ndarray.__new__, 5, 4, 3, dtype, 5
 numpy.minimum.reduce, 5, 1, 5, , 
 numpy.ndarray.astype, 5, 2, 4, copy, 1
-numpy.chararray, 5, 2, 2, unicode, 2
+numpy.random.weibull, 5, 2, 5, size, 5
+numpy.float_, 5, 1, 5, , 
 numpy.right_shift, 5, 2, 5, , 
 numpy.array.GetValues, 5, 1, 4, , 
 numpy.array.append, 5, 1, 5, , 
-numpy.float128, 5, 1, 4, , 
-numpy.ma.power, 5, 2, 5, , 
-numpy.ma.min, 5, 1, 5, , 
-numpy.ma.max, 5, 1, 5, , 
-numpy.compat.npy_load_module, 5, 3, 4, , 
-numpy.core._multiarray_tests.get_fpu_mode, 5, 0, 5, , 
-numpy.core.multiarray.typeinfo.items, 5, 0, 5, , 
-numpy.compat.isfileobj, 5, 1, 5, , 
-numpy.core.multiarray.dot, 5, 3, 3, out, 2
-numpy.clongdouble, 5, 1, 4, , 
-numpy.object_, 5, 1, 4, , 
-numpy.testing._gen_alignment_data, 5, 3, 5, max_size, 5
-numpy.positive, 5, 1, 5, , 
-numpy.multiply.reduceat, 5, 5, 5, out, 3
-numpy.distutils.ccompiler.simple_version_match, 5, 1, 5, start, 5
-numpy.core.numeric.copyto, 5, 3, 5, where, 5
-numpy.core.numeric.ndim, 5, 1, 5, , 
-numpy.lib._datasource.open, 5, 3, 3, encoding, 3
-numpy.lib._iotools.flatten_dtype, 5, 1, 4, , 
-numpy.lib.format.open_memmap, 5, 5, 3, mode, 5
-numpy.lib.index_tricks.fill_diagonal, 5, 2, 4, , 
-numpy.lib.stride_tricks.broadcast_to, 5, 2, 4, subok, 1
-numpy.compat.formatargspec, 5, 1, 5, , 
-numpy.core.errstate, 5, 1, 4, invalid, 3
-numpy.core.umath.logical_or, 5, 2, 4, , 
-numpy.core.umath.equal, 5, 2, 5, , 
-numpy.ma.testutils.assert_not_equal, 5, 2, 5, , 
-numpy.ma.core.masked_where, 5, 2, 5, , 
-numpy.ma.core.ones, 5, 2, 2, dtype, 3
-numpy.ma.core.empty_like, 5, 1, 5, , 
-numpy.ma.core.putmask, 5, 3, 5, , 
-numpy.ma.core.mask_or, 5, 2, 5, , 
-numpy.ma.convolve, 5, 3, 3, propagate_mask, 3
-numpy.ma.extras.polyfit, 5, 4, 4, full, 5
-numpy.ma.extras.unique, 5, 3, 5, return_index, 5
-numpy.polynomial.polyutils.mapdomain, 5, 3, 5, , 
-numpy.polynomial.chebyshev.chebder, 5, 2, 4, m, 3
-numpy.polynomial.hermite.hermder, 5, 2, 4, m, 3
-numpy.polynomial.hermite_e.hermeval, 5, 2, 5, , 
-numpy.polynomial.hermite_e.hermeder, 5, 2, 4, m, 3
-numpy.polynomial.laguerre.lagval, 5, 2, 5, , 
-numpy.polynomial.laguerre.lagder, 5, 2, 4, m, 3
-numpy.polynomial.legendre.legval, 5, 2, 5, , 
-numpy.polynomial.legendre.legder, 5, 2, 4, m, 3
-numpy.random.hypergeometric, 5, 4, 5, size, 5
 numpy.testing.run_module_suite, 6, 0, 6, , 
-numpy.issubclass_, 6, 2, 4, , 
-numpy.triu_indices_from, 6, 2, 2, k, 2
-numpy.tri, 6, 3, 2, k, 1
-numpy.promote_types, 6, 2, 3, , 
-numpy.ma.var, 6, 3, 2, ddof, 4
-numpy.ma.minimum.reduce, 6, 2, 2, , 
-numpy.ma.maximum.reduce, 6, 2, 2, , 
+numpy.uint16, 6, 1, 6, , 
+numpy.complex128, 6, 1, 6, , 
+numpy.isfortran, 6, 1, 6, , 
+numpy.core.umath.sqrt, 6, 1, 6, , 
+numpy.core.umath.add.reduce, 6, 1, 6, , 
+numpy.signbit, 6, 1, 6, , 
+numpy.ma.asarray, 6, 1, 5, dtype, 1
+numpy.ma.empty, 6, 2, 6, dtype, 4
+numpy.core.records.fromarrays, 6, 2, 6, names, 3
+numpy.ma.getdata, 6, 1, 6, , 
 numpy.divmod, 6, 2, 6, , 
-numpy.ma.mrecords.fromarrays, 6, 3, 4, dtype, 5
-numpy.maximum.reduce, 6, 1, 4, axis, 1
-numpy.multiply.outer, 6, 2, 4, , 
-numpy.random.weibull, 6, 2, 5, size, 6
-numpy.float_, 6, 1, 5, , 
-numpy.not_equal, 6, 2, 5, , 
-numpy.lib.recfunctions.drop_fields, 6, 2, 5, null, 1
-numpy.core.multiarray.c_einsum, 6, 3, 2, null, 3
-numpy.polynomial.polynomial.polyder, 6, 2, 4, m, 3
+numpy.testing.dec.skipif, 6, 2, 4, , 
+numpy.not_equal, 6, 2, 6, , 
 numpy.char.mod, 6, 2, 6, , 
-numpy.testing.tempdir, 6, 0, 5, prefix, 1
-numpy.core.concatenate, 6, 2, 3, out, 4
-numpy.core._umath_tests.inner1d, 6, 3, 6, out, 3
-numpy.distutils.misc_util.get_shared_lib_extension, 6, 0, 3, is_python_ext, 3
-numpy.distutils.npy_pkg_config.parse_flags, 6, 1, 6, , 
-numpy.core.arange, 6, 3, 3, dtype, 6
-numpy.pmt, 6, 3, 6, , 
-numpy.lib.place, 6, 3, 6, , 
-numpy.lib.histograms.histogram_bin_edges, 6, 2, 4, range, 2
-numpy.testing.assert_no_gc_cycles, 6, 0, 3, , 
-numpy.ma.core.masked_equal, 6, 2, 6, , 
-numpy.ma.extras.masked_all, 6, 2, 6, dtype, 6
-numpy.polynomial.polynomial.polyvalfromroots, 6, 2, 4, tensor, 2
-numpy.common_type, 7, 1, 2, , 
-numpy.piecewise, 7, 3, 3, null, 1
-numpy.diag_indices, 7, 1, 6, , 
-numpy.tril_indices_from, 7, 2, 7, k, 5
-numpy.dual.inv, 7, 1, 4, , 
-numpy.core.umath.sin, 7, 1, 4, , 
-numpy.fix, 7, 1, 5, out, 1
-numpy.ma.getdata, 7, 1, 6, , 
-numpy.modf, 7, 1, 3, out, 2
-numpy.min_scalar_type, 7, 1, 6, , 
+numpy.multiply.reduce, 7, 1, 7, , 
+numpy.logical_xor, 7, 2, 7, , 
+numpy.ma.masked_less_equal, 7, 2, 5, copy, 2
+numpy.floor_divide, 7, 2, 6, out, 1
+numpy.frompyfunc, 7, 3, 7, , 
+numpy.testing.build_err_msg, 7, 3, 6, names, 7
+numpy.logical_and.reduce, 7, 1, 7, , 
 numpy.nanargmax, 7, 2, 4, axis, 3
-numpy.ctypeslib.as_array, 7, 2, 2, shape, 4
-numpy.lib.recfunctions.append_fields, 7, 3, 4, data, 5
-numpy.ma.compressed, 7, 1, 6, , 
-numpy.compat.long, 7, 1, 7, , 
-numpy.busdaycalendar, 7, 1, 4, weekmask, 6
-numpy.seterrobj, 7, 1, 7, , 
-numpy.core.block, 7, 1, 7, , 
-numpy.core._umath_tests.test_signature, 7, 3, 7, , 
-numpy.distutils.customized_ccompiler, 7, 0, 7, , 
-numpy.core.empty, 7, 2, 7, dtype, 4
-numpy.core.numeric.empty, 7, 3, 4, dtype, 3
-numpy.core.isscalar, 7, 1, 7, , 
-numpy.lib.trapz, 7, 3, 6, axis, 6
-numpy.lib.recfunctions.find_duplicates, 7, 3, 7, return_index, 7
-numpy.core.dot, 7, 2, 7, , 
-numpy.ndarray.__getattribute__, 7, 2, 7, , 
-numpy.ma.core.zeros, 7, 1, 3, dtype, 3
-numpy.distutils.system_info.dict_append, 8, 2, 8, null, 3
-numpy.mintypecode, 8, 1, 4, , 
-numpy.dual.register_func, 8, 2, 5, , 
-numpy.uint16, 8, 1, 5, , 
-numpy.polydiv, 8, 2, 6, , 
+numpy.distutils.system_info.dict_append, 8, 2, 8, None, 3
+numpy.complex64, 8, 1, 6, , 
+numpy.intp, 8, 1, 8, , 
+numpy.fft.rfftfreq, 8, 2, 7, d, 3
+numpy.true_divide, 8, 2, 8, , 
+numpy.lib.add_newdoc, 8, 3, 8, , 
+numpy.bitwise_or, 8, 2, 7, , 
 numpy.invert, 8, 1, 8, , 
-numpy.core.records.fromarrays, 8, 2, 6, names, 4
-numpy.ma.make_mask, 8, 1, 4, copy, 1
+numpy.array2string, 8, 2, 7, precision, 2
+numpy.ma.asanyarray, 8, 1, 8, , 
+numpy.histogramdd, 8, 3, 4, bins, 6
+numpy.ndarray.__setstate__, 8, 2, 8, , 
+numpy.random.multinomial, 8, 3, 5, pvals, 4
+numpy.random.gamma, 8, 2, 5, shape, 3
 numpy.core.defchararray.add, 8, 2, 8, , 
-numpy.compat.asbytes, 8, 1, 6, , 
-numpy.multiply.accumulate, 8, 4, 5, dtype, 3
-numpy.core.atleast_3d, 8, 1, 8, , 
-numpy.lib.interp, 8, 4, 4, left, 4
-numpy.testing.assert_array_max_ulp, 8, 2, 4, maxulp, 4
-numpy.fromregex, 8, 3, 6, encoding, 2
-numpy.mafromtxt, 8, 3, 5, None, 5
-numpy.lib.type_check.nan_to_num, 8, 1, 7, copy, 1
-numpy.ma.core.default_fill_value, 8, 1, 8, , 
-numpy.ma.core.choose, 8, 3, 5, mode, 6
-numpy.ma.core.make_mask_descr, 8, 1, 8, , 
-numpy.ma.extras.notmasked_edges, 8, 2, 8, , 
-numpy.ma.extras.stack, 8, 2, 8, axis, 8
-numpy.lib.iscomplexobj, 8, 1, 8, , 
-numpy.complex128, 9, 1, 6, , 
-numpy.logical_xor, 9, 2, 5, out, 1
-numpy.remainder, 9, 2, 7, , 
-numpy.fft.rfftfreq, 9, 2, 7, d, 3
-numpy.signbit, 9, 1, 6, , 
-numpy.ma.empty, 9, 2, 6, dtype, 7
-numpy.ndarray.__setstate__, 9, 2, 8, , 
-numpy.floor_divide, 9, 2, 6, out, 1
-numpy.random.gamma, 9, 2, 5, scale, 3
-numpy.ndarray.__new__, 9, 3, 4, dtype, 6
-numpy.trunc, 9, 1, 9, , 
+numpy.ma.is_masked, 8, 1, 8, , 
+numpy.mat, 8, 1, 8, , 
+numpy.fft.irfftn, 8, 3, 8, , 
+numpy.linalg.eigvals, 9, 1, 9, , 
+numpy.vander, 9, 2, 8, N, 1
+numpy.linalg.LinAlgError, 9, 1, 6, , 
+numpy.less, 9, 2, 6, where, 2
+numpy.unwrap, 9, 1, 8, axis, 1
+numpy.ma.where, 9, 3, 9, , 
+numpy.ma.masked_values, 9, 2, 9, value, 3
+numpy.ptp, 9, 1, 7, , 
+numpy.trunc, 9, 1, 6, , 
+numpy.diagflat, 9, 2, 6, k, 7
 numpy.nanargmin, 9, 1, 5, axis, 3
+numpy.array_str, 9, 4, 7, max_line_width, 8
 numpy.fmax, 9, 2, 9, , 
-numpy.ma.zeros, 9, 1, 4, dtype, 2
+numpy.float16, 9, 1, 8, , 
+numpy.polynomial.hermite.hermval, 9, 2, 7, tensor, 2
 numpy.testing.utils.assert_equal, 9, 2, 9, , 
-numpy.sort_complex, 9, 1, 5, , 
-numpy.recfromcsv, 9, 3, 3, dtype, 6
-numpy.fft.irfftn, 9, 3, 8, axes, 1
-numpy.add.accumulate, 9, 2, 4, out, 4
-numpy.ma.mrecords.fromrecords, 9, 3, 5, mask, 5
-numpy.compat.is_pathlib_path, 9, 1, 9, , 
-numpy.core._multiarray_tests.test_neighborhood_iterator, 9, 4, 9, , 
-numpy.core.numeric.ones, 9, 2, 9, dtype, 3
-numpy.lib.arraysetops.intersect1d, 9, 2, 4, return_indices, 4
-numpy.lib.average, 9, 3, 4, weights, 6
-numpy.compat.Path, 9, 1, 9, , 
-numpy.lib.shape_base.apply_along_axis, 9, 3, 9, , 
-numpy.ma.extras.ediff1d, 9, 2, 4, to_begin, 5
-numpy.add.outer, 10, 2, 5, , 
-numpy.testing.assert_no_warnings, 10, 0, 3, method, 4
-numpy.less, 10, 2, 6, where, 2
-numpy.block, 10, 1, 5, , 
-numpy.core.umath.less, 10, 2, 6, , 
-numpy.double, 10, 1, 6, , 
-numpy.random.chisquare, 10, 1, 4, size, 1
+numpy.sort_complex, 9, 1, 9, , 
+numpy.rec.fromrecords, 9, 2, 9, names, 6
+numpy.int_, 10, 1, 10, , 
+numpy.linalg.pinv, 10, 1, 10, , 
+numpy.iscomplex, 10, 1, 10, , 
+numpy.atleast_3d, 10, 1, 10, , 
+numpy.fft.rfftn, 10, 3, 8, axes, 2
+numpy.ma.mask_or, 10, 2, 9, shrink, 1
+numpy.ma.concatenate, 10, 2, 8, axis, 7
+numpy.shares_memory, 10, 2, 10, , 
+numpy.linalg.qr, 10, 1, 10, , 
 numpy.ma.isMA, 10, 1, 10, , 
-numpy.testing.dec.skipif, 10, 2, 4, , 
-numpy.diagflat, 10, 2, 8, k, 7
-numpy.logical_and.reduce, 10, 1, 7, , 
-numpy.array_str, 10, 4, 7, max_line_width, 8
-numpy.core.multiarray.dtype, 10, 1, 10, , 
-numpy.core.atleast_2d, 10, 1, 10, , 
-numpy.ma.core.mvoid, 10, 3, 7, dtype, 8
-numpy.ma.core.sort, 10, 2, 6, endwith, 5
-numpy.polynomial.laguerre.lagfit, 10, 3, 6, w, 4
-numpy.complex64, 11, 1, 8, , 
-numpy.atleast_3d, 11, 1, 10, , 
-numpy.bmat, 11, 1, 9, null, 1
-numpy.ma.getmask, 11, 1, 8, , 
-numpy.ma.filled, 11, 2, 5, fill_value, 1
-numpy.lib.arraysetops.in1d, 11, 2, 7, assume_unique, 3
+numpy.hanning, 10, 1, 6, , 
+numpy.ma.isMaskedArray, 11, 1, 11, , 
+numpy.add.reduce, 11, 2, 6, axis, 5
+numpy.bitwise_xor, 11, 2, 8, out, 3
+numpy.arcsinh, 11, 1, 6, , 
+numpy.ma.masked_equal, 11, 2, 10, copy, 1
+numpy.ma.apply_along_axis, 11, 3, 3, , 
+numpy.ma.MaskedArray, 11, 3, 4, mask, 7
+numpy.rec.fromarrays, 11, 2, 10, dtype, 5
 numpy.logical_or.reduce, 11, 1, 10, axis, 1
-numpy.frompyfunc, 11, 3, 9, , 
+numpy.greater, 11, 2, 6, where, 1
+numpy.longdouble, 11, 1, 11, , 
 numpy.fft.ifftn, 11, 3, 10, axes, 3
-numpy.fft.ifftshift, 11, 1, 7, axes, 2
-numpy.testing._private.pytesttester.PytestTester, 11, 1, 11, , 
-numpy.distutils.compat.get_exception, 11, 0, 11, , 
-numpy.core.zeros, 11, 2, 11, dtype, 1
-numpy.lib._iotools.StringConverter, 11, 2, 4, default, 6
-numpy.lib.stride_tricks.broadcast_arrays, 11, 2, 8, subok, 1
-numpy.linalg.pinv, 12, 1, 10, , 
-numpy.isfortran, 12, 1, 10, , 
-numpy.fft.rfftn, 12, 3, 8, axes, 2
-numpy.bitwise_or, 12, 2, 10, , 
-numpy.ma.masked_less_equal, 12, 2, 5, copy, 5
-numpy.random.multinomial, 12, 3, 6, size, 5
-numpy.greater, 12, 2, 10, where, 1
-numpy.choose, 12, 2, 6, mode, 3
-numpy.ma.average, 12, 2, 5, axis, 9
+numpy.fft.ifftshift, 11, 1, 8, axes, 2
+numpy.fft.fftn, 12, 3, 11, axes, 3
+numpy.polynomial.polynomial.polyval, 12, 2, 10, tensor, 2
+numpy.polymul, 12, 2, 12, , 
+numpy.ma.arange, 12, 1, 8, dtype, 2
 numpy.fft.fft2, 12, 1, 11, s, 1
+numpy.packbits, 12, 1, 11, axis, 1
 numpy.core.defchararray.startswith, 12, 2, 12, , 
-numpy.lib.arraysetops.unique, 12, 4, 7, return_inverse, 3
-numpy.fft.fftn, 13, 3, 11, axes, 4
-numpy.bitwise_xor, 13, 2, 8, out, 5
-numpy.core.umath.add.reduce, 13, 1, 6, , 
-numpy.arcsinh, 13, 1, 11, , 
-numpy.unwrap, 13, 1, 8, axis, 3
-numpy.core.sqrt, 13, 1, 9, , 
-numpy.ma.ravel, 13, 1, 10, , 
-numpy.shares_memory, 13, 2, 10, , 
-numpy.array_equiv, 13, 2, 11, , 
-numpy.core._multiarray_tests.test_neighborhood_iterator_oob, 13, 5, 13, , 
-numpy.core.numeric.zeros, 13, 2, 12, order, 1
-numpy.lib.recfunctions.join_by, 13, 3, 6, jointype, 5
-numpy.polynomial.chebyshev.chebfit, 13, 3, 9, w, 4
-numpy.polynomial.hermite.hermfit, 13, 3, 9, w, 4
-numpy.polynomial.hermite_e.hermefit, 13, 3, 9, w, 4
-numpy.polynomial.legendre.legfit, 13, 3, 9, w, 4
-numpy.distutils.system_info.get_info, 14, 1, 9, notfound_action, 2
-numpy.core.umath.cos, 14, 1, 9, , 
-numpy.linalg.qr, 14, 1, 6, mode, 5
-numpy.hanning, 14, 1, 10, , 
-numpy.polynomial.hermite.hermval, 14, 2, 7, tensor, 2
-numpy.core.finfo, 14, 1, 14, , 
-numpy.core.numeric.concatenate, 14, 1, 9, axis, 3
-numpy.linalg.eigvalsh, 14, 1, 8, UPLO, 4
-numpy.ma.isMaskedArray, 15, 1, 12, , 
-numpy.int_, 15, 1, 10, , 
-numpy.bitwise_and, 15, 2, 12, , 
-numpy.histogramdd, 15, 3, 5, bins, 12
-numpy.unpackbits, 15, 1, 12, axis, 2
-numpy.distutils.fcompiler.new_fcompiler, 15, 1, 8, compiler, 13
-numpy.polynomial.polynomial.polyfit, 15, 3, 8, w, 4
-numpy.core.numeric.arange, 15, 2, 10, None, 1
-numpy.ma.core.empty, 15, 2, 14, dtype, 13
-numpy.ma.core.make_mask, 15, 1, 9, dtype, 5
-numpy.polynomial.chebyshev.chebint, 15, 4, 6, m, 12
-numpy.polynomial.hermite.hermint, 15, 4, 6, m, 12
-numpy.polynomial.hermite_e.hermeint, 15, 4, 6, m, 12
-numpy.polynomial.laguerre.lagint, 15, 4, 6, m, 12
-numpy.polynomial.legendre.legint, 15, 4, 6, m, 12
-numpy.polynomial.polynomial.polyint, 15, 4, 6, m, 12
+numpy.isrealobj, 13, 1, 13, , 
+numpy.int16, 13, 1, 13, , 
+numpy.compat.asstr, 13, 1, 13, , 
+numpy.linalg.matrix_power, 13, 2, 13, , 
+numpy.linalg.matrix_rank, 13, 1, 12, , 
+numpy.unpackbits, 13, 1, 13, , 
+numpy.linalg.cond, 14, 1, 14, , 
+numpy.get_printoptions, 14, 0, 14, , 
+numpy.bitwise_and, 14, 2, 12, , 
+numpy.ma.masked_all, 14, 2, 11, dtype, 11
+numpy.random.pareto, 14, 2, 12, size, 5
+numpy.linalg.slogdet, 14, 1, 14, , 
+numpy.ma.testutils.assert_array_almost_equal, 14, 2, 10, decimal, 4
+numpy.rec.array, 14, 1, 8, dtype, 5
+numpy.core.numeric.normalize_axis_tuple, 14, 2, 12, , 
+numpy.asfarray, 15, 1, 14, dtype, 1
+numpy.ma.masked_greater, 15, 2, 15, , 
+numpy.argpartition, 15, 2, 8, axis, 2
+numpy.gradient, 15, 1, 10, None, 1
 numpy.array_split, 16, 2, 13, axis, 3
-numpy.vander, 16, 2, 8, N, 4
+numpy.reciprocal, 16, 1, 10, out, 3
+numpy.rint, 16, 1, 9, out, 1
 numpy.fmod, 16, 2, 11, out, 5
-numpy.correlate, 16, 3, 11, mode, 5
-numpy.ma.asanyarray, 16, 1, 8, , 
-numpy.ma.concatenate, 16, 2, 8, axis, 7
-numpy.ptp, 16, 1, 8, , 
+numpy.roots, 16, 1, 16, , 
+numpy.bool_, 16, 1, 16, , 
+numpy.ma.fix_invalid, 16, 1, 15, copy, 1
+numpy.ma.testutils.assert_, 16, 1, 16, , 
 numpy.random.mtrand.uniform, 16, 1, 16, size, 16
-numpy.lib.recfunctions.stack_arrays, 16, 1, 9, usemask, 4
-numpy.char.array, 16, 1, 11, None, 3
-numpy.distutils.misc_util.is_string, 16, 1, 16, , 
-numpy.int16, 17, 1, 14, , 
-numpy.linalg.LinAlgError, 17, 1, 6, , 
-numpy.iscomplex, 17, 1, 9, , 
-numpy.rint, 17, 1, 15, out, 2
-numpy.array2string, 17, 2, 7, separator, 5
 numpy.nanstd, 17, 1, 10, axis, 6
+numpy.alltrue, 17, 1, 15, axis, 2
 numpy.alen, 17, 1, 17, , 
-numpy.lib.format.write_array, 17, 3, 9, version, 9
-numpy.lib.piecewise, 17, 3, 17, , 
-numpy.lib.recfunctions.merge_arrays, 17, 2, 12, flatten, 8
-numpy.asfarray, 18, 1, 14, dtype, 1
-numpy.multiply.reduce, 18, 1, 7, out, 3
-numpy.reciprocal, 18, 1, 10, out, 3
-numpy.core.umath.sqrt, 18, 1, 11, out, 1
-numpy.add.reduceat, 18, 3, 7, axis, 7
-numpy.ma.masked_values, 18, 2, 9, value, 3
-numpy.gradient, 18, 1, 9, null, 1
-numpy.ma.is_masked, 18, 1, 10, , 
-numpy.testing.SkipTest, 18, 1, 14, , 
-numpy.core.atleast_1d, 18, 1, 18, , 
-numpy.lib.shape_base.array_split, 18, 2, 12, axis, 6
-numpy.ndarray.view, 18, 2, 14, , 
-numpy.ma.extras.compress_nd, 18, 2, 17, , 
-numpy.linalg.slogdet, 19, 1, 13, , 
-numpy.ma.mask_or, 19, 2, 9, shrink, 4
-numpy.nanpercentile, 19, 4, 11, axis, 18
-numpy.random.set_state, 19, 1, 18, , 
-numpy.fft.fftfreq, 19, 2, 14, d, 2
-numpy.core.numeric.normalize_axis_tuple, 19, 2, 14, , 
-numpy.testing.build_err_msg, 19, 3, 7, names, 13
-numpy.random.poisson, 19, 2, 9, size, 7
-numpy.mat, 19, 1, 11, , 
-numpy.ma.core.where, 19, 3, 19, , 
-numpy.linalg.matrix_rank, 20, 1, 12, , 
+numpy.exp2, 18, 1, 18, , 
+numpy.may_share_memory, 18, 2, 18, , 
+numpy.linalg.cholesky, 18, 1, 18, , 
+numpy.fft.fftfreq, 18, 2, 16, d, 2
+numpy.random.poisson, 18, 2, 9, size, 6
+numpy.find_common_type, 19, 2, 19, , 
+numpy.compress, 19, 2, 12, axis, 6
+numpy.ravel_multi_index, 19, 2, 13, dims, 1
+numpy.random.set_state, 19, 1, 13, , 
+numpy.random.random_integers, 19, 3, 14, size, 7
+numpy.random.beta, 19, 2, 13, size, 4
+numpy.vdot, 20, 2, 20, , 
+numpy.broadcast, 20, 2, 16, , 
+numpy.savez_compressed, 20, 2, 16, None, 11
+numpy.lib.pad, 20, 4, 12, constant_values, 17
 numpy.fft.ifft2, 20, 1, 20, , 
-numpy.linalg.cond, 21, 1, 9, , 
-numpy.frexp, 21, 3, 9, subok, 13
-numpy.ma.asarray, 21, 1, 13, dtype, 3
-numpy.partition, 21, 3, 7, axis, 11
-numpy.rec.fromarrays, 21, 2, 10, names, 10
-numpy.random.get_state, 21, 0, 20, , 
-numpy.alltrue, 21, 1, 15, axis, 3
-numpy.random.random_integers, 21, 3, 16, size, 8
-numpy.random.beta, 21, 2, 11, size, 6
-numpy.core.asarray, 21, 1, 18, , 
-numpy.rec.fromrecords, 21, 2, 12, names, 12
-numpy.linalg.eigvals, 22, 1, 13, , 
-numpy.intp, 22, 1, 9, , 
-numpy.exp2, 22, 1, 19, , 
-numpy.ma.apply_along_axis, 22, 4, 6, , 
-numpy.ma.MaskedArray, 22, 2, 9, mask, 15
-numpy.argpartition, 22, 2, 13, axis, 7
+numpy.uint64, 21, 1, 20, , 
+numpy.diag_indices_from, 21, 1, 21, , 
+numpy.triu_indices, 21, 2, 14, k, 5
+numpy.poly, 21, 1, 21, , 
+numpy.random.get_state, 21, 0, 15, , 
+numpy.tril_indices, 22, 2, 12, k, 8
+numpy.arccosh, 22, 1, 16, , 
 numpy.fromfunction, 22, 3, 11, dtype, 13
-numpy.einsum_path, 22, 2, 21, optimize, 22
 numpy.testing.measure, 22, 2, 22, , 
-numpy.packbits, 22, 1, 10, axis, 11
 numpy.union1d, 22, 2, 22, , 
-numpy.core.fromnumeric.any, 22, 1, 22, , 
-numpy.distutils.misc_util.is_sequence, 22, 1, 22, , 
-numpy.core.multiarray.normalize_axis_index, 22, 2, 22, , 
-numpy.ma.masked_greater, 23, 2, 15, , 
-numpy.polymul, 23, 2, 12, , 
-numpy.savez_compressed, 23, 2, 12, null, 10
-numpy.true_divide, 23, 2, 14, dtype, 2
-numpy.longdouble, 23, 1, 12, , 
-numpy.ma.extras.dot, 23, 3, 20, strict, 19
-numpy.uint64, 24, 1, 20, , 
-numpy.roots, 24, 1, 13, , 
-numpy.arccosh, 24, 1, 22, , 
-numpy.diag_indices_from, 25, 1, 17, , 
-numpy.triu_indices, 25, 2, 13, k, 8
-numpy.real_if_close, 25, 1, 17, , 
-numpy.ravel_multi_index, 25, 2, 19, mode, 3
-numpy.may_share_memory, 25, 2, 18, max_work, 3
-numpy.ma.where, 25, 3, 14, , 
-numpy.ma.median, 25, 2, 15, axis, 25
-numpy.linalg.cholesky, 25, 1, 17, , 
-numpy.distutils.log.debug, 25, 1, 17, , 
-numpy.lib.vectorize, 25, 2, 12, signature, 13
-numpy.lib.histograms.histogramdd, 25, 2, 17, bins, 13
-numpy.issubsctype, 26, 2, 25, , 
-numpy.isrealobj, 26, 1, 19, , 
-numpy.rot90, 26, 2, 16, k, 1
-numpy.get_include, 26, 0, 23, , 
-numpy.isneginf, 26, 1, 24, , 
-numpy.select, 26, 2, 20, , 
-numpy.fft.fftshift, 26, 1, 19, axes, 3
-numpy.nested_iters, 26, 2, 14, op_flags, 6
+numpy.get_include, 23, 0, 23, , 
+numpy.real_if_close, 23, 1, 22, , 
+numpy.select, 23, 2, 20, , 
+numpy.ma.testutils.assert_array_equal, 23, 2, 23, , 
+numpy.isneginf, 24, 1, 24, , 
+numpy.fft.irfft, 25, 1, 10, n, 4
+numpy.issubsctype, 25, 2, 25, , 
+numpy.nextafter, 25, 2, 23, dtype, 2
+numpy.asarray_chkfinite, 25, 1, 25, , 
+numpy.rot90, 25, 2, 16, k, 1
+numpy.random.standard_normal, 25, 1, 25, , 
+numpy.iterable, 26, 1, 26, , 
+numpy.recarray, 26, 2, 22, dtype, 24
+numpy.memmap, 26, 4, 12, mode, 23
+numpy.lib.stride_tricks.as_strided, 26, 3, 19, strides, 23
+numpy.ma.sqrt, 26, 1, 26, , 
+numpy.fft.fftshift, 26, 1, 22, axes, 3
 numpy.testing.utils.assert_array_almost_equal, 26, 2, 16, , 
-numpy.lib.gradient, 26, 5, 8, edge_order, 17
-numpy.ma.extras.average, 26, 2, 12, axis, 19
-numpy.linalg.matrix_power, 27, 2, 16, , 
-numpy.get_printoptions, 27, 0, 14, , 
-numpy.ma.masked_equal, 27, 2, 16, value, 3
-numpy.ma.masked_all, 27, 2, 11, dtype, 18
-numpy.random.pareto, 27, 2, 17, size, 11
-numpy.core.numeric.asanyarray, 27, 1, 25, , 
-numpy.compat.asstr, 28, 1, 14, , 
+numpy.cumprod, 27, 1, 14, axis, 12
+numpy.diagonal, 27, 1, 13, offset, 14
+numpy.cov, 28, 1, 14, bias, 5
+numpy.fliplr, 28, 1, 28, , 
 numpy.flip, 28, 2, 26, axis, 11
-numpy, 28, 0, 28, , 
-numpy.core.numeric.array, 28, 4, 9, copy, 17
-numpy.fliplr, 29, 1, 28, , 
-numpy.diagonal, 29, 1, 12, offset, 14
-numpy.float16, 29, 1, 20, , 
-numpy.poly, 30, 1, 18, , 
-numpy.polynomial.legendre.leggauss, 30, 1, 29, , 
-numpy.fft.irfft, 31, 1, 10, n, 5
-numpy.bool_, 31, 1, 18, , 
-numpy.argwhere, 31, 1, 26, , 
-numpy.logaddexp, 31, 2, 31, , 
-numpy.cbrt, 31, 1, 31, , 
+numpy, 28, 0, 27, , 
+numpy.polynomial.legendre.leggauss, 29, 1, 29, , 
+numpy.ma.masked_where, 30, 2, 27, copy, 3
+numpy.ma.getmaskarray, 30, 1, 30, , 
+numpy.asmatrix, 30, 1, 29, None, 1
+numpy.nansum, 30, 1, 17, axis, 11
+numpy.argwhere, 30, 1, 30, , 
+numpy.can_cast, 31, 2, 18, casting, 9
+numpy.flatnonzero, 31, 1, 31, , 
+numpy.require, 31, 2, 22, dtype, 15
+numpy.logaddexp, 31, 2, 24, , 
+numpy.cbrt, 31, 1, 24, , 
 numpy.lib.scimath.sqrt, 31, 1, 31, , 
-numpy.distutils.log.warn, 31, 1, 30, , 
-numpy.core.numeric.asarray, 32, 1, 28, dtype, 2
-numpy.add.reduce, 33, 2, 12, axis, 14
-numpy.vdot, 33, 2, 22, , 
-numpy.broadcast, 33, 2, 17, , 
-numpy.ma.fix_invalid, 33, 1, 16, copy, 2
-numpy.polynomial.hermite.hermgauss, 33, 1, 32, , 
-numpy.trace, 34, 1, 33, , 
-numpy.geomspace, 34, 3, 29, num, 11
-numpy.distutils.exec_command.exec_command, 34, 2, 21, None, 17
-numpy.ma.testutils.assert_equal_records, 34, 2, 34, , 
-numpy.nansum, 35, 1, 17, axis, 13
-numpy.compress, 36, 2, 12, axis, 15
-numpy.polynomial.polynomial.polyval, 36, 2, 22, tensor, 4
-numpy.ma.testutils.assert_array_almost_equal, 36, 2, 14, decimal, 12
-numpy.ndenumerate, 36, 1, 32, , 
-numpy.cov, 37, 1, 13, rowvar, 7
-numpy.ma.getmaskarray, 37, 1, 30, , 
-numpy.flatnonzero, 37, 1, 28, , 
-numpy.sinc, 37, 1, 35, , 
-numpy.iterable, 38, 1, 25, , 
-numpy.mod, 38, 2, 31, out, 1
-numpy.uint32, 39, 1, 35, , 
-numpy.recarray, 39, 2, 24, dtype, 31
-numpy.expm1, 39, 1, 36, , 
-numpy.negative, 39, 2, 28, out, 4
-numpy.float, 39, 1, 39, , 
-numpy.cumprod, 40, 1, 14, axis, 18
-numpy.log1p, 40, 1, 36, , 
-numpy.asscalar, 40, 1, 36, , 
-numpy.tril_indices, 41, 1, 15, k, 18
-numpy.isposinf, 41, 1, 36, , 
-numpy.nanmedian, 41, 1, 28, axis, 12
-numpy.rec.array, 41, 2, 14, dtype, 14
-numpy.trapz, 41, 2, 21, x, 3
-numpy.testing.temppath, 41, 1, 20, suffix, 20
-numpy.find_common_type, 42, 2, 23, , 
-numpy.require, 42, 2, 22, requirements, 16
-numpy.fill_diagonal, 42, 2, 35, , 
-numpy.inner, 42, 2, 33, , 
-numpy.digitize, 42, 2, 30, right, 9
-numpy.core.multiarray._vec_string, 43, 4, 24, , 
-numpy.spacing, 44, 1, 27, , 
-numpy.corrcoef, 45, 2, 35, rowvar, 2
-numpy.linalg.eigh, 45, 1, 32, UPLO, 4
-numpy.memmap, 46, 4, 13, dtype, 38
-numpy.ndfromtxt, 46, 3, 16, dtype, 33
-numpy.lib.histograms.histogram, 47, 2, 22, bins, 21
-numpy.uint8, 48, 1, 44, , 
-numpy.unravel_index, 48, 2, 36, order, 1
-numpy.nextafter, 49, 2, 23, dtype, 3
-numpy.asarray_chkfinite, 50, 1, 35, , 
-numpy.angle, 50, 1, 24, deg, 10
-numpy.nanmean, 50, 1, 35, axis, 8
-numpy.conjugate, 51, 1, 43, , 
-numpy.random.standard_normal, 51, 1, 26, size, 1
-numpy.ndindex, 51, 1, 39, , 
-numpy.testing.utils.assert_array_equal, 51, 2, 34, , 
-numpy.random.binomial, 52, 3, 38, size, 27
-numpy.intersect1d, 52, 2, 43, assume_unique, 7
-numpy.ma.core.arange, 52, 1, 32, dtype, 18
-numpy.sinh, 53, 1, 43, , 
-numpy.fabs, 53, 1, 48, , 
-numpy.can_cast, 54, 2, 18, casting, 16
-numpy.ma.sqrt, 54, 1, 27, , 
-numpy.random.dirichlet, 54, 1, 28, size, 10
-numpy.string_, 55, 1, 52, , 
-numpy.ma.masked_where, 56, 2, 27, copy, 8
-numpy.tril, 57, 2, 31, k, 5
-numpy.lexsort, 57, 1, 36, , 
-numpy.flipud, 57, 1, 46, , 
-numpy.putmask, 57, 3, 48, , 
-numpy.ma.arange, 57, 1, 42, dtype, 3
-numpy.savez, 58, 2, 36, null, 35
-numpy.imag, 58, 1, 40, , 
-numpy.in1d, 58, 2, 41, assume_unique, 8
-numpy.result_type, 59, 2, 24, , 
-numpy.distutils.log.info, 60, 1, 48, , 
-numpy.fft.rfft, 61, 1, 28, axis, 11
-numpy.cosh, 61, 1, 43, , 
-numpy.isreal, 61, 1, 31, , 
-numpy.conj, 62, 1, 45, , 
-numpy.subtract, 62, 2, 21, out, 14
-numpy.arctanh, 63, 1, 62, , 
-numpy.extract, 63, 2, 32, , 
-numpy.linalg.det, 64, 1, 56, , 
-numpy.nan_to_num, 65, 1, 61, , 
-numpy.ix_, 65, 2, 45, , 
-numpy.convolve, 65, 3, 30, mode, 24
-numpy.lib.stride_tricks.as_strided, 65, 3, 30, strides, 50
-numpy.testing.assert_raises_regex, 65, 4, 18, axis, 4
-numpy.product, 65, 1, 34, axis, 19
-numpy.absolute, 66, 1, 48, out, 1
-numpy.histogram2d, 66, 4, 30, bins, 42
-numpy.setdiff1d, 68, 2, 62, assume_unique, 5
-numpy.row_stack, 70, 1, 67, , 
-numpy.ndim, 70, 1, 42, , 
-numpy.linalg.lstsq, 71, 3, 23, rcond, 38
-numpy.lib.pad, 71, 3, 34, constant_values, 23
-numpy.nanmin, 72, 1, 59, axis, 4
-numpy.polyfit, 72, 3, 45, full, 10
-numpy.int, 76, 1, 64, , 
-numpy.amin, 77, 1, 39, axis, 27
-numpy.matmul, 77, 2, 63, out, 5
-numpy.tensordot, 77, 3, 51, axes, 46
-numpy.fromiter, 78, 2, 37, dtype, 63
-numpy.copyto, 80, 3, 37, where, 43
-numpy.equal, 81, 2, 54, where, 1
-numpy.indices, 81, 1, 27, dtype, 27
-numpy.apply_along_axis, 82, 3, 53, null, 1
-numpy.ma.testutils.assert_allclose, 82, 2, 28, rtol, 20
-numpy.poly1d, 84, 1, 49, r, 3
-numpy.random.exponential, 84, 2, 51, size, 55
-numpy.asmatrix, 84, 1, 54, null, 1
-numpy.nanmax, 87, 1, 65, axis, 17
-numpy.add.at, 88, 3, 73, , 
-numpy.hypot, 92, 2, 73, , 
-numpy.core.array, 92, 1, 80, copy, 11
-numpy.fft.ifft, 93, 4, 28, axis, 36
-numpy.vectorize, 93, 1, 41, otypes, 33
-numpy.ma.masked_array, 93, 2, 42, mask, 32
-numpy.average, 94, 2, 40, weights, 48
-numpy.add, 94, 2, 29, out, 32
-numpy.log2, 95, 1, 72, , 
-numpy.full_like, 96, 2, 61, dtype, 30
-numpy.testing.suppress_warnings, 96, 0, 92, , 
-numpy.int8, 98, 1, 95, , 
-numpy.fft.fft, 100, 4, 21, axis, 38
-numpy.broadcast_arrays, 101, 2, 36, subok, 2
-numpy.square, 101, 1, 85, out, 2
-numpy.var, 105, 2, 43, axis, 45
-numpy.distutils.core.setup, 107, 1, 71, null, 56
-numpy.logical_or, 107, 2, 88, out, 1
-numpy.random.random_sample, 108, 0, 49, size, 11
-numpy.testing.assert_array_almost_equal_nulp, 108, 3, 51, nulp, 25
-numpy.linalg.eig, 108, 1, 81, , 
-numpy.linalg.svd, 109, 2, 45, full_matrices, 45
-numpy.distutils.misc_util.Configuration, 111, 3, 80, parent_name, 3
-numpy.dstack, 111, 1, 92, , 
-numpy.count_nonzero, 111, 1, 79, axis, 4
-numpy.polyval, 111, 2, 68, , 
-numpy.ma.masked_invalid, 111, 1, 46, copy, 29
-numpy.tanh, 112, 1, 105, , 
-numpy.random.multivariate_normal, 113, 3, 106, size, 81
-numpy.broadcast_to, 114, 2, 93, subok, 2
-numpy.pad, 114, 4, 69, constant_values, 66
-numpy.ma.testutils.assert_array_equal, 117, 2, 94, , 
-numpy.moveaxis, 117, 3, 66, destination, 1
-numpy.kron, 119, 2, 103, , 
-numpy.rad2deg, 120, 1, 82, , 
-numpy.split, 122, 3, 73, axis, 70
-numpy.degrees, 122, 1, 120, , 
-numpy.arcsin, 123, 1, 111, , 
-numpy.tan, 125, 1, 89, , 
-numpy.testing.assert_warns, 125, 4, 33, beta0, 4
-numpy.resize, 126, 2, 95, , 
-numpy.bincount, 126, 2, 40, minlength, 49
-numpy.linalg.solve, 130, 2, 100, , 
-numpy.triu, 134, 1, 76, k, 2
-numpy.around, 136, 1, 82, decimals, 18
-numpy.arctan, 137, 1, 100, , 
-numpy.rollaxis, 145, 3, 59, axis, 11
-numpy.insert, 146, 4, 54, axis, 25
-numpy.place, 148, 3, 75, , 
-numpy.amax, 149, 1, 78, axis, 47
-numpy.ma.core.masked_array, 150, 2, 103, mask, 101
-numpy.arccos, 152, 1, 136, , 
-numpy.deprecate, 153, 2, 56, message, 148
-numpy.real, 154, 1, 104, , 
-numpy.set_printoptions, 155, 1, 61, precision, 56
-numpy.fromstring, 156, 2, 102, dtype, 121
-numpy.isinf, 156, 1, 113, , 
-numpy.logical_not, 159, 1, 115, out, 1
-numpy.roll, 160, 3, 93, axis, 85
-numpy.iinfo, 169, 1, 123, , 
-numpy.int64, 170, 1, 158, , 
-numpy.ceil, 172, 1, 136, , 
-numpy.deg2rad, 175, 1, 146, , 
-numpy.ndarray, 177, 2, 53, dtype, 117
-numpy.divide, 182, 2, 77, out, 26
-numpy.random.permutation, 185, 1, 156, , 
-numpy.take, 187, 3, 61, axis, 83
-numpy.save, 187, 2, 92, allow_pickle, 3
-numpy.radians, 188, 1, 183, , 
-numpy.interp, 189, 3, 132, right, 8
-numpy.histogram, 189, 2, 77, bins, 131
-numpy.iscomplexobj, 191, 1, 125, , 
-numpy.outer, 192, 2, 169, , 
-numpy.size, 197, 1, 99, axis, 26
-numpy.ravel, 200, 1, 144, order, 1
-numpy.int32, 209, 1, 191, , 
-numpy.argmin, 209, 1, 170, axis, 15
-numpy.stack, 212, 2, 92, axis, 115
-numpy.percentile, 213, 2, 144, axis, 37
-numpy.testing.assert_array_less, 214, 2, 120, err_msg, 1
-numpy.savetxt, 226, 2, 78, fmt, 105
-numpy.linalg.inv, 229, 1, 204, , 
-numpy.float64, 231, 1, 202, , 
-numpy.swapaxes, 233, 3, 210, axis1, 10
-numpy.fromfile, 239, 3, 130, dtype, 180
-numpy.loadtxt, 240, 1, 86, dtype, 88
-numpy.ascontiguousarray, 249, 2, 131, dtype, 120
-numpy.ones_like, 249, 1, 183, dtype, 29
-numpy.delete, 249, 3, 116, axis, 81
-numpy.einsum, 252, 3, 136, optimize, 52
-numpy.genfromtxt, 253, 3, 61, delimiter, 119
-numpy.logspace, 255, 3, 155, base, 16
-numpy.expand_dims, 257, 2, 237, axis, 146
-numpy.random.shuffle, 258, 1, 214, , 
-numpy.identity, 258, 1, 193, dtype, 12
-numpy.empty_like, 259, 1, 159, dtype, 45
-numpy.timedelta64, 264, 2, 199, , 
-numpy.minimum, 265, 2, 235, , 
-numpy.matrix, 265, 1, 147, dtype, 25
-numpy.logical_and, 268, 2, 211, out, 1
-numpy.squeeze, 279, 1, 137, axis, 61
-numpy.cross, 281, 2, 239, axis, 9
-numpy.datetime64, 284, 1, 169, dtype, 4
-numpy.cumsum, 288, 1, 202, axis, 28
-numpy.log10, 289, 1, 232, , 
-numpy.multiply, 293, 2, 187, out, 25
-numpy.floor, 294, 1, 215, , 
-numpy.lib.add_newdoc, 298, 3, 282, , 
-numpy.seterr, 299, 1, 190, all, 103
-numpy.ctypeslib.ndpointer, 299, 2, 258, flags, 284
-numpy.diff, 301, 1, 186, axis, 50
-numpy.sign, 305, 1, 249, , 
-numpy.power, 306, 2, 224, out, 4
-numpy.clip, 313, 3, 237, out, 19
-numpy.median, 315, 1, 246, axis, 50
-numpy.ma.testutils.assert_almost_equal, 322, 2, 128, decimal, 68
-numpy.arctan2, 324, 2, 278, where, 1
-numpy.random.choice, 327, 3, 149, size, 151
-numpy.shape, 337, 1, 295, , 
-numpy.round, 340, 1, 138, decimals, 23
-numpy.ma.core.array, 342, 2, 224, mask, 254
-numpy.nditer, 343, 3, 127, op_dtypes, 85
-numpy.std, 346, 1, 237, axis, 75
-numpy.issubdtype, 347, 2, 240, , 
-numpy.float32, 347, 1, 311, , 
-numpy.frombuffer, 348, 2, 260, dtype, 286
-numpy.append, 354, 2, 203, axis, 60
-numpy.nonzero, 355, 1, 296, , 
-numpy.testing.assert_approx_equal, 362, 2, 113, significant, 113
-numpy.finfo, 376, 1, 241, dtype, 1
-numpy.column_stack, 378, 1, 226, , 
-numpy.meshgrid, 392, 2, 207, indexing, 43
-numpy.atleast_2d, 402, 1, 327, , 
-numpy.ma.array, 427, 2, 118, mask, 287
-numpy.isscalar, 431, 1, 303, , 
-numpy.asanyarray, 434, 2, 181, dtype, 192
-numpy.repeat, 436, 2, 213, axis, 157
-numpy.sort, 440, 1, 300, axis, 33
-numpy.load, 444, 1, 225, mmap_mode, 8
-numpy.ma.testutils.assert_, 457, 1, 436, , 
-numpy.prod, 459, 1, 371, axis, 38
-numpy.copy, 459, 1, 376, order, 10
-numpy.searchsorted, 461, 2, 319, side, 90
-numpy.transpose, 466, 1, 250, axes, 60
-numpy.argsort, 472, 1, 358, kind, 29
-numpy.argmax, 476, 1, 317, axis, 115
-numpy.full, 479, 2, 217, dtype, 191
-numpy.errstate, 519, 1, 278, invalid, 298
-numpy.diag, 520, 1, 318, k, 6
-numpy.atleast_1d, 532, 1, 361, , 
-numpy.min, 564, 1, 445, axis, 39
-numpy.isfinite, 614, 1, 508, , 
-numpy.maximum, 653, 2, 610, , 
-numpy.unique, 686, 1, 513, return_inverse, 56
-numpy.random.RandomState, 692, 1, 614, seed, 18
-numpy.isnan, 796, 1, 694, , 
-numpy.random.normal, 801, 3, 422, size, 558
-numpy.isclose, 806, 2, 360, atol, 182
-numpy.any, 883, 1, 649, axis, 52
-numpy.eye, 892, 1, 543, dtype, 121
-numpy.max, 984, 1, 767, axis, 89
-numpy.hstack, 998, 1, 769, , 
-numpy.zeros_like, 1005, 1, 699, dtype, 138
-numpy.asfortranarray, 1049, 1, 995, dtype, 26
-numpy.random.uniform, 1133, 3, 625, size, 375
-numpy.tile, 1140, 2, 1076, reps, 1
-numpy.vstack, 1158, 1, 917, , 
-numpy.random.randn, 1195, 2, 419, , 
-numpy.mean, 1330, 1, 849, axis, 339
-numpy.random.random, 1336, 1, 940, size, 78
-numpy.linalg.norm, 1337, 1, 839, axis, 258
-numpy.array_equal, 1352, 2, 1293, , 
-numpy.abs, 1482, 1, 1241, out, 4
-numpy.all, 1595, 1, 1391, axis, 27
-numpy.log, 1643, 1, 1356, out, 5
-numpy.reshape, 1649, 2, 1571, order, 18
-numpy.cos, 1688, 1, 1446, , 
-numpy.sin, 1831, 1, 1559, out, 5
-numpy.concatenate, 1939, 1, 1005, axis, 608
-numpy.ma.testutils.assert_equal, 1970, 2, 1884, err_msg, 1
-numpy.dtype, 1999, 1, 1560, align, 39
-numpy.random.rand, 2067, 1, 679, , 
-numpy.where, 2080, 1, 1251, y, 1
-numpy.testing.assert_raises, 2089, 4, 634, axis, 140
-numpy.exp, 2294, 1, 1877, dtype, 4
-numpy.empty, 2353, 2, 1141, dtype, 1290
-numpy.random.randint, 2397, 2, 1272, size, 881
-numpy.random.seed, 2559, 1, 1936, seed, 18
-numpy.linspace, 2693, 3, 1736, num, 198
-numpy.allclose, 2743, 2, 1982, atol, 584
-numpy.dot, 2754, 2, 2240, out, 10
-numpy.sum, 2901, 1, 1913, axis, 732
-numpy.ones, 3279, 1, 1716, dtype, 817
-numpy.sqrt, 3358, 1, 2726, out, 15
-numpy.asarray, 4362, 1, 2330, dtype, 969
-numpy.arange, 5331, 1, 1935, dtype, 975
-numpy.testing.assert_array_almost_equal, 5808, 2, 2942, decimal, 695
-numpy.testing.assert_, 6570, 1, 3920, msg, 51
-numpy.testing.assert_array_equal, 6622, 2, 3942, err_msg, 38
-numpy.testing.assert_almost_equal, 7118, 3, 3333, decimal, 3129
-numpy.zeros, 10064, 2, 4421, dtype, 4024
-numpy.testing.assert_allclose, 10464, 2, 3740, rtol, 3274
-numpy.testing.assert_equal, 12617, 2, 7740, err_msg, 195
-numpy.array, 36733, 1, 25018, dtype, 5862
+numpy.testing.assert_warns, 32, 3, 10, beta0, 2
+numpy.extract, 32, 2, 32, , 
+numpy.nanmedian, 32, 1, 31, axis, 1
+numpy.polynomial.hermite.hermgauss, 32, 1, 32, , 
+numpy.mod, 33, 2, 31, out, 1
+numpy.trace, 33, 1, 33, , 
+numpy.inner, 33, 2, 31, , 
+numpy.negative, 33, 2, 28, , 
+numpy.spacing, 34, 1, 34, , 
+numpy.isreal, 34, 1, 34, , 
+numpy.linalg.eigh, 34, 1, 34, , 
+numpy.copyto, 34, 2, 24, where, 3
+numpy.testing.utils.assert_array_equal, 34, 2, 34, , 
+numpy.sinc, 35, 1, 35, , 
+numpy.ndenumerate, 35, 1, 18, , 
+numpy.result_type, 36, 2, 24, , 
+numpy.uint32, 36, 1, 34, , 
+numpy.isposinf, 36, 1, 36, , 
+numpy.log1p, 37, 1, 31, , 
+numpy.expm1, 37, 1, 19, , 
+numpy.asscalar, 37, 1, 32, , 
+numpy.fill_diagonal, 38, 2, 38, , 
+numpy.unravel_index, 38, 2, 29, order, 1
+numpy.corrcoef, 38, 2, 23, rowvar, 1
+numpy.digitize, 39, 2, 24, right, 9
+numpy.float, 39, 1, 27, , 
+numpy.trapz, 39, 2, 32, x, 3
+numpy.conjugate, 40, 1, 40, , 
+numpy.sinh, 41, 1, 29, , 
+numpy.lexsort, 41, 1, 41, , 
+numpy.ndindex, 41, 1, 36, , 
+numpy.savez, 42, 2, 29, None, 26
+numpy.poly1d, 42, 1, 41, r, 1
+numpy.ndim, 42, 1, 42, , 
+numpy.imag, 43, 1, 43, , 
+numpy.angle, 43, 1, 33, deg, 10
+numpy.product, 43, 1, 34, axis, 5
+numpy.testing.assert_array_almost_equal_nulp, 44, 3, 32, nulp, 12
+numpy.ma.testutils.assert_allclose, 44, 2, 28, rtol, 13
+numpy.uint8, 45, 1, 32, , 
+numpy.conj, 45, 1, 44, , 
+numpy.subtract, 45, 2, 23, out, 8
+numpy.cosh, 47, 1, 35, , 
+numpy.indices, 47, 1, 28, dtype, 14
+numpy.add, 48, 2, 34, out, 6
+numpy.convolve, 48, 3, 30, mode, 21
+numpy.putmask, 48, 3, 48, , 
+numpy.nanmean, 48, 1, 39, axis, 8
+numpy.fabs, 49, 1, 49, , 
+numpy.tril, 50, 2, 20, k, 5
+numpy.absolute, 50, 1, 44, , 
+numpy.in1d, 51, 2, 42, assume_unique, 8
+numpy.random.dirichlet, 51, 1, 28, size, 7
+numpy.random.binomial, 51, 3, 38, size, 26
+numpy.histogram2d, 52, 4, 29, bins, 36
+numpy.intersect1d, 52, 2, 45, assume_unique, 7
+numpy.string_, 52, 1, 52, , 
+numpy.linalg.lstsq, 54, 3, 27, rcond, 27
+numpy.flipud, 54, 1, 54, , 
+numpy.ma.masked_array, 54, 2, 42, mask, 16
+numpy.fft.rfft, 55, 1, 30, axis, 10
+numpy.equal, 55, 2, 37, where, 1
+numpy.linalg.det, 56, 1, 55, , 
+numpy.ix_, 57, 2, 44, , 
+numpy.arctanh, 59, 1, 53, , 
+numpy.polyfit, 59, 3, 49, deg, 7
+numpy.fromiter, 59, 2, 32, dtype, 52
+numpy.ma.testutils.assert_equal, 60, 2, 60, , 
+numpy.vectorize, 61, 1, 41, otypes, 16
+numpy.apply_along_axis, 61, 3, 43, None, 1
+numpy.nan_to_num, 62, 1, 62, , 
+numpy.broadcast_arrays, 63, 2, 35, subok, 1
+numpy.distutils.core.setup, 63, 1, 56, None, 41
+numpy.distutils.misc_util.Configuration, 65, 3, 63, parent_name, 3
+numpy.deprecate, 66, 2, 48, message, 64
+numpy.amin, 66, 1, 33, axis, 24
+numpy.row_stack, 67, 1, 67, , 
+numpy.int, 67, 1, 43, , 
+numpy.nanmin, 68, 1, 63, axis, 4
+numpy.setdiff1d, 68, 2, 51, assume_unique, 5
+numpy.moveaxis, 68, 3, 38, destination, 1
+numpy.tensordot, 71, 3, 51, axes, 43
+numpy.ma.masked_invalid, 72, 1, 46, copy, 26
+numpy.hypot, 73, 2, 49, , 
+numpy.add.at, 73, 3, 73, , 
+numpy.fft.ifft, 74, 4, 24, axis, 35
+numpy.matmul, 74, 2, 70, out, 4
+numpy.place, 75, 3, 75, , 
+numpy.nditer, 77, 3, 22, flags, 47
+numpy.fft.fft, 80, 1, 25, axis, 34
+numpy.random.exponential, 80, 2, 51, size, 51
+numpy.polyval, 81, 2, 81, , 
+numpy.linalg.eig, 83, 1, 77, , 
+numpy.log2, 84, 1, 74, , 
+numpy.bincount, 84, 2, 34, minlength, 34
+numpy.nanmax, 85, 1, 67, axis, 17
+numpy.average, 86, 2, 42, weights, 40
+numpy.count_nonzero, 87, 1, 79, axis, 2
+numpy.var, 89, 2, 42, axis, 39
+numpy.square, 90, 1, 60, out, 2
+numpy.resize, 91, 2, 55, , 
+numpy.matrix, 91, 1, 80, dtype, 10
+numpy.dstack, 92, 1, 86, , 
+numpy.broadcast_to, 92, 2, 68, shape, 1
+numpy.linalg.svd, 93, 1, 44, full_matrices, 43
+numpy.full_like, 93, 2, 63, dtype, 30
+numpy.tan, 94, 1, 82, , 
+numpy.int8, 95, 1, 88, , 
+numpy.logical_or, 97, 2, 83, , 
+numpy.insert, 98, 4, 54, axis, 18
+numpy.rad2deg, 99, 1, 83, , 
+numpy.linalg.solve, 101, 2, 98, , 
+numpy.random.random_sample, 102, 1, 42, size, 11
+numpy.kron, 103, 2, 103, , 
+numpy.tanh, 106, 1, 60, , 
+numpy.triu, 106, 1, 61, k, 2
+numpy.set_printoptions, 107, 1, 41, precision, 47
+numpy.random.multivariate_normal, 107, 3, 106, size, 77
+numpy.iscomplexobj, 110, 1, 100, , 
+numpy.arctan, 110, 1, 102, , 
+numpy.pad, 111, 4, 45, constant_values, 64
+numpy.rollaxis, 112, 3, 47, axis, 5
+numpy.arcsin, 114, 1, 108, , 
+numpy.isinf, 117, 1, 109, , 
+numpy.testing.assert_array_less, 119, 2, 117, , 
+numpy.real, 119, 1, 115, , 
+numpy.split, 120, 2, 45, axis, 67
+numpy.degrees, 122, 1, 122, , 
+numpy.iinfo, 123, 1, 108, , 
+numpy.around, 126, 1, 89, decimals, 18
+numpy.ma.testutils.assert_almost_equal, 126, 3, 78, decimal, 39
+numpy.logical_not, 127, 1, 121, , 
+numpy.amax, 129, 1, 71, axis, 42
+numpy.fromstring, 136, 2, 72, dtype, 108
+numpy.roll, 139, 3, 70, axis, 69
+numpy.ndarray, 139, 2, 47, dtype, 89
+numpy.ravel, 144, 1, 136, order, 1
+numpy.deg2rad, 147, 1, 145, , 
+numpy.ceil, 148, 1, 118, , 
+numpy.arccos, 148, 1, 142, , 
+numpy.take, 149, 3, 85, axis, 74
+numpy.einsum, 159, 3, 138, optimize, 2
+numpy.logspace, 162, 3, 140, num, 12
+numpy.histogram, 162, 2, 70, bins, 118
+numpy.int64, 162, 1, 120, , 
+numpy.divide, 167, 2, 106, out, 22
+numpy.seterr, 168, 1, 160, all, 67
+numpy.outer, 169, 2, 169, , 
+numpy.interp, 173, 3, 139, right, 7
+numpy.loadtxt, 173, 1, 70, delimiter, 39
+numpy.percentile, 174, 2, 140, axis, 22
+numpy.size, 175, 1, 80, axis, 26
+numpy.random.permutation, 177, 1, 128, , 
+numpy.save, 179, 2, 170, allow_pickle, 3
+numpy.stack, 182, 1, 88, axis, 83
+numpy.empty_like, 183, 1, 147, dtype, 30
+numpy.radians, 183, 1, 183, , 
+numpy.argmin, 187, 1, 165, axis, 9
+numpy.ma.array, 189, 2, 114, mask, 132
+numpy.int32, 191, 1, 137, , 
+numpy.datetime64, 195, 1, 169, dtype, 4
+numpy.genfromtxt, 198, 2, 85, delimiter, 92
+numpy.identity, 200, 1, 181, dtype, 8
+numpy.float64, 202, 1, 200, , 
+numpy.savetxt, 202, 4, 57, delimiter, 100
+numpy.delete, 206, 3, 87, axis, 75
+numpy.ones_like, 207, 1, 167, dtype, 26
+numpy.testing.assert_approx_equal, 209, 2, 114, significant, 70
+numpy.swapaxes, 212, 3, 132, axis2, 10
+numpy.linalg.inv, 218, 1, 216, , 
+numpy.logical_and, 218, 2, 200, , 
+numpy.random.shuffle, 219, 1, 129, , 
+numpy.fromfile, 222, 3, 141, dtype, 166
+numpy.floor, 223, 1, 215, , 
+numpy.ascontiguousarray, 223, 2, 131, dtype, 103
+numpy.timedelta64, 223, 2, 199, , 
+numpy.testing.assert_raises, 232, 4, 74, axes, 21
+numpy.diff, 236, 1, 195, axis, 40
+numpy.issubdtype, 237, 2, 232, , 
+numpy.finfo, 237, 1, 215, dtype, 1
+numpy.expand_dims, 239, 2, 196, axis, 135
+numpy.power, 245, 2, 193, dtype, 2
+numpy.squeeze, 251, 1, 171, axis, 57
+numpy.minimum, 252, 2, 154, , 
+numpy.multiply, 254, 2, 134, out, 17
+numpy.log10, 261, 1, 255, , 
+numpy.sign, 264, 1, 240, , 
+numpy.cumsum, 264, 1, 178, axis, 19
+numpy.meshgrid, 270, 2, 192, indexing, 42
+numpy.clip, 274, 3, 214, out, 11
+numpy.cross, 280, 2, 261, axis, 9
+numpy.ctypeslib.ndpointer, 284, 2, 173, flags, 281
+numpy.median, 290, 1, 249, axis, 39
+numpy.nonzero, 295, 1, 283, , 
+numpy.arctan2, 299, 2, 290, where, 1
+numpy.round, 300, 2, 141, decimals, 19
+numpy.shape, 305, 1, 227, , 
+numpy.float32, 312, 1, 266, , 
+numpy.random.choice, 318, 3, 112, size, 150
+numpy.isscalar, 320, 1, 314, , 
+numpy.append, 325, 2, 200, axis, 58
+numpy.atleast_2d, 327, 1, 326, , 
+numpy.errstate, 327, 1, 277, invalid, 175
+numpy.frombuffer, 329, 2, 238, dtype, 271
+numpy.std, 335, 1, 139, axis, 72
+numpy.column_stack, 338, 1, 332, , 
+numpy.sort, 343, 1, 269, axis, 30
+numpy.asanyarray, 353, 2, 182, dtype, 187
+numpy.atleast_1d, 378, 1, 376, , 
+numpy.repeat, 382, 2, 205, axis, 135
+numpy.diag, 388, 1, 298, k, 4
+numpy.load, 406, 1, 373, mmap_mode, 8
+numpy.copy, 411, 1, 283, order, 1
+numpy.argsort, 413, 1, 339, kind, 23
+numpy.searchsorted, 415, 2, 330, side, 71
+numpy.transpose, 423, 1, 187, axes, 60
+numpy.prod, 432, 1, 278, axis, 30
+numpy.argmax, 455, 1, 266, axis, 110
+numpy.full, 456, 2, 215, dtype, 185
+numpy.min, 501, 1, 392, axis, 30
+numpy.isfinite, 525, 1, 513, , 
+numpy.maximum, 620, 2, 309, , 
+numpy.random.RandomState, 624, 1, 602, seed, 16
+numpy.unique, 643, 1, 534, return_inverse, 45
+numpy.eye, 644, 1, 523, dtype, 75
+numpy.any, 722, 1, 644, axis, 46
+numpy.isnan, 738, 1, 686, , 
+numpy.random.normal, 757, 3, 228, size, 523
+numpy.isclose, 795, 2, 435, atol, 180
+numpy.hstack, 853, 1, 808, , 
+numpy.max, 885, 1, 658, axis, 80
+numpy.zeros_like, 897, 1, 672, dtype, 126
+numpy.random.randn, 944, 2, 412, , 
+numpy.vstack, 958, 1, 876, , 
+numpy.random.random, 1011, 1, 851, size, 72
+numpy.asfortranarray, 1020, 1, 995, dtype, 25
+numpy.tile, 1087, 2, 1033, reps, 1
+numpy.random.uniform, 1101, 3, 312, size, 361
+numpy.linalg.norm, 1174, 1, 834, axis, 253
+numpy.abs, 1277, 1, 1180, dtype, 2
+numpy.mean, 1277, 1, 703, axis, 316
+numpy.array_equal, 1320, 2, 1212, , 
+numpy.log, 1393, 1, 1232, out, 4
+numpy.all, 1445, 1, 1327, axis, 20
+numpy.cos, 1462, 1, 1429, , 
+numpy.dtype, 1567, 1, 1100, align, 6
+numpy.sin, 1570, 1, 1533, out, 3
+numpy.reshape, 1612, 2, 1378, order, 18
+numpy.random.rand, 1678, 1, 478, , 
+numpy.concatenate, 1711, 1, 875, axis, 560
+numpy.empty, 1850, 2, 1010, dtype, 1017
+numpy.testing.assert_, 1905, 1, 1643, msg, 34
+numpy.where, 1912, 1, 1044, x, 1
+numpy.random.seed, 1918, 1, 1396, seed, 17
+numpy.exp, 1931, 1, 1748, out, 4
+numpy.linspace, 1990, 3, 1712, num, 159
+numpy.dot, 2209, 2, 2020, out, 5
+numpy.random.randint, 2331, 2, 810, size, 854
+numpy.ones, 2487, 1, 1364, dtype, 609
+numpy.sum, 2672, 1, 1340, axis, 607
+numpy.allclose, 2721, 2, 2009, atol, 577
+numpy.sqrt, 2861, 1, 2558, out, 10
+numpy.testing.assert_array_almost_equal, 3280, 2, 2634, decimal, 420
+numpy.asarray, 3285, 1, 2273, dtype, 764
+numpy.testing.assert_array_equal, 3844, 2, 3714, err_msg, 10
+numpy.arange, 3982, 1, 1743, dtype, 700
+numpy.testing.assert_equal, 4252, 2, 4135, err_msg, 43
+numpy.testing.assert_almost_equal, 5409, 3, 3308, decimal, 2929
+numpy.testing.assert_allclose, 7353, 2, 3467, rtol, 2308
+numpy.zeros, 8652, 2, 3978, dtype, 3477
+numpy.array, 30715, 1, 24521, dtype, 4418

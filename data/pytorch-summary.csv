@@ -1,7 +1,5 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 torch.normal, 1, 2, 1, , 
-torch.full, 1, 3, 1, device, 1
-torch.nn.LeakyReLU, 1, 2, 1, inplace, 1
 torch.argsort, 1, 3, 1, descending, 1
 torch.multiprocessing.current_process, 1, 0, 1, , 
 torch.__version__.split, 1, 1, 1, , 
@@ -11,7 +9,7 @@ torch.jit.trace, 1, 2, 1, ,
 torch.nn.init.xavier_normal, 1, 1, 1, , 
 torch.tril, 1, 2, 1, diagonal, 1
 torch.baddbmm, 1, 3, 1, , 
-torch.nn.functional.upsample, 1, 3, 1, mode, 1
+torch.nn.functional.upsample, 1, 3, 1, scale_factor, 1
 torch.equal, 1, 2, 1, , 
 torch.cuda.comm.reduce_add_coalesced, 1, 2, 1, , 
 torch.cuda.comm.gather, 1, 3, 1, , 
@@ -46,7 +44,7 @@ torch.nn.functional.poisson_nll_loss, 1, 2, 1, ,
 torch.nn.functional.hinge_embedding_loss, 1, 2, 1, , 
 torch.nn.functional.multilabel_soft_margin_loss, 1, 2, 1, , 
 torch.nn.functional.multi_margin_loss, 1, 2, 1, , 
-torch.optim.Rprop, 1, 4, 1, lr, 1
+torch.optim.Rprop, 1, 4, 1, step_sizes, 1
 torch.nn.Conv1d.__init__, 1, 3, 1, None, 1
 torch.nn.Conv2d.__init__, 1, 3, 1, None, 1
 torch.nn.Linear.__init__, 1, 3, 1, None, 1
@@ -60,12 +58,12 @@ torch.nn.LeakyReLU.__init__, 1, 3, 1, None, 1
 torch.nn.Softmax.__init__, 1, 3, 1, None, 1
 torch.nn.Module.__call__, 1, 2, 1, , 
 torch.sparse.FloatTensor, 1, 3, 1, , 
-torch.nn.init.uniform, 1, 3, 1, a, 1
+torch.nn.init.uniform, 1, 3, 1, b, 1
 torch.nn.init.orthogonal, 1, 1, 1, , 
 torch.nn.functional.max_pool1d, 1, 2, 1, , 
 torch.nn.utils.clip_grad_value_, 1, 2, 1, , 
 torch.distributions.normal.Normal, 2, 2, 2, loc, 1
-torch.multiprocessing.Pool, 2, 1, 2, , 
+torch.multiprocessing.Pool, 2, 1, 1, , 
 torch.nn.functional.conv1d, 2, 2, 2, , 
 torch.abs, 2, 1, 2, , 
 torch.nn.Bilinear, 2, 3, 2, , 
@@ -92,29 +90,31 @@ torch.nn.Module.named_parameters, 2, 1, 2, ,
 torch.nn.Softplus, 2, 0, 2, , 
 torch.nn.functional.threshold, 2, 3, 2, , 
 torch.nn.SELU, 2, 1, 2, inplace, 2
-torch.topk, 3, 3, 2, k, 2
+torch.nn.BCELoss, 3, 0, 3, , 
+torch.topk, 3, 3, 3, k, 2
 torch.nn.functional.mse_loss, 3, 2, 2, , 
-torch.optim.lr_scheduler.StepLR, 3, 3, 2, step_size, 3
+torch.optim.lr_scheduler.StepLR, 3, 3, 2, gamma, 3
 torch.unbind, 3, 2, 2, , 
 torch.div, 3, 2, 3, , 
 torch.nn.functional.grid_sample, 3, 2, 3, , 
 torch.nn.GroupNorm, 3, 3, 3, eps, 3
+torch.nn.Dropout2d, 3, 0, 2, , 
 torch.utils.data.sampler.SubsetRandomSampler, 3, 1, 3, , 
 torch.nn.functional.smooth_l1_loss, 3, 2, 2, size_average, 1
 torch.randperm, 3, 1, 3, , 
 torch.optim.lr_scheduler.ExponentialLR, 3, 2, 3, gamma, 3
-torch.min, 4, 2, 2, dim, 2
+torch.min, 4, 2, 3, dim, 2
 torch.autograd.grad, 4, 2, 2, create_graph, 1
-torch.nn.Dropout2d, 4, 0, 2, , 
-torch.ger, 4, 2, 3, , 
-torch.multiprocessing.get_context, 4, 1, 4, , 
-torch.gather, 4, 3, 2, dim, 3
+torch.ger, 4, 2, 4, , 
+torch.multiprocessing.get_context, 4, 1, 2, , 
+torch.gather, 4, 3, 3, index, 3
 torch.autograd.backward, 4, 2, 2, retain_graph, 1
+torch.nn.parallel.data_parallel, 4, 2, 2, , 
 torch.nn.functional.binary_cross_entropy, 4, 2, 3, reduce, 1
 torch.cuda.LongTensor, 4, 1, 4, , 
 torch.ByteTensor, 4, 1, 4, , 
 torch.nn.parallel.data_parallel.data_parallel, 4, 3, 3, device_ids, 2
-torch.multinomial, 4, 2, 3, num_samples, 1
+torch.multinomial, 4, 2, 3, replacement, 1
 torch.nn.LogSoftmax, 4, 1, 4, dim, 4
 torch.cuda.synchronize, 4, 0, 4, , 
 torch.ones_like, 4, 1, 4, , 
@@ -132,47 +132,45 @@ torch.optim.lr_scheduler.LambdaLR, 4, 2, 4, lr_lambda, 4
 torch.nn.MaxPool1d, 4, 1, 4, kernel_size, 4
 torch.std, 4, 1, 4, , 
 torch.range, 4, 2, 4, , 
-torch.set_default_tensor_type, 5, 1, 4, , 
+torch.set_default_tensor_type, 5, 1, 5, , 
 torch.optim.Adamax, 5, 3, 3, weight_decay, 4
-torch.nn.LSTMCell, 5, 2, 4, , 
+torch.nn.LSTMCell, 5, 2, 5, , 
 torch.nn.Upsample, 5, 1, 3, scale_factor, 5
 torch.utils.ffi.create_extension, 5, 7, 4, sources, 5
 torch.nn.functional.max_pool2d, 5, 3, 5, stride, 2
 torch.nn.init.orthogonal_, 5, 1, 5, , 
 torch.nn.Sigmoid, 5, 0, 5, , 
+torch.optim.RMSprop, 5, 1, 3, lr, 2
 torch.index_select, 5, 4, 4, out, 4
-torch.nn.functional.linear, 6, 3, 3, , 
-torch.nn.BCELoss, 6, 0, 5, , 
+torch.nn.functional.linear, 6, 3, 5, , 
 torch.dot, 6, 2, 6, , 
-torch.nn.BCEWithLogitsLoss, 6, 0, 5, , 
-torch.nn.parallel.data_parallel, 6, 3, 3, , 
-torch.norm, 6, 3, 2, dim, 4
+torch.nn.BCEWithLogitsLoss, 6, 0, 6, , 
+torch.norm, 6, 4, 2, dim, 4
 torch.cuda.manual_seed_all, 6, 1, 5, , 
 torch.add, 6, 2, 5, , 
 torch.utils.ffi._wrap_function, 6, 2, 5, , 
 torch.argmax, 6, 2, 6, dim, 1
 torch.IntTensor, 6, 1, 6, , 
-torch.nn.utils.clip_grad_norm, 7, 2, 4, max_norm, 2
-torch.distributions.Normal, 7, 2, 4, , 
+torch.nn.utils.clip_grad_norm, 7, 2, 6, max_norm, 2
+torch.distributions.Normal, 7, 2, 7, , 
 torch.split, 7, 3, 7, dim, 2
-torch.nn.utils.rnn.PackedSequence, 7, 2, 6, , 
-torch.chunk, 7, 3, 5, dim, 7
+torch.nn.utils.rnn.PackedSequence, 7, 2, 7, , 
+torch.chunk, 7, 3, 6, dim, 7
 torch.eq, 7, 2, 7, , 
 torch.cuda.current_device, 7, 0, 7, , 
 torch.nn.functional.pad, 7, 3, 5, value, 5
-torch.sigmoid, 8, 1, 6, , 
-torch.optim.RMSprop, 8, 2, 3, lr, 5
-torch.optim.lr_scheduler.ReduceLROnPlateau, 8, 6, 6, patience, 8
+torch.sigmoid, 8, 1, 8, , 
+torch.optim.lr_scheduler.ReduceLROnPlateau, 8, 6, 3, patience, 8
 torch.utils.data.dataset.TensorDataset, 8, 2, 7, , 
 torch.distributions.Uniform, 8, 2, 8, , 
 torch.linspace, 9, 3, 9, , 
 torch.distributions.Categorical, 9, 1, 7, probs, 1
+torch.nn.functional.nll_loss, 9, 2, 4, reduce, 4
 torch.nn.functional.binary_cross_entropy_with_logits, 9, 4, 4, size_average, 5
 torch.nn.ConvTranspose2d, 9, 5, 7, padding, 5
 torch.optim.Adadelta, 9, 3, 5, lr, 5
 torch.ones, 9, 1, 3, device, 4
 torch.atan, 9, 1, 9, , 
-torch.nn.functional.nll_loss, 10, 2, 3, reduce, 4
 torch.is_tensor, 10, 1, 10, , 
 torch.nn.BatchNorm3d, 10, 1, 10, , 
 torch.unsqueeze, 10, 2, 10, , 
@@ -180,79 +178,79 @@ torch.nn.DataParallel, 11, 1, 7, device_ids, 2
 torch.nn.Conv3d, 11, 3, 11, kernel_size, 11
 torch.nn.BatchNorm1d, 11, 1, 11, num_features, 1
 torch.nn.functional.leaky_relu, 12, 1, 12, , 
-torch.sqrt, 12, 1, 11, , 
-torch.nn.Tanh, 12, 0, 10, , 
+torch.sqrt, 12, 1, 12, , 
+torch.nn.Tanh, 12, 0, 12, , 
 torch.cos, 12, 1, 12, , 
 torch.nn.NLLLoss, 12, 0, 11, size_average, 1
 torch.nn.MaxPool2d, 12, 3, 4, stride, 8
 torch.nn.GRU, 12, 5, 5, dropout, 8
-torch.cuda.set_device, 13, 1, 9, , 
-torch.nn.Softmax, 13, 0, 5, dim, 8
+torch.cuda.set_device, 13, 1, 13, , 
+torch.nn.Softmax, 13, 1, 8, dim, 8
 torch.rand, 13, 3, 4, requires_grad, 1
-torch.Size, 14, 1, 13, , 
-torch.bmm, 15, 2, 12, , 
-torch.nn.functional.tanh, 15, 1, 13, , 
-torch.clamp, 16, 2, 8, min, 7
-torch.sort, 16, 3, 5, descending, 2
-torch.tanh, 16, 1, 12, , 
-torch.nn.functional.log_softmax, 16, 2, 7, dim, 11
-torch.nn.functional.dropout, 16, 3, 11, training, 16
+torch.Size, 14, 1, 14, , 
+torch.bmm, 15, 2, 15, , 
+torch.nn.functional.tanh, 15, 1, 14, , 
+torch.clamp, 16, 2, 11, min, 7
+torch.sort, 16, 3, 7, descending, 2
+torch.tanh, 16, 1, 16, , 
+torch.nn.functional.log_softmax, 16, 2, 12, dim, 11
+torch.nn.functional.dropout, 16, 3, 10, training, 16
 torch.cuda.device_count, 16, 0, 16, , 
 torch.sin, 17, 1, 17, , 
-torch.nn.MSELoss, 18, 0, 9, size_average, 2
-torch.nn.utils.rnn.pack_padded_sequence, 18, 3, 10, batch_first, 11
-torch.nn.utils.clip_grad_norm_, 18, 2, 14, , 
-torch.nn.init.normal_, 19, 2, 15, std, 16
-torch.randn, 20, 1, 10, device, 2
-torch.cuda.manual_seed, 20, 1, 17, , 
+torch.nn.init.normal_, 17, 2, 15, std, 16
+torch.randn, 18, 1, 17, , 
+torch.nn.MSELoss, 18, 0, 15, size_average, 2
+torch.nn.utils.rnn.pack_padded_sequence, 18, 3, 11, batch_first, 11
+torch.nn.utils.clip_grad_norm_, 18, 2, 16, , 
+torch.cuda.manual_seed, 20, 1, 20, , 
 torch.utils.data.dataloader.DataLoader, 20, 5, 10, batch_size, 18
-torch.zeros_like, 21, 1, 18, , 
+torch.zeros_like, 21, 1, 21, , 
 torch.nn.Module.__init__, 21, 1, 21, , 
-torch.nn.functional.cross_entropy, 22, 3, 10, reduce, 7
+torch.nn.functional.cross_entropy, 22, 3, 11, reduce, 7
 torch.nn.functional.sigmoid, 23, 1, 22, , 
 torch.tensor, 24, 1, 12, device, 12
 torch.nn.parameter.Parameter, 24, 1, 15, requires_grad, 6
-torch.log, 26, 1, 20, , 
-torch.nn.init.constant_, 28, 2, 26, , 
-torch.nn.utils.rnn.pad_packed_sequence, 28, 2, 9, batch_first, 21
-torch.mm, 28, 2, 26, , 
-torch.mul, 29, 2, 28, , 
-torch.nn.init.uniform_, 29, 3, 23, tensor, 2
-torch.nn.Conv1d, 29, 4, 11, padding, 13
-torch.exp, 30, 1, 26, , 
+torch.log, 26, 1, 24, , 
+torch.nn.init.constant_, 27, 2, 27, , 
+torch.nn.utils.rnn.pad_packed_sequence, 28, 2, 10, batch_first, 21
+torch.mm, 28, 2, 16, , 
+torch.mul, 29, 2, 29, , 
+torch.nn.init.uniform_, 29, 3, 19, tensor, 2
+torch.nn.Conv1d, 29, 4, 12, padding, 13
+torch.exp, 30, 1, 30, , 
 torch.nn.ReLU, 32, 1, 23, inplace, 23
 torch.nn.CrossEntropyLoss, 34, 0, 20, reduce, 10
-torch.nn.LSTM, 35, 6, 10, bidirectional, 30
+torch.nn.LSTM, 35, 6, 11, bidirectional, 30
 torch.max, 35, 2, 30, dim, 7
 torch.nn.utils.weight_norm, 35, 1, 23, , 
 torch.optim.SGD, 38, 2, 14, lr, 31
-torch.nn.init.xavier_normal_, 41, 1, 21, , 
-torch.nn.Dropout, 41, 1, 37, p, 12
-torch.Tensor, 43, 1, 20, , 
+torch.nn.init.xavier_normal_, 41, 1, 34, , 
+torch.nn.Dropout, 41, 1, 41, p, 12
+torch.Tensor, 43, 1, 30, , 
 torch.nn.BatchNorm2d, 44, 1, 44, num_features, 2
-torch.no_grad, 46, 0, 31, , 
-torch.matmul, 49, 2, 35, , 
-torch.manual_seed, 50, 1, 32, , 
-torch.nn.ModuleList, 55, 1, 30, , 
-torch.from_numpy, 57, 1, 53, , 
-torch.mean, 58, 1, 29, dim, 2
-torch.device, 63, 1, 34, , 
-torch.stack, 73, 2, 34, dim, 49
-torch.nn.functional.softmax, 76, 2, 41, dim, 42
-torch.load, 89, 1, 52, map_location, 25
-torch.nn.Embedding, 92, 2, 43, padding_idx, 33
-torch.zeros, 95, 1, 47, device, 12
-torch.nn.functional.relu, 96, 1, 66, inplace, 11
-torch.FloatTensor, 96, 1, 73, device, 1
-torch.nn.Conv2d, 97, 5, 32, padding, 54
-torch.sum, 105, 1, 75, dim, 19
-torch.optim.Adam, 113, 2, 39, lr, 84
-torch.cuda.is_available, 114, 0, 77, , 
-torch.LongTensor, 118, 1, 94, , 
+torch.no_grad, 45, 0, 39, , 
+torch.manual_seed, 46, 1, 45, , 
+torch.matmul, 49, 2, 44, , 
+torch.mean, 52, 1, 30, keepdim, 2
+torch.nn.ModuleList, 55, 1, 33, , 
+torch.from_numpy, 56, 1, 56, , 
+torch.device, 61, 1, 56, , 
+torch.stack, 73, 2, 51, dim, 49
+torch.nn.functional.softmax, 76, 2, 51, dim, 42
+torch.load, 87, 1, 55, map_location, 25
+torch.nn.Embedding, 92, 2, 47, padding_idx, 33
+torch.nn.functional.relu, 96, 1, 84, inplace, 11
+torch.FloatTensor, 96, 1, 90, device, 1
+torch.nn.Conv2d, 96, 5, 32, padding, 54
+torch.zeros, 97, 1, 55, device, 12
+torch.sum, 105, 1, 76, dim, 19
+torch.cuda.is_available, 107, 0, 100, , 
+torch.optim.Adam, 109, 2, 66, lr, 80
+torch.LongTensor, 118, 1, 115, , 
 torch.nn.Parameter, 127, 1, 88, requires_grad, 5
-torch.utils.data.DataLoader, 136, 4, 37, batch_size, 124
-torch.nn.Sequential, 143, 2, 37, , 
-torch.save, 147, 2, 104, pickle_module, 5
-torch.cat, 284, 2, 206, dim, 82
-torch.nn.Linear, 310, 2, 178, bias, 60
-torch.autograd.Variable, 384, 1, 235, requires_grad, 70
+torch.utils.data.DataLoader, 129, 3, 39, batch_size, 117
+torch.nn.Sequential, 131, 2, 38, , 
+torch.save, 139, 2, 130, pickle_module, 5
+torch.cat, 284, 2, 236, dim, 82
+torch.nn.Linear, 307, 2, 234, bias, 60
+torch.autograd.Variable, 372, 1, 255, requires_grad, 66

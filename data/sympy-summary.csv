@@ -97,7 +97,7 @@ sympy.pretty, 2, 2, 1, use_unicode, 1
 sympy.simplify.simplify.trigsimp, 2, 1, 2, , 
 sympy.solvers.solve, 2, 3, 1, , 
 sympy.tanh, 2, 1, 2, , 
-sympy.printing.preview, 2, 5, 2, output, 2
+sympy.printing.preview, 2, 5, 2, filename, 2
 sympy.matrices.eye, 2, 1, 2, , 
 sympy.core.Tuple, 2, 1, 2, , 
 sympy.Lambda, 2, 2, 2, , 
@@ -113,7 +113,7 @@ sympy.Gt, 2, 2, 1, ,
 sympy.Lt, 2, 2, 1, , 
 sympy.default_sort_key, 2, 1, 1, , 
 sympy.ntheory.generate.nextprime, 2, 1, 1, , 
-sympy.solvers.diophantine.base_solution_linear, 2, 4, 1, c, 2
+sympy.solvers.diophantine.base_solution_linear, 2, 4, 1, b, 2
 sympy.dsolve, 2, 3, 2, simplify, 2
 sympy.sstr, 2, 1, 2, , 
 sympy.Symbol.__xnew__, 2, 2, 2, , 
@@ -203,14 +203,14 @@ sympy.logic.boolalg.And, 7, 1, 6, ,
 sympy.ln, 7, 1, 7, , 
 sympy.Eq.__new__, 7, 3, 7, evaluate, 6
 sympy.limit, 7, 3, 6, None, 1
+sympy.srepr, 8, 1, 8, , 
 sympy.gcd, 8, 2, 3, , 
 sympy.finite_diff_weights, 8, 3, 8, , 
-sympy.printing.latex, 8, 1, 7, mul_symbol, 1
+sympy.printing.latex, 8, 1, 7, symbol_names, 1
 sympy.functions.erf, 8, 1, 8, , 
 sympy.chebyshevt, 8, 2, 8, , 
 sympy.Symbol.__new__, 9, 2, 6, None, 3
 sympy.Dummy, 9, 1, 8, , 
-sympy.srepr, 9, 1, 9, , 
 sympy.ccode, 9, 2, 5, , 
 sympy.tan, 9, 1, 9, , 
 sympy.IndexedBase, 9, 1, 9, , 
@@ -219,12 +219,12 @@ sympy.atan2, 9, 2, 9, ,
 sympy.combinatorics.Permutation, 9, 2, 4, size, 6
 sympy.nsolve, 10, 4, 5, module, 5
 sympy.acos, 10, 1, 10, , 
-sympy.Interval, 10, 3, 8, left_open, 5
+sympy.Interval, 10, 3, 8, right_open, 5
 sympy.ShapeError, 10, 1, 10, , 
 sympy.Derivative, 11, 2, 9, , 
 sympy.init_printing, 11, 0, 5, use_latex, 4
 sympy.physics.mechanics.inertia_of_point_mass, 11, 3, 11, , 
-sympy.physics.mechanics.KanesMethod, 11, 4, 11, q_ind, 10
+sympy.physics.mechanics.KanesMethod, 11, 4, 11, u_ind, 10
 sympy.cse, 12, 2, 11, symbols, 1
 sympy.Wild, 12, 3, 9, exclude, 11
 sympy.numer, 12, 1, 6, , 
@@ -253,7 +253,7 @@ sympy.Poly, 25, 2, 22, ,
 sympy.physics.mechanics.cross, 25, 2, 25, , 
 sympy.utilities.lambdify.implemented_function, 28, 2, 28, , 
 sympy.physics.mechanics.Particle, 28, 3, 28, , 
-sympy.trigsimp, 32, 1, 31, recursive, 1
+sympy.trigsimp, 32, 1, 31, deep, 1
 sympy.log, 35, 1, 33, , 
 sympy.utilities.lambdify.lambdify, 36, 2, 26, modules, 4
 sympy.Function, 38, 1, 37, , 
@@ -268,8 +268,8 @@ sympy.physics.quantum.dagger.Dagger, 52, 1, 52, ,
 sympy.physics.mechanics.inertia, 55, 4, 39, , 
 sympy.expand, 71, 1, 69, , 
 sympy.integrate, 77, 2, 48, , 
-sympy.simplify, 85, 1, 83, None, 1
-sympy.diff, 94, 2, 78, , 
+sympy.simplify, 90, 1, 88, None, 1
+sympy.diff, 93, 2, 77, , 
 sympy.zeros, 96, 2, 79, , 
 sympy.physics.mechanics.Point, 100, 1, 100, , 
 sympy.physics.mechanics.ReferenceFrame, 106, 1, 106, , 
@@ -281,9 +281,9 @@ sympy.sqrt, 146, 1, 145, ,
 sympy.physics.mechanics.dynamicsymbols, 238, 1, 182, level, 48
 sympy.lambdify, 241, 3, 223, modules, 71
 sympy.Rational, 256, 2, 201, , 
-sympy.sympify, 282, 1, 256, locals, 7
+sympy.sympify, 286, 1, 260, locals, 7
 sympy.cos, 384, 1, 384, , 
 sympy.sin, 480, 1, 480, , 
 sympy.Matrix, 551, 1, 534, , 
-sympy.Symbol, 562, 1, 452, positive, 44
+sympy.Symbol, 563, 1, 453, positive, 44
 sympy.symbols, 605, 1, 445, real, 87

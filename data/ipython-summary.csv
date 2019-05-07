@@ -6,7 +6,7 @@ IPython.paths.locate_profile, 1, 1, 1, ,
 IPython.html.nbextensions.install_nbextension, 1, 2, 1, verbose, 1
 IPython.nbconvert.filters.highlight._pygment_highlight, 1, 3, 1, , 
 IPython.config.Config, 1, 1, 1, , 
-IPython.nbconvert.exporters.HTMLExporter, 1, 4, 1, template_file, 1
+IPython.nbconvert.exporters.HTMLExporter, 1, 4, 1, None, 1
 IPython.nbformat.current.reads_json, 1, 1, 1, , 
 IPython.nbformat.reads, 1, 2, 1, as_version, 1
 IPython.parallel.Client, 1, 0, 1, , 
@@ -29,9 +29,9 @@ IPython.core.error.UsageError, 2, 1, 1, ,
 IPython.zmq.blockingkernelmanager.BlockingKernelManager.class_trait_names, 2, 0, 1, , 
 IPython.nbformat.current.read, 2, 2, 2, , 
 IPython.start_ipython, 3, 2, 3, config, 2
-IPython.embed, 3, 3, 1, header, 1
+IPython.embed, 3, 3, 1, config, 1
 IPython.core.display.HTML, 3, 1, 3, , 
-IPython.display.Image, 4, 2, 2, embed, 2
+IPython.display.Image, 4, 2, 2, url, 2
 IPython.display, 4, 1, 4, , 
 IPython.lib.kernel.find_connection_file, 4, 2, 1, , 
 IPython.utils.py3compat.unicode_to_str, 4, 1, 4, , 
