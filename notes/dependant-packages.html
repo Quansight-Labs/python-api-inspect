@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-05-24 Fri 16:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christopher Ostrouchov" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgdf3734c">1. python package dependants</a>
+<ul>
+<li><a href="#org7d0370a">1.1. Download and initialize the data</a></li>
+<li><a href="#orgdd8db79">1.2. Discovery</a></li>
+<li><a href="#orgf2f25b6">1.3. Recreate libraries.io data/api</a></li>
+<li><a href="#orga39da4c">1.4. Generate Initial Dependants Files</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdf3734c" class="outline-2">
+<h2 id="orgdf3734c"><span class="section-number-2">1</span> python package dependants</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This work would not be possible without <a href="https://libraries.io">libraries.io</a>
+</p>
+</div>
+
+<div id="outline-container-org7d0370a" class="outline-3">
+<h3 id="org7d0370a"><span class="section-number-3">1.1</span> Download and initialize the data</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+First we collect the <a href="https://libraries.io/data">libraries.io data</a> (around 20 GB). Good thing I
+have <code>1 Gbit/s</code> internet now! We extract the archive and use sqlite to
+create a database from the csv files <a href="https://www.sqlite.org/cli.html">documented here</a>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">wget https://zenodo.org/record/2536573/files/Libraries.io-open-data-1.4.0.tar.gz
+tar -xf Libraries.io-open-data-1.4.0.tar.gz
+</pre>
+</div>
+
+<p>
+Sqlite is unique in that columns do not have types only values
+do. Here each value is either a string or <code>NULL</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite">.mode csv
+.delimiter <span style="color: #8abeb7;">','</span>
+.import Libraries.io-<span style="color: #b5bd68;">open</span>-<span style="color: #b5bd68;">data</span>-1.4.0/dependencies.csv dependencies
+.import Libraries.io-<span style="color: #b5bd68;">open</span>-<span style="color: #b5bd68;">data</span>-1.4.0/repository_dependencies.csv repository_dependencies
+.import Libraries.io-<span style="color: #b5bd68;">open</span>-<span style="color: #b5bd68;">data</span>-1.4.0/projects.csv projects
+.import Libraries.io-<span style="color: #b5bd68;">open</span>-<span style="color: #b5bd68;">data</span>-1.4.0/dependencies.csv dependencies
+.import Libraries.io-<span style="color: #b5bd68;">open</span>-<span style="color: #b5bd68;">data</span>-1.4.0/dependencies.csv dependencies
+.import Libraries.io-<span style="color: #b5bd68;">open</span>-<span style="color: #b5bd68;">data</span>-1.4.0/dependencies.csv dependencies
+</pre>
+</div>
+
+<p>
+Lets check that the tables were created
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite">.tables
+</pre>
+</div>
+
+<p>
+This is a large dataset (80 GB) with several tables having 150M+
+rows. Create indexes is extremely important for query speed.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">CREATE</span> <span style="color: #b5bd68;">UNIQUE</span> INDEX INDEX_DEPENDENCIES <span style="color: #b5bd68;">ON</span> dependencies (ID);
+<span style="color: #b5bd68;">CREATE</span> INDEX INDEX_DEPENDENCIES_PROJECT <span style="color: #b5bd68;">ON</span> dependencies ("Dependency Project ID");
+<span style="color: #b5bd68;">CREATE</span> <span style="color: #b5bd68;">UNIQUE</span> INDEX INDEX_REPOSITORY_DEPENDENCIES <span style="color: #b5bd68;">ON</span> repository_dependencies ("Repository ID");
+<span style="color: #b5bd68;">CREATE</span> INDEX INDEX_REPOSITORY_DEPENDENCIES_PROJECT <span style="color: #b5bd68;">ON</span> repository_dependencies ("Dependency Project ID");
+<span style="color: #b5bd68;">CREATE</span> <span style="color: #b5bd68;">UNIQUE</span> INDEX INDEX_PROJECTS <span style="color: #b5bd68;">ON</span> projects (ID);
+<span style="color: #b5bd68;">CREATE</span> INDEX INDEX_PROJECTS_NAME <span style="color: #b5bd68;">ON</span> projects (<span style="color: #b5bd68;">Name</span>);
+<span style="color: #b5bd68;">CREATE</span> <span style="color: #b5bd68;">UNIQUE</span> INDEX INDEX_TAGS <span style="color: #b5bd68;">ON</span> tags (ID);
+<span style="color: #b5bd68;">CREATE</span> <span style="color: #b5bd68;">UNIQUE</span> INDEX INDEX_PROJECTS_WITH_REPOSITORY_FIELDS <span style="color: #b5bd68;">ON</span> projects_with_repository_fields (ID);
+<span style="color: #b5bd68;">CREATE</span> <span style="color: #b5bd68;">UNIQUE</span> INDEX INDEX_VERSIONS <span style="color: #b5bd68;">ON</span> versions (ID);
+<span style="color: #b5bd68;">CREATE</span> <span style="color: #b5bd68;">UNIQUE</span> INDEX INDEX_REPOSITORIES <span style="color: #b5bd68;">ON</span> repositories (ID);
+</pre>
+</div>
+
+<p>
+Lets check that the indexes were created
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite">.index
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-shell">du -sh ~/data/librariesio/libraries.db
+</pre>
+</div>
+
+<p>
+Additional indexes added about 10-20 GB to the database.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdd8db79" class="outline-3">
+<h3 id="orgdd8db79"><span class="section-number-3">1.2</span> Discovery</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+<pre class="src src-sqlite">PRAGMA table_info(repository_dependencies);
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">SELECT</span> <span style="color: #b5bd68;">DISTINCT</span> <span style="color: #b5bd68;">Language</span> <span style="color: #b5bd68;">FROM</span> repositories
+</pre>
+</div>
+
+<p>
+There are 34 million repositories in this dataset
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">SELECT</span> <span style="color: #b294bb;">count</span>(*) <span style="color: #b5bd68;">FROM</span> repositories
+</pre>
+</div>
+
+<p>
+3.7 million javascript projects
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">SELECT</span> <span style="color: #b294bb;">count</span>(*) <span style="color: #b5bd68;">FROM</span> repositories <span style="color: #b5bd68;">WHERE</span> <span style="color: #b5bd68;">Language</span> = "JavaScript"
+</pre>
+</div>
+
+
+<p>
+1.8 million are python projects
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">SELECT</span> <span style="color: #b294bb;">count</span>(*) <span style="color: #b5bd68;">FROM</span> repositories <span style="color: #b5bd68;">WHERE</span> <span style="color: #b5bd68;">Language</span> = "Python"
+</pre>
+</div>
+
+<p>
+172k python packages from Pypi are included. Which is pretty close to
+the <a href="https://pypi.org/">current count of 181k</a>. Upon further inspection of their "project
+dependencies" it looks like they are doing a quite naive approach to
+determining the dependencies of the project. See here for an approach
+<a href="https://github.com/nix-community/nixpkgs-pytools/blob/master/nixpkgs_pytools/python_package_init.py">that uses mocking</a> of setuptools/distutils to determinate dependencies.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">select</span> <span style="color: #b294bb;">count</span>(*) <span style="color: #b5bd68;">from</span> projects <span style="color: #b5bd68;">where</span> Platform = "Pypi"
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf2f25b6" class="outline-3">
+<h3 id="orgf2f25b6"><span class="section-number-3">1.3</span> Recreate libraries.io data/api</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+The whole point of this work was to avoid having to use <a href="https://libraries.io/api">the rate
+limited api</a> (100 repositories / minute). For the work with
+<a href="https://github.com/Quansight-Labs/python-api-inspect">python-api-inspect</a> we need to gather all the packages that depend on a
+given project.
+</p>
+
+<p>
+Lets find certain projects <code>scipy</code> and <code>numpy</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">select</span> * <span style="color: #b5bd68;">from</span> projects <span style="color: #b5bd68;">where</span> (<span style="color: #b5bd68;">Name</span> = "numpy" <span style="color: #b5bd68;">OR</span> <span style="color: #b5bd68;">Name</span> = "scipy") <span style="color: #b5bd68;">and</span> Platform = "Pypi"
+</pre>
+</div>
+
+<p>
+All this work and we can now reproduce "Dependent packages"! See the
+<a href="https://libraries.io/pypi/astropy">astropy page</a>. Without indexes this query takes about 2-3 minute (now
+instant). We get the same 13 packages.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite" id="org4571a57"><span style="color: #b5bd68;">SELECT</span> p.<span style="color: #b5bd68;">Name</span>, r."<span style="color: #b5bd68;">Host</span> <span style="color: #b5bd68;">Type</span>", r."<span style="color: #b5bd68;">Name</span> <span style="color: #b5bd68;">with</span> Owner", r."Stars <span style="color: #b294bb;">Count</span>"
+<span style="color: #b5bd68;">FROM</span> dependencies <span style="color: #b5bd68;">as</span> d
+<span style="color: #b5bd68;">INNER</span> <span style="color: #b5bd68;">JOIN</span> projects <span style="color: #b5bd68;">as</span> dp <span style="color: #b5bd68;">ON</span> d."Dependency Project ID" = dp.ID
+<span style="color: #b5bd68;">INNER</span> <span style="color: #b5bd68;">JOIN</span> projects <span style="color: #b5bd68;">as</span> p <span style="color: #b5bd68;">ON</span> d."Project ID" = p.ID
+<span style="color: #b5bd68;">INNER</span> <span style="color: #b5bd68;">JOIN</span> repositories <span style="color: #b5bd68;">as</span> r <span style="color: #b5bd68;">ON</span> r.ID = p."Repository ID"
+<span style="color: #b5bd68;">WHERE</span> dp.<span style="color: #b5bd68;">Name</span> = "$project" <span style="color: #b5bd68;">AND</span> dp.Platform = "Pypi" <span style="color: #b5bd68;">AND</span> d."Dependency <span style="color: #b5bd68;">Name</span>" = "$project"
+<span style="color: #b5bd68;">GROUP</span> <span style="color: #b5bd68;">BY</span> r."<span style="color: #b5bd68;">Host</span> <span style="color: #b5bd68;">Type</span>", r."<span style="color: #b5bd68;">Name</span> <span style="color: #b5bd68;">with</span> Owner"
+<span style="color: #b5bd68;">ORDER</span> <span style="color: #b5bd68;">BY</span> <span style="color: #b294bb;">CAST</span>(r."Stars <span style="color: #b294bb;">Count</span>" <span style="color: #b5bd68;">AS</span> <span style="color: #81a2be;">INTEGER</span>) <span style="color: #b5bd68;">DESC</span>
+<span style="color: #b5bd68;">LIMIT</span> 10
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Name</td>
+<td class="org-left">Host Type</td>
+<td class="org-left">Name with Owner</td>
+<td class="org-right">Stars Count</td>
+</tr>
+
+<tr>
+<td class="org-left">Keras</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">keras-team/keras</td>
+<td class="org-right">36270</td>
+</tr>
+
+<tr>
+<td class="org-left">face<sub>recognition</sub></td>
+<td class="org-left">GitHub</td>
+<td class="org-left">ageitgey/face<sub>recognition</sub></td>
+<td class="org-right">19101</td>
+</tr>
+
+<tr>
+<td class="org-left">pandas</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">pandas-dev/pandas</td>
+<td class="org-right">17217</td>
+</tr>
+
+<tr>
+<td class="org-left">mxnet</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">apache/incubator-mxnet</td>
+<td class="org-right">15870</td>
+</tr>
+
+<tr>
+<td class="org-left">spacy</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">explosion/spaCy</td>
+<td class="org-right">11565</td>
+</tr>
+
+<tr>
+<td class="org-left">universe</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">openai/universe</td>
+<td class="org-right">6905</td>
+</tr>
+
+<tr>
+<td class="org-left">tensor2tensor</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">tensorflow/tensor2tensor</td>
+<td class="org-right">6193</td>
+</tr>
+
+<tr>
+<td class="org-left">textblob</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">sloria/TextBlob</td>
+<td class="org-right">5817</td>
+</tr>
+
+<tr>
+<td class="org-left">scipy</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">scipy/scipy</td>
+<td class="org-right">5197</td>
+</tr>
+
+<tr>
+<td class="org-left">pyxel</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">kitao/pyxel</td>
+<td class="org-right">4533</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Name</td>
+<td class="org-left">Host Type</td>
+<td class="org-left">Name with Owner</td>
+<td class="org-right">Stars Count</td>
+</tr>
+
+<tr>
+<td class="org-left">Keras</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">keras-team/keras</td>
+<td class="org-right">36270</td>
+</tr>
+
+<tr>
+<td class="org-left">face<sub>recognition</sub></td>
+<td class="org-left">GitHub</td>
+<td class="org-left">ageitgey/face<sub>recognition</sub></td>
+<td class="org-right">19101</td>
+</tr>
+
+<tr>
+<td class="org-left">pandas</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">pandas-dev/pandas</td>
+<td class="org-right">17217</td>
+</tr>
+
+<tr>
+<td class="org-left">mxnet</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">apache/incubator-mxnet</td>
+<td class="org-right">15870</td>
+</tr>
+
+<tr>
+<td class="org-left">spacy</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">explosion/spaCy</td>
+<td class="org-right">11565</td>
+</tr>
+
+<tr>
+<td class="org-left">universe</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">openai/universe</td>
+<td class="org-right">6905</td>
+</tr>
+
+<tr>
+<td class="org-left">tensor2tensor</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">tensorflow/tensor2tensor</td>
+<td class="org-right">6193</td>
+</tr>
+
+<tr>
+<td class="org-left">textblob</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">sloria/TextBlob</td>
+<td class="org-right">5817</td>
+</tr>
+
+<tr>
+<td class="org-left">scipy</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">scipy/scipy</td>
+<td class="org-right">5197</td>
+</tr>
+
+<tr>
+<td class="org-left">pyxel</td>
+<td class="org-left">GitHub</td>
+<td class="org-left">kitao/pyxel</td>
+<td class="org-right">4533</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Now we want to find "Dependant Repositories". This is a much larger
+list of repositories and a better indicator or dependencies. There are
+two import ant <code>Manifest Platform</code> (PyPi, pypi). <code>Dependency Project
+ID</code> is what we are looking for. Having and index on this column will
+greatly speedup the query.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sqlite"><span style="color: #b5bd68;">SELECT</span> <span style="color: #b5bd68;">DISTINCT</span> r."<span style="color: #b5bd68;">Host</span> <span style="color: #b5bd68;">Type</span>", r."<span style="color: #b5bd68;">Name</span> <span style="color: #b5bd68;">with</span> Owner", r."Stars <span style="color: #b294bb;">Count</span>"
+<span style="color: #b5bd68;">FROM</span> repository_dependencies <span style="color: #b5bd68;">as</span> rd
+<span style="color: #b5bd68;">INNER</span> <span style="color: #b5bd68;">JOIN</span> projects <span style="color: #b5bd68;">as</span> p <span style="color: #b5bd68;">ON</span> p.ID = rd."Dependency Project ID"
+<span style="color: #b5bd68;">INNER</span> <span style="color: #b5bd68;">JOIN</span> repositories <span style="color: #b5bd68;">as</span> r <span style="color: #b5bd68;">ON</span> rd."Repository ID" = r.ID
+<span style="color: #b5bd68;">WHERE</span> p.<span style="color: #b5bd68;">Name</span> = "$project" <span style="color: #b5bd68;">AND</span> p.Platform = "Pypi" <span style="color: #b5bd68;">AND</span> rd."Dependency Project <span style="color: #b5bd68;">Name</span>" = "$project"
+<span style="color: #b5bd68;">GROUP</span> <span style="color: #b5bd68;">BY</span> r."<span style="color: #b5bd68;">Host</span> <span style="color: #b5bd68;">Type</span>", r."<span style="color: #b5bd68;">Name</span> <span style="color: #b5bd68;">with</span> Owner"
+<span style="color: #b5bd68;">ORDER</span> <span style="color: #b5bd68;">BY</span> <span style="color: #b294bb;">CAST</span>(r."Stars <span style="color: #b294bb;">Count</span>" <span style="color: #b5bd68;">AS</span> <span style="color: #81a2be;">INTEGER</span>) <span style="color: #b5bd68;">DESC</span>
+<span style="color: #b5bd68;">LIMIT</span> 10
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Host Type</td>
+<td class="org-left">Name with Owner</td>
+<td class="org-right">Stars Count</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">django/django</td>
+<td class="org-right">38174</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">keras-team/keras</td>
+<td class="org-right">36270</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">scikit-learn/scikit-learn</td>
+<td class="org-right">32383</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">apache/incubator-superset</td>
+<td class="org-right">22164</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">aosabook/500lines</td>
+<td class="org-right">20101</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">home-assistant/home-assistant</td>
+<td class="org-right">19140</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">ageitgey/face<sub>recognition</sub></td>
+<td class="org-right">19101</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">apache/incubator-mxnet</td>
+<td class="org-right">15870</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">openai/gym</td>
+<td class="org-right">14638</td>
+</tr>
+
+<tr>
+<td class="org-left">GitHub</td>
+<td class="org-left">donnemartin/data-science-ipython-notebooks</td>
+<td class="org-right">14394</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+1.963K matches very closely with the <a href="https://libraries.io/pypi/astropy">libraries.io result</a> for astropy
+(1.94k) and matches numpy result 74k with 68.7k reported by
+<a href="https://libraries.io/pypi/numpy">libraries.io</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-orga39da4c" class="outline-3">
+<h3 id="orga39da4c"><span class="section-number-3">1.4</span> Generate Initial Dependants Files</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Here I use python to generate the <code>*-whitelist.ini</code>. For now this is
+just part of the demo.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python" id="org79f337c"><span style="color: #b5bd68;">import</span> sqlite3
+<span style="color: #b5bd68;">import</span> pandas
+
+<span style="color: #f0c674;">PROJECT_QUERY</span> = <span style="color: #8abeb7;">'''</span>
+<span style="color: #8abeb7;">SELECT p.Name, r."Host Type", r."Name with Owner", r."Stars Count"</span>
+<span style="color: #8abeb7;">FROM dependencies as d</span>
+<span style="color: #8abeb7;">INNER JOIN projects as dp ON d."Dependency Project ID" = dp.ID</span>
+<span style="color: #8abeb7;">INNER JOIN projects as p ON d."Project ID" = p.ID</span>
+<span style="color: #8abeb7;">INNER JOIN repositories as r ON r.ID = p."Repository ID"</span>
+<span style="color: #8abeb7;">WHERE dp.Name = "{project}" AND dp.Platform = "Pypi" AND d."Dependency Name" = "{project}"</span>
+<span style="color: #8abeb7;">GROUP BY r."Host Type", r."Name with Owner"</span>
+<span style="color: #8abeb7;">ORDER BY CAST(r."Stars Count" AS INTEGER) DESC</span>
+<span style="color: #8abeb7;">'''</span>
+
+<span style="color: #f0c674;">REPOSITORY_QUERY</span> = <span style="color: #8abeb7;">'''</span>
+<span style="color: #8abeb7;">SELECT DISTINCT r."Host Type", r."Name with Owner", r."Stars Count"</span>
+<span style="color: #8abeb7;">FROM repository_dependencies as rd</span>
+<span style="color: #8abeb7;">INNER JOIN projects as p ON p.ID = rd."Dependency Project ID"</span>
+<span style="color: #8abeb7;">INNER JOIN repositories as r ON rd."Repository ID" = r.ID</span>
+<span style="color: #8abeb7;">WHERE p.Name = "{project}" AND p.Platform = "Pypi" AND rd."Dependency Project Name" = "{project}"</span>
+<span style="color: #8abeb7;">GROUP BY r."Host Type", r."Name with Owner"</span>
+<span style="color: #8abeb7;">ORDER BY CAST(r."Stars Count" AS INTEGER) DESC</span>
+<span style="color: #8abeb7;">'''</span>
+
+<span style="color: #b5bd68;">def</span> <span style="color: #de935f;">_write_packages</span>(f, df):
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #f0c674;">packages</span> = {}
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #b5bd68;">for</span> index, row <span style="color: #b5bd68;">in</span> <span style="color: #b294bb;">list</span>(df.iterrows()):
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">if</span> row[<span style="color: #8abeb7;">'Host Type'</span>] == <span style="color: #8abeb7;">'GitHub'</span> <span style="color: #b5bd68;">and</span> row[<span style="color: #8abeb7;">"Name with Owner"</span>] <span style="color: #b5bd68;">not</span> <span style="color: #b5bd68;">in</span> packages:
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>packages[row[<span style="color: #8abeb7;">"Name with Owner"</span>]] = f<span style="color: #8abeb7;">'github/{row["Name with Owner"]}/master\n'</span>
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #b5bd68;">return</span> packages
+
+<span style="color: #b5bd68;">def</span> <span style="color: #de935f;">create_whitelist</span>(database_filename, project, filename):
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #f0c674;">connection</span> = sqlite3.connect(database_filename)
+
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #f0c674;">packages</span> = {}
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #b5bd68;">with</span> <span style="color: #b294bb;">open</span>(filename, <span style="color: #8abeb7;">'w'</span>) <span style="color: #b5bd68;">as</span> f:
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> f.write(<span style="color: #8abeb7;">'[packages]\n'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> f.write(<span style="color: #8abeb7;">'# owner/repo = site/owner/repo/ref\n'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #f0c674;">df</span> = pandas.read_sql(PROJECT_QUERY.<span style="color: #b294bb;">format</span>(project=project), connection)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> packages.update(_write_packages(f, df))
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">print</span>(f<span style="color: #8abeb7;">'dependant projects for "{project}" got {len(df)} results'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #f0c674;">df</span> = pandas.read_sql(REPOSITORY_QUERY.<span style="color: #b294bb;">format</span>(project=project), connection)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> packages.update(_write_packages(f, df))
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">print</span>(f<span style="color: #8abeb7;">'dependant repositories for "{project}" got {len(df)} results'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">for</span> key, value <span style="color: #b5bd68;">in</span> packages.items():
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>f.write(f<span style="color: #8abeb7;">'{key}={value}'</span>)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b5bd68;">import</span> sqlite3
+<span style="color: #b5bd68;">import</span> pandas
+
+<span style="color: #f0c674;">PROJECT_QUERY</span> = <span style="color: #8abeb7;">'''</span>
+<span style="color: #8abeb7;">SELECT p.Name, r."Host Type", r."Name with Owner", r."Stars Count"</span>
+<span style="color: #8abeb7;">FROM dependencies as d</span>
+<span style="color: #8abeb7;">INNER JOIN projects as dp ON d."Dependency Project ID" = dp.ID</span>
+<span style="color: #8abeb7;">INNER JOIN projects as p ON d."Project ID" = p.ID</span>
+<span style="color: #8abeb7;">INNER JOIN repositories as r ON r.ID = p."Repository ID"</span>
+<span style="color: #8abeb7;">WHERE dp.Name = "{project}" AND dp.Platform = "Pypi" AND d."Dependency Name" = "{project}"</span>
+<span style="color: #8abeb7;">GROUP BY r."Host Type", r."Name with Owner"</span>
+<span style="color: #8abeb7;">ORDER BY CAST(r."Stars Count" AS INTEGER) DESC</span>
+<span style="color: #8abeb7;">'''</span>
+
+<span style="color: #f0c674;">REPOSITORY_QUERY</span> = <span style="color: #8abeb7;">'''</span>
+<span style="color: #8abeb7;">SELECT DISTINCT r."Host Type", r."Name with Owner", r."Stars Count"</span>
+<span style="color: #8abeb7;">FROM repository_dependencies as rd</span>
+<span style="color: #8abeb7;">INNER JOIN projects as p ON p.ID = rd."Dependency Project ID"</span>
+<span style="color: #8abeb7;">INNER JOIN repositories as r ON rd."Repository ID" = r.ID</span>
+<span style="color: #8abeb7;">WHERE p.Name = "{project}" AND p.Platform = "Pypi" AND rd."Dependency Project Name" = "{project}"</span>
+<span style="color: #8abeb7;">GROUP BY r."Host Type", r."Name with Owner"</span>
+<span style="color: #8abeb7;">ORDER BY CAST(r."Stars Count" AS INTEGER) DESC</span>
+<span style="color: #8abeb7;">'''</span>
+
+<span style="color: #b5bd68;">def</span> <span style="color: #de935f;">_write_packages</span>(f, df):
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #f0c674;">packages</span> = {}
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #b5bd68;">for</span> index, row <span style="color: #b5bd68;">in</span> <span style="color: #b294bb;">list</span>(df.iterrows()):
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">if</span> row[<span style="color: #8abeb7;">'Host Type'</span>] == <span style="color: #8abeb7;">'GitHub'</span> <span style="color: #b5bd68;">and</span> row[<span style="color: #8abeb7;">"Name with Owner"</span>] <span style="color: #b5bd68;">not</span> <span style="color: #b5bd68;">in</span> packages:
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>packages[row[<span style="color: #8abeb7;">"Name with Owner"</span>]] = f<span style="color: #8abeb7;">'github/{row["Name with Owner"]}/master\n'</span>
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #b5bd68;">return</span> packages
+
+<span style="color: #b5bd68;">def</span> <span style="color: #de935f;">create_whitelist</span>(database_filename, project, filename):
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #f0c674;">connection</span> = sqlite3.connect(database_filename)
+
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #f0c674;">packages</span> = {}
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>  <span style="color: #b5bd68;">with</span> <span style="color: #b294bb;">open</span>(filename, <span style="color: #8abeb7;">'w'</span>) <span style="color: #b5bd68;">as</span> f:
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> f.write(<span style="color: #8abeb7;">'[packages]\n'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> f.write(<span style="color: #8abeb7;">'# owner/repo = site/owner/repo/ref\n'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #f0c674;">df</span> = pandas.read_sql(PROJECT_QUERY.<span style="color: #b294bb;">format</span>(project=project), connection)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> packages.update(_write_packages(f, df))
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">print</span>(f<span style="color: #8abeb7;">'dependant projects for "{project}" got {len(df)} results'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #f0c674;">df</span> = pandas.read_sql(REPOSITORY_QUERY.<span style="color: #b294bb;">format</span>(project=project), connection)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> packages.update(_write_packages(f, df))
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">print</span>(f<span style="color: #8abeb7;">'dependant repositories for "{project}" got {len(df)} results'</span>)
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span> <span style="color: #b5bd68;">for</span> key, value <span style="color: #b5bd68;">in</span> packages.items():
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #969896; background-color: #22a224a427a7;"> </span>f.write(f<span style="color: #8abeb7;">'{key}={value}'</span>)
+
+<span style="color: #f0c674;">database_filename</span> = <span style="color: #8abeb7;">'/home/costrouc/data/librariesio/libraries.db'</span>
+
+<span style="color: #f0c674;">projects</span> = [
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'astropy'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'dask'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'ipython'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'ipywidgets'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'matplotlib'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'numpy'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'pandas'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'pyarrow'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'pymapd'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'pymc3'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'pytorch'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'requests'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'scikit-image'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'scikit-learn'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'scipy'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'statsmodels'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'sympy'</span>,
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #8abeb7;">'tensorflow'</span>
+]
+
+<span style="color: #b5bd68;">for</span> project <span style="color: #b5bd68;">in</span> projects:
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   create_whitelist(database_filename, project, f<span style="color: #8abeb7;">'../data/whitelist/{project}-whitelist.ini'</span>)
+</pre>
+</div>
+
+<p>
+Check that configparser works with the input
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #b5bd68;">import</span> configparser
+
+<span style="color: #f0c674;">config</span> = configparser.ConfigParser()
+config.read(<span style="color: #8abeb7;">'../data/whitelist/tensorflow-whitelist.ini'</span>)
+
+<span style="color: #b5bd68;">for</span> key <span style="color: #b5bd68;">in</span> <span style="color: #b294bb;">list</span>(config[<span style="color: #8abeb7;">'packages'</span>])[:10]:
+<span style="color: #969896; background-color: #22a224a427a7;"> </span>   <span style="color: #b5bd68;">print</span>(key)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Christopher Ostrouchov</p>
+<p class="date">Created: 2019-05-24 Fri 16:01</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

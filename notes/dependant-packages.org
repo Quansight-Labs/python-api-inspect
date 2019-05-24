@@ -1,0 +1,761 @@
+* python package dependants
+
+This work would not be possible without [[https://libraries.io][libraries.io]]
+
+** Download and initialize the data
+   :PROPERTIES:
+   :header-args: :db ~/data/librariesio/libraries.db
+   :END:
+
+First we collect the [[https://libraries.io/data][libraries.io data]] (around 20 GB). Good thing I
+have =1 Gbit/s= internet now! We extract the archive and use sqlite to
+create a database from the csv files [[https://www.sqlite.org/cli.html][documented here]].
+
+#+begin_src shell :eval never
+  wget https://zenodo.org/record/2536573/files/Libraries.io-open-data-1.4.0.tar.gz
+  tar -xf Libraries.io-open-data-1.4.0.tar.gz
+#+end_src
+
+Sqlite is unique in that columns do not have types only values
+do. Here each value is either a string or ~NULL~.
+
+#+begin_src sqlite :eval never :results none
+  .mode csv
+  .delimiter ','
+  .import Libraries.io-open-data-1.4.0/dependencies.csv dependencies
+  .import Libraries.io-open-data-1.4.0/repository_dependencies.csv repository_dependencies
+  .import Libraries.io-open-data-1.4.0/projects.csv projects
+  .import Libraries.io-open-data-1.4.0/dependencies.csv dependencies
+  .import Libraries.io-open-data-1.4.0/dependencies.csv dependencies
+  .import Libraries.io-open-data-1.4.0/dependencies.csv dependencies
+#+end_src
+
+Lets check that the tables were created
+
+#+begin_src sqlite
+.tables
+#+end_src
+
+#+RESULTS:
+| dependencies                     repository_dependencies |
+| projects                         tags                    |
+| projects_with_repository_fields  versions                |
+| repositories                                             |
+
+This is a large dataset (80 GB) with several tables having 150M+
+rows. Create indexes is extremely important for query speed.
+
+#+begin_src sqlite :eval never :results none
+  CREATE UNIQUE INDEX INDEX_DEPENDENCIES ON dependencies (ID);
+  CREATE INDEX INDEX_DEPENDENCIES_PROJECT ON dependencies ("Dependency Project ID");
+  CREATE UNIQUE INDEX INDEX_REPOSITORY_DEPENDENCIES ON repository_dependencies ("Repository ID");
+  CREATE INDEX INDEX_REPOSITORY_DEPENDENCIES_PROJECT ON repository_dependencies ("Dependency Project ID");
+  CREATE UNIQUE INDEX INDEX_PROJECTS ON projects (ID);
+  CREATE INDEX INDEX_PROJECTS_NAME ON projects (Name);
+  CREATE UNIQUE INDEX INDEX_TAGS ON tags (ID);
+  CREATE UNIQUE INDEX INDEX_PROJECTS_WITH_REPOSITORY_FIELDS ON projects_with_repository_fields (ID);
+  CREATE UNIQUE INDEX INDEX_VERSIONS ON versions (ID);
+  CREATE UNIQUE INDEX INDEX_REPOSITORIES ON repositories (ID);
+#+end_src
+
+Lets check that the indexes were created
+
+#+begin_src sqlite
+.index
+#+end_src
+
+#+RESULTS:
+| INDEX_DEPENDENCIES                     INDEX_REPOSITORIES            |
+| INDEX_DEPENDENCIES_PROJECT             INDEX_REPOSITORY_DEPENDENCIES |
+| INDEX_PROJECTS                         INDEX_TAGS                    |
+| INDEX_PROJECTS_WITH_REPOSITORY_FIELDS  INDEX_VERSIONS                |
+
+#+begin_src shell
+du -sh ~/data/librariesio/libraries.db
+#+end_src
+
+#+RESULTS:
+| 101G | /home/costrouc/data/librariesio/libraries.db |
+
+Additional indexes added about 10-20 GB to the database.
+
+** Discovery
+   :PROPERTIES:
+   :header-args: :db ~/data/librariesio/libraries.db :header t
+   :END:
+
+#+begin_src sqlite
+PRAGMA table_info(repository_dependencies);
+#+end_src
+
+#+RESULTS:
+| cid | name                       | type | notnull | dflt_value | pk |
+|   0 | ID                         | TEXT |       0 |            |  0 |
+|   1 | Host Type                  | TEXT |       0 |            |  0 |
+|   2 | Repository Name with Owner | TEXT |       0 |            |  0 |
+|   3 | Repository ID              | TEXT |       0 |            |  0 |
+|   4 | Manifest Platform          | TEXT |       0 |            |  0 |
+|   5 | Manifest Filepath          | TEXT |       0 |            |  0 |
+|   6 | Git branch                 | TEXT |       0 |            |  0 |
+|   7 | Manifest kind              | TEXT |       0 |            |  0 |
+|   8 | Optional                   | TEXT |       0 |            |  0 |
+|   9 | Dependency Project Name    | TEXT |       0 |            |  0 |
+|  10 | Dependency Requirements    | TEXT |       0 |            |  0 |
+|  11 | Dependency Kind            | TEXT |       0 |            |  0 |
+|  12 | Dependency Project ID      | TEXT |       0 |            |  0 |
+
+#+begin_src sqlite
+SELECT DISTINCT Language FROM repositories
+#+end_src
+
+#+RESULTS:
+| Language                 |
+| JavaScript               |
+| CoffeeScript             |
+| HTML                     |
+| CSS                      |
+|                          |
+| TypeScript               |
+| PHP                      |
+| Shell                    |
+| ActionScript             |
+| Python                   |
+| Pascal                   |
+| Ruby                     |
+| Makefile                 |
+| C                        |
+| XSLT                     |
+| PureScript               |
+| ApacheConf               |
+| Objective-C              |
+| Nix                      |
+| Scala                    |
+| Clojure                  |
+| Java                     |
+| LiveScript               |
+| Elixir                   |
+| Erlang                   |
+| Swift                    |
+| Objective-J              |
+| Rust                     |
+| D                        |
+| TeX                      |
+| C++                      |
+| Emacs Lisp               |
+| CMake                    |
+| Cucumber                 |
+| Haskell                  |
+| Perl                     |
+| Go                       |
+| R                        |
+| Julia                    |
+| OCaml                    |
+| Common Lisp              |
+| Isabelle                 |
+| Puppet                   |
+| Lua                      |
+| Mathematica              |
+| Coq                      |
+| Nimrod                   |
+| Nim                      |
+| PLSQL                    |
+| Cirru                    |
+| SuperCollider            |
+| C#                       |
+| Apex                     |
+| wisp                     |
+| Liquid                   |
+| Dart                     |
+| ASP                      |
+| Haxe                     |
+| Scheme                   |
+| Hack                     |
+| Gherkin                  |
+| Smarty                   |
+| Processing               |
+| Common Workflow Language |
+| Mirah                    |
+| Fancy                    |
+| Visual Basic             |
+| Ragel                    |
+| PLpgSQL                  |
+| eC                       |
+| Racket                   |
+| Vim script               |
+| VimL                     |
+| PogoScript               |
+| SQLPL                    |
+| Vue                      |
+| Zephir                   |
+| Groovy                   |
+| XML                      |
+| Thrift                   |
+| Assembly                 |
+| Arduino                  |
+| Yacc                     |
+| Matlab                   |
+| ColdFusion               |
+| Gosu                     |
+| GLSL                     |
+| Groff                    |
+| Eiffel                   |
+| Batchfile                |
+| OpenEdge ABL             |
+| Handlebars               |
+| Objective-C++            |
+| Smalltalk                |
+| AppleScript              |
+| Dogescript               |
+| RAML                     |
+| PowerShell               |
+| API Blueprint            |
+| AutoIt                   |
+| SourcePawn               |
+| HCL                      |
+| Prolog                   |
+| FreeMarker               |
+| Kotlin                   |
+| Fortran                  |
+| Max                      |
+| XProc                    |
+| Web Ontology Language    |
+| Xtend                    |
+| SMT                      |
+| Genshi                   |
+| Ceylon                   |
+| Verilog                  |
+| FLUX                     |
+| Pan                      |
+| ANTLR                    |
+| Hy                       |
+| GAP                      |
+| Jupyter Notebook         |
+| AGS Script               |
+| Roff                     |
+| Protocol Buffer          |
+| Clean                    |
+| POV-Ray SDL              |
+| Tcl                      |
+| F#                       |
+| Smali                    |
+| nesC                     |
+| LLVM                     |
+| Eagle                    |
+| KiCad                    |
+| QML                      |
+| OpenSCAD                 |
+| PostScript               |
+| SQL                      |
+| Io                       |
+| Ada                      |
+| M                        |
+| Nginx                    |
+| Elm                      |
+| Logos                    |
+| FORTRAN                  |
+| NetLinx                  |
+| Oxygene                  |
+| AutoHotkey               |
+| Boo                      |
+| Propeller Spin           |
+| Shen                     |
+| XS                       |
+| Perl6                    |
+| Perl 6                   |
+| MoonScript               |
+| REALbasic                |
+| VHDL                     |
+| Pure Data                |
+| NCL                      |
+| DIGITAL Command Language |
+| Slash                    |
+| RenderScript             |
+| Cuda                     |
+| Inno Setup               |
+| Awk                      |
+| Dockerfile               |
+| Jasmin                   |
+| Mercury                  |
+| Brainfuck                |
+| 1C Enterprise            |
+| WebAssembly              |
+| Alloy                    |
+| COBOL                    |
+| Vala                     |
+| Squirrel                 |
+| Component Pascal         |
+| IDL                      |
+| Scilab                   |
+| Dylan                    |
+| Standard ML              |
+| SaltStack                |
+| Crystal                  |
+| Nemerle                  |
+| X10                      |
+| GDB                      |
+| LSL                      |
+| Gnuplot                  |
+| Mask                     |
+| Agda                     |
+| XQuery                   |
+| NewLisp                  |
+| RobotFramework           |
+| Arc                      |
+| Bison                    |
+| Clarion                  |
+| M4                       |
+| CartoCSS                 |
+| NSIS                     |
+| VCL                      |
+| Lasso                    |
+| ABAP                     |
+| Idris                    |
+| Stata                    |
+| Gettext Catalog          |
+| JSONiq                   |
+| Frege                    |
+| PigLatin                 |
+| NetLogo                  |
+| Kit                      |
+| Game Maker Language      |
+| Brightscript             |
+| Rebol                    |
+| Diff                     |
+| GCC Machine Description  |
+| AspectJ                  |
+| Ragel in Ruby Host       |
+| BitBake                  |
+| Forth                    |
+| LookML                   |
+| AMPL                     |
+| Harbour                  |
+| PowerBuilder             |
+| Fantom                   |
+| Bluespec                 |
+| Redcode                  |
+| Augeas                   |
+| Mako                     |
+| HyPhy                    |
+| Rascal                   |
+| BlitzBasic               |
+| Red                      |
+| Lex                      |
+| Bro                      |
+| Cycript                  |
+| CLIPS                    |
+| SQF                      |
+| Chapel                   |
+| Parrot                   |
+| E                        |
+| LilyPond                 |
+| SAS                      |
+| KRL                      |
+| MTML                     |
+| Terra                    |
+| IGOR Pro                 |
+| ECL                      |
+| ooc                      |
+| GDScript                 |
+| DCPU-16 ASM              |
+| Limbo                    |
+| LoomScript               |
+| Meson                    |
+| xBase                    |
+| SRecode Template         |
+| REXX                     |
+| SystemVerilog            |
+| Factor                   |
+| Volt                     |
+| LabVIEW                  |
+| Nextflow                 |
+| BlitzMax                 |
+| Lean                     |
+| Ren'Py                   |
+| Pony                     |
+| QMake                    |
+| Csound Document          |
+| Opa                      |
+| UnrealScript             |
+| DM                       |
+| Pike                     |
+| Grammatical Framework    |
+| APL                      |
+| EmberScript              |
+| Turing                   |
+| ChucK                    |
+| TXL                      |
+| Modelica                 |
+| Golo                     |
+| PicoLisp                 |
+| Monkey                   |
+| Nu                       |
+| PureBasic                |
+| Stan                     |
+| DOT                      |
+| Grace                    |
+| PAWN                     |
+| MAXScript                |
+| TI Program               |
+| Glyph                    |
+| Delphi                   |
+| Rouge                    |
+| Omgrofl                  |
+| HLSL                     |
+| DTrace                   |
+| XC                       |
+| Inform 7                 |
+| Xojo                     |
+| RMarkdown                |
+| Modula-2                 |
+| Ecl                      |
+| Oz                       |
+| UrWeb                    |
+| J                        |
+| ShaderLab                |
+| GAMS                     |
+| Self                     |
+| sed                      |
+| Logtalk                  |
+| LOLCODE                  |
+| ATS                      |
+| Cool                     |
+| AngelScript              |
+| XPages                   |
+| Uno                      |
+| MQL5                     |
+| Csound Score             |
+| Charity                  |
+| Pep8                     |
+| Papyrus                  |
+| Ox                       |
+| Zimpl                    |
+| RPC                      |
+| Solidity                 |
+| Cap'n Proto              |
+| MQL4                     |
+| Csound                   |
+| TLA                      |
+| CWeb                     |
+| Click                    |
+| MATLAB                   |
+| WebIDL                   |
+| Metal                    |
+| Module Management System |
+| mupad                    |
+| P4                       |
+| Ioke                     |
+| YARA                     |
+| KiCad Layout             |
+| Ring                     |
+| Nit                      |
+| Max/MSP                  |
+| Tea                      |
+| q                        |
+| Jolie                    |
+| EQ                       |
+| Opal                     |
+| Markdown                 |
+| Filebench WML            |
+| Befunge                  |
+| wdl                      |
+| JFlex                    |
+| Sass                     |
+| reStructuredText         |
+| Ballerina                |
+| AsciiDoc                 |
+| Genie                    |
+| Modula-3                 |
+| Moocode                  |
+| Pawn                     |
+| DataWeave                |
+| Nearley                  |
+| ShellSession             |
+| LFE                      |
+| YAML                     |
+| Public Key               |
+| Gradle                   |
+| YASnippet                |
+| F*                       |
+| Slice                    |
+
+There are 34 million repositories in this dataset
+
+#+begin_src sqlite
+SELECT count(*) FROM repositories
+#+end_src
+
+#+RESULTS:
+| count(*) |
+| 34061516 |
+
+3.7 million javascript projects
+
+#+begin_src sqlite
+SELECT count(*) FROM repositories WHERE Language = "JavaScript"
+#+end_src
+
+#+RESULTS:
+| count(*) |
+|  3743183 |
+
+
+1.8 million are python projects
+
+#+begin_src sqlite
+SELECT count(*) FROM repositories WHERE Language = "Python"
+#+end_src
+
+#+RESULTS:
+| count(*) |
+|  1824397 |
+
+172k python packages from Pypi are included. Which is pretty close to
+the [[https://pypi.org/][current count of 181k]]. Upon further inspection of their "project
+dependencies" it looks like they are doing a quite naive approach to
+determining the dependencies of the project. See here for an approach
+[[https://github.com/nix-community/nixpkgs-pytools/blob/master/nixpkgs_pytools/python_package_init.py][that uses mocking]] of setuptools/distutils to determinate dependencies.
+
+#+begin_src sqlite
+select count(*) from projects where Platform = "Pypi"
+#+end_src
+
+#+RESULTS:
+| count(*) |
+|   172411 |
+
+** Recreate libraries.io data/api
+   :PROPERTIES:
+   :header-args: :db ~/data/librariesio/libraries.db :header t
+   :END:
+
+The whole point of this work was to avoid having to use [[https://libraries.io/api][the rate
+limited api]] (100 repositories / minute). For the work with
+[[https://github.com/Quansight-Labs/python-api-inspect][python-api-inspect]] we need to gather all the packages that depend on a
+given project.
+
+Lets find certain projects ~scipy~ and ~numpy~.
+
+#+begin_src sqlite
+select * from projects where (Name = "numpy" OR Name = "scipy") and Platform = "Pypi"
+#+end_src
+
+#+RESULTS:
+|    ID | Platform | Name  | Created Timestamp       | Updated Timestamp       | Description                                                         | Keywords | Homepage URL          | Licenses     | Repository URL                 | Versions Count | SourceRank | Latest Release Publish Timestamp | Latest Release Number | Package Manager ID | Dependent Projects Count | Language | Status | Last synced Timestamp   | Dependent Repositories Count | Repository ID |
+| 61796 | Pypi     | numpy | 2015-01-21 00:41:56 UTC | 2018-12-20 15:41:31 UTC | NumPy: array processing for numbers, strings, records, and objects. |          | http://www.numpy.org  | BSD-3-Clause | https://github.com/numpy/numpy |             61 |         26 | 2018-12-20 15:13:12 UTC          | 1.16.0rc1             |                    |                      623 | C        |        | 2018-12-20 15:41:31 UTC |                        60568 |        726020 |
+| 76799 | Pypi     | scipy | 2015-01-21 00:49:29 UTC | 2018-12-18 04:03:25 UTC | SciPy: Scientific Library for Python                                |          | https://www.scipy.org | BSD-3-Clause | https://github.com/scipy/scipy |             37 |         23 | 2018-12-18 03:06:38 UTC          | 1.2.0                 |                    |                      190 | Python   |        | 2018-12-18 04:03:25 UTC |                        31581 |        733101 |
+
+All this work and we can now reproduce "Dependent packages"! See the
+[[https://libraries.io/pypi/astropy][astropy page]]. Without indexes this query takes about 2-3 minute (now
+instant). We get the same 13 packages.
+
+#+NAME: demo-python
+#+begin_src sqlite :var project="numpy" :exports both
+  SELECT p.Name, r."Host Type", r."Name with Owner", r."Stars Count"
+  FROM dependencies as d
+  INNER JOIN projects as dp ON d."Dependency Project ID" = dp.ID
+  INNER JOIN projects as p ON d."Project ID" = p.ID
+  INNER JOIN repositories as r ON r.ID = p."Repository ID"
+  WHERE dp.Name = "$project" AND dp.Platform = "Pypi" AND d."Dependency Name" = "$project"
+  GROUP BY r."Host Type", r."Name with Owner"
+  ORDER BY CAST(r."Stars Count" AS INTEGER) DESC
+  LIMIT 10
+#+end_src
+
+#+RESULTS:
+| Name             | Host Type | Name with Owner           | Stars Count |
+| Keras            | GitHub    | keras-team/keras          |       36270 |
+| face_recognition | GitHub    | ageitgey/face_recognition |       19101 |
+| pandas           | GitHub    | pandas-dev/pandas         |       17217 |
+| mxnet            | GitHub    | apache/incubator-mxnet    |       15870 |
+| spacy            | GitHub    | explosion/spaCy           |       11565 |
+| universe         | GitHub    | openai/universe           |        6905 |
+| tensor2tensor    | GitHub    | tensorflow/tensor2tensor  |        6193 |
+| textblob         | GitHub    | sloria/TextBlob           |        5817 |
+| scipy            | GitHub    | scipy/scipy               |        5197 |
+| pyxel            | GitHub    | kitao/pyxel               |        4533 |
+
+Now we want to find "Dependant Repositories". This is a much larger
+list of repositories and a better indicator or dependencies. There are
+two import ant ~Manifest Platform~ (PyPi, pypi). ~Dependency Project
+ID~ is what we are looking for. Having and index on this column will
+greatly speedup the query.
+
+#+begin_src sqlite :var project="numpy" :exports both
+SELECT DISTINCT r."Host Type", r."Name with Owner", r."Stars Count"
+FROM repository_dependencies as rd
+INNER JOIN projects as p ON p.ID = rd."Dependency Project ID"
+INNER JOIN repositories as r ON rd."Repository ID" = r.ID
+WHERE p.Name = "$project" AND p.Platform = "Pypi" AND rd."Dependency Project Name" = "$project"
+GROUP BY r."Host Type", r."Name with Owner"
+ORDER BY CAST(r."Stars Count" AS INTEGER) DESC
+LIMIT 10
+#+end_src
+
+#+RESULTS:
+| Host Type | Name with Owner                            | Stars Count |
+| GitHub    | django/django                              |       38174 |
+| GitHub    | keras-team/keras                           |       36270 |
+| GitHub    | scikit-learn/scikit-learn                  |       32383 |
+| GitHub    | apache/incubator-superset                  |       22164 |
+| GitHub    | aosabook/500lines                          |       20101 |
+| GitHub    | home-assistant/home-assistant              |       19140 |
+| GitHub    | ageitgey/face_recognition                  |       19101 |
+| GitHub    | apache/incubator-mxnet                     |       15870 |
+| GitHub    | openai/gym                                 |       14638 |
+| GitHub    | donnemartin/data-science-ipython-notebooks |       14394 |
+
+1.963K matches very closely with the [[https://libraries.io/pypi/astropy][libraries.io result]] for astropy
+(1.94k) and matches numpy result 74k with 68.7k reported by
+[[https://libraries.io/pypi/numpy][libraries.io]].
+** Generate Initial Dependants Files
+
+Here I use python to generate the ~*-whitelist.ini~. For now this is
+just part of the demo.
+
+#+NAME: dependents-code
+#+begin_src python :results none
+  import sqlite3
+  import pandas
+
+  PROJECT_QUERY = '''
+  SELECT p.Name, r."Host Type", r."Name with Owner", r."Stars Count"
+  FROM dependencies as d
+  INNER JOIN projects as dp ON d."Dependency Project ID" = dp.ID
+  INNER JOIN projects as p ON d."Project ID" = p.ID
+  INNER JOIN repositories as r ON r.ID = p."Repository ID"
+  WHERE dp.Name = "{project}" AND dp.Platform = "Pypi" AND d."Dependency Name" = "{project}"
+  GROUP BY r."Host Type", r."Name with Owner"
+  ORDER BY CAST(r."Stars Count" AS INTEGER) DESC
+  '''
+
+  REPOSITORY_QUERY = '''
+  SELECT DISTINCT r."Host Type", r."Name with Owner", r."Stars Count"
+  FROM repository_dependencies as rd
+  INNER JOIN projects as p ON p.ID = rd."Dependency Project ID"
+  INNER JOIN repositories as r ON rd."Repository ID" = r.ID
+  WHERE p.Name = "{project}" AND p.Platform = "Pypi" AND rd."Dependency Project Name" = "{project}"
+  GROUP BY r."Host Type", r."Name with Owner"
+  ORDER BY CAST(r."Stars Count" AS INTEGER) DESC
+  '''
+
+  def _write_packages(f, df):
+     packages = {}
+     for index, row in list(df.iterrows()):
+        if row['Host Type'] == 'GitHub' and row["Name with Owner"] not in packages:
+           packages[row["Name with Owner"]] = f'github/{row["Name with Owner"]}/master\n'
+     return packages
+
+  def create_whitelist(database_filename, project, filename):
+     connection = sqlite3.connect(database_filename)
+
+     packages = {}
+     with open(filename, 'w') as f:
+        f.write('[packages]\n')
+        f.write('# owner/repo = site/owner/repo/ref\n')
+        df = pandas.read_sql(PROJECT_QUERY.format(project=project), connection)
+        packages.update(_write_packages(f, df))
+        print(f'dependant projects for "{project}" got {len(df)} results')
+        df = pandas.read_sql(REPOSITORY_QUERY.format(project=project), connection)
+        packages.update(_write_packages(f, df))
+        print(f'dependant repositories for "{project}" got {len(df)} results')
+        for key, value in packages.items():
+           f.write(f'{key}={value}')
+#+end_src
+
+#+RESULTS: dependents-code
+
+#+begin_src python :noweb yes :results output :async
+  <<dependents-code>>
+
+  database_filename = '/home/costrouc/data/librariesio/libraries.db'
+
+  projects = [
+      'astropy',
+      'dask',
+      'ipython',
+      'ipywidgets',
+      'matplotlib',
+      'numpy',
+      'pandas',
+      'pyarrow',
+      'pymapd',
+      'pymc3',
+      'pytorch',
+      'requests',
+      'scikit-image',
+      'scikit-learn',
+      'scipy',
+      'statsmodels',
+      'sympy',
+      'tensorflow'
+  ]
+
+  for project in projects:
+      create_whitelist(database_filename, project, f'../data/whitelist/{project}-whitelist.ini')
+#+end_src
+
+#+RESULTS:
+#+begin_example
+dependant projects for "astropy" got 10 results
+dependant repositories for "astropy" got 1734 results
+dependant projects for "dask" got 2 results
+dependant repositories for "dask" got 1014 results
+dependant projects for "ipython" got 30 results
+dependant repositories for "ipython" got 24467 results
+dependant projects for "ipywidgets" got 2 results
+dependant repositories for "ipywidgets" got 4862 results
+dependant projects for "matplotlib" got 94 results
+dependant repositories for "matplotlib" got 27179 results
+dependant projects for "numpy" got 447 results
+dependant repositories for "numpy" got 59524 results
+dependant projects for "pandas" got 72 results
+dependant repositories for "pandas" got 24632 results
+dependant projects for "pyarrow" got 0 results
+dependant repositories for "pyarrow" got 162 results
+dependant projects for "pymapd" got 0 results
+dependant repositories for "pymapd" got 5 results
+dependant projects for "pymc3" got 0 results
+dependant repositories for "pymc3" got 86 results
+dependant projects for "pytorch" got 1 results
+dependant repositories for "pytorch" got 50 results
+dependant projects for "requests" got 1483 results
+dependant repositories for "requests" got 115558 results
+dependant projects for "scikit-image" got 6 results
+dependant repositories for "scikit-image" got 4890 results
+dependant projects for "scikit-learn" got 29 results
+dependant repositories for "scikit-learn" got 12429 results
+dependant projects for "scipy" got 135 results
+dependant repositories for "scipy" got 31106 results
+dependant projects for "statsmodels" got 2 results
+dependant repositories for "statsmodels" got 2093 results
+dependant projects for "sympy" got 15 results
+dependant repositories for "sympy" got 2203 results
+dependant projects for "tensorflow" got 8 results
+dependant repositories for "tensorflow" got 6616 results
+#+end_example
+
+Check that configparser works with the input
+
+#+begin_src python :results output
+import configparser
+
+config = configparser.ConfigParser()
+config.read('../data/whitelist/tensorflow-whitelist.ini')
+
+for key in list(config['packages'])[:10]:
+    print(key)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+keras-team/keras
+blei-lab/edward
+google/prettytensor
+unixpickle/anyrl-py
+canaydogan/nudity
+tdb-alcorn/q2
+elliotwaite/laminarflow
+thuml/easydl
+ageron/handson-ml
+google-research/bert
+#+end_example
