@@ -47,9 +47,19 @@ def parse_filename(filename, contents):
             if not 'cells' in data:
                 print(f'notebook does not have any cells {filename:64}')
                 return None
-            source = '\n'.join([''.join(cell['source']) for cell in data['cells'] if cell['cell_type'] == 'code'])
-            source = re.sub('%{1,2}.*', '', source)
-            return ast.parse(source)
+
+            source_cells = []
+            for i, cell in enumerate(data['cells']):
+                if cell['cell_type'] != 'code':
+                    continue
+
+                source = re.sub('%{1,2}.*', '', '\n'.join(cell['source']))
+                try:
+                    ast.parse(source)
+                    source_cells.append(source)
+                except SyntaxError:
+                    print(f'{filename:64} notebook cell {i} failed to parse')
+            return ast.parse('\n'.join(source_cells))
         elif filename.endswith('.py'):
             return ast.parse(contents)
         else:
@@ -58,24 +68,23 @@ def parse_filename(filename, contents):
         print(f'syntax error parsing: {filename:64}')
 
 
-def inspect_file_ast(file_ast, namespaces):
-    """Record function calls and counts within namespaces
+def inspect_file_ast(file_ast):
+    """Record function calls and counts for all absolute namespaces
 
-    namespaces is set of strings
     """
-    namespaces = set(tuple(_.split('.')) for _ in namespaces)
-
-    class ImportVisit(ast.NodeVisitor):
-        def __init__(self, namespaces):
+    class ImportVisitor(ast.NodeVisitor):
+        def __init__(self):
+            self.imports = set()
             self.aliases = {}
-            self.namespaces = namespaces
 
         def visit_Import(self, node):
             for name in node.names:
                 namespace = tuple(name.name.split('.'))
-                for i in range(len(namespace)+1):
-                    if namespace[:i+1] in self.namespaces:
-                        self.aliases[name.asname] = namespace
+                if name.asname is None:
+                    self.imports.add(namespace)
+                else:
+                    self.imports.add(namespace)
+                    self.aliases[name.asname] = namespace
 
         def visit_ImportFrom(self, node):
             if node.module is None: # relative import
@@ -84,24 +93,28 @@ def inspect_file_ast(file_ast, namespaces):
             partial_namespace = tuple(node.module.split('.'))
             for name in node.names:
                 namespace = partial_namespace + (name.name,)
-                for i in range(len(namespace)+1):
-                    if namespace[:i+1] in self.namespaces:
-                        self.aliases[name.asname or name.name] = namespace
+                if name.asname is None:
+                    self.imports.add(namespace)
+                else:
+                    self.imports.add(namespace)
+                    self.aliases[name.asname or name.name] = namespace
 
     class APIVisitor(ast.NodeVisitor):
-        def __init__(self, aliases, namespaces):
+        def __init__(self, aliases, imports):
             self.aliases = aliases
-            self.namespaces = namespaces
-            self.api = collections.defaultdict(lambda: {
-                'count': 0,
-                'n_args': collections.defaultdict(int),
-                'kwargs': collections.defaultdict(int),
-            })
+            self.imports = imports
+            self.api = collections.defaultdict(lambda:
+                collections.defaultdict(lambda: {
+                    'count': 0,
+                    'n_args': collections.defaultdict(int),
+                    'kwargs': collections.defaultdict(int),
+                }))
 
         def visit_Call(self, node):
             if not isinstance(node.func, (ast.Attribute, ast.Name)):
                 return
 
+            # functions statistics
             num_args = len(node.args) + len(node.keywords)
             keywords = {k.arg for k in node.keywords}
 
@@ -119,29 +132,31 @@ def inspect_file_ast(file_ast, namespaces):
                     path.insert(0, _node.id)
 
             for i in range(len(path)):
-                if tuple(path[:i+1]) in self.namespaces:
-                    self.api[tuple(path)]['count'] += 1
-                    self.api[tuple(path)]['n_args'][num_args] += 1
+                if tuple(path[:i+1]) in self.imports:
+                    base_namespace = path[0]
+
+                    self.api[base_namespace][tuple(path)]['count'] += 1
+                    self.api[base_namespace][tuple(path)]['n_args'][num_args] += 1
                     for keyword in keywords:
-                        self.api[tuple(path)]['kwargs'][keyword] += 1
+                        self.api[base_namespace][tuple(path)]['kwargs'][keyword] += 1
                     break
 
-    import_visitor = ImportVisit(namespaces)
+    import_visitor = ImportVisitor()
     import_visitor.visit(file_ast)
-    api_visitor = APIVisitor(import_visitor.aliases, namespaces)
+    api_visitor = APIVisitor(imports=import_visitor.imports, aliases=import_visitor.aliases)
     api_visitor.visit(file_ast)
     return api_visitor.api
 
 
-def output_api_counts(api_counts, filename):
-    print(f'writing {len(api_counts)} function calls to {filename:64}')
-    with open(filename, 'w') as f:
-        f.write('function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count\n')
-        for key, value in sorted(api_counts.items(), key=lambda item: item[1]['count']):
-            sorted_num_args = [(num_args, count) for num_args, count in sorted(api_counts[key]['n_args'].items(), key=lambda item: item[1], reverse=True)]
+# def output_api_counts(api_counts, filename):
+#     print(f'writing {len(api_counts)} function calls to {filename:64}')
+#     with open(filename, 'w') as f:
+#         f.write('function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count\n')
+#         for key, value in sorted(api_counts.items(), key=lambda item: item[1]['count']):
+#             sorted_num_args = [(num_args, count) for num_args, count in sorted(api_counts[key]['n_args'].items(), key=lambda item: item[1], reverse=True)]
 
-            sorted_keywords = [(keyword, count) for keyword, count in sorted(api_counts[key]['kwargs'].items(), key=lambda item: item[1], reverse=True)] + [('', '')]
-            f.write(f'{key}, {value["count"]}, {sorted_num_args[0][0]}, {sorted_num_args[0][1]}, {sorted_keywords[0][0]}, {sorted_keywords[0][1]}\n')
+#             sorted_keywords = [(keyword, count) for keyword, count in sorted(api_counts[key]['kwargs'].items(), key=lambda item: item[1], reverse=True)] + [('', '')]
+#             f.write(f'{key}, {value["count"]}, {sorted_num_args[0][0]}, {sorted_num_args[0][1]}, {sorted_keywords[0][0]}, {sorted_keywords[0][1]}\n')
 
 
 def cli(arguments):
@@ -152,9 +167,41 @@ def cli(arguments):
     parser.add_argument('--include-dirs', help='directories to include in statistics')
     parser.add_argument('--output', default='summary.csv', help="output filename")
     parser.add_argument('--extensions', default='py', help="filename extensions to parse")
+    parser.add_argument('--limit', default=None, help='limit number of packages to parse for statistics')
     args = parser.parse_args()
 
     return args
+
+
+def _create_database(connection):
+    with connection:
+        connection.execute('''
+CREATE TABLE IF NOT EXISTS FileStats (
+   project TEXT,
+   filename TEXT,
+   filename_hash TEXT,
+   namespace TEXT,
+   stats BLOB,
+
+   PRIMARY KEY (filename_hash, namespace)
+)
+''')
+
+
+def _database_check_file_previously_parsed(connection, filename_hash):
+    with connection:
+        result = connection.execute('SELECT filename_hash FROM FileStats WHERE filename_hash = ?', (filename_hash,)).fetchone()
+    return result is not None
+
+
+def _database_insert_file_namespaces(connection, project_name, filename, filename_hash, api_stats):
+    for namespace in api_stats:
+        stats = {'.'.join(key): value for key, value in api_stats[namespace].items()}
+        with connection:
+            result = connection.execute('''
+INSERT INTO FileStats (project, filename, filename_hash, namespace, stats)
+VALUES (?, ?, ?, ?, ?)
+''', (project_name, filename, filename_hash, namespace, json.dumps(stats)))
 
 
 def main():
@@ -164,34 +211,24 @@ def main():
     os.makedirs(args.cache_dir, exist_ok=True)
 
     connection = sqlite3.connect(os.path.join(args.cache_dir, 'inspect.sqlite'))
-    with connection:
-        connection.execute('''
-CREATE TABLE IF NOT EXISTS FileStats (
-   file_hash TEXT,
-   namespaces TEXT,
-   stats BLOB,
-
-   PRIMARY KEY (file_hash, namespaces)
-)
-''')
+    _create_database(connection)
 
     whitelist = configparser.ConfigParser()
     whitelist.read(args.whitelist)
-    total_api_counts = collections.defaultdict(lambda: {
-        'count': 0,
-        'n_args': collections.defaultdict(int),
-        'kwargs': collections.defaultdict(int),
-    })
 
-    namespaces = set(whitelist['config']['namespaces'].split(','))
-    namespaces_string = ','.join(sorted(namespaces))
-
+    # determine filename extensions to use (e.g. .py, .ipynb)
     filename_extensions = tuple(set('.' + _ for _ in args.extensions.split(',')))
 
+    # determine filenames to exclude/include based on directories in path
     exclude_dirs = set(args.exclude_dirs.split(',')) if args.exclude_dirs else set()
     include_dirs = set(args.include_dirs.split(',')) if args.include_dirs else set()
 
-    for project_name in whitelist['packages']:
+    # limit number of packages parsed
+    packages = list(whitelist['packages'])
+    if args.limit:
+        packages = packages[:int(args.limit)]
+
+    for project_name in packages:
         site, owner, repo, ref = whitelist['packages'][project_name].split('/')
         if site == 'github':
             zip_filename = download_github_repo(owner, repo, ref, args.cache_dir)
@@ -215,30 +252,16 @@ CREATE TABLE IF NOT EXISTS FileStats (
                         contents = f.read()
                     contents_hash = hashlib.sha256(contents).hexdigest()
 
-                    with connection:
-                        result = connection.execute('SELECT stats FROM FileStats WHERE file_hash = ? AND namespaces = ?', (contents_hash, namespaces_string)).fetchone()
-
-                    if result:
-                        api_counts = json.loads(result[0])
-                    else:
+                    if not _database_check_file_previously_parsed(connection, contents_hash):
                         file_ast = parse_filename(filename, contents)
+
                         if file_ast is None:
                             continue # parsing error/syntax error
-                        api_counts = inspect_file_ast(file_ast, namespaces)
-                        api_counts = {'.'.join(key): value for key, value in api_counts.items()}
-                        with connection:
-                            connection.execute('INSERT INTO FileStats (file_hash, namespaces, stats) VALUES (?, ?, ?)', (contents_hash, namespaces_string, json.dumps(api_counts)))
 
-                    for key, value in api_counts.items():
-                        total_api_counts[key]['count'] += value['count']
-                        for num_args, count in value['n_args'].items():
-                            total_api_counts[key]['n_args'][num_args] += count
-                        for keyword, count in value['kwargs'].items():
-                            total_api_counts[key]['kwargs'][keyword] += count
+                        api_stats = inspect_file_ast(file_ast)
+                        _database_insert_file_namespaces(connection, project_name, filename, contents_hash, api_stats)
         except zipfile.BadZipFile:
             continue
-
-    output_api_counts(total_api_counts, args.output)
 
 
 if __name__ == "__main__":
