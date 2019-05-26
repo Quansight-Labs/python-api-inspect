@@ -1,0 +1,526 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+tensorflow.train.AdadeltaOptimizer, 1, 3, 1, epsilon, 1
+tensorflow.summary.image, 1, 3, 1, max_outputs, 1
+tensorflow.estimator.export.PredictOutput, 1, 1, 1, , 
+tensorflow.losses.softmax_cross_entropy, 1, 2, 1, logits, 1
+tensorflow.train.piecewise_constant, 1, 3, 1, , 
+tensorflow.contrib.learn.datasets.base.load_csv_with_header, 1, 3, 1, features_dtype, 1
+tensorflow.saved_model.simple_save, 1, 4, 1, inputs, 1
+tensorflow.losses.sparse_softmax_cross_entropy, 1, 2, 1, logits, 1
+tensorflow.train.LoggingTensorHook, 1, 2, 1, every_n_iter, 1
+tensorflow.python.layers.normalization.BatchNormalization, 1, 0, 1, , 
+tensorflow.space_to_depth, 1, 2, 1, , 
+tensorflow.depth_to_space, 1, 2, 1, , 
+tensorflow.sparse_tensor_dense_matmul, 1, 3, 1, name, 1
+tensorflow.gfile.MakeDirs, 1, 1, 1, , 
+tensorflow.math.divide, 1, 3, 1, name, 1
+tensorflow.executing_eagerly, 1, 0, 1, , 
+tensorflow.logging.info, 1, 1, 1, , 
+tensorflow.app.flags._FlagValues, 1, 0, 1, , 
+tensorflow.contrib.layers.l2_regularizer, 1, 1, 1, scale, 1
+tensorflow.truncated_normal_initializer, 1, 2, 1, , 
+tensorflow.greater, 1, 2, 1, , 
+tensorflow.math.reduce_prod, 1, 3, 1, , 
+tensorflow.contrib.lite.Interpreter, 1, 1, 1, model_content, 1
+tensorflow.contrib.lite.TFLiteConverter.from_session, 1, 3, 1, , 
+tensorflow.cosh, 1, 1, 1, , 
+tensorflow.sinh, 1, 1, 1, , 
+tensorflow.data.Dataset.from_generator, 1, 2, 1, , 
+tensorflow.data.Iterator.from_string_handle, 1, 3, 1, , 
+tensorflow.nn.convolution, 1, 5, 1, strides, 1
+tensorflow.layers.separable_conv2d, 1, 5, 1, filters, 1
+tensorflow.layers.average_pooling1d, 1, 3, 1, strides, 1
+tensorflow.layers.max_pooling1d, 1, 3, 1, strides, 1
+tensorflow.contrib.slim.repeat, 1, 6, 1, scope, 1
+tensorflow.contrib.slim.avg_pool2d, 1, 3, 1, scope, 1
+tensorflow.contrib.slim.one_hot_encoding, 1, 2, 1, , 
+tensorflow.contrib.slim.conv2d_transpose, 1, 4, 1, scope, 1
+tensorflow.contrib.slim.conv2d_in_plane, 1, 4, 1, scope, 1
+tensorflow.keras.regularizers.l1, 1, 1, 1, l, 1
+tensorflow.keras.regularizers.l2, 1, 1, 1, l, 1
+tensorflow.sub, 1, 2, 1, , 
+tensorflow.app.flags.DEFINE_boolean, 1, 3, 1, , 
+tensorflow.keras.models.clone_model, 1, 1, 1, , 
+tensorflow.local_variables_initializer, 1, 0, 1, , 
+tensorflow.decode_base64, 1, 1, 1, , 
+tensorflow.image.decode_jpeg, 1, 2, 1, channels, 1
+tensorflow.decode_csv, 1, 2, 1, , 
+tensorflow.estimator.RunConfig, 1, 1, 1, , 
+tensorflow.estimator.LinearClassifier, 1, 2, 1, feature_columns, 1
+tensorflow.feature_column.make_parse_example_spec, 1, 1, 1, , 
+tensorflow.python_io.tf_record_iterator, 1, 1, 1, path, 1
+tensorflow.contrib.slim.softmax, 1, 1, 1, , 
+tensorflow.distributions.Categorical, 1, 1, 1, logits, 1
+tensorflow.global_norm, 1, 1, 1, , 
+tensorflow.nn.xw_plus_b, 1, 3, 1, , 
+tensorflow.MetaGraphDef.MetaInfoDef, 1, 0, 1, , 
+tensorflow.train.SaverDef, 1, 0, 1, , 
+tensorflow.train.get_global_step, 1, 1, 1, , 
+tensorflow.Assert, 1, 3, 1, summarize, 1
+tensorflow.nn.ctc_loss, 1, 3, 1, sequence_length, 1
+tensorflow.contrib.graph_editor.ControlOutputs, 1, 1, 1, , 
+tensorflow.contrib.graph_editor.detach, 1, 2, 1, control_ios, 1
+tensorflow.contrib.graph_editor.connect, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.bypass, 1, 1, 1, , 
+tensorflow.contrib.graph_editor.swap_ts, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.swap_ios, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.swap_outputs, 1, 2, 1, , 
+tensorflow.python.framework.ops.control_dependencies, 1, 1, 1, , 
+tensorflow.contrib.graph_editor.get_walks_intersection_ops, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.get_walks_union_ops, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.select_ts, 1, 2, 1, graph, 1
+tensorflow.contrib.graph_editor.select_ops_and_ts, 1, 2, 1, graph, 1
+tensorflow.contrib.graph_editor.sgv_scope, 1, 2, 1, graph, 1
+tensorflow.contrib.graph_editor.copy, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.make_view, 1, 1, 1, , 
+tensorflow.contrib.graph_editor.transform.copy_op_handler, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.copy_with_input_replacements, 1, 2, 1, , 
+tensorflow.contrib.graph_editor.util.ListView, 1, 1, 1, , 
+tensorflow.contrib.graph_editor.util.check_graphs, 1, 4, 1, , 
+tensorflow.contrib.graph_editor.util.get_unique_graph, 1, 1, 1, , 
+tensorflow.contrib.kfac.layer_collection.LayerCollection, 1, 0, 1, , 
+tensorflow.python.platform.tf_logging.warning, 1, 1, 1, , 
+tensorflow.clip_by_global_norm, 1, 2, 1, , 
+tensorflow.contrib.layers.xavier_initializer, 1, 0, 1, , 
+tensorflow.register_tensor_conversion_function, 1, 2, 1, , 
+tensorflow.keras.backend.set_learning_phase, 1, 1, 1, , 
+tensorflow.python.keras.backend.floatx, 1, 0, 1, , 
+tensorflow.python.keras.backend.dtype, 1, 1, 1, , 
+tensorflow.random.set_random_seed, 1, 1, 1, , 
+tensorflow.verify_tensor_all_finite, 1, 2, 1, , 
+tensorflow.scatter_nd_add, 1, 3, 1, , 
+tensorflow.contrib.util.make_ndarray, 1, 1, 1, , 
+tensorflow.nn.embedding_lookup_sparse, 1, 3, 1, , 
+tensorflow.glorot_normal_initializer, 1, 1, 1, dtype, 1
+tensorflow.train.exponential_decay, 1, 5, 1, decay_rate, 1
+tensorflow.gfile.FastGFile, 1, 2, 1, , 
+tensorflow.contrib.slim.tfexample_decoder.Image, 1, 0, 1, , 
+tensorflow.contrib.slim.tfexample_decoder.Tensor, 1, 1, 1, , 
+tensorflow.FIFOQueue, 1, 5, 1, shared_name, 1
+tensorflow.random_shuffle, 1, 1, 1, , 
+tensorflow.random_crop, 1, 2, 1, , 
+tensorflow.size, 1, 1, 1, , 
+tensorflow.scalar_mul, 1, 2, 1, , 
+tensorflow.truediv, 1, 1, 1, , 
+tensorflow.mod, 1, 1, 1, , 
+tensorflow.cross, 1, 1, 1, , 
+tensorflow.inv, 1, 1, 1, , 
+tensorflow.lbeta, 1, 1, 1, , 
+tensorflow.tan, 1, 1, 1, , 
+tensorflow.acos, 1, 1, 1, , 
+tensorflow.asin, 1, 1, 1, , 
+tensorflow.atan, 1, 1, 1, , 
+tensorflow.digamma, 1, 1, 1, , 
+tensorflow.erfc, 1, 1, 1, , 
+tensorflow.igamma, 1, 1, 1, , 
+tensorflow.igammac, 1, 1, 1, , 
+tensorflow.zeta, 1, 2, 1, , 
+tensorflow.polygamma, 1, 2, 1, , 
+tensorflow.betainc, 1, 1, 1, , 
+tensorflow.matrix_diag_part, 1, 1, 1, , 
+tensorflow.matrix_determinant, 1, 1, 1, , 
+tensorflow.matrix_solve_ls, 1, 1, 1, , 
+tensorflow.self_adjoint_eig, 1, 1, 1, , 
+tensorflow.svd, 1, 1, 1, , 
+tensorflow.complex, 1, 1, 1, , 
+tensorflow.conj, 1, 1, 1, , 
+tensorflow.imag, 1, 1, 1, , 
+tensorflow.real, 1, 1, 1, , 
+tensorflow.ifft2d, 1, 1, 1, , 
+tensorflow.fft3d, 1, 1, 1, , 
+tensorflow.ifft3d, 1, 1, 1, , 
+tensorflow.segment_prod, 1, 2, 1, , 
+tensorflow.segment_min, 1, 2, 1, , 
+tensorflow.segment_max, 1, 2, 1, , 
+tensorflow.segment_mean, 1, 2, 1, , 
+tensorflow.unsorted_segment_sum, 1, 3, 1, , 
+tensorflow.sparse_segment_sum, 1, 3, 1, , 
+tensorflow.sparse_segment_mean, 1, 3, 1, , 
+tensorflow.sparse_segment_sqrt_n, 1, 3, 1, , 
+tensorflow.listdiff, 1, 2, 1, , 
+tensorflow.unique, 1, 2, 1, out_idx, 1
+tensorflow.invert_permutation, 1, 1, 1, , 
+tensorflow.keras.layers.Embedding, 1, 3, 1, output_dim, 1
+tensorflow.python.platform.test.main, 1, 0, 1, , 
+tensorflow.contrib.learn.python.learn.dataframe.tensorflow_dataframe.TensorFlowDataFrame.from_csv_with_feature_spec, 1, 4, 1, batch_size, 1
+tensorflow.contrib.learn.python.learn.dataframe.tensorflow_dataframe.TensorFlowDataFrame.from_examples, 1, 5, 1, features, 1
+tensorflow.as_dtype, 1, 1, 1, , 
+tensorflow.nn.local_response_normalization, 1, 1, 1, , 
+tensorflow.realdiv, 1, 2, 1, , 
+tensorflow.nn.fused_batch_norm, 1, 8, 1, data_format, 1
+tensorflow.is_nan, 1, 1, 1, , 
+tensorflow.keras.layers.ThresholdedReLU, 1, 1, 1, theta, 1
+tensorflow.nn.max_pool_with_argmax, 1, 4, 1, padding, 1
+tensorflow.greater_equal, 1, 2, 1, , 
+tensorflow.setdiff1d, 1, 2, 1, , 
+tensorflow.contrib.eager.gradients_function, 1, 1, 1, , 
+tensorflow.data.Dataset.zip, 1, 1, 1, , 
+tensorflow.train.MomentumOptimizer, 2, 2, 2, learning_rate, 2
+tensorflow.test.is_built_with_cuda, 2, 0, 2, , 
+tensorflow.train.init_from_checkpoint, 2, 2, 2, , 
+tensorflow.layers.dropout, 2, 3, 2, rate, 2
+tensorflow.estimator.TrainSpec, 2, 2, 1, max_steps, 2
+tensorflow.estimator.EvalSpec, 2, 1, 1, hooks, 1
+tensorflow.estimator.train_and_evaluate, 2, 3, 2, estimator, 1
+tensorflow.image.crop_and_resize, 2, 4, 2, crop_size, 2
+tensorflow.keras.losses.SparseCategoricalCrossentropy, 2, 1, 2, from_logits, 2
+tensorflow.print, 2, 1, 2, , 
+tensorflow.zeros_initializer, 2, 0, 2, , 
+tensorflow.gfile.GFile, 2, 2, 2, , 
+tensorflow.train.get_checkpoint_state, 2, 1, 2, , 
+tensorflow.feature_column.categorical_column_with_vocabulary_list, 2, 2, 2, key, 2
+tensorflow.feature_column.indicator_column, 2, 1, 2, , 
+tensorflow.moving_average_variables, 2, 0, 2, , 
+tensorflow.random_normal_initializer, 2, 3, 2, dtype, 2
+tensorflow.contrib.rnn.LSTMStateTuple, 2, 2, 2, c, 1
+tensorflow.keras.models.Sequential, 2, 1, 2, , 
+tensorflow.diag_part, 2, 1, 2, , 
+tensorflow.app.run, 2, 0, 2, , 
+tensorflow.train.string_input_producer, 2, 1, 2, , 
+tensorflow.TFRecordReader, 2, 0, 2, , 
+tensorflow.contrib.distributions.Bernoulli, 2, 1, 2, , 
+tensorflow.train.batch, 2, 4, 1, batch_size, 2
+tensorflow.contrib.rnn.BasicLSTMCell, 2, 1, 1, state_is_tuple, 1
+tensorflow.image.crop_to_bounding_box, 2, 5, 2, , 
+tensorflow.logical_or, 2, 3, 2, name, 2
+tensorflow.logical_xor, 2, 3, 2, name, 2
+tensorflow.gfile.Exists, 2, 1, 2, , 
+tensorflow.logging.fatal, 2, 2, 2, , 
+tensorflow.keras.backend.mean, 2, 2, 2, null, 2
+tensorflow.broadcast_to, 2, 2, 2, , 
+tensorflow.reverse, 2, 3, 1, axis, 1
+tensorflow.make_ndarray, 2, 1, 2, , 
+tensorflow.data.Iterator.from_structure, 2, 2, 2, , 
+tensorflow.contrib.slim.flatten, 2, 2, 2, scope, 2
+tensorflow.contrib.slim.max_pool2d, 2, 3, 1, scope, 2
+tensorflow.contrib.slim.batch_norm, 2, 4, 2, is_training, 2
+tensorflow.contrib.slim.separable_conv2d, 2, 5, 1, scope, 2
+tensorflow.contrib.slim.unit_norm, 2, 2, 2, dim, 1
+tensorflow.train.SummaryWriter, 2, 2, 2, , 
+tensorflow.keras.backend.eval, 2, 1, 2, , 
+tensorflow.summary.merge_all, 2, 0, 2, , 
+tensorflow.boolean_mask, 2, 2, 2, , 
+tensorflow.data.Dataset.list_files, 2, 1, 2, , 
+tensorflow.data.TFRecordDataset, 2, 2, 2, compression_type, 2
+tensorflow.parse_example, 2, 2, 2, features, 2
+tensorflow.string_to_number, 2, 2, 1, , 
+tensorflow.trace, 2, 1, 2, , 
+tensorflow.SparseFeature, 2, 4, 2, , 
+tensorflow.gfile.Glob, 2, 1, 2, , 
+tensorflow.contrib.framework.get_unique_variable, 2, 1, 2, , 
+tensorflow.python.training.saver.Saver, 2, 1, 1, write_version, 2
+tensorflow.python.framework.ops.Graph, 2, 0, 2, , 
+tensorflow.python.framework.ops.name_scope, 2, 1, 2, , 
+tensorflow.contrib.graph_editor.util.ControlOutputs, 2, 1, 2, , 
+tensorflow.contrib.graph_editor.get_within_boundary_ops, 2, 5, 1, boundary_ops, 2
+tensorflow.contrib.graph_editor.select_ops, 2, 2, 2, graph, 2
+tensorflow.contrib.graph_editor.util.get_tensors, 2, 1, 2, , 
+tensorflow.contrib.graph_editor.Transformer, 2, 0, 2, , 
+tensorflow.required_space_to_batch_paddings, 2, 3, 2, base_paddings, 2
+tensorflow.clip_by_value, 2, 3, 2, , 
+tensorflow.sequence_mask, 2, 3, 2, dtype, 2
+tensorflow.einsum, 2, 3, 1, , 
+tensorflow.segment_sum, 2, 2, 2, , 
+tensorflow.python.framework.dtypes.as_dtype, 2, 1, 2, , 
+tensorflow.glorot_uniform_initializer, 2, 2, 2, dtype, 2
+tensorflow.initialize_all_variables, 2, 0, 2, , 
+tensorflow.get_variable_scope, 2, 0, 2, , 
+tensorflow.load_op_library, 2, 1, 2, , 
+tensorflow.linspace, 2, 3, 2, , 
+tensorflow.rank, 2, 1, 2, , 
+tensorflow.erf, 2, 1, 2, , 
+tensorflow.matrix_solve, 2, 2, 2, adjoint, 2
+tensorflow.nn.softsign, 2, 1, 2, , 
+tensorflow.nn.conv3d, 2, 4, 2, , 
+tensorflow.nn.avg_pool3d, 2, 4, 2, , 
+tensorflow.nn.max_pool3d, 2, 4, 2, , 
+tensorflow.contrib.learn.python.learn.dataframe.queues.feeding_functions._OrderedDictNumpyFeedFn, 2, 4, 2, num_epochs, 2
+tensorflow.contrib.learn.python.learn.dataframe.transforms.reader_source.ReaderSource, 2, 5, 1, num_threads, 2
+tensorflow.multinomial, 2, 3, 2, output_dtype, 2
+tensorflow.contrib.keras.models.Sequential, 2, 0, 2, , 
+tensorflow.estimator.export.ServingInputReceiver, 3, 2, 3, , 
+tensorflow.estimator.DNNClassifier, 3, 5, 3, feature_columns, 3
+tensorflow.make_tensor_proto, 3, 3, 2, dtype, 3
+tensorflow.contrib.layers.flatten, 3, 1, 3, , 
+tensorflow.train.RMSPropOptimizer, 3, 1, 3, , 
+tensorflow.fft2d, 3, 1, 3, , 
+tensorflow.nn.softmax_cross_entropy_with_logits_v2, 3, 2, 3, logits, 3
+tensorflow.keras.Model, 3, 2, 3, inputs, 3
+tensorflow.train.summary_iterator, 3, 1, 3, , 
+tensorflow.contrib.rnn.MultiRNNCell, 3, 1, 2, state_is_tuple, 1
+tensorflow.nn.rnn_cell.BasicRNNCell, 3, 1, 3, , 
+tensorflow.logical_not, 3, 2, 2, name, 2
+tensorflow.floor, 3, 1, 3, , 
+tensorflow.nn.selu, 3, 1, 3, , 
+tensorflow.math.add, 3, 3, 3, name, 3
+tensorflow.round, 3, 1, 2, name, 1
+tensorflow.maximum, 3, 2, 2, , 
+tensorflow.saved_model.builder.SavedModelBuilder, 3, 1, 3, , 
+tensorflow.layers.conv2d_transpose, 3, 5, 3, filters, 3
+tensorflow.keras.backend.set_session, 3, 1, 3, , 
+tensorflow.pack, 3, 1, 3, , 
+tensorflow.summary.FileWriterCache.clear, 3, 0, 3, , 
+tensorflow.train.Feature, 3, 1, 3, float_list, 1
+tensorflow.image.non_max_suppression, 3, 3, 2, max_output_size, 3
+tensorflow.train.MonitoredSession, 3, 0, 3, , 
+tensorflow.is_inf, 3, 1, 3, , 
+tensorflow.train.create_global_step, 3, 0, 3, , 
+tensorflow.python.training.momentum.MomentumOptimizer, 3, 2, 2, learning_rate, 3
+tensorflow.contrib.graph_editor.reroute_ts, 3, 2, 3, , 
+tensorflow.contrib.graph_editor.compute_boundary_ts, 3, 1, 3, , 
+tensorflow.python.platform.tf_logging.error, 3, 1, 1, , 
+tensorflow.scatter_nd, 3, 3, 3, , 
+tensorflow.lgamma, 3, 1, 3, , 
+tensorflow.matrix_inverse, 3, 2, 2, adjoint, 2
+tensorflow.GPUOptions, 3, 1, 3, per_process_gpu_memory_fraction, 3
+tensorflow.argmin, 3, 2, 3, axis, 2
+tensorflow.nn.atrous_conv2d, 3, 4, 3, padding, 3
+tensorflow.nn.conv2d_transpose, 3, 5, 3, padding, 3
+tensorflow.contrib.learn.python.learn.dataframe.tensorflow_dataframe.TensorFlowDataFrame.from_numpy, 3, 3, 2, batch_size, 3
+tensorflow.contrib.learn.python.learn.dataframe.tensorflow_dataframe.TensorFlowDataFrame.from_csv, 3, 4, 2, batch_size, 3
+tensorflow.reciprocal, 3, 1, 3, , 
+tensorflow.image.resize_nearest_neighbor, 3, 2, 3, , 
+tensorflow.nn.rnn_cell.LSTMStateTuple, 3, 2, 3, , 
+tensorflow.contrib.seq2seq.GreedyEmbeddingHelper, 3, 3, 3, end_token, 3
+tensorflow.contrib.seq2seq.BasicDecoder, 3, 4, 3, initial_state, 3
+tensorflow.contrib.seq2seq.dynamic_decode, 3, 2, 3, decoder, 3
+tensorflow.train.shuffle_batch, 3, 5, 3, batch_size, 3
+tensorflow.enable_eager_execution, 4, 0, 4, , 
+tensorflow.contrib.framework.local_variable, 4, 2, 4, name, 4
+tensorflow.metrics.accuracy, 4, 2, 2, predictions, 1
+tensorflow.layers.average_pooling2d, 4, 5, 2, pool_size, 4
+tensorflow.estimator.Estimator, 4, 2, 4, model_fn, 4
+tensorflow.random.normal, 4, 1, 4, shape, 1
+tensorflow.config.gpu.set_per_process_memory_growth, 4, 1, 4, , 
+tensorflow.reduce_min, 4, 3, 2, axis, 2
+tensorflow.estimator.DNNRegressor, 4, 2, 4, feature_columns, 4
+tensorflow.estimator.export.build_raw_serving_input_receiver_fn, 4, 1, 4, , 
+tensorflow.train.ExponentialMovingAverage, 4, 1, 4, decay, 2
+tensorflow.layers.Dense, 4, 2, 3, kernel_initializer, 3
+tensorflow.nn.batch_normalization, 4, 6, 4, x, 1
+tensorflow.nn.sigmoid_cross_entropy_with_logits, 4, 2, 4, logits, 4
+tensorflow.keras.Input, 4, 1, 4, shape, 4
+tensorflow.cholesky, 4, 1, 4, , 
+tensorflow.add_to_collection, 4, 2, 4, , 
+tensorflow.diag, 4, 1, 4, , 
+tensorflow.nn.rnn_cell.GRUCell, 4, 1, 4, , 
+tensorflow.nn.conv1d, 4, 4, 4, padding, 2
+tensorflow.ceil, 4, 1, 4, , 
+tensorflow.nn.elu, 4, 1, 4, , 
+tensorflow.divide, 4, 2, 4, , 
+tensorflow.squared_difference, 4, 2, 3, , 
+tensorflow.train.export_meta_graph, 4, 0, 2, meta_info_def, 1
+tensorflow.image.resize_images, 4, 2, 4, , 
+tensorflow.data.Dataset.from_tensor_slices, 4, 1, 4, , 
+tensorflow.nn.top_k, 4, 3, 2, sorted, 3
+tensorflow.keras.backend.get_session, 4, 0, 4, , 
+tensorflow.train.SequenceExample, 4, 0, 4, , 
+tensorflow.nn.softmax_cross_entropy_with_logits, 4, 2, 4, logits, 4
+tensorflow.train.ClusterSpec, 4, 1, 4, , 
+tensorflow.NodeDef, 4, 2, 4, op, 4
+tensorflow.train.Server, 4, 5, 2, job_name, 4
+tensorflow.cos, 4, 1, 4, , 
+tensorflow.floordiv, 4, 2, 3, , 
+tensorflow.floormod, 4, 2, 3, , 
+tensorflow.nn.relu6, 4, 1, 4, , 
+tensorflow.contrib.learn.python.learn.dataframe.tensorflow_dataframe.TensorFlowDataFrame.from_pandas, 4, 3, 3, shuffle, 4
+tensorflow.contrib.learn.python.learn.dataframe.queues.feeding_functions.enqueue_data, 4, 2, 2, capacity, 4
+tensorflow.matrix_band_part, 4, 3, 4, , 
+tensorflow.nn.depthwise_conv2d, 5, 4, 3, strides, 5
+tensorflow.minimum, 5, 2, 4, , 
+tensorflow.variables_initializer, 5, 1, 5, , 
+tensorflow.norm, 5, 1, 3, axis, 2
+tensorflow.sparse_tensor_to_dense, 5, 1, 3, validate_indices, 2
+tensorflow.python_io.TFRecordWriter, 5, 1, 5, , 
+tensorflow.sigmoid, 5, 1, 5, , 
+tensorflow.nn.leaky_relu, 5, 2, 4, alpha, 2
+tensorflow.rsqrt, 5, 1, 4, name, 1
+tensorflow.sin, 5, 1, 5, , 
+tensorflow.mul, 5, 3, 3, name, 1
+tensorflow.reduce_prod, 5, 2, 2, reduction_indices, 2
+tensorflow.fill, 5, 2, 5, , 
+tensorflow.TensorShape, 5, 1, 5, , 
+tensorflow.contrib.learn.python.learn.dataframe.queues.feeding_functions._ArrayFeedFn, 5, 3, 3, num_epochs, 2
+tensorflow.contrib.learn.python.learn.dataframe.queues.feeding_functions._PandasFeedFn, 5, 3, 3, num_epochs, 2
+tensorflow.random.uniform, 6, 1, 3, minval, 3
+tensorflow.SparseTensor, 6, 3, 6, indices, 2
+tensorflow.train.import_meta_graph, 6, 1, 6, , 
+tensorflow.layers.flatten, 6, 1, 6, , 
+tensorflow.losses.mean_squared_error, 6, 2, 6, predictions, 1
+tensorflow.contrib.rnn.LSTMCell, 6, 1, 4, num_units, 4
+tensorflow.py_func, 6, 4, 4, stateful, 4
+tensorflow.matrix_triangular_solve, 6, 3, 6, lower, 6
+tensorflow.nn.log_softmax, 6, 1, 6, , 
+tensorflow.contrib.framework.get_or_create_global_step, 6, 0, 6, , 
+tensorflow.no_op, 6, 0, 3, name, 3
+tensorflow.parse_single_example, 6, 2, 6, features, 6
+tensorflow.train.write_graph, 6, 3, 3, as_text, 2
+tensorflow.batch_to_space_nd, 6, 3, 5, crops, 4
+tensorflow.compat.v1.Session, 6, 0, 6, , 
+tensorflow.saved_model.signature_def_utils.build_signature_def, 6, 3, 4, inputs, 5
+tensorflow.layers.conv1d, 6, 4, 5, padding, 6
+tensorflow.data.Dataset.from_tensors, 6, 1, 6, , 
+tensorflow.keras.models.Model, 6, 2, 6, inputs, 6
+tensorflow.contrib.nn.deprecated_flipped_sigmoid_cross_entropy_with_logits, 6, 2, 6, , 
+tensorflow.contrib.graph_editor.graph_replace, 6, 2, 5, dst_scope, 1
+tensorflow.stop_gradient, 6, 1, 6, , 
+tensorflow.case, 6, 3, 3, default, 5
+tensorflow.estimator.EstimatorSpec, 7, 3, 3, mode, 7
+tensorflow.train.get_or_create_global_step, 7, 0, 7, , 
+tensorflow.layers.max_pooling2d, 7, 3, 4, pool_size, 5
+tensorflow.estimator.inputs.numpy_input_fn, 7, 4, 5, shuffle, 7
+tensorflow.test.get_temp_dir, 7, 0, 7, , 
+tensorflow.nn.softplus, 7, 1, 6, name, 1
+tensorflow.graph_util.convert_variables_to_constants, 7, 3, 7, , 
+tensorflow.space_to_batch_nd, 7, 3, 5, paddings, 4
+tensorflow.nn.avg_pool, 7, 4, 6, padding, 2
+tensorflow.div, 7, 2, 5, , 
+tensorflow.zeros_like, 7, 1, 4, tensor, 4
+tensorflow.IndexedSlices, 7, 3, 7, , 
+tensorflow.gather_nd, 7, 2, 7, indices, 1
+tensorflow.python.platform.tf_logging.info, 7, 2, 6, , 
+tensorflow.random_uniform_initializer, 7, 2, 7, minval, 1
+tensorflow.reverse_sequence, 7, 4, 7, seq_lengths, 6
+tensorflow.truncated_normal, 8, 2, 4, stddev, 5
+tensorflow.keras.layers.Dense, 8, 2, 7, activation, 7
+tensorflow.nn.sparse_softmax_cross_entropy_with_logits, 8, 2, 8, logits, 7
+tensorflow.tile, 8, 2, 7, multiples, 1
+tensorflow.map_fn, 8, 3, 7, dtype, 8
+tensorflow.contrib.slim.queues.QueueRunners, 8, 1, 8, , 
+tensorflow.tanh, 8, 1, 7, name, 1
+tensorflow.reduce_all, 8, 3, 4, keepdims, 4
+tensorflow.contrib.slim.conv2d, 8, 4, 7, scope, 8
+tensorflow.decode_raw, 8, 2, 8, , 
+tensorflow.assign_add, 8, 2, 8, , 
+tensorflow.distributions.Normal, 8, 2, 8, loc, 2
+tensorflow.get_default_graph, 8, 0, 8, , 
+tensorflow.summary.FileWriter, 8, 1, 5, graph, 1
+tensorflow.Print, 8, 4, 5, message, 6
+tensorflow.keras.layers.Input, 8, 1, 7, shape, 8
+tensorflow.to_float, 8, 1, 8, , 
+tensorflow.contrib.graph_editor.sgv, 8, 2, 3, , 
+tensorflow.reduce_any, 8, 3, 4, keepdims, 4
+tensorflow.add_n, 9, 1, 9, , 
+tensorflow.equal, 9, 2, 9, , 
+tensorflow.train.MonitoredTrainingSession, 9, 1, 4, is_chief, 6
+tensorflow.TensorArray, 9, 3, 5, dynamic_size, 5
+tensorflow.sign, 9, 1, 8, name, 1
+tensorflow.pow, 9, 2, 6, name, 2
+tensorflow.contrib.slim.fully_connected, 9, 3, 5, scope, 6
+tensorflow.slice, 9, 3, 8, name, 1
+tensorflow.contrib.seq2seq.BahdanauAttention, 9, 2, 7, , 
+tensorflow.test.mock.patch.object, 9, 2, 9, , 
+tensorflow.compat.as_bytes, 9, 1, 9, , 
+tensorflow.keras.Sequential, 10, 1, 10, , 
+tensorflow.layers.batch_normalization, 10, 2, 5, training, 8
+tensorflow.global_variables, 10, 0, 10, , 
+tensorflow.group, 10, 2, 6, , 
+tensorflow.nn.moments, 10, 2, 10, axes, 2
+tensorflow.get_default_session, 10, 0, 10, , 
+tensorflow.negative, 10, 1, 10, , 
+tensorflow.test.TestCase.setUp, 10, 1, 10, , 
+tensorflow.sqrt, 10, 1, 8, name, 2
+tensorflow.nn.tanh, 10, 1, 9, name, 1
+tensorflow.gather, 10, 2, 6, axis, 4
+tensorflow.contrib.eager.Variable, 10, 1, 10, , 
+tensorflow.nn.dropout, 11, 2, 8, keep_prob, 3
+tensorflow.abs, 11, 1, 11, , 
+tensorflow.ones_like, 11, 1, 7, dtype, 4
+tensorflow.nn.l2_normalize, 11, 2, 11, dim, 9
+tensorflow.strided_slice, 11, 4, 5, begin_mask, 3
+tensorflow.less, 11, 2, 11, , 
+tensorflow.compat.v1.summary.FileWriter, 11, 2, 11, logdir, 4
+tensorflow.contrib.seq2seq.AttentionWrapper, 11, 5, 9, attention_layer_size, 11
+tensorflow.VarLenFeature, 11, 1, 11, dtype, 5
+tensorflow.python.client.session.Session, 11, 0, 9, graph, 2
+tensorflow.nn.bias_add, 12, 2, 7, name, 4
+tensorflow.unstack, 12, 2, 7, axis, 7
+tensorflow.nn.embedding_lookup, 12, 2, 12, ids, 1
+tensorflow.placeholder_with_default, 12, 2, 7, shape, 3
+tensorflow.nn.rnn_cell.LSTMCell, 12, 1, 11, state_is_tuple, 1
+tensorflow.summary.scalar, 13, 2, 13, , 
+tensorflow.one_hot, 13, 3, 6, axis, 8
+tensorflow.image.resize_bilinear, 13, 3, 8, align_corners, 8
+tensorflow.nn.sigmoid, 13, 1, 13, , 
+tensorflow.logical_and, 13, 2, 11, name, 2
+tensorflow.saved_model.utils.build_tensor_info, 13, 1, 13, , 
+tensorflow.argmax, 14, 2, 9, axis, 7
+tensorflow.train.Coordinator, 14, 0, 14, , 
+tensorflow.assign, 14, 2, 14, , 
+tensorflow.eye, 14, 2, 7, dtype, 14
+tensorflow.shape, 14, 1, 10, name, 2
+tensorflow.keras.backend.clear_session, 14, 0, 14, , 
+tensorflow.contrib.framework.get_variables, 14, 1, 14, , 
+tensorflow.train.AdamOptimizer, 15, 1, 14, learning_rate, 9
+tensorflow.log, 15, 1, 14, name, 1
+tensorflow.split, 15, 3, 14, axis, 8
+tensorflow.where, 15, 3, 10, , 
+tensorflow.MetaGraphDef, 15, 0, 15, , 
+tensorflow.nn.max_pool, 16, 4, 16, padding, 10
+tensorflow.train.AdagradOptimizer, 16, 1, 16, learning_rate, 12
+tensorflow.scan, 16, 2, 12, elems, 5
+tensorflow.squeeze, 16, 2, 11, axis, 2
+tensorflow.train.start_queue_runners, 17, 1, 15, coord, 14
+tensorflow.optimizers.Adam, 18, 1, 18, learning_rate, 16
+tensorflow.range, 18, 3, 12, dtype, 2
+tensorflow.contrib.slim.arg_scope, 18, 3, 8, weights_initializer, 12
+tensorflow.control_dependencies, 19, 1, 19, , 
+tensorflow.FixedLenFeature, 19, 2, 15, shape, 15
+tensorflow.reduce_max, 19, 2, 9, axis, 8
+tensorflow.get_collection, 20, 1, 11, scope, 7
+tensorflow.feature_column.numeric_column, 20, 2, 9, shape, 15
+tensorflow.GraphDef, 20, 0, 20, , 
+tensorflow.import_graph_def, 20, 2, 14, name, 15
+tensorflow.layers.conv2d, 21, 5, 13, filters, 19
+tensorflow.trainable_variables, 21, 0, 21, , 
+tensorflow.GradientTape, 22, 0, 22, , 
+tensorflow.nn.bidirectional_dynamic_rnn, 22, 4, 18, dtype, 22
+tensorflow.while_loop, 23, 3, 22, loop_vars, 6
+tensorflow.nn.softmax, 25, 1, 19, name, 4
+tensorflow.pad, 28, 2, 16, mode, 7
+tensorflow.nn.conv2d, 30, 4, 25, strides, 25
+tensorflow.cond, 30, 3, 22, name, 8
+tensorflow.stack, 31, 1, 16, axis, 14
+tensorflow.square, 31, 1, 29, name, 2
+tensorflow.exp, 32, 1, 30, name, 2
+tensorflow.train.Example, 32, 0, 26, features, 6
+tensorflow.train.GradientDescentOptimizer, 34, 1, 34, learning_rate, 9
+tensorflow.InteractiveSession, 35, 0, 35, , 
+tensorflow.cast, 37, 2, 32, dtype, 8
+tensorflow.subtract, 37, 2, 32, name, 4
+tensorflow.logging.set_verbosity, 42, 1, 42, , 
+tensorflow.test.TestCase, 42, 0, 42, , 
+tensorflow.train.Saver, 43, 0, 26, max_to_keep, 4
+tensorflow.expand_dims, 43, 2, 42, axis, 27
+tensorflow.nn.relu, 46, 1, 32, name, 14
+tensorflow.multiply, 48, 2, 43, name, 4
+tensorflow.layers.dense, 49, 3, 27, activation, 23
+tensorflow.transpose, 50, 2, 31, perm, 9
+tensorflow.name_scope, 57, 1, 52, , 
+tensorflow.ConfigProto, 62, 2, 31, inter_op_parallelism_threads, 31
+tensorflow.matmul, 63, 2, 43, transpose_b, 11
+tensorflow.random_normal, 64, 1, 58, shape, 16
+tensorflow.device, 67, 1, 67, , 
+tensorflow.random_uniform, 71, 1, 31, dtype, 24
+tensorflow.reshape, 76, 2, 75, shape, 10
+tensorflow.nn.dynamic_rnn, 77, 3, 45, dtype, 77
+tensorflow.concat, 82, 2, 80, axis, 44
+tensorflow.zeros, 85, 1, 79, dtype, 5
+tensorflow.set_random_seed, 94, 1, 94, , 
+tensorflow.reduce_sum, 101, 1, 62, axis, 23
+tensorflow.reduce_mean, 112, 1, 78, axis, 24
+tensorflow.add, 120, 2, 86, name, 33
+tensorflow.global_variables_initializer, 133, 0, 133, , 
+tensorflow.gradients, 140, 2, 92, grad_ys, 14
+tensorflow.get_variable, 160, 3, 75, initializer, 100
+tensorflow.Graph, 191, 0, 191, , 
+tensorflow.variable_scope, 197, 1, 159, reuse, 18
+tensorflow.convert_to_tensor, 240, 2, 142, dtype, 139
+tensorflow.ones, 252, 1, 204, dtype, 48
+tensorflow.test.main, 320, 0, 320, , 
+tensorflow.Variable, 437, 1, 207, name, 154
+tensorflow.reset_default_graph, 442, 0, 442, , 
+tensorflow.identity, 549, 2, 516, name, 471
+tensorflow.Session, 796, 0, 672, graph, 82
+tensorflow.constant, 1001, 1, 487, dtype, 428
+tensorflow.placeholder, 1472, 3, 771, name, 802

@@ -1,3 +1,0 @@
-function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
-requests.get, 4, 1, 4, , 
-requests.post, 13, 2, 11, params, 7

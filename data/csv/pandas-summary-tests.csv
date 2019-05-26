@@ -1,0 +1,818 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+pandas.arrays.PandasArray, 1, 1, 1, , 
+pandas.plotting._compat._mpl_ge_2_2_3, 1, 0, 1, , 
+pandas.core.common.dict_keys_to_ordered_list, 1, 1, 1, , 
+pandas.api.types.is_float_dtype, 1, 1, 1, , 
+pandas.np.random.RandomState, 1, 1, 1, seed, 1
+pandas.apply, 1, 1, 1, , 
+pandas.io.json.loads, 1, 1, 1, , 
+pandas.Series.nunique, 1, 1, 1, , 
+pandas.SparseDtype, 1, 2, 1, , 
+pandas.io.gbq._generate_bq_schema, 1, 1, 1, , 
+pandas.util.testing._skip_if_python26, 1, 0, 1, , 
+pandas.core.common.is_datetime64_dtype, 1, 1, 1, , 
+pandas.core.common.is_datetime64tz_dtype, 1, 1, 1, , 
+pandas.SparseTimeSeries, 1, 2, 1, index, 1
+pandas.core.common.is_datetimetz, 1, 1, 1, , 
+pandas.core.format._get_adjustment, 1, 0, 1, , 
+pandas.tools.plotting._mpl_le_1_2_1, 1, 0, 1, , 
+pandas.tools.plotting._mpl_ge_1_3_1, 1, 0, 1, , 
+pandas.tools.plotting._mpl_ge_1_4_0, 1, 0, 1, , 
+pandas.tools.plotting._mpl_ge_1_5_0, 1, 0, 1, , 
+pandas.algos.group_cumprod_float64, 1, 4, 1, , 
+pandas.util.testing.assertNotIsInstance, 1, 2, 1, , 
+pandas.msgpack.packb, 1, 2, 1, default, 1
+pandas.core.common._ensure_int64, 1, 1, 1, , 
+pandas.tseries.converter.PeriodConverter, 1, 0, 1, , 
+pandas.np.all, 1, 1, 1, , 
+pandas.np.unique, 1, 1, 1, , 
+pandas.io.pytables.get_store, 1, 1, 1, , 
+pandas.Series.to_csv.assert_called, 1, 0, 1, , 
+pandas.DataFrame.to_csv.assert_called, 1, 0, 1, , 
+pandas.offsets.CDay, 1, 1, 1, calendar, 1
+pandas.offsets.Nano, 1, 1, 1, , 
+pandas.core.arrays.TimedeltaArrayMixin._from_sequence, 1, 2, 1, dtype, 1
+pandas.__version__.split, 1, 1, 1, , 
+pandas.rpy.common.convert_to_r_dataframe, 1, 1, 1, , 
+pandas.DataFrame.copy, 1, 1, 1, , 
+pandas.util.testing.is_platform_32bit, 1, 0, 1, , 
+pandas.ordered_merge, 1, 3, 1, on, 1
+pandas.util.testing.ensure_safe_environment_variables, 2, 0, 2, , 
+pandas.io.msgpack.Unpacker, 2, 3, 2, read_size, 2
+pandas._libs.tslibs.period.get_period_field_arr, 2, 3, 2, , 
+pandas.core.window._flex_binary_moment, 2, 3, 2, , 
+pandas.plotting._compat._mpl_ge_2_1_0, 2, 0, 2, , 
+pandas.plotting._compat._mpl_ge_2_2_2, 2, 0, 2, , 
+pandas.max, 2, 1, 2, axis, 2
+pandas.io.gbq._Dataset, 2, 1, 2, , 
+pandas.Panel4D, 2, 1, 2, , 
+pandas.core.common.is_named_tuple, 2, 1, 2, , 
+pandas.tools.plotting._plot_klass.keys, 2, 0, 2, , 
+pandas.algos.group_cumsum, 2, 4, 2, , 
+pandas.msgpack.unpackb, 2, 1, 1, ext_hook, 1
+pandas.msgpack.Unpacker, 2, 3, 2, read_size, 2
+pandas.tseries.tools._to_datetime, 2, 2, 2, freq, 2
+pandas.tseries.index.DatetimeIndex, 2, 1, 2, , 
+pandas.datetime.now, 2, 0, 2, , 
+pandas.read_pickle.assert_called, 2, 0, 2, , 
+pandas.tseries.holiday.get_calendar, 2, 1, 2, , 
+pandas.core.arrays.DatetimeArrayMixin._concat_same_type, 2, 1, 2, , 
+pandas.rolling_mean, 2, 3, 1, window, 1
+pandas.io.data._parse_options_data, 2, 1, 2, , 
+pandas.io.gbq._test_imports, 2, 0, 2, , 
+pandas.rpy.common.convert_to_r_matrix, 2, 1, 2, , 
+pandas.util.testing.assert_produces_warnings, 2, 1, 2, , 
+pandas._libs.lib.try_parse_dates, 2, 1, 2, , 
+pandas.plotting.scatter_matrix, 2, 2, 2, null, 2
+pandas.plotting._core.scatter_plot, 2, 6, 2, figsize, 2
+pandas.stats.moments.expanding_corr_pairwise, 2, 1, 2, , 
+pandas.datetools.MonthBegin, 2, 1, 2, , 
+pandas.core.dtypes.common._is_dtype_type, 3, 2, 3, , 
+pandas.core.arrays.DatetimeArray, 3, 1, 3, , 
+pandas.core.arrays.TimedeltaArray, 3, 1, 3, , 
+pandas._libs.algos.backfill, 3, 2, 3, , 
+pandas._libs.algos.pad, 3, 2, 3, , 
+pandas.io.msgpack.packb, 3, 2, 3, default, 3
+pandas.util._test_decorators.skip_if_not_us_locale, 3, 0, 3, , 
+pandas.io.clipboard.clipboard_set, 3, 1, 3, , 
+pandas.io.clipboard.clipboard_get, 3, 0, 3, , 
+pandas.plotting._style._get_standard_colors, 3, 2, 3, color, 3
+pandas.DatetimeTZDtype, 3, 1, 3, tz, 3
+pandas.api.types.is_numeric_dtype, 3, 1, 3, , 
+pandas.io.parsers.read_table, 3, 3, 2, sep, 2
+pandas.core.common.array_equivalent, 3, 2, 3, , 
+pandas.read_feather, 3, 1, 3, , 
+pandas.value_counts, 3, 1, 3, , 
+pandas.api.types.is_sparse, 3, 1, 3, , 
+pandas.io.gbq._Table, 3, 2, 3, , 
+pandas.io.gbq.generate_bq_schema, 3, 1, 3, , 
+pandas.stats.math.solve, 3, 2, 3, , 
+pandas.stats.math.inv, 3, 1, 3, , 
+pandas.core.common.is_object_dtype, 3, 1, 3, , 
+pandas.msgpack.Packer, 3, 0, 3, , 
+pandas.io.parsers.read_csv, 3, 1, 3, , 
+pandas.api.types.is_period_dtype, 3, 1, 3, , 
+pandas._libs.lib.get_reverse_indexer, 3, 2, 3, , 
+pandas.IntervalIndex.from_arrays, 3, 2, 3, , 
+pandas._libs.tslib.maybe_get_tz, 3, 1, 3, , 
+pandas.io.gbq._parse_page, 3, 4, 3, , 
+pandas.compat.u_safe, 3, 1, 3, , 
+pandas.api.types.is_scalar, 4, 1, 4, , 
+pandas.util.testing.write_to_compressed, 4, 3, 4, , 
+pandas.plotting._compat._mpl_ge_3_0_0, 4, 0, 4, , 
+pandas.notna, 4, 1, 4, , 
+pandas._libs.join.left_join_indexer_unique_int64, 4, 2, 4, , 
+pandas.api.extensions.register_series_accessor, 4, 1, 4, , 
+pandas.read_msgpack, 4, 1, 4, , 
+pandas.io.gbq.GbqConnector, 4, 1, 4, , 
+pandas.np.round, 4, 2, 4, decimals, 4
+pandas.stats.moments.expanding_max, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_min, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_sum, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_mean, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_std, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_var, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_skew, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_kurt, 4, 2, 4, min_periods, 4
+pandas.stats.moments.expanding_median, 4, 2, 4, min_periods, 4
+pandas.stats.moments.rolling_count, 4, 2, 4, window, 4
+pandas.core.convert._possibly_convert_objects, 4, 2, 4, copy, 4
+pandas.tslib.datetime_to_datetime64, 4, 1, 4, , 
+pandas.plotting._compat._mpl_le_1_2_1, 4, 0, 4, , 
+pandas.plotting._compat._mpl_ge_1_3_1, 4, 0, 4, , 
+pandas.plotting._compat._mpl_ge_1_4_0, 4, 0, 4, , 
+pandas.plotting._compat._mpl_ge_2_0_0, 4, 0, 4, , 
+pandas.scatter_matrix, 4, 1, 4, , 
+pandas.tools.plotting.boxplot, 4, 3, 4, by, 4
+pandas.tools.plotting.radviz, 4, 2, 4, frame, 4
+pandas.api.types.is_interval_dtype, 4, 1, 4, , 
+pandas.core.resample.TimeGrouper, 4, 1, 4, , 
+pandas.util.testing.network, 4, 1, 4, check_before_test, 4
+pandas.compat.pickle_compat.load, 4, 3, 4, encoding, 4
+pandas.core.frame.factor_agg, 4, 3, 4, , 
+pandas.core.datetools.replace, 4, 1, 4, tzinfo, 4
+pandas.core.common._possibly_convert_objects, 4, 2, 4, copy, 4
+pandas.api.types.is_bool_dtype, 5, 1, 5, , 
+pandas.io.msgpack.Packer, 5, 0, 5, , 
+pandas.to_pickle, 5, 2, 5, , 
+pandas.util.testing.set_defaultencoding, 5, 1, 5, , 
+pandas.core.format.EastAsianTextAdjustment, 5, 0, 5, , 
+pandas.tools.rplot.make_aes, 5, 0, 5, , 
+pandas.tools.rplot.dictionary_union, 5, 2, 5, , 
+pandas.tools.rplot.merge_aes, 5, 2, 5, , 
+pandas.tools.rplot.ScaleGradient, 5, 3, 5, colour1, 5
+pandas.tools.rplot.ScaleGradient2, 5, 4, 5, colour3, 5
+pandas.tools.rplot.ScaleRandomColour, 5, 1, 5, , 
+pandas.core.datetools.get_legacy_offset_name, 5, 1, 5, , 
+pandas.core.datetools.to_offset, 5, 1, 5, , 
+pandas._period.resolution, 5, 2, 5, , 
+pandas.core.common.rands, 5, 1, 5, , 
+pandas.core.datetools.datetime.strptime, 5, 2, 5, , 
+pandas.util.testing.assert_datetime_array_equal, 6, 2, 6, , 
+pandas.core.arrays.integer_array, 6, 1, 6, , 
+pandas.api.types.is_object_dtype, 6, 1, 6, , 
+pandas.io.msgpack.unpackb, 6, 1, 3, ext_hook, 3
+pandas.util.testing.with_csv_dialect, 6, 2, 6, null, 4
+pandas.io.common._infer_compression, 6, 2, 6, compression, 6
+pandas.util.testing.is_number, 6, 1, 6, , 
+pandas.SparseArray._concat_same_type, 6, 1, 6, , 
+pandas.core.nanops.nanmean, 6, 1, 6, , 
+pandas.DataFrame.equals, 6, 2, 6, , 
+pandas.plotting._compat._mpl_ge_2_0_1, 6, 0, 6, , 
+pandas.api.types.CategoricalDtype, 6, 1, 3, , 
+pandas.tools.plotting.scatter_plot, 6, 6, 6, figsize, 6
+pandas.tseries.converter.DatetimeConverter, 6, 0, 6, , 
+pandas.tseries.converter.TimeFormatter, 6, 1, 6, , 
+pandas.util.testing._skip_if_no_xarray, 6, 0, 6, , 
+pandas._libs.lib.fast_unique_multiple_list_gen, 6, 2, 6, sort, 6
+pandas._libs.lib.maybe_booleans_to_slice, 6, 1, 6, , 
+pandas.rpy.common.convert_robj, 6, 1, 6, , 
+pandas.util.testing.randu, 6, 1, 6, , 
+pandas.DataFrame.sum, 6, 2, 6, axis, 6
+pandas.api.types.is_string_dtype, 7, 1, 7, , 
+pandas.api.types.is_integer_dtype, 7, 1, 7, , 
+pandas.IntervalIndex, 7, 1, 7, , 
+pandas.np.testing.assert_array_equal, 7, 2, 7, , 
+pandas.json.load, 7, 1, 7, , 
+pandas._libs.lib.list_to_object_array, 7, 1, 7, , 
+pandas.core.tools.datetimes.to_datetime, 7, 2, 7, utc, 7
+pandas.plotting._compat._mpl_ge_1_5_0, 7, 0, 7, , 
+pandas.rpy.common.load_data, 7, 1, 5, convert, 2
+pandas.Series.sparse.from_coo, 8, 1, 8, , 
+pandas.core.dtypes.concat.get_dtype_kinds, 8, 1, 8, , 
+pandas._libs.tslibs.offsets.get_lastbday, 8, 2, 8, , 
+pandas._libs.tslibs.offsets.get_firstbday, 8, 2, 8, , 
+pandas.read_html, 8, 1, 7, header, 1
+pandas.computation.expressions.set_test_mode, 8, 1, 8, , 
+pandas.computation.expressions.where, 8, 3, 8, , 
+pandas.tseries.converter.dates.date2num, 8, 1, 8, , 
+pandas.core.tools.datetimes.format, 8, 1, 8, , 
+pandas.api.types.is_categorical, 8, 1, 8, , 
+pandas.util.testing.assert_interval_array_equal, 8, 2, 8, , 
+pandas.interval, 8, 2, 8, , 
+pandas.io.sql.PandasSQLLegacy, 8, 2, 8, , 
+pandas.core.common.is_bool_indexer, 9, 1, 9, , 
+pandas._config.config.option_context, 9, 2, 9, , 
+pandas.util._test_decorators.ffill, 9, 0, 9, , 
+pandas.util._test_decorators.bfill, 9, 0, 9, , 
+pandas.util._test_decorators.copy, 9, 0, 9, , 
+pandas.plotting._compat._mpl_ge_2_2_0, 9, 0, 9, , 
+pandas.core.common._infer_dtype_from_scalar, 9, 1, 9, , 
+pandas.tslib.maybe_get_tz, 9, 1, 9, , 
+pandas.datetools.to_datetime, 9, 1, 9, , 
+pandas.core.indexes.period.pnow, 9, 1, 9, , 
+pandas.core.dtypes.common._get_dtype_type, 9, 1, 9, , 
+pandas._libs.lib.max_len_string_array, 9, 1, 9, , 
+pandas.util.hash_pandas_object, 10, 1, 10, , 
+pandas.io.json.build_table_schema, 10, 2, 10, index, 10
+pandas.util.testing.makeIntervalIndex, 10, 1, 10, , 
+pandas.core.sparse.api.SparseDtype, 10, 1, 10, , 
+pandas.ExcelWriter, 10, 1, 9, engine, 1
+pandas.hashtable.Factorizer, 10, 1, 10, , 
+pandas.tools.plotting.scatter_matrix, 10, 2, 6, null, 6
+pandas.tools.rplot.GeomPoint, 10, 3, 5, y, 10
+pandas.tools.rplot.GeomPolyFit, 10, 1, 10, , 
+pandas.tools.rplot.sequence_layers, 10, 1, 10, , 
+pandas.tools.rplot.ScaleConstant, 10, 1, 10, , 
+pandas.tools.rplot.ScaleShape, 10, 1, 10, , 
+pandas.tools.tile._format_label, 10, 2, 10, precision, 10
+pandas.util.testing.assertIn, 10, 2, 10, , 
+pandas.core.datetools.CDay, 10, 0, 10, , 
+pandas.tslib.monthrange, 10, 2, 10, , 
+pandas.tslib._localize_pydatetime, 10, 2, 10, , 
+pandas.compat.cPickle.load, 10, 1, 10, , 
+pandas.Period._from_ordinal, 10, 2, 10, freq, 10
+pandas._libs.tslib.monthrange, 10, 2, 10, , 
+pandas._libs.tslib._localize_pydatetime, 10, 2, 10, , 
+pandas.core.algorithms._factorize_array, 11, 2, 11, na_value, 11
+pandas.api.types.is_categorical_dtype, 11, 1, 11, , 
+pandas.algos.left_join_indexer_unique_int64, 11, 2, 11, , 
+pandas.algos.is_lexsorted, 11, 1, 11, , 
+pandas.algos.ensure_platform_int, 11, 1, 11, , 
+pandas.algos.rank_1d_float64, 11, 1, 11, , 
+pandas.lib.get_reverse_indexer, 11, 2, 11, , 
+pandas.algos.arrmap_object, 11, 2, 11, , 
+pandas.lib.SeriesGrouper, 11, 5, 11, , 
+pandas.lib.SeriesBinGrouper, 11, 4, 11, , 
+pandas.util.testing.all_timeseries_index_generator, 11, 1, 11, , 
+pandas.pnow, 11, 1, 11, freq, 11
+pandas.Term, 11, 1, 11, , 
+pandas.Expr, 11, 1, 11, , 
+pandas.match, 11, 2, 11, , 
+pandas.groupby, 11, 2, 11, , 
+pandas.get_store, 11, 1, 11, , 
+pandas.tslib.Timestamp, 11, 1, 11, , 
+pandas._libs.lib.convert_sql_column, 11, 1, 11, , 
+pandas.core.common.CategoricalDtype, 11, 0, 11, , 
+pandas.util.testing.assert_timedelta_array_equal, 12, 2, 12, , 
+pandas.api.types.is_list_like, 12, 1, 12, , 
+pandas.Timestamp.today, 12, 0, 12, , 
+pandas.compat.is_platform_windows, 12, 0, 12, , 
+pandas.io.formats.printing.adjoin, 12, 2, 12, , 
+pandas.io.common._expand_user, 12, 1, 12, , 
+pandas.io.common.get_filepath_or_buffer, 12, 1, 12, , 
+pandas.io.common._get_handle, 12, 3, 12, compression, 12
+pandas._libs.join.inner_join, 12, 3, 12, , 
+pandas.core.common.dict_compat, 12, 1, 12, , 
+pandas.core.computation.expressions.set_test_mode, 12, 1, 12, , 
+pandas.core.computation.expressions.where, 12, 3, 12, , 
+pandas._libs.join.inner_join_indexer_int64, 12, 2, 12, , 
+pandas._libs.join.outer_join_indexer_int64, 12, 2, 12, , 
+pandas._libs.join.left_join_indexer_int64, 12, 2, 12, , 
+pandas.ExcelFile, 12, 1, 12, , 
+pandas.io.sql.uquery, 12, 2, 12, con, 12
+pandas.core.common.is_integer_dtype, 12, 1, 12, , 
+pandas.algos.inner_join, 12, 3, 12, , 
+pandas.util.testing._can_set_locale, 12, 1, 12, , 
+pandas.tseries.converter.time2num, 12, 1, 12, , 
+pandas.tseries.offsets.CustomBusinessDay, 12, 1, 12, weekmask, 12
+pandas.util._test_decorators.max, 12, 0, 12, , 
+pandas.util._test_decorators.min, 12, 0, 12, , 
+pandas._libs.tslib._dateutil_gettz, 12, 1, 12, , 
+pandas.io.gbq._authenticate, 12, 0, 12, , 
+pandas.util.testing.SubclassedCategorical.from_codes, 13, 2, 13, , 
+pandas.io.gbq._parse_data, 13, 3, 6, index_col, 6
+pandas.core.common.AbstractMethodError, 13, 1, 13, , 
+pandas.stats.moments.rolling_corr_pairwise, 13, 4, 9, min_periods, 13
+pandas._libs.hashtable.unique_label_indices, 14, 1, 14, , 
+pandas._libs.tslibs.offsets.roll_convention, 14, 3, 14, , 
+pandas.Timestamp.utcnow, 14, 0, 14, , 
+pandas.util.testing._skip_if_32bit, 14, 0, 14, , 
+pandas.core.datetools.format, 14, 1, 14, , 
+pandas.sparse.frame.homogenize, 14, 1, 14, , 
+pandas.sparse.frame.stack_sparse_frame, 14, 1, 14, , 
+pandas.core.common.indent, 14, 2, 14, spaces, 14
+pandas.core.common.banner, 14, 1, 14, , 
+pandas.tools.plotting._flatten, 14, 1, 14, , 
+pandas.util.testing._skip_if_windows_python_3, 14, 0, 14, , 
+pandas.util.testing._skip_if_mpl_1_5, 14, 0, 14, , 
+pandas.tseries.tools._guess_datetime_format_for_array, 14, 1, 14, , 
+pandas.io.sql.PandasSQLAlchemy, 14, 1, 14, , 
+pandas.core.format._strlen_func, 14, 0, 14, , 
+pandas._libs.missing.checknull, 15, 1, 15, , 
+pandas._libs.missing.checknull_old, 15, 1, 15, , 
+pandas.MultiIndex.from_frame, 15, 1, 9, names, 6
+pandas.read_gbq, 15, 1, 6, project_id, 7
+pandas._libs.tslibs.timezones.dateutil_gettz, 15, 1, 15, , 
+pandas.testing.assert_index_equal, 15, 2, 15, , 
+pandas.compat.str_to_bytes, 15, 1, 15, , 
+pandas.io.ga.format_query, 15, 4, 15, segment, 15
+pandas.tseries.tools.to_datetime, 15, 2, 15, utc, 15
+pandas.stats.moments.expanding_quantile, 15, 2, 11, quantile, 4
+pandas.util.testing.add_nans_panel4d, 15, 1, 15, , 
+pandas.core.format.SeriesFormatter, 15, 2, 15, name, 15
+pandas.tools.plotting.table, 15, 2, 15, , 
+pandas.tools.rplot.TrellisGrid, 15, 1, 15, , 
+pandas.tseries.period.pnow, 15, 1, 15, , 
+pandas.tslib.array_to_datetime, 15, 1, 15, , 
+pandas.datetools.Nano, 15, 0, 15, , 
+pandas.lib.Timestamp, 15, 1, 15, , 
+pandas.core.datetools.Hour, 15, 1, 15, , 
+pandas.core.datetools.get_offset, 15, 1, 15, , 
+pandas._libs.hashtable.duplicated_object, 15, 2, 15, keep, 15
+pandas.compat.cPickle.dumps, 15, 2, 15, protocol, 15
+pandas.DataFrame.from_items, 15, 1, 14, orient, 1
+pandas.core.dtypes.common._get_dtype, 16, 1, 16, , 
+pandas.io.formats.format.EngFormatter, 16, 2, 16, accuracy, 16
+pandas.io.formats.format._get_adjustment, 16, 0, 16, , 
+pandas.io.formats.format.SeriesFormatter, 16, 2, 16, name, 16
+pandas.io.date_converters.parse_date_time, 16, 2, 16, , 
+pandas.io.date_converters.parse_date_fields, 16, 3, 16, , 
+pandas.io.date_converters.parse_all_fields, 16, 6, 16, , 
+pandas.core.common.random_state, 16, 1, 12, , 
+pandas.util.testing.use_numexpr, 16, 2, 16, min_elements, 16
+pandas.core.common.difference, 16, 2, 16, , 
+pandas.core.common.adjoin, 16, 2, 16, , 
+pandas.computation.expressions.get_test_result, 16, 0, 16, , 
+pandas.tslib._dateutil_gettz, 16, 1, 16, , 
+pandas.tseries.tools.parse_time_string, 16, 1, 8, freq, 6
+pandas.core.tools.datetimes._infer_tzinfo, 16, 2, 16, , 
+pandas.core.common._all_none, 17, 1, 17, , 
+pandas.DatetimeIndex._simple_new, 17, 2, 17, tz, 17
+pandas.PeriodIndex._simple_new, 17, 2, 13, freq, 13
+pandas.compat.is_platform_32bit, 17, 0, 17, , 
+pandas.compat.cPickle.dump, 17, 3, 17, , 
+pandas.core.common.split_ranges, 17, 1, 17, , 
+pandas.core.common.map_indices_py, 17, 1, 17, , 
+pandas.core.common.groupby, 17, 2, 17, , 
+pandas.plot_params.use, 17, 2, 17, , 
+pandas.tseries.resample.TimeGrouper, 17, 1, 17, , 
+pandas.TimeSeries, 17, 2, 17, index, 17
+pandas.tseries.frequencies.get_standard_freq, 17, 1, 17, , 
+pandas.io.common.MMapWrapper, 18, 1, 18, , 
+pandas.plotting.plot_params.use, 18, 2, 18, , 
+pandas.plotting.table, 18, 2, 18, , 
+pandas.plotting._core._plot_klass.keys, 18, 0, 18, , 
+pandas._libs.writers.max_len_string_array, 18, 1, 18, , 
+pandas.notnull, 18, 1, 18, , 
+pandas.util.testing.assert_raises, 18, 4, 18, flavor, 18
+pandas.tseries.offsets._delta_to_tick, 18, 1, 18, , 
+pandas.util.testing._skip_if_not_us_locale, 18, 0, 18, , 
+pandas.np.max, 18, 1, 18, , 
+pandas.stats.moments.expanding_count, 19, 1, 19, , 
+pandas.stats.moments.rolling_median, 19, 3, 19, window, 19
+pandas.io.sql.read_table, 19, 2, 12, parse_dates, 6
+pandas.util.testing.assert_copy, 20, 2, 20, , 
+pandas.io.formats.format.EastAsianTextAdjustment, 20, 0, 20, , 
+pandas.util.testing.makeRangeIndex, 20, 1, 17, , 
+pandas.util.testing.ensure_clean_dir, 20, 0, 20, , 
+pandas.core.sparse.frame.stack_sparse_frame, 20, 1, 20, , 
+pandas.io.parsers.FixedWidthReader, 20, 4, 20, , 
+pandas.tools.rplot.Layer, 20, 1, 20, size, 5
+pandas.tools.rplot.RPlot, 20, 3, 20, y, 20
+pandas.tseries.offsets.QuarterEnd, 20, 1, 20, startingMonth, 20
+pandas.util.testing.can_set_locale, 21, 1, 17, , 
+pandas.util.testing.is_sorted, 21, 1, 21, , 
+pandas.json.dump, 21, 2, 21, , 
+pandas.core.common._dict_compat, 21, 1, 21, , 
+pandas.Panel.from_dict, 21, 2, 20, intersect, 20
+pandas.util.testing._skip_if_no_lzma, 21, 0, 21, , 
+pandas.IntervalIndex.from_breaks, 22, 1, 14, name, 8
+pandas.compat.StringIO, 22, 0, 22, , 
+pandas.algos.backfill_int64, 22, 2, 22, , 
+pandas.algos.pad_int64, 22, 2, 22, , 
+pandas.algos.groupsort_indexer, 22, 2, 22, , 
+pandas.lib.maybe_booleans_to_slice, 22, 1, 22, , 
+pandas.lib.maybe_convert_numeric, 22, 3, 22, , 
+pandas.algos.pad_object, 22, 2, 22, , 
+pandas.algos.backfill_object, 22, 2, 22, , 
+pandas.lib.to_object_array_tuples, 22, 1, 22, , 
+pandas._libs.hashtable.Factorizer, 23, 1, 23, , 
+pandas._libs.hashtable.UInt64HashTable, 23, 0, 23, , 
+pandas._libs.algos.rank_1d_float64, 23, 1, 23, , 
+pandas.core.algorithms.rank, 23, 1, 23, , 
+pandas._libs.algos.arrmap_object, 23, 2, 23, , 
+pandas._libs.algos.is_lexsorted, 23, 1, 23, , 
+pandas._libs.algos.ensure_platform_int, 23, 1, 23, , 
+pandas.util.testing._skip_if_windows, 23, 0, 23, , 
+pandas.io.gbq._parse_entry, 23, 2, 23, , 
+pandas.tseries.offsets.YearEnd, 23, 1, 21, , 
+pandas.io.common._stringify_path, 24, 1, 24, , 
+pandas.io.sql.SQLiteTable, 24, 3, 24, frame, 24
+pandas.core.computation.expressions.get_test_result, 24, 0, 24, , 
+pandas._libs.json.dump, 24, 2, 24, , 
+pandas._libs.json.load, 24, 1, 24, , 
+pandas.compat.import_lzma, 24, 0, 24, , 
+pandas.stats.moments.ewmstd, 24, 2, 24, span, 24
+pandas.util.testing._skip_if_has_locale, 24, 0, 24, , 
+pandas.util._test_decorators.idxmin, 24, 0, 24, , 
+pandas.util._test_decorators.idxmax, 24, 0, 24, , 
+pandas.util.testing.assert_period_array_equal, 25, 2, 25, , 
+pandas.datetime.strptime, 25, 2, 25, , 
+pandas.io.sql.SQLTable, 25, 3, 25, frame, 25
+pandas.core.window.Window, 25, 2, 25, window, 25
+pandas.core.window.Rolling, 25, 2, 25, window, 25
+pandas.core.window.Expanding, 25, 2, 25, window, 25
+pandas.core.window.EWM, 25, 2, 25, alpha, 25
+pandas.core.datetools.DateOffset, 25, 1, 25, minute, 15
+pandas.compat.cPickle.loads, 25, 1, 25, , 
+pandas.util.testing.SubclassedCategorical, 26, 1, 26, , 
+pandas.util.testing.makeBoolIndex, 26, 2, 23, name, 23
+pandas.core.nanops.nanstd, 26, 2, 13, skipna, 26
+pandas.get_option, 26, 1, 26, , 
+pandas.lib.try_parse_dates, 26, 1, 15, dayfirst, 11
+pandas.util.testing.assert_is_valid_plot_return_object, 26, 1, 26, , 
+pandas.core.arrays.TimedeltaArrayMixin, 26, 1, 22, freq, 3
+pandas.offsets.DateOffset, 27, 2, 14, months, 14
+pandas.core.common._random_state, 27, 1, 24, , 
+pandas.core.datetools.BDay, 27, 1, 17, , 
+pandas.UInt64Index, 28, 2, 15, name, 15
+pandas._libs.join.left_outer_join, 28, 3, 24, sort, 4
+pandas.util.testing._skip_if_no_pathlib, 28, 0, 28, , 
+pandas.util.testing._skip_if_no_localpath, 28, 0, 28, , 
+pandas.io.data.get_data_fred, 28, 3, 14, start, 14
+pandas.core.common._ensure_int32, 28, 1, 28, , 
+pandas.core.common._ensure_platform_int, 28, 1, 28, , 
+pandas.core.common.is_re, 28, 1, 28, , 
+pandas.core.common.is_re_compilable, 28, 1, 28, , 
+pandas.util.testing.makeMissingDataframe, 29, 2, 24, , 
+pandas.io.data.DataReader, 29, 4, 29, , 
+pandas.core.format.FloatArrayFormatter, 29, 1, 29, , 
+pandas.plotting.parallel_coordinates, 30, 2, 30, , 
+pandas.core.common.standardize_mapping, 30, 1, 30, , 
+pandas.DataFrame.from_csv, 30, 1, 25, index_col, 5
+pandas.core.common._maybe_match_name, 30, 2, 30, , 
+pandas.lib.list_to_object_array, 30, 1, 30, , 
+pandas.lib.maybe_indices_to_slice, 30, 2, 30, , 
+pandas.util.testing._make_skipna_wrapper, 31, 2, 31, , 
+pandas.core.strings.str_startswith, 31, 2, 31, , 
+pandas.core.strings.str_endswith, 31, 2, 31, , 
+pandas.core.format.reset_option, 31, 1, 31, , 
+pandas.io.formats.format.FloatArrayFormatter, 32, 1, 32, , 
+pandas.io.formats.format.Datetime64Formatter, 32, 2, 32, formatter, 32
+pandas.core.sparse.frame.homogenize, 32, 1, 32, , 
+pandas.computation.expressions.evaluate, 32, 5, 32, use_numexpr, 32
+pandas.core.panel.panel_index, 32, 2, 32, , 
+pandas.util.testing.SubclassedSparseDataFrame, 33, 1, 24, index, 9
+pandas.melt, 33, 2, 14, id_vars, 24
+pandas.util._test_decorators.apply, 33, 3, 15, format, 18
+pandas.read_clipboard, 33, 1, 17, null, 12
+pandas.core.nanops.nangt, 33, 2, 33, , 
+pandas.tseries.frequencies.get_offset, 33, 1, 33, , 
+pandas.io.data.Options, 33, 2, 19, , 
+pandas.algos.inner_join_indexer_int64, 33, 2, 33, , 
+pandas.algos.outer_join_indexer_int64, 33, 2, 33, , 
+pandas.algos.left_join_indexer_int64, 33, 2, 33, , 
+pandas.lib.maybe_convert_objects, 33, 1, 33, , 
+pandas.tseries.offsets.BusinessDay, 34, 1, 34, , 
+pandas.offsets.CustomBusinessDay, 34, 2, 34, holidays, 34
+pandas.compat.text_type, 34, 1, 34, , 
+pandas.util.testing._skip_if_no_cday, 34, 0, 34, , 
+pandas.util.testing._skip_if_no_mpl, 34, 0, 34, , 
+pandas.Interval, 35, 3, 20, closed, 20
+pandas.read_sql, 35, 2, 32, con, 22
+pandas.stats.moments.rolling_var, 35, 2, 24, window, 11
+pandas.stats.moments.ewmcov, 35, 3, 21, com, 35
+pandas.stats.moments.ewmcorr, 35, 3, 21, com, 35
+pandas.core.common._maybe_convert_string_to_object, 35, 1, 35, , 
+pandas.algos.left_outer_join, 35, 3, 24, sort, 11
+pandas.wide_to_long, 36, 4, 36, i, 36
+pandas.tools.plotting._get_standard_colors, 36, 2, 36, color, 36
+pandas.tseries.frequencies.get_freq_group, 36, 1, 36, , 
+pandas.core.tools.datetimes._guess_datetime_format, 36, 1, 24, dayfirst, 12
+pandas.core.algorithms.safe_sort, 36, 2, 18, values, 9
+pandas.Timestamp.now, 37, 0, 36, tz, 1
+pandas.util.testing.reset_testing_mode, 37, 0, 37, , 
+pandas.util.testing.set_testing_mode, 37, 0, 37, , 
+pandas.stats.moments.rolling_sum, 37, 2, 26, window, 11
+pandas.reset_option, 38, 1, 38, , 
+pandas.tseries.offsets.Milli, 39, 1, 28, , 
+pandas._libs.tslibs.offsets.shift_month, 39, 3, 39, day_opt, 21
+pandas.util.testing.makeCategoricalIndex, 40, 1, 37, , 
+pandas.core.algorithms.take_1d, 40, 3, 25, out, 15
+pandas.read_parquet, 40, 1, 27, engine, 5
+pandas.tseries.offsets.MonthEnd, 40, 1, 40, , 
+pandas._libs.algos.backfill_int64, 40, 2, 40, , 
+pandas._libs.algos.pad_int64, 40, 2, 40, , 
+pandas.util.testing.get_locales, 41, 0, 27, prefix, 14
+pandas.stats.moments.rolling_skew, 41, 2, 30, window, 41
+pandas.stats.moments.rolling_kurt, 41, 2, 30, window, 41
+pandas._libs.algos.pad_object, 41, 2, 41, , 
+pandas._libs.algos.backfill_object, 41, 2, 41, , 
+pandas.Grouper, 42, 1, 28, freq, 34
+pandas.io.data.get_components_yahoo, 42, 1, 42, , 
+pandas.json.loads, 42, 3, 28, labelled, 28
+pandas.util.testing._skip_if_not_numpy17_friendly, 42, 0, 42, , 
+pandas.tseries.offsets.BDay, 43, 0, 25, , 
+pandas.infer_freq, 43, 1, 43, , 
+pandas.core.reshape.tile._round_frac, 43, 2, 43, precision, 43
+pandas._libs.hashtable.Float64HashTable, 43, 0, 33, , 
+pandas.stats.moments.rolling_min, 43, 3, 43, window, 43
+pandas.core.common.isna, 44, 1, 44, , 
+pandas.io.formats.format.format_percentiles, 44, 1, 44, , 
+pandas.core.nanops._ensure_numeric, 44, 1, 44, , 
+pandas.core.arrays.DatetimeArrayMixin, 44, 1, 44, , 
+pandas.core.dtypes.common.is_scipy_sparse, 45, 1, 45, , 
+pandas.core.dtypes.common.is_period, 45, 1, 45, , 
+pandas.core.dtypes.common.is_period_arraylike, 45, 1, 45, , 
+pandas.core.dtypes.common.is_datetime_arraylike, 45, 1, 45, , 
+pandas.read_sql_table, 45, 3, 30, index_col, 30
+pandas._libs.tslibs.offsets.roll_yearday, 45, 4, 45, n, 5
+pandas.core.common.is_hashable, 45, 1, 45, , 
+pandas.tseries.offsets.SemiMonthEnd, 45, 1, 36, day_of_month, 36
+pandas.tseries.offsets.SemiMonthBegin, 45, 1, 36, day_of_month, 27
+pandas._libs.lib.maybe_indices_to_slice, 45, 2, 45, , 
+pandas.array, 46, 2, 25, dtype, 19
+pandas.util.testing.makeMixedDataFrame, 46, 0, 46, , 
+pandas._libs.algos.groupsort_indexer, 46, 2, 46, , 
+pandas.stats.moments.rolling_quantile, 46, 6, 24, min_periods, 46
+pandas.core.common._any_none, 47, 4, 42, , 
+pandas.core.nanops.nansum, 47, 2, 40, axis, 40
+pandas.util.testing.SubclassedSparseSeries, 48, 1, 24, index, 24
+pandas.core.computation.expressions.evaluate, 48, 5, 48, use_numexpr, 48
+pandas.computation.expressions.set_numexpr_threads, 48, 1, 24, , 
+pandas.tseries.tools._infer_tzinfo, 48, 2, 48, , 
+pandas.core.tools.datetimes.parse_time_string, 48, 2, 24, freq, 18
+pandas.TimeGrouper, 49, 3, 38, freq, 49
+pandas.io.data.get_data_google, 49, 3, 28, start, 12
+pandas.stats.moments.expanding_apply, 49, 4, 22, min_periods, 40
+pandas.core.common.asarray_tuplesafe, 50, 1, 40, dtype, 10
+pandas.io.data.get_quote_yahoo, 50, 1, 50, , 
+pandas.lib.reduce, 50, 4, 22, labels, 50
+pandas.util.testing.makeTimedeltaIndex, 52, 1, 40, , 
+pandas.util.testing.makePeriodPanel, 52, 0, 52, , 
+pandas.tseries.offsets.Nano, 52, 1, 52, , 
+pandas.core.common._mut_exclusive, 53, 2, 53, a, 36
+pandas.core.tools.datetimes._guess_datetime_format_for_array, 54, 1, 54, , 
+pandas.IntervalIndex.from_tuples, 54, 2, 51, closed, 51
+pandas.util.testing._incompat_bottleneck_version, 55, 1, 55, , 
+pandas.io.formats.format.set_eng_float_format, 56, 1, 38, accuracy, 20
+pandas.core.algorithms.take, 56, 3, 29, allow_fill, 38
+pandas.io.gbq.to_gbq, 56, 5, 33, if_exists, 37
+pandas.io.sql.SQLiteDatabase, 58, 1, 32, , 
+pandas._libs.json.dumps, 59, 1, 54, double_precision, 5
+pandas.lib.duplicated, 59, 2, 37, take_last, 25
+pandas.tseries.offsets.Micro, 59, 1, 59, , 
+pandas.core.dtypes.common.is_sparse, 60, 1, 60, , 
+pandas.core.dtypes.common.is_categorical, 60, 1, 60, , 
+pandas.core.dtypes.common.is_datetimetz, 60, 1, 60, , 
+pandas.core.dtypes.common.is_datetime64tz_dtype, 60, 1, 60, , 
+pandas.core.dtypes.common.is_timedelta64_ns_dtype, 60, 1, 60, , 
+pandas.core.dtypes.common.is_string_like_dtype, 60, 1, 60, , 
+pandas.util._test_decorators.safe_import, 63, 1, 35, min_version, 28
+pandas.util._test_decorators.fillna, 63, 1, 63, , 
+pandas.core.common._all_not_none, 63, 4, 63, , 
+pandas.tseries.offsets.Second, 63, 1, 63, , 
+pandas.io.sql.has_table, 64, 2, 64, , 
+pandas.io.sql.table_exists, 64, 2, 46, flavor, 18
+pandas.computation.expressions._can_use_numexpr, 64, 5, 64, , 
+pandas.tseries.frequencies._get_rule_month, 64, 1, 64, , 
+pandas._libs.missing.isposinf_scalar, 65, 1, 65, , 
+pandas._libs.missing.isneginf_scalar, 65, 1, 65, , 
+pandas.util.testing.decompress_file, 65, 2, 65, compression, 24
+pandas.core.dtypes.common.is_offsetlike, 66, 1, 66, , 
+pandas.tseries.frequencies._period_str_to_code, 66, 1, 66, , 
+pandas.util.testing.makeUnicodeIndex, 67, 1, 41, name, 23
+pandas.read_stata, 67, 2, 43, index_col, 28
+pandas.stats.moments.rolling_max, 67, 3, 51, window, 67
+pandas.core.common.isnull, 67, 1, 67, , 
+pandas.factorize, 68, 2, 41, sort, 23
+pandas.tools.plotting.grouped_hist, 68, 3, 34, by, 68
+pandas._libs.json.loads, 69, 3, 36, labelled, 36
+pandas.io.sql.tquery, 69, 2, 68, cur, 28
+pandas.Categorical.from_codes, 70, 2, 70, categories, 67
+pandas.tseries.offsets.DateOffset, 70, 2, 35, months, 70
+pandas.core.algorithms.quantile, 72, 2, 72, , 
+pandas.read_fwf, 72, 4, 45, widths, 45
+pandas.core.computation.expressions.set_numexpr_threads, 72, 1, 36, , 
+pandas.core.dtypes.common.is_dtype_equal, 73, 2, 73, , 
+pandas.tseries.frequencies.is_superperiod, 73, 2, 73, , 
+pandas.tseries.frequencies.is_subperiod, 73, 2, 73, , 
+pandas.read_sql_query, 74, 2, 41, con, 18
+pandas.util.testing.makeCustomIndex, 74, 2, 74, nlevels, 41
+pandas.core.dtypes.common.is_object_dtype, 75, 1, 75, , 
+pandas.core.dtypes.common.is_datetime64_dtype, 75, 1, 75, , 
+pandas.core.dtypes.common.is_period_dtype, 75, 1, 75, , 
+pandas.core.dtypes.common.is_interval_dtype, 75, 1, 75, , 
+pandas.core.dtypes.common.is_categorical_dtype, 75, 1, 75, , 
+pandas.core.dtypes.common.is_string_dtype, 75, 1, 75, , 
+pandas.core.nanops.nansem, 76, 2, 76, axis, 76
+pandas.testing.assert_series_equal, 76, 2, 68, check_less_precise, 7
+pandas.pivot, 77, 4, 63, columns, 56
+pandas.core.common._possibly_downcast_to_dtype, 77, 2, 77, , 
+pandas.util.testing.assert_array_equal, 78, 2, 78, , 
+pandas.io.data.get_data_yahoo, 80, 4, 38, interval, 24
+pandas.json.dumps, 80, 1, 73, double_precision, 7
+pandas.util.testing.makeFloatIndex, 81, 1, 49, name, 23
+pandas.core.nanops.nanskew, 84, 1, 48, skipna, 24
+pandas.core.nanops.nankurt, 84, 1, 48, skipna, 24
+pandas.bdate_range, 86, 2, 46, freq, 27
+pandas.offsets.YearEnd, 88, 1, 88, , 
+pandas.core.dtypes.common.is_float_dtype, 90, 1, 90, , 
+pandas.core.dtypes.common.is_complex_dtype, 90, 1, 90, , 
+pandas.core.format.set_eng_float_format, 90, 1, 60, use_eng_prefix, 30
+pandas.core.format.EngFormatter, 90, 2, 90, accuracy, 90
+pandas.core.strings.str_count, 92, 2, 92, , 
+pandas.core.common.is_list_like, 94, 1, 94, , 
+pandas.util.testing.makePeriodFrame, 95, 0, 95, , 
+pandas.util.testing.skip_if_no_package, 95, 1, 42, app, 34
+pandas.stats.moments.rolling_apply, 95, 4, 39, min_periods, 71
+pandas.util.testing.assert_extension_array_equal, 96, 2, 96, , 
+pandas.core.computation.expressions._can_use_numexpr, 96, 5, 96, , 
+pandas.computation.expressions.set_use_numexpr, 96, 1, 96, , 
+pandas.interval_range, 97, 2, 59, start, 80
+pandas.util.testing.SubclassedSeries, 97, 3, 59, index, 90
+pandas.util.testing.assert_attr_equal, 98, 3, 98, , 
+pandas._libs.algos.Infinity, 98, 0, 98, , 
+pandas._libs.algos.NegInfinity, 98, 0, 98, , 
+pandas.offsets.YearBegin, 99, 1, 99, , 
+pandas.util.testing.set_timezone, 100, 1, 100, , 
+pandas.stats.moments.rolling_std, 100, 3, 59, min_periods, 76
+pandas.util.testing.round_trip_localpath, 101, 2, 101, , 
+pandas.core.dtypes.common.is_unsigned_integer_dtype, 102, 1, 102, , 
+pandas.stats.moments.rolling_cov, 102, 4, 50, window, 71
+pandas.offsets.MonthBegin, 104, 1, 104, , 
+pandas.util.testing.getTimeSeriesData, 104, 0, 104, , 
+pandas.offsets.Milli, 105, 1, 105, , 
+pandas.core.dtypes.common.needs_i8_conversion, 105, 1, 105, , 
+pandas.core.algorithms.match, 107, 2, 107, , 
+pandas.io.gbq.read_gbq, 107, 2, 82, project_id, 91
+pandas.plotting._converter.get_finder, 108, 1, 108, , 
+pandas.core.nanops._bn_ok_dtype, 108, 2, 108, , 
+pandas.stats.moments.expanding_corr, 112, 2, 53, pairwise, 64
+pandas.stats.moments.expanding_cov, 112, 2, 53, pairwise, 64
+pandas.core.common.take_1d, 112, 3, 70, out, 42
+pandas.get_dummies, 113, 1, 62, columns, 25
+pandas.core.dtypes.common.is_int64_dtype, 114, 1, 114, , 
+pandas.datetime, 116, 3, 62, , 
+pandas.core.dtypes.common.is_datetimelike, 120, 1, 120, , 
+pandas.core.dtypes.common.is_datetime64_any_dtype, 120, 1, 120, , 
+pandas.util.testing.set_locale, 121, 1, 90, , 
+pandas.core.dtypes.common.is_int_or_datetime_dtype, 121, 1, 121, , 
+pandas.util.testing.getSeriesData, 122, 0, 122, , 
+pandas.core.dtypes.common.is_datetime_or_timedelta_dtype, 126, 1, 126, , 
+pandas.compat.product, 126, 3, 56, repeat, 12
+pandas.util.testing.getMixedTypeDict, 127, 0, 127, , 
+pandas.util.testing.makeIntIndex, 127, 1, 89, name, 23
+pandas.core.dtypes.common.is_integer_dtype, 129, 1, 129, , 
+pandas.core.dtypes.common.is_bool_dtype, 129, 1, 129, , 
+pandas.util.testing.makeStringIndex, 134, 1, 111, name, 23
+pandas.core.dtypes.common.is_signed_integer_dtype, 135, 1, 135, , 
+pandas.core.dtypes.common.is_datetime64_ns_dtype, 135, 1, 135, , 
+pandas.core.dtypes.common.is_numeric_v_string_like, 135, 2, 135, , 
+pandas.core.dtypes.common.is_datetimelike_v_numeric, 135, 2, 135, , 
+pandas.Panel, 135, 1, 65, minor_axis, 63
+pandas.util.testing.makeFloatSeries, 137, 0, 137, , 
+pandas.stats.moments.rolling_corr, 137, 4, 85, min_periods, 80
+pandas.util.testing.rands_array, 139, 2, 139, size, 40
+pandas.io.sql.read_frame, 139, 2, 109, con, 28
+pandas.core.computation.expressions.set_use_numexpr, 144, 1, 144, , 
+pandas.tseries.offsets.YearBegin, 144, 1, 144, , 
+pandas.DateOffset, 148, 1, 138, years, 67
+pandas.pivot_table, 148, 4, 93, index, 146
+pandas.core.dtypes.common.is_datetimelike_v_object, 150, 2, 150, , 
+pandas.core.dtypes.common.is_numeric_dtype, 150, 1, 150, , 
+pandas.core.dtypes.common.is_extension_type, 150, 1, 150, , 
+pandas.util.testing.TestSubDict, 151, 1, 151, , 
+pandas.core.common._asarray_tuplesafe, 152, 1, 149, dtype, 3
+pandas.core.dtypes.common.is_timedelta64_dtype, 153, 1, 153, , 
+pandas.tseries.offsets.MonthBegin, 155, 1, 144, , 
+pandas.offsets.MonthEnd, 156, 1, 112, , 
+pandas.core.strings.str_cat, 156, 2, 84, na_rep, 96
+pandas.read_sas, 158, 2, 60, encoding, 110
+pandas.RangeIndex, 161, 3, 67, name, 37
+pandas.core.nanops.nanvar, 162, 2, 136, axis, 110
+pandas.io.sql.SQLDatabase, 163, 1, 138, meta, 25
+pandas.util.testing.reset_display_options, 164, 0, 164, , 
+pandas.util.testing.assert_class_equal, 164, 3, 144, obj, 144
+pandas.offsets.Day, 165, 0, 88, , 
+pandas.util.testing.makeObjectSeries, 165, 0, 165, , 
+pandas.lib.convert_sql_column, 165, 1, 165, , 
+pandas.offsets.Second, 173, 1, 173, , 
+pandas.util.testing.choice, 173, 2, 173, size, 173
+pandas.stats.moments.rolling_window, 174, 4, 124, center, 135
+pandas.util.testing.makePeriodSeries, 175, 0, 175, , 
+pandas.core.dtypes.common.pandas_dtype, 176, 1, 176, , 
+pandas.lib.infer_dtype, 184, 1, 184, , 
+pandas.util.testing.makePeriodIndex, 185, 1, 160, name, 23
+pandas.isnull, 187, 1, 187, , 
+pandas.stats.moments.rolling_mean, 194, 4, 74, center, 105
+pandas.util.testing.add_nans, 196, 1, 196, , 
+pandas.HDFStore, 200, 1, 172, mode, 15
+pandas.util.testing.convert_rows_list_to_csv_str, 201, 1, 201, , 
+pandas.core.tools.datetimes.to_time, 201, 1, 69, format, 110
+pandas.util.testing.round_trip_pathlib, 201, 2, 155, path, 46
+pandas.Int64Index, 205, 2, 129, name, 136
+pandas.to_numeric, 205, 1, 137, downcast, 54
+pandas.offsets.Minute, 210, 1, 133, , 
+pandas.tseries.offsets.Minute, 212, 0, 144, , 
+pandas.util.testing._skip_if_no_dateutil, 215, 0, 215, , 
+pandas.core.algorithms.take_nd, 217, 4, 157, axis, 185
+pandas.tseries.frequencies.get_freq, 220, 1, 220, , 
+pandas.io.formats.format.set_option, 221, 2, 143, , 
+pandas.util.testing.RNGContext, 221, 1, 221, , 
+pandas.stats.moments.ewma, 226, 2, 166, com, 135
+pandas.read_table, 229, 3, 97, sep, 137
+pandas.SparseArray, 237, 2, 92, dtype, 101
+pandas.core.config.option_context, 244, 2, 244, , 
+pandas.core.format.set_option, 246, 2, 150, , 
+pandas.Float64Index, 248, 2, 152, name, 152
+pandas.tseries.frequencies.get_freq_code, 248, 1, 248, , 
+pandas.util.testing.SubclassedDataFrame, 251, 3, 112, index, 174
+pandas.tseries.frequencies.infer_freq, 255, 1, 255, , 
+pandas.util.testing.rands, 257, 1, 257, , 
+pandas.core.common.pprint_thing, 260, 1, 232, quote_strings, 28
+pandas.io.formats.printing.pprint_thing, 268, 1, 170, quote_strings, 83
+pandas.core.algorithms.unique, 268, 1, 268, , 
+pandas.core.strings.str_contains, 270, 2, 155, regex, 57
+pandas.core.algorithms.checked_add_with_arr, 276, 2, 138, arr_mask, 92
+pandas.util.testing.assert_panel4d_equal, 278, 2, 278, , 
+pandas.tseries.offsets.Day, 286, 0, 187, , 
+pandas.testing.assert_frame_equal, 286, 2, 247, check_dtype, 21
+pandas.io.sql.write_frame, 287, 5, 134, con, 274
+pandas.tseries.offsets.Hour, 299, 1, 268, , 
+pandas.core.algorithms.duplicated, 299, 2, 253, keep, 253
+pandas.io.sql.execute, 301, 2, 240, params, 60
+pandas.compat.iteritems, 306, 1, 306, , 
+pandas.merge_asof, 308, 5, 107, on, 278
+pandas.util.testing.makePanel4D, 312, 0, 279, nper, 15
+pandas.util.testing._skip_if_no_pytz, 324, 0, 324, , 
+pandas.read_json, 327, 1, 172, orient, 67
+pandas.MultiIndex, 331, 2, 167, levels, 286
+pandas.read_hdf, 331, 2, 254, key, 76
+pandas.read_pickle, 334, 1, 286, compression, 48
+pandas.core.algorithms.value_counts, 339, 1, 197, bins, 110
+pandas.io.sql.read_sql, 364, 2, 288, params, 34
+pandas.isna, 365, 1, 365, , 
+pandas.unique, 378, 1, 378, , 
+pandas.json.encode, 379, 1, 295, double_precision, 42
+pandas.io.sql.get_schema, 382, 3, 169, con, 114
+pandas.util.testing.assert_contains_all, 402, 2, 402, , 
+pandas.cut, 413, 2, 231, labels, 182
+pandas.util.testing.makeDateIndex, 417, 1, 352, name, 51
+pandas.offsets.Hour, 418, 1, 418, , 
+pandas.crosstab, 477, 4, 126, margins, 252
+pandas.util.testing.get_data_path, 478, 0, 267, , 
+pandas.util.testing.makeStringSeries, 487, 0, 487, , 
+pandas.DataFrame.from_dict, 501, 2, 305, orient, 346
+pandas.core.algorithms.isin, 506, 2, 506, , 
+pandas.set_option, 533, 2, 533, , 
+pandas.read_excel, 546, 3, 250, index_col, 168
+pandas.util._test_decorators.skip_if_no, 550, 1, 416, min_version, 65
+pandas._libs.json.encode, 554, 1, 367, double_precision, 113
+pandas.core.common.take_nd, 561, 4, 393, axis, 518
+pandas.util.testing.round_trip_pickle, 568, 1, 568, , 
+pandas.core.algorithms.factorize, 570, 1, 317, sort, 231
+pandas.SparseDataFrame, 571, 1, 254, default_fill_value, 269
+pandas.DataFrame.from_records, 589, 1, 386, columns, 149
+pandas.util.testing.skip_if_no_ne, 590, 1, 467, engine, 16
+pandas.option_context, 640, 2, 622, , 
+pandas.json.decode, 651, 1, 574, numpy, 70
+pandas.util.testing.assert_dict_equal, 685, 2, 498, compare_keys, 187
+pandas.core.tools.timedeltas._coerce_scalar_to_timedelta_type, 750, 1, 675, unit, 75
+pandas.timedelta_range, 755, 2, 336, periods, 658
+pandas.tseries.frequencies.to_offset, 756, 1, 756, , 
+pandas.TimedeltaIndex, 799, 1, 500, name, 195
+pandas.util.testing.assertIsInstance, 867, 2, 867, , 
+pandas.SparseSeries, 875, 3, 357, name, 579
+pandas.util.testing.assert_sp_array_equal, 922, 2, 916, check_kind, 6
+pandas.io.sql.to_sql, 1020, 4, 435, if_exists, 554
+pandas._libs.json.decode, 1028, 1, 953, numpy, 58
+pandas.util.testing._skip_if_no_scipy, 1035, 0, 1035, , 
+pandas.merge, 1046, 4, 539, how, 676
+pandas.Timedelta, 1061, 1, 885, unit, 100
+pandas.util.testing.equalContents, 1062, 2, 1062, , 
+pandas.io.sql.read_sql_table, 1117, 2, 677, parse_dates, 168
+pandas.io.sql.read_sql_query, 1128, 2, 924, parse_dates, 153
+pandas.util.testing.makeCustomDataframe, 1200, 5, 422, data_gen_f, 509
+pandas.MultiIndex.from_product, 1245, 1, 737, names, 508
+pandas.util.testing.assert_panel_equal, 1248, 2, 1248, , 
+pandas.MultiIndex.from_arrays, 1313, 1, 962, names, 351
+pandas.util.testing.makePanel, 1556, 0, 1431, , 
+pandas.util.testing.assert_sp_frame_equal, 1570, 2, 1305, exact_indices, 194
+pandas.MultiIndex.from_tuples, 1580, 1, 1187, names, 393
+pandas.CategoricalIndex, 1660, 1, 625, ordered, 694
+pandas.to_timedelta, 1797, 2, 914, unit, 845
+pandas.util.testing.box_expected, 1911, 2, 1671, transpose, 240
+pandas.Period, 1948, 2, 1437, freq, 1554
+pandas.util.testing.makeTimeSeries, 1987, 0, 1931, nper, 16
+pandas.read_csv, 2072, 1, 828, index_col, 646
+pandas.util.testing.assert_equal, 2141, 2, 2141, , 
+pandas.PeriodIndex, 2232, 2, 1212, freq, 1784
+pandas.util.testing.makeDataFrame, 2266, 0, 2266, , 
+pandas.util.testing.assert_sp_series_equal, 2302, 2, 1928, check_names, 228
+pandas.period_range, 2446, 3, 2215, freq, 2353
+pandas.util.testing.assertRaisesRegexp, 2487, 2, 2279, , 
+pandas.util.testing.ensure_clean, 2527, 0, 1529, filename, 5
+pandas.util.testing.assert_isinstance, 2573, 2, 2571, msg, 2
+pandas.util.testing.assertRaises, 2624, 1, 2575, header, 14
+pandas.util.testing.close, 2787, 0, 2763, , 
+pandas.eval, 2815, 3, 2691, engine, 2754
+pandas.Categorical, 2921, 2, 1535, categories, 1563
+pandas.util.testing.assert_categorical_equal, 2967, 2, 2924, check_dtype, 37
+pandas.util.testing.makeTimeDataFrame, 2997, 0, 2586, freq, 36
+pandas.to_datetime, 3083, 1, 1496, cache, 629
+pandas.DatetimeIndex, 3301, 2, 1604, tz, 1443
+pandas.Index, 5065, 1, 2898, name, 1307
+pandas.concat, 5268, 2, 2458, axis, 2225
+pandas.date_range, 5624, 3, 2757, periods, 4134
+pandas.util.testing.assert_almost_equal, 7837, 2, 7383, check_less_precise, 251
+pandas.Timestamp, 9784, 2, 5950, tz, 5935
+pandas.util.testing.assert_produces_warning, 10449, 1, 6490, check_stacklevel, 3670
+pandas.util.testing.assert_raises_regex, 12301, 2, 9757, out, 326
+pandas.Series, 19940, 1, 10024, index, 5410
+pandas.util.testing.assert_numpy_array_equal, 21717, 2, 20598, check_dtype, 925
+pandas.DataFrame, 31759, 1, 17794, index, 9022
+pandas.util.testing.assert_index_equal, 35446, 2, 33686, exact, 1362
+pandas.util.testing.assert_series_equal, 40354, 2, 38052, check_names, 1024
+pandas.util.testing.assert_frame_equal, 59805, 2, 56312, check_names, 1281

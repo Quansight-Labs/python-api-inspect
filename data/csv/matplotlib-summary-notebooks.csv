@@ -1,0 +1,292 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+matplotlib.pyplot.minorticks_off, 1, 0, 1, , 
+matplotlib.cm.Spectral, 1, 1, 1, , 
+matplotlib.ticker.FuncFormatter, 1, 1, 1, , 
+matplotlib.collections.PolyCollection, 1, 3, 1, facecolors, 1
+matplotlib.pylab.nipy_spectral, 1, 0, 1, , 
+matplotlib.pyplot.save_fig, 1, 1, 1, , 
+matplotlib.pyplot.eventplot, 1, 4, 1, color, 1
+matplotlib.pyplot.matplotlib_fname, 1, 0, 1, , 
+matplotlib.pyplot.get_backend, 1, 0, 1, , 
+matplotlib.dates.AutoDateLocator, 1, 0, 1, , 
+matplotlib.pyplot.cm.plasma, 1, 1, 1, , 
+matplotlib.pyplot.cm.plasma_r, 1, 1, 1, , 
+matplotlib.pyplot.figaspect, 1, 1, 1, , 
+matplotlib.pyplot.cm.Greens, 1, 1, 1, , 
+matplotlib.pyplot.cm.Vega20c, 1, 1, 1, , 
+matplotlib.pylab.frange, 1, 3, 1, , 
+matplotlib.cm.colors.Normalize, 1, 2, 1, vmin, 1
+matplotlib.pyplot.Text, 1, 3, 1, , 
+matplotlib.pyplot.matplotlib.colors.ListedColormap, 1, 3, 1, , 
+matplotlib.pylab.axes, 1, 0, 1, , 
+matplotlib.pylab.plt.xticks, 1, 2, 1, , 
+matplotlib.rcParams.get, 1, 1, 1, , 
+matplotlib.pylab.hlines, 1, 5, 1, color, 1
+matplotlib.pyplot.colormaps, 1, 0, 1, , 
+matplotlib.finance.quotes_historical_yahoo_ochl, 1, 4, 1, asobject, 1
+matplotlib.cm.tab20, 1, 1, 1, , 
+matplotlib.pyplot.Arrow, 1, 6, 1, width, 1
+matplotlib.finance.candlestick2_ohlc, 1, 5, 1, highs, 1
+matplotlib.pyplot.cm.Blues_r, 1, 1, 1, , 
+matplotlib.pyplot.cycler, 1, 2, 1, , 
+matplotlib.pylab.spy, 1, 3, 1, markersize, 1
+matplotlib.colors.to_rgba, 1, 1, 1, , 
+matplotlib.pyplot.cm.Set2, 1, 1, 1, , 
+matplotlib.pyplot.draw_if_interactive, 1, 0, 1, , 
+matplotlib.pyplot.cm.Paired, 1, 1, 1, , 
+matplotlib.patches.ConnectionPatch, 1, 11, 1, xyA, 1
+matplotlib.transforms.ScaledTranslation, 1, 3, 1, , 
+matplotlib.pyplot.table, 1, 6, 1, colLabels, 1
+matplotlib.pyplot.thetagrids, 1, 3, 1, frac, 1
+matplotlib.patheffects.withSimplePatchShadow, 1, 2, 1, foreground, 1
+matplotlib.image.resize, 1, 2, 1, , 
+matplotlib.image.reshape, 1, 3, 1, , 
+matplotlib.pyplot.barbs, 1, 4, 1, , 
+matplotlib.collections.PatchCollection, 1, 2, 1, edgecolor, 1
+matplotlib.pylab.barh, 1, 4, 1, align, 1
+matplotlib.pylab.cm.coolwarm, 1, 2, 1, , 
+matplotlib.pyplot.cm.Spectral, 1, 1, 1, , 
+matplotlib.pylab.text, 1, 6, 1, rotation, 1
+matplotlib.pylab.contourf, 1, 3, 1, , 
+matplotlib.pylab.subplots_adjust, 1, 2, 1, hspace, 1
+matplotlib.dates.strpdate2num, 1, 1, 1, , 
+matplotlib.pyplot.angle_spectrum, 1, 2, 1, Fs, 1
+matplotlib.pyplot.phase_spectrum, 1, 2, 1, Fs, 1
+matplotlib.pylab.rcParams.update, 1, 1, 1, , 
+matplotlib.pyplot.cm.Set1, 2, 1, 2, , 
+matplotlib.pylab.step, 2, 5, 2, where, 2
+matplotlib.pyplot.style.reload_library, 2, 0, 2, , 
+matplotlib.pyplot.rcdefaults, 2, 0, 2, , 
+matplotlib.pylab.pcolormesh, 2, 3, 2, , 
+matplotlib.pyplot.cm.Reds_r, 2, 1, 2, , 
+matplotlib.pyplot.cm.Purples_r, 2, 1, 2, , 
+matplotlib.pyplot.cm.Greens_r, 2, 1, 2, , 
+matplotlib.pyplot.cm.viridis, 2, 1, 2, , 
+matplotlib.get_configdir, 2, 0, 2, , 
+matplotlib.patches.FancyBboxPatch, 2, 5, 2, color, 2
+matplotlib.interactive, 2, 1, 2, , 
+matplotlib.pylab.gca, 2, 0, 2, , 
+matplotlib.patches.PathPatch, 2, 3, 2, facecolor, 2
+matplotlib.pyplot.Normalize, 2, 2, 2, , 
+matplotlib.font_manager.findSystemFonts, 2, 0, 1, fontpaths, 1
+matplotlib.ticker.ScalarFormatter, 2, 1, 2, useMathText, 1
+matplotlib.pylab.axvspan, 2, 7, 1, fc, 2
+matplotlib.cm.Set2, 2, 1, 2, , 
+matplotlib.transforms.blended_transform_factory, 2, 2, 2, , 
+matplotlib.pylab.tick_params, 2, 7, 2, axis, 2
+matplotlib.pylab.bar, 2, 5, 1, color, 1
+matplotlib.mlab.specgram, 2, 4, 2, noverlap, 2
+matplotlib.patches.RegularPolygon, 2, 7, 2, orientation, 2
+matplotlib._cntr.Cntr, 2, 3, 2, , 
+matplotlib.pyplot.quiverkey, 2, 6, 2, label, 2
+matplotlib.pyplot.minorticks_on, 3, 0, 3, , 
+matplotlib.pylab.errorbar, 3, 4, 2, fmt, 2
+matplotlib.pyplot.Line2D, 3, 4, 2, color, 2
+matplotlib.pyplot.get_current_fig_manager, 3, 0, 3, , 
+matplotlib.matplotlib_fname, 3, 0, 3, , 
+matplotlib.pyplot.cm.jet, 3, 1, 3, , 
+matplotlib.pylab.vlines, 3, 4, 2, color, 2
+matplotlib.path.Path, 3, 2, 2, , 
+matplotlib.colors.LogNorm, 3, 2, 2, , 
+matplotlib.pyplot.Figure, 3, 0, 3, , 
+matplotlib.colors.LinearSegmentedColormap, 3, 2, 2, , 
+matplotlib.colors.ColorConverter.to_rgb, 3, 1, 3, , 
+matplotlib.colors.rgb_to_hsv, 3, 1, 3, , 
+matplotlib.colors.hsv_to_rgb, 3, 1, 3, , 
+matplotlib.pyplot.cm.tab10, 3, 1, 3, , 
+matplotlib.pyplot.psd, 3, 2, 3, return_line, 3
+matplotlib.animation.ArtistAnimation, 4, 5, 4, repeat_delay, 4
+matplotlib.pyplot.rcParams.copy, 4, 0, 4, , 
+matplotlib.pyplot.cm.rainbow, 4, 1, 4, , 
+matplotlib.pylab.hexbin, 4, 5, 4, cmap, 4
+matplotlib.patches.Polygon, 4, 5, 3, facecolor, 2
+matplotlib.pylab.cm.get_cmap, 4, 1, 4, , 
+matplotlib.pyplot.cm.coolwarm, 4, 1, 4, , 
+matplotlib.pyplot.tripcolor, 4, 4, 3, edgecolors, 1
+matplotlib.cm.copper, 4, 1, 4, , 
+matplotlib.mlab.psd, 4, 5, 2, Fs, 4
+matplotlib.collections.LineCollection, 4, 2, 3, colors, 3
+matplotlib.pylab.sca, 5, 1, 5, , 
+matplotlib.pyplot.register_cmap, 5, 1, 4, cmap, 5
+matplotlib.pyplot.switch_backend, 5, 1, 5, , 
+matplotlib.pyplot.triplot, 5, 4, 3, linewidth, 3
+matplotlib.colors.hex2color, 5, 1, 5, , 
+matplotlib.mlab.bivariate_normal, 5, 6, 5, , 
+matplotlib.pyplot.tricontour, 5, 8, 5, linestyles, 5
+matplotlib.pylab.suptitle, 5, 2, 5, fontsize, 5
+matplotlib.pylab.gcf, 5, 0, 5, , 
+matplotlib.pyplot.FuncFormatter, 6, 1, 6, , 
+matplotlib.animation.FFMpegWriter, 6, 0, 4, bitrate, 2
+matplotlib.pyplot.connect, 6, 2, 6, , 
+matplotlib.cm.rainbow, 7, 1, 7, , 
+matplotlib.dates.date2num, 7, 1, 7, , 
+matplotlib.pyplot.box, 7, 1, 7, on, 3
+matplotlib.pylab.close, 7, 0, 5, , 
+matplotlib.pyplot.locator_params, 7, 2, 7, nbins, 7
+matplotlib.pylab.annotate, 7, 3, 7, va, 7
+matplotlib.pyplot.margins, 8, 2, 7, x, 2
+matplotlib.pyplot.Axes, 8, 2, 8, , 
+matplotlib.colors.BoundaryNorm, 8, 2, 8, ncolors, 2
+matplotlib.ticker.MultipleLocator, 8, 1, 8, base, 4
+matplotlib.patches.Ellipse, 8, 5, 4, color, 5
+matplotlib.pyplot.ticklabel_format, 8, 3, 5, axis, 5
+matplotlib.pyplot.tricontourf, 8, 8, 3, levels, 7
+matplotlib.pylab.setp, 8, 2, 8, fontsize, 8
+matplotlib.pyplot.fill_betweenx, 9, 6, 8, alpha, 8
+matplotlib.pylab.style.use, 9, 1, 9, , 
+matplotlib.dates.num2date, 9, 2, 6, tz, 6
+matplotlib.pylab.get_cmap, 9, 2, 5, , 
+matplotlib.mlab.normpdf, 9, 3, 9, , 
+matplotlib.colors.rgb2hex, 9, 1, 9, , 
+matplotlib.pyplot.pie, 9, 2, 6, colors, 4
+matplotlib.colors.Normalize.__init__, 9, 4, 9, , 
+matplotlib.patches.Circle, 10, 6, 6, color, 5
+matplotlib.pyplot.ioff, 10, 0, 10, , 
+matplotlib.rc_context, 10, 1, 10, rc, 8
+matplotlib.tri.Triangulation, 10, 2, 5, triangles, 4
+matplotlib.pyplot.Polygon, 10, 4, 8, alpha, 9
+matplotlib.colorbar.make_axes, 10, 1, 9, location, 1
+matplotlib.pylab.rc, 10, 2, 10, labelsize, 8
+matplotlib.dates.MonthLocator, 10, 0, 10, , 
+matplotlib.pyplot.rc_context, 11, 1, 11, rc, 4
+matplotlib.pyplot.violinplot, 11, 6, 4, showextrema, 9
+matplotlib.pyplot.stackplot, 11, 2, 6, colors, 2
+matplotlib.get_backend, 12, 0, 12, , 
+matplotlib.dates.YearLocator, 12, 1, 10, day, 2
+matplotlib.pyplot.figtext, 12, 3, 6, fontsize, 5
+matplotlib.pylab.savefig, 12, 1, 10, dpi, 2
+matplotlib.pyplot.pause, 12, 1, 12, , 
+matplotlib.pyplot.magnitude_spectrum, 12, 3, 5, scale, 11
+matplotlib.pyplot.twinx, 14, 0, 12, , 
+matplotlib.pyplot.hist2d, 15, 4, 11, cmap, 11
+matplotlib.pylab.axvline, 15, 4, 9, color, 11
+matplotlib.colors.LinearSegmentedColormap.from_list, 15, 2, 12, N, 3
+matplotlib.pyplot.cla, 15, 0, 15, , 
+matplotlib.pylab.colorbar, 15, 0, 15, , 
+matplotlib.pyplot.specgram, 16, 3, 4, Fs, 14
+matplotlib.pyplot.fill, 17, 5, 10, alpha, 12
+matplotlib.gridspec.GridSpecFromSubplotSpec, 17, 3, 13, subplot_spec, 17
+matplotlib.cm.get_cmap, 18, 1, 18, , 
+matplotlib.pyplot.hexbin, 18, 4, 6, gridsize, 14
+matplotlib.pyplot.xkcd, 19, 0, 19, , 
+matplotlib.pylab.contour, 19, 3, 10, colors, 15
+matplotlib.pyplot.GridSpec, 20, 4, 8, hspace, 18
+matplotlib.pylab.axhline, 21, 2, 8, y, 14
+matplotlib.pyplot.cm.ScalarMappable, 21, 2, 15, cmap, 21
+matplotlib.pylab.clf, 21, 0, 21, , 
+matplotlib.image.imsave, 21, 2, 16, cmap, 3
+matplotlib.colorbar.ColorbarBase, 22, 4, 17, cmap, 21
+matplotlib.cm.ScalarMappable, 24, 2, 24, cmap, 21
+matplotlib.pylab.grid, 24, 0, 16, color, 5
+matplotlib.font_manager.FontProperties, 24, 2, 20, size, 20
+matplotlib.pyplot.plot_date, 25, 4, 15, label, 12
+matplotlib.pyplot.cm.get_cmap, 26, 1, 25, , 
+matplotlib.lines.Line2D, 27, 4, 11, color, 23
+matplotlib.pyplot.spy, 27, 2, 9, markersize, 18
+matplotlib.rcdefaults, 27, 0, 27, , 
+matplotlib.animation.FuncAnimation, 28, 6, 15, interval, 26
+matplotlib.pyplot.draw, 28, 0, 28, , 
+matplotlib.pyplot.quiver, 30, 5, 10, pivot, 19
+matplotlib.pyplot.imsave, 34, 3, 19, cmap, 20
+matplotlib.pyplot.streamplot, 34, 7, 32, color, 33
+matplotlib.pyplot.Circle, 35, 3, 11, color, 18
+matplotlib.pyplot.set_cmap, 36, 1, 36, , 
+matplotlib.pyplot.ion, 37, 0, 37, , 
+matplotlib.pyplot.hold, 37, 1, 37, , 
+matplotlib.pylab.subplot2grid, 38, 2, 30, colspan, 6
+matplotlib.pyplot.autoscale, 38, 1, 29, tight, 35
+matplotlib.pyplot.boxplot, 39, 1, 19, vert, 8
+matplotlib.pyplot.gray, 42, 0, 42, , 
+matplotlib.pyplot.Rectangle, 42, 4, 21, fc, 24
+matplotlib.pylab.hist, 42, 6, 24, bins, 29
+matplotlib.pyplot.step, 44, 4, 15, where, 29
+matplotlib.pyplot.axvspan, 45, 6, 34, alpha, 45
+matplotlib.colors.ListedColormap, 45, 1, 42, name, 1
+matplotlib.pyplot.hlines, 50, 4, 18, xmin, 18
+matplotlib.colors.Normalize, 55, 2, 53, vmin, 51
+matplotlib.pyplot.stem, 55, 1, 21, label, 8
+matplotlib.pylab.ylim, 56, 1, 32, , 
+matplotlib.pylab.xlim, 57, 1, 39, , 
+matplotlib.pylab.axis, 62, 1, 62, , 
+matplotlib.patches.Rectangle, 68, 6, 47, facecolor, 50
+matplotlib.pyplot.clabel, 72, 3, 49, fontsize, 58
+matplotlib.pylab.tight_layout, 73, 0, 73, , 
+matplotlib.patches.Patch, 74, 2, 70, color, 74
+matplotlib.pyplot.sca, 74, 1, 74, , 
+matplotlib.pyplot.clim, 75, 2, 68, , 
+matplotlib.pyplot.barh, 75, 3, 28, color, 26
+matplotlib.pylab.yticks, 77, 1, 74, fontsize, 8
+matplotlib.pyplot.imread, 79, 1, 67, format, 2
+matplotlib.pylab.xticks, 80, 1, 73, fontsize, 8
+matplotlib.style.use, 83, 1, 83, , 
+matplotlib.pyplot.get_cmap, 85, 1, 78, lut, 3
+matplotlib.pyplot.rcParams.update, 90, 1, 90, , 
+matplotlib.pyplot.vlines, 92, 5, 35, label, 32
+matplotlib.pyplot.style.context, 92, 1, 92, , 
+matplotlib.rcParams.update, 92, 1, 92, , 
+matplotlib.pyplot.gcf, 93, 0, 93, , 
+matplotlib.gridspec.GridSpec, 118, 2, 94, height_ratios, 16
+matplotlib.pylab.scatter, 124, 5, 48, c, 104
+matplotlib.pylab.ylabel, 125, 1, 111, fontsize, 13
+matplotlib.pyplot.xscale, 125, 1, 121, linthreshx, 2
+matplotlib.use, 126, 1, 118, warn, 8
+matplotlib.pyplot.tick_params, 127, 1, 52, axis, 46
+matplotlib.pyplot.pcolor, 128, 3, 66, cmap, 16
+matplotlib.pylab.subplots, 133, 0, 42, figsize, 63
+matplotlib.pylab.xlabel, 135, 1, 123, fontsize, 11
+matplotlib.pyplot.semilogy, 142, 2, 64, label, 34
+matplotlib.pyplot.pcolormesh, 158, 4, 77, cmap, 112
+matplotlib.pyplot.arrow, 159, 8, 55, head_width, 141
+matplotlib.pylab.legend, 166, 0, 83, loc, 74
+matplotlib.pylab.show, 170, 0, 169, , 
+matplotlib.rc, 175, 2, 163, labelsize, 46
+matplotlib.pyplot.matshow, 181, 2, 91, cmap, 89
+matplotlib.pyplot.yscale, 181, 1, 157, nonposy, 12
+matplotlib.pyplot.suptitle, 202, 1, 110, fontsize, 81
+matplotlib.pyplot.rc, 215, 2, 175, family, 45
+matplotlib.pyplot.clf, 215, 0, 215, , 
+matplotlib.pyplot.setp, 216, 2, 135, rotation, 74
+matplotlib.pylab.imshow, 220, 1, 112, cmap, 59
+matplotlib.pyplot.contour, 237, 4, 78, cmap, 78
+matplotlib.pyplot.axes, 276, 1, 188, projection, 116
+matplotlib.image.imread, 279, 1, 241, format, 38
+matplotlib.pyplot.loglog, 285, 3, 112, label, 81
+matplotlib.pyplot.axhline, 310, 2, 137, color, 232
+matplotlib.pylab.subplot, 312, 3, 225, , 
+matplotlib.pyplot.annotate, 333, 6, 108, xy, 246
+matplotlib.pylab.figure, 342, 1, 202, figsize, 267
+matplotlib.pylab.title, 343, 1, 336, fontsize, 7
+matplotlib.pyplot.contourf, 356, 5, 173, cmap, 249
+matplotlib.pyplot.axvline, 358, 2, 152, color, 265
+matplotlib.pyplot.subplots_adjust, 381, 1, 170, hspace, 205
+matplotlib.pyplot.errorbar, 384, 3, 129, yerr, 276
+matplotlib.pyplot.subplot2grid, 399, 2, 240, colspan, 126
+matplotlib.pyplot.gca, 433, 0, 431, projection, 2
+matplotlib.pylab.plot, 456, 3, 147, label, 253
+matplotlib.pyplot.close, 495, 0, 404, , 
+matplotlib.pyplot.fill_between, 509, 5, 357, alpha, 485
+matplotlib.pyplot.bar, 564, 2, 141, color, 251
+matplotlib.pyplot.yticks, 618, 1, 393, fontsize, 91
+matplotlib.pyplot.semilogx, 701, 4, 625, label, 634
+matplotlib.pyplot.style.use, 835, 1, 835, , 
+matplotlib.pyplot.xticks, 1045, 1, 545, rotation, 311
+matplotlib.pyplot.hist, 1502, 2, 564, bins, 890
+matplotlib.pyplot.tight_layout, 1505, 0, 1412, pad, 78
+matplotlib.pyplot.colorbar, 1539, 0, 996, label, 124
+matplotlib.pyplot.grid, 1569, 1, 811, which, 109
+matplotlib.pyplot.savefig, 1848, 1, 914, dpi, 478
+matplotlib.pyplot.text, 1864, 3, 1121, fontsize, 563
+matplotlib.pyplot.xlim, 1931, 2, 1180, right, 18
+matplotlib.pyplot.ylim, 1961, 2, 1158, ymin, 17
+matplotlib.pyplot.axis, 4353, 1, 4310, aspect, 12
+matplotlib.pyplot.scatter, 4360, 2, 1069, c, 1793
+matplotlib.pyplot.legend, 5436, 0, 1951, loc, 2806
+matplotlib.pyplot.subplots, 6387, 3, 1913, figsize, 4264
+matplotlib.pyplot.imshow, 7300, 1, 4788, cmap, 1850
+matplotlib.pyplot.ylabel, 8089, 1, 6972, fontsize, 1002
+matplotlib.pyplot.xlabel, 9217, 1, 8044, fontsize, 1070
+matplotlib.pyplot.subplot, 9933, 3, 7123, projection, 72
+matplotlib.pyplot.figure, 10352, 1, 7110, figsize, 7238
+matplotlib.pyplot.title, 11692, 1, 10615, fontsize, 919
+matplotlib.pyplot.show, 14525, 0, 14508, block, 11
+matplotlib.pyplot.plot, 18729, 3, 6556, label, 7160

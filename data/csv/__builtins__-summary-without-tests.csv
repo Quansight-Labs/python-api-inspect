@@ -1,0 +1,68 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+breakpoint, 6, 1, 3, message, 3
+oct, 34, 1, 34, , 
+bin, 147, 1, 143, tolerance, 1
+memoryview, 216, 1, 216, , 
+ascii, 502, 1, 502, , 
+classmethod, 529, 1, 529, , 
+help, 728, 1, 711, stdout, 1
+hex, 779, 1, 693, , 
+delattr, 1124, 2, 1123, , 
+complex, 1205, 2, 773, , 
+bytearray, 1205, 1, 784, encoding, 14
+object, 1411, 0, 1409, , 
+globals, 1704, 0, 1704, , 
+compile, 1706, 1, 872, mode, 35
+super, 1786, 2, 1471, null, 4
+bytes, 1820, 1, 1296, encoding, 51
+vars, 1882, 1, 1638, , 
+divmod, 2120, 2, 2118, , 
+chr, 2157, 1, 2147, , 
+__import__, 2598, 1, 1743, fromlist, 446
+pow, 2678, 2, 2451, axis, 2
+dir, 2945, 1, 2682, , 
+input, 3086, 1, 2791, dynamic_axes, 3
+exec, 3454, 1, 2048, , 
+reversed, 4260, 1, 4257, , 
+frozenset, 4301, 1, 4092, , 
+ord, 4387, 1, 4387, , 
+id, 4717, 1, 4551, , 
+locals, 4884, 0, 4884, , 
+eval, 5840, 1, 3333, feed_dict, 108
+filter, 6273, 2, 3489, null, 132
+callable, 6968, 1, 6944, null, 14
+hash, 7460, 1, 7342, hash_name, 5
+round, 7562, 2, 4588, decimals, 34
+iter, 7827, 1, 7340, course_key, 30
+repr, 7943, 1, 7937, parent, 3
+issubclass, 9044, 2, 9043, , 
+map, 11514, 2, 8790, fn, 36
+slice, 12419, 2, 6635, start, 1
+next, 15175, 1, 12704, null, 1
+setattr, 20693, 3, 20663, , 
+abs, 22166, 1, 21964, out, 2
+any, 23435, 1, 18483, axis, 270
+all, 25014, 1, 17114, axis, 309
+property, 27714, 1, 13445, fget, 9636
+min, 34815, 2, 21629, key, 791
+sorted, 38958, 1, 25703, key, 12062
+tuple, 39911, 1, 38666, , 
+type, 41687, 1, 40507, null, 3
+sum, 44262, 1, 31224, axis, 3091
+max, 48003, 2, 25674, key, 1347
+zip, 51219, 2, 37251, null, 1
+getattr, 64981, 3, 35747, null, 5
+float, 76947, 1, 76081, , 
+set, 78253, 1, 46664, ylabel, 154
+hasattr, 84194, 2, 84178, , 
+open, 92634, 2, 70688, encoding, 4569
+enumerate, 103254, 1, 101170, start, 798
+str, 112469, 1, 111698, encoding, 57
+dict, 114802, 1, 38221, end_bit, 27186
+list, 128698, 1, 115792, null, 73
+int, 145920, 1, 143495, base, 187
+format, 154370, 1, 85504, null, 2332
+range, 236042, 1, 178926, dtype, 6
+isinstance, 353885, 2, 353858, null, 2
+print, 481996, 1, 371506, file, 17452
+len, 494621, 1, 494577, null, 4

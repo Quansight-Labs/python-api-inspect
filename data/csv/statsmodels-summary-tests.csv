@@ -1,0 +1,26 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+statsmodels.tools.add_constant, 1, 1, 1, , 
+statsmodels.api.datasets.sunspots.load_pandas, 1, 0, 1, , 
+statsmodels.tsa.stattools.acf, 1, 4, 1, nlags, 1
+statsmodels.api.datasets.star98.load_pandas, 1, 0, 1, , 
+statsmodels.tsa.statespace.structural.UnobservedComponents, 1, 2, 1, level, 1
+statsmodels.api.datasets.cpunish.load, 1, 0, 1, , 
+statsmodels.api.datasets.scotland.load, 1, 0, 1, , 
+statsmodels.api.datasets.star98.load, 1, 0, 1, , 
+statsmodels.api.datasets.committee.load, 1, 0, 1, , 
+statsmodels.nonparametric.kernels.gaussian, 1, 3, 1, , 
+statsmodels.datasets.get_rdataset, 1, 2, 1, dataname, 1
+statsmodels.api.families.family.Gaussian, 1, 0, 1, , 
+statsmodels.api.datasets.anes96.load, 2, 0, 2, , 
+statsmodels.api.datasets.longley.load, 3, 0, 3, , 
+statsmodels.formula.api.Logit, 3, 2, 3, , 
+statsmodels.api.families.links.Power, 3, 1, 3, power, 3
+statsmodels.api.nonparametric.KDEMultivariate, 4, 3, 4, bw, 4
+statsmodels.api.datasets.spector.load, 4, 0, 4, , 
+statsmodels.formula.api.ols, 5, 2, 5, data, 5
+statsmodels.api.distributions.ECDF, 8, 1, 8, , 
+statsmodels.api.families.family.Binomial, 8, 1, 8, , 
+statsmodels.api.cov_struct.Independence, 9, 0, 9, , 
+statsmodels.api.datasets.get_rdataset, 12, 2, 12, , 
+statsmodels.tsa.holtwinters.ExponentialSmoothing, 18, 5, 18, seasonal, 18
+statsmodels.api.add_constant, 21, 1, 21, , 

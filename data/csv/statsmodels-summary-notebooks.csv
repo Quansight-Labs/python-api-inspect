@@ -1,0 +1,76 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+statsmodels.api.tsa.periodogram, 1, 1, 1, , 
+statsmodels.api.tsa.stattools.coint, 1, 2, 1, , 
+statsmodels.tsa.vector_ar.util.varsim, 1, 4, 1, steps, 1
+statsmodels.api.OLS.from_formula, 1, 2, 1, , 
+statsmodels.api.robust.scale.Huber, 1, 0, 1, , 
+statsmodels.tsa.api.filters.hpfilter, 1, 2, 1, lamb, 1
+statsmodels.api.RLM, 1, 3, 1, M, 1
+statsmodels.graphics.tsaplots.plot_acf, 1, 1, 1, , 
+statsmodels.api.datasets.engel.load_pandas, 1, 0, 1, , 
+statsmodels.api.tsa.AR, 1, 1, 1, , 
+statsmodels.api.stats.durbin_watson, 1, 1, 1, , 
+statsmodels.api.datasets.star98.load_pandas, 1, 0, 1, , 
+statsmodels.api.todense, 1, 0, 1, , 
+statsmodels.api.nonzero, 1, 0, 1, , 
+statsmodels.api.formula.ols, 1, 2, 1, data, 1
+statsmodels.api.graphics.influence_plot, 1, 3, 1, criterion, 1
+statsmodels.graphics.boxplots.violinplot, 1, 1, 1, , 
+statsmodels.graphics.boxplots.beanplot, 1, 1, 1, , 
+statsmodels.api.tsa.datetools.dates_from_range, 1, 2, 1, length, 1
+statsmodels.tsa.stattools.grangercausalitytests, 1, 2, 1, maxlag, 1
+statsmodels.api.stats.anova_lm, 1, 2, 1, , 
+statsmodels.api.datasets.grunfeld.load_pandas, 1, 0, 1, , 
+statsmodels.datasets.modechoice.load_pandas, 2, 0, 2, , 
+statsmodels.tools.numdiff.approx_fprime, 2, 2, 2, , 
+statsmodels.formula.api.mnlogit, 2, 2, 2, data, 2
+statsmodels.api.graphics.plot_corr, 2, 2, 2, xnames, 2
+statsmodels.tsa.api.VAR, 2, 1, 2, , 
+statsmodels.api.Logit.from_formula, 2, 2, 2, , 
+statsmodels.api.cov_struct.Exchangeable, 2, 0, 2, , 
+statsmodels.formula.api.mixedlm, 2, 3, 1, groups, 2
+statsmodels.nonparametric.kernel_density.KDEMultivariate, 2, 2, 2, var_type, 2
+statsmodels.api.nonparametric.KDEMultivariate, 2, 2, 2, var_type, 2
+statsmodels.tsa.api.adfuller, 2, 1, 2, , 
+statsmodels.graphics.api.qqplot, 2, 2, 2, ax, 2
+statsmodels.graphics.api.plot_fit, 2, 3, 2, ax, 2
+statsmodels.api.tsa.ARMA, 2, 2, 2, order, 1
+statsmodels.stats.api.CompareMeans, 2, 2, 2, , 
+statsmodels.api.GLM, 2, 3, 2, family, 2
+statsmodels.api.tocsr, 2, 0, 2, , 
+statsmodels.tsa.api.graphics.plot_acf, 2, 4, 2, alpha, 2
+statsmodels.tsa.api.graphics.plot_pacf, 2, 4, 2, alpha, 2
+statsmodels.api.graphics.plot_fit, 2, 3, 2, ax, 2
+statsmodels.api.graphics.plot_partregress, 2, 5, 2, data, 2
+statsmodels.api.graphics.plot_partregress_grid, 2, 2, 2, fig, 2
+statsmodels.api.tsa.seasonal_decompose, 2, 3, 1, freq, 1
+statsmodels.distributions.ECDF, 2, 1, 2, , 
+statsmodels.tools.numdiff.approx_hess, 3, 2, 2, args, 1
+statsmodels.formula.api.poisson, 3, 2, 3, data, 3
+statsmodels.api.Probit, 3, 2, 3, , 
+statsmodels.api.tsa.stattools.adfuller, 3, 1, 3, , 
+statsmodels.tsa.api.SARIMAX, 3, 2, 1, order, 3
+statsmodels.api.graphics.plot_leverage_resid2, 3, 1, 2, ax, 1
+statsmodels.api.tsa.ARIMA, 3, 2, 3, order, 3
+statsmodels.api.nonparametric.KDEUnivariate, 3, 1, 3, , 
+statsmodels.api.GEE.from_formula, 4, 3, 2, cov_struct, 2
+statsmodels.api.datasets.sunspots.load_pandas, 4, 0, 4, , 
+statsmodels.api.datasets.fair.load_pandas, 4, 0, 4, , 
+statsmodels.api.graphics.plot_regress_exog, 4, 3, 4, fig, 4
+statsmodels.tsa.stattools.acf, 4, 3, 4, nlags, 4
+statsmodels.api.datasets.get_rdataset, 5, 2, 3, , 
+statsmodels.graphics.api.tsa.plot_acf, 5, 3, 5, lags, 5
+statsmodels.api.WLS.from_formula, 5, 2, 3, weights, 2
+statsmodels.api.datasets.co2.load_pandas, 6, 0, 6, , 
+statsmodels.tsa.api.arma_generate_sample, 6, 3, 3, ma, 6
+statsmodels.api.qqplot, 7, 1, 4, line, 3
+statsmodels.tsa.holtwinters.ExponentialSmoothing, 9, 5, 9, seasonal, 9
+statsmodels.api.tsa.statespace.SARIMAX, 9, 5, 6, seasonal_order, 9
+statsmodels.api.stats.proportions_ztest, 9, 3, 9, alternative, 9
+statsmodels.api.graphics.tsa.plot_pacf, 13, 3, 12, lags, 12
+statsmodels.api.graphics.tsa.plot_acf, 17, 3, 14, ax, 16
+statsmodels.formula.api.logit, 19, 2, 18, data, 18
+statsmodels.api.add_constant, 48, 1, 47, prepend, 1
+statsmodels.formula.api.ols, 56, 2, 56, data, 51
+statsmodels.api.OLS, 64, 2, 64, , 
+statsmodels.api.Logit, 99, 2, 99, , 

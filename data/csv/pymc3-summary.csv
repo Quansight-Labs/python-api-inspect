@@ -1,0 +1,269 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+pymc3.tt_rng, 1, 1, 1, , 
+pymc3.theanof.ix_, 1, 1, 1, , 
+pymc3.plots.forestplot, 1, 1, 1, , 
+pymc3.ChiSquared, 1, 2, 1, , 
+pymc3.sampling.init_nuts, 1, 2, 1, null, 1
+pymc3.parallel_sampling.ProcessAdapter.recv_draw, 1, 1, 1, , 
+pymc3.stats._psislw, 1, 2, 1, , 
+pymc3.tests.backend_fixtures.remove_file_or_directory, 1, 1, 1, , 
+pymc3.util.get_transformed_name, 1, 2, 1, , 
+pymc3.variational.callbacks.CheckParametersConvergence, 1, 3, 1, every, 1
+pymc3.variational.flows.seems_like_flow_params, 1, 1, 1, , 
+pymc3.variational.flows.seems_like_formula, 1, 1, 1, , 
+pymc3.posteriorplot.plot_posterior, 1, 2, 1, varnames, 1
+pymc3.distributions.transforms.Ordered, 1, 0, 1, , 
+pymc3.distributions.transforms.LogOdds, 1, 0, 1, , 
+pymc3.Logistic, 1, 4, 1, observed, 1
+pymc3.distributions.dist_math.rho2sd, 1, 1, 1, , 
+pymc3.hpd, 1, 1, 1, , 
+pymc3.densityplot, 1, 1, 1, , 
+pymc3.SVGD, 1, 2, 1, jitter, 1
+pymc3.MvNormal.dist, 1, 3, 1, chol, 1
+pymc3.plots.autocorrplot, 1, 2, 1, trace, 1
+pymc3.WishartBartlett, 1, 4, 1, testval, 1
+pymc3.NoDistribution, 1, 4, 1, testval, 1
+pymc3.stats.df_summary, 1, 2, 1, include_transformed, 1
+pymc3.glm.linear.GLM, 1, 3, 1, family, 1
+pymc3.step_methods.hmc.quadpotential.QuadPotentialFull, 1, 1, 1, , 
+pymc3.stats.summary, 1, 2, 1, varnames, 1
+pymc3.backends.SQLite, 1, 1, 1, , 
+pymc3.math.logsumexp, 1, 2, 1, axis, 1
+pymc3.distributions.dist_math.bound, 1, 3, 1, , 
+pymc3.df_summary, 1, 2, 1, varnames, 1
+pymc3.backends.Text, 1, 1, 1, , 
+pymc3._log.setLevel, 1, 1, 1, , 
+pymc3.T.dist, 1, 3, 1, nu, 1
+pymc3.glm.families.T, 1, 0, 1, , 
+pymc3.starting.optimize.basinhopping, 1, 2, 1, null, 1
+pymc3.step_methods.HamiltonianMC, 1, 1, 1, vars, 1
+pymc3.step_methods.Metropolis, 1, 1, 1, vars, 1
+pymc3.constant, 1, 1, 1, , 
+pymc3.ElemwiseCategoricalStep, 1, 2, 1, values, 1
+pymc3.distributions.distribution.generate_samples, 1, 5, 1, low, 1
+pymc3.Beta.dist, 1, 2, 1, alpha, 1
+pymc3.Bernoulli.dist, 1, 1, 1, p, 1
+pymc3.backends.hdf5.load, 1, 1, 1, , 
+pymc3.approx_hessian, 1, 1, 1, , 
+pymc3.variational.svgd, 1, 2, 1, n, 1
+pymc3.step_methods.CompoundStep, 1, 1, 1, , 
+pymc3.sampling.stop_tuning, 1, 1, 1, , 
+pymc3._log.addHandler, 1, 1, 1, , 
+pymc3._log.removeHandler, 1, 1, 1, , 
+pymc3.get_data_file, 1, 2, 1, , 
+pymc3.bpic, 1, 1, 1, , 
+pymc3.stats._Summary, 1, 1, 1, , 
+pymc3.vartypes.isgenerator, 2, 1, 2, , 
+pymc3.Model.get_context, 2, 0, 2, , 
+pymc3._log.exception, 2, 2, 2, , 
+pymc3.KroneckerNormal, 2, 6, 2, mu, 2
+pymc3.parallel_sampling.ParallelSampler, 2, 9, 2, , 
+pymc3.MeanField, 2, 2, 1, start, 1
+pymc3.Lognormal.dist, 2, 3, 2, mu, 2
+pymc3.model_to_graphviz, 2, 1, 2, , 
+pymc3.gp.cov.Constant, 2, 1, 2, , 
+pymc3.parallel_sampling.ProcessAdapter, 2, 6, 2, start, 2
+pymc3.sampling.iter_sample, 2, 5, 1, random_seed, 2
+pymc3.sampling._check_start_shape, 2, 2, 2, , 
+pymc3.backends.tracetab.trace_to_dataframe, 2, 1, 1, chains, 1
+pymc3.distributions.transforms.Chain, 2, 1, 2, , 
+pymc3.distributions.transforms.Interval, 2, 2, 2, , 
+pymc3.util.is_transformed_name, 2, 1, 2, , 
+pymc3.util.get_untransformed_name, 2, 1, 2, , 
+pymc3.updates.get_or_compute_grads, 2, 2, 2, , 
+pymc3.total_norm_constraint, 2, 2, 2, , 
+pymc3.sampling.MultiTrace, 2, 1, 2, , 
+pymc3.StudentT.dist, 2, 3, 2, nu, 2
+pymc3.glm.families.StudentT, 2, 0, 2, , 
+pymc3.math.cartesian, 2, 2, 2, , 
+pymc3.HalfNormal.dist, 2, 1, 2, sigma, 2
+pymc3.gp.util.kmeans_inducing_points, 2, 2, 2, X, 1
+pymc3.MvGaussianRandomWalk, 2, 3, 2, chol, 2
+pymc3.Gumbel, 2, 4, 2, observed, 2
+pymc3.CategoricalGibbsMetropolis, 2, 1, 2, vars, 2
+pymc3.compareplot, 2, 1, 2, , 
+pymc3.Weibull, 2, 4, 2, alpha, 2
+pymc3.plots.plot_posterior, 2, 1, 2, trace, 2
+pymc3.theanof.set_theano_conf, 2, 1, 2, , 
+pymc3.step_methods.hmc.quadpotential.QuadPotentialDiag, 2, 1, 2, , 
+pymc3.Exponential.dist, 2, 1, 2, , 
+pymc3.plots.energyplot, 2, 1, 2, , 
+pymc3.backends.base.MultiTrace, 2, 1, 2, , 
+pymc3.distributions.continuous.Beta, 2, 3, 2, alpha, 2
+pymc3.gp.GP, 2, 4, 2, sigma, 2
+pymc3.gp.sample_gp, 2, 5, 1, samples, 2
+pymc3.LKJCorr, 2, 4, 1, testval, 1
+pymc3.compare_plot, 2, 1, 2, , 
+pymc3.generator, 2, 1, 2, , 
+pymc3.examples.arbitrary_stochastic.build_model, 2, 0, 2, , 
+pymc3.smartfloatX, 3, 1, 3, , 
+pymc3.BinaryGibbsMetropolis, 3, 1, 3, , 
+pymc3.diagnostics.effective_n, 3, 1, 3, , 
+pymc3.MvStudentT, 3, 6, 2, mu, 3
+pymc3._log.debug, 3, 1, 3, , 
+pymc3.join_nonshared_inputs, 3, 3, 3, , 
+pymc3.GLM.from_formula, 3, 2, 3, , 
+pymc3.ZeroInflatedPoisson, 3, 4, 3, observed, 2
+pymc3.gp.cov.Exponential, 3, 2, 3, ls_inv, 1
+pymc3.gp.cov.Periodic, 3, 3, 3, period, 1
+pymc3.gp.cov.Linear, 3, 2, 3, , 
+pymc3.gp.cov.handle_args, 3, 2, 3, args, 1
+pymc3.align_minibatches, 3, 1, 2, , 
+pymc3.load_trace, 3, 1, 2, model, 1
+pymc3.sample_posterior_predictive_w, 3, 3, 2, weights, 1
+pymc3.stats._log_post_trace, 3, 2, 3, , 
+pymc3.distributions.transforms.lowerbound, 3, 1, 3, , 
+pymc3.distributions.transforms.upperbound, 3, 1, 3, , 
+pymc3.memoize.clear_cache, 3, 1, 2, , 
+pymc3.KLqp, 3, 1, 3, , 
+pymc3.sampling.NDArray, 3, 2, 2, model, 3
+pymc3.AR, 3, 4, 3, sigma, 3
+pymc3.kdeplot, 3, 3, 2, color, 2
+pymc3.gp.util.plot_gp_dist, 3, 5, 3, palette, 3
+pymc3.math.invlogit, 3, 1, 3, , 
+pymc3.bfmi, 3, 1, 3, , 
+pymc3.Empirical, 3, 1, 2, model, 1
+pymc3.ElemwiseCategorical, 3, 2, 2, vars, 3
+pymc3.NFVI, 3, 2, 3, jitter, 3
+pymc3.switch, 3, 3, 3, , 
+pymc3.DictToArrayBijection, 3, 2, 3, , 
+pymc3.dic, 3, 2, 2, , 
+pymc3._log.warn, 3, 1, 3, , 
+pymc3.model.all_continuous, 3, 1, 3, , 
+pymc3.distributions.draw_values, 3, 1, 2, point, 1
+pymc3.sampling._soft_update, 3, 2, 3, , 
+pymc3.HalfCauchy.dist, 4, 1, 4, beta, 4
+pymc3._log.warning, 4, 1, 4, , 
+pymc3.make_shared_replacements, 4, 2, 4, , 
+pymc3.Poisson.dist, 4, 1, 2, mu, 4
+pymc3.gp.cov.Polynomial, 4, 4, 4, c, 2
+pymc3.distributions.multivariate.posdef, 4, 1, 4, , 
+pymc3.backends.tracetab.create_flat_names, 4, 2, 4, , 
+pymc3.backends.tracetab._create_shape, 4, 1, 4, , 
+pymc3.distributions.transforms.interval, 4, 2, 4, , 
+pymc3.callbacks.Tracker, 4, 2, 2, time, 1
+pymc3.EllipticalSlice, 4, 2, 4, prior_cov, 4
+pymc3.math.sin, 4, 1, 4, , 
+pymc3.math.dot, 4, 2, 4, , 
+pymc3.NormalizingFlow, 4, 2, 3, model, 4
+pymc3.plots.summary, 4, 1, 3, varnames, 1
+pymc3.stats.dic, 4, 2, 4, trace, 1
+pymc3.stats.waic, 4, 2, 4, trace, 1
+pymc3.stats._PosteriorQuantileSummary, 4, 2, 4, , 
+pymc3.ArrayOrdering, 4, 1, 4, , 
+pymc3.gp.cov.WhiteNoise, 5, 1, 5, sigma, 1
+pymc3.find_hessian, 5, 1, 4, point, 2
+pymc3.set_tt_rng, 5, 1, 5, , 
+pymc3.Multinomial, 5, 4, 3, shape, 3
+pymc3.BinaryMetropolis, 5, 1, 4, tune_interval, 1
+pymc3.gp.cov.RatQuad, 5, 3, 5, ls, 1
+pymc3.gp.TP, 5, 2, 5, nu, 5
+pymc3.gp.LatentKron, 5, 2, 4, cov_funcs, 5
+pymc3.gp.MarginalKron, 5, 2, 4, cov_funcs, 5
+pymc3.save_trace, 5, 3, 4, overwrite, 4
+pymc3.CompoundStep, 5, 1, 5, , 
+pymc3.util.update_start_vals, 5, 3, 5, model, 3
+pymc3.GaussianRandomWalk, 5, 3, 5, shape, 5
+pymc3.init_nuts, 6, 3, 2, init, 5
+pymc3.LKJCholeskyCov, 6, 4, 6, sd_dist, 5
+pymc3.expand_packed_triangular, 6, 3, 3, lower, 3
+pymc3.Laplace, 6, 4, 4, shape, 6
+pymc3.gp.cov.Kron, 6, 1, 6, , 
+pymc3.gp.mean.Linear, 6, 2, 6, coeffs, 5
+pymc3.gp.cov.WarpedInput, 6, 4, 4, args, 4
+pymc3.gp.cov.Gibbs, 6, 3, 4, args, 3
+pymc3.loo, 6, 2, 6, , 
+pymc3.Gamma.dist, 6, 2, 6, alpha, 6
+pymc3.math.stack, 6, 1, 5, axis, 1
+pymc3.variational.advi_minibatch, 6, 7, 4, n, 6
+pymc3.effective_n, 7, 2, 3, varnames, 2
+pymc3.inputvars, 7, 1, 7, , 
+pymc3.set_data, 7, 1, 5, new_data, 3
+pymc3.gp.cov.Matern32, 7, 2, 7, , 
+pymc3.gp.cov.Coregion, 7, 4, 4, W, 5
+pymc3.theanof.change_flags, 7, 1, 5, compute_test_value, 5
+pymc3.math.sigmoid, 7, 1, 7, , 
+pymc3.ADVI, 7, 0, 6, cost_part_grad_scale, 1
+pymc3.stats._StatSummary, 7, 3, 7, , 
+pymc3.Point, 8, 2, 6, model, 6
+pymc3.Mixture, 8, 4, 8, observed, 8
+pymc3.sampling._choose_backend, 8, 2, 6, shortcuts, 2
+pymc3.stats._groupby_leading_idxs, 8, 1, 8, , 
+pymc3.pairplot, 8, 6, 6, sub_varnames, 8
+pymc3.math.tanh, 8, 1, 8, , 
+pymc3.autocorrplot, 8, 2, 7, varnames, 4
+pymc3.variational.sample_vp, 8, 2, 6, draws, 7
+pymc3.advi, 8, 1, 7, start, 5
+pymc3.T, 8, 5, 6, lam, 8
+pymc3.dot, 8, 2, 8, , 
+pymc3.plots.traceplot, 9, 2, 8, trace, 2
+pymc3.Normal.dist, 9, 2, 9, mu, 6
+pymc3.HamiltonianMC, 9, 1, 6, scaling, 5
+pymc3.gp.cov.Cosine, 9, 2, 9, ls, 2
+pymc3.Lognormal, 9, 4, 3, mu, 5
+pymc3.waic, 9, 2, 7, , 
+pymc3.plot_posterior_predictive_glm, 9, 6, 6, samples, 8
+pymc3.glm.GLM.from_formula, 11, 3, 8, family, 8
+pymc3.energyplot, 11, 1, 11, , 
+pymc3.math.sum, 11, 2, 9, axis, 9
+pymc3.compare, 12, 2, 9, method, 7
+pymc3.SkewNormal, 12, 4, 12, alpha, 12
+pymc3.glm.glm, 12, 3, 8, family, 8
+pymc3.glm.plot_posterior_predictive, 12, 6, 6, samples, 10
+pymc3.NormalMixture, 13, 5, 10, tau, 7
+pymc3.gelman_rubin, 13, 1, 7, varnames, 6
+pymc3.gp.cov.ScaledCov, 13, 4, 11, args, 4
+pymc3.gp.Marginal, 13, 2, 8, cov_func, 7
+pymc3.gp.Latent, 13, 2, 9, cov_func, 7
+pymc3.gp.MarginalSparse, 13, 3, 8, approx, 13
+pymc3.math.switch, 13, 3, 13, , 
+pymc3.Slice, 14, 1, 9, null, 2
+pymc3.HalfFlat, 14, 1, 13, testval, 1
+pymc3.callbacks.CheckParametersConvergence, 15, 1, 7, null, 7
+pymc3.Data, 15, 2, 15, , 
+pymc3.gp.mean.Zero, 15, 0, 15, , 
+pymc3.Categorical, 15, 3, 8, p, 11
+pymc3.invlogit, 15, 1, 15, , 
+pymc3.variational.advi, 15, 1, 10, n, 14
+pymc3.theanof.floatX, 18, 1, 17, dtype, 1
+pymc3.Cauchy, 19, 4, 11, observed, 10
+pymc3.DiscreteUniform, 21, 3, 16, lower, 21
+pymc3.gp.cov.Matern52, 21, 2, 21, ls, 2
+pymc3.Bound, 22, 2, 13, lower, 20
+pymc3.gp.mean.Constant, 23, 1, 23, c, 3
+pymc3.Dirichlet, 25, 3, 15, a, 15
+pymc3.sample_prior_predictive, 25, 1, 17, samples, 5
+pymc3.StudentT, 29, 5, 20, nu, 27
+pymc3.Flat, 29, 2, 13, shape, 19
+pymc3.DensityDist, 31, 3, 24, observed, 13
+pymc3._log.info, 32, 1, 32, , 
+pymc3.MvNormal, 32, 5, 17, mu, 27
+pymc3.modelcontext, 32, 1, 32, , 
+pymc3.fit, 36, 1, 13, method, 19
+pymc3.floatX, 39, 1, 39, , 
+pymc3.trace_to_dataframe, 40, 2, 26, varnames, 21
+pymc3.sample_ppc, 42, 3, 33, samples, 34
+pymc3.Minibatch, 43, 2, 40, batch_size, 25
+pymc3.forestplot, 48, 2, 31, varnames, 39
+pymc3.Poisson, 55, 3, 51, observed, 50
+pymc3.plot_posterior, 57, 3, 18, varnames, 43
+pymc3.sample_posterior_predictive, 58, 3, 25, samples, 38
+pymc3.Binomial, 63, 4, 47, n, 43
+pymc3.Bernoulli, 64, 3, 49, observed, 48
+pymc3.Gamma, 69, 3, 43, alpha, 39
+pymc3.Metropolis, 69, 0, 41, vars, 9
+pymc3.Potential, 71, 2, 70, , 
+pymc3.HalfCauchy, 77, 2, 64, beta, 52
+pymc3.summary, 79, 1, 39, varnames, 34
+pymc3.find_MAP, 91, 0, 46, fmin, 26
+pymc3.Exponential, 94, 2, 66, lam, 37
+pymc3.Beta, 95, 3, 44, alpha, 58
+pymc3.gp.cov.ExpQuad, 97, 2, 85, active_dims, 10
+pymc3.HalfNormal, 101, 2, 84, sd, 33
+pymc3.NUTS, 103, 1, 51, scaling, 40
+pymc3.traceplot, 226, 1, 113, varnames, 69
+pymc3.Uniform, 229, 3, 159, upper, 155
+pymc3.Deterministic, 319, 2, 319, , 
+pymc3.sample, 573, 3, 159, tune, 167
+pymc3.Model, 808, 0, 803, theano_config, 2
+pymc3.Normal, 956, 4, 484, mu, 708

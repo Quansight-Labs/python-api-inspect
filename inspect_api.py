@@ -14,6 +14,12 @@ import hashlib
 import json
 
 
+# some parsings result require more recursion
+# pyinstaller is one example
+# https://github.com/pyinstaller/pyinstaller/issues/2919
+sys.setrecursionlimit(5000)
+
+
 def download_github_repo(owner, repo, ref, cache_dir=None):
     filename = os.path.join(cache_dir, f'{owner}-{repo}-{ref}.zip')
     if not os.path.isfile(filename):
@@ -32,39 +38,39 @@ def download_github_repo(owner, repo, ref, cache_dir=None):
 
 
 def parse_filename(filename, contents):
-    try:
-        if filename.endswith('.ipynb'):
+    if filename.endswith('.ipynb'):
+        try:
+            data = json.loads(contents)
+        except Exception:
+            print(f'error decoding json {filename:64}')
+            return None
+
+        if data.get('metadata', {}).get('kernelspec', {}).get('language') != 'python':
+            print(f'unable to parse non python notebook {filename:64}')
+            return None
+
+        if not 'cells' in data:
+            print(f'notebook does not have any cells {filename:64}')
+            return None
+
+        source_cells = []
+        for i, cell in enumerate(data['cells']):
+            if cell['cell_type'] != 'code':
+                continue
+
+            source = re.sub('%{1,2}.*', '', ''.join(cell['source']))
             try:
-                data = json.loads(contents)
-            except json.decoder.JSONDecodeError:
-                print(f'error decoding json {filename:64}')
-                return None
+                ast.parse(source)
+                source_cells.append(source)
+            except Exception:
+                print(f'{filename:64} notebook cell {i} failed to parse')
+        contents = '\n'.join(source_cells)
+    elif not filename.endswith('.py'):
+        raise ValueError(f'unknown how to handle extension {filename[-10:]}')
 
-            if data.get('metadata', {}).get('kernelspec', {}).get('language') != 'python':
-                print(f'unable to parse non python notebook {filename:64}')
-                return None
-
-            if not 'cells' in data:
-                print(f'notebook does not have any cells {filename:64}')
-                return None
-
-            source_cells = []
-            for i, cell in enumerate(data['cells']):
-                if cell['cell_type'] != 'code':
-                    continue
-
-                source = re.sub('%{1,2}.*', '', '\n'.join(cell['source']))
-                try:
-                    ast.parse(source)
-                    source_cells.append(source)
-                except SyntaxError:
-                    print(f'{filename:64} notebook cell {i} failed to parse')
-            return ast.parse('\n'.join(source_cells))
-        elif filename.endswith('.py'):
-            return ast.parse(contents)
-        else:
-            raise ValueError(f'unknown how to handle extension {filename[-10:]}')
-    except SyntaxError:
+    try:
+        return ast.parse(contents)
+    except Exception:
         print(f'syntax error parsing: {filename:64}')
 
 
@@ -72,6 +78,24 @@ def inspect_file_ast(file_ast):
     """Record function calls and counts for all absolute namespaces
 
     """
+    # https://docs.python.org/3/library/functions.html
+    BUILTINS = {
+        'abs', 'delattr', 'hash', 'memoryview', 'set',
+        'all', 'dict', 'help', 'min', 'setattr',
+        'any', 'dir', 'hex', 'next', 'slice',
+        'ascii', 'divmod', 'id', 'object', 'sorted',
+        'bin', 'enumerate', 'input', 'oct', 'staticmethod'
+        'bool', 'eval', 'int', 'open', 'str',
+        'breakpoint', 'exec', 'isinstance', 'ord', 'sum',
+        'bytearray', 'filter', 'issubclass', 'pow', 'super',
+        'bytes', 'float', 'iter', 'print', 'tuple',
+        'callable', 'format', 'len', 'property', 'type',
+        'chr', 'frozenset', 'list', 'range', 'vars',
+        'classmethod', 'getattr', 'locals', 'repr', 'zip',
+        'compile', 'globals', 'map', 'reversed', '__import__',
+        'complex', 'hasattr', 'max', 'round',
+    }
+
     class ImportVisitor(ast.NodeVisitor):
         def __init__(self):
             self.imports = set()
@@ -110,6 +134,12 @@ def inspect_file_ast(file_ast):
                     'kwargs': collections.defaultdict(int),
                 }))
 
+        def add_api_stats(self, namespace, path, num_args, keywords):
+            self.api[namespace][path]['count'] += 1
+            self.api[namespace][path]['n_args'][num_args] += 1
+            for keyword in keywords:
+                self.api[namespace][path]['kwargs'][keyword] += 1
+
         def visit_Call(self, node):
             if not isinstance(node.func, (ast.Attribute, ast.Name)):
                 return
@@ -131,15 +161,14 @@ def inspect_file_ast(file_ast):
                 else:
                     path.insert(0, _node.id)
 
-            for i in range(len(path)):
-                if tuple(path[:i+1]) in self.imports:
-                    base_namespace = path[0]
-
-                    self.api[base_namespace][tuple(path)]['count'] += 1
-                    self.api[base_namespace][tuple(path)]['n_args'][num_args] += 1
-                    for keyword in keywords:
-                        self.api[base_namespace][tuple(path)]['kwargs'][keyword] += 1
-                    break
+            if len(path) == 1 and path[0] in BUILTINS:
+                base_namespace = '__builtins__'
+                self.add_api_stats('__builtins__', tuple(path), num_args, keywords)
+            else:
+                for i in range(len(path)):
+                    if tuple(path[:i+1]) in self.imports:
+                        self.add_api_stats(path[0], tuple(path), num_args, keywords)
+                        break
 
     import_visitor = ImportVisitor()
     import_visitor.visit(file_ast)
@@ -148,24 +177,13 @@ def inspect_file_ast(file_ast):
     return api_visitor.api
 
 
-# def output_api_counts(api_counts, filename):
-#     print(f'writing {len(api_counts)} function calls to {filename:64}')
-#     with open(filename, 'w') as f:
-#         f.write('function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count\n')
-#         for key, value in sorted(api_counts.items(), key=lambda item: item[1]['count']):
-#             sorted_num_args = [(num_args, count) for num_args, count in sorted(api_counts[key]['n_args'].items(), key=lambda item: item[1], reverse=True)]
-
-#             sorted_keywords = [(keyword, count) for keyword, count in sorted(api_counts[key]['kwargs'].items(), key=lambda item: item[1], reverse=True)] + [('', '')]
-#             f.write(f'{key}, {value["count"]}, {sorted_num_args[0][0]}, {sorted_num_args[0][1]}, {sorted_keywords[0][0]}, {sorted_keywords[0][1]}\n')
-
-
 def cli(arguments):
     parser = argparse.ArgumentParser()
     parser.add_argument('whitelist', help="whitelist filename")
     parser.add_argument('--cache-dir', default=os.path.expanduser('~/.cache/python-inspect-ast/'), help='download cache directory')
     parser.add_argument('--exclude-dirs', help='directories to exclude from statistics')
     parser.add_argument('--include-dirs', help='directories to include in statistics')
-    parser.add_argument('--output', default='summary.csv', help="output filename")
+    parser.add_argument('--output', default='inspect.sqlite', help="output database filename")
     parser.add_argument('--extensions', default='py', help="filename extensions to parse")
     parser.add_argument('--limit', default=None, help='limit number of packages to parse for statistics')
     args = parser.parse_args()
@@ -210,7 +228,7 @@ def main():
     # ensure cache directory exists
     os.makedirs(args.cache_dir, exist_ok=True)
 
-    connection = sqlite3.connect(os.path.join(args.cache_dir, 'inspect.sqlite'))
+    connection = sqlite3.connect(os.path.join(args.output))
     _create_database(connection)
 
     whitelist = configparser.ConfigParser()

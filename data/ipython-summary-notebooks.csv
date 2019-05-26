@@ -1,6 +1,0 @@
-function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
-IPython.display.HTML, 1, 1, 1, , 
-IPython.utils.traitlets.link, 1, 2, 1, , 
-IPython.display.display_pretty, 1, 1, 1, , 
-IPython.display.display, 9, 1, 9, , 
-IPython.display.Image, 14, 1, 13, embed, 1

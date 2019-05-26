@@ -1,0 +1,210 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+pyarrow.benchmark.benchmark_PandasObjectIsNull, 1, 1, 1, , 
+pyarrow.flight.FlightCallOptions, 1, 1, 1, timeout, 1
+pyarrow.flight.RecordBatchStream, 1, 1, 1, , 
+pyarrow.flight.Result, 1, 1, 1, , 
+pyarrow.lib.binary, 1, 0, 1, , 
+pyarrow.lib.string, 1, 0, 1, , 
+pyarrow.lib.FeatherWriter, 1, 0, 1, , 
+pyarrow._orc.ORCReader, 1, 0, 1, , 
+pyarrow.lib._ndarray_to_arrow_type, 1, 2, 1, , 
+pyarrow.lib.table_to_blocks, 1, 4, 1, , 
+pyarrow._parquet.ParquetWriter, 1, 7, 1, version, 1
+pyarrow.lib.DictionaryArray.from_arrays, 1, 2, 1, , 
+pyarrow.lib.Column.from_array, 1, 2, 1, , 
+pyarrow.lib.concat_tables, 1, 1, 1, , 
+pyarrow.pandas_compat.dataframe_to_serialized_dict, 1, 1, 1, , 
+pyarrow.pandas_compat.serialized_dict_to_dataframe, 1, 1, 1, , 
+pyarrow.Array, 1, 1, 1, , 
+pyarrow.UnionArray.from_sparse, 1, 2, 1, , 
+pyarrow.utf8, 1, 0, 1, , 
+pyarrow.Tensor, 1, 0, 1, , 
+pyarrow.cuda.Context, 1, 1, 1, , 
+pyarrow.cuda.IpcMemHandle.from_buffer, 1, 1, 1, , 
+pyarrow.gandiva.get_registered_function_signatures, 1, 0, 1, , 
+pyarrow.tests.test_parquet._test_read_common_metadata_files, 1, 2, 1, , 
+pyarrow.tests.test_parquet._test_write_to_dataset_with_partitions, 1, 2, 1, filesystem, 1
+pyarrow.tests.test_parquet._test_write_to_dataset_no_partitions, 1, 2, 1, filesystem, 1
+pyarrow.have_libhdfs, 1, 0, 1, , 
+pyarrow.have_libhdfs3, 1, 0, 1, , 
+pyarrow.Buffer, 1, 0, 1, , 
+pyarrow.MessageReader.open_stream, 1, 1, 1, , 
+pyarrow.get_record_batch_size, 1, 1, 1, , 
+pyarrow.jvm.jvm_buffer, 1, 1, 1, , 
+pyarrow.jvm.field, 1, 1, 1, , 
+pyarrow.jvm.record_batch, 1, 1, 1, , 
+pyarrow.logging_memory_pool, 1, 1, 1, , 
+pyarrow.NAType, 1, 0, 1, , 
+pyarrow.Schema, 1, 0, 1, , 
+pyarrow.type_for_alias, 1, 1, 1, , 
+pyarrow.Schema.from_pandas, 1, 1, 1, , 
+pyarrow.SerializedPyObject.from_components, 1, 1, 1, , 
+pyarrow.types.is_unicode, 1, 1, 1, , 
+pyarrow.lib._is_primitive, 1, 1, 1, , 
+pyarrow.open_file, 1, 1, 1, , 
+pyarrow.csv.read_csv, 1, 2, 1, parse_options, 1
+pyarrow.filesystem.LocalFileSystem.get_instance, 1, 0, 1, , 
+pyarrow.hdfs.HadoopFileSystem, 1, 1, 1, null, 1
+pyarrow.filesystem.S3FSWrapper, 1, 1, 1, , 
+pyarrow.types.is_date64, 1, 1, 1, , 
+pyarrow.Table.to_pandas, 1, 1, 1, , 
+pyarrow.plasma.load_plasma_tensorflow_op, 1, 0, 1, , 
+pyarrow.pandas_compat.dataframe_to_arrays, 1, 3, 1, , 
+pyarrow.UnionArray.from_dense, 2, 3, 2, , 
+pyarrow.parquet.ParquetManifest, 2, 2, 1, metadata_nthreads, 2
+pyarrow.flight.Action, 2, 2, 2, , 
+pyarrow.flight.FlightDescriptor.for_path, 2, 1, 2, , 
+pyarrow.flight.FlightDescriptor.for_command, 2, 1, 2, , 
+pyarrow.flight.FlightClient.connect, 2, 1, 1, null, 1
+pyarrow.flight.FlightEndpoint, 2, 2, 2, , 
+pyarrow.flight.FlightInfo, 2, 5, 2, , 
+pyarrow.foreign_buffer, 2, 3, 2, , 
+pyarrow.lib.string_to_tzinfo, 2, 1, 2, , 
+pyarrow.lib.array, 2, 1, 2, , 
+pyarrow.get_include, 2, 0, 2, , 
+pyarrow.get_library_dirs, 2, 0, 2, , 
+pyarrow.tests.test_parquet._test_dataframe, 2, 2, 2, seed, 2
+pyarrow.compress, 2, 2, 1, codec, 2
+pyarrow.CompressedOutputStream, 2, 2, 2, , 
+pyarrow.RecordBatchFileReader, 2, 1, 2, , 
+pyarrow.read_schema, 2, 1, 2, , 
+pyarrow.jvm.schema, 2, 1, 2, , 
+pyarrow.jvm.array, 2, 1, 2, , 
+pyarrow.default_memory_pool, 2, 0, 2, , 
+pyarrow.proxy_memory_pool, 2, 1, 2, , 
+pyarrow.set_memory_pool, 2, 1, 2, , 
+pyarrow.set_cpu_count, 2, 1, 2, , 
+pyarrow.plasma.tf_plasma_op.tensor_to_plasma, 2, 3, 2, plasma_store_socket_name, 2
+pyarrow.plasma.tf_plasma_op.plasma_to_tensor, 2, 3, 2, dtype, 2
+pyarrow.plasma.build_plasma_tensorflow_op, 2, 0, 2, , 
+pyarrow.lib.is_named_tuple, 2, 1, 2, , 
+pyarrow.read_serialized, 2, 1, 2, , 
+pyarrow.read_tensor, 2, 1, 2, , 
+pyarrow.types.is_unsigned_integer, 2, 1, 2, , 
+pyarrow.types.is_union, 2, 1, 2, , 
+pyarrow.types.is_fixed_size_binary, 2, 1, 2, , 
+pyarrow.types.is_temporal, 2, 1, 2, , 
+pyarrow.types.is_primitive, 2, 1, 2, , 
+pyarrow.MemoryMappedFile.create, 2, 2, 2, , 
+pyarrow.deserialize_components, 3, 1, 3, , 
+pyarrow.lib.tzinfo_to_string, 3, 1, 3, , 
+pyarrow.cpu_count, 3, 0, 3, , 
+pyarrow.types.is_boolean, 3, 1, 3, , 
+pyarrow.types.is_null, 3, 1, 3, , 
+pyarrow.types.is_binary, 3, 1, 3, , 
+pyarrow.types.is_decimal, 3, 1, 3, , 
+pyarrow.read_record_batch, 3, 2, 3, , 
+pyarrow.tests.util.get_modified_env_with_pythonpath, 3, 0, 3, , 
+pyarrow.gandiva.make_projector, 3, 3, 3, , 
+pyarrow.decompress, 3, 3, 1, codec, 3
+pyarrow.read_message, 3, 1, 3, , 
+pyarrow.parquet.PartitionSet, 3, 2, 3, , 
+pyarrow.localfs.read_parquet, 3, 2, 3, schema, 1
+pyarrow.get_tensor_size, 3, 1, 3, , 
+pyarrow.deserialize_from, 3, 3, 2, context, 1
+pyarrow.types.is_signed_integer, 3, 1, 3, , 
+pyarrow.types.is_dictionary, 3, 1, 3, , 
+pyarrow.types.is_nested, 3, 1, 3, , 
+pyarrow.types.is_integer_value, 3, 1, 3, , 
+pyarrow.register_default_serialization_handlers, 3, 1, 3, , 
+pyarrow.types.is_list, 4, 1, 4, , 
+pyarrow.types.is_struct, 4, 1, 4, , 
+pyarrow.types.is_time, 4, 1, 4, , 
+pyarrow.types.is_string, 4, 1, 4, , 
+pyarrow.total_allocated_bytes, 4, 0, 4, , 
+pyarrow.StringArray.from_buffers, 4, 6, 3, , 
+pyarrow.create_memory_map, 4, 2, 4, , 
+pyarrow.plasma.buffers_equal, 4, 2, 4, , 
+pyarrow.write_tensor, 4, 2, 4, , 
+pyarrow.types.is_float_value, 4, 1, 4, , 
+pyarrow.deserialize_pandas, 5, 1, 4, use_threads, 1
+pyarrow.MockOutputStream, 5, 0, 5, , 
+pyarrow.types.is_date, 5, 1, 5, , 
+pyarrow.dictionary, 5, 2, 4, ordered, 1
+pyarrow.parquet.read_pandas, 5, 1, 4, memory_map, 1
+pyarrow.parquet.ParquetDatasetPiece, 5, 1, 3, row_group, 2
+pyarrow.serialize_to, 5, 2, 3, context, 1
+pyarrow.types.is_boolean_value, 5, 1, 5, , 
+pyarrow.ListArray.from_arrays, 6, 2, 6, , 
+pyarrow.serialize_pandas, 6, 1, 3, preserve_index, 2
+pyarrow.Array.from_buffers, 6, 4, 3, offset, 2
+pyarrow.CompressedInputStream, 6, 2, 6, , 
+pyarrow.RecordBatchFileWriter, 6, 2, 6, , 
+pyarrow.parquet.write_metadata, 6, 2, 6, , 
+pyarrow.parquet.write_to_dataset, 7, 3, 4, partition_cols, 3
+pyarrow.types.is_timestamp, 7, 1, 7, , 
+pyarrow.parquet.read_metadata, 7, 1, 7, , 
+pyarrow.Table.from_pydict, 7, 1, 4, metadata, 2
+pyarrow.allocate_buffer, 8, 1, 6, resizable, 2
+pyarrow.ipc.open_file, 8, 1, 8, , 
+pyarrow.types.is_floating, 8, 1, 8, , 
+pyarrow.StructArray.from_arrays, 9, 2, 8, names, 2
+pyarrow.RecordBatchStreamReader, 9, 1, 9, , 
+pyarrow.FixedSizeBufferWriter, 9, 1, 9, , 
+pyarrow.types.is_integer, 9, 1, 9, , 
+pyarrow.concat_tables, 9, 1, 9, , 
+pyarrow.hdfs.connect, 10, 0, 5, host, 4
+pyarrow.plasma.start_plasma_store, 10, 1, 7, plasma_store_memory, 8
+pyarrow.ipc.open_stream, 10, 1, 10, , 
+pyarrow.union, 10, 2, 10, mode, 8
+pyarrow.from_numpy_dtype, 11, 1, 11, , 
+pyarrow.gandiva.make_filter, 11, 2, 11, , 
+pyarrow.OSFile, 11, 2, 10, mode, 8
+pyarrow.output_stream, 11, 2, 6, null, 4
+pyarrow.uint64, 12, 0, 12, , 
+pyarrow.float16, 12, 0, 12, , 
+pyarrow.date64, 12, 0, 12, , 
+pyarrow.register_torch_serialization_handlers, 12, 1, 12, , 
+pyarrow.uint32, 13, 0, 13, , 
+pyarrow.Array.from_pandas, 13, 2, 7, type, 11
+pyarrow.Column.from_array, 13, 2, 13, , 
+pyarrow.gandiva.TreeExprBuilder, 13, 0, 13, , 
+pyarrow.serialize, 13, 2, 11, context, 5
+pyarrow.null, 14, 0, 14, , 
+pyarrow.memory_map, 14, 2, 11, mode, 7
+pyarrow.date32, 15, 0, 15, , 
+pyarrow.Tensor.from_numpy, 15, 1, 15, , 
+pyarrow.time32, 17, 1, 17, , 
+pyarrow.time64, 17, 1, 17, , 
+pyarrow.PythonFile, 17, 2, 9, mode, 9
+pyarrow.uint8, 18, 0, 18, , 
+pyarrow.uint16, 18, 0, 18, , 
+pyarrow.column, 18, 2, 18, , 
+pyarrow.DictionaryArray.from_arrays, 19, 2, 14, mask, 2
+pyarrow.int8, 19, 0, 19, , 
+pyarrow.default_serialization_context, 20, 0, 20, , 
+pyarrow.RecordBatchStreamWriter, 20, 2, 20, schema, 2
+pyarrow.parquet.ParquetWriter, 21, 3, 7, compression, 6
+pyarrow.decimal128, 21, 2, 20, precision, 7
+pyarrow.float32, 21, 0, 21, , 
+pyarrow.SerializationContext, 22, 0, 22, , 
+pyarrow.bool_, 23, 0, 23, , 
+pyarrow.BufferReader, 23, 1, 23, , 
+pyarrow.int16, 24, 0, 24, , 
+pyarrow.int64, 25, 0, 25, , 
+pyarrow.float64, 25, 0, 25, , 
+pyarrow.parquet.read_table, 25, 1, 22, columns, 2
+pyarrow.RecordBatch.from_pandas, 27, 1, 19, preserve_index, 7
+pyarrow.BufferOutputStream, 28, 0, 28, , 
+pyarrow.parquet.write_table, 28, 2, 19, compression, 6
+pyarrow.deserialize, 29, 1, 20, context, 3
+pyarrow.struct, 30, 1, 30, , 
+pyarrow.input_stream, 30, 1, 15, buffer_size, 9
+pyarrow.Table.from_batches, 31, 1, 27, , 
+pyarrow.py_buffer, 31, 1, 31, , 
+pyarrow.parquet.ParquetDataset, 33, 3, 15, filesystem, 21
+pyarrow.list_, 34, 1, 34, , 
+pyarrow.chunked_array, 36, 1, 29, type, 7
+pyarrow.parquet.ParquetFile, 36, 1, 34, metadata, 2
+pyarrow.int32, 36, 0, 36, , 
+pyarrow.RecordBatch.from_arrays, 36, 2, 35, names, 5
+pyarrow.binary, 38, 0, 25, length, 1
+pyarrow.string, 44, 0, 44, , 
+pyarrow.plasma.ObjectID, 45, 1, 45, , 
+pyarrow.timestamp, 54, 1, 40, tz, 13
+pyarrow.plasma.connect, 55, 3, 41, num_retries, 1
+pyarrow.field, 105, 2, 66, nullable, 25
+pyarrow.Table.from_arrays, 110, 2, 102, names, 57
+pyarrow.schema, 111, 1, 98, metadata, 11
+pyarrow.Table.from_pandas, 161, 1, 94, preserve_index, 46
+pyarrow.array, 580, 2, 289, type, 277

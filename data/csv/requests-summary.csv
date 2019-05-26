@@ -1,0 +1,107 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+requests.packages.urllib3.response.HTTPResponse, 1, 7, 1, preload_content, 1
+requests.exceptions.TooManyRedirects, 1, 0, 1, , 
+requests.packages.urllib3.connectionpool.HTTPConnectionPool.__init__, 1, 3, 1, timeout, 1
+requests.get.assert_has_calls, 1, 2, 1, any_order, 1
+requests.get.assert_called, 1, 0, 1, , 
+requests.packages.urllib3.util.retry.Retry, 1, 5, 1, status_forcelist, 1
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS.encode, 1, 1, 1, , 
+requests.__version__.split, 1, 1, 1, , 
+requests.utils.unquote_unreserved, 1, 1, 1, , 
+requests.cookies.merge_cookies, 1, 2, 1, , 
+requests.packages.urllib3.add_stderr_logger, 1, 0, 1, , 
+requests.pop, 1, 1, 1, , 
+requests.compat.getproxies, 1, 0, 1, , 
+requests.auth.extract_cookies_to_jar, 1, 3, 1, , 
+requests.exceptions.RetryError, 1, 2, 1, request, 1
+requests.ReadTimeout, 1, 2, 1, request, 1
+requests.Session.request, 1, 7, 1, null, 1
+requests.Session.__del__, 1, 1, 1, , 
+requests.cookies.MockRequest, 1, 1, 1, , 
+requests.cookies.MockResponse, 1, 1, 1, , 
+requests.packages.urllib3.Retry, 1, 5, 1, read, 1
+requests.put.assert_not_called, 1, 0, 1, , 
+requests.patch.assert_called_with, 1, 3, 1, json, 1
+requests.patch.assert_not_called, 1, 0, 1, , 
+requests.models.Request, 1, 8, 1, url, 1
+requests.utils.guess_json_utf, 1, 1, 1, , 
+requests.HTTPError.__init__, 1, 3, 1, null, 1
+requests.utils.get_encoding_from_headers, 1, 1, 1, , 
+requests.utils.parse_header_links, 1, 1, 1, , 
+requests.utils.getproxies, 2, 0, 2, , 
+requests.compat.urlparse, 2, 1, 2, , 
+requests.packages.urllib3.__version__.split, 2, 1, 2, , 
+requests.packages.urllib3.exceptions.ClosedPoolError, 2, 2, 2, , 
+requests.packages.urllib3.exceptions.EmptyPoolError, 2, 2, 2, , 
+requests.utils.default_user_agent, 2, 0, 2, , 
+requests.packages.urllib3.HTTPResponse, 2, 1, 2, null, 1
+requests.PreparedRequest, 2, 0, 2, , 
+requests.get.assert_called_once_with, 2, 2, 2, null, 2
+requests.post.assert_called_once_with, 2, 2, 2, null, 2
+requests.head.assert_called_once_with, 2, 2, 2, null, 2
+requests.put.assert_called_once_with, 2, 2, 2, null, 2
+requests.patch.assert_called_once_with, 2, 2, 2, null, 2
+requests.delete.assert_called_once_with, 2, 2, 2, null, 2
+requests.exceptions.ReadTimeout, 2, 1, 2, , 
+requests.utils.requote_uri, 2, 1, 2, , 
+requests.auth._basic_auth_str, 2, 2, 2, , 
+requests.__getattribute__, 2, 1, 2, , 
+requests.post.assert_not_called, 2, 0, 2, , 
+requests.request.assert_called_once, 2, 0, 2, , 
+requests.exceptions.InvalidURL, 3, 1, 3, , 
+requests.compat.json.load, 3, 1, 3, , 
+requests.utils.parse_dict_header, 3, 1, 3, , 
+requests.exceptions.ContentDecodingError, 3, 1, 2, , 
+requests.compat.urljoin, 3, 2, 3, , 
+requests.packages.urllib3.contrib.pyopenssl.inject_into_urllib3, 3, 0, 3, , 
+requests.exceptions.ConnectTimeout, 3, 1, 2, , 
+requests.compat.quote_plus, 3, 1, 3, , 
+requests.get.assert_not_called, 3, 0, 3, , 
+requests.utils.urlparse, 3, 1, 3, , 
+requests.utils.default_headers, 4, 0, 4, , 
+requests.Timeout, 4, 1, 2, , 
+requests.put.assert_called_with, 4, 3, 4, null, 3
+requests.delete.assert_called_with, 4, 2, 4, null, 3
+requests.Session.__init__, 4, 1, 2, null, 2
+requests.utils.unquote, 4, 1, 4, , 
+requests.utils.rewind_body, 5, 1, 5, , 
+requests.sessions.Session, 5, 0, 5, , 
+requests.cookies.create_cookie, 5, 3, 2, domain, 3
+requests.append, 5, 1, 5, , 
+requests.compat.urlencode, 5, 1, 5, , 
+requests.structures.CaseInsensitiveDict, 6, 1, 4, , 
+requests.utils.quote, 6, 1, 6, , 
+requests.certs.where, 8, 0, 8, , 
+requests.exceptions.Timeout, 8, 0, 6, , 
+requests.models.Response, 8, 0, 8, , 
+requests.utils.add_dict_to_cookiejar, 9, 2, 9, , 
+requests.post.assert_called_with, 10, 3, 9, null, 7
+requests.utils.cookiejar_from_dict, 11, 1, 10, , 
+requests.RequestException, 11, 1, 10, response, 2
+requests.utils.dict_from_cookiejar, 12, 1, 12, , 
+requests.auth.HTTPDigestAuth, 13, 2, 12, , 
+requests.options, 14, 1, 13, verify, 1
+requests.HTTPError, 15, 1, 14, response, 3
+requests.cookies.RequestsCookieJar, 19, 0, 19, , 
+requests.get.assert_called_with, 20, 2, 16, null, 13
+requests.utils.get_netrc_auth, 20, 1, 19, raise_errors, 1
+requests.compat.json.loads, 21, 1, 21, , 
+requests.exceptions.ConnectionError, 25, 0, 16, , 
+requests.exceptions.HTTPError, 27, 1, 12, response, 8
+requests.ConnectionError, 30, 0, 19, response, 2
+requests.adapters.HTTPAdapter, 34, 1, 16, max_retries, 24
+requests.compat.json.dumps, 36, 2, 26, cls, 27
+requests.auth.HTTPBasicAuth, 39, 2, 35, , 
+requests.patch, 51, 3, 27, headers, 40
+requests.exceptions.RequestException, 90, 1, 88, , 
+requests.packages.urllib3.disable_warnings, 136, 0, 104, , 
+requests.head, 143, 1, 69, allow_redirects, 29
+requests.Request, 167, 3, 62, data, 41
+requests.request, 234, 4, 59, headers, 162
+requests.session, 234, 0, 234, , 
+requests.Response, 319, 0, 319, , 
+requests.delete, 321, 2, 120, headers, 168
+requests.put, 561, 2, 227, data, 403
+requests.Session, 980, 0, 979, null, 1
+requests.post, 2618, 3, 1021, data, 1616
+requests.get, 7310, 1, 3401, headers, 1526

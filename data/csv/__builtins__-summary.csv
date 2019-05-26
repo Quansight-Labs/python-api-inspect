@@ -1,0 +1,68 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+breakpoint, 6, 1, 3, message, 3
+oct, 49, 1, 49, , 
+bin, 163, 1, 159, ds, 5
+ascii, 505, 1, 505, , 
+classmethod, 589, 1, 587, kw, 2
+memoryview, 629, 1, 629, , 
+help, 764, 1, 740, stdout, 1
+hex, 921, 1, 809, , 
+delattr, 1478, 2, 1477, , 
+complex, 1831, 2, 1302, , 
+globals, 1905, 0, 1905, , 
+super, 1912, 2, 1562, null, 5
+bytearray, 1917, 1, 1406, encoding, 17
+vars, 2045, 1, 1765, , 
+compile, 2088, 1, 977, mode, 51
+chr, 2602, 1, 2592, , 
+divmod, 2682, 2, 2680, , 
+bytes, 2745, 1, 2051, encoding, 87
+pow, 2944, 2, 2687, axis, 2
+__import__, 2976, 1, 2014, fromlist, 501
+input, 3153, 1, 2846, dynamic_axes, 3
+object, 3431, 0, 3427, , 
+exec, 4020, 1, 2329, , 
+dir, 4228, 1, 3945, , 
+reversed, 4708, 1, 4704, , 
+ord, 4886, 1, 4886, , 
+locals, 5096, 0, 5096, , 
+frozenset, 5377, 1, 5101, , 
+id, 5782, 1, 5612, null, 1
+callable, 7550, 1, 7513, null, 23
+eval, 7703, 1, 4627, feed_dict, 112
+filter, 7995, 2, 3875, null, 136
+iter, 9449, 1, 8892, course_key, 30
+hash, 9690, 1, 9549, coerce_mmap, 5
+issubclass, 11049, 2, 11048, , 
+round, 12682, 2, 9090, decimals, 42
+map, 13571, 2, 9967, fn, 36
+repr, 19420, 1, 19414, parent, 3
+next, 20139, 1, 17322, null, 1
+setattr, 23111, 3, 23070, , 
+slice, 23834, 2, 10822, bygroup_as_index, 2
+any, 27908, 1, 21474, axis, 296
+property, 28009, 1, 13648, fget, 9676
+abs, 30479, 1, 30157, out, 2
+min, 37596, 2, 22408, key, 813
+tuple, 45307, 1, 43547, , 
+sorted, 46918, 1, 32153, key, 13429
+type, 49303, 1, 47649, null, 5
+all, 51969, 0, 26574, axis, 336
+max, 52082, 2, 26610, key, 1374
+sum, 57886, 1, 36566, axis, 3706
+zip, 65556, 2, 49706, null, 1
+getattr, 79583, 2, 41597, null, 5
+float, 83076, 1, 82112, , 
+hasattr, 92394, 2, 92378, , 
+set, 99400, 1, 64305, ylabel, 161
+open, 115629, 2, 87873, encoding, 5034
+enumerate, 118102, 1, 115698, start, 883
+dict, 136737, 1, 47626, end_bit, 27186
+str, 146994, 1, 146142, encoding, 57
+int, 156242, 1, 153331, base, 196
+list, 175233, 1, 160913, null, 78
+format, 188591, 1, 106852, null, 2694
+range, 300186, 1, 229466, dtype, 6
+isinstance, 412393, 2, 412366, null, 2
+print, 539808, 1, 415578, file, 18523
+len, 598504, 1, 598457, null, 4

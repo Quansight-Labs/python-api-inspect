@@ -1,0 +1,83 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+ipywidgets.embed.dependency_state, 1, 2, 1, drop_defaults, 1
+ipywidgets.widgets.interact, 1, 2, 1, null, 1
+ipywidgets.Tab.__init__, 1, 4, 1, _titles, 1
+ipywidgets.VBox.__init__, 1, 3, 1, layout, 1
+ipywidgets.DOMWidget._ipython_display_, 1, 3, 1, null, 1
+ipywidgets.widgets.ColorPicker, 1, 0, 1, , 
+ipywidgets.widgets.Label, 1, 0, 1, , 
+ipywidgets.widgets.HBox, 1, 1, 1, , 
+ipywidgets.widget.CallbackDispatcher, 1, 0, 1, , 
+ipywidgets.widgets.Accordion, 1, 1, 1, children, 1
+ipywidgets.embed.embed_snippet, 2, 4, 1, state, 2
+ipywidgets.DOMWidget.__init__, 2, 1, 1, null, 1
+ipywidgets.Valid, 2, 2, 2, value, 2
+ipywidgets.Controller, 2, 1, 2, index, 2
+ipywidgets.widgets.Output, 2, 0, 2, , 
+ipywidgets.embed.embed_minimal_html, 2, 3, 2, fp, 2
+ipywidgets.widgets.HTML, 2, 1, 1, , 
+ipywidgets.widgets.IntText, 2, 4, 2, disabled, 2
+ipywidgets.widgets.FloatProgress, 2, 7, 2, value, 2
+ipywidgets.Latex, 2, 1, 1, value, 1
+ipywidgets.SelectionRangeSlider, 2, 4, 2, continuous_update, 2
+ipywidgets.GridBox, 3, 2, 3, layout, 3
+ipywidgets.dlink, 3, 2, 3, , 
+ipywidgets.fixed, 3, 1, 3, value, 2
+ipywidgets.HBox.__init__, 3, 3, 3, layout, 3
+ipywidgets.widgets.ToggleButtons, 3, 6, 3, value, 3
+ipywidgets.widgets.Dropdown, 3, 4, 2, description, 3
+ipywidgets.FloatLogSlider, 4, 4, 2, min, 4
+ipywidgets.trait_types.InstanceDict, 4, 2, 4, allow_none, 4
+ipywidgets.jsdlink, 4, 2, 4, , 
+ipywidgets.widgets.IntSlider, 4, 9, 2, description, 4
+ipywidgets.widgets.Layout, 4, 4, 2, width, 3
+ipywidgets.widgets.Box, 4, 2, 2, children, 3
+ipywidgets.HTMLMath, 5, 3, 2, value, 4
+ipywidgets.register, 7, 1, 4, , 
+ipywidgets.Play, 7, 5, 3, min, 7
+ipywidgets.DatePicker, 7, 2, 5, description, 7
+ipywidgets.widgets.Checkbox, 7, 3, 7, disabled, 7
+ipywidgets.FloatRangeSlider, 8, 4, 2, step, 8
+ipywidgets.CallbackDispatcher, 9, 0, 6, accepted_nargs, 3
+ipywidgets.widgets.Button, 9, 1, 4, description, 9
+ipywidgets.IntRangeSlider, 10, 10, 3, value, 10
+ipywidgets.ColorPicker, 11, 0, 5, value, 6
+ipywidgets.interactive_output, 11, 2, 11, , 
+ipywidgets.GridspecLayout, 11, 2, 10, n_columns, 2
+ipywidgets.IntProgress, 12, 7, 5, value, 11
+ipywidgets.Image, 14, 3, 8, width, 11
+ipywidgets.TwoByTwoLayout, 15, 4, 10, bottom_right, 15
+ipywidgets.interactive, 15, 2, 8, null, 8
+ipywidgets.Textarea, 16, 1, 6, description, 10
+ipywidgets.widgets.FloatSlider, 16, 8, 6, step, 16
+ipywidgets.AppLayout, 17, 5, 5, center, 14
+ipywidgets.Select, 18, 3, 7, options, 13
+ipywidgets.FloatProgress, 18, 3, 5, max, 17
+ipywidgets.SelectionSlider, 18, 3, 6, options, 18
+ipywidgets.ToggleButton, 20, 3, 4, description, 18
+ipywidgets.SelectMultiple, 22, 2, 14, options, 22
+ipywidgets.RadioButtons, 23, 4, 14, options, 23
+ipywidgets.link, 25, 2, 25, , 
+ipywidgets.Accordion, 27, 1, 24, children, 17
+ipywidgets.BoundedFloatText, 35, 4, 12, min, 35
+ipywidgets.IntText, 37, 1, 16, value, 22
+ipywidgets.BoundedIntText, 38, 5, 24, min, 38
+ipywidgets.ToggleButtons, 43, 2, 18, options, 43
+ipywidgets.jslink, 44, 2, 44, , 
+ipywidgets.Tab, 46, 1, 32, children, 24
+ipywidgets.Output, 48, 0, 27, layout, 21
+ipywidgets.Layout, 51, 1, 21, width, 40
+ipywidgets.interact_manual, 52, 3, 17, name, 24
+ipywidgets.interact, 73, 2, 23, name, 15
+ipywidgets.Label, 76, 1, 39, value, 42
+ipywidgets.Box, 85, 2, 44, children, 46
+ipywidgets.Checkbox, 111, 0, 41, value, 55
+ipywidgets.Text, 127, 1, 32, value, 83
+ipywidgets.IntSlider, 137, 0, 23, min, 87
+ipywidgets.FloatText, 150, 1, 64, value, 88
+ipywidgets.FloatSlider, 166, 4, 66, min, 162
+ipywidgets.Dropdown, 187, 3, 62, options, 185
+ipywidgets.HTML, 259, 1, 193, value, 177
+ipywidgets.VBox, 264, 1, 220, children, 35
+ipywidgets.Button, 294, 1, 81, description, 236
+ipywidgets.HBox, 364, 1, 334, children, 77

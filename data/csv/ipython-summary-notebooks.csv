@@ -1,0 +1,10 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+IPython.get_ipython, 1, 0, 1, , 
+IPython.core.display.display, 2, 1, 1, , 
+IPython.parallel.Client, 3, 3, 2, sshserver, 2
+IPython.display.HTML, 4, 1, 4, , 
+IPython.display.clear_output, 9, 0, 8, wait, 1
+IPython.core.display.Image, 11, 1, 8, width, 2
+IPython.display.display, 44, 1, 42, raw, 2
+IPython.display.Audio, 107, 1, 54, rate, 53
+IPython.display.Image, 110, 1, 109, url, 15

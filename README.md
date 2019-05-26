@@ -7,127 +7,153 @@ Currently inspected libraries:
   <th>Library</th>
   <th>Whitelist</th>
   <th>Summary only `.py`</th>
+  <th>Summary only `.py` tests</th>
   <th>Summary only `.py` without tests</th>
   <th>Summary only `.ipynb`</th>
 </tr>
 <tr>
+  <td>astropy</td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/astropy-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary-notebooks.csv">csv</a></td>
+</tr>
+<tr>
   <td>dask</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/dask-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/dask-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/dask-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/dask-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/dask-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>ipython</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipython-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipython-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipython-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipython-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/ipython-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>ipywidgets</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipywidgets-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipywidgets-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipywidgets-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/ipywidgets-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/ipywidgets-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>matplotlib</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/matplotlib-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/matplotlib-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/matplotlib-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/matplotlib-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/matplotlib-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>numpy</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/numpy-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/numpy-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/numpy-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/numpy-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/numpy-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>pandas</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pandas-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pandas-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>pyarrow</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pyarrow-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pyarrow-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pyarrow-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pyarrow-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pyarrow-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>pymapd</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymapd-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymapd-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymapd-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymapd-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pymapd-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>pymc3</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymc3-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymc3-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymc3-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pymc3-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pymc3-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>pytorch</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pytorch-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pytorch-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pytorch-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/pytorch-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pytorch-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>requests</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/requests-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/requests-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/requests-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/requests-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/requests-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>scikit-image</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-image-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-image-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-image-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-image-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/scikit-image-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>scikit-learn</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-learn-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-learn-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-learn-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scikit-learn-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/scikit-learn-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>scipy</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scipy-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scipy-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scipy-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/scipy-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/scipy-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>statsmodels</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/statsmodels-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/statsmodels-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/statsmodels-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/statsmodels-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/statsmodels-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>sympy</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/sympy-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/sympy-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/sympy-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/sympy-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/sympy-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary-notebooks.csv">csv</a></td>
 </tr>
 <tr>
   <td>tensorflow</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/tensorflow-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/tensorflow-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/tensorflow-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/tensorflow-summary-notebooks.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/tensorflow-whitelist.ini">ini</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary-without-tests.csv">csv</a></td>
+  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary-notebooks.csv">csv</a></td>
 </tr>
 </table>
 
@@ -153,7 +179,7 @@ search for the usage of a given python namespaces. Thanks to the
 awesome work at [libaries.io](https://libraries.io).
 
 ```shell
-python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy 
+python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy
 ```
 
 Notice that we need a [libraries.io api
@@ -213,7 +239,7 @@ optional arguments:
 ## example usage
 
 ```shell
-python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy 
+python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy
 ```
 
 # inspect_api.py
@@ -249,7 +275,7 @@ function calls within these namespaces.
 ```shell
 python inspect.py whitelist.ini
 ```
-    
+
 # Tests
 
 Tests to demo what `inspect.py` is able to parse from file source. The

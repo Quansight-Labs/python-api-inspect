@@ -1,0 +1,12 @@
+function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+IPython.testing.globalipapp.get_ipython, 1, 0, 1, , 
+IPython.core.formatters.PlainTextFormatter, 1, 0, 1, , 
+IPython.testing.tools.ipexec_validate, 1, 2, 1, , 
+IPython.embed, 1, 1, 1, banner1, 1
+IPython.testing.decorators.skipif, 2, 1, 2, , 
+IPython.nbformat.current.new_code_cell, 2, 1, 2, input, 2
+IPython.nbformat.current.new_notebook, 6, 0, 6, , 
+IPython.testing.decorators.skip_without, 7, 1, 7, , 
+IPython.testing.tools.AssertNotPrints, 19, 1, 14, channel, 4
+IPython.get_ipython, 19, 0, 19, , 
+IPython.testing.tools.AssertPrints, 59, 1, 46, channel, 7
