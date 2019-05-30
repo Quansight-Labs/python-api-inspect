@@ -1,86 +1,86 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 IPython.InteractiveShell, 1, 0, 1, , 
-IPython.utils.traitlets.Float, 1, 2, 1, sync, 1
 IPython.nbformat.reads, 1, 2, 1, as_version, 1
+IPython.utils.traitlets.Float, 1, 2, 1, sync, 1
 IPython.utils.warn.warn, 1, 1, 1, , 
 IPython.utils.warn.error, 1, 1, 1, , 
+IPython.display.display_png, 1, 1, 1, , 
+IPython.core.magic.register_line_magic, 1, 1, 1, , 
 IPython.html.widgets.DropdownWidget, 1, 0, 1, , 
-IPython.core.display.set_matplotlib_formats, 1, 1, 1, , 
-IPython.nbconvert.exporters.export, 1, 2, 1, , 
-IPython.test, 1, 0, 1, , 
-IPython.core.hooks.CommandChainDispatcher, 1, 0, 1, , 
-IPython.core.magics.search, 1, 1, 1, , 
-IPython.core.pylabtools.activate_matplotlib, 1, 1, 1, , 
-IPython.core.pylabtools.configure_inline_support, 1, 2, 1, , 
-IPython.core.pylabtools.mpl_runner, 1, 1, 1, , 
-IPython.core.display.display_javascript, 1, 1, 1, , 
 IPython.Config, 1, 0, 1, , 
+IPython.nbformat.v4.new_notebook, 1, 1, 1, cells, 1
 IPython.terminal.embed.InteractiveShellEmbed.instance, 1, 2, 1, user_ns, 1
 IPython.frontend.terminal.embed.InteractiveShellEmbed.instance, 1, 2, 1, user_ns, 1
+IPython.nbconvert.exporters.export, 1, 2, 1, , 
+IPython.start_kernel, 1, 0, 1, , 
+IPython.core.pylabtools.import_pylab, 1, 2, 1, import_all, 1
+IPython.display.display.display, 1, 1, 1, , 
+IPython.core.display.set_matplotlib_formats, 1, 1, 1, , 
+IPython.display.set_matplotlib_formats, 1, 1, 1, , 
+IPython.frontend.terminal.ipapp.TerminalIPythonApp.instance, 1, 0, 1, , 
+IPython.core.display.clear_output, 1, 0, 1, , 
+IPython.display.ProgressBar, 1, 1, 1, total, 1
+IPython.utils.io.stdout.write, 1, 1, 1, , 
+IPython.utils.io.stdout.flush, 1, 0, 1, , 
+IPython.test, 1, 0, 1, , 
 IPython.nbformat.current.read, 1, 2, 1, , 
 IPython.nbformat.current.new_code_cell, 1, 1, 1, input, 1
 IPython.nbformat.current.new_notebook, 1, 1, 1, name, 1
 IPython.terminal.debugger.TerminalPdb, 1, 1, 1, , 
 IPython.core.debugger.Pdb, 1, 1, 1, , 
-IPython.InteractiveShell.instance, 1, 0, 1, , 
-IPython.display.display.display, 1, 1, 1, , 
-IPython.start_kernel, 1, 0, 1, , 
 IPython.lib.inputhook.enable_gui, 1, 2, 1, , 
+IPython.InteractiveShell.instance, 1, 0, 1, , 
+IPython.core.display.Image, 1, 1, 1, , 
 IPython.display.display_javascript, 1, 2, 1, raw, 1
 IPython.core.ultratb.VerboseTB, 1, 0, 1, , 
-IPython.core.magic.register_line_magic, 1, 1, 1, , 
+IPython.core.hooks.CommandChainDispatcher, 1, 0, 1, , 
+IPython.core.magics.search, 1, 1, 1, , 
+IPython.core.pylabtools.activate_matplotlib, 1, 1, 1, , 
+IPython.core.pylabtools.configure_inline_support, 1, 2, 1, , 
+IPython.core.pylabtools.mpl_runner, 1, 1, 1, , 
+IPython.utils.path.compress_user, 1, 1, 1, , 
 IPython.core.magic.register_cell_magic, 1, 1, 1, , 
-IPython.nbformat.v4.new_notebook, 1, 1, 1, cells, 1
-IPython.core.pylabtools.import_pylab, 1, 2, 1, import_all, 1
-IPython.display.set_matplotlib_formats, 1, 1, 1, , 
-IPython.core.display.clear_output, 1, 0, 1, , 
-IPython.display.ProgressBar, 1, 1, 1, total, 1
-IPython.utils.io.stdout.write, 1, 1, 1, , 
-IPython.utils.io.stdout.flush, 1, 0, 1, , 
-IPython.frontend.terminal.ipapp.TerminalIPythonApp.instance, 1, 0, 1, , 
 IPython.display.IFrame, 2, 3, 2, width, 2
 IPython.nbconvert.filters.highlight._pygment_highlight, 2, 3, 2, , 
-IPython.display.publish_display_data, 2, 1, 2, , 
-IPython.config.application.Application.initialized, 2, 0, 2, , 
-IPython.config.application.Application.instance, 2, 0, 2, , 
-IPython.html.widgets.ButtonWidget, 2, 1, 2, description, 2
-IPython.core.pylabtools.find_gui_and_backend, 2, 2, 1, , 
+IPython.core.interactiveshell.InteractiveShell.instance, 2, 0, 2, , 
 IPython.lib.passwd, 2, 0, 2, , 
+IPython.html.widgets.ButtonWidget, 2, 1, 2, description, 2
+IPython.parallel.Client, 2, 0, 1, profile, 1
+IPython.core.display.display_html, 2, 2, 2, raw, 2
+IPython.__version__.startswith, 2, 1, 2, , 
 IPython.zmq.blockingkernelmanager.BlockingKernelManager.class_trait_names, 2, 0, 2, , 
 IPython.nbformat.current.reads, 2, 2, 2, , 
 IPython.nbformat.current.new_worksheet, 2, 0, 1, cells, 1
 IPython.core.formatters.format_display_data, 2, 1, 2, , 
-IPython.nbformat.write, 2, 2, 2, , 
+IPython.core.pylabtools.find_gui_and_backend, 2, 2, 1, , 
 IPython.zmq.pylab.backend_inline.send_figure, 2, 1, 2, , 
-IPython.core.interactiveshell.InteractiveShell.instance, 2, 0, 2, , 
-IPython.__version__.startswith, 2, 1, 2, , 
 IPython.utils.traitlets.Unicode, 3, 2, 3, sync, 3
+IPython.config.application.Application.initialized, 3, 0, 3, , 
+IPython.config.application.Application.instance, 3, 0, 3, , 
 IPython.lib.backgroundjobs.BackgroundJobManager, 3, 0, 3, , 
-IPython.terminal.embed.InteractiveShellEmbed, 3, 0, 1, ipython_dir, 1
+IPython.terminal.embed.InteractiveShellEmbed, 3, 0, 1, user_ns, 1
 IPython.html.widgets.FloatTextWidget, 3, 2, 2, description, 3
 IPython.html.widgets.CheckboxWidget, 3, 1, 3, description, 3
-IPython.display.display_png, 3, 1, 3, , 
-IPython.core.display.display_html, 3, 2, 2, raw, 2
-IPython.nbformat.current.write, 3, 3, 3, , 
-IPython.display.update_display, 3, 2, 3, display_id, 3
-IPython.nbformat.read, 3, 2, 3, , 
+IPython.nbformat.write, 3, 2, 3, , 
 IPython.Shell.IPShellEmbed, 3, 0, 2, user_ns, 1
+IPython.display.update_display, 3, 2, 3, display_id, 3
+IPython.nbformat.current.write, 3, 3, 3, , 
+IPython.utils.py3compat.cast_unicode, 3, 2, 3, , 
 IPython.nbformat.current.reads_json, 4, 1, 4, , 
-IPython.parallel.Client, 5, 1, 2, profile, 2
-IPython.core.display.display, 6, 1, 5, , 
+IPython.display.publish_display_data, 4, 1, 4, , 
+IPython.core.display.display, 4, 1, 4, , 
+IPython.nbformat.read, 5, 2, 5, , 
 IPython.core.display.JSON, 6, 1, 6, , 
-IPython.html.widgets.IntSliderWidget, 6, 3, 6, min, 6
+IPython.display.HTML, 7, 1, 7, , 
 IPython.ipapi.get, 7, 0, 7, , 
-IPython.zmq.blockingkernelmanager.BlockingKernelManager, 8, 0, 4, connection_file, 2
-IPython.html.widgets.FloatSliderWidget, 9, 3, 9, min, 9
-IPython.display.HTML, 10, 1, 10, , 
-IPython.core.display.Image, 12, 1, 9, width, 2
+IPython.zmq.blockingkernelmanager.BlockingKernelManager, 9, 0, 5, connection_file, 2
+IPython.display.Image, 11, 1, 6, filename, 5
 IPython.display.display_html, 17, 2, 16, raw, 16
-IPython.start_ipython, 20, 2, 15, user_ns, 14
-IPython.core.display.HTML, 29, 1, 28, data, 1
+IPython.core.display.HTML, 33, 1, 28, data, 5
+IPython.html.widgets.IntSliderWidget, 36, 3, 36, min, 36
+IPython.html.widgets.FloatSliderWidget, 54, 3, 54, min, 54
+IPython.start_ipython, 57, 2, 52, user_ns, 51
+IPython.display.clear_output, 63, 1, 46, wait, 46
 IPython.get_ipython, 70, 0, 70, , 
-IPython.display.clear_output, 72, 1, 47, wait, 47
-IPython.embed, 76, 0, 34, config, 16
-IPython.display.Audio, 107, 1, 54, rate, 53
-IPython.display.Image, 120, 1, 115, url, 16
-IPython.display.display, 174, 1, 167, raw, 4
+IPython.embed, 79, 0, 34, config, 16
+IPython.display.display, 149, 1, 144, display_id, 3

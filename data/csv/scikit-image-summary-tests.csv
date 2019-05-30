@@ -1,6 +1,4 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
-skimage.data.lfw_subset, 1, 0, 1, , 
-skimage.data.lbp_frontal_face_cascade_filename, 1, 0, 1, , 
 skimage.segmentation.find_boundaries, 1, 2, 1, mode, 1
 skimage.morphology.skeletonize_3d, 1, 1, 1, , 
 skimage.morphology.skeletonize, 1, 1, 1, , 
@@ -8,102 +6,104 @@ skimage.restoration.denoise_nl_means, 1, 6, 1, multichannel, 1
 skimage.measure.regionprops, 1, 2, 1, intensity_image, 1
 skimage.restoration.denoise_bilateral, 1, 4, 1, sigma_color, 1
 skimage.morphology.watershed, 1, 5, 1, compactness, 1
-skimage.io._plugins.freeimage_plugin.write_multipage, 1, 2, 1, , 
-skimage.io._plugins.freeimage_plugin.read_multipage, 1, 1, 1, , 
-skimage.io._plugins.freeimage_plugin.read_metadata, 1, 1, 1, , 
-skimage.io._plugins.freeimage_plugin.read_multipage_metadata, 1, 1, 1, , 
-skimage.io.plugin_order, 1, 0, 1, , 
 skimage.draw.circle_perimeter, 1, 3, 1, , 
 skimage.transform.EuclideanTransform, 1, 1, 1, translation, 1
+skimage.io.plugin_order, 1, 0, 1, , 
 skimage.data.imread, 1, 2, 1, as_grey, 1
 skimage.exposure.histogram, 1, 2, 1, nbins, 1
 skimage.color.label2rgb, 2, 2, 2, , 
-skimage._shared.version_requirements.get_module, 2, 1, 2, , 
-skimage.graph.mcp.MCP_Connect._reset, 2, 1, 2, , 
-skimage.graph.mcp._conn.values, 2, 0, 2, , 
 skimage.morphology.remove_small_holes, 2, 2, 2, , 
 skimage.util.invert, 2, 1, 2, , 
 skimage.morphology.medial_axis, 2, 1, 2, , 
 skimage.filters.rank.otsu, 2, 3, 2, mask, 2
 skimage.filters.rank.gradient, 2, 2, 2, , 
-skimage.data.lena, 2, 0, 2, , 
-skimage.data.stereo_motorcycle, 3, 0, 3, , 
-skimage.graph.mcp.MCP_Flexible._reset, 3, 1, 3, , 
-skimage.graph.mcp.route_through_array, 3, 4, 3, geometric, 3
-skimage.io._plugins._colormixer.sigmoid_gamma, 3, 4, 3, , 
-skimage.io._plugins._colormixer.gamma, 3, 3, 3, , 
-skimage.io._plugins._colormixer.py_rgb_2_hsv, 3, 3, 3, , 
-skimage.io._plugins._colormixer.py_hsv_2_rgb, 3, 3, 3, , 
 skimage.morphology.closing, 3, 2, 3, , 
 skimage.morphology.erosion, 3, 2, 3, , 
 skimage.morphology.opening, 3, 2, 3, , 
-skimage.data.horse, 4, 0, 4, , 
-skimage.data.hubble_deep_field, 4, 0, 4, , 
-skimage.data.immunohistochemistry, 4, 0, 4, , 
-skimage.data.logo, 4, 0, 4, , 
-skimage.data.rocket, 4, 0, 4, , 
-skimage.graph.mcp.MCP_Geometric, 4, 3, 4, fully_connected, 4
-skimage.graph.heap.FastUpdateBinaryHeap, 4, 2, 4, , 
-skimage.graph.heap.BinaryHeap, 4, 1, 4, , 
-skimage.measure._regionprops.regionprops, 4, 2, 4, coordinates, 4
 skimage.filters.threshold_li, 4, 1, 4, , 
 skimage.filters.rank.median, 4, 2, 4, , 
-skimage.io.push, 4, 1, 4, , 
-skimage.transform.hough_circle_peaks, 4, 7, 4, num_peaks, 4
 skimage.filters.gaussian_filter, 4, 3, 3, mode, 3
-skimage.graph.mcp.find_costs, 5, 1, 5, , 
-skimage.io.reset_plugins, 5, 0, 5, , 
-skimage.measure._ccomp.reshape_array, 5, 1, 5, , 
-skimage.measure._ccomp.undo_reshape_array, 5, 2, 5, , 
+skimage.data.lbp_frontal_face_cascade_filename, 5, 0, 5, , 
 skimage.filters.threshold_otsu, 5, 1, 5, , 
-skimage.transform.rescale, 6, 4, 4, order, 6
-skimage._shared.version_requirements.is_installed, 6, 2, 6, , 
-skimage.data.checkerboard, 6, 0, 6, , 
-skimage.data.clock, 6, 0, 6, , 
-skimage.data.page, 6, 0, 6, , 
-skimage.data.text, 6, 0, 6, , 
-skimage.graph.mcp.traceback, 6, 1, 6, , 
-skimage.graph.spath.shortest_path, 6, 2, 4, reach, 4
-skimage.io._plugins._colormixer.hsv_multiply, 6, 5, 6, , 
-skimage.io.imread_collection, 6, 1, 6, , 
-skimage.data.coins, 6, 0, 6, , 
 skimage.morphology.dilation, 6, 2, 6, , 
-skimage.io.imsave, 6, 2, 6, , 
 skimage.segmentation.mark_boundaries, 6, 4, 6, color, 6
-skimage.data.astronaut, 7, 0, 7, , 
-skimage.data.coffee, 7, 0, 7, , 
 skimage.filter.threshold_otsu, 7, 1, 7, , 
-skimage._shared.version_requirements.get_module_version, 8, 1, 8, , 
-skimage.io.ImageCollection, 8, 2, 6, load_func, 6
+skimage.data.lfw_subset, 8, 0, 8, , 
 skimage.morphology.ball, 8, 1, 5, dtype, 3
-skimage._shared.version_requirements.require, 9, 2, 9, , 
-skimage.img_as_uint, 9, 1, 9, , 
-skimage.io._plugins._colormixer.hsv_add, 9, 5, 9, , 
+skimage.measure._regionprops.regionprops, 9, 2, 9, coordinates, 9
 skimage.color.rgb2gray, 9, 1, 9, , 
-skimage.transform.hough_line_peaks, 10, 3, 10, , 
-skimage.data.chelsea, 11, 0, 11, , 
-skimage.data.moon, 11, 0, 11, , 
-skimage.transform.probabilistic_hough_line, 11, 5, 6, line_length, 10
-skimage.transform.SimilarityTransform, 12, 3, 12, translation, 12
-skimage.io._plugins._colormixer.brightness, 12, 4, 12, , 
+skimage.data.lena, 9, 0, 9, , 
+skimage.transform.hough_circle_peaks, 10, 7, 10, num_peaks, 10
 skimage.measure.label, 12, 1, 12, , 
 skimage.morphology.disk, 12, 1, 12, , 
-skimage.transform.warp, 13, 3, 13, clip, 12
+skimage.io._plugins.freeimage_plugin.write_multipage, 12, 2, 12, , 
+skimage.io._plugins.freeimage_plugin.read_multipage, 12, 1, 12, , 
+skimage.io._plugins.freeimage_plugin.read_metadata, 12, 1, 12, , 
+skimage.io._plugins.freeimage_plugin.read_multipage_metadata, 12, 1, 12, , 
+skimage._shared.version_requirements.get_module, 13, 1, 13, , 
 skimage.filters.gaussian, 13, 3, 12, mode, 12
-skimage.graph.mcp.MCP, 18, 2, 18, fully_connected, 15
-skimage.transform.resize, 19, 4, 17, order, 17
+skimage.data.stereo_motorcycle, 15, 0, 15, , 
+skimage.transform.rescale, 16, 4, 12, order, 16
+skimage.io.imsave, 17, 2, 17, , 
+skimage.data.horse, 18, 0, 18, , 
+skimage.data.hubble_deep_field, 18, 0, 18, , 
+skimage.data.immunohistochemistry, 18, 0, 18, , 
+skimage.data.logo, 18, 0, 18, , 
+skimage.data.rocket, 18, 0, 18, , 
 skimage.morphology.label, 19, 4, 12, return_num, 16
-skimage.io.use_plugin, 19, 1, 18, , 
-skimage.data.binary_blobs, 20, 3, 10, length, 20
-skimage.io.imread, 25, 1, 24, as_grey, 1
-skimage.transform.hough_circle, 26, 2, 20, full_output, 6
-skimage.feature.canny, 27, 5, 20, use_quantiles, 3
-skimage.measure.structural_similarity, 31, 3, 12, win_size, 10
-skimage.data.camera, 39, 0, 39, , 
-skimage.transform.swirl, 44, 3, 44, strength, 44
-skimage.exposure.rescale_intensity, 46, 1, 43, in_range, 1
-skimage.transform.hough_line, 53, 1, 34, , 
-skimage.transform.hough_ellipse, 54, 3, 48, threshold, 54
-skimage.img_as_float, 126, 1, 126, , 
-skimage.img_as_ubyte, 184, 1, 184, , 
-skimage.measure.compare_ssim, 232, 3, 92, win_size, 66
+skimage.transform.resize, 20, 4, 17, order, 17
+skimage.data.checkerboard, 27, 0, 27, , 
+skimage.data.clock, 27, 0, 27, , 
+skimage.data.page, 27, 0, 27, , 
+skimage.data.text, 27, 0, 27, , 
+skimage.img_as_uint, 27, 1, 27, , 
+skimage.graph.mcp.MCP_Connect._reset, 27, 1, 27, , 
+skimage.graph.mcp._conn.values, 27, 0, 27, , 
+skimage.graph.mcp.MCP_Flexible._reset, 27, 1, 27, , 
+skimage.graph.heap.FastUpdateBinaryHeap, 27, 2, 27, , 
+skimage.graph.heap.BinaryHeap, 27, 1, 27, , 
+skimage.graph.mcp.route_through_array, 27, 4, 27, geometric, 27
+skimage.io._plugins._colormixer.sigmoid_gamma, 27, 4, 27, , 
+skimage.io._plugins._colormixer.gamma, 27, 3, 27, , 
+skimage.io._plugins._colormixer.py_rgb_2_hsv, 27, 3, 27, , 
+skimage.io._plugins._colormixer.py_hsv_2_rgb, 27, 3, 27, , 
+skimage.measure._ccomp.reshape_array, 27, 1, 27, , 
+skimage.measure._ccomp.undo_reshape_array, 27, 2, 27, , 
+skimage.data.coffee, 28, 0, 28, , 
+skimage.data.coins, 28, 0, 28, , 
+skimage.data.astronaut, 32, 0, 32, , 
+skimage.transform.hough_line_peaks, 32, 3, 32, , 
+skimage.io.push, 36, 1, 36, , 
+skimage.transform.probabilistic_hough_line, 36, 5, 18, line_length, 32
+skimage.io.reset_plugins, 40, 0, 40, , 
+skimage.data.chelsea, 44, 0, 44, , 
+skimage._shared.version_requirements.is_installed, 54, 2, 54, , 
+skimage.data.moon, 54, 0, 54, , 
+skimage.transform.SimilarityTransform, 54, 3, 54, translation, 54
+skimage.graph.mcp.MCP_Geometric, 54, 3, 54, fully_connected, 54
+skimage.graph.mcp.find_costs, 54, 1, 54, , 
+skimage.io._plugins._colormixer.hsv_multiply, 54, 5, 54, , 
+skimage.io.imread_collection, 54, 1, 54, , 
+skimage.transform.warp, 55, 3, 55, clip, 54
+skimage._shared.version_requirements.get_module_version, 67, 1, 67, , 
+skimage.transform.hough_circle, 76, 2, 58, full_output, 18
+skimage.io.ImageCollection, 78, 2, 54, load_func, 54
+skimage._shared.version_requirements.require, 81, 2, 81, , 
+skimage.graph.mcp.traceback, 81, 1, 81, , 
+skimage.graph.spath.shortest_path, 81, 2, 54, reach, 54
+skimage.io._plugins._colormixer.hsv_add, 81, 5, 81, , 
+skimage.transform.swirl, 88, 3, 88, strength, 88
+skimage.exposure.rescale_intensity, 94, 1, 91, in_range, 1
+skimage.data.binary_blobs, 104, 3, 52, length, 104
+skimage.io._plugins._colormixer.brightness, 108, 4, 108, , 
+skimage.io.imread, 137, 1, 136, as_grey, 1
+skimage.io.use_plugin, 161, 1, 160, , 
+skimage.graph.mcp.MCP, 162, 2, 162, fully_connected, 135
+skimage.transform.hough_line, 162, 1, 104, , 
+skimage.transform.hough_ellipse, 162, 3, 144, threshold, 162
+skimage.data.camera, 171, 0, 171, , 
+skimage.feature.canny, 185, 5, 135, use_quantiles, 23
+skimage.measure.structural_similarity, 192, 3, 68, win_size, 59
+skimage.img_as_ubyte, 390, 1, 390, , 
+skimage.img_as_float, 432, 1, 432, , 
+skimage.measure.compare_ssim, 529, 3, 207, win_size, 152

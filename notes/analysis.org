@@ -1,34 +1,66 @@
 * Python Inspect Analysis
-   :PROPERTIES:
-   :header-args: :db ../data/inspect.sqlite
-   :END:
+  :PROPERTIES:
+  :header-args: :db ../data/inspect.sqlite :header
+  :END:
 
-#+begin_src sqlite :exports both
-SELECT count(DISTINCT filename) FROM FileStats
+** Quick Stats
+
+#+begin_src sqlite
+SELECT * FROM FunctionStats LIMIT 10
 #+end_src
 
 #+RESULTS:
-: 420308
+| id                                   | namespace     | stats                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | __builtins__  | print": {"count": 2, "n_args": {"1": 2}, "kwargs": {}}, "isinstance": {"count": 4, "n_args": {"2": 4}, "kwargs": {}}, "list": {"count": 1, "n_args": {"1": 1}, "kwargs": {}}, "getattr": {"count": 1, "n_args": {"2": 1}, "kwargs": {}}, "dict": {"count": 1, "n_args": {"1": 1}, "kwargs": {}}, "format": {"count": 4, "n_args": {"2": 2, "1": 1, "3": 1}, "kwargs": {}}, "str": {"count": 1, "n_args": {"1": 1}, "kwargs": {}}, "hasattr": {"count": 1, "n_args": {"2": 1}, "kwargs": {}}, "int": {"count": 1, "n_args": {"1": 1}, "kwargs": {}}, "len": {"count": 2, "n_args": {"1": 2}, "kwargs |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | sys           | sys.exit": {"count": 2, "n_args": {"1": 2}, "kwargs": {}}, "sys.getfilesystemencoding": {"count": 1, "n_args": {"0": 1}, "kwargs                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | matplotlib    | matplotlib.use": {"count": 1, "n_args": {"1": 1}, "kwargs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | os            | os.path.exists": {"count": 3, "n_args": {"1": 3}, "kwargs": {}}, "os.path.isdir": {"count": 2, "n_args": {"1": 2}, "kwargs": {}}, "os.path.isfile": {"count": 3, "n_args": {"1": 3}, "kwargs": {}}, "os.path.abspath": {"count": 2, "n_args": {"1": 2}, "kwargs": {}}, "os.path.join": {"count": 1, "n_args": {"2": 1}, "kwargs                                                                                                                                                                                                                                                                     |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | pkg_resources | pkg_resources.working_set.add": {"count": 2, "n_args": {"2": 1, "1": 1}, "kwargs": {"replace": 1}}, "pkg_resources.WorkingSet": {"count": 1, "n_args": {"1": 1}, "kwargs": {}}, "pkg_resources.find_distributions": {"count": 1, "n_args": {"2": 1}, "kwargs": {}}, "pkg_resources.working_set.by_key.get": {"count": 1, "n_args": {"1": 1}, "kwargs": {}}, "pkg_resources.Requirement.parse": {"count": 1, "n_args": {"1": 1}, "kwargs                                                                                                                                                             |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | subprocess    | subprocess.check_output": {"count": 1, "n_args": {"2": 1}, "kwargs": {"cwd": 1}}, "subprocess.Popen": {"count": 1, "n_args": {"3": 1}, "kwargs": {"stdout": 1, "stderr                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | re            | re.compile": {"count": 1, "n_args": {"1": 1}, "kwargs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | io            | io.StringIO": {"count": 1, "n_args": {"0": 1}, "kwargs": {}}, "io.open": {"count": 1, "n_args": {"1": 1}, "kwargs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| BA6F6A60-0FB7-4F39-A158-6DAE12E9763D | locale        | locale.getdefaultlocale": {"count": 1, "n_args": {"0": 1}, "kwargs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| F7004C7B-211E-4A2A-BE78-EA34D2E7A3DD | subprocess    | subprocess.call": {"count": 1, "n_args": {"1": 1}, "kwargs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+
+#+begin_src sqlite :exports both
+SELECT count(DISTINCT filename) FROM File
+#+end_src
+
+#+RESULTS:
+| count(DISTINCT filename) |
+|                  1356975 |
 
 Number of files parsed 137k.
 
-#+begin_src sqlite :exports both
-SELECT count(DISTINCT namespace) FROM FileStats
+#+begin_src sqlite
+SELECT count(DISTINCT project) FROM File
 #+end_src
 
 #+RESULTS:
-: 14137
+| count(DISTINCT project) |
+|                   26261 |
+
+
+#+begin_src sqlite :exports both
+SELECT count(DISTINCT namespace) FROM FunctionStats
+#+end_src
+
+#+RESULTS:
+| count(DISTINCT namespace) |
+|                     20060 |
 
 5420 packages/namespaces found.
 
 ** Numpy analysis
 
 #+begin_src sqlite :exports both
-SELECT count(DISTINCT project) FROM FileStats WHERE namespace = "numpy"
+SELECT count(DISTINCT project) FROM FunctionStats WHERE namespace = "numpy"
 #+end_src
 
 #+RESULTS:
-: 7841
+| count(DISTINCT project) |
+|                    8020 |
+
 
 There are 7841 packages that use ~numpy~ in the dataset.
 
@@ -108,34 +140,34 @@ There are 7841 packages that use ~numpy~ in the dataset.
 
   QUERY_WITHOUT_SITEPACKAGES = '''
   SELECT stats
-  FROM FileStats
-  WHERE namespace = "{namespace}"
-    AND filename NOT LIKE '%/site-packages/%'
+  from functionstats
+  where namespace = "{namespace}"
+    and filename not like '%/site-packages/%'
   '''
 
-  QUERY_WITHOUT_SITEPACKAGES_TESTS = '''
-  SELECT stats
-  FROM FileStats
-  WHERE namespace = "{namespace}"
-    AND filename NOT LIKE '%/site-packages/%'
-    AND filename NOT LIKE '%/test/%'
-    AND filename NOT LIKE '%/tests/%'
+  query_without_sitepackages_tests = '''
+  select stats
+  from functionstats
+  where namespace = "{namespace}"
+    and filename not like '%/site-packages/%'
+    and filename not like '%/test/%'
+    and filename not like '%/tests/%'
   '''
 
-  QUERY_WITHOUT_SITEPACKAGES_ONLY_TESTS = '''
-  SELECT stats
-  FROM FileStats
-  WHERE namespace = "{namespace}"
-    AND filename NOT LIKE '%/site-packages/%'
-    AND (filename LIKE '%/test/%' OR filename LIKE '%/tests/%')
+  query_without_sitepackages_only_tests = '''
+  select stats
+  from functionstats
+  where namespace = "{namespace}"
+    and filename not like '%/site-packages/%'
+    and (filename like '%/test/%' or filename like '%/tests/%')
   '''
 
-  QUERY_WITHOUT_SITEPACKAGES_ONLY_NOTEBOOKS = '''
-  SELECT stats
-  FROM FileStats
-  WHERE namespace = "{namespace}"
-    AND filename NOT LIKE '%/site-packages/%'
-    AND filename LIKE '%.ipynb'
+  query_without_sitepackages_only_notebooks = '''
+  select stats
+  from functionstats
+  where namespace = "{namespace}"
+    and filename not like '%/site-packages/%'
+    and filename like '%.ipynb'
   '''
 
   for namespace in namespaces:
@@ -148,100 +180,100 @@ There are 7841 packages that use ~numpy~ in the dataset.
 
       calculate_stats(database_filename,
                       f'../data/csv/{filename}-summary.csv',
-                      QUERY_WITHOUT_SITEPACKAGES.format(namespace=namespace))
+                      query_without_sitepackages.format(namespace=namespace))
       calculate_stats(database_filename,
                       f'../data/csv/{filename}-summary-without-tests.csv',
-                      QUERY_WITHOUT_SITEPACKAGES_TESTS.format(namespace=namespace))
+                      query_without_sitepackages_tests.format(namespace=namespace))
       calculate_stats(database_filename,
                       f'../data/csv/{filename}-summary-tests.csv',
-                      QUERY_WITHOUT_SITEPACKAGES_ONLY_TESTS.format(namespace=namespace))
+                      query_without_sitepackages_only_tests.format(namespace=namespace))
       calculate_stats(database_filename,
                       f'../data/csv/{filename}-summary-notebooks.csv',
-                      QUERY_WITHOUT_SITEPACKAGES_ONLY_NOTEBOOKS.format(namespace=namespace))
+                      query_without_sitepackages_only_notebooks.format(namespace=namespace))
 #+end_src
 
-#+RESULTS:
+#+results:
 #+begin_example
-365 unique functions
-writing 365 function calls to ../data/csv/astropy-summary.csv
-348 unique functions
-writing 348 function calls to ../data/csv/astropy-summary-without-tests.csv
-75 unique functions
-writing 75 function calls to ../data/csv/astropy-summary-tests.csv
-39 unique functions
-writing 39 function calls to ../data/csv/astropy-summary-notebooks.csv
-283 unique functions
-writing 283 function calls to ../data/csv/dask-summary.csv
-172 unique functions
-writing 172 function calls to ../data/csv/dask-summary-without-tests.csv
+375 unique functions
+writing 375 function calls to ../data/csv/astropy-summary.csv
+358 unique functions
+writing 358 function calls to ../data/csv/astropy-summary-without-tests.csv
+81 unique functions
+writing 81 function calls to ../data/csv/astropy-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/astropy-summary-notebooks.csv
+277 unique functions
+writing 277 function calls to ../data/csv/dask-summary.csv
+161 unique functions
+writing 161 function calls to ../data/csv/dask-summary-without-tests.csv
 199 unique functions
 writing 199 function calls to ../data/csv/dask-summary-tests.csv
-44 unique functions
-writing 44 function calls to ../data/csv/dask-summary-notebooks.csv
-92 unique functions
-writing 92 function calls to ../data/csv/ipython-summary.csv
+0 unique functions
+writing 0 function calls to ../data/csv/dask-summary-notebooks.csv
+120 unique functions
+writing 120 function calls to ../data/csv/ipython-summary.csv
 85 unique functions
 writing 85 function calls to ../data/csv/ipython-summary-without-tests.csv
-11 unique functions
-writing 11 function calls to ../data/csv/ipython-summary-tests.csv
-9 unique functions
-writing 9 function calls to ../data/csv/ipython-summary-notebooks.csv
-82 unique functions
-writing 82 function calls to ../data/csv/ipywidgets-summary.csv
+40 unique functions
+writing 40 function calls to ../data/csv/ipython-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/ipython-summary-notebooks.csv
 79 unique functions
-writing 79 function calls to ../data/csv/ipywidgets-summary-without-tests.csv
-8 unique functions
-writing 8 function calls to ../data/csv/ipywidgets-summary-tests.csv
-54 unique functions
-writing 54 function calls to ../data/csv/ipywidgets-summary-notebooks.csv
-1009 unique functions
-writing 1009 function calls to ../data/csv/matplotlib-summary.csv
-934 unique functions
-writing 934 function calls to ../data/csv/matplotlib-summary-without-tests.csv
-375 unique functions
-writing 375 function calls to ../data/csv/matplotlib-summary-tests.csv
-291 unique functions
-writing 291 function calls to ../data/csv/matplotlib-summary-notebooks.csv
-1499 unique functions
-writing 1499 function calls to ../data/csv/numpy-summary.csv
-1278 unique functions
-writing 1278 function calls to ../data/csv/numpy-summary-without-tests.csv
+writing 79 function calls to ../data/csv/ipywidgets-summary.csv
+75 unique functions
+writing 75 function calls to ../data/csv/ipywidgets-summary-without-tests.csv
+9 unique functions
+writing 9 function calls to ../data/csv/ipywidgets-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/ipywidgets-summary-notebooks.csv
+987 unique functions
+writing 987 function calls to ../data/csv/matplotlib-summary.csv
+908 unique functions
+writing 908 function calls to ../data/csv/matplotlib-summary-without-tests.csv
+384 unique functions
+writing 384 function calls to ../data/csv/matplotlib-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/matplotlib-summary-notebooks.csv
+1498 unique functions
+writing 1498 function calls to ../data/csv/numpy-summary.csv
+1274 unique functions
+writing 1274 function calls to ../data/csv/numpy-summary-without-tests.csv
 890 unique functions
 writing 890 function calls to ../data/csv/numpy-summary-tests.csv
-483 unique functions
-writing 483 function calls to ../data/csv/numpy-summary-notebooks.csv
-1603 unique functions
-writing 1603 function calls to ../data/csv/pandas-summary.csv
-1102 unique functions
-writing 1102 function calls to ../data/csv/pandas-summary-without-tests.csv
-817 unique functions
-writing 817 function calls to ../data/csv/pandas-summary-tests.csv
-158 unique functions
-writing 158 function calls to ../data/csv/pandas-summary-notebooks.csv
+0 unique functions
+writing 0 function calls to ../data/csv/numpy-summary-notebooks.csv
+1586 unique functions
+writing 1586 function calls to ../data/csv/pandas-summary.csv
+1076 unique functions
+writing 1076 function calls to ../data/csv/pandas-summary-without-tests.csv
+819 unique functions
+writing 819 function calls to ../data/csv/pandas-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/pandas-summary-notebooks.csv
 209 unique functions
 writing 209 function calls to ../data/csv/pyarrow-summary.csv
 124 unique functions
 writing 124 function calls to ../data/csv/pyarrow-summary-without-tests.csv
 173 unique functions
 writing 173 function calls to ../data/csv/pyarrow-summary-tests.csv
-8 unique functions
-writing 8 function calls to ../data/csv/pyarrow-summary-notebooks.csv
+0 unique functions
+writing 0 function calls to ../data/csv/pyarrow-summary-notebooks.csv
 1 unique functions
 writing 1 function calls to ../data/csv/pymapd-summary.csv
 1 unique functions
 writing 1 function calls to ../data/csv/pymapd-summary-without-tests.csv
 0 unique functions
 writing 0 function calls to ../data/csv/pymapd-summary-tests.csv
-1 unique functions
-writing 1 function calls to ../data/csv/pymapd-summary-notebooks.csv
-268 unique functions
-writing 268 function calls to ../data/csv/pymc3-summary.csv
-229 unique functions
-writing 229 function calls to ../data/csv/pymc3-summary-without-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/pymapd-summary-notebooks.csv
+209 unique functions
+writing 209 function calls to ../data/csv/pymc3-summary.csv
+137 unique functions
+writing 137 function calls to ../data/csv/pymc3-summary-without-tests.csv
 132 unique functions
 writing 132 function calls to ../data/csv/pymc3-summary-tests.csv
-173 unique functions
-writing 173 function calls to ../data/csv/pymc3-summary-notebooks.csv
+0 unique functions
+writing 0 function calls to ../data/csv/pymc3-summary-notebooks.csv
 1 unique functions
 writing 1 function calls to ../data/csv/pytorch-summary.csv
 1 unique functions
@@ -250,68 +282,181 @@ writing 1 function calls to ../data/csv/pytorch-summary-without-tests.csv
 writing 0 function calls to ../data/csv/pytorch-summary-tests.csv
 0 unique functions
 writing 0 function calls to ../data/csv/pytorch-summary-notebooks.csv
-106 unique functions
-writing 106 function calls to ../data/csv/requests-summary.csv
-77 unique functions
-writing 77 function calls to ../data/csv/requests-summary-without-tests.csv
+105 unique functions
+writing 105 function calls to ../data/csv/requests-summary.csv
+76 unique functions
+writing 76 function calls to ../data/csv/requests-summary-without-tests.csv
 59 unique functions
 writing 59 function calls to ../data/csv/requests-summary-tests.csv
-9 unique functions
-writing 9 function calls to ../data/csv/requests-summary-notebooks.csv
-232 unique functions
-writing 232 function calls to ../data/csv/scikit-image-summary.csv
-179 unique functions
-writing 179 function calls to ../data/csv/scikit-image-summary-without-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/requests-summary-notebooks.csv
+231 unique functions
+writing 231 function calls to ../data/csv/scikit-image-summary.csv
+178 unique functions
+writing 178 function calls to ../data/csv/scikit-image-summary-without-tests.csv
 108 unique functions
 writing 108 function calls to ../data/csv/scikit-image-summary-tests.csv
-44 unique functions
-writing 44 function calls to ../data/csv/scikit-image-summary-notebooks.csv
-364 unique functions
-writing 364 function calls to ../data/csv/scikit-learn-summary.csv
-291 unique functions
-writing 291 function calls to ../data/csv/scikit-learn-summary-without-tests.csv
-199 unique functions
-writing 199 function calls to ../data/csv/scikit-learn-summary-tests.csv
-115 unique functions
-writing 115 function calls to ../data/csv/scikit-learn-summary-notebooks.csv
-1793 unique functions
-writing 1793 function calls to ../data/csv/scipy-summary.csv
-1344 unique functions
-writing 1344 function calls to ../data/csv/scipy-summary-without-tests.csv
-929 unique functions
-writing 929 function calls to ../data/csv/scipy-summary-tests.csv
-345 unique functions
-writing 345 function calls to ../data/csv/scipy-summary-notebooks.csv
-158 unique functions
-writing 158 function calls to ../data/csv/statsmodels-summary.csv
-145 unique functions
-writing 145 function calls to ../data/csv/statsmodels-summary-without-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/scikit-image-summary-notebooks.csv
+351 unique functions
+writing 351 function calls to ../data/csv/scikit-learn-summary.csv
+273 unique functions
+writing 273 function calls to ../data/csv/scikit-learn-summary-without-tests.csv
+200 unique functions
+writing 200 function calls to ../data/csv/scikit-learn-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/scikit-learn-summary-notebooks.csv
+1781 unique functions
+writing 1781 function calls to ../data/csv/scipy-summary.csv
+1319 unique functions
+writing 1319 function calls to ../data/csv/scipy-summary-without-tests.csv
+928 unique functions
+writing 928 function calls to ../data/csv/scipy-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/scipy-summary-notebooks.csv
+125 unique functions
+writing 125 function calls to ../data/csv/statsmodels-summary.csv
+109 unique functions
+writing 109 function calls to ../data/csv/statsmodels-summary-without-tests.csv
 25 unique functions
 writing 25 function calls to ../data/csv/statsmodels-summary-tests.csv
-75 unique functions
-writing 75 function calls to ../data/csv/statsmodels-summary-notebooks.csv
-300 unique functions
-writing 300 function calls to ../data/csv/sympy-summary.csv
-280 unique functions
-writing 280 function calls to ../data/csv/sympy-summary-without-tests.csv
-86 unique functions
-writing 86 function calls to ../data/csv/sympy-summary-tests.csv
-107 unique functions
-writing 107 function calls to ../data/csv/sympy-summary-notebooks.csv
-3147 unique functions
-writing 3147 function calls to ../data/csv/tensorflow-summary.csv
-3090 unique functions
-writing 3090 function calls to ../data/csv/tensorflow-summary-without-tests.csv
-525 unique functions
-writing 525 function calls to ../data/csv/tensorflow-summary-tests.csv
-575 unique functions
-writing 575 function calls to ../data/csv/tensorflow-summary-notebooks.csv
+0 unique functions
+writing 0 function calls to ../data/csv/statsmodels-summary-notebooks.csv
+275 unique functions
+writing 275 function calls to ../data/csv/sympy-summary.csv
+254 unique functions
+writing 254 function calls to ../data/csv/sympy-summary-without-tests.csv
+81 unique functions
+writing 81 function calls to ../data/csv/sympy-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/sympy-summary-notebooks.csv
+3102 unique functions
+writing 3102 function calls to ../data/csv/tensorflow-summary.csv
+3041 unique functions
+writing 3041 function calls to ../data/csv/tensorflow-summary-without-tests.csv
+519 unique functions
+writing 519 function calls to ../data/csv/tensorflow-summary-tests.csv
+0 unique functions
+writing 0 function calls to ../data/csv/tensorflow-summary-notebooks.csv
 67 unique functions
 writing 67 function calls to ../data/csv/__builtins__-summary.csv
 67 unique functions
 writing 67 function calls to ../data/csv/__builtins__-summary-without-tests.csv
 66 unique functions
 writing 66 function calls to ../data/csv/__builtins__-summary-tests.csv
-63 unique functions
-writing 63 function calls to ../data/csv/__builtins__-summary-notebooks.csv
+0 unique functions
+writing 0 function calls to ../data/csv/__builtins__-summary-notebooks.csv
 #+end_example
+** avoid using python
+
+here we will start to do all these queries with json api
+
+#+begin_src sqlite
+  SELECT key AS function, sum(json_extract(value, '$.count')) as count
+  FROM FunctionStats, json_each(FunctionStats.stats)
+  JOIN File ON FunctionStats.id = File.id
+  WHERE FunctionStats.namespace = '__builtins__'
+    AND File.filename NOT LIKE '%/site-packages/%'
+    AND File.filename LIKE '%.py'
+  GROUP BY key
+  ORDER BY sum(json_extract(value, '$.count')) desc
+  LIMIT 10
+#+end_src
+
+#+RESULTS:
+| function   |   count |
+| len        | 1455161 |
+| print      | 1147058 |
+| isinstance |  985385 |
+| range      |  700113 |
+| format     |  588613 |
+| int        |  400916 |
+| list       |  377342 |
+| str        |  352353 |
+| enumerate  |  296381 |
+| dict       |  293060 |
+
+
+** Libraries.io and database integration
+
+How to attach a sqlite database
+
+#+begin_src sqlite :db /home/costrouc/data/librariesio/libraries.db
+.tables
+#+end_src
+
+#+RESULTS:
+| dependencies                     repository_dependencies |
+| projects                         tags                    |
+| projects_with_repository_fields  versions                |
+| repositories                                             |
+
+#+begin_src sqlite :db /home/costrouc/data/librariesio/libraries.db
+PRAGMA table_info(repositories);
+#+end_src
+
+#+RESULTS:
+| cid | name                             | type | notnull | dflt_value | pk |
+|   0 | ID                               | TEXT |       0 |            |  0 |
+|   1 | Host Type                        | TEXT |       0 |            |  0 |
+|   2 | Name with Owner                  | TEXT |       0 |            |  0 |
+|   3 | Description                      | TEXT |       0 |            |  0 |
+|   4 | Fork                             | TEXT |       0 |            |  0 |
+|   5 | Created Timestamp                | TEXT |       0 |            |  0 |
+|   6 | Updated Timestamp                | TEXT |       0 |            |  0 |
+|   7 | Last pushed Timestamp            | TEXT |       0 |            |  0 |
+|   8 | Homepage URL                     | TEXT |       0 |            |  0 |
+|   9 | Size                             | TEXT |       0 |            |  0 |
+|  10 | Stars Count                      | TEXT |       0 |            |  0 |
+|  11 | Language                         | TEXT |       0 |            |  0 |
+|  12 | Issues enabled                   | TEXT |       0 |            |  0 |
+|  13 | Wiki enabled                     | TEXT |       0 |            |  0 |
+|  14 | Pages enabled                    | TEXT |       0 |            |  0 |
+|  15 | Forks Count                      | TEXT |       0 |            |  0 |
+|  16 | Mirror URL                       | TEXT |       0 |            |  0 |
+|  17 | Open Issues Count                | TEXT |       0 |            |  0 |
+|  18 | Default branch                   | TEXT |       0 |            |  0 |
+|  19 | Watchers Count                   | TEXT |       0 |            |  0 |
+|  20 | UUID                             | TEXT |       0 |            |  0 |
+|  21 | Fork Source Name with Owner      | TEXT |       0 |            |  0 |
+|  22 | License                          | TEXT |       0 |            |  0 |
+|  23 | Contributors Count               | TEXT |       0 |            |  0 |
+|  24 | Readme filename                  | TEXT |       0 |            |  0 |
+|  25 | Changelog filename               | TEXT |       0 |            |  0 |
+|  26 | Contributing guidelines filename | TEXT |       0 |            |  0 |
+|  27 | License filename                 | TEXT |       0 |            |  0 |
+|  28 | Code of Conduct filename         | TEXT |       0 |            |  0 |
+|  29 | Security Threat Model filename   | TEXT |       0 |            |  0 |
+|  30 | Security Audit filename          | TEXT |       0 |            |  0 |
+|  31 | Status                           | TEXT |       0 |            |  0 |
+|  32 | Last Synced Timestamp            | TEXT |       0 |            |  0 |
+|  33 | SourceRank                       | TEXT |       0 |            |  0 |
+|  34 | Display Name                     | TEXT |       0 |            |  0 |
+|  35 | SCM type                         | TEXT |       0 |            |  0 |
+|  36 | Pull requests enabled            | TEXT |       0 |            |  0 |
+|  37 | Logo URL                         | TEXT |       0 |            |  0 |
+|  38 | Keywords                         | TEXT |       0 |            |  0 |
+
+
+#+begin_src sqlite
+ATTACH '/home/costrouc/data/librariesio/libraries.db' AS libraries;
+.databases
+#+end_src
+
+#+RESULTS:
+| main: /home/costrouc/p/python-api-inspect/notes/../data/inspect.sqlite |
+| libraries: /home/costrouc/data/librariesio/libraries.db                |
+
+
+#+begin_src sqlite
+ATTACH '/home/costrouc/data/librariesio/libraries.db' AS libraries;
+
+SELECT COUNT(DISTINCT fs.project)
+FROM FunctionStats AS fs
+INNER JOIN libraries.repositories AS repo ON repo."Name with Owner" = fs.project
+WHERE CAST(repo."Stars Count" AS INTEGER) > 100 AND repo."Host Type" = "GitHub"
+#+end_src
+
+#+RESULTS:
+| COUNT(DISTINCT fs.project) |
+|                       1363 |

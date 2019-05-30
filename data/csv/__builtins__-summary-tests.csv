@@ -2,66 +2,66 @@ function, function_count, top_num_args, top_num_args_count, top_keyword, top_key
 ascii, 3, 1, 3, , 
 oct, 15, 1, 15, , 
 bin, 16, 1, 16, ds, 5
-help, 36, 1, 29, , 
-classmethod, 60, 1, 58, kw, 2
-input, 67, 1, 55, , 
-super, 126, 2, 91, kw, 2
-hex, 142, 1, 116, , 
-vars, 163, 1, 127, , 
-globals, 201, 0, 201, , 
-locals, 212, 0, 212, , 
-pow, 266, 2, 236, , 
-property, 295, 1, 203, fget, 40
-delattr, 354, 2, 354, , 
-__import__, 378, 1, 271, fromlist, 55
-compile, 382, 3, 188, mode, 16
-memoryview, 413, 1, 413, , 
-chr, 445, 1, 445, , 
-reversed, 448, 1, 447, , 
-ord, 499, 1, 499, , 
-divmod, 562, 2, 562, , 
-exec, 566, 1, 281, , 
-callable, 582, 1, 569, null, 9
-complex, 626, 2, 529, , 
-bytearray, 712, 1, 622, encoding, 3
-bytes, 925, 1, 755, encoding, 36
-id, 1065, 1, 1061, null, 1
-frozenset, 1076, 1, 1009, , 
-dir, 1283, 1, 1263, , 
-iter, 1622, 1, 1552, , 
-filter, 1722, 1, 1291, search, 81
-eval, 1863, 1, 1294, session, 40
-issubclass, 2005, 2, 2005, , 
-object, 2020, 0, 2018, , 
-map, 2057, 2, 1177, numba, 14
-hash, 2230, 1, 2207, coerce_mmap, 4
-setattr, 2418, 3, 2407, , 
-min, 2781, 0, 1069, numeric_only, 22
-max, 4079, 0, 1751, axis, 43
-any, 4473, 1, 2991, axis, 26
-next, 4964, 1, 4618, , 
-round, 5120, 2, 4502, decimals, 8
-tuple, 5396, 1, 4881, , 
-float, 6129, 1, 6031, , 
-type, 7616, 1, 7142, null, 2
-sorted, 7960, 1, 6450, key, 1367
-hasattr, 8200, 2, 8200, , 
-abs, 8313, 1, 8193, , 
-int, 10322, 1, 9836, base, 9
-slice, 11415, 2, 4187, bygroup_as_index, 2
-repr, 11477, 1, 11477, , 
-sum, 13624, 0, 7937, axis, 615
-zip, 14337, 2, 12455, , 
-getattr, 14602, 2, 12368, , 
-enumerate, 14848, 1, 14528, start, 85
-set, 21147, 1, 17641, min, 42
-dict, 21935, 1, 9405, args, 1404
-open, 22995, 2, 17185, encoding, 465
-all, 26955, 0, 18719, axis, 27
-format, 34221, 1, 21348, null, 362
-str, 34525, 1, 34444, null, 4
-list, 46535, 1, 45121, recursive, 12
-print, 57812, 1, 44072, file, 1071
-isinstance, 58508, 2, 58508, , 
-range, 64144, 1, 50540, timezone, 1
-len, 103883, 1, 103880, , 
+help, 35, 1, 28, , 
+input, 43, 1, 31, , 
+hex, 147, 1, 117, , 
+classmethod, 155, 1, 153, kw, 2
+vars, 176, 1, 131, , 
+locals, 236, 0, 236, , 
+super, 244, 2, 207, kw, 2
+globals, 290, 0, 290, , 
+property, 374, 1, 232, doc, 71
+pow, 378, 2, 348, , 
+compile, 413, 3, 206, mode, 16
+__import__, 441, 1, 318, fromlist, 68
+memoryview, 453, 1, 453, , 
+delattr, 475, 2, 475, , 
+exec, 645, 1, 329, , 
+reversed, 730, 1, 729, , 
+complex, 798, 2, 683, , 
+chr, 821, 1, 821, , 
+callable, 865, 1, 850, null, 11
+bytearray, 901, 1, 817, encoding, 4
+bytes, 1238, 1, 1016, encoding, 81
+divmod, 1515, 2, 1515, , 
+id, 1569, 1, 1565, null, 1
+frozenset, 1736, 1, 1613, , 
+ord, 2153, 1, 2153, , 
+iter, 2213, 1, 2137, , 
+dir, 2382, 1, 2349, , 
+object, 2834, 0, 2830, , 
+eval, 2947, 1, 2341, session, 40
+filter, 2955, 1, 2206, items, 160
+setattr, 4022, 3, 4008, , 
+hash, 4268, 1, 4244, coerce_mmap, 6
+issubclass, 4396, 2, 4396, , 
+min, 4406, 0, 1941, numeric_only, 50
+map, 4414, 1, 2176, numba, 14
+max, 6180, 0, 2729, axis, 68
+round, 6331, 2, 5269, decimals, 8
+next, 6549, 1, 6035, , 
+any, 6999, 1, 4158, axis, 39
+float, 8540, 1, 8441, , 
+tuple, 8637, 1, 8025, , 
+type, 10713, 1, 10041, null, 2
+sorted, 11414, 1, 9206, key, 2023
+abs, 12124, 1, 11951, , 
+hasattr, 12400, 2, 12400, , 
+int, 15343, 1, 14854, base, 9
+slice, 22652, 2, 9456, bygroup_as_index, 2
+zip, 23208, 2, 20283, , 
+sum, 23921, 0, 15644, axis, 941
+enumerate, 25277, 1, 24416, start, 110
+getattr, 25503, 2, 21698, , 
+repr, 25833, 1, 25833, , 
+set, 28360, 1, 23137, min, 42
+open, 29179, 2, 21829, encoding, 486
+dict, 31585, 1, 14584, args, 1410
+all, 46727, 0, 35577, axis, 36
+str, 56190, 1, 56089, null, 6
+format, 66418, 1, 41930, org, 1079
+print, 68148, 1, 52736, file, 1261
+list, 68181, 1, 66585, recursive, 12
+range, 90915, 1, 71222, timezone, 1
+isinstance, 103025, 2, 103025, , 
+len, 154737, 1, 154734, , 

@@ -1,168 +1,140 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 astropy.coordinates.distances.spherical_to_cartesian, 1, 3, 1, , 
 astropy.constants.R_earth.to, 1, 1, 1, , 
-astropy.constants.m_p.to, 1, 1, 1, , 
-astropy.coordinates.make_transform_graph_docs, 1, 1, 1, , 
-astropy.coordinates.builtin_frames._make_transform_graph_docs, 1, 0, 1, , 
 astropy.wcs.utils.FRAME_WCS_MAPPINGS.append, 1, 1, 1, , 
 astropy.wcs.utils.celestial_frame_to_wcs, 1, 1, 1, , 
-astropy.logger.Conf, 1, 0, 1, , 
+astropy.coordinates.frame_transform_graph.find_shortest_path, 1, 2, 1, , 
+astropy.io.ascii.get_reader, 1, 2, 1, readme, 1
+astropy.units.nm.to, 1, 1, 1, , 
+astropy.io.fits.Header.fromstring, 1, 1, 1, , 
+astropy.visualization.hist, 1, 8, 1, range, 1
+astropy.io.fits.header.Header.fromstring, 1, 1, 1, , 
+astropy.io.fits.delval, 1, 2, 1, , 
+astropy.convolution.kernels.Gaussian2DKernel, 1, 1, 1, , 
+astropy.io.fits.FITS_rec.from_columns, 1, 1, 1, , 
+astropy.modeling.models.Moffat1D, 1, 4, 1, , 
+astropy.modeling.models.Box1D, 1, 3, 1, , 
 astropy.utils.xml.check.check_anyuri, 1, 1, 1, , 
 astropy.coordinates.Attribute, 1, 1, 1, default, 1
 astropy.coordinates.QuantityAttribute, 1, 2, 1, default, 1
+astropy.table.MaskedColumn, 1, 3, 1, mask, 1
 astropy.coordinates.frame_transform_graph.get_names, 1, 0, 1, , 
-astropy._erfa.obl80, 1, 2, 1, , 
-astropy._erfa.obl06, 1, 2, 1, , 
-astropy.coordinates.get_body_barycentric_posvel, 1, 2, 1, , 
+astropy.modeling.models.Const2D, 1, 1, 1, amplitude, 1
+astropy.io.registry.IORegistryError, 1, 1, 1, , 
 astropy.io.registry._readers.clear, 1, 0, 1, , 
 astropy.io.registry._readers.update, 1, 1, 1, , 
-astropy.__version__.startswith, 1, 1, 1, , 
-astropy.nddata.utils.block_replicate, 1, 3, 1, , 
-astropy.models.fitting.NonLinearLSQFitter, 1, 1, 1, , 
-astropy.coordinates.CartesianDifferential, 1, 1, 1, , 
-astropy.coordinates.frame_transform_graph.find_shortest_path, 1, 2, 1, , 
-astropy.io.fits.hdu.hdulist.fitsopen, 1, 3, 1, null, 1
-astropy.units.AA.to, 1, 3, 1, , 
-astropy.io.votable.writeto, 1, 2, 1, , 
-astropy.io.fits.Header.fromstring, 1, 1, 1, , 
-astropy.visualization.hist, 1, 8, 1, range, 1
-astropy.units.nm.to, 1, 1, 1, , 
-astropy.coordinates.TransformGraph, 1, 0, 1, , 
-astropy.coordinates.builtin_frames.make_transform_graph_docs, 1, 1, 1, , 
-astropy.io.registry.get_formats, 1, 1, 1, , 
-astropy.io.registry.identify_format, 1, 6, 1, , 
-astropy.io.ascii.get_reader, 1, 2, 1, readme, 1
-astropy.modeling.models.Const2D, 1, 1, 1, amplitude, 1
 astropy.units.um.to, 1, 2, 1, equivalencies, 1
-astropy.io.fits.header.Header.fromstring, 1, 1, 1, , 
-astropy.modeling.models.Chebyshev2D, 1, 2, 1, , 
-astropy.stats.funcs.binom_conf_interval, 1, 3, 1, conf, 1
-astropy._erfa.xys00a, 1, 1, 1, , 
-astropy._erfa.c2ixys, 1, 3, 1, , 
-astropy._erfa.sp00, 1, 1, 1, , 
-astropy._erfa.pom00, 1, 3, 1, , 
-astropy._erfa.era00, 1, 1, 1, , 
-astropy.io.fits.FITSDiff, 1, 2, 1, , 
-astropy.convolution.kernels.Gaussian2DKernel, 1, 1, 1, , 
-astropy.visualization.quantity_support, 1, 0, 1, , 
-astropy.io.fits.FITS_rec.from_columns, 1, 1, 1, , 
-astropy._erfa.dtf2d, 1, 2, 1, , 
-astropy._erfa.d2dtf, 1, 4, 1, , 
-astropy.units.brightness_temperature, 1, 2, 1, , 
-astropy.modeling.models.Mapping, 1, 1, 1, , 
-astropy.modeling.utils._BoundingBox.validate, 1, 2, 1, , 
-astropy.modeling.models.Moffat1D, 1, 4, 1, , 
-astropy.modeling.models.Box1D, 1, 3, 1, , 
-astropy.coordinates.EarthLocation.of_site, 1, 1, 1, , 
-astropy.visualization.wcsaxes.WCSAxes, 1, 3, 1, wcs, 1
-astropy.visualization.ManualInterval, 1, 2, 1, , 
-astropy.cosmology.WMAP9.H, 1, 1, 1, , 
-astropy.table.MaskedColumn, 1, 3, 1, mask, 1
+astropy.modeling.fitting.LinearLSQFitter, 1, 0, 1, , 
 astropy.units.Gyr.to, 1, 1, 1, , 
 astropy.units.km.to, 1, 1, 1, , 
 astropy.units.J.to, 1, 1, 1, , 
 astropy.units.arcmin.to, 1, 1, 1, , 
 astropy.units.eV.to, 1, 1, 1, , 
+astropy.stats.funcs.binom_conf_interval, 1, 3, 1, conf, 1
+astropy.tables.vstack, 1, 1, 1, , 
 astropy.cosmology.WMAP9.distmod, 1, 1, 1, , 
+astropy.coordinates.TransformGraph, 1, 0, 1, , 
+astropy.coordinates.builtin_frames.make_transform_graph_docs, 1, 1, 1, , 
 astropy.convolution.kernels.Tophat2DKernel, 1, 1, 1, , 
 astropy.convolution.kernels.AiryDisk2DKernel, 1, 1, 1, , 
-astropy.units.quantity.Quantity, 1, 1, 1, , 
-astropy.io.fits.Header.fromtextfile, 1, 2, 1, endcard, 1
-astropy.units.min.to, 1, 1, 1, , 
-astropy.coordinates.earth_orientation.obliquity, 1, 2, 1, algorithm, 1
-astropy.units.AU.to, 1, 1, 1, , 
-astropy.units.add_enabled_equivalencies, 1, 1, 1, , 
-astropy.io.registry.IORegistryError, 1, 1, 1, , 
-astropy.tables.vstack, 1, 1, 1, , 
 astropy.units.s.to, 1, 1, 1, , 
+astropy.io.fits.FITSDiff, 1, 2, 1, , 
+astropy.stats.sigma_clip, 1, 1, 1, , 
 astropy.io.fits.Section, 1, 1, 1, , 
 astropy.io.fits.StreamingHDU, 1, 2, 1, , 
+astropy.units.brightness_temperature, 1, 2, 1, , 
+astropy.units.quantity.Quantity, 1, 1, 1, , 
 astropy.units.solRad.in_units, 1, 1, 1, , 
 astropy.units.earthRad.in_units, 1, 1, 1, , 
 astropy.units.AU.in_units, 1, 1, 1, , 
-astropy.modeling.models.Gaussian1D.__init__, 1, 5, 1, null, 1
-astropy.cosmology.Planck15.kpc_comoving_per_arcmin, 1, 1, 1, , 
-astropy.cosmology.WMAP9.kpc_comoving_per_arcmin, 1, 1, 1, , 
-astropy.relativity.velocities.v_from_z, 1, 2, 1, , 
-astropy.stats.histogram, 1, 3, 1, bins, 1
-astropy.nddata.StdDevUncertainty, 1, 1, 1, , 
-astropy.io.votable.table.PEDANTIC, 1, 0, 1, , 
-astropy.stats.sigma_clip, 1, 1, 1, , 
 astropy.modeling.functional_models.Moffat2D, 1, 5, 1, amplitude, 1
 astropy.modeling.functional_models.Gaussian2D, 1, 6, 1, amplitude, 1
+astropy.io.fits.Header.fromtextfile, 1, 2, 1, endcard, 1
 astropy.tests.pytest_plugins.pytest_report_header, 1, 1, 1, , 
+astropy.units.min.to, 1, 1, 1, , 
+astropy.modeling.models.Gaussian1D.__init__, 1, 5, 1, null, 1
+astropy.cosmology.WMAP9.H, 1, 1, 1, , 
+astropy.coordinates.earth_orientation.obliquity, 1, 2, 1, algorithm, 1
+astropy.units.AU.to, 1, 1, 1, , 
+astropy.stats.histogram, 1, 3, 1, bins, 1
 astropy.utils.iers.IERS.close, 1, 0, 1, , 
 astropy.utils.iers.IERS_Auto.open, 1, 0, 1, , 
 astropy.utils.iers.IERS_A.open, 1, 1, 1, , 
+astropy.units.add_enabled_equivalencies, 1, 1, 1, , 
+astropy.coordinates.EarthLocation.of_address, 1, 1, 1, , 
 astropy.cosmology.Planck15.comoving_distance, 1, 1, 1, , 
-astropy.io.registry._writers.items, 1, 0, 1, , 
-astropy.table.table.Table, 1, 1, 1, , 
+astropy.nddata.NDData.__init__, 1, 4, 1, null, 1
 astropy.constants.c.to_value, 1, 1, 1, , 
-astropy.visualization.AsinhStretch, 1, 0, 1, , 
 astropy.visualization.ContrastBiasStretch, 1, 2, 1, , 
 astropy.visualization.HistEqStretch, 1, 1, 1, , 
-astropy.visualization.LinearStretch, 1, 0, 1, , 
 astropy.visualization.LogStretch, 1, 0, 1, , 
 astropy.visualization.PowerDistStretch, 1, 1, 1, a, 1
 astropy.visualization.PowerStretch, 1, 1, 1, a, 1
 astropy.visualization.SinhStretch, 1, 0, 1, , 
 astropy.visualization.SqrtStretch, 1, 0, 1, , 
 astropy.visualization.SquaredStretch, 1, 0, 1, , 
-astropy.units.u.to, 1, 1, 1, , 
-astropy.units.magnitude_zero_points.enable, 1, 0, 1, , 
-astropy.coordinates.EarthLocation.of_address, 1, 1, 1, , 
-astropy.nddata.NDData.__init__, 1, 4, 1, null, 1
 astropy.units.jupiterMass.to, 1, 1, 1, , 
 astropy.io.fits.STRIP_HEADER_WHITESPACE, 1, 0, 1, , 
-astropy.config.write_default_config, 1, 2, 1, , 
-astropy.modeling.models.Sky2Pix_TAN, 1, 0, 1, , 
-astropy.modeling.rotations.RotateCelestial2Native, 1, 3, 1, , 
-astropy.modeling.models.Pix2Sky_TAN, 1, 0, 1, , 
-astropy.modeling.rotations.RotateNative2Celestial, 1, 3, 1, , 
-astropy.cosmology.WMAP7.age, 1, 1, 1, , 
-astropy.wcs.utils.proj_plane_pixel_scales, 1, 1, 1, , 
-astropy.log._log, 1, 4, 1, , 
-astropy.coordinates.PhysicsSphericalRepresentation, 1, 3, 1, r, 1
-astropy.utils.introspection.minversion, 1, 2, 1, , 
-astropy.units.doppler_optical, 1, 1, 1, , 
-astropy.coordinates.FK5Coordinates, 1, 3, 1, unit, 1
-astropy.constants.G.to, 1, 1, 1, , 
-astropy.wcs.find_all_wcs, 1, 1, 1, , 
-astropy.utils.data.download_files_in_parallel, 1, 1, 1, , 
+astropy.nddata.StdDevUncertainty, 1, 1, 1, , 
+astropy.io.registry._writers.items, 1, 0, 1, , 
+astropy.table.table.Table, 1, 1, 1, , 
+astropy.units.u.to, 1, 1, 1, , 
 astropy.cosmology.get_current, 1, 0, 1, , 
 astropy.coordinates.FK5, 1, 3, 1, ra, 1
-astropy.coordinates.FrameAttribute, 1, 1, 1, default, 1
+astropy.units.magnitude_zero_points.enable, 1, 0, 1, , 
 astropy.coordinates.QuantityFrameAttribute, 1, 2, 1, default, 1
 astropy.units.equivalencies.spectral, 1, 0, 1, , 
+astropy.config.write_default_config, 1, 2, 1, , 
 astropy.utils.exceptions.AstropyDeprecationWarning, 1, 1, 1, , 
 astropy.nddata.convolve, 1, 3, 1, boundary, 1
 astropy.wcs.WCS.__init__, 1, 3, 1, null, 1
 astropy.units.au.in_units, 1, 1, 1, , 
 astropy.io.fits.GroupData, 1, 4, 1, bitpix, 1
 astropy.tests.pytest_plugins.pytest_runtest_setup, 1, 1, 1, , 
-astropy.io.fits.delval, 1, 2, 1, , 
+astropy.modeling.models.Sky2Pix_TAN, 1, 0, 1, , 
+astropy.modeling.rotations.RotateCelestial2Native, 1, 3, 1, , 
+astropy.modeling.models.Pix2Sky_TAN, 1, 0, 1, , 
+astropy.modeling.rotations.RotateNative2Celestial, 1, 3, 1, , 
+astropy.cosmology.WMAP7.age, 1, 1, 1, , 
+astropy.log._log, 1, 4, 1, , 
+astropy.coordinates.PhysicsSphericalRepresentation, 1, 3, 1, r, 1
+astropy.utils.introspection.minversion, 1, 2, 1, , 
+astropy.coordinates.FK5Coordinates, 1, 3, 1, unit, 1
+astropy.io.fits.Card._comment_FSC_RE.match, 1, 1, 1, , 
+astropy.wcs.find_all_wcs, 1, 1, 1, , 
+astropy.utils.data.download_files_in_parallel, 1, 1, 1, , 
+astropy.visualization.ManualInterval, 1, 2, 1, , 
+astropy.visualization.AsymmetricPercentileInterval, 1, 2, 1, , 
+astropy.stats.funcs.sigma_clip, 1, 3, 1, , 
+astropy.units.hourangle.to, 1, 2, 1, , 
+astropy.cosmology.Planck13.age, 1, 1, 1, , 
+astropy.coordinates.angles.Angle, 1, 2, 1, unit, 1
+astropy._erfa.jd2cal, 1, 2, 1, , 
+astropy._erfa.cal2jd, 1, 3, 1, , 
+astropy.extern.six.moves.cPickle.load, 1, 1, 1, , 
+astropy.time.erfa_time.era_gd2gc, 1, 4, 1, , 
 astropy.io.registry._is_best_match, 2, 3, 2, , 
 astropy.extern.six.moves.zip, 2, 2, 2, , 
+astropy.constants.m_p.to, 2, 1, 2, , 
 astropy.samp.SAMPIntegratedClient, 2, 2, 1, metadata, 1
 astropy.io.votable.ucd.UCDWords, 2, 0, 2, , 
-astropy.cosmology.WMAP9.differential_comoving_volume, 2, 1, 2, , 
-astropy.io.registry._readers.items, 2, 0, 2, , 
-astropy.units.equivalencies.spectral_density, 2, 1, 2, , 
-astropy.nddata.utils.block_reduce, 2, 3, 2, , 
-astropy.coordinates.Galactocentric.galcen_v_sun.to_cartesian, 2, 0, 2, , 
+astropy.coordinates.make_transform_graph_docs, 2, 1, 2, , 
+astropy.coordinates.builtin_frames._make_transform_graph_docs, 2, 0, 2, , 
+astropy.logger.Conf, 2, 0, 2, , 
+astropy._erfa.obl80, 2, 2, 2, , 
+astropy._erfa.obl06, 2, 2, 2, , 
+astropy.models.fitting.NonLinearLSQFitter, 2, 1, 2, , 
+astropy.__version__.startswith, 2, 1, 2, , 
+astropy.nddata.utils.block_replicate, 2, 3, 2, , 
+astropy.cosmology.Planck15.H, 2, 1, 2, , 
+astropy.stats.median_absolute_deviation, 2, 1, 2, , 
 astropy.units.Jy.to, 2, 2, 2, equivalencies, 2
-astropy.wcs.wcs.WCS, 2, 2, 2, naxis, 2
-astropy.units.spectral_density, 2, 1, 2, , 
-astropy.coordinates.TimeAttribute, 2, 1, 2, default, 2
-astropy.convolution.Box2DKernel, 2, 1, 2, width, 2
-astropy.constants.m_e.to, 2, 1, 2, , 
-astropy.wcs.utils.is_proj_plane_distorted, 2, 1, 2, , 
-astropy.wcs.WcsError, 2, 1, 2, , 
-astropy.modeling.fitting.LinearLSQFitter, 2, 0, 2, , 
-astropy.units.imperial.enable, 2, 0, 2, , 
-astropy.nddata.NDDataRef, 2, 6, 2, unit, 2
-astropy.modeling.models.AffineTransformation2D, 2, 2, 2, matrix, 2
-astropy.modeling.models.RotateNative2Celestial, 2, 4, 2, name, 2
+astropy.units.AA.to, 2, 3, 2, , 
+astropy.coordinates.Galactocentric.galcen_v_sun.to_cartesian, 2, 0, 2, , 
+astropy.io.votable.writeto, 2, 2, 2, , 
+astropy.io.registry.get_formats, 2, 1, 2, , 
+astropy.io.registry.identify_format, 2, 6, 2, , 
+astropy.visualization.quantity_support, 2, 0, 2, , 
 astropy.modeling.models.Gaussian1D, 2, 3, 2, , 
 astropy.modeling.models.GaussianAbsorption1D, 2, 3, 2, , 
 astropy.modeling.models.Lorentz1D, 2, 3, 2, , 
@@ -176,174 +148,212 @@ astropy.modeling.models.Linear1D, 2, 2, 2, ,
 astropy.modeling.models.Const1D, 2, 1, 2, , 
 astropy.modeling.models.Redshift, 2, 1, 2, , 
 astropy.modeling.models.Sine1D, 2, 2, 2, , 
+astropy.modeling.models.Chebyshev1D, 2, 1, 2, , 
 astropy.modeling.models.Legendre1D, 2, 1, 2, , 
 astropy.modeling.models.Polynomial1D, 2, 1, 2, , 
-astropy.visualization.mpl_normalize.ImageNormalize, 2, 3, 2, stretch, 2
-astropy.coordinates.Distance, 2, 2, 1, allow_negative, 1
+astropy.wcs.utils.is_proj_plane_distorted, 2, 1, 2, , 
+astropy.wcs.WcsError, 2, 1, 2, , 
+astropy.io.registry._readers.items, 2, 0, 2, , 
+astropy.units.equivalencies.spectral_density, 2, 1, 2, , 
+astropy.cosmology.distmod, 2, 1, 2, , 
 astropy.units.keV.to, 2, 1, 2, , 
 astropy.coordinates.get_moon, 2, 1, 2, , 
-astropy.stats.funcs.median_absolute_deviation, 2, 1, 2, , 
-astropy.cosmology.distmod, 2, 1, 2, , 
+astropy.units.spectral_density, 2, 1, 2, , 
+astropy.units.imperial.enable, 2, 0, 2, , 
+astropy.coordinates.TimeAttribute, 2, 1, 2, default, 2
+astropy.coordinates.Distance, 2, 1, 1, distmod, 1
+astropy._erfa.dtf2d, 2, 2, 1, , 
+astropy._erfa.d2dtf, 2, 4, 2, , 
 astropy.units.Rsun.in_units, 2, 1, 2, , 
 astropy.units.Rearth.in_units, 2, 1, 2, , 
+astropy.units.pixel_scale, 2, 1, 2, , 
+astropy.modeling.models.Mapping, 2, 1, 2, , 
+astropy.modeling.utils._BoundingBox.validate, 2, 2, 2, , 
 astropy.tests.pytest_plugins.pytest_addoption, 2, 1, 2, , 
-astropy.relativity.velocities.z_from_v, 2, 2, 2, , 
-astropy.units.format.latex.Latex, 2, 0, 2, , 
+astropy.cosmology.Planck15.kpc_comoving_per_arcmin, 2, 1, 2, , 
+astropy.cosmology.WMAP9.kpc_comoving_per_arcmin, 2, 1, 2, , 
+astropy.relativity.velocities.v_from_z, 2, 2, 2, , 
 astropy.stats.knuth_bin_width, 2, 2, 1, return_bins, 1
 astropy.stats.scott_bin_width, 2, 2, 1, return_bins, 1
-astropy.units.pixel_scale, 2, 1, 2, , 
 astropy.cosmology.default_cosmology.get_cosmology_from_string, 2, 1, 2, , 
-astropy.units.pc.to, 2, 1, 2, , 
-astropy.units.Msun.to, 2, 1, 2, , 
-astropy.config.configuration.update_default_config, 2, 3, 1, version, 1
+astropy.visualization.AsinhStretch, 2, 0, 2, , 
+astropy.visualization.LinearStretch, 2, 0, 2, , 
 astropy.io.fits.STRIP_HEADER_WHITESPACE.set, 2, 1, 2, , 
 astropy.units.core._normalize_equivalencies, 2, 1, 2, , 
-astropy.table.unique, 2, 1, 1, keys, 1
-astropy.log.log, 2, 2, 2, , 
-astropy.log.warn, 2, 1, 2, , 
-astropy.coordinates.GalacticCoordinates, 2, 3, 2, unit, 2
-astropy.convolution.Gaussian2DKernel, 2, 2, 1, null, 1
-astropy.units.UnitError, 2, 1, 2, , 
+astropy.units.Msun.to, 2, 1, 2, , 
+astropy.config.configuration.update_default_config, 2, 3, 1, version, 1
 astropy.extern.six.moves.urllib.parse.urljoin, 2, 2, 2, , 
-astropy.cosmology.Planck15.H, 2, 1, 2, , 
+astropy.table.unique, 2, 2, 1, keys, 1
+astropy.log.log, 2, 2, 2, , 
+astropy.coordinates.GalacticCoordinates, 2, 3, 2, unit, 2
+astropy.units.UnitError, 2, 1, 2, , 
+astropy.wcs.Wcsprm, 2, 0, 2, , 
+astropy.utils.console.ProgressBar, 2, 1, 2, , 
+astropy.extern.six.moves.cPickle.dump, 2, 2, 2, , 
+astropy.units.d.to, 2, 1, 2, , 
 astropy.io.registry._get_valid_format, 3, 6, 3, , 
-astropy.cosmology.WMAP9.luminosity_distance, 3, 1, 3, , 
-astropy.io.fits.Card, 3, 2, 2, , 
+astropy.coordinates.get_body_barycentric_posvel, 3, 2, 3, , 
 astropy.stats.mad_std, 3, 2, 2, axis, 2
+astropy.cosmology.Planck15.clone, 3, 1, 2, H0, 3
 astropy.coordinates.Latitude, 3, 1, 2, unit, 1
-astropy.stats.median_absolute_deviation, 3, 1, 3, , 
+astropy.io.fits.hdu.hdulist.fitsopen, 3, 3, 2, null, 3
+astropy.coordinates.Galactocentric, 3, 0, 2, galcen_distance, 1
+astropy.convolution.Box2DKernel, 3, 1, 3, width, 3
 astropy.io.fits.convenience._stat_filename_or_fileobj, 3, 1, 3, , 
 astropy.io.fits.convenience.fitsopen, 3, 2, 3, mode, 3
 astropy.io.fits.convenience._File, 3, 2, 3, mode, 3
-astropy.io.fits.header.Header.fromfile, 3, 1, 3, , 
-astropy.utils.isiterable, 3, 1, 3, , 
+astropy._erfa.xys00a, 3, 1, 3, , 
+astropy._erfa.c2ixys, 3, 3, 3, , 
+astropy._erfa.sp00, 3, 1, 3, , 
+astropy._erfa.pom00, 3, 3, 3, , 
+astropy._erfa.era00, 3, 1, 3, , 
+astropy.nddata.NDDataRef, 3, 6, 3, unit, 3
 astropy.units.solMass.to, 3, 1, 3, , 
-astropy.units.kpc.to, 3, 1, 3, , 
-astropy.modeling.models.Sersic2D, 3, 7, 3, amplitude, 3
+astropy.stats.funcs.median_absolute_deviation, 3, 1, 3, , 
 astropy.cosmology.default_cosmology.get, 3, 0, 3, , 
-astropy.coordinates.solar_system_ephemeris.set, 3, 1, 3, , 
-astropy.coordinates.get_body, 3, 3, 3, , 
-astropy.units.format.utils.get_grouped_by_powers, 3, 2, 3, , 
-astropy.log.error, 3, 1, 3, , 
+astropy.modeling.models.Sersic2D, 3, 7, 3, amplitude, 3
+astropy.constants.m_e.to, 3, 1, 3, , 
+astropy.io.votable.table.PEDANTIC, 3, 0, 3, , 
 astropy.convolution.Moffat2DKernel, 3, 4, 3, y_size, 3
 astropy.modeling.fitting.LevMarLSQFitter, 3, 0, 3, , 
-astropy.nddata.NDDataArray.__init__, 3, 4, 2, null, 3
-astropy.units.arcsec.to, 3, 1, 3, , 
+astropy.modeling.models.AffineTransformation2D, 3, 2, 3, matrix, 3
+astropy.modeling.models.RotateNative2Celestial, 3, 4, 3, name, 3
+astropy.coordinates.EarthLocation.of_site, 3, 1, 3, , 
+astropy.coordinates.get_body, 3, 3, 3, , 
+astropy.coordinates.SkyCoord.from_name, 3, 1, 3, , 
+astropy.units.format.latex.Latex, 3, 0, 3, , 
 astropy.extern.six.moves.urllib.parse.urlunparse, 3, 1, 3, , 
 astropy.wcs.WCS.wcs_world2pix, 3, 4, 2, , 
-astropy.cosmology.Planck15.clone, 3, 1, 2, H0, 3
-astropy.time.TimeDelta, 4, 1, 3, null, 1
-astropy.extern.six.moves.xrange, 4, 1, 4, , 
-astropy.coordinates.Galactocentric, 4, 0, 2, galcen_distance, 2
-astropy.units.rad.to, 4, 1, 4, , 
+astropy.units.arcsec.to, 3, 1, 3, , 
+astropy.cosmology.WMAP9.differential_comoving_volume, 4, 1, 4, , 
+astropy.nddata.utils.block_reduce, 4, 3, 4, , 
+astropy.wcs.wcs.WCS, 4, 2, 4, naxis, 4
+astropy.convolution.Gaussian2DKernel, 4, 1, 2, y_size, 1
 astropy.units.year.to, 4, 1, 4, , 
 astropy.modeling.models.Gaussian2D, 4, 5, 2, amplitude, 3
-astropy.constants.Ryd.to, 4, 2, 4, equivalencies, 4
-astropy.modeling.models.Shift, 4, 2, 2, name, 2
-astropy.modeling.models.Scale, 4, 2, 2, name, 2
+astropy.units.kpc.to, 4, 1, 4, , 
+astropy.units.rad.to, 4, 1, 4, , 
 astropy.units.megaparsec.to, 4, 1, 4, , 
+astropy.modeling.blackbody.blackbody_lambda, 4, 2, 4, temperature, 4
+astropy.log.error, 4, 1, 4, , 
 astropy.units.pc.in_units, 4, 1, 4, , 
-astropy.coordinates.SkyCoord.from_name, 4, 1, 3, frame, 1
+astropy.relativity.velocities.z_from_v, 4, 2, 4, , 
+astropy.units.format.utils.get_grouped_by_powers, 4, 2, 4, , 
 astropy.io.fits.table_to_hdu, 4, 1, 4, , 
-astropy.cosmology.WMAP7.luminosity_distance, 4, 1, 4, , 
+astropy.nddata.NDDataArray.__init__, 4, 4, 2, null, 4
 astropy.wcs.WCS.wcs_pix2world, 4, 3, 2, , 
-astropy.time.Time.now, 5, 0, 5, , 
-astropy.wcs.utils.WCS_FRAME_MAPPINGS.append, 5, 1, 5, , 
-astropy.coordinates.frame_transform_graph.transform, 5, 3, 5, , 
-astropy.io.fits.BinTableHDU, 5, 1, 3, data, 2
-astropy.units.spectral, 5, 0, 5, , 
+astropy.cosmology.WMAP7.luminosity_distance, 4, 1, 4, , 
+astropy.wcs.utils.proj_plane_pixel_scales, 4, 1, 4, , 
+astropy.io.votable.parse_single_table, 5, 1, 4, pedantic, 1
+astropy.io.fits.Card, 5, 2, 4, , 
 astropy.coordinates.Longitude, 5, 2, 3, wrap_angle, 2
-astropy.cosmology.core.FlatLambdaCDM, 5, 2, 5, H0, 2
+astropy.io.fits.BinTableHDU, 5, 1, 3, data, 2
+astropy.io.fits.header.Header.fromfile, 5, 1, 5, , 
+astropy.modeling.models.Scale, 5, 2, 3, name, 3
+astropy.modeling.models.Shift, 5, 2, 3, name, 3
 astropy.io.ascii.convert_numpy, 5, 1, 5, , 
-astropy.units.deg.to, 5, 1, 5, , 
-astropy.visualization.ImageNormalize, 5, 3, 2, stretch, 3
+astropy.coordinates.frame_transform_graph.transform, 5, 3, 5, , 
+astropy.units.Mpc.to, 5, 1, 5, , 
 astropy.cosmology.Planck15.angular_diameter_distance_z1z2, 5, 2, 5, , 
-astropy.utils.data.get_pkg_data_filename, 5, 1, 5, , 
-astropy.cosmology.w0waCDM, 5, 9, 5, wa, 5
+astropy.coordinates.solar_system_ephemeris.set, 5, 1, 5, , 
+astropy.units.pc.to, 5, 1, 5, , 
 astropy.cosmology.Planck15.luminosity_distance, 6, 1, 6, , 
-astropy.units.add_enabled_units, 6, 1, 6, , 
-astropy.utils.data._find_pkg_data_path, 6, 1, 6, , 
+astropy.time.Time.now, 6, 0, 6, , 
 astropy.cosmology.z_at_value, 6, 4, 4, null, 4
-astropy.tests.pytest_plugins.pytest_configure, 6, 1, 6, , 
+astropy.units.spectral, 6, 0, 6, , 
+astropy.extern.six.moves.xrange, 6, 1, 6, , 
 astropy.table.write, 6, 3, 6, format, 6
-astropy.modeling.models.Chebyshev1D, 6, 1, 6, , 
-astropy.coordinates.match_coordinates_sky, 6, 3, 6, nthneighbor, 6
-astropy.units.Mpc.to, 6, 1, 6, , 
 astropy.io.fits.convenience._makehdu, 6, 2, 6, , 
-astropy.units.deg.is_equivalent, 6, 1, 6, , 
 astropy.io.fits.convenience.table_to_hdu, 6, 1, 6, , 
+astropy.utils.data._find_pkg_data_path, 6, 1, 6, , 
+astropy.constants.Ryd.to, 6, 2, 6, equivalencies, 6
+astropy.cosmology.core.FlatLambdaCDM, 6, 2, 6, H0, 2
 astropy.constants.h.to, 6, 1, 6, , 
+astropy.units.deg.is_equivalent, 6, 1, 6, , 
+astropy.visualization.ImageNormalize, 6, 3, 2, stretch, 4
+astropy.coordinates.Galactic, 6, 3, 4, l, 4
 astropy.units.dex, 6, 1, 5, , 
+astropy.tests.helper.assert_quantity_allclose, 6, 2, 6, , 
 astropy.io.votable.parse, 7, 1, 7, , 
-astropy.coordinates.EarthLocation.from_geodetic, 7, 3, 4, lon, 5
-astropy.coordinates.CartesianRepresentation, 7, 1, 6, , 
+astropy.wcs.utils.WCS_FRAME_MAPPINGS.append, 7, 1, 7, , 
 astropy.cosmology.FlatLambdaCDM, 7, 1, 4, null, 4
-astropy.table.join, 7, 4, 3, join_type, 5
+astropy.tests.pytest_plugins.pytest_configure, 7, 1, 7, , 
 astropy.io.fits.append, 7, 3, 7, header, 1
+astropy.utils.isiterable, 7, 1, 7, , 
+astropy.utils.data.get_pkg_data_filename, 7, 1, 7, , 
+astropy.log.warn, 7, 1, 7, , 
 astropy.extern.six.moves.urllib.parse.urlparse, 8, 1, 8, , 
-astropy.wcs.utils.wcs_to_celestial_frame, 8, 1, 8, , 
-astropy.table.QTable, 8, 2, 5, names, 5
-astropy.convolution.convolve_fft, 8, 6, 3, normalize_kernel, 8
-astropy.utils.data.download_file, 8, 1, 4, cache, 4
-astropy.units.doppler_radio, 8, 1, 8, , 
+astropy.units.add_enabled_units, 8, 1, 8, , 
+astropy.cosmology.WMAP9.luminosity_distance, 8, 1, 8, , 
+astropy.coordinates.EarthLocation.from_geodetic, 8, 4, 4, lon, 6
 astropy.stats.poisson_conf_interval, 8, 2, 8, interval, 8
-astropy.coordinates.Galactic, 8, 3, 5, l, 6
-astropy.io.votable.parse_single_table, 9, 2, 5, pedantic, 5
+astropy.wcs.utils.wcs_to_celestial_frame, 9, 1, 9, , 
+astropy.table.Table.from_pandas, 9, 1, 9, , 
+astropy.table.QTable, 9, 1, 5, names, 4
+astropy.coordinates.CartesianRepresentation, 9, 1, 8, , 
 astropy.io.ascii.write, 9, 4, 7, format, 4
+astropy.table.join, 9, 4, 3, keys, 6
 astropy.io.registry.register_reader, 10, 3, 10, , 
-astropy.units.day.to, 10, 1, 10, , 
-astropy.units.CompositeUnit, 10, 3, 10, bases, 2
-astropy.coordinates.ICRS, 10, 2, 7, ra, 8
+astropy.time.TimeDelta, 10, 1, 9, null, 1
+astropy.io.fits.getval, 10, 3, 5, ext, 4
+astropy.coordinates.match_coordinates_sky, 10, 3, 10, nthneighbor, 10
 astropy.units.dB, 10, 1, 10, , 
-astropy.modeling.blackbody.blackbody_lambda, 10, 2, 10, temperature, 10
 astropy.io.registry.register_identifier, 11, 3, 10, force, 1
-astropy.io.registry.register_writer, 11, 3, 11, , 
-astropy.constants.k_B.to, 11, 1, 11, , 
 astropy.coordinates.AltAz, 11, 2, 7, location, 11
 astropy.cosmology.Planck15.angular_diameter_distance, 11, 1, 11, , 
-astropy.units.allclose, 12, 2, 12, , 
-astropy.table.Table.from_pandas, 12, 1, 12, , 
+astropy.io.registry.register_writer, 12, 3, 12, , 
+astropy.constants.k_B.to, 12, 1, 12, , 
+astropy.units.day.to, 12, 1, 12, , 
+astropy.utils.data.download_file, 12, 1, 5, cache, 7
+astropy.convolution.convolve_fft, 12, 6, 7, normalize_kernel, 12
+astropy.coordinates.Angle, 12, 2, 10, unit, 10
+astropy.constants.G.to, 12, 1, 12, , 
+astropy.units.CompositeUnit, 13, 3, 13, bases, 5
 astropy.coordinates.ICRSCoordinates, 13, 3, 13, unit, 13
-astropy.io.fits.getval, 14, 2, 9, ext, 4
-astropy.coordinates.EarthLocation, 14, 3, 7, lon, 12
-astropy.coordinates.Angle, 15, 2, 11, unit, 11
+astropy.modeling.Parameter, 14, 1, 14, default, 14
+astropy.units.doppler_radio, 15, 1, 15, , 
+astropy.coordinates.ICRS, 15, 2, 12, ra, 13
+astropy.coordinates.EarthLocation, 15, 3, 8, lon, 13
 astropy.io.fits.new_table, 16, 1, 16, , 
-astropy.config.ConfigItem, 16, 2, 16, , 
-astropy.table.hstack, 16, 1, 16, , 
-astropy.units.set_enabled_equivalencies, 17, 1, 17, , 
-astropy.units.json, 18, 0, 18, , 
-astropy.units.UnitConversionError, 19, 1, 19, , 
+astropy.table.hstack, 17, 1, 17, , 
+astropy.units.deg.to, 18, 1, 18, , 
+astropy.units.allclose, 22, 2, 22, , 
+astropy.units.UnitConversionError, 23, 1, 23, , 
 astropy.log.warning, 24, 1, 24, , 
-astropy.log.info, 26, 1, 26, , 
-astropy.convolution.convolve, 27, 2, 18, normalize_kernel, 5
-astropy.units.def_unit, 28, 2, 13, format, 6
-astropy.io.fits.ColDefs, 31, 1, 31, , 
+astropy.convolution.convolve, 30, 2, 21, normalize_kernel, 5
+astropy.units.json, 30, 0, 30, , 
+astropy.log.info, 30, 1, 30, , 
+astropy.coordinates.FrameAttribute, 34, 1, 34, default, 34
+astropy.io.fits.ColDefs, 35, 1, 35, , 
+astropy.config.ConfigItem, 35, 2, 35, , 
 astropy.io.registry.read, 36, 4, 33, null, 36
 astropy.io.fits.setval, 36, 5, 13, value, 36
 astropy.coordinates.RepresentationMapping, 37, 2, 33, defaultunit, 4
 astropy.io.registry.write, 38, 4, 37, null, 38
+astropy.units.def_unit, 38, 2, 19, namespace, 8
 astropy.log.setLevel, 39, 1, 39, , 
-astropy.io.fits.writeto, 40, 3, 19, clobber, 15
-astropy.io.fits.ImageHDU, 45, 2, 24, name, 26
-astropy.table.vstack, 47, 1, 39, metadata_conflicts, 5
-astropy.io.fits.BinTableHDU.from_columns, 48, 1, 37, header, 6
-astropy.io.fits.Header, 54, 0, 35, cards, 6
-astropy.io.ascii.read, 63, 1, 44, delimiter, 9
-astropy.io.fits.getheader, 77, 1, 59, ext, 1
-astropy.table.Column, 86, 2, 34, description, 45
-astropy.wcs.WCS, 89, 1, 73, naxis, 25
-astropy.table.Table.read, 90, 2, 41, format, 45
-astropy.units.UnitsError, 101, 1, 101, , 
-astropy.log.debug, 109, 1, 109, , 
-astropy.time.Time, 115, 2, 74, format, 77
-astropy.io.fits.getdata, 116, 1, 85, header, 13
-astropy.coordinates.SkyCoord, 122, 3, 64, frame, 72
-astropy.constants.c.to, 125, 1, 125, , 
-astropy.io.fits.HDUList, 131, 1, 114, , 
-astropy.io.fits.PrimaryHDU, 150, 1, 60, header, 50
-astropy.table.Table, 165, 2, 67, names, 85
-astropy.io.fits.Column, 210, 3, 109, array, 210
-astropy.units.quantity_input, 235, 1, 120, horizon, 42
-astropy.units.Unit, 557, 1, 531, parse_strict, 18
-astropy.io.fits.open, 627, 1, 507, memmap, 36
-astropy.units.Quantity, 1076, 2, 629, unit, 197
+astropy.io.fits.writeto, 43, 3, 21, clobber, 16
+astropy.io.ascii.read, 47, 1, 28, names, 7
+astropy.units.set_enabled_equivalencies, 48, 1, 48, , 
+astropy.io.fits.BinTableHDU.from_columns, 54, 1, 39, name, 9
+astropy.table.vstack, 57, 1, 44, metadata_conflicts, 6
+astropy.io.fits.ImageHDU, 63, 2, 40, name, 37
+astropy.io.fits.Header, 70, 0, 47, cards, 6
+astropy.table.Table.read, 84, 2, 39, format, 46
+astropy.table.Column, 88, 2, 36, name, 47
+astropy.io.fits.getheader, 111, 1, 90, ext, 2
+astropy.coordinates.SkyCoord, 112, 3, 52, frame, 77
+astropy.wcs.WCS, 124, 1, 99, naxis, 36
+astropy.time.Time, 125, 2, 80, format, 81
+astropy.log.debug, 136, 1, 136, , 
+astropy.units.UnitsError, 143, 1, 143, , 
+astropy.io.fits.HDUList, 151, 1, 133, hdus, 4
+astropy.constants.c.to, 152, 1, 152, , 
+astropy.table.Table, 165, 2, 65, names, 82
+astropy.io.fits.getdata, 176, 1, 145, header, 10
+astropy.io.fits.PrimaryHDU, 178, 2, 74, header, 75
+astropy.io.fits.Column, 232, 3, 131, array, 232
+astropy.units.quantity_input, 371, 1, 181, horizon, 60
+astropy.units.Unit, 770, 1, 733, parse_strict, 26
+astropy.io.fits.open, 792, 1, 664, memmap, 42
+astropy.units.Quantity, 1485, 2, 837, unit, 250

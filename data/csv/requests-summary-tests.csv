@@ -1,60 +1,60 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 requests.exceptions.InvalidURL, 1, 1, 1, , 
+requests.get.assert_called, 1, 0, 1, , 
 requests.exceptions.TooManyRedirects, 1, 0, 1, , 
 requests.get.assert_has_calls, 1, 2, 1, any_order, 1
-requests.get.assert_called, 1, 0, 1, , 
 requests.pop, 1, 1, 1, , 
 requests.utils.get_netrc_auth, 1, 2, 1, raise_errors, 1
 requests.put.assert_not_called, 1, 0, 1, , 
 requests.patch.assert_called_with, 1, 3, 1, json, 1
 requests.patch.assert_not_called, 1, 0, 1, , 
-requests.compat.json.load, 2, 1, 2, , 
 requests.patch, 2, 1, 2, , 
+requests.compat.json.load, 2, 1, 2, , 
 requests.structures.CaseInsensitiveDict, 2, 1, 2, , 
-requests.cookies.create_cookie, 2, 3, 1, domain, 2
-requests.auth.HTTPBasicAuth, 2, 2, 2, , 
 requests.get.assert_called_once_with, 2, 2, 2, null, 2
 requests.post.assert_called_once_with, 2, 2, 2, null, 2
 requests.head.assert_called_once_with, 2, 2, 2, null, 2
 requests.put.assert_called_once_with, 2, 2, 2, null, 2
 requests.patch.assert_called_once_with, 2, 2, 2, null, 2
 requests.delete.assert_called_once_with, 2, 2, 2, null, 2
+requests.cookies.create_cookie, 2, 3, 1, domain, 2
 requests.exceptions.ReadTimeout, 2, 1, 2, , 
+requests.auth.HTTPBasicAuth, 2, 2, 2, , 
 requests.post.assert_not_called, 2, 0, 2, , 
 requests.request.assert_called_once, 2, 0, 2, , 
-requests.auth.HTTPDigestAuth, 3, 2, 3, , 
 requests.exceptions.ContentDecodingError, 3, 1, 2, , 
-requests.exceptions.ConnectTimeout, 3, 1, 2, , 
 requests.compat.quote_plus, 3, 1, 3, , 
+requests.exceptions.ConnectTimeout, 3, 1, 2, , 
 requests.get.assert_not_called, 3, 0, 3, , 
 requests.certs.where, 4, 0, 4, , 
 requests.Timeout, 4, 1, 2, , 
 requests.put.assert_called_with, 4, 3, 4, null, 3
 requests.delete.assert_called_with, 4, 2, 4, null, 3
-requests.RequestException, 4, 1, 3, , 
-requests.utils.rewind_body, 5, 1, 5, , 
+requests.RequestException, 5, 1, 4, , 
 requests.append, 5, 1, 5, , 
+requests.auth.HTTPDigestAuth, 6, 2, 6, , 
 requests.exceptions.Timeout, 6, 0, 5, , 
 requests.models.Response, 6, 0, 6, , 
 requests.exceptions.RequestException, 7, 1, 6, , 
-requests.options, 9, 1, 9, , 
-requests.HTTPError, 9, 1, 9, response, 2
 requests.ConnectionError, 10, 1, 8, , 
+requests.HTTPError, 10, 1, 9, response, 2
+requests.utils.rewind_body, 10, 1, 10, , 
 requests.post.assert_called_with, 10, 3, 9, null, 7
-requests.request, 12, 3, 4, headers, 4
-requests.exceptions.HTTPError, 13, 0, 8, response, 4
-requests.exceptions.ConnectionError, 16, 0, 13, , 
+requests.exceptions.ConnectionError, 15, 0, 12, , 
+requests.request, 15, 3, 6, url, 4
+requests.exceptions.HTTPError, 16, 0, 9, response, 6
 requests.packages.urllib3.disable_warnings, 18, 0, 11, , 
-requests.head, 19, 2, 9, allow_redirects, 7
-requests.cookies.RequestsCookieJar, 19, 0, 19, , 
 requests.get.assert_called_with, 20, 2, 16, null, 13
 requests.compat.json.loads, 21, 1, 21, , 
+requests.head, 23, 2, 12, allow_redirects, 10
 requests.compat.json.dumps, 26, 2, 19, cls, 22
-requests.session, 37, 0, 37, , 
-requests.delete, 106, 1, 58, headers, 43
-requests.Request, 117, 2, 47, json, 34
-requests.Session, 154, 0, 154, , 
-requests.Response, 257, 0, 257, , 
-requests.put, 294, 2, 167, data, 219
-requests.post, 437, 2, 196, data, 269
-requests.get, 1623, 1, 866, headers, 327
+requests.cookies.RequestsCookieJar, 27, 0, 27, , 
+requests.session, 54, 0, 54, , 
+requests.options, 66, 1, 66, , 
+requests.Request, 178, 2, 59, data, 54
+requests.Response, 293, 0, 293, , 
+requests.Session, 302, 0, 302, , 
+requests.delete, 322, 1, 274, headers, 43
+requests.put, 1025, 2, 783, data, 836
+requests.post, 1504, 2, 1124, data, 1204
+requests.get, 3771, 1, 2114, params, 838

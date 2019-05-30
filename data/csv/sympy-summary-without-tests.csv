@@ -1,22 +1,33 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+sympy.mpmath.workdps, 1, 1, 1, , 
+sympy.mpmath.mpc, 1, 2, 1, , 
+sympy.mpmath.exp, 1, 1, 1, , 
+sympy.mpmath.erfc, 1, 1, 1, , 
 sympy.ratsimp, 1, 1, 1, , 
 sympy.parsing.sympy_tokenize.generate_tokens, 1, 1, 1, , 
-sympy.geometry.intersection, 1, 2, 1, , 
-sympy.Segment, 1, 2, 1, , 
+sympy.ln, 1, 1, 1, , 
 sympy.postorder_traversal, 1, 1, 1, , 
+sympy.physics.mechanics.init_vprinting, 1, 0, 1, , 
 sympy.ones, 1, 1, 1, , 
 sympy.GramSchmidt, 1, 1, 1, , 
 sympy.horner, 1, 1, 1, , 
-sympy.functions.elementary.piecewise.Piecewise, 1, 1, 1, , 
-sympy.Identity, 1, 1, 1, , 
-sympy.pretty_print, 1, 1, 1, , 
-sympy.stats.Poisson, 1, 2, 1, , 
 sympy.Array, 1, 1, 1, , 
-sympy.special.polynomials.hermite, 1, 2, 1, , 
-sympy.Curve, 1, 2, 1, , 
-sympy.fourier_transform, 1, 3, 1, , 
-sympy.inverse_fourier_transform, 1, 3, 1, , 
-sympy.LaplaceTransform, 1, 3, 1, , 
+sympy.primefactors, 1, 1, 1, , 
+sympy.functions.elementary.piecewise.Piecewise, 1, 1, 1, , 
+sympy.div, 1, 2, 1, , 
+sympy.denom, 1, 1, 1, , 
+sympy.numbers.Number, 1, 1, 1, , 
+sympy.solveset, 1, 3, 1, domain, 1
+sympy.physics.mechanics.find_dynamicsymbols, 1, 1, 1, , 
+sympy.abc._clash.copy, 1, 0, 1, , 
+sympy.deg, 1, 1, 1, , 
+sympy.rad, 1, 1, 1, , 
+sympy.__version__.split, 1, 1, 1, , 
+sympy.Expr, 1, 1, 1, , 
+sympy.physics.wigner.wigner_3j, 1, 6, 1, , 
+sympy.geometry.intersection, 1, 2, 1, , 
+sympy.Segment, 1, 2, 1, , 
+sympy.pretty_print, 1, 1, 1, , 
 sympy.physics.hep.gamma_matrices.GammaMatrix.simplify_gpgp, 1, 1, 1, , 
 sympy.physics.hep.gamma_matrices.GammaMatrix.simplify_lines, 1, 1, 1, , 
 sympy.cxxcode, 1, 3, 1, null, 1
@@ -26,6 +37,7 @@ sympy.rcode, 1, 3, 1, null, 1
 sympy.julia_code, 1, 3, 1, null, 1
 sympy.mathematica_code, 1, 3, 1, null, 1
 sympy.octave_code, 1, 3, 1, null, 1
+sympy.limit, 1, 3, 1, , 
 sympy.Add._from_args, 1, 1, 1, , 
 sympy.Mul._from_args, 1, 1, 1, , 
 sympy.logic.boolalg.to_dnf, 1, 1, 1, , 
@@ -35,34 +47,26 @@ sympy.Pow.__new__, 1, 3, 1, evaluate, 1
 sympy.Basic.__new__, 1, 1, 1, , 
 sympy.IndexedBase.__new__, 1, 3, 1, , 
 sympy.cache.clear_cache, 1, 0, 1, , 
-sympy.Matrix.eye, 1, 1, 1, , 
-sympy.div, 1, 2, 1, , 
-sympy.deg, 1, 1, 1, , 
-sympy.rad, 1, 1, 1, , 
-sympy.Expr, 1, 1, 1, , 
-sympy.Matrix.col_join, 1, 1, 1, , 
-sympy.Matrix.zeros, 1, 2, 1, , 
-sympy.__version__.split, 1, 1, 1, , 
-sympy.EmptySet, 1, 0, 1, , 
-sympy.Union, 1, 1, 1, , 
-sympy.Intersection, 1, 1, 1, , 
-sympy.pi.n, 1, 0, 1, , 
 sympy.physics.mechanics.Lagrangian, 1, 2, 1, , 
 sympy.physics.mechanics.LagrangesMethod, 1, 4, 1, frame, 1
 sympy.ceiling, 1, 1, 1, , 
 sympy.hessian, 1, 2, 1, , 
+sympy.apart, 1, 1, 1, , 
+sympy.EmptySet, 1, 0, 1, , 
+sympy.Union, 1, 1, 1, , 
+sympy.Intersection, 1, 1, 1, , 
+sympy.Dummy.__new__, 1, 2, 1, , 
+sympy.MutableSparseMatrix, 1, 3, 1, , 
+sympy.series, 1, 3, 1, n, 1
+sympy.expand_power_base, 1, 2, 1, force, 1
+sympy.powdenest, 1, 2, 1, force, 1
+sympy.Equivalent, 1, 2, 1, , 
 sympy.sets.sets.Union, 1, 2, 1, null, 1
 sympy.sets.sets.Intersection, 1, 2, 1, null, 1
 sympy.sets.fancysets.Range.__new__, 1, 2, 1, , 
 sympy.printing.pycode.PythonCodePrinter.__init__, 1, 2, 1, settings, 1
-sympy.diffgeom.Manifold, 1, 2, 1, , 
-sympy.Dummy.__new__, 1, 2, 1, , 
-sympy.MutableSparseMatrix, 1, 3, 1, , 
-sympy.Equivalent, 1, 2, 1, , 
 sympy.refine, 1, 1, 1, , 
 sympy.Q.positive, 1, 1, 1, , 
-sympy.expand_power_base, 1, 2, 1, force, 1
-sympy.powdenest, 1, 2, 1, force, 1
 sympy.to_cnf, 1, 1, 1, , 
 sympy.logic.boolalg.Or, 1, 1, 1, , 
 sympy.logic.boolalg.Xor, 1, 1, 1, , 
@@ -72,210 +76,180 @@ sympy.linsolve, 1, 2, 1, ,
 sympy.utilities.codegen.OutputArgument, 1, 4, 1, dimensions, 1
 sympy.utilities.codegen.get_code_generator, 1, 2, 1, , 
 sympy.utilities.codegen.Routine, 1, 5, 1, , 
+sympy.linear_eq_to_matrix, 1, 2, 1, , 
+sympy.powsimp, 1, 2, 1, force, 1
+sympy.lcm, 1, 2, 1, , 
 sympy.gcd, 1, 2, 1, , 
 sympy.printing.printer.Printer.__init__, 1, 2, 1, , 
 sympy.printing.printer.Printer._print, 1, 2, 1, , 
 sympy.printing.codeprinter.CodePrinter.__init__, 1, 2, 1, , 
 sympy.utilities.lambdify.lambdify, 1, 2, 1, , 
-sympy.utilities.postorder_traversal, 1, 1, 1, , 
-sympy.linear_eq_to_matrix, 1, 2, 1, , 
-sympy.pi.evalf, 1, 0, 1, , 
 sympy.symbol.Symbol, 1, 1, 1, , 
+sympy.utilities.postorder_traversal, 1, 1, 1, , 
+sympy.laplace_transform, 1, 3, 1, , 
+sympy.pi.evalf, 1, 0, 1, , 
 sympy.physics.mechanics.mprint, 1, 1, 1, , 
-sympy.numbers.Number, 1, 1, 1, , 
-sympy.abc._clash.copy, 1, 0, 1, , 
-sympy.MutableDenseMatrix, 1, 1, 1, , 
-sympy.physics.wigner.wigner_3j, 1, 6, 1, , 
 sympy.gcd_terms, 2, 1, 2, , 
 sympy.together, 2, 1, 2, , 
 sympy.to_dnf, 2, 2, 2, simplify, 2
 sympy.Or, 2, 1, 1, , 
 sympy.pretty, 2, 2, 1, use_unicode, 1
-sympy.assoc_legendre, 2, 3, 2, , 
 sympy.Symbol.__add__, 2, 2, 2, , 
 sympy.Symbol.__mul__, 2, 2, 2, , 
 sympy.symbol.Dummy.__new__, 2, 2, 2, , 
-sympy.arg, 2, 1, 2, , 
-sympy.physics.mechanics.dot, 2, 2, 2, , 
-sympy.Line.is_parallel, 2, 2, 2, , 
-sympy.ln, 2, 1, 2, , 
-sympy.Ei, 2, 1, 2, , 
-sympy.printing.preview, 2, 5, 2, output, 2
-sympy.functions.elementary.piecewise.ExprCondPair, 2, 2, 2, , 
-sympy.stats.ChiSquared, 2, 2, 2, , 
-sympy.stats.P, 2, 2, 2, , 
-sympy.physics.secondquant.KroneckerDelta, 2, 2, 2, , 
-sympy.cancel, 2, 1, 2, , 
-sympy.series, 2, 2, 1, n, 1
-sympy.line_integrate, 2, 3, 2, , 
-sympy.fcode, 2, 4, 1, standard, 2
 sympy.functions.elementary.exponential.log, 2, 2, 2, , 
 sympy.Not, 2, 1, 2, , 
+sympy.printing.preview, 2, 5, 2, output, 2
+sympy.arg, 2, 1, 2, , 
+sympy.functions.elementary.piecewise.ExprCondPair, 2, 2, 2, , 
+sympy.assoc_legendre, 2, 3, 2, , 
+sympy.physics.quantum.TensorProduct, 2, 1, 2, , 
+sympy.Matrix.col_join, 2, 1, 2, , 
+sympy.Matrix.zeros, 2, 2, 2, , 
+sympy.loggamma, 2, 1, 2, , 
+sympy.Line.is_parallel, 2, 2, 2, , 
+sympy.physics.secondquant.KroneckerDelta, 2, 2, 2, , 
+sympy.fcode, 2, 4, 1, standard, 2
+sympy.printing.ccode, 2, 1, 2, , 
+sympy.Range, 2, 2, 2, , 
 sympy.Add.__new__, 2, 3, 2, null, 1
 sympy.Mul.__new__, 2, 3, 2, null, 1
 sympy.Indexed, 2, 2, 2, , 
-sympy.conjugate, 2, 1, 2, , 
-sympy.lcm, 2, 2, 2, , 
-sympy.roots, 2, 1, 2, , 
-sympy.physics.quantum.TensorProduct, 2, 1, 2, , 
-sympy.printing.ccode, 2, 1, 2, , 
-sympy.Range, 2, 2, 2, , 
-sympy.core.Float, 2, 1, 2, , 
-sympy.loggamma, 2, 1, 2, , 
+sympy.cosh, 2, 1, 2, , 
+sympy.logcombine, 2, 2, 2, force, 1
+sympy.Lambda, 2, 2, 2, , 
 sympy.solvers.solve, 2, 2, 1, , 
-sympy.isprime, 2, 1, 2, , 
-sympy.factorint, 2, 1, 2, , 
+sympy.core.Float, 2, 1, 2, , 
 sympy.functions.sin, 2, 1, 2, , 
+sympy.diffgeom.Manifold, 2, 2, 2, , 
+sympy.summation, 2, 2, 2, , 
 sympy.logic.boolalg.simplify_logic, 2, 2, 2, form, 2
 sympy.StrictLessThan, 2, 2, 2, , 
 sympy.StrictGreaterThan, 2, 2, 2, , 
 sympy.GreaterThan, 2, 2, 2, , 
+sympy.Product, 2, 2, 2, , 
 sympy.Limit, 2, 4, 2, , 
 sympy.simplify_logic, 2, 1, 2, , 
 sympy.Poly.from_list, 2, 2, 2, gens, 2
 sympy.parsing.sympy_parser.parse_expr, 3, 1, 1, evaluate, 1
 sympy.LessThan, 3, 2, 3, , 
-sympy.mpmath.workdps, 3, 1, 3, , 
-sympy.mpmath.mpc, 3, 2, 3, , 
-sympy.mpmath.exp, 3, 1, 3, , 
-sympy.mpmath.erfc, 3, 1, 3, , 
+sympy.trigsimp, 3, 1, 3, , 
 sympy.numbered_symbols, 3, 1, 3, , 
-sympy.primefactors, 3, 1, 3, , 
-sympy.logcombine, 3, 2, 2, force, 1
-sympy.Product, 3, 2, 3, , 
-sympy.mpmath.quad, 3, 2, 1, , 
-sympy.physics.hep.gamma_matrices.GammaMatrix.gamma_trace, 3, 1, 3, , 
-sympy.erfc, 3, 1, 3, , 
-sympy.preorder_traversal, 3, 1, 3, , 
-sympy.Symbol.__new__, 3, 2, 1, null, 2
+sympy.factor, 3, 1, 3, , 
 sympy.count_ops, 3, 2, 2, visual, 1
 sympy.solve_linear_system, 3, 2, 3, , 
-sympy.sstr, 3, 1, 3, , 
-sympy.Symbol.__xnew__, 3, 2, 3, , 
-sympy.denom, 3, 1, 3, , 
-sympy.Idx, 3, 2, 2, , 
+sympy.preorder_traversal, 3, 1, 3, , 
+sympy.physics.matrices.msigma, 3, 1, 3, , 
+sympy.nsimplify, 3, 3, 2, tolerance, 2
 sympy.geometry.Point, 3, 1, 3, , 
 sympy.geometry.Polygon, 3, 1, 3, , 
-sympy.expand_log, 3, 1, 2, force, 1
+sympy.physics.hep.gamma_matrices.GammaMatrix.gamma_trace, 3, 1, 3, , 
+sympy.Symbol.__new__, 3, 2, 1, null, 2
+sympy.Symbol.__xnew__, 3, 2, 3, , 
+sympy.Idx, 3, 2, 2, , 
 sympy.power.Pow, 3, 2, 3, , 
+sympy.expand_log, 3, 1, 2, force, 1
 sympy.utilities.iterables.iterable, 3, 1, 3, , 
+sympy.Sum, 3, 2, 3, , 
 sympy.inv_quick, 3, 1, 3, , 
 sympy.binomial, 3, 2, 3, , 
-sympy.summation, 3, 2, 3, , 
 sympy.asin, 3, 1, 3, , 
-sympy.physics.matrices.msigma, 3, 1, 3, , 
-sympy.matrices.zeros, 4, 2, 3, , 
-sympy.fraction, 4, 1, 4, , 
 sympy.stats.Expectation, 4, 1, 4, , 
-sympy.expand_trig, 4, 1, 4, , 
-sympy.physics.mechanics.init_vprinting, 4, 0, 3, use_latex, 1
+sympy.matrix2numpy, 4, 2, 3, dtype, 3
 sympy.physics.mechanics.msubs, 4, 2, 2, , 
-sympy.Line, 4, 2, 4, , 
-sympy.powsimp, 4, 2, 3, force, 3
-sympy.Lambda, 4, 2, 4, , 
-sympy.Sum, 4, 2, 4, , 
-sympy.MatMul, 4, 2, 4, , 
-sympy.nsimplify, 4, 1, 2, tolerance, 2
+sympy.tanh, 4, 1, 4, , 
 sympy.BlockMatrix, 4, 1, 4, , 
-sympy.ask, 4, 1, 4, , 
-sympy.FiniteSet, 4, 1, 4, , 
+sympy.expand_trig, 4, 1, 4, , 
+sympy.diag, 4, 1, 4, , 
+sympy.Line, 4, 2, 4, , 
 sympy.root, 4, 2, 4, , 
 sympy.sinh, 4, 1, 4, , 
-sympy.prime, 4, 1, 4, , 
+sympy.ask, 4, 1, 4, , 
+sympy.FiniteSet, 4, 1, 4, , 
 sympy.acos, 4, 1, 4, , 
+sympy.Integral, 4, 2, 4, , 
+sympy.fraction, 5, 1, 5, , 
 sympy.Max, 5, 1, 4, , 
+sympy.stats.Normal, 5, 3, 5, , 
 sympy.prod, 5, 1, 5, , 
-sympy.physics.mechanics.find_dynamicsymbols, 5, 1, 5, , 
-sympy.tanh, 5, 1, 5, , 
-sympy.nsolve, 5, 2, 5, , 
-sympy.apart, 5, 1, 4, , 
-sympy.ccode, 5, 1, 3, standard, 1
-sympy.Function.__new__, 5, 3, 5, null, 5
+sympy.sstr, 5, 1, 5, , 
 sympy.combinatorial.factorials.binomial, 5, 2, 5, , 
 sympy.special.polynomials.chebyshevt_poly, 5, 2, 5, , 
-sympy.stats.Normal, 6, 3, 6, , 
+sympy.Function.__new__, 5, 3, 5, null, 5
 sympy.external.import_module, 6, 1, 4, catch, 2
+sympy.erfc, 6, 1, 6, , 
 sympy.Expr.__new__, 6, 2, 4, , 
 sympy.logic.boolalg.And, 6, 1, 6, , 
+sympy.poly, 7, 2, 4, , 
+sympy.SparseMatrix, 7, 3, 5, , 
 sympy.IndexedBase, 7, 1, 5, shape, 2
 sympy.Eq.__new__, 7, 3, 6, evaluate, 6
-sympy.diag, 7, 1, 7, , 
-sympy.SparseMatrix, 7, 3, 5, , 
-sympy.cosh, 7, 1, 7, , 
+sympy.matrices.zeros, 8, 2, 6, , 
 sympy.srepr, 8, 1, 8, , 
+sympy.Float, 8, 1, 7, , 
 sympy.atan, 8, 1, 8, , 
-sympy.physics.hep.gamma_matrices.GammaMatrix, 8, 3, 5, , 
-sympy.utilities.lambdify, 8, 3, 7, modules, 2
+sympy.Poly, 8, 2, 5, , 
 sympy.chebyshevt, 8, 2, 8, , 
+sympy.physics.hep.gamma_matrices.GammaMatrix, 8, 3, 5, , 
 sympy.gamma, 9, 1, 9, , 
-sympy.inverse_laplace_transform, 9, 3, 8, noconds, 1
+sympy.collect, 9, 2, 5, evaluate, 4
+sympy.atan2, 9, 2, 9, , 
 sympy.And, 10, 2, 7, evaluate, 8
-sympy.matrix2numpy, 10, 2, 9, dtype, 9
 sympy.Pow, 10, 3, 7, evaluate, 7
+sympy.physics.mechanics.inertia, 10, 4, 10, , 
+sympy.MatrixSymbol, 10, 3, 9, , 
+sympy.dsolve, 10, 2, 6, simplify, 4
+sympy.utilities.lambdify, 10, 3, 9, modules, 4
 sympy.Point, 10, 2, 10, , 
-sympy.plot, 10, 2, 6, ylim, 3
-sympy.atan2, 10, 2, 10, , 
-sympy.laplace_transform, 10, 4, 7, noconds, 7
-sympy.poly, 10, 2, 4, , 
-sympy.Float, 11, 1, 8, , 
-sympy.collect, 11, 2, 7, evaluate, 4
-sympy.Poly, 11, 2, 8, , 
-sympy.physics.mechanics.inertia, 12, 4, 12, , 
-sympy.MatrixSymbol, 12, 3, 11, , 
-sympy.solveset, 13, 2, 9, domain, 4
+sympy.ccode, 11, 1, 9, standard, 1
+sympy.symarray, 12, 2, 12, , 
+sympy.physics.mechanics.KanesMethod, 13, 4, 13, u_ind, 12
+sympy.N, 13, 1, 10, , 
 sympy.printing.precedence.precedence, 13, 1, 13, , 
-sympy.trigsimp, 14, 1, 14, , 
+sympy.physics.mechanics.RigidBody, 14, 5, 14, , 
 sympy.floor, 14, 1, 14, , 
-sympy.physics.mechanics.RigidBody, 15, 5, 15, , 
-sympy.factorial, 15, 1, 13, evaluate, 2
+sympy.factorial, 14, 1, 12, evaluate, 2
+sympy.init_printing, 15, 0, 9, use_unicode, 4
 sympy.Dummy, 16, 1, 9, , 
-sympy.Integral, 16, 2, 16, , 
-sympy.physics.mechanics.KanesMethod, 17, 4, 17, u_ind, 16
-sympy.factor, 17, 1, 9, , 
-sympy.N, 18, 1, 13, , 
+sympy.physics.mechanics.Particle, 16, 3, 16, , 
+sympy.Derivative, 17, 2, 16, null, 1
+sympy.expand, 18, 1, 18, , 
+sympy.tan, 19, 1, 17, evaluate, 2
 sympy.ImmutableMatrix, 19, 1, 19, , 
 sympy.Abs, 19, 1, 17, evaluate, 2
-sympy.Add, 20, 1, 9, evaluate, 8
-sympy.pprint, 20, 1, 19, null, 1
+sympy.cse, 20, 2, 16, symbols, 14
 sympy.Number, 21, 1, 21, , 
-sympy.tan, 21, 1, 19, evaluate, 2
-sympy.physics.mechanics.Particle, 22, 3, 22, , 
-sympy.Piecewise, 22, 2, 16, , 
-sympy.symarray, 22, 2, 22, , 
-sympy.Mul, 24, 3, 13, evaluate, 16
-sympy.eye, 24, 1, 24, , 
-sympy.cse, 25, 2, 18, symbols, 14
-sympy.DeferredVector, 25, 1, 25, , 
-sympy.limit, 25, 3, 21, dir, 4
-sympy.expand, 30, 1, 29, power_exp, 1
-sympy.physics.mechanics.ReferenceFrame, 32, 1, 32, , 
-sympy.S, 32, 1, 32, , 
-sympy.physics.mechanics.Point, 36, 1, 36, , 
-sympy.dsolve, 38, 2, 23, simplify, 4
-sympy.Derivative, 42, 2, 37, null, 1
+sympy.Piecewise, 21, 2, 15, , 
+sympy.integrate, 22, 2, 19, , 
+sympy.Add, 22, 1, 10, evaluate, 9
+sympy.var, 22, 1, 19, positive, 3
+sympy.S, 23, 1, 23, , 
+sympy.eye, 23, 1, 23, , 
+sympy.Eq, 24, 2, 24, , 
+sympy.physics.mechanics.ReferenceFrame, 26, 1, 26, , 
+sympy.physics.mechanics.Point, 27, 1, 27, , 
+sympy.Mul, 30, 3, 14, evaluate, 17
+sympy.DeferredVector, 32, 1, 32, , 
+sympy.Function, 34, 1, 32, commutative, 1
+sympy.physics.mechanics.dynamicsymbols, 37, 1, 32, , 
+sympy.pprint, 40, 1, 39, null, 1
 sympy.Wild, 44, 1, 18, exclude, 26
-sympy.var, 45, 1, 33, positive, 8
-sympy.physics.mechanics.dynamicsymbols, 45, 1, 41, , 
 sympy.re, 47, 1, 47, , 
-sympy.log, 52, 1, 43, evaluate, 5
-sympy.integrate, 58, 2, 48, , 
-sympy.Function, 66, 1, 64, description, 1
-sympy.Eq, 66, 2, 61, evaluate, 1
-sympy.zeros, 72, 2, 56, , 
+sympy.log, 50, 1, 41, evaluate, 5
+sympy.sin, 65, 1, 63, evaluate, 2
+sympy.simplify, 66, 1, 65, null, 1
+sympy.latex, 70, 1, 66, symbol_names, 2
+sympy.zeros, 73, 2, 56, , 
+sympy.cos, 74, 1, 72, evaluate, 2
 sympy.Interval, 92, 2, 49, , 
-sympy.latex, 108, 1, 103, symbol_names, 2
-sympy.cos, 113, 1, 111, evaluate, 2
-sympy.init_printing, 113, 0, 79, use_latex, 22
-sympy.sin, 120, 1, 118, evaluate, 2
-sympy.Integer, 122, 1, 122, , 
-sympy.sqrt, 132, 1, 132, , 
-sympy.simplify, 133, 1, 132, null, 1
-sympy.exp, 134, 1, 134, , 
-sympy.solve, 159, 2, 106, dict, 6
-sympy.diff, 222, 2, 191, , 
-sympy.lambdify, 347, 3, 279, modules, 92
-sympy.Rational, 434, 2, 397, , 
-sympy.Matrix, 435, 1, 423, , 
-sympy.Symbol, 450, 1, 384, real, 49
-sympy.sympify, 482, 1, 476, locals, 5
-sympy.symbols, 589, 1, 449, real, 73
+sympy.solve, 101, 2, 67, dict, 5
+sympy.sqrt, 113, 1, 113, , 
+sympy.diff, 114, 2, 92, , 
+sympy.Integer, 120, 1, 120, , 
+sympy.exp, 122, 1, 122, , 
+sympy.lambdify, 236, 3, 193, modules, 85
+sympy.Matrix, 381, 1, 370, , 
+sympy.Symbol, 430, 1, 369, real, 49
+sympy.symbols, 431, 1, 340, real, 50
+sympy.Rational, 431, 2, 394, , 
+sympy.sympify, 487, 1, 479, locals, 6

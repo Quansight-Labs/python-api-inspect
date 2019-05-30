@@ -1,12 +1,41 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 IPython.testing.globalipapp.get_ipython, 1, 0, 1, , 
+IPython.paths.get_ipython_package_dir, 1, 0, 1, , 
+IPython.core.inputsplitter.InputSplitter, 1, 0, 1, , 
+IPython.core.inputsplitter.reset, 1, 0, 1, , 
+IPython.core.inputsplitter.physical_line_transforms.insert, 1, 2, 1, , 
+IPython.core.inputsplitter.find_next_indent, 1, 1, 1, , 
 IPython.core.formatters.PlainTextFormatter, 1, 0, 1, , 
-IPython.testing.tools.ipexec_validate, 1, 2, 1, , 
+IPython.testing.decorators.knownfailureif, 1, 2, 1, , 
+IPython.testing.decorators.skip, 1, 1, 1, , 
+IPython.testing.tools.parse_test_output, 1, 1, 1, , 
+IPython.testing.tools.temp_pyfile, 1, 1, 1, , 
+IPython.testing.tools.TempFileMixin.tearDown, 1, 1, 1, , 
 IPython.embed, 1, 1, 1, banner1, 1
-IPython.testing.decorators.skipif, 2, 1, 2, , 
 IPython.nbformat.current.new_code_cell, 2, 1, 2, input, 2
+IPython.core.inputsplitter.push_accepts_more, 2, 0, 2, , 
+IPython.core.inputsplitter.get_indent_spaces, 2, 0, 2, , 
+IPython.core.inputsplitter.get_input_encoding, 2, 0, 2, , 
+IPython.testing.tools.TempFileMixin, 2, 0, 2, , 
+IPython.testing.tools.ipexec, 2, 1, 1, commands, 1
+IPython.lib.deepreload.reload, 2, 2, 1, exclude, 1
+IPython.testing.decorators.onlyif, 2, 2, 2, , 
+IPython.core.inputsplitter.IPythonInputSplitter, 3, 1, 2, line_input_checker, 2
+IPython.core.inputsplitter.transform_cell, 3, 1, 3, , 
+IPython.core.inputtransformer2.HelpEnd, 3, 2, 3, , 
+IPython.core.inputtransformer2.TransformerManager, 3, 0, 3, , 
+IPython.testing.decorators.module_not_available, 3, 1, 3, , 
+IPython.core.inputsplitter.source_reset, 4, 0, 4, , 
+IPython.testing.decorators.skipif, 4, 1, 2, , 
+IPython.testing.tools.fake_input, 4, 1, 4, , 
+IPython.lib.backgroundjobs.BackgroundJobManager, 4, 0, 4, , 
 IPython.nbformat.current.new_notebook, 6, 0, 6, , 
-IPython.testing.decorators.skip_without, 7, 1, 7, , 
-IPython.testing.tools.AssertNotPrints, 19, 1, 14, channel, 4
+IPython.testing.tools.full_path, 6, 2, 6, , 
+IPython.testing.tools.help_all_output_test, 7, 1, 6, , 
+IPython.testing.tools.ipexec_validate, 10, 3, 6, expected_err, 2
+IPython.testing.decorators.skip_without, 11, 1, 11, , 
+IPython.testing.tools.check_pairs, 18, 2, 18, , 
 IPython.get_ipython, 19, 0, 19, , 
-IPython.testing.tools.AssertPrints, 59, 1, 46, channel, 7
+IPython.testing.tools.AssertNotPrints, 23, 1, 18, channel, 4
+IPython.core.inputsplitter.push, 57, 1, 57, , 
+IPython.testing.tools.AssertPrints, 72, 1, 55, suppress, 10

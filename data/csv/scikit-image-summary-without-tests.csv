@@ -1,8 +1,9 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
+skimage.filters.rank.gradient, 1, 2, 1, , 
 skimage.draw.polygon_perimeter, 1, 3, 1, shape, 1
 skimage.draw.line_aa, 1, 1, 1, , 
-skimage.transform.pyramid_reduce, 1, 2, 1, , 
-skimage.filters.rank.gradient, 1, 2, 1, , 
+skimage.external.tifffile.imread, 1, 1, 1, , 
+skimage.feature.match_template, 1, 3, 1, pad_input, 1
 skimage.measure.perimeter, 1, 1, 1, , 
 skimage.segmentation.join_segmentations, 1, 2, 1, , 
 skimage.morphology.skeletonize_3d, 1, 1, 1, , 
@@ -11,170 +12,168 @@ skimage.segmentation.relabel_sequential, 1, 1, 1, ,
 skimage.util.img_as_uint, 1, 1, 1, , 
 skimage.restoration.denoise_bilateral, 1, 4, 1, sigma_color, 1
 skimage.transform.downscale_local_mean, 1, 2, 1, , 
-skimage.filters.sobel_v, 1, 1, 1, , 
 skimage.morphology.diamond, 1, 1, 1, , 
 skimage.morphology.rectangle, 1, 2, 1, , 
-skimage.data.binary_blobs, 1, 5, 1, volume_fraction, 1
-skimage.external.tifffile.TiffSequence, 1, 2, 1, pattern, 1
-skimage.external.tifffile.TiffFile, 1, 1, 1, , 
-skimage.measure.points_in_poly, 1, 2, 1, , 
-skimage.color.rgb2grey, 1, 1, 1, , 
-skimage.filter.threshold_adaptive, 1, 3, 1, offset, 1
-skimage.exposure.exposure.rescale_intensity, 1, 2, 1, in_range, 1
-skimage.future.graph.rag_boundary, 1, 2, 1, , 
-skimage.future.graph.RAG, 1, 0, 1, , 
-skimage.morphology.thin, 1, 1, 1, , 
-skimage.feature.peak.peak_local_max, 1, 2, 1, threshold_abs, 1
 skimage.data.chelsea, 1, 0, 1, , 
 skimage.data.coffee, 1, 0, 1, , 
 skimage.graph.MCP_Geometric, 1, 3, 1, null, 1
 skimage.morphology.binary.binary_dilation, 1, 1, 1, , 
-skimage.filters.thresholding.try_all_threshold, 1, 1, 1, , 
-skimage.filters.threshold_yen, 1, 1, 1, , 
-skimage.feature.register_translation, 1, 2, 1, , 
-skimage.draw.random_shapes, 1, 4, 1, , 
 skimage.transform.estimate_transform, 1, 4, 1, null, 1
-skimage.draw.bezier_curve, 1, 7, 1, weight, 1
+skimage.io.Video, 1, 2, 1, source, 1
+skimage.img_as_int, 1, 2, 1, , 
+skimage.filter.hprewitt, 1, 1, 1, , 
+skimage.filter.median_filter, 1, 3, 1, mask, 1
+skimage.morphology.thin, 1, 1, 1, , 
+skimage.filters.rank.entropy, 1, 2, 1, , 
+skimage.restoration.unwrap_phase, 1, 2, 1, seed, 1
+skimage.filters.thresholding.try_all_threshold, 1, 1, 1, , 
 skimage.restoration.nl_means_denoising, 1, 4, 1, , 
 skimage.__version__.split, 1, 1, 1, , 
-skimage.io.Video, 1, 2, 1, source, 1
 skimage.filter.denoise_tv_chambolle, 1, 4, 1, n_iter_max, 1
-skimage.measure.moments_normalized, 1, 1, 1, , 
-skimage.measure.moments_hu, 1, 1, 1, , 
+skimage.filters.threshold_isodata, 1, 1, 1, , 
+skimage.filters.sobel_v, 1, 1, 1, , 
+skimage.measure.points_in_poly, 1, 2, 1, , 
+skimage.filter.threshold_adaptive, 1, 3, 1, offset, 1
+skimage.exposure.exposure.rescale_intensity, 1, 2, 1, in_range, 1
+skimage.external.tifffile.TiffSequence, 1, 2, 1, pattern, 1
+skimage.external.tifffile.TiffFile, 1, 1, 1, , 
+skimage.future.graph.rag_boundary, 1, 2, 1, , 
+skimage.future.graph.RAG, 1, 0, 1, , 
+skimage.feature.peak.peak_local_max, 1, 2, 1, threshold_abs, 1
+skimage.filters.threshold_yen, 1, 1, 1, , 
+skimage.feature.register_translation, 1, 2, 1, , 
+skimage.draw.bezier_curve, 1, 7, 1, weight, 1
+skimage.draw.random_shapes, 1, 4, 1, , 
 skimage.filter.rank.entropy, 1, 2, 1, , 
 skimage.transform.iradon_sart, 1, 2, 1, theta, 1
 skimage.segmentation.random_walker, 1, 4, 1, copy, 1
-skimage.filter.median_filter, 1, 3, 1, mask, 1
-skimage.filter.hprewitt, 1, 1, 1, , 
-skimage.filters.rank.entropy, 1, 2, 1, , 
-skimage.restoration.unwrap_phase, 1, 2, 1, seed, 1
+skimage.measure.moments_normalized, 1, 1, 1, , 
+skimage.measure.moments_hu, 1, 1, 1, , 
 skimage.morphology.black_tophat, 2, 2, 2, selem, 1
+skimage.util.invert, 2, 1, 2, , 
 skimage.transform.swirl, 2, 11, 2, center, 2
 skimage.morphology.binary_erosion, 2, 2, 2, selem, 1
 skimage.exposure.adjust_sigmoid, 2, 3, 2, cutoff, 2
 skimage.transform.PiecewiseAffineTransform, 2, 0, 2, , 
-skimage.dtype_limits, 2, 2, 2, clip_negative, 2
-skimage.measure.marching_cubes, 2, 2, 2, , 
-skimage.util.invert, 2, 1, 2, , 
+skimage.data.binary_blobs, 2, 5, 2, volume_fraction, 2
 skimage.filters.median, 2, 3, 1, mask, 1
 skimage.morphology.reconstruction, 2, 4, 1, selem, 1
-skimage.feature.match_template, 2, 3, 1, pad_input, 1
 skimage.morphology.medial_axis, 2, 1, 2, , 
 skimage.filters.rank.otsu, 2, 3, 2, mask, 2
-skimage.morphology.is_local_maximum, 2, 1, 2, , 
-skimage.img_as_int, 2, 1, 1, , 
-skimage.feature._canny.canny, 2, 2, 2, null, 2
-skimage.transform.hough_line, 2, 1, 2, , 
-skimage.transform.hough_line_peaks, 2, 3, 2, , 
-skimage.util.dtype.convert, 2, 2, 2, , 
-skimage.filter.canny, 2, 4, 2, sigma, 1
+skimage.color.rgb2grey, 2, 1, 2, , 
 skimage.color.lab2rgb, 2, 1, 2, , 
-skimage.draw.ellipse, 2, 4, 1, shape, 1
+skimage.measure.marching_cubes, 2, 2, 2, , 
+skimage.util.shape.view_as_windows, 2, 3, 2, step, 1
+skimage.draw.ellipse, 2, 6, 1, shape, 1
+skimage.util.dtype.convert, 2, 2, 2, , 
 skimage.filters.canny, 2, 2, 2, sigma, 2
 skimage.filters.roberts, 2, 1, 2, , 
 skimage.io.concatenate_images, 2, 1, 2, , 
+skimage.morphology.is_local_maximum, 2, 1, 2, , 
+skimage.transform.hough_line, 2, 1, 2, , 
+skimage.transform.hough_line_peaks, 2, 3, 2, , 
+skimage.filter.canny, 2, 4, 2, sigma, 1
+skimage.feature.corner_peaks, 2, 2, 2, min_distance, 2
 skimage.data.imread, 2, 1, 1, as_grey, 1
-skimage.filters.threshold_isodata, 2, 1, 2, , 
-skimage.exposure.equalize_hist, 2, 2, 1, null, 1
 skimage.color.convert_colorspace, 2, 3, 2, , 
+skimage.exposure.equalize_hist, 2, 1, 1, null, 1
 skimage.filters.gaussian_filter, 3, 2, 3, sigma, 3
 skimage.morphology.remove_small_holes, 3, 2, 2, connectivity, 1
+skimage.draw.line, 3, 4, 2, , 
 skimage.exposure.adjust_log, 3, 2, 3, null, 2
+skimage.segmentation.felzenszwalb, 3, 4, 3, sigma, 3
 skimage.transform.hough_circle, 3, 2, 3, radius, 1
 skimage.measure.marching_cubes_classic, 3, 3, 3, level, 3
 skimage.measure.mesh_surface_area, 3, 2, 3, , 
 skimage.feature.greycoprops, 3, 2, 3, , 
-skimage.util.shape.view_as_windows, 3, 3, 3, step, 2
+skimage.util.img_as_float, 3, 1, 3, , 
+skimage.util.view_as_windows, 3, 3, 2, window_shape, 2
 skimage.color.deltaE_ciede2000, 3, 2, 3, , 
-skimage.filters.threshold_li, 3, 1, 3, , 
-skimage.segmentation.felzenszwalb, 3, 4, 3, sigma, 3
 skimage.filters.denoise_tv_chambolle, 3, 3, 3, multichannel, 3
 skimage.io.imread_collection, 3, 1, 3, , 
 skimage.transform.pyramid_expand, 3, 3, 2, sigma, 2
+skimage.filters.rank.median, 3, 2, 3, selem, 1
 skimage.segmentation.mark_boundaries, 4, 4, 4, color, 4
-skimage.filters.scharr, 4, 1, 4, , 
-skimage.morphology.binary_dilation, 4, 2, 4, selem, 1
-skimage.draw.line, 4, 4, 3, , 
+skimage.draw.circle, 4, 4, 2, shape, 1
 skimage.transform.matrix_transform, 4, 2, 4, , 
 skimage.measure.block_reduce, 4, 3, 3, cval, 1
-skimage.draw.circle, 4, 4, 2, shape, 1
 skimage.util.pad, 4, 3, 4, mode, 3
-skimage.measure.moments_central, 4, 3, 4, center, 3
 skimage.filter.threshold_otsu, 4, 1, 4, , 
 skimage.morphology.convex_hull_image, 4, 1, 4, , 
-skimage.filters.gabor, 4, 3, 2, theta, 4
-skimage.util.view_as_windows, 4, 3, 3, window_shape, 2
-skimage.filters.rank.median, 4, 2, 4, selem, 1
-skimage.feature.corner_peaks, 4, 2, 4, min_distance, 4
 skimage.exposure.equalize_adapthist, 4, 2, 3, clip_limit, 2
+skimage.measure.moments_central, 4, 3, 4, center, 3
+skimage.filters.threshold_li, 4, 1, 4, , 
+skimage.filters.gabor, 4, 3, 2, theta, 4
 skimage.morphology.label, 5, 3, 2, neighbors, 2
 skimage.morphology.white_tophat, 5, 2, 5, selem, 2
+skimage.feature.peak_local_max, 5, 3, 4, min_distance, 3
+skimage.filters.scharr, 5, 1, 5, , 
 skimage.filters.threshold_local, 5, 2, 5, , 
+skimage.morphology.opening, 5, 2, 3, , 
+skimage.morphology.skeletonize, 5, 1, 5, , 
 skimage.util.crop, 5, 2, 5, , 
+skimage.feature.hog, 5, 8, 2, orientations, 3
+skimage.img_as_uint, 5, 1, 4, , 
 skimage.filters.denoise_bilateral, 6, 3, 6, sigma_range, 6
+skimage.restoration.denoise_tv_chambolle, 6, 3, 6, multichannel, 6
 skimage.segmentation.slic, 6, 6, 2, n_segments, 6
-skimage.color.rgb2ycbcr, 6, 1, 6, , 
-skimage.color.ycbcr2rgb, 6, 1, 6, , 
-skimage.morphology.opening, 6, 2, 5, , 
-skimage.external.tifffile.imread, 6, 1, 6, , 
+skimage.feature.local_binary_pattern, 6, 3, 3, method, 2
 skimage.util.img_as_ubyte, 6, 1, 6, , 
-skimage.feature.local_binary_pattern, 6, 4, 3, method, 2
-skimage.img_as_uint, 6, 1, 5, , 
-skimage.restoration.denoise_tv_chambolle, 7, 3, 6, multichannel, 6
+skimage.morphology.binary_closing, 7, 2, 6, selem, 3
+skimage.morphology.closing, 7, 2, 7, selem, 1
 skimage.morphology.erosion, 7, 2, 6, selem, 4
+skimage.exposure.adjust_gamma, 7, 2, 7, gamma, 3
+skimage.transform.pyramid_reduce, 7, 2, 7, , 
+skimage.data.astronaut, 7, 0, 7, , 
 skimage.morphology.ball, 7, 1, 4, dtype, 3
 skimage.segmentation.find_boundaries, 7, 2, 5, mode, 4
 skimage.measure.moments, 7, 1, 4, order, 3
-skimage.feature.canny, 8, 2, 4, sigma, 5
+skimage.feature.canny, 8, 2, 3, sigma, 4
 skimage.feature.greycomatrix, 8, 6, 3, symmetric, 5
-skimage.transform.ProjectiveTransform, 8, 0, 6, matrix, 2
 skimage.measure.marching_cubes_lewiner, 8, 3, 5, spacing, 6
-skimage.morphology.skeletonize, 8, 1, 8, , 
 skimage.filters.sobel, 8, 1, 7, mask, 1
-skimage.util.img_as_float, 8, 1, 8, , 
-skimage.feature.peak_local_max, 9, 3, 5, min_distance, 5
-skimage.feature.blob_log, 9, 7, 6, max_sigma, 9
-skimage.feature.hog, 9, 8, 3, orientations, 5
+skimage.transform.rescale, 9, 5, 6, anti_aliasing, 4
 skimage.util.random_noise, 9, 3, 7, mode, 8
-skimage.morphology.binary_opening, 10, 2, 9, selem, 6
-skimage.exposure.adjust_gamma, 10, 2, 10, gamma, 6
+skimage.feature._canny.canny, 9, 2, 9, null, 9
+skimage.morphology.binary_opening, 10, 2, 8, selem, 7
 skimage.color.label2rgb, 11, 4, 3, bg_label, 9
 skimage.exposure.histogram, 11, 1, 11, , 
-skimage.morphology.binary_closing, 11, 2, 10, selem, 3
-skimage.morphology.closing, 11, 2, 11, selem, 1
-skimage.data.astronaut, 11, 0, 11, , 
-skimage.io.show, 11, 0, 11, , 
-skimage.color.rgb2lab, 11, 1, 11, , 
-skimage.measure.structural_similarity, 12, 3, 9, dynamic_range, 9
 skimage.img_as_ubyte, 13, 1, 12, , 
-skimage.draw.polygon, 15, 3, 8, shape, 7
-skimage.transform.rescale, 16, 2, 8, anti_aliasing, 5
-skimage.transform.rotate, 16, 2, 6, center, 5
-skimage.measure.compare_ssim, 16, 3, 10, data_range, 6
-skimage.filters.threshold_adaptive, 16, 3, 11, offset, 3
-skimage.filters.gaussian, 17, 2, 11, sigma, 7
+skimage.filters.threshold_adaptive, 13, 3, 8, block_size, 1
+skimage.color.rgb2ycbcr, 14, 1, 14, , 
+skimage.color.ycbcr2rgb, 14, 1, 14, , 
+skimage.color.rgb2lab, 14, 1, 14, , 
+skimage.draw.polygon, 16, 3, 8, shape, 7
+skimage.filters.gaussian, 17, 2, 11, sigma, 8
 skimage.color.hsv2rgb, 17, 1, 17, , 
-skimage.io.imshow, 18, 1, 16, fancy, 1
 skimage.morphology.watershed, 19, 4, 8, mask, 14
+skimage.color.rgb2gray, 20, 1, 20, , 
+skimage.morphology.binary_dilation, 21, 2, 21, selem, 1
 skimage.color.rgb2hsv, 21, 1, 21, , 
 skimage.exposure.rescale_intensity, 23, 2, 9, in_range, 13
-skimage.color.gray2rgb, 24, 1, 23, alpha, 1
-skimage.morphology.dilation, 25, 2, 18, selem, 12
-skimage.io.use_plugin, 26, 1, 26, , 
-skimage.morphology.disk, 27, 1, 23, dtype, 2
-skimage.measure.find_contours, 28, 2, 24, level, 19
-skimage.color.rgb2gray, 30, 1, 30, , 
+skimage.morphology.dilation, 23, 2, 22, selem, 1
+skimage.io.show, 27, 0, 27, , 
+skimage.dtype_limits, 27, 2, 18, clip_negative, 18
+skimage.measure.structural_similarity, 27, 3, 24, dynamic_range, 24
+skimage.color.gray2rgb, 29, 1, 28, alpha, 1
+skimage.measure.find_contours, 29, 2, 25, level, 20
+skimage.io.imshow, 29, 2, 28, fancy, 27
+skimage.transform.ProjectiveTransform, 32, 0, 30, matrix, 2
+skimage.measure.regionprops, 36, 1, 33, intensity_image, 2
 skimage.filters.threshold_otsu, 41, 1, 41, , 
-skimage.transform.AffineTransform, 42, 1, 16, translation, 28
-skimage.segmentation.clear_border, 43, 1, 22, buffer_size, 17
-skimage.measure.regionprops, 44, 1, 32, intensity_image, 3
-skimage.img_as_float, 45, 1, 43, , 
-skimage.morphology.remove_small_objects, 45, 2, 25, min_size, 26
-skimage.morphology.square, 54, 1, 53, , 
-skimage.transform.SimilarityTransform, 55, 1, 47, translation, 51
-skimage.measure.label, 56, 1, 35, background, 12
-skimage.transform.warp, 75, 3, 23, output_shape, 36
-skimage.io.ImageCollection, 94, 1, 56, conserve_memory, 38
-skimage.transform.resize, 186, 3, 66, preserve_range, 79
-skimage.io.imsave, 197, 2, 194, compress, 1
-skimage.io.imread, 414, 1, 306, plugin, 81
+skimage.morphology.remove_small_objects, 43, 2, 25, min_size, 25
+skimage.segmentation.clear_border, 44, 1, 23, buffer_size, 17
+skimage.measure.label, 48, 1, 31, connectivity, 10
+skimage.morphology.square, 55, 1, 54, , 
+skimage.io.use_plugin, 59, 1, 59, , 
+skimage.measure.compare_ssim, 61, 3, 55, data_range, 45
+skimage.transform.rotate, 66, 2, 54, center, 5
+skimage.morphology.disk, 75, 1, 70, dtype, 2
+skimage.img_as_float, 86, 1, 84, , 
+skimage.io.ImageCollection, 115, 1, 50, conserve_memory, 65
+skimage.transform.AffineTransform, 117, 3, 55, translation, 99
+skimage.transform.SimilarityTransform, 126, 1, 74, translation, 100
+skimage.transform.warp, 219, 2, 135, output_shape, 60
+skimage.io.imsave, 233, 2, 230, compress, 1
+skimage.transform.resize, 254, 3, 128, mode, 160
+skimage.io.imread, 427, 1, 321, plugin, 81

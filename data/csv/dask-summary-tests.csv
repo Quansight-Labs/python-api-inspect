@@ -1,200 +1,200 @@
 function, function_count, top_num_args, top_num_args_count, top_keyword, top_keyword_count
 dask.is_dask_colelction, 1, 1, 1, , 
 dask.array.sign, 1, 1, 1, , 
-dask.array.to_tiledb, 1, 2, 1, , 
-dask.array.ma.average, 1, 3, 1, axis, 1
-dask.array.coarsen, 1, 3, 1, , 
 dask.array.random.randint, 1, 4, 1, size, 1
-dask.array.stats.skew, 1, 2, 1, bias, 1
-dask.array.stats.kurtosis, 1, 2, 1, bias, 1
-dask.array.stats.moment, 1, 2, 1, , 
-dask.array.stats.f_oneway, 1, 1, 1, , 
-dask.array.stats.power_divergence, 1, 2, 1, lambda_, 1
-dask.array.stats.skewtest, 1, 1, 1, , 
-dask.array.mean, 1, 1, 1, , 
 dask.dataframe.utils.make_meta, 1, 1, 1, , 
+dask.array.sel, 1, 1, 1, color, 1
 dask.array.core.elemwise, 1, 4, 1, dtype, 1
 dask.array.slicing.normalize_index, 1, 2, 1, , 
-dask.array.sel, 1, 1, 1, color, 1
 dask.array.apply_along_axis, 1, 3, 1, , 
 dask.dataframe.DataFrame._get, 1, 3, 1, get, 1
-dask.dataframe.io.parquet.read_parquet, 1, 3, 1, engine, 1
 dask.array.set_options, 1, 1, 1, get, 1
-dask.array.core._check_regular_chunks, 2, 1, 2, , 
-dask.array.meshgrid, 2, 3, 2, indexing, 2
-dask.array.pad, 2, 4, 2, null, 1
-dask.array.fft.fftfreq, 2, 3, 2, chunks, 2
-dask.array.fft.rfftfreq, 2, 3, 2, chunks, 2
-dask.array.linalg.qr, 2, 1, 2, , 
-dask.array.dot, 2, 2, 2, , 
-dask.array.ma.masked_values, 2, 2, 2, , 
-dask.array.ma.filled, 2, 1, 2, , 
-dask.pop, 2, 1, 2, , 
+dask.array.to_tiledb, 2, 2, 2, , 
+dask.array.mean, 2, 1, 2, , 
 dask.array.topk, 2, 2, 2, , 
 dask.order.order, 3, 1, 3, , 
-dask.array.maximum, 3, 2, 3, , 
-dask.array.to_hdf5, 3, 2, 3, , 
-dask.array.isnull, 3, 1, 3, , 
-dask.array.notnull, 3, 1, 3, , 
-dask.array.frexp, 3, 1, 3, , 
-dask.array.modf, 3, 1, 3, , 
-dask.array.core.map_blocks, 3, 4, 3, dtype, 3
-dask.array.minimum, 3, 2, 3, foo, 3
-dask.array.to_npy_stack, 3, 3, 3, axis, 3
-dask.array.from_npy_stack, 3, 1, 3, , 
-dask.array.vstack, 3, 1, 3, , 
-dask.array.arccos, 3, 1, 3, , 
-dask.array.fromfunction, 3, 5, 2, dtype, 3
-dask.array.ma.masked_where, 3, 2, 3, , 
-dask.array.overlap.overlap, 3, 3, 3, boundary, 3
-dask.array.overlap.trim_overlap, 3, 3, 3, boundary, 3
+dask.array.core._check_regular_chunks, 3, 1, 3, , 
+dask.array.ma.average, 3, 3, 3, axis, 3
+dask.array.coarsen, 3, 3, 3, , 
 dask.array.matmul, 3, 2, 3, , 
 dask.array.gradient, 3, 4, 3, axis, 3
 dask.array.squeeze, 3, 2, 3, axis, 3
 dask.array.allclose, 3, 3, 3, equal_nan, 3
-dask.array.log.__doc__.replace, 3, 2, 3, , 
-dask.array.modf.__doc__.replace, 3, 2, 3, , 
-dask.array.frexp.__doc__.replace, 3, 2, 3, , 
-dask.array.add.outer, 3, 3, 3, out, 3
-dask.array.sin.outer, 3, 2, 3, , 
-dask.bag.Item.from_delayed, 3, 1, 3, , 
-dask.bag.zip, 3, 2, 3, , 
-dask.multiprocessing.get, 3, 2, 3, null, 3
 dask.datasets.timeseries, 3, 0, 3, , 
 dask.visualize, 3, 2, 3, filename, 3
 dask.config.refresh, 3, 1, 3, config, 3
 dask.config.merge, 3, 2, 3, , 
+dask.pop, 3, 1, 3, , 
 dask.array.core.normalize_chunks, 3, 2, 3, , 
 dask.array.Array._finalize, 3, 2, 3, , 
 dask.array.array, 4, 1, 4, , 
 dask.array.core.slices_from_chunks, 4, 1, 4, , 
-dask.bag.from_delayed, 4, 1, 4, , 
-dask.array.exp, 4, 1, 4, , 
-dask.array.broadcast_arrays, 4, 0, 2, , 
-dask.array.optimization.optimize_blockwise, 4, 1, 4, , 
-dask.optimize, 4, 1, 4, , 
-dask.array.tile, 4, 2, 4, , 
-dask.array.apply_gufunc, 4, 5, 2, allow_rechunk, 4
-dask.core.get_deps, 4, 1, 4, , 
+dask.array.maximum, 4, 2, 4, , 
+dask.array.to_hdf5, 4, 2, 4, , 
+dask.array.isnull, 4, 1, 4, , 
+dask.array.notnull, 4, 1, 4, , 
+dask.array.frexp, 4, 1, 4, , 
+dask.array.modf, 4, 1, 4, , 
+dask.array.core.map_blocks, 4, 4, 4, dtype, 4
+dask.array.minimum, 4, 2, 4, foo, 4
+dask.array.to_npy_stack, 4, 3, 4, axis, 4
+dask.array.from_npy_stack, 4, 1, 4, , 
+dask.array.vstack, 4, 1, 4, , 
+dask.array.arccos, 4, 1, 4, , 
+dask.array.fft.fftfreq, 4, 3, 4, chunks, 4
+dask.array.fft.rfftfreq, 4, 3, 4, chunks, 4
+dask.array.ma.masked_values, 4, 2, 4, , 
+dask.array.ma.filled, 4, 1, 4, , 
 dask.array.roll, 4, 3, 4, , 
 dask.array.extract, 4, 2, 4, , 
 dask.array.flatnonzero, 4, 1, 4, , 
 dask.array.nonzero, 4, 1, 4, , 
-dask.array.frompyfunc, 4, 3, 4, , 
-dask.dataframe.demo.daily_stock, 4, 4, 4, start, 4
-dask.dataframe.to_json, 4, 3, 4, compression, 4
-dask.datasets.make_people, 4, 0, 2, npartitions, 1
-dask.array.learn.fit, 4, 5, 4, classes, 4
-dask.array.learn.predict, 4, 2, 4, , 
-dask.array.from_delayed, 5, 3, 5, shape, 5
-dask.array.from_tiledb, 5, 1, 3, attribute, 2
-dask.array.atop, 5, 5, 3, dtype, 5
-dask.array.diagonal, 5, 2, 3, axis1, 3
-dask.array.ma.masked_array, 6, 2, 5, mask, 3
-dask.array.reshape, 6, 2, 6, , 
-dask.array.sum, 6, 1, 6, , 
-dask.array.diag, 6, 1, 6, , 
-dask.array.tensordot, 6, 3, 6, axes, 6
-dask.array.random.multinomial, 6, 4, 6, size, 6
+dask.array.stats.skew, 4, 2, 4, bias, 4
+dask.array.stats.kurtosis, 4, 2, 4, bias, 4
+dask.array.stats.moment, 4, 2, 4, , 
+dask.array.stats.f_oneway, 4, 1, 4, , 
+dask.array.stats.power_divergence, 4, 2, 4, lambda_, 4
+dask.array.stats.skewtest, 4, 1, 4, , 
+dask.array.add.outer, 4, 3, 4, out, 4
+dask.array.sin.outer, 4, 2, 4, , 
+dask.bag.Item.from_delayed, 4, 1, 4, , 
+dask.bag.zip, 4, 2, 4, , 
+dask.multiprocessing.get, 4, 2, 4, null, 4
+dask.dataframe.io.parquet.read_parquet, 4, 2, 3, index, 4
+dask.bag.from_delayed, 5, 1, 5, , 
+dask.array.exp, 5, 1, 5, , 
+dask.array.broadcast_arrays, 6, 0, 3, , 
+dask.array.optimization.optimize_blockwise, 6, 1, 6, , 
+dask.optimize, 6, 1, 6, , 
+dask.array.atop, 6, 5, 4, dtype, 6
+dask.array.meshgrid, 6, 3, 6, indexing, 6
+dask.array.pad, 6, 4, 6, null, 3
+dask.array.apply_gufunc, 6, 5, 3, allow_rechunk, 6
+dask.array.linalg.qr, 6, 1, 6, , 
+dask.array.dot, 6, 2, 6, , 
+dask.core.get_deps, 6, 1, 6, , 
 dask.array.unique, 6, 2, 6, null, 6
 dask.array.isin, 6, 3, 6, invert, 3
 dask.array.unravel_index, 6, 2, 3, , 
-dask.bag.map, 6, 3, 3, , 
-dask.bag.from_url, 6, 1, 6, , 
-dask.bag.compute, 6, 4, 3, scheduler, 4
+dask.array.frompyfunc, 6, 3, 6, , 
+dask.dataframe.to_json, 6, 3, 6, compression, 6
 dask.context._globals.get, 6, 1, 6, , 
-dask.array.store, 7, 4, 4, regions, 4
-dask.array.full, 7, 4, 4, chunks, 7
-dask.array.linalg.inv, 7, 1, 7, , 
-dask.dataframe.Series, 7, 4, 7, , 
+dask.array.from_delayed, 7, 3, 7, shape, 7
+dask.array.fromfunction, 7, 5, 6, dtype, 7
+dask.array.ma.masked_where, 7, 2, 7, , 
+dask.dataframe.demo.daily_stock, 7, 4, 7, start, 7
 dask.array.random.random_integers, 8, 4, 8, size, 8
-dask.array.linalg.svd, 8, 1, 8, , 
-dask.array.repeat, 8, 2, 4, axis, 2
-dask.array.linalg.norm, 8, 4, 8, axis, 8
-dask.array.ma.set_fill_value, 8, 2, 8, , 
-dask.array.percentile, 8, 2, 7, method, 1
+dask.array.reshape, 8, 2, 8, , 
+dask.array.tile, 8, 2, 8, , 
+dask.array.tensordot, 8, 3, 8, axes, 8
 dask.array.take, 8, 3, 4, axis, 4
-dask.array.expm1, 9, 1, 9, , 
-dask.array.transpose, 9, 2, 9, , 
+dask.bag.map, 8, 3, 4, , 
+dask.bag.from_url, 8, 1, 8, , 
+dask.bag.compute, 8, 4, 4, scheduler, 6
+dask.array.store, 9, 4, 6, regions, 6
+dask.array.sum, 9, 1, 9, , 
+dask.array.overlap.overlap, 9, 3, 9, boundary, 9
+dask.array.overlap.trim_overlap, 9, 3, 9, boundary, 9
 dask.array.average, 9, 2, 6, weights, 6
-dask.bag.concat, 9, 1, 9, , 
-dask.array.map_blocks, 10, 4, 6, chunks, 8
-dask.array.asanyarray, 10, 1, 10, , 
-dask.array.core.asarray, 10, 1, 10, , 
-dask.persist, 11, 1, 4, , 
-dask.array.image.imread, 12, 2, 8, imread, 4
-dask.array.ma.masked_greater, 12, 2, 12, , 
+dask.array.from_tiledb, 10, 1, 6, attribute, 4
+dask.array.expm1, 11, 1, 11, , 
+dask.array.transpose, 11, 2, 11, , 
+dask.array.ma.masked_array, 12, 2, 9, mask, 7
+dask.array.diag, 12, 1, 12, , 
 dask.array.compress, 12, 3, 12, axis, 12
 dask.array.argwhere, 12, 1, 12, , 
 dask.array.insert, 12, 4, 12, axis, 12
-dask.bag.read_avro, 12, 2, 8, blocksize, 8
+dask.array.log.__doc__.replace, 12, 2, 12, , 
+dask.array.modf.__doc__.replace, 12, 2, 12, , 
+dask.array.frexp.__doc__.replace, 12, 2, 12, , 
+dask.bag.concat, 12, 1, 12, , 
+dask.datasets.make_people, 12, 0, 6, npartitions, 3
 dask.is_dask_collection, 13, 1, 13, , 
-dask.array.linalg.lstsq, 14, 2, 14, , 
-dask.array.ma.masked_equal, 14, 2, 14, , 
-dask.array.random.choice, 14, 4, 10, size, 14
-dask.dataframe.read_json, 14, 3, 8, orient, 8
-dask.array.from_zarr, 16, 1, 11, chunks, 2
-dask.blockwise.make_blockwise_graph, 16, 8, 10, numblocks, 16
+dask.array.asanyarray, 14, 1, 14, , 
+dask.persist, 15, 1, 8, , 
+dask.array.diagonal, 15, 2, 9, axis1, 9
+dask.array.map_blocks, 16, 4, 9, chunks, 13
+dask.array.repeat, 16, 2, 8, axis, 4
+dask.array.ma.set_fill_value, 16, 2, 16, , 
 dask.array.histogram, 16, 3, 12, bins, 16
 dask.dataframe.merge, 16, 4, 12, right_on, 12
-dask.array.compute, 18, 3, 7, scheduler, 1
-dask.array.random.seed, 18, 1, 18, , 
+dask.array.linalg.norm, 18, 4, 18, axis, 18
 dask.array.einsum, 18, 4, 9, bar, 3
-dask.dataframe.to_parquet, 18, 3, 9, partition_on, 6
-dask.dataframe.optimize, 18, 2, 18, , 
-dask.delayed, 19, 1, 19, pure, 4
+dask.bag.read_avro, 18, 2, 12, blocksize, 12
+dask.array.learn.fit, 18, 5, 18, classes, 18
+dask.array.learn.predict, 18, 2, 18, , 
 dask.array.cov, 19, 2, 10, split_every, 6
 dask.dataframe.Aggregation, 19, 4, 11, , 
-dask.array.stack, 20, 1, 17, axis, 3
+dask.dataframe.Series, 19, 4, 19, , 
+dask.array.linalg.svd, 20, 1, 20, , 
+dask.array.random.multinomial, 20, 4, 20, size, 20
 dask.array.bincount, 20, 2, 12, minlength, 16
 dask.array.count_nonzero, 20, 1, 12, , 
-dask.array.linspace, 21, 4, 9, chunks, 21
-dask.array.indices, 21, 2, 11, chunks, 19
+dask.dataframe.read_json, 20, 3, 12, orient, 11
+dask.array.linalg.inv, 21, 1, 21, , 
+dask.array.random.choice, 21, 4, 15, size, 21
 dask.array.corr, 21, 1, 9, min_periods, 9
+dask.delayed, 24, 1, 24, pure, 4
+dask.blockwise.make_blockwise_graph, 24, 8, 15, numblocks, 24
+dask.array.ma.masked_greater, 24, 2, 24, , 
 dask.array.where, 24, 3, 16, null, 4
-dask.bag.Bag, 25, 3, 25, , 
-dask.dataframe.from_delayed, 26, 2, 11, meta, 17
-dask.array.block, 26, 1, 26, , 
-dask.threaded.get, 26, 2, 26, , 
-dask.array.linalg.lu, 28, 1, 28, , 
+dask.array.core.asarray, 24, 1, 24, , 
+dask.array.from_zarr, 25, 1, 17, chunks, 3
+dask.array.full, 25, 4, 21, chunks, 25
+dask.dataframe.to_parquet, 26, 3, 13, partition_on, 8
+dask.bag.Bag, 27, 3, 27, , 
+dask.array.stack, 27, 1, 23, axis, 4
+dask.array.ma.masked_equal, 28, 2, 28, , 
 dask.config.get, 29, 1, 21, config, 8
-dask.dataframe.from_bcolz, 30, 2, 18, chunksize, 30
 dask.dataframe.map_partitions, 31, 3, 19, meta, 16
-dask.array.random.uniform, 32, 2, 32, size, 32
-dask.dataframe.core.Scalar, 36, 3, 20, , 
+dask.dataframe.from_delayed, 34, 2, 14, meta, 22
+dask.array.random.uniform, 34, 2, 34, size, 34
+dask.array.percentile, 34, 2, 32, method, 2
+dask.array.compute, 37, 3, 21, scheduler, 3
 dask.dataframe.utils.assert_eq, 39, 2, 39, , 
-dask.array.linalg.solve_triangular, 42, 2, 21, lower, 21
-dask.array.linalg.solve, 42, 2, 21, sym_pos, 21
-dask.dataframe.pivot_table, 43, 4, 23, columns, 43
-dask.array.zeros, 45, 2, 45, chunks, 45
-dask.dataframe.from_array, 45, 2, 21, columns, 21
-dask.array.concatenate, 45, 2, 33, axis, 36
-dask.array.result_type, 47, 2, 43, , 
-dask.dataframe.demo.make_timeseries, 51, 6, 35, freq, 49
-dask.dataframe.repartition, 53, 2, 53, divisions, 8
-dask.bag.read_text, 54, 2, 23, blocksize, 15
-dask.bag.range, 57, 2, 57, npartitions, 57
-dask.dataframe.get_dummies, 66, 2, 32, columns, 13
-dask.dataframe.concat, 67, 1, 35, join, 17
-dask.array.Array, 68, 4, 57, chunks, 13
-dask.set_options, 68, 1, 65, get, 34
-dask.base.get_scheduler, 70, 0, 68, scheduler, 2
-dask.dataframe.read_hdf, 72, 2, 44, chunksize, 21
-dask.array.random.RandomState, 75, 1, 71, RandomState, 6
-dask.dataframe.from_dask_array, 77, 1, 47, columns, 17
-dask.get, 82, 2, 78, null, 6
-dask.array.blockwise, 83, 7, 38, dtype, 83
-dask.array.asarray, 90, 1, 90, , 
-dask.array.utils.assert_eq, 96, 2, 90, equal_nan, 5
-dask.compute, 107, 2, 63, scheduler, 18
-dask.array.random.normal, 113, 2, 78, chunks, 113
-dask.dataframe.DataFrame, 132, 4, 132, divisions, 4
-dask.dataframe.read_parquet, 140, 3, 56, engine, 111
-dask.array.random.random, 142, 2, 139, chunks, 137
-dask.dataframe.read_csv, 181, 2, 87, blocksize, 38
-dask.array.arange, 213, 2, 149, chunks, 205
-dask.bag.from_sequence, 238, 2, 166, npartitions, 157
-dask.config.set, 251, 1, 237, scheduler, 57
-dask.array.ones, 536, 2, 502, chunks, 533
-dask.array.from_array, 1979, 2, 1879, chunks, 1682
-dask.dataframe.from_pandas, 2589, 2, 2414, npartitions, 1340
+dask.array.block, 39, 1, 39, , 
+dask.dataframe.from_bcolz, 40, 2, 24, chunksize, 40
+dask.array.linalg.lstsq, 42, 2, 42, , 
+dask.array.indices, 43, 2, 23, chunks, 39
+dask.array.random.seed, 48, 1, 48, , 
+dask.array.result_type, 48, 2, 44, , 
+dask.dataframe.optimize, 51, 2, 51, , 
+dask.threaded.get, 52, 2, 52, , 
+dask.dataframe.repartition, 58, 2, 58, divisions, 8
+dask.dataframe.from_array, 59, 2, 28, columns, 28
+dask.array.concatenate, 62, 2, 44, axis, 48
+dask.array.image.imread, 63, 2, 42, imread, 21
+dask.bag.range, 65, 2, 65, npartitions, 65
+dask.dataframe.concat, 68, 1, 36, join, 17
+dask.bag.read_text, 69, 2, 29, blocksize, 20
+dask.base.get_scheduler, 71, 0, 68, scheduler, 3
+dask.array.zeros, 74, 2, 74, chunks, 74
+dask.set_options, 81, 1, 78, get, 41
+dask.array.linalg.lu, 84, 1, 84, , 
+dask.array.linspace, 87, 4, 39, chunks, 87
+dask.dataframe.core.Scalar, 88, 3, 60, , 
+dask.dataframe.from_dask_array, 97, 1, 55, columns, 24
+dask.array.Array, 99, 4, 70, chunks, 32
+dask.array.utils.assert_eq, 107, 2, 90, equal_nan, 16
+dask.dataframe.pivot_table, 113, 4, 61, columns, 113
+dask.get, 126, 2, 104, null, 25
+dask.compute, 126, 2, 68, scheduler, 27
+dask.array.blockwise, 126, 7, 57, dtype, 126
+dask.array.linalg.solve_triangular, 126, 2, 63, lower, 63
+dask.array.linalg.solve, 126, 2, 63, sym_pos, 63
+dask.dataframe.demo.make_timeseries, 131, 6, 79, freq, 127
+dask.array.asarray, 133, 1, 133, , 
+dask.dataframe.read_hdf, 144, 2, 88, chunksize, 43
+dask.dataframe.get_dummies, 180, 2, 86, columns, 35
+dask.array.random.random, 189, 2, 184, chunks, 181
+dask.array.random.RandomState, 191, 1, 185, RandomState, 9
+dask.dataframe.read_parquet, 205, 3, 84, engine, 167
+dask.dataframe.DataFrame, 230, 4, 230, divisions, 4
+dask.dataframe.read_csv, 240, 2, 117, blocksize, 52
+dask.array.random.normal, 275, 2, 162, chunks, 275
+dask.bag.from_sequence, 320, 2, 222, npartitions, 210
+dask.config.set, 344, 1, 324, scheduler, 74
+dask.array.arange, 478, 2, 244, chunks, 468
+dask.array.ones, 947, 2, 885, chunks, 942
+dask.array.from_array, 3860, 2, 3655, chunks, 3094
+dask.dataframe.from_pandas, 4024, 2, 3796, npartitions, 1711

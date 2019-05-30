@@ -41,7 +41,6 @@ pymc3.theanof.floatX, 2, 1, 2, ,
 pymc3.sample_posterior_predictive_w, 2, 3, 2, , 
 pymc3.init_nuts, 2, 2, 1, n_init, 2
 pymc3.waic, 2, 1, 2, , 
-pymc3.backends.tracetab.trace_to_dataframe, 2, 1, 1, chains, 1
 pymc3.distributions.transforms.lowerbound, 2, 1, 2, , 
 pymc3.distributions.transforms.upperbound, 2, 1, 2, , 
 pymc3.distributions.transforms.interval, 2, 2, 2, , 
@@ -70,7 +69,6 @@ pymc3.HalfCauchy, 3, 2, 3, beta, 2
 pymc3.load_trace, 3, 1, 2, model, 1
 pymc3.CompoundStep, 3, 1, 3, , 
 pymc3.stats._log_post_trace, 3, 2, 3, , 
-pymc3.backends.tracetab.create_flat_names, 3, 2, 3, , 
 pymc3.fit, 3, 1, 2, more_replacements, 1
 pymc3.memoize.clear_cache, 3, 1, 2, , 
 pymc3.callbacks.CheckParametersConvergence, 3, 0, 3, , 
@@ -85,8 +83,7 @@ pymc3.gp.cov.Gibbs, 4, 3, 2, args, 1
 pymc3.gp.TP, 4, 2, 4, nu, 4
 pymc3.gp.LatentKron, 4, 2, 4, mean_func, 4
 pymc3.gp.MarginalKron, 4, 2, 4, mean_func, 4
-pymc3.distributions.multivariate.posdef, 4, 1, 4, , 
-pymc3.backends.tracetab._create_shape, 4, 1, 4, , 
+pymc3.backends.tracetab.trace_to_dataframe, 4, 1, 2, chains, 2
 pymc3.stats._PosteriorQuantileSummary, 4, 2, 4, , 
 pymc3.Flat, 5, 1, 3, shape, 2
 pymc3.Mixture, 5, 4, 5, observed, 5
@@ -99,6 +96,7 @@ pymc3.Slice, 6, 1, 6, null, 2
 pymc3.Point, 6, 2, 4, model, 4
 pymc3.modelcontext, 6, 1, 6, , 
 pymc3.compare, 6, 2, 6, method, 6
+pymc3.backends.tracetab.create_flat_names, 6, 2, 6, , 
 pymc3.Gamma, 7, 4, 5, transform, 4
 pymc3.find_MAP, 7, 2, 4, start, 2
 pymc3.summary, 7, 1, 7, , 
@@ -108,8 +106,10 @@ pymc3.Potential, 7, 2, 7, ,
 pymc3.theanof.change_flags, 7, 1, 5, compute_test_value, 5
 pymc3.stats._StatSummary, 7, 3, 7, , 
 pymc3.Exponential, 8, 2, 6, lam, 5
+pymc3.distributions.multivariate.posdef, 8, 1, 8, , 
 pymc3.sampling._choose_backend, 8, 2, 6, shortcuts, 2
 pymc3.stats._groupby_leading_idxs, 8, 1, 8, , 
+pymc3.backends.tracetab._create_shape, 8, 1, 8, , 
 pymc3.Data, 9, 2, 9, , 
 pymc3.gp.Marginal, 9, 2, 7, cov_func, 3
 pymc3.gp.Latent, 9, 2, 7, cov_func, 3
