@@ -6,7 +6,7 @@ let pkgs = import (builtins.fetchTarball {
     pythonPackages = pkgs.python3Packages;
 in
 pkgs.mkShell {
-  buildInputs = with pythonPackages; [ pkgs.sqlite datasette pkgs.heroku ];
+  buildInputs = with pythonPackages; [ pkgs.sqlite datasette pytest];
 
   shellHook = ''
     export SQLITE_TMPDIR=/tmp

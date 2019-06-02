@@ -84,8 +84,8 @@ def parse_project(db_filename, project, site, owner, repo, ref, filename_extensi
                         continue # parsing error/syntax error
 
                     stats = {}
-                    stats.update(inspect_file_ast(file_ast))
                     stats.update(inspect_file_contents(filename, contents))
+                    stats.update(inspect_file_ast(file_ast))
                     batch_stats[(project, filename, filename_hash)] = stats
     except zipfile.BadZipFile:
         return # invalid zipfile

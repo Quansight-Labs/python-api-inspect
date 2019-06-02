@@ -8,12 +8,6 @@ from .parse import parse_project
 from .whitelist import create_whitelist
 
 
-# some parsings result require more recursion
-# pyinstaller is one example
-# https://github.com/pyinstaller/pyinstaller/issues/2919
-sys.setrecursionlimit(5000)
-
-
 def cli(arguments):
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers()

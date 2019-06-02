@@ -56,7 +56,7 @@ def check_file_previously_parsed(connection, project, filename, filename_hash):
 
 def insert_file_stats(connection, batch_stats):
     content_stats = []
-    api_stats = []
+    function_stats = []
 
     for (project, filename, filename_hash), stats in batch_stats.items():
         file_uuid = str(uuid.uuid4()).upper()
@@ -67,9 +67,10 @@ def insert_file_stats(connection, batch_stats):
         ''', (file_uuid, project, filename, filename_hash))
 
         content_stats.append((file_uuid, json.dumps(stats['contents'])))
-        for namespace in stats['api']:
-            _stats = {'.'.join(key): value for key, value in stats['api'][namespace].items()}
-            api_stats.append((file_uuid, namespace, json.dumps(_stats)))
+
+        for namespace in stats['function']:
+            _stats = {'.'.join(key): value for key, value in stats['function'][namespace].items()}
+            function_stats.append((file_uuid, namespace, json.dumps(_stats)))
 
     with connection:
         result = connection.executemany('''
@@ -77,8 +78,8 @@ def insert_file_stats(connection, batch_stats):
           VALUES (?, ?)
         ''', content_stats)
 
-        if api_stats:
+        if function_stats:
             result = connection.executemany('''
               INSERT INTO FunctionStats (id, namespace, stats)
               VALUES (?, ?, ?)
-            ''', api_stats)
+            ''', function_stats)
