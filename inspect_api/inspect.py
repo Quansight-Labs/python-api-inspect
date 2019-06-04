@@ -1,6 +1,7 @@
 import ast
 import collections
 import sys
+import re
 
 # some parsings result require more recursion
 # pyinstaller is one example
@@ -24,6 +25,39 @@ BUILTIN_FUNCTIONS = {
     'compile', 'globals', 'map', 'reversed', '__import__',
     'complex', 'hasattr', 'max', 'round',
 }
+
+
+def extract_name_attribute_path(node):
+    """numpy.random.random
+
+    assumes Attribute(Attribute(...(Name()))). returns failing place
+    in ast if not
+    """
+    _node = node
+    path = ()
+
+    while isinstance(_node, ast.Attribute):
+        path = (_node.attr,) + path
+        _node = _node.value
+
+    if isinstance(_node, ast.Name):
+        path = (_node.id,) + path
+    else:
+        raise ValueError(_node)
+    return path
+
+
+def expand_path(path, aliases):
+    if path[0] in aliases:
+        return aliases[path[0]] + path[1:]
+    return path
+
+
+def is_path_import_match(path, imports):
+    for i in range(len(path)):
+        if tuple(path[:i+1]) in imports:
+            return True
+    return False
 
 
 class ImportVisitor(ast.NodeVisitor):
@@ -71,30 +105,20 @@ class APIVisitor(ast.NodeVisitor):
         for keyword in keywords:
             self.function_stats[namespace][path]['kwargs'][keyword] += 1
 
+    def add_attribute_stats(self, namespace, path):
+        self.attribute_stats[namespace][path] += 1
+
     def visit_Attribute(self, node):
-        _node = node
-        path = []
+        try:
+            path = extract_name_attribute_path(node)
+            path = expand_path(path, self.aliases)
 
-        while isinstance(_node, ast.Attribute):
-            path.insert(0, _node.attr)
-            _node = _node.value
-
-        if isinstance(_node, ast.Name):
-            if _node.id in self.aliases:
-                path = list(self.aliases[_node.id]) + path
-            else:
-                path.insert(0, _node.id)
-        else:
-            # example: numpy.array().shape
-            # we don't capture shape as an attribute and pass
-            # further inspection down
-            self.visit(_node)
+            if is_path_import_match(path, self.imports):
+                self.add_attribute_stats(path[0], path)
+        except ValueError as e:
+            # visit non matching part of attribute
+            self.visit(e.args[0])
             return
-
-        for i in range(len(path)):
-            if tuple(path[:i+1]) in self.imports:
-                self.attribute_stats[path[0]][tuple(path)] += 1
-                break
 
     def visit_Call(self, node):
         if not isinstance(node.func, (ast.Attribute, ast.Name)):
@@ -104,37 +128,62 @@ class APIVisitor(ast.NodeVisitor):
         num_args = len(node.args) + len(node.keywords)
         keywords = {k.arg for k in node.keywords}
 
-        _node = node.func
-        path = []
+        try:
+            path = extract_name_attribute_path(node.func)
+            path = expand_path(path, self.aliases)
 
-        while isinstance(_node, ast.Attribute):
-            path.insert(0, _node.attr)
-            _node = _node.value
+            if len(path) == 1 and path[0] in BUILTIN_FUNCTIONS:
+                base_namespace = '__builtins__'
+                self.add_function_stats(base_namespace, path, num_args, keywords)
+            elif is_path_import_match(path, self.imports):
+                self.add_function_stats(path[0], path, num_args, keywords)
+        except ValueError as e:
+            # visit non matching part of attribute
+            self.visit(e.args[0])
+            return
 
-        if isinstance(_node, ast.Name):
-            if _node.id in self.aliases:
-                path = list(self.aliases[_node.id]) + path
-            else:
-                path.insert(0, _node.id)
-
-        if len(path) == 1 and path[0] in BUILTIN_FUNCTIONS:
-            base_namespace = '__builtins__'
-            self.add_function_stats('__builtins__', tuple(path), num_args, keywords)
-        else:
-            for i in range(len(path)):
-                if tuple(path[:i+1]) in self.imports:
-                    self.add_function_stats(path[0], tuple(path), num_args, keywords)
-                    break
-
+        # visit each call argument
         for arg in node.args:
             self.visit(arg)
 
 
-
 def inspect_file_contents(filename, contents):
     if filename.endswith('.py'):
-        num_newlines = contents.count(b'\n')
-        stats = {'contents': {'newlines': num_newlines}}
+        lines = contents.split(b'\n')
+        num_newlines = len(lines)
+
+        comment_regex = re.compile(b'^\s*#.*$')
+        num_comment_lines = 0
+
+        whitespace_regex = re.compile(b'^\s*$')
+        num_whitespace_lines = 0
+
+        min_line_length = 99999999
+        max_line_length = 0
+        avg_line_length = 0.0
+
+        for line in lines:
+            if line != b'':
+                min_line_length = min(min_line_length, len(line))
+
+            if comment_regex.match(line):
+                num_comment_lines += 1
+            elif whitespace_regex.match(line):
+                num_whitespace_lines += 1
+
+            max_line_length = max(max_line_length, len(line))
+        avg_line_length = (len(contents) - num_newlines) / num_newlines
+
+        stats = {
+            'contents': {
+                'num_newlines': num_newlines,
+                'num_whitespace_lines': num_whitespace_lines,
+                'num_comment_lines': num_comment_lines,
+                'min_line_length': min_line_length,
+                'max_line_length': max_line_length,
+                'avg_line_length': avg_line_length
+            }
+        }
     elif filename.endswith('.ipynb'):
         stats = {'contents': {}}
     return stats
