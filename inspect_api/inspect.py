@@ -48,8 +48,10 @@ def extract_name_attribute_path(node):
 
 
 def expand_path(path, aliases):
+    print(path, aliases)
     if path[0] in aliases:
         return aliases[path[0]] + path[1:]
+    print('here', path, path[0] in aliases)
     return path
 
 
@@ -89,38 +91,74 @@ class APIVisitor(ast.NodeVisitor):
     def __init__(self, aliases, imports):
         self.aliases = aliases
         self.imports = imports
+
         self.attribute_stats = collections.defaultdict(
-            lambda: collections.defaultdict(int))
+            lambda: collections.defaultdict(
+                lambda: {
+                    'count': 0,
+                    'd_count': 0
+                }))
+
         self.function_stats = collections.defaultdict(
             lambda: collections.defaultdict(
                 lambda: {
                     'count': 0,
+                    'd_count': 0,
                     'n_args': collections.defaultdict(int),
                     'kwargs': collections.defaultdict(int),
                 }))
 
-    def add_function_stats(self, namespace, path, num_args, keywords):
+        self.def_function_stats = {
+            'count': 0,
+            'n_args': collections.defaultdict(int)
+        }
+
+    def add_function_stats(self, namespace, path, num_args, keywords, is_decorator):
         self.function_stats[namespace][path]['count'] += 1
+        if is_decorator:
+            self.function_stats[namespace][path]['d_count'] += 1
         self.function_stats[namespace][path]['n_args'][num_args] += 1
         for keyword in keywords:
             self.function_stats[namespace][path]['kwargs'][keyword] += 1
 
-    def add_attribute_stats(self, namespace, path):
-        self.attribute_stats[namespace][path] += 1
+    def add_attribute_stats(self, namespace, path, is_decorator):
+        self.attribute_stats[namespace][path]['count'] += 1
+        if is_decorator:
+            self.attribute_stats[namespace][path]['d_count'] += 1
 
-    def visit_Attribute(self, node):
+    def add_def_function_stats(self, num_args):
+        self.def_function_stats['count'] += 1
+        self.def_function_stats['n_args'][num_args] += 1
+
+    def visit_Name(self, node, is_decorator=False):
+        self.visit_Attribute(node, is_decorator=is_decorator)
+
+    def visit_FunctionDef(self, node):
+        num_args = len(node.args.args) + len(node.args.kwonlyargs)
+        self.add_def_function_stats(num_args)
+
+        for stmt in node.body:
+            self.visit(stmt)
+
+        for _node in node.decorator_list:
+            if isinstance(_node, (ast.Attribute, ast.Name)):
+                self.visit_Attribute(_node, is_decorator=True)
+            elif isinstance(_node, ast.Call):
+                self.visit_Call(_node, is_decorator=True)
+
+    def visit_Attribute(self, node, is_decorator=False):
         try:
             path = extract_name_attribute_path(node)
             path = expand_path(path, self.aliases)
 
             if is_path_import_match(path, self.imports):
-                self.add_attribute_stats(path[0], path)
+                self.add_attribute_stats(path[0], path, is_decorator)
         except ValueError as e:
             # visit non matching part of attribute
             self.visit(e.args[0])
             return
 
-    def visit_Call(self, node):
+    def visit_Call(self, node, is_decorator=False):
         if not isinstance(node.func, (ast.Attribute, ast.Name)):
             return
 
@@ -134,9 +172,9 @@ class APIVisitor(ast.NodeVisitor):
 
             if len(path) == 1 and path[0] in BUILTIN_FUNCTIONS:
                 base_namespace = '__builtins__'
-                self.add_function_stats(base_namespace, path, num_args, keywords)
+                self.add_function_stats(base_namespace, path, num_args, keywords, is_decorator)
             elif is_path_import_match(path, self.imports):
-                self.add_function_stats(path[0], path, num_args, keywords)
+                self.add_function_stats(path[0], path, num_args, keywords, is_decorator)
         except ValueError as e:
             # visit non matching part of attribute
             self.visit(e.args[0])
@@ -203,5 +241,6 @@ def inspect_file_ast(file_ast):
 
     return {
         'function': api_visitor.function_stats,
+        'def_function': api_visitor.def_function_stats,
         'attribute': api_visitor.attribute_stats
     }

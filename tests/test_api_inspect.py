@@ -23,19 +23,23 @@ a.sum()
     result = inspect_file_ast(ast.parse(source))
 
     expected_result = {
+        'def_function': {'count': 0, 'n_args': {}},
         'attribute': {},
         'function': {
             'numpy': {
                 ('numpy', 'sum'): {
                     'count': 1,
+                    'd_count': 0,
                     'n_args': {3: 1},
                     'kwargs': {'axis': 1}},
                 ('numpy', 'random', 'random'): {
                     'count': 2,
+                    'd_count': 0,
                     'n_args': {0: 1, 1: 1},
                     'kwargs': {}},
                 ('numpy', 'array'): {
                     'count': 3,
+                    'd_count': 0,
                     'n_args': {1: 3},
                     'kwargs': {}}
             }
@@ -64,15 +68,21 @@ rnd.random
     result = inspect_file_ast(ast.parse(source))
 
     expected_result = {
+        'def_function': {'count': 0, 'n_args': {}},
         'function': {
             'numpy': {
-                ('numpy', 'array'): {'count': 1, 'n_args': {1: 1}, 'kwargs': {}}
+                ('numpy', 'array'): {
+                    'count': 1,
+                    'd_count': 0,
+                    'n_args': {1: 1},
+                    'kwargs': {}
+                }
             }
         },
         'attribute': {
             'numpy': {
-                ('numpy', 'asdf'): 2,
-                ('numpy', 'random', 'random'): 2
+                ('numpy', 'asdf'): {'count': 2, 'd_count': 0},
+                ('numpy', 'random', 'random'): {'count': 2, 'd_count': 0},
             }
         }
     }
@@ -84,6 +94,7 @@ def test_example_decorator():
     source = '''
 import contextlib
 from contextlib import contextmanager
+from contextlib import contextmanager as cxtm
 
 @contextmanager
 def foo():
@@ -92,12 +103,41 @@ def foo():
 @contextlib.contextmanager
 def bar():
     pass
+
+cxtm
+
+contextlib.contextmanager()
+
+@cxtm(a=2)
+def biz():
+    pass
 '''
     result = inspect_file_ast(ast.parse(source))
 
     expected_result = {
-
+        'def_function': {
+            'count': 3,
+            'n_args': {0: 3},
+        },
+        'function': {
+            'contextlib': {
+                ('contextlib', 'contextmanager'): {
+                    'count': 2,
+                    'd_count': 1,
+                    'kwargs': {'a': 1},
+                    'n_args': {0: 1, 1: 1}
+                }
+            }
+        },
+        'attribute': {
+            'contextlib': {
+                ('contextlib', 'contextmanager'): {'count': 3, 'd_count': 2}
+            }
+        }
     }
+
+    import pprint
+    pprint.pprint(result)
 
     assert result == expected_result
 
@@ -134,12 +174,15 @@ def Bar(numpy.matrix):
         'def_class': {
             'count': 2,
             'n_func': {3: 1, 1: 1},
-            'attrib': {1: 1},
+            'n_attrib': {1: 1},
             'dunder': {'__init__': 1, '__getattr__': 1},
         }
     }
 
     result = inspect_file_ast(ast.parse(source))
+
+    import pprint
+    pprint.pprint(result)
 
     assert result == expected_result
 
