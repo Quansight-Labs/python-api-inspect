@@ -23,6 +23,13 @@ a.sum()
     result = inspect_file_ast(ast.parse(source))
 
     expected_result = {
+        'def_class': {
+            'count': 0,
+            'n_attr': {},
+            'n_func': {},
+            'dunder': {},
+            'inherit': {}
+        },
         'def_function': {'count': 0, 'n_args': {}},
         'attribute': {},
         'function': {
@@ -68,6 +75,13 @@ rnd.random
     result = inspect_file_ast(ast.parse(source))
 
     expected_result = {
+        'def_class': {
+            'count': 0,
+            'n_attr': {},
+            'n_func': {},
+            'dunder': {},
+            'inherit': {}
+        },
         'def_function': {'count': 0, 'n_args': {}},
         'function': {
             'numpy': {
@@ -115,6 +129,13 @@ def biz():
     result = inspect_file_ast(ast.parse(source))
 
     expected_result = {
+        'def_class': {
+            'count': 0,
+            'n_attr': {},
+            'n_func': {},
+            'dunder': {},
+            'inherit': {}
+        },
         'def_function': {
             'count': 3,
             'n_args': {0: 3},
@@ -142,7 +163,6 @@ def biz():
     assert result == expected_result
 
 
-@pytest.mark.xfail
 def test_example_def_class():
     source = '''
 import numpy as np
@@ -163,19 +183,29 @@ class Foo(np.array, asdf):
     def foo():
         pass
 
-def Bar(numpy.matrix):
+class Bar(numpy.matrix):
     def asdf(self):
         pass
     '''
 
     expected_result = {
         'function': {},
-        'attribute': {},
+        'attribute': {
+            'numpy': {
+                ('numpy', 'array'): {'count': 1, 'd_count': 0},
+                ('numpy', 'matrix'): {'count': 1, 'd_count': 0},
+            }
+        },
+        'def_function': {
+            'count': 5,
+            'n_args': {3: 1, 2: 1, 1: 2, 0: 1}
+        },
         'def_class': {
             'count': 2,
             'n_func': {3: 1, 1: 1},
-            'n_attrib': {1: 1},
+            'n_attr': {1: 1, 0: 1},
             'dunder': {'__init__': 1, '__getattr__': 1},
+            'inherit': {('numpy', 'matrix'): 1, ('numpy', 'array'): 1},
         }
     }
 

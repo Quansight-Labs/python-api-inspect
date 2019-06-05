@@ -48,10 +48,8 @@ def extract_name_attribute_path(node):
 
 
 def expand_path(path, aliases):
-    print(path, aliases)
     if path[0] in aliases:
         return aliases[path[0]] + path[1:]
-    print('here', path, path[0] in aliases)
     return path
 
 
@@ -113,6 +111,14 @@ class APIVisitor(ast.NodeVisitor):
             'n_args': collections.defaultdict(int)
         }
 
+        self.def_class_stats = {
+            'count': 0,
+            'n_attr': collections.defaultdict(int),
+            'n_func': collections.defaultdict(int),
+            'dunder': collections.defaultdict(int),
+            'inherit': collections.defaultdict(int),
+        }
+
     def add_function_stats(self, namespace, path, num_args, keywords, is_decorator):
         self.function_stats[namespace][path]['count'] += 1
         if is_decorator:
@@ -130,8 +136,44 @@ class APIVisitor(ast.NodeVisitor):
         self.def_function_stats['count'] += 1
         self.def_function_stats['n_args'][num_args] += 1
 
+    def add_def_class_stats(self, num_attributes, num_functions, dunder_methods):
+        self.def_class_stats['count'] += 1
+        self.def_class_stats['n_attr'][num_attributes] += 1
+        self.def_class_stats['n_func'][num_functions] += 1
+        for method in dunder_methods:
+            self.def_class_stats['dunder'][method] += 1
+
     def visit_Name(self, node, is_decorator=False):
         self.visit_Attribute(node, is_decorator=is_decorator)
+
+    def visit_ClassDef(self, node):
+        num_attributes = 0
+        num_functions = 0
+        dunder_methods = set()
+
+        for base in node.bases:
+            if isinstance(base, (ast.Attribute, ast.Name)):
+                try:
+                    path = extract_name_attribute_path(base)
+                    path = expand_path(path, self.aliases)
+
+                    if is_path_import_match(path, self.imports):
+                        self.def_class_stats['inherit'][path] += 1
+                except ValueError as e:
+                    # visit non matching part of attribute
+                    self.visit(e.args[0])
+            self.visit(base)
+
+        for stmt in node.body:
+            if isinstance(stmt, ast.FunctionDef):
+                num_functions += 1
+                if stmt.name.startswith('__') and stmt.name.endswith('__'):
+                    dunder_methods.add(stmt.name)
+            elif isinstance(stmt, ast.Assign):
+                num_attributes += 1
+            self.visit(stmt)
+
+        self.add_def_class_stats(num_attributes, num_functions, dunder_methods)
 
     def visit_FunctionDef(self, node):
         num_args = len(node.args.args) + len(node.args.kwonlyargs)
@@ -242,5 +284,6 @@ def inspect_file_ast(file_ast):
     return {
         'function': api_visitor.function_stats,
         'def_function': api_visitor.def_function_stats,
+        'def_class': api_visitor.def_class_stats,
         'attribute': api_visitor.attribute_stats
     }
