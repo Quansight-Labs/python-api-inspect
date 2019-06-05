@@ -59,9 +59,10 @@ CREATE INDEX IF NOT EXISTS index_attribute_stats_namespace ON AttributeStats(nam
 '''
 
 def create_connection(filename):
-    connection = sqlite3.connect(filename)
+    connection = sqlite3.connect(filename, )
 
     with connection:
+        connection.execute('PRAGMA journal_mode=WAL')
         connection.executescript(CREATE_TABLES_INDICES)
 
     return connection
