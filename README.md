@@ -1,287 +1,54 @@
-# API Usage Statistics
+# Motivation
 
-Currently inspected libraries:
+This is a package with a goal to provide statistics to better
+understand how python is used and written.
 
-<table>
-<tr>
-  <th>Library</th>
-  <th>Whitelist</th>
-  <th>Summary only `.py`</th>
-  <th>Summary only `.py` tests</th>
-  <th>Summary only `.py` without tests</th>
-  <th>Summary only `.ipynb`</th>
-</tr>
-<tr>
-  <td>astropy</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/astropy-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/astropy-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>dask</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/dask-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/dask-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>ipython</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/ipython-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipython-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>ipywidgets</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/ipywidgets-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/ipywidgets-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>matplotlib</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/matplotlib-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/matplotlib-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>numpy</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/numpy-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/numpy-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>pandas</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pandas-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pandas-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>pyarrow</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pyarrow-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pyarrow-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>pymapd</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pymapd-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymapd-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>pymc3</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pymc3-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pymc3-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>pytorch</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/pytorch-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/pytorch-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>requests</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/requests-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/requests-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>scikit-image</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/scikit-image-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-image-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>scikit-learn</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/scikit-learn-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scikit-learn-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>scipy</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/scipy-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/scipy-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>statsmodels</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/statsmodels-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/statsmodels-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>sympy</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/sympy-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/sympy-summary-notebooks.csv">csv</a></td>
-</tr>
-<tr>
-  <td>tensorflow</td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/whitelist/tensorflow-whitelist.ini">ini</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary-without-tests.csv">csv</a></td>
-  <td><a href="https://github.com/costrouc/python-api-inspect/blob/master/data/csv/tensorflow-summary-notebooks.csv">csv</a></td>
-</tr>
-</table>
+A package maintain might ask:
+ - Can certain functions be depreciated?
+ - How are my users using my package in tests vs. source vs. notebooks?
+ - What should I include in tutorials?
+ - Are new features being adopted?
+ 
+Python Core Maintainers might ask:
+ - What are the most and least used stdlib modules?
+ - Is the community moving away from one module?
+ - Lets educate PEPs with actual statistics!
 
-# Usage
+# Interesting Questions
 
-A whitelist is used to specify repositories that are inspected for a
-specific libraries that use a given namespace. A namespace is for
-example `numpy.random`. We would then use the whitelist of
-repositories to search for the usage of any function in
-`numpy.random.*`. The whitelist has the following format.
+ - [What is the top 10 most popular pandas functions?](https://python-api-inspect.aves.io/inspect-14e1e76?sql=++SELECT+key+AS+function%2C+sum%28json_extract%28value%2C+%27%24.count%27%29%29+as+count%0D%0A++FROM+FunctionStats%2C+json_each%28FunctionStats.stats%29%0D%0A++JOIN+File+ON+FunctionStats.id+%3D+File.id%0D%0A++WHERE+FunctionStats.namespace+%3D+%3Anamespace%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Fsite-packages%2F%25%27%0D%0A++++AND+File.filename+LIKE+%27%25.ipynb%27%0D%0A++GROUP+BY+key%0D%0A++ORDER+BY+sum%28json_extract%28value%2C+%27%24.count%27%29%29+desc%0D%0A++LIMIT+10&namespace=pandas)
+ - [What is the top 10 most popular numpy attributes?](https://python-api-inspect.aves.io/inspect-14e1e76?sql=++SELECT+key+AS+function%2C+sum%28json_extract%28value%2C+%27%24.count%27%29%29+as+count%0D%0A++FROM+AttributeStats%2C+json_each%28AttributeStats.stats%29%0D%0A++JOIN+File+ON+AttributeStats.id+%3D+File.id%0D%0A++WHERE+AttributeStats.namespace+%3D+%3Anamespace%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Fsite-packages%2F%25%27%0D%0A++++AND+File.filename+LIKE+%27%25.ipynb%27%0D%0A++GROUP+BY+key%0D%0A++ORDER+BY+sum%28json_extract%28value%2C+%27%24.count%27%29%29+desc%0D%0A++LIMIT+10&namespace=numpy)
+ - [What is the are the top 100 most used stdlib module functions?](https://python-api-inspect.aves.io/inspect?sql=SELECT+key+AS+function%2C+sum%28json_extract%28value%2C+%27%24.count%27%29%29+as+count%0D%0A++FROM+FunctionStats%2C+json_each%28FunctionStats.stats%29%0D%0A++JOIN+File+ON+FunctionStats.id+%3D+File.id%0D%0A++WHERE+FunctionStats.namespace+IN+%28%27string%27%2C+%27re%27%2C+%27difflib%27%2C+%27textwrap%27%2C+%27unicodedata%27%2C%0D%0A++++%27stringprep%27%2C+%27readline%27%2C+%27rlcompleter%27%2C+%27struct%27%2C+%27codecs%27%2C%0D%0A++++%27datetime%27%2C+%27calendar%27%2C+%27collections%27%2C+%27heapq%27%2C+%27bisect%27%2C+%27array%27%2C%0D%0A++++%27weakref%27%2C+%27types%27%2C+%27copy%27%2C+%27pprint%27%2C+%27reprlib%27%2C+%27enum%27%2C%0D%0A++++%27numbers%27%2C+%27math%27%2C+%27cmath%27%2C+%27decimal%27%2C+%27fractions%27%2C+%27random%27%2C%0D%0A++++%27statistics%27%2C+%27itertools%27%2C+%27functools%27%2C+%27operator%27%2C%0D%0A++++%27pathlib%27%2C+%27fileinput%27%2C+%27stat%27%2C+%27filecmp%27%2C+%27tempfile%27%2C+%27glob%27%2C%0D%0A++++%27fnmatch%27%2C+%27linecache%27%2C+%27shutil%27%2C+%27macpath%27%2C+%27pickle%27%2C+%27copyreg%27%2C%0D%0A++++%27shelve%27%2C+%27marshal%27%2C+%27dbm%27%2C+%27sqlite3%27%2C+%27zlib%27%2C+%27gzip%27%2C+%27bz2%27%2C%0D%0A++++%27lzma%27%2C+%27zipfile%27%2C+%27tarfile%27%2C+%27csv%27%2C+%27configparser%27%2C+%27netrc%27%2C%0D%0A++++%27xdrlib%27%2C+%27plistlib%27%2C+%27hashlib%27%2C+%27hmac%27%2C+%27secrets%27%2C+%27os%27%2C+%27io%27%2C%0D%0A++++%27time%27%2C+%27argparse%27%2C+%27getopt%27%2C+%27logging%27%2C+%27getpass%27%2C+%27curses%27%2C%0D%0A++++%27platform%27%2C+%27errno%27%2C+%27ctypes%27%2C+%27threading%27%2C+%27multiprocessing%27%2C%0D%0A++++%27concurrent%27%2C+%27subprocess%27%2C+%27sched%27%2C+%27queue%27%2C+%27_thread%27%2C%0D%0A++++%27_dummy_thread%27%2C+%27dummy_threading%27%2C+%27contextvars%27%2C+%27asyncio%27%2C%0D%0A++++%27socket%27%2C+%27ssl%27%2C+%27select%27%2C+%27selectors%27%2C+%27asyncore%27%2C+%27asynchat%27%2C%0D%0A++++%27signal%27%2C+%27mmap%27%2C+%27email%27%2C+%27json%27%2C+%27mailcap%27%2C+%27mailbox%27%2C%0D%0A++++%27mimetypes%27%2C+%27base64%27%2C+%27binhex%27%2C+%27binascii%27%2C+%27quopri%27%2C+%27uu%27%2C%0D%0A++++%27html%27%2C+%27xml%27%2C+%27webbrowser%27%2C+%27cgi%27%2C+%27cgitb%27%2C+%27wsgiref%27%2C+%27urllib%27%2C%0D%0A++++%27ftplib%27%2C+%27poplib%27%2C+%27imaplib%27%2C+%27nntplib%27%2C+%27smtplib%27%2C+%27smtpd%27%2C%0D%0A++++%27telnetlib%27%2C+%27uuid%27%2C+%27socketserver%27%2C+%27xmlrpc%27%2C+%27ipaddress%27%2C%0D%0A++++%27audioop%27%2C+%27aifc%27%2C+%27sunau%27%2C+%27wave%27%2C+%27chunk%27%2C+%27colorsys%27%2C+%27imghdr%27%2C%0D%0A++++%27sndhdr%27%2C+%27ossaudiodev%27%2C+%27gettext%27%2C+%27locale%27%2C+%27turtle%27%2C+%27cmd%27%2C%0D%0A++++%27shlex%27%2C+%27tkinter%27%2C+%27typing%27%2C+%27pydoc%27%2C+%27doctest%27%2C+%27unittest%27%2C%0D%0A++++%27lib2to3%27%2C+%27test%27%2C+%27bdb%27%2C+%27faulthandler%27%2C+%27pdb%27%2C+%27timeit%27%2C%0D%0A++++%27trace%27%2C+%27tracemalloc%27%2C+%27distutils%27%2C+%27ensurepip%27%2C+%27venv%27%2C%0D%0A++++%27zipapp%27%2C+%27sys%27%2C+%27sysconfig%27%2C+%27builtins%27%2C+%27warnings%27%2C%0D%0A++++%27dataclasses%27%2C+%27contextlib%27%2C+%27abc%27%2C+%27atexit%27%2C+%27traceback%27%2C%0D%0A++++%27__future__%27%2C+%27gc%27%2C+%27inspect%27%2C+%27site%27%2C+%27code%27%2C+%27codeop%27%2C%0D%0A++++%27zipimport%27%2C+%27pkgutil%27%2C+%27modulefinder%27%2C+%27runpy%27%2C+%27importlib%27%2C%0D%0A++++%27parser%27%2C+%27ast%27%2C+%27symtable%27%2C+%27symbol%27%2C+%27token%27%2C+%27keyword%27%2C%0D%0A++++%27tokenize%27%2C+%27tabnanny%27%2C+%27pyclbr%27%2C+%27py_compile%27%2C+%27compileall%27%2C%0D%0A++++%27dis%27%2C+%27pickletools%27%2C+%27formatter%27%2C+%27msilib%27%2C+%27msvcrt%27%2C+%27winreg%27%2C%0D%0A++++%27winsound%27%2C+%27posix%27%2C+%27pwd%27%2C+%27spwd%27%2C+%27grp%27%2C+%27crypt%27%2C+%27termios%27%2C%0D%0A++++%27tty%27%2C+%27pty%27%2C+%27fcntl%27%2C+%27pipes%27%2C+%27resource%27%2C+%27nis%27%2C+%27syslog%27%2C%0D%0A++++%27optparse%27%2C+%27imp%27%2C+%27posixpath%27%2C+%27ntpath%27%29%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Fsite-packages%2F%25%27%0D%0A++GROUP+BY+key%0D%0A++ORDER+BY+sum%28json_extract%28value%2C+%27%24.count%27%29%29+desc%0D%0A++LIMIT+100)
+ - [What are the least and most used stdlib modules?](https://python-api-inspect.aves.io/inspect?sql=SELECT+namespace%2C+sum%28count%29%0D%0AFROM+%28%0D%0ASELECT+FunctionStats.namespace+as+%27namespace%27%2C+sum%28json_extract%28value%2C+%27%24.count%27%29%29+as+%27count%27%0D%0A++FROM+FunctionStats%2C+json_each%28FunctionStats.stats%29%0D%0A++JOIN+File+ON+FunctionStats.id+%3D+File.id%0D%0A++WHERE+FunctionStats.namespace+IN+%28%27string%27%2C+%27re%27%2C+%27difflib%27%2C+%27textwrap%27%2C+%27unicodedata%27%2C%0D%0A++++%27stringprep%27%2C+%27readline%27%2C+%27rlcompleter%27%2C+%27struct%27%2C+%27codecs%27%2C%0D%0A++++%27datetime%27%2C+%27calendar%27%2C+%27collections%27%2C+%27heapq%27%2C+%27bisect%27%2C+%27array%27%2C%0D%0A++++%27weakref%27%2C+%27types%27%2C+%27copy%27%2C+%27pprint%27%2C+%27reprlib%27%2C+%27enum%27%2C%0D%0A++++%27numbers%27%2C+%27math%27%2C+%27cmath%27%2C+%27decimal%27%2C+%27fractions%27%2C+%27random%27%2C%0D%0A++++%27statistics%27%2C+%27itertools%27%2C+%27functools%27%2C+%27operator%27%2C%0D%0A++++%27pathlib%27%2C+%27fileinput%27%2C+%27stat%27%2C+%27filecmp%27%2C+%27tempfile%27%2C+%27glob%27%2C%0D%0A++++%27fnmatch%27%2C+%27linecache%27%2C+%27shutil%27%2C+%27macpath%27%2C+%27pickle%27%2C+%27copyreg%27%2C%0D%0A++++%27shelve%27%2C+%27marshal%27%2C+%27dbm%27%2C+%27sqlite3%27%2C+%27zlib%27%2C+%27gzip%27%2C+%27bz2%27%2C%0D%0A++++%27lzma%27%2C+%27zipfile%27%2C+%27tarfile%27%2C+%27csv%27%2C+%27configparser%27%2C+%27netrc%27%2C%0D%0A++++%27xdrlib%27%2C+%27plistlib%27%2C+%27hashlib%27%2C+%27hmac%27%2C+%27secrets%27%2C+%27os%27%2C+%27io%27%2C%0D%0A++++%27time%27%2C+%27argparse%27%2C+%27getopt%27%2C+%27logging%27%2C+%27getpass%27%2C+%27curses%27%2C%0D%0A++++%27platform%27%2C+%27errno%27%2C+%27ctypes%27%2C+%27threading%27%2C+%27multiprocessing%27%2C%0D%0A++++%27concurrent%27%2C+%27subprocess%27%2C+%27sched%27%2C+%27queue%27%2C+%27_thread%27%2C%0D%0A++++%27_dummy_thread%27%2C+%27dummy_threading%27%2C+%27contextvars%27%2C+%27asyncio%27%2C%0D%0A++++%27socket%27%2C+%27ssl%27%2C+%27select%27%2C+%27selectors%27%2C+%27asyncore%27%2C+%27asynchat%27%2C%0D%0A++++%27signal%27%2C+%27mmap%27%2C+%27email%27%2C+%27json%27%2C+%27mailcap%27%2C+%27mailbox%27%2C%0D%0A++++%27mimetypes%27%2C+%27base64%27%2C+%27binhex%27%2C+%27binascii%27%2C+%27quopri%27%2C+%27uu%27%2C%0D%0A++++%27html%27%2C+%27xml%27%2C+%27webbrowser%27%2C+%27cgi%27%2C+%27cgitb%27%2C+%27wsgiref%27%2C+%27urllib%27%2C%0D%0A++++%27ftplib%27%2C+%27poplib%27%2C+%27imaplib%27%2C+%27nntplib%27%2C+%27smtplib%27%2C+%27smtpd%27%2C%0D%0A++++%27telnetlib%27%2C+%27uuid%27%2C+%27socketserver%27%2C+%27xmlrpc%27%2C+%27ipaddress%27%2C%0D%0A++++%27audioop%27%2C+%27aifc%27%2C+%27sunau%27%2C+%27wave%27%2C+%27chunk%27%2C+%27colorsys%27%2C+%27imghdr%27%2C%0D%0A++++%27sndhdr%27%2C+%27ossaudiodev%27%2C+%27gettext%27%2C+%27locale%27%2C+%27turtle%27%2C+%27cmd%27%2C%0D%0A++++%27shlex%27%2C+%27tkinter%27%2C+%27typing%27%2C+%27pydoc%27%2C+%27doctest%27%2C+%27unittest%27%2C%0D%0A++++%27lib2to3%27%2C+%27test%27%2C+%27bdb%27%2C+%27faulthandler%27%2C+%27pdb%27%2C+%27timeit%27%2C%0D%0A++++%27trace%27%2C+%27tracemalloc%27%2C+%27distutils%27%2C+%27ensurepip%27%2C+%27venv%27%2C%0D%0A++++%27zipapp%27%2C+%27sys%27%2C+%27sysconfig%27%2C+%27builtins%27%2C+%27warnings%27%2C%0D%0A++++%27dataclasses%27%2C+%27contextlib%27%2C+%27abc%27%2C+%27atexit%27%2C+%27traceback%27%2C%0D%0A++++%27__future__%27%2C+%27gc%27%2C+%27inspect%27%2C+%27site%27%2C+%27code%27%2C+%27codeop%27%2C%0D%0A++++%27zipimport%27%2C+%27pkgutil%27%2C+%27modulefinder%27%2C+%27runpy%27%2C+%27importlib%27%2C%0D%0A++++%27parser%27%2C+%27ast%27%2C+%27symtable%27%2C+%27symbol%27%2C+%27token%27%2C+%27keyword%27%2C%0D%0A++++%27tokenize%27%2C+%27tabnanny%27%2C+%27pyclbr%27%2C+%27py_compile%27%2C+%27compileall%27%2C%0D%0A++++%27dis%27%2C+%27pickletools%27%2C+%27formatter%27%2C+%27msilib%27%2C+%27msvcrt%27%2C+%27winreg%27%2C%0D%0A++++%27winsound%27%2C+%27posix%27%2C+%27pwd%27%2C+%27spwd%27%2C+%27grp%27%2C+%27crypt%27%2C+%27termios%27%2C%0D%0A++++%27tty%27%2C+%27pty%27%2C+%27fcntl%27%2C+%27pipes%27%2C+%27resource%27%2C+%27nis%27%2C+%27syslog%27%2C%0D%0A++++%27optparse%27%2C+%27imp%27%2C+%27posixpath%27%2C+%27ntpath%27%29%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Fsite-packages%2F%25%27%0D%0A++GROUP+BY+key%0D%0A++ORDER+BY+sum%28json_extract%28value%2C+%27%24.count%27%29%29+desc%0D%0A%29%0D%0AGROUP+BY+namespace%0D%0AORDER+BY+sum%28count%29+desc)
+ - How are the builtin functions used within [source](https://python-api-inspect.aves.io/inspect?sql=SELECT+key+AS+function%2C+sum%28json_extract%28value%2C+%27%24.count%27%29%29+as+count%0D%0A++FROM+FunctionStats%2C+json_each%28FunctionStats.stats%29%0D%0A++JOIN+File+ON+FunctionStats.id+%3D+File.id%0D%0A++WHERE+FunctionStats.namespace+%3D+%27__builtins__%27%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Fsite-packages%2F%25%27%0D%0A++++AND+File.filename+LIKE+%27%25.py%27%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Ftests%2F%25%27%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Ftest%2F%25%27%0D%0A++GROUP+BY+key%0D%0A++ORDER+BY+sum%28json_extract%28value%2C+%27%24.count%27%29%29+desc) vs. [notebooks](https://python-api-inspect.aves.io/inspect?sql=SELECT+key+AS+function%2C+sum%28json_extract%28value%2C+%27%24.count%27%29%29+as+count%0D%0A++FROM+FunctionStats%2C+json_each%28FunctionStats.stats%29%0D%0A++JOIN+File+ON+FunctionStats.id+%3D+File.id%0D%0A++WHERE+FunctionStats.namespace+%3D+%27__builtins__%27%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Fsite-packages%2F%25%27%0D%0A++++AND+File.filename+LIKE+%27%25.ipynb%27%0D%0A++GROUP+BY+key%0D%0A++ORDER+BY+sum%28json_extract%28value%2C+%27%24.count%27%29%29+desc) vs. [tests](http://python-api-inspect.aves.io/inspect?sql=SELECT+key+AS+function%2C+sum%28json_extract%28value%2C+%27%24.count%27%29%29+as+count%0D%0A++FROM+FunctionStats%2C+json_each%28FunctionStats.stats%29%0D%0A++JOIN+File+ON+FunctionStats.id+%3D+File.id%0D%0A++WHERE+FunctionStats.namespace+%3D+%27__builtins__%27%0D%0A++++AND+File.filename+NOT+LIKE+%27%25%2Fsite-packages%2F%25%27%0D%0A++++AND+File.filename+LIKE+%27%25.py%27%0D%0A++++AND+%28File.filename+LIKE+%27%25%2Ftests%2F%25%27+OR+File.filename+LIKE+%27%25%2Ftest%2F%25%27%29%0D%0A++GROUP+BY+key%0D%0A++ORDER+BY+sum%28json_extract%28value%2C+%27%24.count%27%29%29+desc)?
+ - [How often are the dunder methods used?](https://python-api-inspect.aves.io/inspect?sql=SELECT+key%2C+sum%28value%29%0D%0AFROM+DefClassStats%2C+json_each%28DefClassStats.stats%2C+%27%24.dunder%27%29%0D%0AGROUP+BY+key%0D%0AORDER+BY+sum%28value%29+desc%0D%0ALIMIT+100)
+ - [What is the average length of a line of code?](https://python-api-inspect.aves.io/inspect?sql=SELECT+avg%28json_extract%28ContentStats.stats%2C+%27%24.avg_line_length%27%29%29%0D%0AFROM+ContentStats)
 
-```ini
-[config]
-namespaces=numpy.random,scipy
+# Workflow
 
-[libraries]
-pandas=github/pandas-dev/pandas/master
-...
-```
+This is a package with components that expose a [sqlite
+database](https://sqlite.org/index.html) via
+[datasette](https://github.com/simonw/datasette). Originally this
+package provided csv files with api usage statistics for packages. The
+problem is that this cannot anticipate all the questions that users
+may have. Thus we have a sql interface to ask custom questions on the
+(currently) 6 GB database.
 
-There is a script to help generate the libraries/repositories to
-search for the usage of a given python namespaces. Thanks to the
-awesome work at [libaries.io](https://libraries.io).
+The scripts involved in this work.
 
-```shell
-python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy
-```
-
-Notice that we need a [libraries.io api
-key](https://libraries.io/api). This step is only needed once to
-generate a rough list of repositories to search. You will see that
-many whitelists have already been created and they only need to be
-edited. The previous command gets a list of all libraries that depend
-on `numpy` or `scipy`. The `--namespaces` argument specifies which
-namespaces to use with inspect. Finally we use the whitelist to search
-for the usage of the namespace. Notice how we use `--exclude-dirs` to
-not analyze filenames within a directory named `test`, `tests`, or
-`site-packages`.
-
-```shell
-python inspect_api.py data/numpy-whitelist.ini --output data/numpy-summary-without-tests.csv --exclude-dirs test,tests,site-packages
-```
-
-`inspect_api.py` works by using the `ast.parse` method in the standard
-library and analyzes the ast for function names and imports. Much more
-is possible with this libraries. Caching is used heavily at each
-step. If a file has been previously analyzed it will be parse
-instantaneously the second time. So you may cancel the run at any time. Currently it is capable of parsing the following from files.
-
-```python
-import numpy
-import numpy as np
-from numpy import random
-from numpy import random as rnd
-
-numpy.array([1, 2])
-np.sum(1, 2)
-random.random()
-rnd.random()
-```
-
-# dependant-packages.py
-
-```shell
-usage: dependant-packages.py [-h] [--include-dependant-repos] --api-key API_KEY
-                             --namespaces NAMESPACES [--output OUTPUT]
-                             libraries
-
-positional arguments:
-  libraries             libraries to gather dependants for
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --include-dependant-repos
-                        include libraries.io dependant repositories (warning for
-                        popular packages this can be huge)
-  --api-key API_KEY     api key from libraries.io
-  --namespaces NAMESPACES
-                        namespaces to look for
-  --output OUTPUT       output filename
-```
-
-## example usage
-
-```shell
-python dependant-packages.py --api-key c0....42 --namespaces=numpy --output data/numpy-whitelist.ini numpy,scipy
-```
-
-# inspect_api.py
-
-Inspect API of given libraries and number of times functions called
-
-```shell
-usage: inspect_api..py [-h] [--cache-dir CACHE_DIR] [--exclude-dirs EXCLUDE_DIRS]
-                       [--include-dirs INCLUDE_DIRS] [--output OUTPUT]
-                       whitelist
-
-positional arguments:
-  whitelist             whitelist filename
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --cache-dir CACHE_DIR
-                        download cache directory
-  --exclude-dirs EXCLUDE_DIRS
-                        directories to exclude from statistics
-  --include-dirs INCLUDE_DIRS
-                        directories to include in statistics
-  --output OUTPUT       output filename
-```
-
-See `whitelist.ini` for namespaces and libraries that are searched. A
-sqlite cache is used to speed up previously inspected files. For
-example `namespaces=numpy,scipy.linalg` will record all python
-function calls within these namespaces.
-
-## usage
-
-```shell
-python inspect.py whitelist.ini
-```
+1. Assemble list of important repositories/projects that depend on
+   libraries such as `numpy`, `scipy`, `requests`, `tensorflow`,
+   etc. This work would not be possible without
+   [libraries.io](https://libraries.io/) `scripts/librariesio.sh`
+2. Construct database by inspecting source code and ast of every
+   python file and notebook in repositories. `scripts/inspect.sh`
+3. Expose sqlite database via datasette `scripts/serve.sh`
 
 # Tests
 
-Tests to demo what `inspect.py` is able to parse from file source. The
-"test" is a serious hack and doesn't deserve to be called a test.
+The tests depend on `pytest`. The tests are a great demostration of
+what python-api-inspect can capture.
 
 ```shell
-# from root of repository
-python tests/test_api_inspect.py
+pytest
 ```
