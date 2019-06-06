@@ -307,9 +307,9 @@ class APIVisitor(ast.NodeVisitor):
             path = expand_path(path, self.aliases)
 
             if len(path) == 1 and path[0] in BUILTIN_FUNCTIONS:
-                self.add_function_stats('__builtins__', path, num_args, keywords, is_decorator)
+                self.add_function_stats('___builtins___', path, num_args, keywords, is_decorator)
             if len(path) == 1 and path[0] in BUILTIN_EXCEPTIONS:
-                self.add_function_stats('__exceptions__', path, num_args, keywords, is_decorator)
+                self.add_function_stats('___exceptions___', path, num_args, keywords, is_decorator)
             elif is_path_import_match(path, self.imports):
                 self.add_function_stats(path[0], path, num_args, keywords, is_decorator)
         except ValueError as e:
