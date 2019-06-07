@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS ContentStats (
    stats BLOB,
 
    PRIMARY KEY (id)
+   FOREIGN KEY(id) REFERENCES File(id)
 );
 
 CREATE TABLE IF NOT EXISTS FunctionStats (
@@ -27,6 +28,7 @@ CREATE TABLE IF NOT EXISTS FunctionStats (
    stats BLOB,
 
    PRIMARY KEY (id, namespace)
+   FOREIGN KEY(id) REFERENCES File(id)
 );
 
 CREATE TABLE IF NOT EXISTS AttributeStats (
@@ -35,20 +37,23 @@ CREATE TABLE IF NOT EXISTS AttributeStats (
    stats BLOB,
 
    PRIMARY KEY (id, namespace)
+   FOREIGN KEY(id) REFERENCES File(id)
 );
 
 CREATE TABLE IF NOT EXISTS DefFunctionStats (
-   id TEXT,
-   stats BLOB,
+  id TEXT,
+  stats BLOB,
 
-   PRIMARY KEY (id)
+  PRIMARY KEY (id)
+  FOREIGN KEY(id) REFERENCES File(id)
 );
 
 CREATE TABLE IF NOT EXISTS DefClassStats (
-   id TEXT,
-   stats BLOB,
+  id TEXT,
+  stats BLOB,
 
-   PRIMARY KEY (id)
+  PRIMARY KEY (id)
+  FOREIGN KEY(id) REFERENCES File(id)
 );
 
 CREATE INDEX IF NOT EXISTS index_file_project ON File(project);
