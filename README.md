@@ -1,3 +1,5 @@
+[SciPy 2019 Lightning Talk](https://docs.google.com/presentation/d/1iGnnNh-qxPOJcuIPxNNNwYhp5whV4RqQCduC6Ar1VVs/edit?usp=sharing)
+
 # Motivation
 
 This is a package with a goal to provide statistics to better
